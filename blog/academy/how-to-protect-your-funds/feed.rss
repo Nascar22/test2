@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Guide on how to protect your crypto	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/how-to-protect-your-funds/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/how-to-protect-your-funds</link>
+	<description></description>
+	<lastBuildDate>Wed, 15 Jul 2020 14:02:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Steven		</title>
+		<link>https://atomicwallet.io/blog/academy/how-to-protect-your-funds#comment-104</link>
+
+		<dc:creator><![CDATA[Steven]]></dc:creator>
+		<pubDate>Mon, 27 Apr 2020 14:55:59 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=878#comment-104</guid>
+
+					<description><![CDATA[ &quot;Safety first&quot;, a very important measure one need to take in the crypto space. Thanks to the atomic team for teaching me learn how to protect my wallet.]]></description>
+			<content:encoded><![CDATA[<p> &#8220;Safety first&#8221;, a very important measure one need to take in the crypto space. Thanks to the atomic team for teaching me learn how to protect my wallet.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

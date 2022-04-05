@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ltc &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/tag/ltc/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 15 May 2020 15:56:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>ltc &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>AMA Report: Litecoin’s Community</title>
+		<link>https://atomicwallet.io/blog/academy/ama-litecoin-community</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-litecoin-community#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2020 20:39:23 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[ama]]></category>
+		<category><![CDATA[ama session]]></category>
+		<category><![CDATA[atomic]]></category>
+		<category><![CDATA[atomic wallet]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[digest]]></category>
+		<category><![CDATA[litecoin]]></category>
+		<category><![CDATA[ltc]]></category>
+		<category><![CDATA[report]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=26103</guid>
+
+					<description><![CDATA[<p>On April 24th, Litecoin, an open source, global payment network that is fully decentralized without any central authorities, hosted an AMA session with us in their Telegram Chat. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the Litecoin community led by Loshan (Community  Manager).</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-litecoin-community">AMA Report: Litecoin’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/lcn_ama_digest_atomic-1920x1080.png"  alt="AMA w/ LTC cover"  class="wp-image-26117" ></figure>
+
+
+
+<p> On April 24th, <a href="https://litecoin.org/">Litecoin</a>, an open-source, global payment network that is fully decentralized without any central authorities, hosted an AMA session with us in their Telegram Chat. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the Litecoin community.<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Konstantin (K), C (Christina), and the questions from the Litecoin chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What do you think would be a use case for atomic swaps as a general user?</p>
+
+
+
+<p>K: I think the best case for swaps is pegged assets. Currently, the so-called DeFi is growing on Ethereum and some other chains. But now to bring Bitcoin or Litecoin to smart contracts? Only with pegged assets. It can be done with non-custodial atomic swaps. So cross-chain 1:1 interaction is a good case where you don’t care about prices and liquidity much.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Is Atomic Wallet fully decentralized?</p>
+
+
+
+<p>K: Atomic is a non-custodial wallet. Your private keys are encrypted and never leave your local device. This means that only you fully control your crypto which is so-called &#8220;your keys, your funds.&#8221; However, Atomic is a light wallet. We are not forcing you to run your own full node and download the blockchain. The app is connected to various nodes all over the world to get data on your balance and history and broadcast signed transactions. So it is pretty decentralized, however, less than a full node for sure. But it’s still great for most users to feel the nature of crypto.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How does Atomic Wallet provide the most current price in the atomic swap process? Which exchanges or methods does the trade happen?</p>
+
+
+
+<p>K: Unfortunately, we discontinued atomic swaps due to complicated support and liquidity issues. Currently, we work with various partners that are so-called non-KYC instant exchanges. At least they support lots of assets and search for the best rates. Do all background trading for you and it’s still far less risky then store your crypto on centralized exchanges.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can we have multiple wallets integration in the future so we can restore our old Litecoin address to Atomic?</p>
+
+
+
+<p>K: We are planning to add multiple wallets management later this year. I know many users ask us just to import old private keys in Atomic. We will also add keys to sweep soon.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is your biggest advantage compared to other competitors like Trustwallet, Blockchain, and Exodus? Why should users choose Atomic?</p>
+
+
+
+<p>K: Competition simply drives all of us to make better products for users. It’s a win-win for everyone. Even if I like those wallets, I believe we have better user experience and support. Atomic is trusted by over 300,000 users all over the world. We achieved this for less than two years.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How secure is Atomic Wallet?</p>
+
+
+
+<p>K: It’s pretty secure. We use common open-source libraries for a wallet like Bitcoin Core, Web3, etc. Your keys are encrypted and never leave your local device. However, take care of your 12 words backup. Write them down and store in a safe place, better offline.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How do you decide which asset will be available on Atomic Wallet and which don&#8217;t?</p>
+
+
+
+<p>K: We already support almost all top 100 assets from CoinMarketCap. However, we got a lot of requests for new asset integration. We always do our own research looking for community, technology potential, exchange volume, on-chain activity, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which countries Atomic Wallet is presently focusing on? What are your plans to expand your wallet in different regions?</p>
+
+
+
+<p>K: Atomic Wallet has no country restrictions. However, most of our users are from the US, UK, CA, AU, DE, and other EU countries and also from Asia.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are there any plans to support dApps?</p>
+
+
+
+<p>K: Currently, we don&#8217;t have any plans for dApps browser support. I don’t believe in this model, too bad UI/UX. However, we will add some DeFi services in our native interface soon.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the advantages of Atomic Wallet over Trust Wallet?</p>
+
+
+
+<p>K: We have a desktop and cross-chain swaps and I believe we have a better UI.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you share your recent achievements?</p>
+
+
+
+<p>K: I&#8217;d say that our very recent achievement is our decentralized staking. We have already added 10 PoS assets and are planning to add 5-10 more this year.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you tell us how Atomic Wallet is more secure than hardware wallets?</p>
+
+
+
+<p>K: Hardware wallets are more secure by technology but with more complicated UI and you should buy them at least. So it’s more like cold storage. Atomic is for everyday use.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the difference between atomic swaps and instant exchange in the wallet?</p>
+
+
+
+<p>K: Atomic Swaps are non-custodial via time-locked contracts. Instant exchange is provided by 3rd parties.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: When will Atomic launch an IEO?</p>
+
+
+
+<p>K: No plans for an IEO. We have been profitable for over a year.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Currently, atomic swap just supports 3-pair swapping. Do you plan to add more swapping pairs in atomic swap?</p>
+
+
+
+<p>K: Currently, we have no plans for more pairs on atomic swaps.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How many people are behind the success?</p>
+
+
+
+<p>K: We have around 25 people in the team including devs, marketing, and 24/7 support. The team is distributed.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: All current projects are concerned with the speed and quantity of transactions. Old projects have also improved their network. So what else does Atomic do to bring investors?</p>
+
+
+
+<p>C: I think we are trying to build balance in all areas, not only in the performance of our wallet but also adding new most-wanted features, promoting the product, keeping a decent customer care service, and updating the wallet regularly.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you have any plans to integrate private key import function?</p>
+
+
+
+<p>K: Multiple addresses support is planned for this year. However, it is not much about privacy. Most of your addresses are linked in inputs and outputs finally on the blockchain.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Does Atomic wallet intend to include lightning network support for Bitcoin and Litecoin in the near future?</p>
+
+
+
+<p>K: Lighting is pretty cool and it’s on the table. However, it is still a bit complicated in terms of UI/UX.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Does Atomic Wallet have any plans to partner with any exchange?</p>
+
+
+
+<p>C: Yes, we value our reputation to be one of the best wallets for users in the market. We care about partnerships too. Hopefully, we can make our users happy with 1-3 big exchanges this year.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which platform does Atomic Wallet use to obtain the value of each asset?</p>
+
+
+
+<p>K: We use CryptoCompare and some other partners to provide rates.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How&#8217;s Atomic Wallet Support when handling issues of users?</p>
+
+
+
+<p>C: I love our support service and maybe it can sound too subjective because I work for Atomic but the people in the customer care are the best ever. Just have a problem, they&#8217;ll solve everything in a few minutes.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are you committed to the development of the Atomic Wallet? Do you guarantee that you will not abandon the project or sell it at any price?</p>
+
+
+
+<p>K: First, even if we decide to close Atomic, the app will still work locally on your device. You can export 12 words or private keys to any other wallet and get access to your funds. That’s how a decentralized wallet works. Second, I’m in crypto for over 5 years and a well-known public person responsible for this project personally.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the ways Atomic Wallet generates profits and revenue to maintain your project and what is its revenue model?</p>
+
+
+
+<p>K: We cut some fees from each exchange or crypto purchase in a wallet. It is just a regular transactional business model.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: As I can see, the AWC token is not developing well now. Can you explain why? What are your plans to develop AWC?</p>
+
+
+
+<p>C: Since the launch, it has made a great success and developed benefits for more than 40,000 users who participated in our affiliate, bounty, and membership campaigns. We are developing more very hot use-cases at the moment. Stay tuned.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are you planning to start something new with LTC?</p>
+
+
+
+<p>K: Litecoin is a cool tech that is so-called silver in crypto. However, we can’t say about any plans yet. Maybe lightning in the future.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to be hosted by <a href="https://twitter.com/litecoin">Litecoin</a> on their Telegram Chat. Thanks to all the members of the session! Be always aware of our next AMAs and other projects with Atomic Wallet on Twitter, Telegram, Facebook, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-litecoin-community">AMA Report: Litecoin’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-litecoin-community/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

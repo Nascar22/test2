@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Decentralization Strategy Update - XRP Ledger Blog</title>
+
+    <!--[if lt IE 9]>
+      <script src="/dist/js/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="/dist/js/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- jQuery -->
+    <script src="/blog/assets/vendor/jquery-1.11.1.min.js"></script>
+
+    <!-- Custom Stylesheets. ripple.css includes bootstrap, font stuff -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/blog/assets/css/dev-blog2020.css" rel="stylesheet" />
+    <!-- Atom feed -->
+    <link rel="alternate" type="application/atom+xml" title="XRP Ledger Blog Feed" href="/blog/atom.xml" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45576805-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-45576805-2');
+      gtag('config', 'UA-157720658-3', { 'linker': {
+        'domains': ['blog.xpring.io', 'forum.xpring.io', 'xpring.io',
+                    'xrpl.org', 'explorer.xrpl.org', 'testnet.xrpl.org']
+        } }
+      );
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <meta property="og:title" content="Decentralization Strategy Update" />
+  <meta property="og:description" content="&lt;h1&gt;&lt;a href=&#34;/blog/2017/decent-strategy-update.html&#34;&gt;Decentralization Strategy Update&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;As Ripple progresses towards further decentralizing the XRP Ledger, we want to make server operators and members of the XRP Ledger community aware of a few upcoming changes to help ensure the reliability and stability of the network as it transitions to a distributed architecture with fully decentralized validators.&lt;/p&gt;" />
+  <meta name="twitter:title" content="Decentralization Strategy Update" />
+  <meta property="twitter:description" content="&lt;h1&gt;&lt;a href=&#34;/blog/2017/decent-strategy-update.html&#34;&gt;Decentralization Strategy Update&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;As Ripple progresses towards further decentralizing the XRP Ledger, we want to make server operators and members of the XRP Ledger community aware of a few upcoming changes to help ensure the reliability and stability of the network as it transitions to a distributed architecture with fully decentralized validators.&lt;/p&gt;" />
+  <meta name="twitter:label1" content="Posted" />
+  <meta name="twitter:data1" content="2017-10-17" />
+
+</head>
+
+<body class="xrp-ledger-dev-portal sidebar-primary lang-  dev-blog">
+
+<div class="container-fluid">
+<nav class="top-nav navbar navbar-expand-lg navbar-dark row">
+  <a href="/" class="navbar-brand"><img src="/blog/assets/img/XRPLedger_DevPortal-white.svg" class="logo"  height="44" alt="XRP Ledger Dev Portal" /></a>
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHolder" aria-controls="navbarHolder" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarHolder">
+    <ul class="nav navbar-nav">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="topnav_learn.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Learn</a>
+        <div class="dropdown-menu" aria-labelledby="topnav_learn.html">
+          <a class="dropdown-item" href="/overview.html">Overview</a>
+          <a class="dropdown-item" href="/uses.html">Uses</a>
+          <a class="dropdown-item" href="/history.html">History</a>
+          <a class="dropdown-item" href="/impact.html">Impact</a>
+          <a class="dropdown-item" href="/carbon-calculator.html">Carbon Calculator</a>
+        </div>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="topnav_explore.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
+        <div class="dropdown-menu" aria-labelledby="topnav_explore.html">
+          <a class="dropdown-item" href="/wallets.html">Wallets</a>
+          <a class="dropdown-item" href="/exchanges.html">Exchanges</a>
+          <a class="dropdown-item" href="/businesses.html">Businesses</a>
+          <a class="dropdown-item" href="https://livenet.xrpl.org/">Ledger Explorer</a>
+        </div>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="topnav_docs.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Build</a>
+        <div class="dropdown-menu" aria-labelledby="topnav_docs.html">
+          <a class="dropdown-item top-level-1" href="/docs.html">Docs</a>
+          <a class="dropdown-item top-level-2" href="/concepts.html">Concepts</a>
+          <a class="dropdown-item top-level-2" href="/tutorials.html">Tutorials</a>
+          <a class="dropdown-item top-level-2" href="/references.html">References</a>
+          <a class="dropdown-item top-level-1" href="/dev-tools.html">Dev Tools</a>
+          <a class="dropdown-item top-level-1" href="/blog/">Dev Blog</a>
+        </div>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contribute.html">Contribute</a>
+      </li>
+
+      <li class="nav-item dropdown" id="navbar-search">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="topnav-search-dropdown-toggle"><i class="fa fa-search"></i><span class="sr-only">Open Search</span></a>
+        <div class="dropdown-menu">
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-inline">
+              <div class="input-group">
+                <label class="input-group-prepend" for="topsearchbar"><i class="fa fa-search input-group-text"></i><span class="sr-only">Search site...</span></label>
+                <input id="topsearchbox" name="q" type="text" class="form-control" placeholder="Search site...">
+                <div class="input-group-append d-none d-lg-flex">
+                  <button type="button" class="btn btn-default" data-toggle="dropdown" data-target="topnav-search-dropdown-toggle"><i class="fa fa-times"></i><span class="sr-only">Close Search</span></button>
+                </div>
+              </div><!--/.input-group-->
+            </div>
+          </form>
+        </div><!--/.dropdown-menu-->
+      </li><!--/.dropdown-->
+
+      <li class="nav-item wrap-button">
+        <a class="btn btn-outline-secondary nav-link" href="/get-started.html">Get Started</a>
+      </li>
+
+    </ul><!-- /.navbar-nav -->
+  </div><!--/#navbarHolder-->
+</nav>
+</div>
+  <div class="container-fluid" role="document" id="main_content_wrapper">
+    <div class="row">
+      <!-- Right sidebar first so it's at the beginning for mobile layouts -->
+      <aside class="right-sidebar col-lg-3 order-lg-4" role="complementary">
+  <div class="card" id="page-toc-wrapper">
+    <div class="card-header">
+      <h4>In this post</h4>
+    </div>
+    <ul class="card-body page-toc">
+      <li class="level-1"><a href="#decentralization-strategy-update">Decentralization Strategy Update</a></li>
+<li class="level-2"><a href="#background">Background</a></li>
+<li class="level-2"><a href="#strategy">Strategy</a></li>
+<li class="level-2"><a href="#changes">Changes</a></li>
+<li class="level-2"><a href="#conclusion">Conclusion</a></li>
+
+    </ul>
+  </div>
+      </aside>
+
+      <!-- main column -->
+      <main class="main col-md-7 col-lg-6 order-md-3  " role="main" id="main_content_body">
+  <article class="content">
+    <div class="frontmatter">
+      <span class="date">Posted 2017-10-17</span>
+ to
+<div class="labels-wrap">
+  <ul class="list-inline">
+    <li class="list-inline-item">
+      <a href="/blog/label/features.html" class="badge badge-primary">Features</a>
+    </li>
+  </ul>
+</div><!--/.labels-wrap-->    </div>
+    <div>
+        <h1 id="decentralization-strategy-update">Decentralization Strategy Update</h1>
+<p>As Ripple progresses towards further decentralizing the XRP Ledger, we want to make server operators and members of the XRP Ledger community aware of a few upcoming changes to help ensure the reliability and stability of the network as it transitions to a distributed architecture with fully decentralized validators.</p>
+<h2 id="background">Background</h2>
+<p>The XRP Ledger (formerly called the Ripple Consensus Ledger) was created in 2012, as a trust-based alternative to the proof-of-work consensus mechanism originated by Bitcoin. So far, most of that trust has relied upon validators owned and controlled by Ripple, the company leading development of the XRP Ledger.</p>
+<p>Ripple chose deliberately to be the most trusted validator operator in the network during the initial stages of development of the XRP Ledger. This decision involved trade-offs to prioritize security and scalability ahead of decentralization.</p>
+<p>Since inception, the XRP Ledger has closed over 33 million ledgers, processed over 600 million transactions amounting to more than $15 billion in transaction volume, with no major issues or network forks.</p>
+<p>At present, the XRP Ledger can natively scale to 1,500 transactions per second. With Payment Channels, XRP can theoretically scale to tens of thousands of transactions per second—throughput levels comparable to VISA.  </p>
+<p>With the security, stability, and throughput of the XRP Ledger thoroughly proven, Ripple feels that now is the time for a crucial next step in decentralization, while continuing to improve all aspects of the XRP Ledger software.</p>
+<h2 id="strategy">Strategy</h2>
+<p>To meet the growing needs of customers, and further increase resiliency and stability of the XRP Ledger, Ripple is in a great position to fully execute on its <a href="https://ripple.com/insights/how-we-are-further-decentralizing-the-ripple-consensus-ledger-rcl-to-bolster-robustness-for-enterprise-use/">decentralization strategy</a>, which has been an ongoing process since 2012.</p>
+<p>Phase one includes the diversification of validators by identity, location, hardware and software, in an effort to further mitigate the risk of a single point of failure. At the time of the announcement, 25 validator nodes were running with 5 trusted validators owned and managed by Ripple. Currently, <a href="https://xrpcharts.ripple.com/#/validators">over 70 validator nodes</a> are running globally. During this phase Ripple will be adding 16 more trusted validators, in preparation for phase two.</p>
+<p>During the second phase, for every two of the most reliable, reputable, stable, secure and attested validators added to the recommended list of trusted nodes, one validator node currently controlled by Ripple will be removed, until no entity operates a majority of recommended trusted nodes on the XRP Ledger.</p>
+<p>The validator operators on this recommended list of trusted nodes believe in the long term vision of XRP and want to participate in the consensus process, which involves voting on proposed amendments, modifying fees and validating transactions.</p>
+<h2 id="changes">Changes</h2>
+<p>Before Ripple can progress to phase two, a few changes have to be made to ensure a safe transition.</p>
+<p>With the 0.80.0 release, Ripple will transition its recommended validator list to a new hosted site. This involves a change in the default <code>rippled</code> configuration file. The <code>[validators]</code> field with its static list of trusted validators will be replaced with <code>[validator_list_keys]</code> and <code>[validator_list_sites]</code> fields containing the key Ripple will use to sign its newly recommended validator list as well as the URLs where the dynamic list can be found.</p>
+<p>These changes will allow new validators to be safely added to the recommended validator list for phase two without requiring every <code>rippled</code> operator to manually update their configuration with each new addition.</p>
+<p>It is important to note that, for operators who already use the recommended validator list, no further trust in Ripple is required during phase 1, despite the significant increase of validators under Ripple’s operational control. The validator list currently recommended by Ripple contains 5 validators operated by Ripple, and at the end of phase 1, the list will contain 16 such validators.</p>
+<p>During phases 1 and 2, Ripple strongly recommends that operators use only the default Ripple-provided validator list. Consistent with this recommendation, the next scheduled release of <code>rippled</code>, version 0.81.0, will ship with a default configuration file using that list by default.</p>
+<p>During phase 2, Ripple will begin decommissioning one validator under its operational control for every two third-party validators that demonstrate a strong reputation for stability, security and reliability. Ripple will also be working with other entities to establish independent providers of validator lists.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Ripple remains committed to decentralizing the XRP Ledger and divesting itself of operational control. This multi-phase approach does that, but is intentionally conservative and has been devised with a single goal in mind: to ensure the reliability and stability of the network during the transition period to a fully decentralized and distributed architecture.</p>
+    </div>
+  </article>
+      </main>
+      <!-- Left sidebar last so it's at the end for mobile -->
+      <aside class="sidebar col-md-5 col-lg-3 order-md-1" role="complementary">
+<div class="tree_nav">
+    <!---->
+    <div class="sidenav_parent">
+      <a href="/blog/index.html">XRP Ledger Blog</a>
+    </div><!--/.sidenav_parent-->
+
+  <!---->
+
+    <div id="sidenav" role="tablist" aria-multiselectable="true">
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_1">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_1" aria-expanded="true" aria-controls="sidenav_collapse_1">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/2021/index.html">2021</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_1" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_1">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2021/reserves-lowered.html">Lower Reserves Are Now In Effect</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/rippled-1.7.3.html">Introducing XRP Ledger version 1.7.3</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/ripple-lib-drops-lodash-browsers.html">ripple-lib Drops Lodash Requirement in Browsers</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/xrpl-grants-funding-the-next-phase-of-open-decentralized-innovation.html">XRPL Grants: Funding the Next Phase of Open, Decentralized Innovation</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/rippled-1.7.2.html">Introducing XRP Ledger version 1.7.2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/introducing-xrpl4j.html">Introducing xrpl4j</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/xrpl-node-configurator.html">XRP Ledger Node Configurator</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/introducing-xrpl-py-for-pythonistas.html">Introducing xrpl-py for Pythonistas</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/three-amendments-expected.html">Three Amendments Expected on 2021-04-08</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/message-routing-optimizations-pt-1-proposal-validation-relaying.html">Message Routing Optimizations, Pt. 1: Proposal & Validation Relaying</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/community-spotlight-developing-wallet-protect.html">Community Spotlight: Developing Wallet Protect</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/road-to-xrp-ledger-1-7-improving-efficiency-and-security.html">Road to XRP Ledger 1.7: Improving Efficiency and Security</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2021/rippled-1.7.0.html">Introducing XRP Ledger version 1.7.0</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse1 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_14">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_14" aria-expanded="true" aria-controls="sidenav_collapse_14">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/2020/index.html">2020</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_14" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_14">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2020/rippled-1.6.0.html">Introducing XRP Ledger version 1.6.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/moving-devnet-to-vl.html">Moving Devnet to a Validator List</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/requirefullycanonicalsig-fixqualityupperbound-flowcross-enabled.html">RequireFullyCanonicalSig, fixQualityUpperBound, and FlowCross are Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/developer-reflections-xrp-toolkit.html">Developer Reflections: XRP Toolkit</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/requirefullycanonicalsig-expected.html">The RequireFullyCanonicalSig Amendment is Expected 2020-07-03</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/checks-enabled.html">The Checks Amendment is Now Enabled</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/checks-expected.html">The Checks Amendment is Expected 2020-06-18</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/developer-reflections-xrplorer.html">Developer Reflections: Xrplorer</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/deletableaccounts-enabled.html">DeletableAccounts is Now Enabled</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/get-ready-for-deletable-accounts.html">Get Ready for Deletable Accounts</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/two-fixes-enabled.html">Two Fix Amendments Are Now Enabled</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/deletableaccounts-expected.html">DeletableAccounts and Two Other Amendments Expected Soon</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/testnet-amendments-rippled-1.5.0.html">Postmortem: Testnet Amendments from rippled 1.5.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/rippled-1.5.0.html">Introducing XRP Ledger version 1.5.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/running-an-xrp-ledger-validator.html">Running an XRP Ledger Validator</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/fixcheckthreading-fixpaychanrecipientownerdir-lost-majority.html">fixCheckThreading and fixPayChanRecipientOwnerDir Amendments Lost Majority</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/rippled-1.4.0-upgrade-advisory.html">XRP Ledger version 1.4.0 Upgrade Advisory</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2020/fixcheckthreading-fixpaychanrecipientownerdir-expected.html">Two Fix Amendments are Expected 2020-01-18</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse14 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_32">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_32" aria-expanded="true" aria-controls="sidenav_collapse_32">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/2019/index.html">2019</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_32" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_32">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2019/rippled-1.4.0.html">Introducing XRP Ledger version 1.4.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/xrpl-devnet-launch.html">Discover Upcoming XRP Ledger Amendments and Features with Devnet!</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/fixmasterkeyasregularkey-enabled.html">fixMasterKeyAsRegularKey is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/fixmasterkeyasregularkey-1day.html">fixMasterKeyAsRegularKey is Expected Tomorrow</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/fixmasterkeyasregularkey-expected.html">The fixMasterKeyAsRegularKey Amendment is Expected 2019-10-02</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/testnet-reset.html">XRP Testnet Has Been Reset</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/rippled-1.3.1.html">Introducing XRP Ledger (rippled) version 1.3.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/labeling-the-internet-of-value.html">Labeling the Internet of Value</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/discover-xrp-ledger-explorer.html">Discover the XRP Ledger with Explorer!</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/websocket-tool-update.html">WebSocket Tool Update</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/welcome-to-xrpl-org.html">Welcome to xrpl.org!</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/multisignreserve-enabled.html">MultiSignReserve is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/rippled-1.2.4.html">Introducing XRP Ledger (rippled) version 1.2.4</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/secure-development-practices.html">Protecting the Ledger: Secure Development Practices</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/multisignreserve-expected.html">The MultiSignReserve Amendment is Expected 2019-04-17</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/corrections-to-data-api-xrp-charts-metrics.html">Corrections to Data API / XRP Charts Metrics for 2019-03-23</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/interledger-checkin.html">Interledger Check-in</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/fixtakerdryofferremoval-enabled.html">fixTakerDryOfferRemoval is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/rippled-1.2.3.html">Introducing XRP Ledger (rippled) version 1.2.3</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/fix1578-enabled.html">fix1578 is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/fix1578-expected.html">The fix1578 and fixTakerDryOfferRemoval Amendments are Expected</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/rippled-1.2.2.html">Introducing XRP Ledger (rippled) version 1.2.2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/rippled-1.2.1.html">Introducing XRP Ledger (rippled) version 1.2.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/rippled-1.2.0.html">Introducing XRP Ledger (rippled) version 1.2.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2019/statement-on-the-biased-nonce-sense-paper.html">Statement on the “Biased Nonce Sense” Paper</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse32 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_57">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_57" aria-expanded="true" aria-controls="sidenav_collapse_57">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/2018/index.html">2018</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_57" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_57">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-1.1.2.html">Introducing XRP Ledger (rippled) version 1.1.2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/introducing-history-sharding.html">Introducing History Sharding</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/data-api-validations-changes.html">Updates Coming to Data API</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-1.1.1.html">rippled Version 1.1.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/depositpreauth-fix1515-enabled.html">DepositPreauth is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-1.1.0.html">Introducing XRP Ledger (rippled) version 1.1.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/ripple-lib-1.0.0.html">﻿ripple-lib version 1.0.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/fix1571-enabled.html">fix1571 is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-1.0.1.html">rippled Version 1.0.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/fix1543-fix1571-fix1623-voting.html">fix1543, fix1571 & fix1623 Amendments Open for Voting</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-1.0.0.html">rippled Version 1.0.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/depositauth-fix1513-available.html">The DepositAuth & fix1513 Amendments are Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-0.90.1.html">rippled version 0.90.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-0.90.0.html">rippled Version 0.90.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-validator-key-replacement.html">rippled Validator Key Replacement</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-boost166-warning.html">Boost 1.66 Not Supported for rippled 0.81.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2018/rippled-0.81.0.html">rippled Version 0.81.0</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse57 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card active">
+            <div class="card-header" role="tab" id="sidenav_cat_head_74">
+              <h5 class="card-title">
+                <a class="sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_74" aria-expanded="true" aria-controls="sidenav_collapse_74">&nbsp;</a>
+                <a class="sidenav_cat_title active-parent" href="/blog/2017/index.html">2017</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_74" class="collapse show" role="tabpanel" aria-labelledby="sidenav_cat_head_74">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2017/explanation-of-ripples-xrp-escrow.html">An Explanation of Ripple’s XRP Escrow</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.80.2.html">rippled Version 0.80.2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.80.0.html">rippled Version 0.80.0</a></li>
+
+
+                    <li><a class="active nosubcat-page" href="/blog/2017/decent-strategy-update.html">Decentralization Strategy Update</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/high-scalability-xrp-ledger.html">The Most (Demonstrably) Scalable Blockchain</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.70.2.html">rippled version 0.70.2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/invariant-checking.html">Protecting the Ledger: Invariant Checking</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.70.1.html">rippled version 0.70.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.70.0.html">rippled Version 0.70.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.60.3.html">rippled version 0.60.3</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.60.2-2-rpm.html">rippled RPM version 0.60.2-2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.60.2.html">rippled version 0.60.2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.60.1.html">rippled version 0.60.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/escrow-paychan-fix1368-reminder.html">Escrow, PayChan, and fix1368 Will Be Available in 3 Days</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.60.0.html">rippled Version 0.60.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/trust-line-quality-sendmax.html">Gateway Bulletin: Setting Trust Line Quality with SendMax</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.50.3.html">rippled version 0.50.3</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/ripple-consensus-ledger-can-sustain-1000-transactions-per-second.html">Ripple Consensus Ledger Can Sustain 1000 Transactions per Second</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/ticksize-available.html">TickSize is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/ticksize-3days.html">TickSize Will Be Available in 3 Days</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/ticksize-7days.html">TickSize Will Be Available in 7 Days</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/ticksize-voting.html">TickSize Amendment Open for Voting</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.50.2.html">rippled version 0.50.2</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.50.0.html">rippled version 0.50.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/data-api-load-balancing-test.html">Load Testing Data API</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/response-to-china-cert-report.html">Response to China CERT Report</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2017/rippled-0.40.1.html">rippled version 0.40.1</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse74 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_101">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_101" aria-expanded="true" aria-controls="sidenav_collapse_101">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/2016/index.html">2016</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_101" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_101">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2016/rippled-0.40.0.html">rippled version 0.40.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/flow-available.html">The Flow Amendment is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/flow-reminder.html">The Flow Amendment Will Soon Be Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/flow-voting.html">The Flow Amendment is Open for Voting</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/rippled-0.33.0-hf1.html">rippled version 0.33.0-hf1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/rippled-0.33.0.html">rippled version 0.33.0</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/testnet-ledger-reset.html">Ripple Test Network Ledger Will Be Reset</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/flowv2-vetoed.html">The FlowV2 Amendment Was Vetoed</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/flowv2-voting.html">The FlowV2 Amendment is Open for Voting</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/rippled-0.32.1.html">rippled version 0.32.1</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/trustsetauth-available.html">TrustSetAuth is Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/trustsetauth-reminder.html">TrustSetAuth Will Soon Be Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/trustsetauth-voting.html">The TrustSetAuth Amendment Is Open For Voting</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/multisign-available.html">Multi-Signing Now Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/rippled-0.32.0.html">rippled version 0.32.0 has been released</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/multisign-reminder.html">Multi-Signing Will Soon Be Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/data-api-v2.2.html">Data API v2.2 Released</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/introducing-rippleapi.html">Introducing RippleAPI</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/rippled-0.31.2-updates.html">rippled 0.31.2 and Other Updates</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2016/rippled-0.30.1.html">rippled 0.30.1 Released</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse101 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_121">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_121" aria-expanded="true" aria-controls="sidenav_collapse_121">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/2015/index.html">2015</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_121" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_121">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2015/correction-to-ripple-white-paper.html">Correction to Ripple White Paper</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2015/validator-registry.html">Validator Registry</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2015/introducing-the-data-api.html">Introducing the Data API</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2015/gatewayd-no-longer-available.html">Gatewayd No Longer Available</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2015/ripple-charts-update-payment-volume-and-issued-value.html">Ripple Charts Update: Payment Volume and Issued Value</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2015/do-you-have-what-it-takes-to-be-a-gateway.html">Do You Have What It Takes to Be a Gateway?</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2015/calculating-balance-changes-for-a-transaction.html">Calculating Balance Changes for a Transaction</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse121 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_128">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_128" aria-expanded="true" aria-controls="sidenav_collapse_128">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/2014/index.html">2014</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_128" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_128">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/2014/turn-your-exchange-into-a-ripple-gateway.html">Turn your exchange into a Ripple Gateway</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/why-the-stellar-forking-issue-does-not-affect-ripple.html">Why the Stellar Forking Issue Does Not Affect Ripple</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/release-notes-3-december-2014.html">Release Notes (3 December 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/release-notes-19-november-2014.html">Release Notes (19 November 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/ripplerest-1.3-release.html">ripple-rest 1.3 release</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/release-notes-29-october-2014.html">Release Notes (29 October 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/gateway-advisory-on-partial-payment-flag.html">Gateway Advisory On Partial Payment Flag</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/release-notes-14-october-2014.html">Release Notes (14 October 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/how-ripple-labs-supports-gateways.html">How Ripple Labs supports gateways</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/biweekly-release-notes-17-september-2014.html">Biweekly release notes (17 September 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/biweekly-release-notes-3-september-2014.html">Biweekly Release Notes (3 September 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/use-of-cpp14-in-rippled.html">Use of C++14 in rippled</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/biweekly-release-notes-14-august-2014.html">Biweekly Release Notes (14 August 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/dev-portal-adds-rippled-apis.html">Dev Portal Adds rippled APIs</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/biweekly-release-notes-31-july-2014.html">Biweekly release notes (31 July 2014)</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/xrp-giveaway-for-developers.html">XRP Giveaway for Developers</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/ripple-labs-bounty-program-moves-to-bountysource.html">Ripple Labs Bounty Program Moves To Bountysource</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/introducing-offer-autobridging.html">Introducing: Offer Autobridging</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/curves-with-a-twist.html">Curves with a Twist</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/2014/introducing-ripple-names.html">Introducing Ripple Names</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse128 -->
+
+          </div><!-- /.card -->
+
+        <!---->
+          <div class="card">
+            <div class="card-header" role="tab" id="sidenav_cat_head_156">
+              <h5 class="card-title">
+                <a class="collapsed sidenav_cat_toggler" role="button" data-toggle="collapse" href="#sidenav_collapse_156" aria-expanded="true" aria-controls="sidenav_collapse_156">&nbsp;</a>
+                <a class="sidenav_cat_title" href="/blog/label/index.html">View By Label</a>
+              </h5>
+            </div><!-- /.card-header -->
+
+            <div id="sidenav_collapse_156" class="collapse" role="tabpanel" aria-labelledby="sidenav_cat_head_156">
+              <div class="card-body">
+                <ul class="sidebar_pagelist">
+
+                    <li><a class="nosubcat-page" href="/blog/label/rippled-release-notes.html">rippled Release Notes</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/ripple-lib-release-notes.html">ripple-lib Release Notes</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/advisories.html">Advisories</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/amendments.html">Amendments</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/development.html">Development</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/data-api.html">Data API</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/features.html">Features</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/gateway-bulletins.html">Gateway Bulletins</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/research.html">Research</a></li>
+
+
+                    <li><a class="nosubcat-page" href="/blog/label/security.html">Security</a></li>
+
+
+                </ul>
+              </div><!-- /.card-body -->
+            </div><!-- /#sidenav_collapse156 -->
+
+          </div><!-- /.card -->
+
+    </div><!-- /#sidenav -->
+</div><!-- /.tree_nav -->      </aside>
+    </div><!--/.row (main layout)-->
+  </div>
+
+<footer class="xrpl-footer" role="contentinfo">
+  <section class="container card-grid card-grid-Nx1">
+        <div class="card">
+          <div class="card-header">
+            <h5><a href="/overview.html">Learn</a></h5>
+          </div><!--/.card-header-->
+          <div class="card-body">
+            <div class="children-display">
+              <ul>
+                <li class="level-1"><a href="/uses.html">Uses</a></li>
+                <li class="level-1"><a href="/history.html">History</a></li>
+                <li class="level-1"><a href="/impact.html">Impact</a></li>
+                <li class="level-1"><a href="/carbon-calculator.html">Carbon Calculator</a></li>
+              </ul>
+            </div>
+          </div><!--/.card-body-->
+        </div><!--/.card -->
+
+        <div class="card">
+          <div class="card-header">
+            <h5><a href="/explore.html">Explore</a></h5>
+          </div><!--/.card-header-->
+          <div class="card-body">
+            <div class="children-display">
+              <ul>
+                <li class="level-1"><a href="/wallets.html">Wallets</a></li>
+                <li class="level-1"><a href="/exchanges.html">Exchanges</a></li>
+                <li class="level-1"><a href="/businesses.html">Businesses</a></li>
+              </ul>
+            </div>
+          </div><!--/.card-body-->
+        </div><!--/.card -->
+
+        <div class="card">
+          <div class="card-header">
+            <h5><a href="/docs.html">Build</a></h5>
+          </div><!--/.card-header-->
+          <div class="card-body">
+            <div class="children-display">
+              <ul>
+                <li class="level-1"><a href="/concepts.html">Concepts</a></li>
+                <li class="level-1"><a href="/tutorials.html">Tutorials</a></li>
+                <li class="level-1"><a href="/references.html">References</a></li>
+                <li class="level-1"><a href="/dev-tools.html">Dev Tools</a></li>
+              </ul>
+            </div>
+          </div><!--/.card-body-->
+        </div><!--/.card -->
+
+        <div class="card">
+          <div class="card-header">
+            <h5><a href="/contribute.html">Contribute</a></h5>
+          </div><!--/.card-header-->
+          <div class="card-body">
+            <div class="children-display">
+              <ul></ul>
+            </div>
+          </div><!--/.card-body-->
+        </div><!--/.card -->
+
+  </section>
+
+  <section class="container-fluid p-5 pl-sm-0">
+
+    <div class="absolute_bottom_footer">
+      <span>&copy; XRP Ledger Project 2020</span>
+      <span><a href="https://raw.githubusercontent.com/ripple/ripple-dev-portal/master/LICENSE">License</a></span>
+    </div><!-- /.absolute_bottom_footer -->
+
+  </section>
+</footer>
+
+<!-- Non-blocking resources -->
+<!-- Bootstrap JS -->
+<script src="/blog/assets/vendor/bootstrap.min.js"></script>
+<!-- fontawesome icons -->
+<link rel="stylesheet" href="/blog/assets/vendor/fontawesome/css/font-awesome.min.css" />
+
+<!-- Algolia DocSearch -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: '70de5b9b8ef95460f3c6e04054b325b2',
+indexName: 'xrpl',
+inputSelector: '#topsearchbox',
+algoliaOptions: { 'facetFilters': ["lang:"] },
+debug: false
+});
+</script>
+
+</body>
+</html>

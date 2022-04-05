@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Ethereum: Complete Guide	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/what-is-ethereum-blockchain/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/what-is-ethereum-blockchain</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 17:10:26 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Mazel CrypTOV		</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-ethereum-blockchain#comment-211</link>
+
+		<dc:creator><![CDATA[Mazel CrypTOV]]></dc:creator>
+		<pubDate>Mon, 04 May 2020 01:01:54 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=510#comment-211</guid>
+
+					<description><![CDATA[  This is a very informative article about Ethereum. I really enjoyed reading it. This is very useful for beginners in cryptocurrency who wants to learn more about Ethereum. Thanks for sharing this.]]></description>
+			<content:encoded><![CDATA[<p>  This is a very informative article about Ethereum. I really enjoyed reading it. This is very useful for beginners in cryptocurrency who wants to learn more about Ethereum. Thanks for sharing this.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Akash Chaudhary		</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-ethereum-blockchain#comment-130</link>
+
+		<dc:creator><![CDATA[Akash Chaudhary]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2020 16:13:58 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=510#comment-130</guid>
+
+					<description><![CDATA[ Ethereum 2.0 will be a huge event for eth to surge it&#039;s price new ATH.]]></description>
+			<content:encoded><![CDATA[<p> Ethereum 2.0 will be a huge event for eth to surge it&#8217;s price new ATH.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

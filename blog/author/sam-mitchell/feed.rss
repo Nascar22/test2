@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sam Mitchell &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/author/sam-mitchell/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Thu, 17 Jun 2021 14:49:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>Sam Mitchell &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What Is the 0x Project: A Complete Guide Summary</title>
+		<link>https://atomicwallet.io/blog/academy/0x-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/0x-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Sam Mitchell]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2020 16:44:01 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30523</guid>
+
+					<description><![CDATA[<p>With cryptocurrency becoming more popular and people jumping on the bandwagon daily, it is crucial to understand all&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/0x-complete-guide">What Is the 0x Project: A Complete Guide Summary</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x-guide-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-30524" ></figure>
+
+
+
+<p>With cryptocurrency becoming more popular and people jumping on the bandwagon daily, it is crucial to understand all the moving parts that go with this economic revolution. To get involved in cryptocurrency, you have to go through a centralized cryptocurrency exchange. Because of the horror stories surrounding centralized exchanges, many people shy away.</p>
+
+
+
+<p>Enter the 0x Project. This decentralized exchange “is an open, permissionless protocol allowing for ERC20 tokens to be traded on the Ethereum blockchain.” When version two of 0x is released, it is expected to support more tokens than just ERC20.</p>
+
+
+
+<p>Read on to learn more about 0x and how this protocol platform works.</p>
+
+
+
+<h2 id="a-brief-history-of-0x"><br>A Brief History of 0x</h2>
+
+
+
+<p>In 2016, co-founders Will Warren and Amir Baneali created 0x. They wanted to create a world where assets, stocks, precious metals, currencies, and any other kind of asset could be traded as tokens on a blockchain platform. The entire project was backed by companies such as Jen Advisors, Fintech Blockchain Group, Pantera Capital, and more.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png"  alt=""  class="wp-image-30535"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="0x-technology-and-advantages"><br>0x Technology and Advantages</h2>
+
+
+
+<p>Running on the Ethereum blockchain, 0x is the engine that has been powering popular DeFi exchanges such as Paradex, Bamboo Relay, and Radar Relay and giving them the means to pool their liquidity. 0x offers users open-source tools, such as 0x Launch Kit, Asset Swapper, and 0X instant to make trading digital assets easy.</p>
+
+
+
+<p>The newest version, which went live August 10, 2020, is helping create a more cohesive DeFi system by adding a new set of bridge contracts. These contracts help aggregate liquidity over several DeFi exchange networks. This new version also allows for staking to the 0x protocol and provides market makers incentives to do so by rewarding them with Ethereum currency and additional governance voting power. A new live interface that is coming soon will allow users to stake their tokens with the market maker of their choice.</p>
+
+
+
+<p>Basically, the 0x protocol is what is called a blockchain layer. It is supposed to make it easy to tokenize and asset, product, or commodity while also adding networked liquidity to it. It can be used with stablecoins so they can be collateral for loans or with predication markets, where users can purchase futures that have been pegged to an event outcome or transaction.</p>
+
+
+
+<p>0x also has a vast potential market in order books for digital assets, such as apps or even online gaming, where permanent records of gameplay are needed. These records could be provided to users in a non-fungible token – or NFT – that is tamper-resistant. It could even use an NFT for users who need to keep track of things like collectibles, stocks, bonds, loyalty points for retail operations, and even banking transactions. NFTs are also good options with 0x for generating permanent legal documents that live on the blockchain.</p>
+
+
+
+<h2 id="how-does-0x-work"><br>How Does 0x Work?</h2>
+
+
+
+<p>0x is unlike other decentralized exchanges because it is cheap to use, very accessible, and fast. It uses an off-chain ordering relay to save on “gas” – the cost to make the transaction – during trades. It is also built on the Ethereum blockchain, which is the core of many smart contract-based exchanges that have been decentralized. Using smart contracts, users have full control over their assets, something a centralized exchange does not provide.</p>
+
+
+
+<p>One of the problems of a decentralized exchange 0x tries to resolve is the blockchain transaction cost. Every time a trader wants to deposit their cryptocurrency into a smart contract, they have to execute a blockchain transaction, which is then processed by “miners” who collect a fee for their services. Every transaction has a fee associated with it, and when users make multiple transactions, the fees add up. Plus, the time to process the transaction can vary.</p>
+
+
+
+<p>Using off-chain ordering relays, 0x can lessen the fees charged to the user by “miners.” The protocol is for the transaction to be filled by another user. This saves the blockchain for value transfers and other on-chain settlements while other commands are being filled on the side. This reduces the amount of “gas fees” charged.</p>
+
+
+
+<p>The 0x protocol users relayers, makers and takers to process orders through the blockchain. The relayers are in charge of broadcasting orders, using private or public order books. They host the order books but are unable to execute the actual trade. Relayers are the go-between for the makers who start the transaction and the network. The order is picked up by takers who submit the request to their smart contract and fulfilling the order. When the transaction is complete, the relayer is paid their fee in ZRX, the native token of 0x.</p>
+
+
+
+<p>The ZRX token can then be used as internal currency for the network because it is also an Ethereum token, it is also used for governance over the 0x upgrade system, giving the holder a say in how 0x can be improved and evolved. How much say a user gets depends on how much ZRZ they hold. Token holders also receive protocol liquidity rewards in ETH tokens.</p>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives and Takeaways</h2>
+
+
+
+<p>Unlike the Ether Delta platform that 0x is similar to, 0x does not have a downtime issue when it is being upgraded. This means users of the system will still have access to their transactions even when an upgrade is happening. 0x will use their native ZRX coins to ensure a secure upgrade. As critical governance is important to 0x, the system is set up as a pipeline of smart contracts. Each segment of the pipeline can be removed and upgraded while the system continues to work. Once the segment is upgraded, it is replaced, and the next one is removed, upgraded, replaced, and so on.</p>
+
+
+
+<p>0x has also created a governance system that uses its ZRX tokens for voting and has solid mechanics that dictate how it is governed. To make sure all 0x stakeholders are represented equally and fairly, the governance system has three main phases.</p>
+
+
+
+<p>The first phase, the community managed token registry, is an official on-chain reference for verifying token addresses and exchange rates. Users can reference this registry before they make a transaction for verification purposed. At the moment, the 0x core team is managing it, but it will be converted to a community-managed system.</p>
+
+
+
+<p>The second phase is the community veto power. To ensure the governance system is working correctly and wholly vetted, the core team will test the system by proposing upgrades the community can review. ZRX token holders have the power to veto the upgrades, thereby controlling the 0x platform.</p>
+
+
+
+<p>The third phase, liquid democracy, lets ZRX token holders vote directly on policies governing the protocol and also allows them to delegate their vote to another delegate who can vote for them. The second delegate can also choose their own delegate, and so on. Anyone who doesn’t like the way their delegate voted can take back the delegate’s vote and register their own. The ability to go from direct democracy to representative democracy and back again is liquid democracy.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png"  alt=""  class="wp-image-30546"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="views-on-0x"><br>Views on 0x</h2>
+
+
+
+<p>“Early adoption metrics and [decentralized exchanges] using the ZRX protocol suggest a bright future. DEXs will continue to be developed and deployed during 2018 and beyond, fulfilling the need to decrease the custodial risk inherent in centralized exchanges.” &#8211; Josh Olszewicz, Trader at Techemy Capital Ltd.</p>
+
+
+
+<p>“We are big fans of 0x. As the number of tokens becomes infinite, you need a protocol, not just a central exchange, to find counterparties. Just like you needed a search engine, not just a directory, to find websites as the number became infinite.” &#8211; David Sacks, Co-Founder of Craft Ventures</p>
+
+
+
+<p>“0x is emerging as the leading [decentralized exchange] platform within the Ethereum ecosystem. Not only is the core protocol well-designed and fully functional, but 0x has also incentivized a whole ecosystem of third-party relayers whose services will make using 0x even easier than using a centralized exchange.” &#8211; Myles Snider, Research Associate at Multicoin Capital</p>
+
+
+
+<h2 id="0x-website"><br>0x Website</h2>
+
+
+
+<p>Learn more about the 0x cryptocurrency at the<a target="_blank" href="https://0x.org/" rel="noreferrer noopener">&nbsp;0x Website</a>.</p>
+
+
+
+<h2 id="0x-github"><br>0x Github</h2>
+
+
+
+<p>Learn how developers work on 0x at<a target="_blank" href="https://github.com/0xProject" rel="noreferrer noopener">&nbsp;Github</a>.</p>
+
+
+
+<h2 id="0x-reddit"><br>0x Reddit</h2>
+
+
+
+<p>Discuss 0x on<a target="_blank" href="https://www.reddit.com/r/0xProject/" rel="noreferrer noopener">&nbsp;Reddit</a>&nbsp;with other users.</p>
+
+
+
+<h2 id="0x-twitter"><br>0x Twitter</h2>
+
+
+
+<p>Follow 0x on<a target="_blank" href="https://twitter.com/0xproject" rel="noreferrer noopener">&nbsp;Twitter</a>.</p>
+
+
+
+<h2 id="how-to-store-and-manage-0x"><br>How to store and manage 0x?</h2>
+
+
+
+<p>ZRX tokens can be obtained by becoming a relayer or issued to partnering dApps and future end-users. ZRX tokens can also be bought, sold, or exchanged for other cryptocurrencies on many centralized and decentralized exchanges. The tokens are considered assets, and they are currently valued at a little over $0.2 USD.</p>
+
+
+
+<p>Since ZRX is considered an ERC20 token and abides by the rules and standards of the Ethereum network, your storage solution should be highly secure and one that does not store its private keys in an online fashion. Mobile and desktop wallets are good options, while a hardware wallet will give you the highest protection level but are susceptible to hardware and firmware errors or can be easily misplaced.</p>
+
+
+
+<p>Atomic Wallet currently supports 0x. The wallet provides you with the security you need while managing and exchanging your ZRX tokens. Using a mnemonic seed to generate your private keys, Atomic Wallet gives you total control over your cryptocurrency. Your keys never leave your device. Atomic Wallet provides you with an all-in-one solution to manage ZRX and 300+ other cryptocurrencies along with the top ones.</p>
+
+
+
+<p>Additionally, the 0x protocol allows users to make a wallet to wallet trading without using a centralized exchange. dApps are starting to use wallet to wallet in their projects. It allows them to have fast, low-cost operations without the need to sacrifice security or personal management of assets. Additionally, since it is built on the Ethereum blockchain, it uses smart contracts to help secure the protocol. 0x is a complementary solution to exchange platforms.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png"  alt=""  class="wp-image-30557"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/0x2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>0x protocol has a good chance of being the future of cryptocurrency exchanges, if not the premier exchange. It provides immense flexibility and is consistently evolving. Version two will be released soon, and it will provide support for all token standards beyond just ERC20 tokens. When version two is released, users will be able to trade, say, a CryptoKitty for a ZRX token.</p>
+
+
+
+<p>Version two will also make it easier for users to write their own smart contracts externally and then applying them to the 0x platform. It will be able to support the Trezor hardware wallet and will less susceptible to scams thanks to the implementation of the EIP 712. It will also allow multiple orders to be batched together.</p>
+
+
+
+<p>Some of the features and benefits of 0x include:</p>
+
+
+
+<ul><li>Network liquidity allowing users to tap a shared pool of assets</li><li>Flexible integration as it is a modular system and allows the addition of exchange functionality</li><li>Robust smart contracts that have been vetted through two rounds of intense security audits</li><li>An extensible API that lets users plug in their own smart contracts</li><li>Off-chain order relays with the on-chain settlement that reduces blockchain bloat and provides gas efficiency.</li></ul>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/0x-complete-guide">What Is the 0x Project: A Complete Guide Summary</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/0x-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Is Synthetix and how does it work &#8211; Complete Guide</title>
+		<link>https://atomicwallet.io/blog/academy/synthetix-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/synthetix-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Sam Mitchell]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2020 16:36:55 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30428</guid>
+
+					<description><![CDATA[<p>Built on Ethereum, Synthetix is a token trading platform that lets its users create real-world assets, such as&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/synthetix-complete-guide">What Is Synthetix and how does it work &#8211; Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx-guide-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-30430" ></figure>
+
+
+
+<p>Built on Ethereum, Synthetix is a token trading platform that lets its users create real-world assets, such as shares and stocks that can be bought and traded on the platform using cryptocurrency. It started as a stablecoin before moving over to DeFi.</p>
+
+
+
+<p>Users bet on &#8220;Synths&#8221; – the crypto asset, stock, precious metal, currency, or, others, item – using ERC20 tokens. The asset price has been copied from the real world and assigned to the &#8220;Synth&#8221; on the Ethereum blockchain. While holding as Synth is not the same as holding the real asset, users can still bet on the asset&#8217;s price.</p>
+
+
+
+<p>Read on to learn more about Synthetix, Synths, and how this cryptocurrency trading platform works.</p>
+
+
+
+<h2 id="a-brief-history-of-synthetix"><br>A Brief History of Synthetix</h2>
+
+
+
+<p>Known initially as Havven, Synthetix had its first ICO sometime in February 2018 for its ERC20 token, HAV. At the time, one HAV was valued at $0.67. At launch, the company&#8217;s goal was to set up a decentralized payment system that used dual tokens to issue stablecoins that were back with HAV as collateral. Holders of HAV tokens received a percentage of the fee generated by all of the stable coin transactions as a reward for keeping it stable.</p>
+
+
+
+<p>By November of 2018, the company realized that they could do more than just create stable coins. The rebranded and became Synthetix in November 2018. HAV became known as SNX.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png"  alt=""  class="wp-image-30441"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx1-1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="synthetix-technology-amp-advantages"><br>Synthetix Technology &amp; Advantages</h2>
+
+
+
+<p>Using a multi-token infrastructure, Synthetix is based on a system of collateral, staking, inflation, and fees. It uses two types of tokens, SNX and Synths. SNX is locked up to create sUSD – or a synthetic USD. The sUSD acts as the debt, and the SNX is the collateral. SNX can also be staked as collateral to create any type of synthetic asset, not just the sUSD.</p>
+
+
+
+<p>For this to happen, Synthetix needs to get accurate information from the real world. For example, it needs to know the current price of everything from the Japanese Yen or the stock value of companies like Tesla. Thanks to a partnership with ChainLink, Synthetix uses their decentralized oracle system to bring reliable information onto the blockchain.</p>
+
+
+
+<p>What is interesting about the Synthetix platform is that, using an oracle to tack price movements, a user can mint stable coins attached to the fiat currencies of any mental, indices, or commodities offered on the blockchain. Users don&#8217;t have to deal with the real-world exchange to get exposure to the cryptocurrency of their choice. If they earn a profit, it is paid in the Synth attached to the fiat currency. For example, a profit earned in sBTC would be paid in sUSD.</p>
+
+
+
+<p>Atomic Wallet currently supports 9 assets that are staking and is planning on exploring the option to implement SNX decentralized staking as well.</p>
+
+
+
+<h2 id="how-does-synthetix-work"><br>How Does Synthetix Work?</h2>
+
+
+
+<p>Synthetix works on a blockchain platform, and the SNX token is the foundation of it. It is used as collateral so that users can create any synthetic asset – Synth – on the platform. Once the Synth is minted, SNX is locked into the smart contract, and the user gets one-fifth of sUSD against the locked SNX. According to Synthetix, the optimal collateralization ratio is 750%. This helps keep Synths from being over minted and restore the sUSD to USD ratio peg. Minters who keep this ratio get rewards that we&#8217;ll talk about later.</p>
+
+
+
+<p>To mint a Synth, a user has to have SNX. These can be purchased from an exchange like CoinGecko and Uniswap/Kyber. Using the dApp Mintr, users can transfer their SNX to their digital wallet. They will then be taken to a page where they have the option to mint sUSD. Users need to remember that there are fees involved in minting and should hold onto some cryptocurrency, like ETH, in their wallet to pay the fees.</p>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives and Takeaways</h2>
+
+
+
+<p>Because of the token incentive model Synthetix offers, it has become a successful platform. Holders of SNX can stake it for the return of fees from the Synthetix exchange as well as rewards from the monetary policy. Once a new Synth has been made and the SNX staked and locked, there are fewer tokens in the market, making the SNX more valuable. From the beginning of 2019 to the end, SNX rose from $0.03 to over $1.30.</p>
+
+
+
+<p>Users of the platform understand how to trade Synths to get the prices to do what they want. Synth holders can sit tight on their assets in the hope the price goes up, or they go short, betting that the price will decrease. The rewards have kept 85% of the total SNX supply locked up in the protocol.</p>
+
+
+
+<p>By integrating their sUSD stable coin with the margin trading platform bZx at the beginning of 2020, they showed the cryptocurrency industry the &#8220;money lego&#8221; properties of DeFi. However, the biggest takeaway of Synthetix is the future ability to trade for real-world stocks like Apple and Tesla on the Ethereum platform. This is expected to be a game-changer for cryptocurrency investors all around.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png"  alt=""  class="wp-image-30452"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="views-on-synthetix"><br>Views On Synthetix</h2>
+
+
+
+<p>&#8220;Synths provide exposure to a range of assets, so while synthetix.exchange is the primary place to trade Synths, a wide distribution is critical to the success of the project.&#8221; &#8211; Michael Anderson, Framework Ventures&#8217; co-founder</p>
+
+
+
+<p>&#8220;Synthetix is at the forefront of the DeFi movement by offering synthetic assets to users worldwide, thus providing access to specialized trading strategies. Given the massive size of traditional financial markets, which reaches into the hundreds of trillions of dollars, Synthetix has the potential to create a massive tokenized market on the Ethereum blockchain.&#8221; – Steve Walters, CoinBureau</p>
+
+
+
+<p>&#8220;I have been working with Synthetix for nearly 2 years. They have been very accommodating in that time, allowing us to customize our MI requirements and have strived to match our expectations when relying on customer data.&#8221; – Bimal A., Project Coordinator</p>
+
+
+
+<h2 id="synthetix-website"><br>Synthetix Website</h2>
+
+
+
+<p>Learn more about the Synthetix cryptocurrency at<a href="https://www.synthetix.io/"> https://www.synthetix.io/</a></p>
+
+
+
+<h2 id="synthetix-github"><br>Synthetix Github</h2>
+
+
+
+<p>Learn how developers work on Synthetix on the <a href="https://github.com/Synthetixio">Synthetix Github</a>. </p>
+
+
+
+<h2 id="synthetix-reddit">Synthetix Reddit</h2>
+
+
+
+<p>Discuss Synthetix on <a href="https://www.reddit.com/r/synthetix_io/">Reddit</a> with other users.</p>
+
+
+
+<h2 id="synthetix-twitter"><br>Synthetix Twitter</h2>
+
+
+
+<p>Follow Synthetix on <a href="https://twitter.com/synthetix_io">Twitter</a>.</p>
+
+
+
+<h2 id="how-to-store-and-manage-synthetix"><br>How To Store And Manage Synthetix?</h2>
+
+
+
+<p>In order to unlock the SNX in your wallet, you need to look at the &#8220;Total sUSD debt owed&#8221; in your Synthetix dashboard and then burn that amount of sUSD. This debt owed fluctuates based on all the other SNX holders on the system. So, if the system debt rises, your debt will go up proportionately based on the debt you owe at the time you joined. However, if the sUSD you minted doesn&#8217;t cover your debt owed, you will have to purchase additional sUSD to recover your SNX.</p>
+
+
+
+<p>If the price of SNX drops and is less than the initial value of the SNX when you first minted your sUSD, your ration will drop below the 750% you need to maintain. You can fix this by burning or buying sUSD or buying more SNX. You want SNX to increase, allowing you to mint more sUSD and contribute it to the network or hold it.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png"  alt=""  class="wp-image-30463"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/snx2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>As an SNX minter, a user is eligible for two different kinds of rewards. They can get SNX staking rewards, and they are eligible to get a portion of the fees that are generated by the trading volume. They have to maintain a ratio of 682% in order to claim the rewards. If the ratio goes below that, they have to get it back to 750% before they can claim their rewards.</p>
+
+
+
+<p>Rewards can be claimed and added to your wallet on a weekly basis by clicking on the &#8220;Rewards&#8221; tab. The amount of the rewards the user can claim is based on the total Synth balance in the system every Wednesday at 8 am UTC. There is a two-week window to claim them. Any rewards that are not claimed are rolled into the pool and distributed the next period.</p>
+
+
+
+<p>Synthetix is currently supported by Atomic Wallet. The wallet will let you manage and exchange SNX, among other 60+ digital assets pairs anonymously and securely. You have total control over your funds, and your private keys never leave your device being generated by a mnemonic seed. Considered one of the best solutions for managing SNX, Atomic Wallet is easy to install. Try it out with your SNX in the Atomic interface.</p>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>Synthetix has gained popularity and has been in the cryptocurrency spotlight as it has climbed to the top of the DeFi pile. SNX is experiencing an excellent appreciation for minters interested in the platform&#8217;s trading asset aspect. It has a Discord channel, another way of learning more about this particular cryptocurrency platform and what it has to offer now and in the future.</p>
+
+
+
+<p>Anyone investing in Synthetix can find all the information they need on the cryptocurrency on the Synthetix dashboard. The dashboard also shows the user other statistics required, such as the current fees claimable in the fee pool or how sUSD and the USD are pegged.</p>
+
+
+
+<p>Additionally, SNX holders can track different metrics for the Synthetix platform using DeFi Pulse. This website will help users look at different products that are listed as decentralized finance. It splits them into different categories – such as lending, payments, derivatives, etc. – and they can watch these various projects grow.</p>
+
+
+
+<p>Right now, Synthetix is listed in the 4th place based on the amount of USD that is locked. The platform is showing a rise since the end of June, and that is good for the SNX that is locked. It means SNX has grown in value, and it is being held as an asset. This also is indicative of the confidence investors currently have in Synthetix as a platform and cryptocurrency.</p>
+
+
+
+<p>Users need to keep an eye on the amount of SNX that are available. If that number drops, other users are withdrawing tokes to mint. If the supply increases, then users are planning on selling. The decrease in supply is better for the price of SNX.</p>
+
+
+
+<p>To learn more about Synthetix, Synths, and SNX, potential users should join the conversation about it on the Synthetix social media platforms. Other users will be able to explain how it is working, what kind of success they have had with it, and help you decide whether it is something you want to invest in.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/synthetix-complete-guide">What Is Synthetix and how does it work &#8211; Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/synthetix-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Is Ren crypto: Beginners Guide</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-ren-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-ren-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Sam Mitchell]]></dc:creator>
+		<pubDate>Wed, 29 Jul 2020 15:16:19 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30223</guid>
+
+					<description><![CDATA[<p>Republic Protocol – or REN – is a cryptocurrency project focused on changing the digital currency sector, starting by simplifying value exchange over a vast array of blockchains. It has been built to help with cross-chain liquidity, providing users with better privacy and to be used with the financial markets. This project has gained a lot of interest as it is trying to build a decentralized dark pool of cross-chain cryptocurrency trading. Here we will discuss everything you need to know about REN and how this cryptocurrency can work for you.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-ren-complete-guide">What Is Ren crypto: Beginners Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren-guide-1920x1080.png"  alt="REN Guide cover"  class="wp-image-30224" ></figure>
+
+
+
+<p>Republic Protocol – or REN – is a cryptocurrency project focused on changing the digital currency sector, starting by simplifying value exchange over a vast array of blockchains. It has been built to help with cross-chain liquidity, providing users with better privacy and to be used with the financial markets. This project has gained a lot of interest as it is trying to build a decentralized dark pool of cross-chain cryptocurrency trading. Here we will discuss everything you need to know about REN and how this cryptocurrency can work for you.</p>
+
+
+
+<h2 id="a-brief-history-of-ren-nbsp"><br>A Brief History Of Ren&nbsp;</h2>
+
+
+
+<p>REN, founded in late 2017, will allow traders to start placing orders in a secure and completely private manner using their open-source dark pool protocol. Ethereum, ERC20, and Bitcoin will be available in this pool. It will use multi-party computations to develop a matching engine to cross orders on the decentralized order book for users.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png"  alt="pic 2"  class="wp-image-30235"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>A dark pool, which REN functions on, is basically an Over-The-Counter (OTC) marketplace for institutional investors to anonymously execute large block orders of cryptocurrency. The dark pool keeps the exchange out of the general public, which is why they are anonymous. The dark pools are mostly operated by investment banks and other market movers and shakers, allowing them to get large block orders at fair and reasonable prices.&nbsp;</p>
+
+
+
+<p>In late 2018, the Republic Protocol had its beta mainnet launch. It made sure a wave that REN climbed into the top 100 tokens for the next few months after the beta launch. It was clear that there was an interest in both the technological model REN was built on and the business model. Both were delivering limitless value transfers across as many blockchains as it could. It also offered zero knowledge-based transfers of the REN token. It is hoped that once REN is fully implemented, it will serve as a bridge between traditional finance and the cryptocurrency sector.</p>
+
+
+
+<p>Prior to the beta launch, there was an initial coin offering for REN, and it raised $34 million. Founder Taiyang Zhang and Loong Wang founded the project in Australia. The country opted to join forces with them to create the Republic Protocol. This ultimate crypto-based trading platform offered levels of privacy and shared liquidity that had not been seen in the cryptocurrency sector before.</p>
+
+
+
+<h2 id="ren-technology-and-advantages"><br>Ren Technology And Advantages</h2>
+
+
+
+<p>As REN continues to grow and add general applications in the future, it’s the main focus at the moment is supporting private and decentralized finance. It has three main architectural components that make up most of the underlying design, divided into layers. The first layer is the zero-knowledge transaction layer. This layer provides the user a place for storing and transferring REN tokens without revealing the amount of the transaction or how much the user has in their cryptocurrency wallet.</p>
+
+
+
+<p>The second layer, the interoperability layer, handles all of the trustless swaps on the blockchains. It acts as a bridge between the tokens that are featured on the blockchain. The last layer, the dark pool, has secret order matching engines that process orders only the owners know of. Using Darknodes, REN checks orders with Darknodes against the distributed hidden order book. This allows the orders to be opened without revealing the price of the order or the volume. Only the exchange itself knows this information. When paired with the other two layers, transactions are done in full privacy.</p>
+
+
+
+<p>REN runs on Ren Virtual Machine – or RenVM – which is similar to a blockchain. It is replicated over many physical machines that are secured to the VM by running on Darknodes. In exchange for fees, these machines help with computing and disk storage resources. Anything executed on RenVM is hidden from Darknodes to protect user’s privacy.</p>
+
+
+
+<p>RenVM also has a dedicated software development kit (SDK) that is a plug-in for DeFi applications. The SDK is an open-source technology that helps the existing financial systems by removing the financial burden from it caused by intermediary applications. The decentralized layer allows RenVM to be integrated with applications or smart contracts on the blockchain. RenVM was built to help support privacy and interoperability features.</p>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives And Takeaways</h2>
+
+
+
+<p>Touted as an all-around cryptocurrency solution, REN has been leaning heavily towards financial applications. The REN Virtual Machine (RenVM) has been at the forefront of the Republic Protocol’s marketing effort because of what it can provide. REN promises easy access to inter-chain liquidity by developing the RenVM for use with decentralized applications (DApps). Existing DApps should be more customizable so that business applications that need decentralization and trustless environments.&nbsp;</p>
+
+
+
+<p>This also allows tokens from any supported blockchain to be available for existing smart contracts with the REN eliminating any need to wrap or unwrap them. This means that cryptocurrencies can be integrated into existing decentralized exchanges and liquidity pools. REN’s ecosystem can also support the development and deployment of general-purpose applications using the “zero-knowledge proof” system mentioned above.</p>
+
+
+
+<p>The big push behind Republic Protocol is their insistence on user’s privacy. The platform wants users to be able to work in the applications, states and inputs that remain secret to others on the network. This will help REN support confidential lending, collateralization, and exchanges in the financial world. It is hoped that REN will be able to provide the privacy protection needed to run more advanced financial transactions on blockchains thanks to the full sovereignty of their data.</p>
+
+
+
+<p>This goes hand-in-hand with REN’s focus on interoperability and communication between different blockchain ecosystems. As they call it, this interoperable liquidity would allow Ethereum to support ZCash with help from REN, as an example, without compromising ZCash’s privacy protocols. REN also uses secret scripts to respond to events on different blockchains. This supports the ability to perform a transaction without revealing the user’s input, output states.</p>
+
+
+
+<p>Finally, a trusted intermediary is not needed when operating on a REN dark pool. Dark pools – exchanges or private financial platforms – allow for trading securities based on how they are placed and executed on hidden order books. This is especially appealing to investors who wish for full anonymity during an operation. REN provides for cross-chain trading of various tokens, and the introduction of the REN token provides additional incentive to engage in trading.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png"  alt="pic 3"  class="wp-image-30246"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="ren-website"><br>Ren Website</h2>
+
+
+
+<p>Learn more about the Ren cryptocurrency at&nbsp;<a target="_blank" href="https://renproject.io/" rel="noreferrer noopener">https://renproject.io/</a>&nbsp; &nbsp;&nbsp;</p>
+
+
+
+<h2 id="ren-github"><br>Ren Github</h2>
+
+
+
+<p>Learn how developers work on Ren at&nbsp;<a target="_blank" href="https://github.com/renproject" rel="noreferrer noopener">https://github.com/renproject</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+
+
+<h2 id="ren-reddit"><br>Ren Reddit</h2>
+
+
+
+<p>Discuss Ren on Reddit at&nbsp;<a target="_blank" href="https://www.reddit.com/r/RenProject/" rel="noreferrer noopener">https://www.reddit.com/r/RenProject/</a>&nbsp;with other users.</p>
+
+
+
+<h2 id="ren-twitter"><br>Ren Twitter</h2>
+
+
+
+<p>Follow Ren on Twitter at&nbsp;<a target="_blank" href="https://twitter.com/renprotocol" rel="noreferrer noopener">https://twitter.com/renprotocol</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+
+
+<h2 id="how-to-store-and-manage-ren"><br>How To Store And Manage Ren?</h2>
+
+
+
+<p>REN tokens are available for trading on cryptocurrency exchanges like Binance. As of late July 2019, REN stood at $78 million, with 775 million tokens in circulation. Only a maximum supply of 1,000,000,000 REN tokens limits the active Darknodes to 10,000.</p>
+
+
+
+<p>Ren is currently supported by&nbsp;<a target="_blank" href="https://atomicwallet.io/digibyte-wallet" rel="noreferrer noopener">Atomic Wallet</a>. Atomic Wallet will let you manage and exchange Ren with your bank card. You have total control over your funds, and your private keys generated by a mnemonic seed that never leave your device. Atomic Wallet is one of the best solutions to storing, sending, and exchanging. Install and try out the app now to manage your Ren in the Atomic Wallet interface.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png"  alt="pic 4"  class="wp-image-30257"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/ren2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>As of June 2020, RenVM was released to mainnet after extensive designing, testing, and auditing. CTO Loong Wang claims that “This is, by far, the greatest achievement of the REN project to date. With it, begins a new era of cross-chain interoperability, where we can finally begin breaking down the silos between chains.” So far, REN has seen no down-time, no mint failures, and no burn failures.</p>
+
+
+
+<p>The company is now looking towards open sourcing some of their algorithms, both technical and non-technical. This makes it easier to iterate, test and understand how they will work when added into the platform. There have been more optimizations to REN as well as work on the codebase to give users a simpler, safer, easier, and faster system. The development team has also started working on expanding and standardizing the interface to support more chains in preparation for cross-chain transactions on new chains, starting with Substrate.</p>
+
+
+
+<p>Republic Protocol is making great strides towards helping financial institutions and other investors make the cryptocurrency exchanges they need. REN will support multiple blockchains, allowing smart contracts and other user transactions to remain anonymous and safe. It will be adding additional general applications to the platform, providing users with a more robust private decentralized finance platform.</p>
+
+
+
+<p>The RenVM engine that supports the platform is currently the only interoperability solution in the cryptocurrency sector that can scale and “allow for secret computation over multiple input methods and by multiple parties. This network and its SDKs enable developers to provide DeFi applications with cross-chain functionality. It serves as a bridge between the blockchains and the traditional financial world. It gives even the first-time user the ability to experience seamless and decentralized interoperability the first time they use the platform. Any DeFi application can use RenVMs capabilities and applications with their existing smart contracts.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-ren-complete-guide">What Is Ren crypto: Beginners Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-ren-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What Is Chainlink: An Ultimate Complete Guide</title>
+		<link>https://atomicwallet.io/blog/academy/chainlink-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/chainlink-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Sam Mitchell]]></dc:creator>
+		<pubDate>Fri, 17 Jul 2020 15:48:18 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30050</guid>
+
+					<description><![CDATA[<p>This article discusses how Chainlink uses smart contracts and cryptocurrency to provide goods and services to users.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/chainlink-complete-guide">What Is Chainlink: An Ultimate Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/Chainlink-Guide-1920x1080.png"  alt="Chainlink cover"  class="wp-image-30051" ></figure>
+
+
+
+<p>Understanding cryptocurrency and all the available types is a pretty deep process. One that stands out as being reliable is Chainlink. This cryptocurrency was developed on a platform that connects the world of smart contracts to real-world applications using blockchain technology. A smart contract is a way of facilitating the trade of money for a service or product. It uses “oracles,” a third-party service, to connect the smart contract to the real-word data.</p>
+
+
+
+<p>Blockchains use math to encrypt them and keep them safe. Each blockchain is its own unit, separate from other blockchains. Trying to get information into the blockchain from the real world is tricky and makes the vulnerable. Chainlink uses a network of nodes, a type of middleman, between the real world and different blockchains to keep them safe while linking to traditional payment systems with sacrificing security. This article discusses how Chainlink uses smart contracts and cryptocurrency to provide goods and services to users.</p>
+
+
+
+<h2 id="a-brief-history-of-chainlink"><br>A Brief History of Chainlink</h2>
+
+
+
+<p>Sergey Nazarov, the current CEO, and Steve Ellis, the current CTO, founded Chainlink in 2014. Their initial coin offering in 2017 raised $32 million and created 1 billion LINK tokens. They launched on Ethereum in May of 2019. Both Nazarov and Ellis showed interest in the cryptocurrency world back in 2011.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png"  alt="chainlink 2014"  class="wp-image-30195"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain2-1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>There are two main architectural components to Chainlink. There is the on-chain infrastructure that consists of oracle contracts deployed by Ethereum. Then there is the off-chain infrastructure, which processes the requests from users. These two architectures work in tandem to secure the cryptocurrency and protect the people who have invested in it. It has a three-step verification process for every transaction.</p>
+
+
+
+<h2 id="chainlink-technology-and-advantages"><br>Chainlink Technology and Advantages</h2>
+
+
+
+<p>Chainlink uses its unique structure to close the vulnerability gap between decentralized applications (DApps) and the outside world. Chainlink protects the data points that can be manipulated, falsified or compromised, keeping hackers from easily getting a hold of user’s information and stealing it as well as their cryptocurrency. It also uses technology to secure hardware and provide “trusted-execution environments” for each transaction.</p>
+
+
+
+<p>It is a decentralized oracle network that provides data to people who are willing to pay for it. The user identifies the data they need, and using smart contracts, Chainlink gathers the data from providers and returns it to the user securely. So where does the cryptocurrency part of it come in?</p>
+
+
+
+<p>When the user picks the data they need from the system; providers bid on the request so that they are the ones that send the data. The providers have to put up LINK tokens when they bid on the request. If the provider wins the bid, they send the data onto the blockchain for the user to collect. If the provider misbehaves, such as providing incorrect or false data, they lose the LINK tokens they put up. If the oracle reputation system approves the data, the provider gets paid.</p>
+
+
+
+<p>LINK tokens can be earned by being a provider or by purchasing them on cryptocurrency sites.</p>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives and Takeaways</h2>
+
+
+
+<p>Chainlink continues to grow, and their main objective is to ensure security on the network through the distribution of data and the oracles that check the data. Currently, it is building its network of users and operators in the hopes of becoming more robust with networking that is valuable. They are looking for new partnerships as well as promoting cryptocurrency education, events and relationships.</p>
+
+
+
+<p>Up until Chainlink launched, there was no bridge between smart contracts on blockchain systems and the real world. Businesses who refused to use blockchain technology had no access to smart chains. By bridging the gap and providing oracles that decentralize the process used to access the smart contracts, Chainlink provided businesses with a way to utilize them. It is currently the only cryptocurrency that does this.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png"  alt="chainlink provides"  class="wp-image-30096"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h3 id="chainlink-provides"><br>Chainlink provides:</h3>
+
+
+
+<ul><li>A highly decentralized and secure infrastructure manned by teams of node operators that have been cleared of security issues and with strong Sybil resistance</li><li>High-quality data sources that are validated rigorously with multiple accuracy checks before the smart contract is triggered</li><li>End-to-end security for your smart contract that is easily verifiable and immutable</li><li>A shared data resource that is well maintained through an open-source community</li><li>Time-tested and proven oracle networks that provide tamper-resistance</li><li>Longest running DeFi oracle to secure assets</li><li>Smart contracts connected to real market prices expected by the users</li></ul>
+
+
+
+<p>Chainlink prices are expected to continue climbing as more cryptocurrency users start looking for better ways to obtain data and pay for them. The cryptocurrency community is driving the climb thanks to education efforts on smart contracts and how they are used.</p>
+
+
+
+<h2 id="views-on-chainlink"><br>Views On Chainlink</h2>
+
+
+
+<p>“We really did our due diligence and looked around, and we said well Chainlink is definitely the most established, and every time we dealt with them the level of expertise was incredible, so I feel like we are in good hands.” – Justin Moses, CTO, Synthetix</p>
+
+
+
+<p>“Working with Chainlink for v3’s oracle requirements made perfect sense. More than anything, we appreciate the fact that they are equally unwilling as us to compromise on security guarantees – that’s what stands out.” – Daniel Wang, CEO, Loopring</p>
+
+
+
+<p>“Ethereum Dapps (i.e. smart contract applications) request data from Chainlink, which in turn retrieves data from a web service built with Google App Engine and Big Query.” – Allen Day, Science Advocate, Google</p>
+
+
+
+<p>“In sum, Google’s partnership with Chainlink enables Ethereum app builders using Google software to integrate data from and to sources outside the blockchain.” Avivah Litan, VP Distinguished Analyst, Gartner</p>
+
+
+
+<p>“We’re convinced of the importance of middleware solutions, and it has been great to watch the Chainlink project evolve from initial concept to a fully executed and widely needed tool that infinitely expands the usefulness of smart contract blockchain platforms.” – Fran Strajnar, Co-Founder and Chairman, BNC</p>
+
+
+
+<h2 id="chainlink-website"><br>Chainlink Website</h2>
+
+
+
+<p>Learn more about the Chainlink cryptocurrency at the <a href="https://chain.link/">official website</a>.</p>
+
+
+
+<h2 id="chainlink-github"><br>Chainlink Github</h2>
+
+
+
+<p>Learn how <a href="https://github.com/smartcontractkit/chainlink">developers work</a> on Chainlink.</p>
+
+
+
+<h2 id="chainlink-reddit"><br>Chainlink Reddit</h2>
+
+
+
+<p>Discuss Chainlink on <a href="https://www.reddit.com/r/Chainlink/">Reddit</a> with other users.</p>
+
+
+
+<h2 id="shainlink-twitter"><br>Сhainlink Twitter</h2>
+
+
+
+<p>Follow Chainlink on <a href="https://twitter.com/chainlink">Twitter</a>.</p>
+
+
+
+<h2 id="how-to-store-and-manage-link"><br>How to store and manage LINK?</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png"  alt="store LINK"  class="wp-image-30062"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/chain1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>Even though Chainlink’s native ERC20 tokens are only a little over a year old, they can be purchased in over 10 cryptocurrency exchanges. Most of the exchanges accept Bitcoin and Ether, although a few can also take ETH and Tether. LINK cannot be acquired on an exchange that takes fiat currencies at this time.</p>
+
+
+
+<p>Because Chainlink is on the Ethereum blockchain, it can be stored and managed by any wallet that supports Ethereum and ERC20 tokens.</p>
+
+
+
+<p>Chainlink is currently supported by Atomic Wallet. This software wallet will let you manage and exchange Chainlink among other 60+ assets anonymously and securely right in the interface. You have total control over your funds, and your private keys are unique being generated by a mnemonic seed. It never leaves your device. Atomic Wallet provides solutions to storing, sending, and exchanging Chainlink. It has its own backend to aggregate data from different sources that provides reliable data for users. However, the team is looking into the addition of LINK oracle as one of our trusted sources.</p>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>By utilizing smart contracts, businesses get tamper-proof digital agreements that are highly secure and reliable. They protect both sides of the business deal and provides overall reliability that the input and output of the contract are secure. This is the service Chainlink providers to members of the cryptocurrency community.</p>
+
+
+
+<p>Chainlink is the bridge between real-world data and smart contracts. It is the only platform in the cryptocurrency market that offers this service. It provides users the data they need from providers who bid to fulfill that need safely and efficiently. It offers a service for individuals and businesses who wish to use cryptocurrency as payment while remaining secure.</p>
+
+
+
+<p>Chainlink is great for settling loans, liquidating collateral, calculating interest payments, converting assets such as gold to tokens, and management assets. Using the Chainlink ecosystem, users are given full visibility to the price fees and the teams that are participating in them, movement on LINK prices, and the reports necessary to make informed decisions before triggering the next smart contract.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/chainlink-complete-guide">What Is Chainlink: An Ultimate Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/chainlink-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Compound (COMP): Explained</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-compound-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-compound-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Sam Mitchell]]></dc:creator>
+		<pubDate>Tue, 30 Jun 2020 12:28:15 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=29192</guid>
+
+					<description><![CDATA[<p>Compound (COMP) is a new form of cryptocurrency that gives you the power to debate, propose changes to and vote on how to use and manage this asset, and generate your interest in the cryptocurrency world. In this article, we’ll tell you how COMP came about, its technology, and whether you can impact on how COMP is controlled.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-compound-complete-guide">Compound (COMP): Explained</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/what-is-compoud2-1920x1080.png"  alt="compound cover"  class="wp-image-29193" ></figure>
+
+
+
+<p>Compound (COMP) is an ERC20 token, a new form of cryptocurrency that gives you the power to debate, propose, and vote for changes on the Compound protocol. By owning COMP and supporting its governance, you can also generate interest income. In this article, we’ll tell you how COMP came about, its technology, and whether you can impact on how COMP is controlled.</p>
+
+
+
+<h2 id="a-brief-history-of-compound-comp"><br>A Brief History of Compound (COMP)</h2>
+
+
+
+<p>Founded by former economist Robert Leshner, the Compound (COMP) cryptocurrency features a Decentralized Finance – or DeFi – protocol. Using openly accessible smart contracts that have been built on the Ethereum platform, COMP allows its users to “borrow” tokens like they were taking out a loan. Token lenders lock the borrower’s crypto assets into the loan protocol.</p>
+
+
+
+<p>The borrower pays interest rates that are based on the current supply and demand of the crypto asset. The interest rates are generated every time a block is mined. These loans can be paid back, and the borrowers locked assets released at any time. What is unique about this system is that users of cTokens, Compound’s native token, can earn interest in their money and transfer, trade, and use the money in other applications as needed.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png"  alt="compound pic 2"  class="wp-image-29204"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="compound-comp-technology"><br>Compound (COMP) Technology</h2>
+
+
+
+<p>While Compound looks like other DeFi lending protocols, allowing borrowers to use their crypto assets as collateral to borrow more, Compound’s cTokens are what stand out from the rest of available cryptocurrencies out there. cTokens are ERC20 tokens. They represent the user’s funds that have been deposited into Compound.</p>
+
+
+
+<p>When users borrow against their cTokens, another type of token, such as USDC tokens are added to the borrowing protocol and locked into place. The borrower gets an equivalent amount of cTokens from the protocol in addition to generating tokens that earn interest for them. For example, when USDC tokens are used, they are converted to cUSDC. These tokens earn interest. When the borrower redeems their cUSDC tokens for normal USDC, they also get paid the interest earned in USDC.</p>
+
+
+
+<p>As cTokens are converted in ERC20 form, users can move, trade, and use them in other decentralized applications. cTokens are a great example of how the DeFi movement is allowing different protocols to build different blocks, called “money legos.”</p>
+
+
+
+<p>To have cTokens to use, borrow, or invest, users must deposit into the Compound protocol. New cTokens are then created. These tokens are based on the type of crypto asset the user deposits. For example, if borrowers use ETH as collateral against a loan, they get cETH in return. If they want to earn interest, they will use USDC. Using an Ethereum wallet, users can mint or create cTokens.</p>
+
+
+
+<p>Compound cTokens can be used to earn interest on your crypto assets. Users deposit their crypto assets into their chosen platform and receive cTokens in return. Those users who need to borrow against their crypto assets are protecting themselves when they use Compound. The protocol used for the loan ensures your collateral stays above the value of your loan. This keeps your assets from being liquidated to repay the loan.</p>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives and Takeaways</h2>
+
+
+
+<p>While Compound (COMP) is only trading on a few lesser cryptocurrency exchanges, it is still a hot commodity. Its value doubled days after its release, and many data sites like CoinGecko, The Block, Forbes Crypto, and others are having trouble coming up with COMP’s market value because it is still so new. The cryptocurrency got a boost from Coinbase when they announced that Coinbase Pro users could start trading the tokens at the end of June in every jurisdiction except New York State.</p>
+
+
+
+<p>The current frenzy over COMP is due to the speculation over blockchain systems that let users borrow against cryptocurrency and other digital assets without the need for banks and exchanges. It makes it easy for anyone with cryptocurrency accounts to invest their money and get more out of it without a middleman being involved.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png"  alt="compound pic 3"  class="wp-image-29215"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>There is a concern in the cryptocurrency world that Compound COMP tokens could get caught up in a speculative cycle. The concern is that the market value will grow more than the tokens actual value before going down, triggering a reduction of incentives to hold onto the tokens. If this happens, less interest will be generated in COMP, and the value could tank.</p>
+
+
+
+<p>With COMP already being listed on Coinbase’s Pro and retail platform, the movement of tokens will start happening rapidly. The listing on Coinbase was one of the training platforms fastest following the launch of a new cryptocurrency. The 20% boost it received has helped, and it was trending just under $250 at the end of the week after the listing.</p>
+
+
+
+<p>Soon after launch, this kind of movement could have something to do with users getting free tokens when they borrowed against themselves. Because COMP is a governance token, it is awarded to anyone who uses the platform to borrow or lend, as much as possible. COMP tokens are being used as a swap meet with some users borrowing against themselves up to 30 times to maximize the amount of COMP they can get. Additionally, some COMP were being purchased from spot markets to drive prices up further.</p>
+
+
+
+<p>To protect investors in case COMP takes a downturn, Opyn, the service that protects your DeFi deposits and hedges ETH risks, offered a “put option” on COMP at the price of $150. This means users can sell their COMP for $150 before the expiration date to protect their investment. Users are not obligated to sell their COMP but can if they invest in the “put option.” Right now, the expiration date is July 3. Setting up the “put option,” speculators are watching COMP carefully just in case it does tank. Considering it sold for $80 when COMP hit the market and is now selling around $250, investors buying into the “put option” are capping any downside risks. Cryptocurrency is known to rally after launch before dropping and rebuilding its value.</p>
+
+
+
+<h2 id="compound-website"><br>Compound Website</h2>
+
+
+
+<p>Learn more about the Compound (COMP) cryptocurrency at their <a href="https://compound.finance/governance/comp">official website</a> and on <a href="https://medium.com/compound-finance">Medium</a>.</p>
+
+
+
+<h2 id="compound-blockchain-explorer"><br>Compound Blockchain Explorer</h2>
+
+
+
+<p>Track Compound (COMP) transactions <a href="https://etherscan.io/tokens/label/compound.">here</a>.</p>
+
+
+
+<h2 id="compound-reddit"><br>Compound Reddit</h2>
+
+
+
+<p>Discuss Compound (COMP) on <a href="https://www.reddit.com/r/Compound/">Reddit</a> with other users.</p>
+
+
+
+<h2 id="compound-twitter"><br>Compound Twitter</h2>
+
+
+
+<p>Follow Compound (COMP) on <a href="https://twitter.com/compoundfinance.">Twitter</a>.</p>
+
+
+
+<h2 id="how-to-store-and-manage-compound-comp"><br>How to store and manage Compound (COMP)?</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png"  alt="compound pic 4"  class="wp-image-29226"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/comp3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>When a user interacts with Compound (COMP) – whether they are supplying, withdrawing, borrowing, or repaying – COMP is automatically transferred into their digital wallet as long as the user has accrued at least .001 COMP. All undistributed COMP can be manually withdrawn at any time.</p>
+
+
+
+<p>User can then view their accrued COMP by searching the Compound Governance Explorer profile page. This is done per wallet address. Distributions can only be made to the address that has accrued the COMP. This means that your digital wallet has to be able to send COMP from the same address that is interacting with Compound. If it cannot be done, users could face the problem of not being able to claim the asset, and it will become inaccessible and lost.</p>
+
+
+
+<p>Compound is currently supported in the Atomic Wallet. The wallet will let you manage, exchange, and buy a large number of digital assets with your bank card. You have total control over your funds as your private keys are generated by a mnemonic seed, and all is encrypted and never leaves your device. Atomic is one of the best solutions to storing COMP. Install and try out the app now to manage your COMP in the wallet interface.</p>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>Compound (COMP), an Ethereum protocol, is designed to allow users to borrow, invest, use, and short-sell tokens. Because the protocol has been set up to establish a money market with set interest rates, COMP also provides users with the ability to earn interest when the protocol users use cTokens and ETH.</p>
+
+
+
+<p>Interest rates for loans are based on the money market’s supply and demand for the asset being used for the loan. Users of Compound can supply tokens to a money market to earn interest without the assistance of a central party. They can also borrow tokens against their collateral balance.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-compound-complete-guide">Compound (COMP): Explained</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-compound-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

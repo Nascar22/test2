@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <title>Technology | Polkadot</title>
+  <meta name="description" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#676767">
+  <link href="/assets/css/aos.css?v=eee3815efd" rel="stylesheet" type="text/css" media="all">
+  <link href="/assets/css/material-icons.css?v=eee3815efd" rel="stylesheet" type="text/css" media="all">
+  <link href="/assets/css/custom.css?v=eee3815efd" rel="stylesheet" type="text/css" media="all">
+  <link rel="shortcut icon" href="/favicon.png" />
+
+  
+  
+  <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://polkadot.network/technology/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Polkadot Network" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Polkadot Network" />
+    <meta property="og:url" content="https://polkadot.network/technology/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Polkadot Network" />
+    <meta name="twitter:url" content="https://polkadot.network/technology/" />
+    <meta name="twitter:site" content="@polkadotnetwork" />
+    
+    <meta name="generator" content="Ghost 3.42" />
+    <link rel="alternate" type="application/rss+xml" title="Polkadot Network" href="" />
+    <meta property="og:image" content="https://polkadot.network/content/images/2020/06/Polkadot_OG-1.png">
+
+  <!-- Klaro script – Cookie consent manager -->
+  <script defer type="text/javascript" src="/assets/js/config.js?v=eee3815efd"></script>
+  <script defer type="text/javascript" src="/assets/js/klaro.js?v=eee3815efd"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics with Klaro script -->
+  <script async type="opt-in" data-type="application/javascript" data-src="https://www.googletagmanager.com/gtag/js?id=UA-103354191-1" data-name="googleAnalytics"></script>
+  <script type="opt-in" data-type="application/javascript" data-name="googleAnalytics">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-103354191-1');
+  </script>
+
+  <!-- Google Tag Manager w/ Klaro -->
+  <script type="opt-in" data-type="application/javascript" data-name="googleTagManager">
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5BKVQLS');
+  </script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body class="path_/technology">
+  <header>
+    <nav class="navbar navbar--secondary navbar-expand-lg navbar-light bg-white border-bottom py-0">
+      <div class="container">
+        <div class="collapse navbar-collapse navMenu justify-content-between">
+          <div class="d-flex justify-content-end justify-content-lg-start pt-1 pt-md-0 order-2 order-lg-1">
+            <div class="dropdown dropdown-lng-choice">
+              <button class="btn dropdown-toggle btn-lng-choice mb-1 mb-lg-0" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="lng text-uppercase">en</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item lng-choice" data-lng="en" href="/technology">English</a>
+                <a class="dropdown-item lng-choice" data-lng="es" href="/es/technology">español</a>
+                <a class="dropdown-item lng-choice" data-lng="zh-cn" href="/zh-cn/technology">中文</a>
+                <a class="dropdown-item lng-choice" data-lng="ja" href="/ja/technology">日本語</a>
+                <a class="dropdown-item lng-choice" data-lng="ko" href="/ko/technology">한국어</a>
+                <a class="dropdown-item lng-choice" data-lng="ru" href="/ru/technology">русский</a>
+                <a class="dropdown-item lng-choice" data-lng="tr" href="/tr/technology">Türkçe</a>
+              </div>
+              <script>
+                var lng = document.querySelector('.lng').innerHTML;
+                document.querySelectorAll('.lng-choice').forEach(function (lngChoice) {
+                  if (lngChoice.dataset.lng === lng)
+                    lngChoice.parentNode.removeChild(lngChoice);
+                });
+              </script>
+            </div>
+          </div>
+          <div class="py-1 d-flex flex-wrap align-items-center justify-content-between justify-content-lg-end order-1 order-lg-2">
+            <ul class="navbar-nav d-flex flex-row">
+              <li class="nav-item"><a id="#lightpaper" href="/Polkadot-lightpaper.pdf" target="_blank" class="text-small nav-link pl-0 pl-lg-2 pr-1 font-weight-bold">Lightpaper</a></li>
+              <script>
+                if (lng === 'zh-cn') {
+                  document.getElementById('#lightpaper').href = "https://assets.polkadot.network/Polkadot-lightpaper_zh-cn.pdf";
+                } else if (lng === 'es') {
+                  document.getElementById('#lightpaper').href = "https://assets.polkadot.network/Polkadot-lightpaper_es.pdf";
+                } else if (lng === 'ko') {
+                  document.getElementById('#lightpaper').href = "https://assets.polkadot.network/Polkadot-lightpaper_ko.pdf";
+                } else if (lng === 'ru') {
+                  document.getElementById('#lightpaper').href = "https://assets.polkadot.network/Polkadot-lightpaper_ru.pdf";
+                } else if (lng === 'tr') {
+                  document.getElementById('#lightpaper').href = "https://assets.polkadot.network/Polkadot-lightpaper_tr.pdf";
+                }
+              </script>
+              <li class="nav-item"><a href="/PolkaDotPaper.pdf" target="_blank" class="text-small nav-link pl-0 pl-lg-2 pr-1 font-weight-bold">Whitepaper</a></li>
+              <li class="nav-item"><a href="https://wiki.polkadot.network" target="_blank" class="text-small nav-link px-2 mr-2 font-weight-bold">Wiki</a></li>
+            </ul>
+            <ul class="list-social-links navbar-nav d-none d-lg-flex flex-row">
+              <li><a href="https://github.com/paritytech/polkadot" target="_blank" class="text-dark"><i class="socicon-github"></i></a></li>
+              <li><a href="https://discord.gg/wGUDt2p" target="_blank" class="text-dark"><i class="socicon-discord"></i></a></li>
+              <li><a href="https://twitter.com/Polkadot" target="_blank" class="text-dark"><i class="socicon-twitter"></i></a></li>
+              <li><a id="support-link" href="https://support.polkadot.network" target="_blank" class="text-dark font-weight-bold">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar--primary navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img class="logo header-logo-dark" alt="Polkadot" src="/assets/img/logo-polkadot.svg?v=eee3815efd">
+          <img class="logo header-logo-light" alt="Polkadot" src="/assets/img/logo-polkadot-light.svg?v=eee3815efd" style="display: none">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="main-nav" class="collapse navbar-collapse justify-content-end navMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link h5" href="/technology">Technology</a></li>
+            <li class="nav-item"><a class="nav-link h5" href="/community">Community</a></li>
+            <li class="nav-item"><a class="nav-link h5" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-link h5" href="/blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-link h5" href="/build">Build</a></li>
+            <li class="nav-item"><a class="nav-link h5" href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+          
+  <div class="header-bg"></div>
+
+  <main class="page-wrapper">
+    
+<section class="pt-0 pb-0 bg-white">
+    <div class="height-40 py-3 py-md-4">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-12 col-lg-10 spacer-y-3">
+                    <h1 class="display-4 mb-4 text-dark" data-aos="fade-up">A scalable, interoperable & secure network protocol for the next web</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-secondary pt-lg-0 pb-0 pt-0">
+    <div class="container">
+        <div class="row justify-content-center align-content-xl-stretch">
+            <div class="col-md-6 col-xl-4 pt-lg-0 mt-minus-3">
+                <a href="https://github.com/paritytech/polkadot" target="_blank">
+                    <div class="card shadow-lg bg-white hover-effect card-pill rounded-lg">
+                        <div class="card-body py-2">
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/logos/logo-circle-github.svg?v=eee3815efd" class="icon mr-2 flex-shrink-0">
+                                <div>
+                                    <h5 class="mb-1">GitHub</h5>
+                                    <p class="mb-0">Latest version & history.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-xl-4 pt-lg-0 mt-md-minus-3">
+                <a href="http://wiki.polkadot.network/en/latest/" target="_blank">
+                    <div class="card shadow-lg bg-white hover-effect card-pill rounded-lg">
+                        <div class="card-body py-2">
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/logos/logo-circle-documentation.svg?v=eee3815efd" class="icon mr-2 flex-shrink-0">
+                                <div>
+                                    <h5 class="mb-1">Documentation</h5>
+                                    <p class="mb-0">Read the documentation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-xl-4 pt-lg-0 mt-xl-minus-3">
+                <a href="https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:web3.foundation?via=matrix.parity.io&via=matrix.org&via=web3.foundation" target="_blank">
+                    <div class="card shadow-lg bg-white hover-effect card-pill rounded-lg">
+                        <div class="card-body py-2">
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/logos/logo-circle-element.svg?v=eee3815efd" class="icon mr-2 flex-shrink-0">
+                                <div>
+                                    <h5 class="mb-1">Element chat</h5>
+                                    <p class="mb-0">Get your questions answered.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="row bg-secondary no-gutters pt-0 pb-lg-5">
+    <div class="col-md-12 col-lg-7 col-xl-8 d-flex flex-column" style="overflow: hidden;">
+        <img src="/assets/img/dg-network-xl-2.svg?v=eee3815efd" alt="Image" class="flex-grow-1" style="transform: scale(1.2);">
+    </div>
+    <div class="col-md-12 col-lg-5 col-xl-4 d-flex order-md-1 align-items-center">
+        <div class="row no-gutters justify-content-center py-md-4">
+            <div class="col-md-10 pl-2 pr-2 pt-4 p-sm-4">
+                <span class="h2 text-white d-block font-weight-bold">Any type of data across any type of blockchain</span>
+                <p class="lead text-white">Polkadot is a network protocol that allows arbitrary data—not just tokens—to be transferred across blockchains.</p>
+                <p class="text-white">This means Polkadot is a true multi-chain application environment where things like cross-chain registries and cross-chain computation are possible.</p>
+                <p class="text-white">Polkadot can transfer this data across public, open, permissionless blockchains as well as private, permissioned blockchains.</p>
+                <p class="text-white">This makes it possible to build applications that get permissioned data from a private blockchain and use it on a public blockchain. For instance, a school's private, permissioned academic records chain could send a proof to a degree-verification smart contract on a public chain.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-primary">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col col-lg-8 pt-0 pb-0 pt-md-5 pb-md-5">
+                <h2 class="h1 text-white font-weight-bold">Network Glossary</h2>
+                <p class="lead text-white">
+                    Polkadot unites a network of heterogeneous blockchains called parachains and parathreads. These chains connect to and are secured by the Polkadot Relay Chain. They can also connect with external networks via bridges.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white" id="network-glossary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h2 mb-4 font-weight-bold text-center text-md-left">Connecting the dots</h3>
+            </div>
+        </div>
+        <div class="row justify-content-start mb-5 align-content-md-stretch">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-relay-chain.svg?v=eee3815efd" style="border-radius: 0;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Relay Chain</h5>
+                    <p class="text-center text-md-left">The heart of Polkadot, responsible for the network’s shared security, consensus and cross-chain interoperability.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-parachain.svg?v=eee3815efd" style="margin-left: -1.2rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Parachains</h5>
+                    <p class="text-center text-md-left">Sovereign blockchains that can have their own tokens and optimize their functionality for specific use cases.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-parathread.svg?v=eee3815efd" style="margin-left: -0.8rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Parathreads</h5>
+                    <p class="text-center text-md-left">Similar to parachains but with a pay-as-you-go model. More economical for blockchains that don’t need continuous connectivity to the network.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-bridge.svg?v=eee3815efd" style="margin-left: -1rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Bridges</h5>
+                    <p class="text-center text-md-left">Allow parachains and parathreads to connect and communicate with external networks like Ethereum and Bitcoin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h2 mb-4 font-weight-bold text-center text-md-left">Consensus Roles</h3>
+            </div>
+        </div>
+        <div class="row justify-content-start mb-5 align-content-md-stretch">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-nominator.svg?v=eee3815efd" style="margin-left: -0.8rem; margin-top: 0.4rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left" style="margin-top: -0.4rem;">Nominators</h5>
+                    <p class="text-center text-md-left">Secure the Relay Chain by selecting trustworty validators and staking dots.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-validator.svg?v=eee3815efd" style="margin-left: -1rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Validators</h5>
+                    <p class="text-center text-md-left">Secure the relay chain by staking dots, validating proofs from collators and participating in consensus with other validators.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-collator.svg?v=eee3815efd" style="margin-left: -1.2rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Collators</h5>
+                    <p class="text-center text-md-left">Maintain shards by collecting shard transactions from users and producing proofs for validator.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-fisherman.svg?v=eee3815efd" style="margin-left: -1.2rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Fishermen</h5>
+                    <p class="text-center text-md-left">Monitor the network and report bad behavior to validators. Collators and any parachain full node can perform the fisherman role.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h2 mb-4 font-weight-bold text-center text-md-left">Governance Roles</h3>
+            </div>
+        </div>
+        <div class="row justify-content-start align-content-md-stretch">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-council-member-2.svg?v=eee3815efd" style="margin-left: -1rem;" />
+                    <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Council Members</h5>
+                    <p class="text-center text-md-left">Elected to represent passive stakeholders in two primary governance roles: proposing referenda and vetoing dangerous or malicious referenda.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 m-lg-0">
+                <div class="card h-100">
+                    <img class="card-img icon icon-diagram mb-3 margin-max-md-auto" src="/assets/img/icons/glossary/icon-glossary-technical-committee-2.svg?v=eee3815efd" style="margin-left: -0.4rem;"/>
+                        <h5 class="h6 mb-1 font-weight-bold text-center text-md-left">Technical Committee</h5>
+                        <p class="text-center text-md-left">Composed of teams actively building Polkadot. Can propose emergency referenda, together with the council, for fast-tracked voting and implementation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-gray pt-3 pt-lg-5">
+    <div class="container">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-12 col-md-10 col-lg-5 mb-3">
+                <img src="/assets/img/dg-stack.svg?v=eee3815efd" alt="Image" class="flex-grow-1">
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <span class="h2 d-block mb-4 font-weight-bold">Built with the best technology</span>
+                <p>Polkadot’s relay chain is built with <a href="https://www.substrate.io" target="_blank" class="text-underline">Substrate</a>, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.
+                </p>
+                <p>Polkadot’s state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard.</p>
+                <p>Polkadot’s networking uses libp2p, a flexible cross-platform network framework for peer-to-peer applications. Positioned to be the standard for future decentralized applications, libp2p handles the peer discovery and communication in the Polkadot ecosystem.</p>
+                <p>The Polkadot runtime environment is being coded in Rust, C++, and Golang, making Polkadot accessible to a wide range of developers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-secondary">
+    <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-12 col-md-12">
+                <h2 class="h1 mb-4 text-white font-weight-bold">Processing transactions in parallel</h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-12 col-lg-5 mb-4 mb-lg-0">
+                <p class="lead text-white">Parachains are specialized blockchains that connect to Polkadot. They will have characteristics specialized for their use cases and the ability to control their own governance.</p>
+                <p class="lead text-white">Interactions on parachains are processed in parallel, enabling highly scalable systems.</p>
+                <p class="lead text-white">Transactions can be spread out across the chains, allowing many more transactions to be processed in the same period of time.</p>
+            </div>
+            <div class="col-12 col-sm-6 offset-lg-1 col-lg-3">
+                <p class="lead text-white"><strong>Current method:</strong><br>Single transaction</p>
+                <img src="/assets/img/dg-transactions-old.svg?v=eee3815efd" alt="Image" class="flex-grow-1 image-sm mb-2">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <p class="lead text-white"><strong>Polkadot method:</strong><br>Multi parallelized transactions</p>
+                <img src="/assets/img/dg-transactions-new.svg?v=eee3815efd" alt="Image" class="flex-grow-1 image-sm mb-2">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-primary">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col col-lg-8 pt-0 pb-0 pt-md-5 pb-md-5">
+                <h2 class="h1 text-white font-weight-bold">Groundbreaking Technology</h2>
+                <p class="lead text-white">Polkadot is solving many of the problems that have held back blockchain technology so far &mdash; all in one place, without compromising.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white pb-0 pb-md-5">
+    <div class="container pt-3">
+        <div class="row justify-content-center align-items-center flex-row-reverse">
+            <div class="col-md-6 col-lg-4 text-center mb-5 mb-md-3">
+                <img src="/assets/img/dg-security-model.svg?v=eee3815efd" alt="Image" class="image-sm flex-grow-1">
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <span class="h2 d-block mb-4 font-weight-bold">A better security model</span>
+                <p>In both Proof-of-Work and Proof-of-Stake systems, blockchains compete with each other over resources to secure their networks, and blockchains are easily attacked until they develop a significant community to support their network.</p>
+                <p>Polkadot takes a different approach by letting blockchains pool their security, which means that the blockchains' security is aggregated and applied to all.</p>
+                <p>By connecting to Polkadot, blockchain developers can secure their blockchain from day one.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white pb-0 pb-md-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-4 text-center mb-5 mb-md-3">
+                <img src="/assets/img/dg-governance.svg?v=eee3815efd" alt="Image" class="image-sm flex-grow-1">
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <span class="h2 d-block mb-4 font-weight-bold">Transparent on-chain governance</span>
+                <p>Updates to the protocol happen fork-free via transparent on-chain voting, so protocol development never stalls due to the lack of a clear process. The relay chain uses a sophisticated governance mechanism that is designed to establish a transparent, accountable and binding process for resolving disputes and upgrading the network.</p>
+                <p>DOT tokens are used to participate in governance decisions, including tabling proposals, voting, and bonding.</p>
+                <p>Parachains are free to design their own governance mechanisms, allowing for maximum freedom without affecting other parachains.</p>
+                <a href="https://wiki.polkadot.network/en/latest/polkadot/learn/governance/" target="_blank"
+                    class="text-underline">Learn more about Polkadot’s governance</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white">
+    <div class="container mb-4">
+        <div class="row justify-content-center align-items-center flex-row-reverse">
+            <div class="col-md-6 col-lg-4 text-center mb-5 mb-md-3">
+                <img src="/assets/img/dg-consensus.svg?v=eee3815efd" alt="Image" class="image-sm flex-grow-1">
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <span class="h2 d-block mb-4 font-weight-bold">GRANDPA: a trustworthy consensus algorithm</span>
+                <p>Polkadot uses its original GRANDPA (GHOST-based Recursive Ancestor Deriving Prefix Agreement) consensus for a more secure and resilient network.</p>
+                <p>Under good network conditions, GRANDPA can finalize blocks nearly instantly. Under bad network conditions, like a network partition, GRANDPA can finalize large quantities of blocks (theoretically millions) at once when the partitions resolve.</p>
+                <a href="https://medium.com/polkadot-network/grandpa-block-finality-in-polkadot-an-introduction-part-1-d08a24a021b5"
+                    target="_blank" class="text-underline">Learn more about GRANDPA.</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-primary" id="roadmap">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col col-lg-8 pt-0 pb-0 pt-md-5 pb-md-5">
+                <h3 class="h1 text-white font-weight-bold">Roadmap</h3>
+                <p class="lead text-white mt-4 mb-0">Polkadot is rolling out the most robust platform for security, scalability and innovation. Having launched the genesis block of its Relay Chain in May 2020, Polkadot is now on track to launch several parachains in 2021.</p>
+                <a class="btn btn-primary btn-white btn-lg mt-4" href="/launch-roadmap">See Launch Roadmap</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white">
+    <div class="container">
+        <div class="row mb-4 text-center">
+            <div class="col">
+                <h3 class="h2">What are teams building on Polkadot? Just a few examples:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0">
+                            <strong>Smart contract chains</strong> with WebAssembly smart contracts (<a href="https://edgewa.re/" target="_blank" class="text-underline">Edgeware</a>, <a href="https://telemetry.polkadot.io/#/Charred%20Cherry" target="_blank" class="text-underline">Charred Cherry testnet</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0">
+                            <strong>Data curation networks</strong> that connect all file storage chains into curated data sets (<a href="https://oceanprotocol.com/" target="_blank" class="text-underline">Ocean Protocol</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0">
+                            <strong>Oracle chains</strong> that make off-chain data available to all contracts on the Polkadot network (<a href="https://chain.link/" target="_blank" class="text-underline">ChainLink</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0">
+                            <strong>Identity chains</strong> that link accounts to a persistent identity and enable access to other parachains through fewer accounts (<a href="https://www.speckleos.io/" target="_blank" class="text-underline">Speckle OS</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0">
+                            <strong>Financial chains</strong> that allow you to hold all your assets in one portfolio, including via bridges to Bitcoin, Ethereum, Bitcoin Cash, Litecoin and ZCash (<a href="https://chainx.org/" target="_blank" class="text-underline">ChainX</a>, <a href="https://katallassos.com/" target="_blank" class="text-underline">Katallassos</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0">
+                            <strong>Internet of Things chains</strong> that set IoT standards for machine-to-machine communication (<a href="https://www.mxc.org/" target="_blank" class="text-underline">MXC Protocol</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0">
+                            <strong>Zero Knowledge</strong> privacy chains, or bridges to existing ZK-snarks chains (e.g. Zerochain)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0"><strong>File storage chains</strong> that incentivize storing data on-chain</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex">
+                <div class="card card-teams flex-fill border shadow">
+                    <div class="card-body py-3">
+                        <p class="mb-0"><strong>Bridge to Ethereum</strong>, allowing Ethereum smart contracts to interact with the Polkadot network</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-white spacer-y-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-12 text-center">
+                <span class="h1 d-block mb-4">Want to get started?</span>
+                <a class="btn btn-primary btn-lg" href="/build">Build on Polkadot</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  </main>
+
+  <a id="support-icon" href="https://support.polkadot.network/" class="bg-primary bg-primary--solid shadow d-block" target="_blank" rel="noopener noreferrer">
+		<img class="logo" alt="Polkadot Support" src="/assets/img/icons/support.svg?v=eee3815efd">
+	</a>
+
+  <section class="p-0">
+    <div class="container">
+        <div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 620px;">
+                <div class="modal-content bg-white rounded-lg">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <svg class="bg-white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.2426 6.34311L6.34309 16.2426C5.95257 16.6331 5.95257 17.2663 6.34309 17.6568C6.73362 18.0473 7.36678 18.0473 7.75731 17.6568L17.6568 7.75732C18.0473 7.36679 18.0473 6.73363 17.6568 6.34311C17.2663 5.95258 16.6331 5.95258 16.2426 6.34311Z" fill="#000" />
+                                <path d="M17.6568 16.2426L7.75734 6.34309C7.36681 5.95257 6.73365 5.95257 6.34313 6.34309C5.9526 6.73362 5.9526 7.36678 6.34313 7.75731L16.2426 17.6568C16.6331 18.0473 17.2663 18.0473 17.6568 17.6568C18.0474 17.2663 18.0474 16.6331 17.6568 16.2426Z" fill="#000" />
+                            </svg>
+                        </button>
+                        <div class="m-xl-4 m-3">
+                            <div class="text-center mb-3">
+                                <p class="h1 mb-2 font-weight-bold">Stay in the loop</p>
+                            </div>
+                            <div class="hs-form-container hs-form-container--labels">
+                              <!--[if lte IE 8]>
+                              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                              <![endif]-->
+                              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                              <script>
+                                hbspt.forms.create({
+                                portalId: "7051618",
+                                formId: "267aaf9d-9d79-4ce0-931a-09d859833654"
+                              });
+                              </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="spacer-y-4 bg-dark pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-0">
+          <h5 class="text-white">General</h5>
+          <ul class="list-unstyled">
+            <li class="py-0 py-md-1"><a href="/about" class="text-white">About</a></li>
+            <li class="py-0 py-md-1"><a href="/faq" class="text-white">FAQ</a></li>
+            <li class="py-0 py-md-1"><a href="/contact" class="text-white">Support</a></li>
+            <li class="py-0 py-md-1"><a href="/build" class="text-white">Build</a></li>
+            <li class="py-0 py-md-1"><a href="https://web3.foundation/grants/" target="_blank" class="text-white">Grants and Bounties</a></li>
+            <li class="py-0 py-md-1"><a href="/jobs" class="text-white">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-0">
+          <h5 class="text-white">Technology</h5>
+          <ul class="list-unstyled">
+            <li class="py-0 py-md-1"><a href="/technology" class="text-white">Technology</a></li>
+            <li class="py-0 py-md-1"><a href="/launch-roadmap" class="text-white">Roadmap</a></li>
+            <li class="py-0 py-md-1"><a href="/dot-token" class="text-white">Token</a></li>
+            <li class="py-0 py-md-1"><a href="https://telemetry.polkadot.io/" target="_blank" class="text-white">Telemetry</a></li>
+            <li class="py-0 py-md-1"><a href="https://www.substrate.io" target="_blank" class="text-white">Substrate</a></li>
+            <li class="py-0 py-md-1"><a href="/Polkadot-lightpaper.pdf" class="text-white" target="_blank">Lightpaper</a></li>
+            <li class="py-0 py-md-1"><a href="/PolkaDotPaper.pdf" class="text-white" target="_blank">Whitepaper</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 col-xl-3 mb-3 mb-md-4 mb-lg-0">
+          <h5 class="text-white">Community</h5>
+          <ul class="list-unstyled">
+            <li class="py-0 py-md-1"><a href="/community" class="text-white">Community</a></li>
+            <li class="py-0 py-md-1"><a href="http://wiki.polkadot.network/en/latest/" target="_blank" class="text-white">Documentation</a></li>
+            <li class="py-0 py-md-1"><a href="/brand-assets" class="text-white">Brand Assets</a></li>
+            <li class="py-0 py-md-1"><a href="/blog" class="text-white">Blog</a></li>
+            <li class="py-0 py-md-1"><a href="https://app.element.io/#/room/!FdCojkeGzZLSEoiecf:web3.foundation?via=matrix.parity.io&via=matrix.org&via=web3.foundation" target="_blank" class="text-white">Element Chat</a></li>
+            <li class="py-0 py-md-1"><a href="https://medium.com/polkadot-network" target="_blank" class="text-white">Medium</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 px-lg-0 mt-4 mt-lg-0">
+          <ul class="list-social-links justify-content-start justify-content-lg-between mb-4 mb-md-5 mb-lg-4 mb-xl-3">
+            <li class="text-white mr-2 mr-lg-0"><a href="https://twitter.com/Polkadot" target="_blank"><i class="socicon-twitter"></i></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://www.reddit.com/r/polkadot" target="_blank"><i class="socicon-reddit"></i></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://github.com/paritytech/polkadot" target="_blank"><i class="socicon-github"></i></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw" target="_blank"><i class="socicon-youtube"></i></a></li>
+            <li class="text-white mr-2 mr-lg-0"><a href="https://discord.gg/wGUDt2p" target="_blank"><i class="socicon-discord"></i></a></li>
+          </ul>
+          <p class="d-block text-white">Subscribe to the newsletter to hear about Polkadot updates and events.</p>
+          <button class="btn btn-primary text-white d-block mb-1" data-toggle="modal" data-target="#subscribe-modal">Subscribe</button>
+        </div>
+      </div>
+      <div class="row footer-legal align-items-end mt-4 mt-lg-5 pt-md-4">
+        <div class="col-12 col-lg-2 mb-2 mb-lg-0">
+          <a class="navbar-brand" href="/">
+            <img class="logo" alt="Polkadot" src="/assets/img/logo-polkadot-light.svg?v=eee3815efd">
+          </a>
+        </div>
+        <div class="col-12 col-lg-10">
+          <ul class="list-unstyled d-flex flex-wrap list-pipe-separator">
+            <li>
+              <span class="text-small text-white mr-1">&#xA9;
+                <script type="text/JavaScript">document.write(new Date().getFullYear());</script> <a href="https://web3.foundation" class="text-white" target="_blank">Web3 Foundation</a> |</span>
+            </li>
+            <li><a href="/impressum" class="text-white text-small">Impressum</a></li>
+            <li><a href="/disclaimer" class="text-white text-small">Disclaimer</a></li>
+            <li><a href="/privacy" class="text-white text-small">Privacy</a></li>
+            <li><a href="#" class="text-white text-small" onclick="return klaro.show();">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/assets/js/jquery.min.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/popper.min.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/prism.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/smooth-scroll.polyfills.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/scrollMonitor.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/clipboard.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/jquery.countdown.min.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/flickity.pkgd.min.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/flickity-fade.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/hash.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/isotope.pkgd.min.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/zoom.min.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/aos.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/theme.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/theme-custom.js?v=eee3815efd"></script>
+  <script type="text/javascript" src="/assets/js/prevent.framing.js?v=eee3815efd"></script>
+
+  <script>
+    $('.carousel').on('select.flickity', function () {
+        $('.carousel-nav > li').filter('.is-selected')
+            .removeClass('is-selected');
+        $('.carousel-nav > li').eq($('.carousel').data('flickity').selectedIndex)
+            .addClass('is-selected');
+    });
+</script>
+
+  
+
+  <script>
+    var images = document.querySelectorAll('.kg-gallery-image img');
+    images.forEach(function (image) {
+      var container = image.closest('.kg-gallery-image');
+      var width = image.attributes.width.value;
+      var height = image.attributes.height.value;
+      var ratio = width / height;
+      container.style.flex = ratio + ' 1 0%';
+    })
+
+    var dates = document.querySelectorAll('.date-i18n');
+    dates.forEach(function (date) {
+      var dateObject = new Date(Date.parse(date.innerHTML));
+      var options = { year: 'numeric', month: 'long', day: 'numeric' };
+      var language = date.dataset.lang;
+      date.innerHTML = dateObject.toLocaleDateString(language, options);
+    });
+  </script>
+
+  <!-- Start of HubSpot Embed Code with Klaro script -->
+  <script type="opt-in" data-type="application/javascript" id="hs-script-loader" data-src="//js.hs-scripts.com/7051618.js" data-name="hubSpot" async></script>
+  <!-- End of HubSpot Embed Code -->
+
+	<!-- Start of simple analytics script -->
+	<script async defer src="https://apisa.web3.foundation/latest.js"></script>
+	<noscript><img src="https://apisa.web3.foundation/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+	<!-- End of simple analytics script -->
+</body>
+
+</html>

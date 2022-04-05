@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Kemar Daley &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/author/kemardaley/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Thu, 17 Jun 2021 21:33:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>Kemar Daley &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is Vechain (VET) coin &#124; The Ultimate Complete Guide</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-vechain-vet-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-vechain-vet-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Kemar Daley]]></dc:creator>
+		<pubDate>Tue, 02 Mar 2021 14:27:56 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=34275</guid>
+
+					<description><![CDATA[<p>This article focuses on a popular yet underrated project – touted by many individuals in the crypto space;&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-vechain-vet-complete-guide">What is Vechain (VET) coin | The Ultimate Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1528"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1.jpg"  alt=""  class="wp-image-34276"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1.jpg 1528w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1-724x512.jpg 724w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1-286x202.jpg 286w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1-768x543.jpg 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1-200x140.jpg 200w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1-380x269.jpg 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1-800x565.jpg 800w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/what_is_vechain-1528x1080-1-1160x820.jpg 1160w"  sizes="(max-width: 1528px) 100vw, 1528px" ></figure>
+
+
+
+<p>This article focuses on a popular yet underrated project – touted by many individuals in the crypto space; known as Vechain with the ticker VET. Let’s review its technological advantages and disadvantages, history, and how to store and manage the VET coin.<br>So what is Vechain? In short, this particular&nbsp;<a href="https://atomicwallet.io/what-is-cryptocurrency" target="_blank" rel="noreferrer noopener">cryptocurrency</a>&nbsp;can be described as an advanced host of innovative technological solutions aimed at data management and the Internet of things (IoT). With that approach, its ecosystems and applications are capable of tackling fake or counterfeit products, bogus insurances, and data manipulation among other issues in the real world.</p>
+
+
+
+<h2 id="brief-history-nbsp">Brief History&nbsp;</h2>
+
+
+
+<p>Vechain has a rich legacy and is arguably one of the oldest projects that are still around today. First and foremost, it is fundamentally a very fascinating project created by the founder &#8211; Sunny Lu. In the early days, Lu, Jay Zhang, and Jianliang Gu who are at the core of the team worked on Vechain for two years before emerging it onto the crypto scene in 2015. Vechain’s ICO started at $0.0008 during 2015 and spiked to an all-time high of $1.75 in January 2018, about a month after the 2017 bull run. However, things have changed significantly due to changes in the tokenomics.</p>
+
+
+
+<p>On that side of the spectrum, Sunny Lu and his team decided to slightly re-brand the token to VechainThor and changed its original ticker from VEN to VET. They also increased the token supply to about 87 billion tokens and allowed users to convert from VEN to VET. Over the years Vechain has been able to secure some of the biggest partnerships in the cryptocurrency industry; from the likes of BMW, Renault, Microsoft, and Global Assurance Provider DV-VGL just to name a few.</p>
+
+
+
+<h3 id="important-facts-in-vechain-s-history">Important facts in Vechain’s History</h3>
+
+
+
+<ul><li>The mainnet launched on June 30<sup>th</sup>&nbsp;, 2018</li><li>The team has never sold VET/VEN on the open markets&nbsp;</li><li>Vechain was originally an ERC-20 token on the Ethereum Network</li></ul>
+
+
+
+<h3 id="vechain-technology-and-advantages-nbsp">Vechain Technology and Advantages&nbsp;</h3>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1536"  height="975"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1.jpg"  alt=""  class="wp-image-34277"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1.jpg 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1-807x512.jpg 807w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1-300x190.jpg 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1-768x488.jpg 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1-380x241.jpg 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1-800x508.jpg 800w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/vechain_advantages_and_disadvantages-1536x975-1-1160x736.jpg 1160w"  sizes="(max-width: 1536px) 100vw, 1536px" ></figure>
+
+
+
+<p>From a technological standpoint, Vechain is highly innovative and essential based on its ‘real world’ use case model. Product verification and authenticity are certainly part of the future and that is one of the core features of Vechain’s technology. Moreover, Vechain is a block-chain that allows developers to build other applications on top of it known as&nbsp;<a href="https://atomicwallet.io/what-are-dapps" target="_blank" rel="noreferrer noopener">Decentralized Applications (Dapps)</a>.</p>
+
+
+
+<h4 id="advantages">Advantages:</h4>
+
+
+
+<ul><li>Its technology is very future proof – RFIDs, data manipulation, and counterfeit goods prevention will be part of the new world which could be huge for Vechain.</li><li>There is a real-world use case to ensure the longevity of the project</li><li>The project develops on time thus prioritizing quality above all other things.</li></ul>
+
+
+
+<h4 id="disadvantages">Disadvantages:</h4>
+
+
+
+<ul><li>Its use case is slowly gaining adoption &#8211; With great technology, comes some sort of draw-back until it is made in full flight. In the same breath, Vechain is at a disadvantage when it comes to widespread usability in the current era. It could be said that it is a little ahead of its time since RFID and product authentication on the block-chain is not that widespread as yet. This is true because there are thousands of fake products and goods circulating among us daily, which means that this technology is not been fully utilized as yet.</li><li>Even though nodes play a huge role in the network, this brings about the question of Vechain’s level of&nbsp;<a href="https://atomicwallet.io/what-is-decentralization" target="_blank" rel="noreferrer noopener">decentralization</a>. Primarily because the network is dependent on Proof of Authority Nodes for heavy workloads or processes.</li></ul>
+
+
+
+<h3 id="perspectives-and-takeaways">Perspectives and Takeaways</h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/d7f8ba90-d207-40b0-9d99-c9883be764a7"  alt=""  class="wp-image-32502" ></figure>
+
+
+
+<p>Vechain is a project built on a strong foundation with the vision of creating a world where businesses and customers can have peace of mind knowing that they are delivering/acquiring authentic products, goods or services. Since Vechain’s team recently updated their road map, things are beginning to look very interesting with a bright future ahead.</p>
+
+
+
+<p>Sunny Lu and the team are aiming to take this innovative technology way beyond the block-chain. As a result the road-map now reflects the Application and Services Layer and Infrastructure Layer on top of the Thor Block-chain and the IoT Layer at the very bottom. While this is the way forward, there is a lot more coming from this project based on recent tweets, new partnerships, and Ask Me Anything (AMA ) sessions. Vechain also has other projects built on its ecosystems such as Safe Haven (SHA) and Plair (PLA) which is a gaming token.</p>
+
+
+
+<p>One of the many reasons why it is believed that Vechain will continue to be a success is the constant innovation and progress achieved by the hard-working and passionate team. There is no doubt that businesses will continue to utilize the technologies provided by Vechain, whether it be product life-cycle management, supply chain process control, data deposit, data certification, and process certification from their Blockchain-as-a-service (Baas) platform solution known as Toolchain.</p>
+
+
+
+<h3 id="vechain-website-twitter-and-other-social-media">Vechain (Website, Twitter, and other social media).</h3>
+
+
+
+<p>Vechain’s Official Website</p>
+
+
+
+<p>To learn more about Vechain please visit:<a href="https://www.vechain.com/">https://www.vechain.com</a></p>
+
+
+
+<p>Vechain’s Blockchain Explorer:</p>
+
+
+
+<p>Keep track of all your Vechain transactions on the block-chain at:<a href="https://explore.vechain.org/">https://explore.vechain.org</a></p>
+
+
+
+<p>Vechain’s Official Twitter:<a href="https://twitter.com/vechainofficial?lang=en">https://twitter.com/vechainofficial</a></p>
+
+
+
+<p>Interact with other users who are interested in Vechain and also get the latest updates about the project</p>
+
+
+
+<p><em>How to store and manage VET (in Atomic wallet, you can manage, exchange, and stake VET anonymously and securely)</em></p>
+
+
+
+<p>Currently, VET sits at $0.016 at the time of writing, and you might be wondering how is it possible to acquire some VET right? Well, that’s not difficult at all when using the Atomic wallet. You can easily store and manage your VET by either sending it directly to your wallet address or exchanging other tokens that you already hold for VET. This can be done within a few clicks right within the Atomic Wallet.<img  loading="lazy"  src="https://lh6.googleusercontent.com/SYVNrmnJYIYsE7Sgp6mzN9njDFBMdJhnPiukAnWPOo5PVtBlRYEGtJzv7wonUU9rnon6taRLVMC7z0QHV4f4YUuT6Qn9kscIHF0YdFuoOpM4ZG7oGmXqAnYp8vvjuadVPKk-YVyNK3HSszjGbQ"  width="665"  height="440" ></p>
+
+
+
+<p>Should you want to stake your VET, there’s no input needed on your end. As long as you hold VET you’ll automatically generate VTHO, which is the gas for the network. With the Atomic wallet, your assets are safe since our wallet is protected using&nbsp;<a href="https://atomicwallet.io/what-are-private-keys-and-how-they-work" target="_blank" rel="noreferrer noopener">Private Keys</a>&nbsp;with a&nbsp;<a href="https://atomicwallet.io/how-to-store-private-keys-and-mnemonic-seed" target="_blank" rel="noreferrer noopener">mnemonic seed</a>. This means that you are in total control of your assets and your private keys will never leave your device at any given time!</p>
+
+
+
+<h3 id="conclusion">Conclusion</h3>
+
+
+
+<p>Without any doubt whatsoever, Vechain has proven to be a top contender in the crypto space. While many might argue that it is one of the most hyped projects today based on partnerships; it can be said that the hype is well deserved! For instance, their recent partnership with the Chinese Government to use the ecosystem to help fight against the corona-virus is a big leap for the project.</p>
+
+
+
+<p>Vechain also demonstrated a healthy growth cycle but is still considered a sleeping giant awaiting the perfect time to be fully awoken. A huge advantage of Vechain is the sleuth of high-quality partners and investors that are onboard this solid ship. Moreover, the ecosystem is a working product with real-world use cases! If you’re thinking about getting some VET, download Atomic Wallet now on your Android or iPhone. If you’re a PC, Mac, or Linux user there is a version available for your device as well!</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-vechain-vet-complete-guide">What is Vechain (VET) coin | The Ultimate Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-vechain-vet-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SEC Vs. Ripple: The Ultimate Cryptocurrency Trial Of The Century</title>
+		<link>https://atomicwallet.io/blog/academy/sec-vs-ripple-the-cryptocurrency-trial-of-the-century</link>
+					<comments>https://atomicwallet.io/blog/academy/sec-vs-ripple-the-cryptocurrency-trial-of-the-century#respond</comments>
+		
+		<dc:creator><![CDATA[Kemar Daley]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2021 08:12:04 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=33531</guid>
+
+					<description><![CDATA[<p>Introduction The cryptocurrency space is ever-changing and evolving, and as such, sometimes it isn&#8217;t easy to keep track&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/sec-vs-ripple-the-cryptocurrency-trial-of-the-century">SEC Vs. Ripple: The Ultimate Cryptocurrency Trial Of The Century</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/ripple-vs-sec-1920x1080.png"  alt=""  class="wp-image-33532" ></figure>
+
+
+
+<h3 id="introduction"><strong>Introduction</strong></h3>
+
+
+
+<p>The cryptocurrency space is ever-changing and evolving, and as such, sometimes it isn&#8217;t easy to keep track of everything that&#8217;s occurring. However, one recent piece of news that has been on everyone&#8217;s lip is Ripple&#8217;s cryptocurrency lawsuit regarding XRP, which the Securities and Exchange Commission (SEC) believes is security. The SEC is a U.S. body created to oversee various markets, protect investors and the national banking system. Their main aim is to prevent the manipulation of markets by companies.</p>
+
+
+
+<p>Ripple was founded in 2012 and operated in San Francisco as RippleNet and XRP payment protocol. Ripple&#8217;s XRP would be one of the most popular and one of the largest cryptocurrencies by market cap today, if you didn&#8217;t know already. Recently, things began looking grim due to the lawsuit handed down to the CEO. As a result, XRP was slightly pushed from the third spot maintained for a very long time. So what&#8217;s going on with this case, you might ask? Frankly, that&#8217;s what will be looked at throughout this article &#8211; and why this is the biggest and most talked-about cryptocurrency trial in history.</p>
+
+
+
+<p>The real deal and meat of the matter here is that the SEC is suing Ripple for an allegedly USD 1.3 billion sale of its cryptocurrencies while not registered as a security in 2013. Therefore, the SEC is highlighting that Ripple&#8217;s XRP is deemed a security and should be treated as such, which is why they are in breach of the law and regulatory acts.</p>
+
+
+
+<h3 id="ripple-s-xrp-is-it-a-currency-or-a-security"><strong>Ripple’s XRP- Is it a Currency or a Security?</strong></h3>
+
+
+
+<p>When we think of this question as to whether XRP is a currency or security, it also brings about other questions. Is it a currency that can be used, such as the dollar or gold, or is it unregistered security that is tradable, similar to stocks, or bonds as alleged by the SEC? If we determined the answer to this question, Ripple would be a security. This is because it was already declared by the Financial Crimes Enforcement Network back in 2015.</p>
+
+
+
+<p>Subsequently, this brings about some other controversial questions because if it was already declared a security, you might be wondering why Ripple continued with its actions. Nonetheless, that is not very easy to answer because Ripple has various customers in many different jurisdictions. Some countries already also declared that XRP is not secure, such as Japan, for instance. Ripple also stated that their XRP ledger is open source and has a growing community similar to other cryptocurrency projects like Ethereum.</p>
+
+
+
+<h3 id="why-is-the-sec-suing-ripple"><strong>Why is the SEC Suing Ripple?</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/sec-vs-ripple-xrp-2-1920x1080.png"  alt=""  class="wp-image-33587" ></figure>
+
+
+
+<p>One aspect to take note of is the fact that Ripple is the company that is currently being sued by the SEC, and XRP is the cryptocurrency. In essence, the notion that the SEC is proposing as to why they are suing XRP; is the fact that XRP is a security and not a currency; nonetheless, on the other hand, Ripple is holding a different stance on the matter. Another pointer here is that one of the main reasons the company issued is that they allegedly sold over 1 billion tokens and promoted XRP by paying companies or bodies to aid in this act. These activities were done back in 2013. Currently, there is a lot of speculation: why the SEC allowed Ripple to function as a currency for more than eight years, and now the company is slapped with one of the most significant lawsuits in history.</p>
+
+
+
+<p>The SEC also disclosed that Ripple sold these unregistered securities to U.S. customers and other countries across the globe. This complaint was filed in the federal district court in Manhattan after the SEC&#8217;s research and investigation team put the evidence together to present it before the courts. Both Ripple and two of their executives are currently being sued, namely, Christian Larsen and Bradley Garlinghouse.</p>
+
+
+
+<p>Upon announcing the news to the cryptocurrency community, XRP fell more than 30% in a single day, and this certainly caught most traders and holders off guard. Many significant companies who also had holdings in XRP, such as Grayscale, liquidated or sold their positions a few days after the news broke.</p>
+
+
+
+<h3 id="other-lawsuits-with-cryptocurrencies"><strong>Other Lawsuits with Cryptocurrencies</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/lawsuit-crypto-1-1920x1080.png"  alt=""  class="wp-image-33609" ></figure>
+
+
+
+<p>With new technology, there will always be difficulties for governments and other individuals to accept and get on board. Cryptocurrencies are one such asset class that has been scrutinized much from their inception. As a result of this, there have been numerous lawsuits with many other cryptocurrency projects other than Ripple. Likewise, some of these same cases are currently still in session at the time of writing.</p>
+
+
+
+<p>It&#8217;s not strange that there will be difficulties for CEOs of various cryptocurrencies to know what guidelines they should adhere to since there is little to no regulation. This is primarily because the crypto space is emerging, and regulators have difficulty finding a flat ground with these new assets. Two other popular cryptocurrencies with lawsuits were Kik Interactive Inc over Kik Messenger&#8217;s KIN token and Telegram&#8217;s GRAM token ICO. Well-known CEOs of messaging application companies created these two projects. However, their projects were terminated due to regulatory issues and lawsuits against them.</p>
+
+
+
+<p>Kik is a popular messaging app used by many individuals in the eastern world, its largest market. In 2017, the company made an Initial Coin Offering (ICO) sell tokens to the public. The SEC stated that the tokens&#8217; selling was illegal because Kik offered and sold tokens to U.S. investors without undergoing the necessary steps to do so. They did not register the sale as security either. Therefore, it was deemed illegal hence they were sued for over 5 million USD in a filing by the SEC in 2019. The case was finally settled in October 2020.</p>
+
+
+
+<p>In the same light, Lantah LLC was furious over the GRAM ticker&#8217;s use by Telegram- one of the most popular communication and team applications. This led to them getting their fair share of legal discipline from the SEC as well. While the Securities and Exchange Commission was not too harsh with their delicate, they were ordered to pay over 625 million USD to Lantah LLC. This lawsuit brewed from the token sale of the GRAM tokens sold by Telegram in 2018 and raised over 1.7 billion USD in an ICO.</p>
+
+
+
+<p>The lawsuit ended with Telegram losing because the SEC investigated and found out that they raised money illegally since they were not registered as a security. Since the lawsuit, Telegram has abandoned the TON project and said that they no longer need to use the GRAM ticker. They also refunded over 70% of all investors&#8217; funds in 2018. Additionally, Telegram agreed to pay the SEC 18.5 million USD as a civil penalty to settle the case. The company will also notify the SEC if they plan to offer any digital asset type soon.</p>
+
+
+
+<h3 id="what-are-the-boundaries-regarding-regulations"><strong>What are the Boundaries Regarding Regulations?</strong></h3>
+
+
+
+<p>While Congress has the ultimate power in making the rules and laws governing these new asset classes, there is little that they have said about cryptocurrencies. This in itself poses a threat for these assets since it is then left down to the mercy of independent regulators to use their discretion to determine what steps to take. Since the U.S. Congress is not making any rules and regulations, it is unclear what their stance is regarding cryptocurrencies.</p>
+
+
+
+<p>In Ripple&#8217;s case, it seems that the goal of the SEC is to support consumers and prevent them from getting harmed from an investment such as the XRP cryptocurrency. In the past, though, the regulatory bodies aimed to protect Silicon Valley giants and help consumers, which was enforced by the Obama Federal Communications Commission (FCC). As we all know, with new leaders, there are new rules that are also one reason why Ripple finds itself in this current situation.</p>
+
+
+
+<h3 id="what-strategies-does-the-us-adopt-for-cryptocurrency-and-blockchain-tech"><strong>What Strategies Does the US Adopt for Cryptocurrency and Blockchain Tech?</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/us-regulation-1-1920x1080.png"  alt=""  class="wp-image-33598" ></figure>
+
+
+
+<p>Many countries have accepted blockchain technology and adopted cryptocurrencies; however, in the United States, things are a bit different for the most part. There is very little being done to accept blockchain and cryptocurrency technology. Additionally, the little strategies they have employed are not enough to facilitate this emerging asset class&#8217;s growth and mass adoption. Some of the strategies that the U.S. adopts are not mind-blowing, but more can be done for cryptocurrency and blockchain technology.</p>
+
+
+
+<p>One of the good things here is that the United States has not openly banned Bitcoin or other cryptocurrencies &#8211; More can certainly be done in terms of strategies for crypto mass adoption, though. Secondly, there are numerous blockchain and crypto-related companies in the U.S. that are allowed to operate despite not being a traditional business. This means that there is a similar ground for new blockchain businesses to operate somewhat freely in the U.S.</p>
+
+
+
+<p>Finally, some states are more fond of cryptocurrencies to the point where they can be used as a means of payment. Some of the most cryptocurrency-friendly states include Texas, Ohio, Colorado, and Wyoming. As mentioned before, this is certainly not groundbreaking for a first-world country like the United States; nonetheless, it is a good leap forward in the right direction. They seek to find more strategies that they can utilize to handle blockchain technology.</p>
+
+
+
+<p>While these steps are not the only things that can be done to adopt cryptocurrencies and blockchain technology, it is evident that more work needs to be done. On the other hand, the conflicting and contradicting approach that U.S. regulatory bodies are taking; makes it even more difficult for the country and government to develop more concrete strategies to adopt cryptocurrencies. Many other countries, such as China, are way ahead of the game and are making it their duty to help pilot the transition from fiat to a digital dollar.</p>
+
+
+
+<p>Regarding the Ripple lawsuit, this might be one of how the U.S. loses the digital race. So how will this happen? Put, if emerging blockchain and cryptocurrency companies fear what happened to Ripple, they will either forget about their contribution to adopting the technology or migrate to other cryptocurrency-friendly nations. As a result, this will lead to more innovations for other countries such as China, which will benefit significantly by dominating these technologies.</p>
+
+
+
+<h3 id="should-regulators-be-protecting-china-or-us-customers"><strong>Should Regulators be Protecting China or US Customers?</strong></h3>
+
+
+
+<p>Regulation is vital in any emerging market since it will help lay down the rules and laws regarding how businesses and individuals should operate. With regards to the U.S., it is clear that regulators such as the Securities and Exchange Commission (SEC) lean more towards protecting the customer than anyone else. On the other side of the spectrum, though, it is clear that the SEC did not have any issues with numerous Chinese firms that currently value more than 2.2 trillion to list on U.S. exchanges. Furthermore, these firms did not undergo any form of audit or disclosures for U.S. investors exposed. These events have also been occurring for more than two decades now, and there is nothing that the SEC did to penalize these companies.</p>
+
+
+
+<p>Thus, this presents another issue as the U.S. will be willing to adopt cryptocurrencies and blockchain technology. They should be protecting U.S. customers at all costs, but this is not the case. So how is it that they seem to be more lenient towards some companies, yet Ripple faces one of the most significant and most challenging lawsuits in history? This shows that China is most likely flourishing in the U.S. financial markets while it is the latter for most US-based cryptocurrency companies trying to get a breakthrough in the industry.</p>
+
+
+
+<h3 id="is-ripple-fighting-a-losing-battle"><strong>Is Ripple Fighting a Losing Battle?</strong></h3>
+
+
+
+<p>If we should backtrack a bit and take a look at the previous lawsuits with the Securities and Exchange Commission; the shocking truth is that they have hardly ever lost any lawsuit with various individuals or companies that they believe have violated regulations regarding the U.S. monetary or banking system and manipulated the markets to their benefit. While there is no way for us to know if Ripple will lose the lawsuit honestly, the history shows that the SEC is not a body that &#8216;goes down very quickly in a court battle. In the end, the world will have to wait to see what the courts determine to be Ripple&#8217;s faith and what it will mean for similar cryptocurrencies and other blockchain startups.</p>
+
+
+
+<p>Hypothetically, if Ripple is indeed successful and the courts agree that it is not a security, this would be excellent news for the entire cryptocurrency space and particularly holders of XRP. First and foremost, winning an SEC battle has a massive amount of weight to it, and that would most likely be the signal that XRP is indeed the global payment solution and cryptocurrency of the future. Nonetheless, the most that we can do at this point is wait and see what grounds both parties will have to settle on. This case will most likely be ongoing for a great deal of time, so a resolution might not be anywhere in sight for 2021.</p>
+
+
+
+<h3 id="final-thoughts"><strong>Final Thoughts</strong></h3>
+
+
+
+<p>Every day, it gets more evident that blockchain technology and cryptocurrencies are the future, and Ripple&#8217;s XRP is one cryptocurrency that the industry believes is important for mass adoption. It has low transaction fees to facilitate moving large amounts of money from one border to the next. Despite the current lawsuit, customers are still drawn to Ripple&#8217;s XRP cryptocurrency as they seek new ways to manage their finances. By using cryptocurrencies such as XRP, individuals have the freedom of having a bank in their pockets and can send and receive payments across the globe.</p>
+
+
+
+<p>It is also evident here that this is not the first time the SEC has hit cryptocurrencies with lawsuits. Other than negatively affecting the token price, the entire space is also affected when these things happen. When the case is settled at the end of the trial, it still does not mean that Ripple will be allowed to carry out every objective that the team had for XRP, which is not suitable for the space or holders of the XRP cryptocurrency. Ripple&#8217;s CEO- Brad Garlinghouse, brought to the media&#8217;s attention that the SEC allowed XRP to be operated as a currency for close to a decade and is now saying that it is a security. He also made it clear that they do not foster innovation and growth in the U.S.</p>
+
+
+
+<p>To conclude, if you are still a firm believer in the value of XRP and hold the tokens, Atomic Wallet is the safest place to store your cryptocurrency. Our wallet is non-custodial, which means that your private keys will never leave out of your control. Essentially, this is as crucial as the saying goes &#8211; &#8220;not your keys, not your crypto.&#8221; You can download Atomic Wallet and store XRP and over 300 other cryptocurrencies all in one place. Our wallet is free and available for all major platforms including, Android, iOS, PC, Mac, and Linux.<br>We look forward to seeing you on your blog for upcoming articles, so feel free to subscribe.</p>
+
+
+
+<p>We look forward to seeing you on your blog for upcoming articles, so feel free to subscribe for the latest cryptocurrency content in the space!</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/sec-vs-ripple-the-cryptocurrency-trial-of-the-century">SEC Vs. Ripple: The Ultimate Cryptocurrency Trial Of The Century</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/sec-vs-ripple-the-cryptocurrency-trial-of-the-century/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is Yearn.Finance (YFI) in crypto: Complete Beginner&#8217;s Guide</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-yearn-finance-yfi-complete-guide</link>
+		
+		<dc:creator><![CDATA[Kemar Daley]]></dc:creator>
+		<pubDate>Thu, 04 Feb 2021 15:47:24 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?page_id=32980</guid>
+
+					<description><![CDATA[<p>Introduction We must admit that hundreds of new cryptocurrencies are deployed in the space almost every day, and&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-yearn-finance-yfi-complete-guide">What is Yearn.Finance (YFI) in crypto: Complete Beginner&#8217;s Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<h3 id="introduction"><strong>Introduction</strong></h3>
+
+
+
+<p>We must admit that hundreds of new cryptocurrencies are deployed in the space almost every day, and while some earn the spotlight; they don&#8217;t do so for long. Yearn.Finance is on a different level, though, and is seen as the magic door to the DeFi space that the mother of smart contracts- Ethereum gave to us. In this article, we will be taking a look at Yearn.Finance or YFI for short. So what is YFI? Well, Yearn.Finance can be thought of as a portal that gives users the ability to access and invest in many different assets and products, all from one platform.&nbsp;</p>
+
+
+
+<p>They bundle decentralized finance (DeFi) products into one package for investors or users. The algorithm then automatically chooses the best rewards upon investing, so investors would effortlessly earn interest in their investments. yEarn was launched on the Ethereum blockchain and had been making waves in the industry ever since its launch. Let&#8217;s take a deep dive further into what YFI or yEarn as it is sometimes referred to. One key thing to note is that Yearn works as a yield aggregating platform by effortlessly maximizing investments for the highest yearly yield or annual percentage yield (APY) possible. The platform allows an investor to enter various vaults or<a target="_blank" href="https://atomicwallet.io/mining-pools" rel="noreferrer noopener">&nbsp;pools</a>&nbsp;with ERC20 stablecoins such as DAI, TUSD, USDC, USDT, or SUSD.&nbsp;&nbsp;</p>
+
+
+
+<h3 id="what-is-yearn-finance-company-ledger-and-what-is-yfi-coin-nbsp"><strong>What is Yearn.Finance Company/Ledger and what is YFI Coin?&nbsp;</strong></h3>
+
+
+
+<p>You can think of Yearn.Finance Company/Ledger as an all in one blockchain solution to maximize investors&#8217; gains over time. This is done through what is known as&nbsp;<a target="_blank" href="https://atomicwallet.io/staking#:~:text=Staking%20is%20as%20simple%20as,wallet%20to%20generate%20a%20reward." rel="noreferrer noopener">staking&nbsp;</a>or locking up tokens, as mentioned earlier. The company offers various services on its blockchain ledgers like yield farming, coin swapping, profit switching, and insurance. Users of the platform are exposed to all these options and decide on which they want to participate.&nbsp;&nbsp;</p>
+
+
+
+<p>With most cryptocurrency protocols, there is a coin or tokens associated with the project. In this regard, yEarn adopts the YFI token, which is used to create a standard currency for the platform users can rely on when doing various transactions. Users who lockup their stable coins will earn YFI tokens in return that they can sell on various markets or exchanges. We have mentioned that yield farming is a feature of the Yearn platform, and this is a clear example of what that is. Locking up tokens to earn more YFI is essentially yield farming.&nbsp;&nbsp;</p>
+
+
+
+<h3 id="brief-history-of-yearn-finance"><strong>Brief History of Yearn.Finance</strong></h3>
+
+
+
+<p>Due to the high quality of the Yearn.Finance project, one would believe that it is not new to the crypto space and have years of development backing it along with the team. While not aiming to &#8216;burst any bubbles&#8217; here as solid and well-built as YFI is, it is a relatively new project but has done extremely well so far. YFI entered the crypto space in little under a year ago, in July 2020. It truly deserves the recognition it is getting thanks to the founder and lead developer of the project- Andre Cronje. He is a well-respected individual who created some of the best projects to date, such as&nbsp;<a target="_blank" href="https://keep3r.network/" rel="noreferrer noopener">Keep3rV1 (KP3R)</a>, for example.&nbsp;</p>
+
+
+
+<p>Back in July 2020, Yearn.Finance surpassed bitcoin in terms of price but not market cap. It was valued at more than 25,000USD, which attracted a huge crowd to grab a piece of the value of this so-called &#8216;DeFi gem&#8217; at the time. During one particular week, Yearn.Finance grew more than 1000 percent and continued to break new records as the project attracted more investors over time.&nbsp;</p>
+
+
+
+<p>Other essential team members lead the project to great success, like @doug and @banteg, which are the social media nicknames associated with these individuals. The team has a much wider range of developers and contributors, which is expected due to the nature and quality of Yearn.Finance. When looking at this team, it&#8217;s no secret that everyone gets along well from the evidence of numerous tweets and the project&#8217;s overall success.&nbsp;&nbsp;</p>
+
+
+
+<p>One other crucial aspect that proves this project&#8217;s credibility and robustness is the premium quality partnerships they have lined up. Partners of yEarn include Powertool, Cover Protocol, Aavee Lend, Cream, Sushi Swap, and Akropolis, who are top players in the crypto space and, particularly, the DeFi marketplace. These are only a few of their recent partners since it&#8217;s a relatively new project. It is certainly expected that yEarn will attract a lot more partners in the future.</p>
+
+
+
+<h3 id="what-is-yearn-finance-technology-and-advantages-amp-disadvantages"><strong>What is Yearn.Finance Technology and Advantages &amp; Disadvantages?</strong></h3>
+
+
+
+<p>Without a doubt, Yearn&#8217;s technology is cutting edge, especially because a user gets exposed to a variety of decentralized finance (DeFi) products. When it comes to decentralized finance in the crypto space, it is very important to every investor since they can multiply their investment. Upon launch, FYI has proved to be a very valuable project that sets the pace for other quality products in the crypto sphere to follow. There are some key advantages and features that make Yearn.Finance important. These will be looked at more in-depth, along with some disadvantages of this particular cryptocurrency.&nbsp;</p>
+
+
+
+<p>The main features of the Yearn platform are unique. Firstly, the platform automatically transfers an investor&#8217;s funds between various platforms such as Compound, Dydx, Curve, or Aave to bring the highest and most profitable returns on their investment. One other feature of this cryptocurrency is the token&#8217;s governance feature, which gives users the ability to vote on upgrades and updates for the project. Not every cryptocurrency allows the input of its token holder in the direction of the project.&nbsp;</p>
+
+
+
+<p>Lastly, Yearn allows users to earn through yield farming. This is the popular way to earn passive income by locking up cryptocurrencies for a particular time. The platform also seeks to ensure that investors are exposed to many products to earn the highest yearly yield that is possible. The vaults are where investors&#8217; funds are held and are similar to a&nbsp;<a target="_blank" href="https://atomicwallet.io/mining-pools" rel="noreferrer noopener">poo</a>l of funds contributing to the network.&nbsp;&nbsp;</p>
+
+
+
+<p>Since many investors have funds in their wallets that they are not using, it just sits there and does not do anything. This is especially true since the cryptocurrency market is very volatile, so investors will be holding stablecoins at some point. If these investors utilize Yearn.Finance gives them a competitive advantage that they can leverage by locking up their stable assets, for instance, and earn interest on them in YFI tokens. Moreover, Yearn. Finance&#8217;s platform exposed investors to a wide variety of decentralized finance (DeFi) products through one platform. Therefore, an advantage of this is that investors can choose a suitable product instead of trying a lot of products on the marketplaces. So this essentially minimizes their risk of investing in a poor quality project.</p>
+
+
+
+<p>Even though there are not many downsides to using yEarn, it is important to know that with every project comes some drawback or disadvantage that users must consider before investing. With any staking or locking up of funds on a platform, investors are taking a risk to earn rewards. Of course, if the project is high quality and the team is public, that adds a great amount of credibility, but they still leave some risks involved with market uncertainty.&nbsp;</p>
+
+
+
+<p>The other disadvantage here is that Yearn.Finance is a relatively new project, so that also presents some level of risks to investors. It certainly will need some more time to prove itself. However, it is doing very well at the time of writing. While the future looks bright for this project, we never know exactly what it holds. Hacks are another major drawback that occurs in the crypto space, and though it has been close to a year now, yEarn is still a DeFi project, and these are currently the most hacked in the crypto space. Finally, we need to remember that YFI is considered an experimental platform likewise most of its competitors. This means that there are no guarantees that it will always work as expected, and here lies another type of risk that investors will DeFinitely have to keep in mind.&nbsp;</p>
+
+
+
+<h3 id="perspectives-and-takeaways"><strong>Perspectives and Takeaways</strong></h3>
+
+
+
+<p>At this point in the world of crypto, we must look at the fact that it&#8217;s certainly not easy accurately to identify or assess the future path of any project. However, there are some exceptions and Yearn.Finance is one such project. We can safely argue or posit that yEarn has brought all eyes on the DeFi space so that investors can realize that there is a lot of value available for them to tap into. This can only be done through decentralized, high-quality projects such as Yearn, and that&#8217;s what it brings to the table. Furthermore, this allows individuals to manage and maximize their crypto assets by earning interest.&nbsp;</p>
+
+
+
+<p>As YFI continued to grow and attract more investors over time, it became clearer that it would be in the top 100 projects in a very short space of time. It also got listed on numerous high-quality exchanges with little effort from the founder-Andre Cronje, since centralized exchanges began to realize the value that this project brought to the cryptocurrency space. Yearn.Finance is currently listed on Coinbase Pro, Binance, Huobi, and Kraken, just to name a few. From a theoretical standpoint, it is no secret that projects like YFI are what investors are looking for to have a stable and passive income platform that is generating interest and automatically locating the platforms with the highest return on their investment.&nbsp;</p>
+
+
+
+<p>During the growth and development, the crypto space got introduced to new dimensions and possibilities. Thanks to Yearn.Finance, what we can summarize from this is that the potential of the decentralized finance (DeFi) space is essentially endless. There are no boundaries that innovation must adhere to, and that presents a clear and bright future for cryptocurrencies and particularly Ethereum since it&#8217;s the mother of DeFi.&nbsp;</p>
+
+
+
+<h3 id="yearn-finance-website-twitter-and-other-social-media"><strong>Yearn.Finance (Website, Twitter, and other social media)</strong></h3>
+
+
+
+<p>Yearn.Finance is a top-tier project, so it has a lot going on for it, and it&#8217;s certainly not short of a great community. Yearn.Finance social media and accounts can be found by visiting the following links:</p>
+
+
+
+<p>Website:&nbsp;<a target="_blank" href="https://yearn.finance/" rel="noreferrer noopener">https://yearn.finance/</a>&nbsp;</p>
+
+
+
+<p>Twitter:&nbsp;<a target="_blank" href="https://twitter.com/iearnfinance" rel="noreferrer noopener">https://twitter.com/iearnfinance</a>&nbsp;</p>
+
+
+
+<p>Discord:&nbsp;<a target="_blank" href="https://discord.com/invite/6PNv2nF/" rel="noreferrer noopener">https://discord.com/invite/6PNv2nF/</a>&nbsp;</p>
+
+
+
+<p>Telegram:&nbsp;<a target="_blank" href="https://t.me/yearnfinance" rel="noreferrer noopener">https://t.me/yearnfinance</a>&nbsp;</p>
+
+
+
+<p>Github:&nbsp;<a target="_blank" href="https://github.com/iearn-finance" rel="noreferrer noopener">https://github.com/iearn-finance</a>&nbsp;</p>
+
+
+
+<p>Medium:&nbsp;<a target="_blank" href="https://medium.com/iearn" rel="noreferrer noopener">https://medium.com/iearn</a>&nbsp;</p>
+
+
+
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+
+
+
+<p>Our final thoughts here are that the crypto space is always evolving as innovation keeps the wheel spinning day in and day out with new products. Yearn.Finance is one of the projects that massively contributed to the decentralized finance (DeFi) space and Ethereum by bringing more value to the network. This sort of fuel is very important for Ethereum and other DeFi projects alike since Yearn.Finance gives them more exposure through the platform.&nbsp;</p>
+
+
+
+<p>It&#8217;s important to note that YFI is something new to space, but it has truly set the bar for other DeFi projects to follow. There is no way but forward to a high-quality project like this, and it is believed that we are only just getting started. What&#8217;s left to come from the team will be very important for all investors of yEarn and the overall cryptocurrency space.&nbsp;</p>
+
+
+
+<p>With that said, be sure to check out our blog for more articles on other high-quality cryptocurrencies and guides. Feel free to&nbsp;<a target="_blank" href="http://atomicwallet.io" rel="noreferrer noopener">download</a>&nbsp;our wallet for all major platforms such as Android, iOS, PC, Mac, and Linux. You can store over 300 different crypto assets all in one place. Security is essential to our team, which is why our wallet is non-custodial so that you have peace of mind knowing that your private keys will never leave your wallet.&nbsp;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-yearn-finance-yfi-complete-guide">What is Yearn.Finance (YFI) in crypto: Complete Beginner&#8217;s Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Ethereum Staking 2.0 Ultimate Guide</title>
+		<link>https://atomicwallet.io/blog/academy/ethereum-2-0-staking</link>
+					<comments>https://atomicwallet.io/blog/academy/ethereum-2-0-staking#respond</comments>
+		
+		<dc:creator><![CDATA[Kemar Daley]]></dc:creator>
+		<pubDate>Fri, 15 Jan 2021 16:12:30 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=32351</guid>
+
+					<description><![CDATA[<p>What is Ethereum? We must admit that Bitcoin is the king of all cryptocurrencies; however, another popular project&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ethereum-2-0-staking">Ethereum Staking 2.0 Ultimate Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="720"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0.jpg"  alt=""  class="wp-image-34308"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0.jpg 1280w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0-910x512.jpg 910w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0-300x169.jpg 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0-768x432.jpg 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0-380x214.jpg 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0-800x450.jpg 800w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_2.0-1160x653.jpg 1160w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h3 id="what-is-ethereum"><strong>What is Ethereum?</strong></h3>
+
+
+
+<p>We must admit that Bitcoin is the king of all cryptocurrencies; however, another popular project known as Ethereum is worthy of some attention. It is the second-largest cryptocurrency based on its market capitalization of around 117 billion dollars at the time of writing. This particular cryptocurrency is also known as the king of smart contracts.&nbsp;</p>
+
+
+
+<p><a target="_blank" href="https://atomicwallet.io/buy-ethereum" rel="noreferrer noopener">Ethereum</a>&nbsp;entered the crypto space in June 2015 and was deployed by founder Vitalik Buterin, Charles Hoskinson, and Gavin Wood. Though these individuals except Vitalik have migrated to working on their own blockchain projects, they have significantly contributed to the Ethereum Blockchain and the development of the network.</p>
+
+
+
+<p>So what is Ethereum really? Ethereum can be viewed as a type of&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-decentralization#decentralization" rel="noreferrer noopener">decentralized</a>&nbsp;blockchain technology. It has&nbsp;<a target="_blank" href="https://atomicwallet.io/smart-contracts#:~:text=Smart%20contracts%20are%20based%20on,value%20without%20banks%20and%20intermediaries.&amp;text=Between%20the%20nodes%20of%20the,distributed%20and%20copied%20multiple%20times." rel="noreferrer noopener">smart contracts</a>&nbsp;capability on the internet that allows other applications to be built and run on top of it. Ethereum is also the most actively utilized blockchain technology to date. Additionally, this particular cryptocurrency goes by the ticker ETH, which is the native token that fuels the network. It is also referred to as Ether by many individuals in the crypto space.&nbsp;</p>
+
+
+
+<p>Ethereum is also a censorship-resistant blockchain, which means that no government has central control over the network. Its blockchain is open source and available to everyone who wants to transaction and commerce with no gatekeepers. Some of the most robust features and applications on the Ethereum blockchain include banking, commerce, peer-to-peer transactions, and privacy features. For this reason, among others, is why the Ethereum network is very significant as it relates to the future of blockchain technology.</p>
+
+
+
+<h3 id="ethereum-staking-2-0-upgrade-explained"><strong>Ethereum Staking 2.0 Upgrade Explained</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/ethereum_staking_explained-1920x668.png"  alt=""  class="wp-image-34309" ></figure>
+
+
+
+<p>The year 2020 has been a very significant milestone for Ethereum mainly because of its huge Staking 2.0 upgrade, which was announced by the core development team. This network upgrade was one of the most talked-about activities to take place in the crypto space, especially since it is particularly aimed at scaling the entire network.&nbsp;</p>
+
+
+
+<p>Moreover, staking 2.0 or &#8216;phase 0&#8217; is aimed at making Ethereum more scalable so that it can handle more transactions, thus more users simultaneously. It is also aimed at increasing the security of the network, which will result in a more sustainable ecosystem. This means that there will be a faster network with more efficiency and fewer&nbsp;<a target="_blank" href="https://atomicwallet.io/network-fees" rel="noreferrer noopener">gas</a>&nbsp;costs as more users transact.</p>
+
+
+
+<p>It is important to note that the staking 2.0 upgrade will be done in phases since it involves a lot of technicalities that the Ethereum developers should be able to handle with no problem. The first leg of the upgrade is known as &#8216;The Beacon Chain&#8217;, which was launched on December 1, 2020. This will then be followed by Shards Chain and Docking.&nbsp;</p>
+
+
+
+<p>The other phases of the upgrade will be rolled out gradually through 2021, but there is no set a date for the final completion of the network upgrade. So as of now, the world is &#8216;betting on Ethereum&#8217; to successfully scale and complete each phase of the network upgrade.&nbsp;</p>
+
+
+
+<h3 id="what-will-change-in-ethereum-2-0-update"><strong>What Will Change in Ethereum 2.0 Update.</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  alt="" ></figure>
+
+
+
+<p>Originally the Ethereum network used a Proof of Consensus model, which was working fine. However, the developers opted for the<a target="_blank" href="https://atomicwallet.io/what-is-proof-of-stake" rel="noreferrer noopener">&nbsp;Proof of Stake</a>&nbsp;(PoS) model, which is deemed much more efficient. The first leg of the upgrade, which is stalking 2.0 involves the locking up of tokens to earn a reward in return. This blockchain mechanism is known as proof-of-stake (PoS).</p>
+
+
+
+<p>PoS is a consensus mechanism that rewards users for validating blocks once they lock up their ETH for a period of time. While Bitcoin uses Proof of Work (PoW) to create new coins. It&#8217;s the latter with the Ethereum network upgrade, which will utilize Proof of Stake (PoS), which is more efficient and uses fewer resources too.&nbsp;</p>
+
+
+
+<p>Going forward, individuals who use the network can stake their ETH and earn more Ether in return. However, the minimum amount of Ether that can be staked is 32. For some users, this might pose a problem. Nonetheless, there will be validators that allow the deposit of fewer ETH, which will then be staked in a much larger pool.</p>
+
+
+
+<p>Theoretically, anyone can participate as a validator without the need for any high-end hardware, but the validators will need to be online consistently to avoid small penalties. The rate of return for staking is expected to be around 4-10% depending on how much ETH a user has staked. Also, if there are any bad actors on the network, a mechanism will be implemented known as slashing. This will reduce the rewards of such bad validators so that they are forced back in line.&nbsp;</p>
+
+
+
+<h3 id="how-to-participate-in-ethereum-staking"><strong>How to Participate in Ethereum Staking</strong></h3>
+
+
+
+<p>In order for someone to take part in staking on Beacon Chain, they will need to join what is known as a staking pool. Staking pools refer to different parties coming together to participate as a single validator. This allows the rewards to be generated much faster compared to when individuals stake by themself.&nbsp;</p>
+
+
+
+<p>So, who runs these staking pools? Different operators will run their own staking pools, and users will be able to join by locking up and providing those operators with their ETH. For instance, the Atomic Wallet&#8217;s Staking Pool will be run by the Atomic Wallet team, and anyone who uses the Atomic Wallet will be able to participate with their 32 ETH. The benefit of joining a staking pool is the fact that no technical knowledge is required as opposed to being a validator and running a node all by yourself. In short, staking pools will help to eliminate the need for technical skills or experiences when staking your ETH.</p>
+
+
+
+<h3 id="advantages-amp-disadvantages-of-ethereum-staking-nbsp"><strong>Advantages &amp; Disadvantages of Ethereum Staking&nbsp;</strong></h3>
+
+
+
+<p>Users who stake their Ether in different pools have the advantage of earning passive income from the rewards. This can be a great way to lock up your wealth and live off the rewards, which are not possible with other cryptocurrencies like Bitcoin, for example. Though the rewards are not as high as many other cryptocurrencies that can be staked, Ethereum has a lot of room to grow, which means that the rewards could be worth a lot more in the future. Moreover, it is better to be earning from your assets instead of having them sitting in a wallet for long periods.&nbsp;</p>
+
+
+
+<p>While staking looks amazing right now, there are two sides to the story here as there are potential drawbacks to staking 2.0. If there is an unforeseen market crash that occurs, users will not be able to withdraw their funds and convert them to stable assets since they will be locked up for a certain period of time. Even in the event of a smaller market downturn, the rewards from staking might not be enough to cover losses for some users. Whales who have a lot of Ether to stake will more likely benefit rather than the average individual.&nbsp;</p>
+
+
+
+<p>In order to participate in staking, users will have to join staking pools with a minimum of 32 ETH. This means that their ETH will be out of their wallet until the staking period ends. Lastly, if a person has less than 32 ETH and wishes to participate, they will have to pool with other third parties that engage in centralized staking. So there are other potential risks at play other than locking up your ETH, which might lose value in a market crash.&nbsp;</p>
+
+
+
+<h3 id="how-will-staking-affect-the-price-of-ether"><strong>How Will Staking Affect the Price of Ether?</strong></h3>
+
+
+
+<p>In the crypto space, any good news is very influential for just about any project. What this means for Ether is that its price will gradually increase just like it was doing for the past few months in 2020. As a result, it is very much safe to say that staking 2.0 has been positively affecting the price of Ether and will continue to do so.</p>
+
+
+
+<p>In the future, Ether will theoretically become more scarce as more users lock up their ETH for staking. On the other side of the spectrum, this will also drive up the price of ETH as well. With a 4-10% interest to all validators depending on the amount of Ether staked, it is believed that this will be attractive to a majority of cryptocurrency users. Furthermore, ETH was already considered very valuable since it is the king of smart contracts and the most actively used blockchain in the world.</p>
+
+
+
+<h3 id="how-will-staking-2-0-affect-other-projects-built-on-ethereum"><strong>How Will Staking 2.0 Affect Other Projects Built on Ethereum?</strong></h3>
+
+
+
+<p>At the time of writing, there are thousands of projects built on the Ethereum network, which is why it is the most used blockchain in the world at the time of writing. So how will the staking 2.0 upgrade affect these projects? Technically, other projects that are based on Erc-20 standards should be fine for now, but as the network&#8217;s upgrade phases roll out, they might need to add a few tweaks to their smart contracts. This will most likely be a small update by the developers of those projects and should not have a major impact on their tokens.&nbsp;</p>
+
+
+
+<p>Another necessary point that project developers might need to take into consideration is the fact that the Ethereum 2.0 upgrade will be rolled out in phases, and new changes might need to be implemented during the upgrade process, but as of now, there is little to no action needed on their end.&nbsp;</p>
+
+
+
+<h3 id="what-the-market-and-users-expect-from-ethereum-2-0"><strong>What the Market and Users Expect from Ethereum 2.0</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/9438d8bb-bb4b-4245-8c05-9376e80a69b2"  alt="" ></figure>
+
+
+
+<p>One of the biggest problems that most users face right now is a high gas price when transacting on the Ethereum network. There are also many complaints of slow transaction times when the network is congested. Additionally, there are a lot of complaints about the gas prices to complete these transactions on the network. Many individuals tout that Ethereum does not cater to the average user since it costs too much to interact with your favorite Dapps.</p>
+
+
+
+<p>Luckily, Ethereum 2.0 is said to tackle these issues so users can expect a solution as the different phases of the upgrade rolls out in a timely manner. In terms of the market, Ethereum 2.0 will certainly drive a positive impact. Users who participate in staking for rewards will contribute to pushing the price upwards since their ETH will be locked, thus allowing the token to become more scarce over time.</p>
+
+
+
+<h3 id="links-website-twitter-and-other-social-media-nbsp"><strong>Links (Website, Twitter, and other social media).&nbsp;</strong></h3>
+
+
+
+<p>Ethereum has a great community of users and developers that is constantly growing every day. Their website and social media accounts can be found by visiting the following links below:</p>
+
+
+
+<p>Ethereum Website: <a target="_blank" href="https://ethereum.org/en" rel="noreferrer noopener">https://ethereum.org/en</a>&nbsp;</p>
+
+
+
+<p>Ethereum Twitter: <a target="_blank" href="https://twitter.com/ethdotorg" rel="noreferrer noopener">https://twitter.com/ethdotorg</a></p>
+
+
+
+<p>Ethereum Youtube:&nbsp;<a target="_blank" href="https://www.youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g" rel="noreferrer noopener">https://www.youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g</a></p>
+
+
+
+<p>Ethereum Discord:&nbsp;<a target="_blank" href="https://discord.com/invite/CetY6Y4" rel="noreferrer noopener">https://discord.com/invite/CetY6Y4</a>&nbsp;</p>
+
+
+
+<h3 id="how-to-buypurchase-exchange-and-stake-eth-with-atomic-wallet"><strong>How to BuyPurchase, Exchange and Stake ETH with Atomic Wallet</strong></h3>
+
+
+
+<p>You can easily purchase<a target="_blank" href="https://atomicwallet.io/buy-ethereum" rel="noreferrer noopener">&nbsp;ETH</a>&nbsp;in the Atomic Wallet with a Visa or Mastercard. All purchased Ether will be deposited straight into your wallet upon successfully completing a purchase. If you currently hold other tokens such as Bitcoin, you can easily exchange them for Ether as well with the click of a button.&nbsp;</p>
+
+
+
+<p>Without a doubt, we do have plans to support the Ethereum Staking 2.0 upgrade in the future, but as of now, it is not available in the Atomic Wallet. As soon as this feature is rolled out and can be implemented, we will notify all our users in the same manner as we execute the upgrade across all platforms. We are very excited about staking 2.0 and will ensure that it is implemented as quickly and efficiently as possible for our users!</p>
+
+
+
+<p>Be sure to check that you have the latest version of our wallet installed for the best experience. If you don&#8217;t have our wallet installed yet, you can<a target="_blank" href="http://atomicwallet.io" rel="noreferrer noopener">&nbsp;download Atomic Wallet</a>&nbsp;for PC, Mac, Linux, Android, IOS for free!</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ethereum-2-0-staking">Ethereum Staking 2.0 Ultimate Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ethereum-2-0-staking/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

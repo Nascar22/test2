@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to securely store private keys and mnemonic seed	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/how-to-store-private-keys-and-mnemonic-seed/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/how-to-store-private-keys-and-mnemonic-seed</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 17:46:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: GodRACE		</title>
+		<link>https://atomicwallet.io/blog/academy/how-to-store-private-keys-and-mnemonic-seed#comment-207</link>
+
+		<dc:creator><![CDATA[GodRACE]]></dc:creator>
+		<pubDate>Sun, 03 May 2020 19:51:07 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=960#comment-207</guid>
+
+					<description><![CDATA[  This is very insightful. I have lost some huge funds before because I had no guide.
+Thanks for this as newbies are safe]]></description>
+			<content:encoded><![CDATA[<p>  This is very insightful. I have lost some huge funds before because I had no guide.<br />
+Thanks for this as newbies are safe</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

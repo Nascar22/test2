@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Atomic Wallet Roadmap: 2019	</title>
+	<atom:link href="https://atomicwallet.io/blog/news/roadmap-for-2019/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/news/roadmap-for-2019</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 17:23:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Michael Michael		</title>
+		<link>https://atomicwallet.io/blog/news/roadmap-for-2019#comment-172</link>
+
+		<dc:creator><![CDATA[Michael Michael]]></dc:creator>
+		<pubDate>Sat, 02 May 2020 15:56:13 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=844#comment-172</guid>
+
+					<description><![CDATA[  It&#039;s amazing how the team was committed in reaching every milestone set out in the roadmap. Better days ahead for the project.]]></description>
+			<content:encoded><![CDATA[<p>  It&#8217;s amazing how the team was committed in reaching every milestone set out in the roadmap. Better days ahead for the project.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

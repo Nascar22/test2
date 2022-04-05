@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Glossary &mdash; Zcash Documentation 4.5.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/clipboard.min.js"></script>
+        <script type="text/javascript" src="../_static/copybutton.js"></script>
+        <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
+        <script type="text/javascript" src="../_static/js/transifex-api.js"></script>
+        <script type="text/javascript" src="../_static/js/zcash-docs.js"></script>
+        <script async="async" type="text/javascript" src="https://assets.readthedocs.org/static/javascript/readthedocs-doc-embed.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="https://assets.readthedocs.org/static/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2021-09-23T19:38:04Z", "builder": "sphinx", "canonical_url": null, "commit": "ce85f384", "docroot": "/source/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "rtd_pages/glossary", "programming_language": "cpp", "project": "zcash", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "UA-91560402-3", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="https://assets.readthedocs.org/static/javascript/readthedocs-analytics.js" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Zcash Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">Zcash Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ecosystem.html">Community Spaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="librustzcash_arch.html">Architecture and Cryptography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="best_practices.html">Development Best Practices</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Interact with Zcash</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nu_dev_guide.html">Network Upgrade Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zcashd.html">Zcash Full Node and CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="protocol.html">Zcash Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lightclient_support.html">Light Client Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zcash_mining_guide.html">Zcash Mining Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zig.html">Zcash Integration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zcash_wallets.html">Recommended Wallets</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="funding.html">Funding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learning.html">Further Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev_tools.html">Developer Tools</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Zcash Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+    <a href="https://gitlab.com/zcash-docs/zcash-docs" class="fa fa-gitlab">&nbsp;
+    Edit on GitLab</a>
+
+    &nbsp;&nbsp; or
+
+    <a href="https://forms.gle/5QpmMRjwvuNc5yNr6">&nbsp;
+    Leave feedback</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Glossary</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="glossary">
+<span id="id1"></span><h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h1>
+<span id="address"></span><dl class="docutils" id="addresses">
+<dt>Address</dt>
+<dd>A Zcash address is similar to a physical address or an email address. It is the only information you need to provide for someone to send you <a class="reference internal" href="#zec">ZEC</a>. There are two types of addresses in Zcash: a <a class="reference internal" href="#shielded-address">shielded address</a> and a <a class="reference internal" href="#transparent-address">transparent address</a>.</dd>
+</dl>
+<span id="block"></span><dl class="docutils" id="blocks">
+<dt>Block</dt>
+<dd>A block is a record in the Zcash blockchain that contains a set of transactions sent on the network. Pending inclusion in a block, a transaction is kept in the <a class="reference internal" href="#mempool">mempool</a> in an <a class="reference internal" href="#unconfirmed">unconfirmed</a> state. Roughly every 2.5 minutes, on average, a new block is appended to the <a class="reference internal" href="#blockchain">blockchain</a> through <a class="reference internal" href="#mining">mining</a> and the transactions included receive their first <a class="reference internal" href="#confirmation">confirmation</a>.</dd>
+</dl>
+<span id="block-reward"></span><dl class="docutils" id="block-rewards">
+<dt>Block reward</dt>
+<dd>A block reward is new <a class="reference internal" href="#zec">ZEC</a> released into the network after the successful <a class="reference internal" href="#mining">mining</a> of a block. For the first four years, the block reward in Zcash is split into a <cite>miners’ reward</cite> and a <cite>founders’ reward</cite>. During this time, miners receive 80% (or 10 <a class="reference internal" href="#zec">ZEC</a>) per block with the remaining 20% (or 2.5 ZEC) split between a range of beneficiaries including an <a class="reference external" href="_ZcashCompany:">Electric Coin Company</a> strategic reserve, the <a class="reference internal" href="#zcash-foundation">Zcash Foundation</a> and many stakeholders including Zcash founders, employees, investors and advisors. After 850,000 <a class="reference internal" href="#blocks">blocks</a>, the block reward halves for the first time and miners start to receive 100% of the block reward (6.25 ZEC). Each subsequent 840,000 blocks triggers a new block reward halving.</dd>
+</dl>
+<dl class="docutils" id="blockchain">
+<dt>Blockchain</dt>
+<dd>The blockchain is a public record of Zcash transactions in chronological order. The blockchain is shared between all Zcash users. It is used to verify the permanence of Zcash transactions and to prevent <a class="reference internal" href="#double-spending">double spending</a>.</dd>
+</dl>
+<span id="confirmation"></span><span id="unconfirmed"></span><span id="confirmed"></span><dl class="docutils" id="confirm">
+<dt>Confirmation</dt>
+<dd>A transaction confirmation first occurs when that transaction has been included in a <a class="reference internal" href="#block">block</a> and gains an additional confirmation for each subsequent block. The more confirmations a transaction has, the higher the security from a potential reversal (see: <a class="reference internal" href="#rollback">rollback</a>). Some may consider a single confirmation to be secure for low value transactions, although it is generally recommended to wait for 10+ confirmations.</dd>
+</dl>
+<dl class="docutils" id="cryptography">
+<dt>Cryptography</dt>
+<dd><p class="first">Cryptography is the branch of mathematics that lets us create mathematical proofs that provide high levels of security and privacy. Services like online commerce and banking already use cryptography and in many countries, are required by law to protect customers and their data. In the case of Zcash, cryptography is used to:</p>
+<ol class="last arabic simple">
+<li>protect user privacy (via <a class="reference internal" href="#zk-snarks">zk-SNARKs</a>)</li>
+<li>make it impossible for anybody to spend funds from another user’s wallet</li>
+<li>prevent corruption of the blockchain database</li>
+</ol>
+</dd>
+</dl>
+<dl class="docutils">
+<dt>Electric Coin Company</dt>
+<dd>This is the abbreviation for the Electric Coin Company, the team behind the <a class="reference internal" href="#zcash-protocol">Zcash protocol</a>, previously known as the Zcash Company.</dd>
+</dl>
+<dl class="docutils" id="encrypted-memo">
+<dt>Encrypted memo</dt>
+<dd>The encrypted memo is an additional field for <a class="reference internal" href="#transactions">transactions</a> sent to <a class="reference internal" href="#shielded-addresses">shielded addresses</a> that is visible to the recipient of a payment. The encrypted memo is visible only the to the sender and recipient, unless the <a class="reference internal" href="#viewing-key">viewing key</a> or <a class="reference internal" href="#payment-disclosure">payment disclosure</a> gets shared with a third party.</dd>
+</dl>
+<dl class="docutils" id="equihash">
+<dt>Equihash</dt>
+<dd>Equihash is a proof-of-work <a class="reference internal" href="#mining">mining</a> algorithm that is memory-oriented with very efficient verification.</dd>
+</dl>
+<dl class="docutils" id="experimental-feature">
+<dt>Experimental feature</dt>
+<dd>An experimental feature is one that is available to users on the main <a class="reference internal" href="#zcash-network">Zcash network</a> but should undergo further testing by users and developers. Users must explicitly opt into enabling an experimental feature until they become fully supported.</dd>
+</dl>
+<span id="double-spent"></span><span id="double-spend"></span><dl class="docutils" id="double-spending">
+<dt>Double spend</dt>
+<dd>A double spend happens when a user sends the same <a class="reference internal" href="#zec">ZEC</a> to two different recipients. Zcash <a class="reference internal" href="#miners">miners</a>, the Zcash <a class="reference internal" href="#blockchain">blockchain</a> and <a class="reference internal" href="#zk-snarks">zk-SNARKs</a> are integral for only allowing one transaction to <a class="reference internal" href="#confirm">confirm</a> and be considered valid.</dd>
+</dl>
+<span id="mempool"></span><dl class="docutils" id="memory-pool">
+<dt>Memory pool</dt>
+<dd>The memory pool (or <cite>mempool</cite> for short) is a temporary staging location for <a class="reference internal" href="#transactions">transactions</a> which have been verified by nodes in the <a class="reference internal" href="#zcash-network">Zcash network</a> but have not yet been included in a <a class="reference internal" href="#block">block</a>. Transactions in the memory pool are considered <a class="reference internal" href="#unconfirmed">unconfirmed</a>.</dd>
+</dl>
+<span id="miners"></span><span id="mining"></span><dl class="docutils" id="mined">
+<dt>Mining</dt>
+<dd>Mining is the process where for each <a class="reference internal" href="#block">block</a>, nodes in the Zcash network compete by doing complex mathematical calculations to find a solution based on a self-adjusting difficulty. Zcash miners are rewarded with both the <a class="reference internal" href="#transaction-fees">transaction fees</a> of the <a class="reference internal" href="#transactions">transactions</a> they confirm and <a class="reference internal" href="#block-rewards">block rewards</a>. Zcash uses a proof-of-work mining algorithm called <a class="reference internal" href="#equihash">Equihash</a>.</dd>
+</dl>
+<dl class="docutils" id="multisig">
+<dt>Multi-signature</dt>
+<dd>A multi-signature address (also referred to as <cite>multisig</cite>) is a type of <a class="reference internal" href="#address">address</a> which requires multiple <a class="reference internal" href="#private-key">private key</a>  <a class="reference internal" href="#signatures">signatures</a> in order to spend funds. This is a security mechanism to protect against theft or loss of a private key. Currently, multisig functionality is only supported by <a class="reference internal" href="#transparent-addresses">transparent addresses</a>.</dd>
+</dl>
+<span id="network-upgrade"></span><dl class="docutils" id="network-upgrades">
+<dt>Network upgrade</dt>
+<dd>A network upgrade is a <cite>software-updates-required</cite> release of the Zcash software. After <a class="reference internal" href="#activation">activation</a> of a network upgrade, network nodes running older versions that are not compatible with the upgrade will be forked onto an outdated <a class="reference internal" href="#blockchain">blockchain</a> and will require a software upgrade to rejoin the main network. This is sometimes referred to as a <cite>hard fork</cite> upgrade.</dd>
+</dl>
+<dl class="docutils" id="overwinter">
+<dt>Overwinter</dt>
+<dd>Overwinter is the first <a class="reference internal" href="#network-upgrade">network upgrade</a> for Zcash. Its purpose is strengthening the protocol for future network upgrades. It includes versioning, replay protection for network upgrades, performance improvements for transparent transactions and the <a class="reference internal" href="#transaction-expiry">transaction expiry</a> feature. Overwinter <a class="reference internal" href="#activated">activated</a> at <a class="reference internal" href="#block">block</a> height 347500.</dd>
+</dl>
+<dl class="docutils" id="payment-disclosure">
+<dt>Payment disclosure</dt>
+<dd>A payment disclosure is a method of proving that a payment was sent to a <a class="reference internal" href="#shielded-address">shielded address</a> by revealing the value, receiving address and optional <a class="reference internal" href="#encrypted-memo">encrypted memo</a>. The current implementation of this is as an <a class="reference internal" href="#experimental-feature">experimental feature</a>.</dd>
+</dl>
+<span id="private-key"></span><dl class="docutils" id="private-key-s">
+<dt>Private Key</dt>
+<dd>A private key is a secret string of data that gives access to spend the <a class="reference internal" href="#zec">ZEC</a> balance of an associated <a class="reference internal" href="#address">address</a> through a cryptographic <a class="reference internal" href="#signature">signature</a>. Your private key(s) may be stored directly in your computer or smartphone, with a custodian such as an exchange or a combination of both using <a class="reference internal" href="#multisig">multisig</a>. Private keys are important to keep safe as they are the only access to spending the funds you may own. For securing your private keys with the zcashd client, review the <a class="reference internal" href="wallet_backup.html#wallet-backup"><span class="std std-ref">Wallet Backup Instructions</span></a>.</dd>
+</dl>
+<dl class="docutils" id="public-parameters">
+<dt>Public parameters</dt>
+<dd>The Zcash public parameters are a set of global constraints required for constructing and verifying the <a class="reference internal" href="#zk-snarks">zk-SNARKs</a> used for <a class="reference internal" href="#shielded-addresses">shielded addresses</a>.</dd>
+</dl>
+<dl class="docutils" id="rollback">
+<dt>Rollback</dt>
+<dd>A rollback is when a blockchain is rewound to a previous state and a set of the most recent <a class="reference internal" href="#blocks">blocks</a> and the <a class="reference internal" href="#transactions">transactions</a> they contain are discarded. Zcash has a rollback limit of 100 blocks.</dd>
+</dl>
+<dl class="docutils" id="sapling">
+<dt>Sapling</dt>
+<dd>Sapling is a <a class="reference internal" href="#network-upgrade">network upgrade</a> that introduces significant efficiency improvements for shielded transactions that will pave the way for broad mobile, exchange and vendor adoption of Zcash shielded addresses. Sapling is scheduled to <a class="reference internal" href="#activate">activate</a> at <a class="reference internal" href="#block">block</a> height 419200.</dd>
+</dl>
+<dl class="docutils" id="selective-disclosure">
+<dt>Selective disclosure</dt>
+<dd>Selective disclosure refers to the features of <a class="reference internal" href="#shielded-addresses">shielded addresses</a> where the owner may <cite>selectively disclose</cite> shielded transaction data. A user may share a <a class="reference internal" href="#viewing-key">viewing key</a> or <a class="reference internal" href="#payment-disclosure">payment disclosure</a> with any third party, allowing them to access shielded data while maintaining privacy from others.</dd>
+</dl>
+<span id="shielded-address"></span><span id="zaddr"></span><dl class="docutils" id="shielded-addresses">
+<dt>Shielded address</dt>
+<dd>A shielded <a class="reference internal" href="#address">address</a> (also referred to as a <cite>zaddr</cite>) sends or receives <a class="reference internal" href="#transactions">transactions</a> such that the address, associated value and <a class="reference internal" href="#encrypted-memo">encrypted memo</a> are not visible on the Zcash <a class="reference internal" href="#blockchain">blockchain</a>. These addresses start with the letter <cite>z</cite>.  A shielded address uses <a class="reference internal" href="#zk-snarks">zk-SNARKs</a> to protect transaction data for value sent or received to it. A transaction consisting of only shielded addresses is called a <a class="reference internal" href="#shielded-transaction">shielded transaction</a>. A transaction consisting of both shielded addresses and <a class="reference internal" href="#transparent-addresses">transparent addresses</a> only protects the data associated with the shielded address. Each shielded address has a <a class="reference internal" href="#spending-key">spending key</a> and <a class="reference internal" href="#viewing-key">viewing key</a>.</dd>
+</dl>
+<dl class="docutils" id="shielded-transaction">
+<dt>Shielded transaction</dt>
+<dd>A shielded transaction is a transaction exclusively between <a class="reference internal" href="#shielded-addresses">shielded addresses</a>. The addresses, value and optional <a class="reference internal" href="#encrypted-memo">encrypted memo</a> are shielded using <a class="reference internal" href="#zk-snark">zk-SNARK</a>  <a class="reference internal" href="#cryptography">cryptography</a> before the transaction is recorded in the <a class="reference internal" href="#blockchain">blockchain</a>.</dd>
+</dl>
+<span id="signature"></span><dl class="docutils" id="signatures">
+<dt>Signature</dt>
+<dd>A cryptographic signature is a mathematical scheme that allows someone to authenticate digital information. When your Zcash <a class="reference internal" href="#wallet">wallet</a> signs a transaction with the appropriate <a class="reference internal" href="#private-key">private key</a>, the network can confirm that the signature matches the <a class="reference internal" href="#zec">ZEC</a> being spent. This signing is confirmed publicly for <a class="reference internal" href="#transparent-addresses">transparent addresses</a> and through the use of <a class="reference internal" href="#zk-snarks">zk-SNARKs</a> for <a class="reference internal" href="#shielded-addresses">shielded addresses</a>.</dd>
+</dl>
+<span id="solution-rate"></span><span id="hash-rate"></span><dl class="docutils" id="sol-s">
+<dt>Sol/s</dt>
+<dd>Sol/s refers to solutions per second and measures the rate at which <a class="reference internal" href="#equihash">Equihash</a> solutions are found. Each one of those solutions is tested against the current target (after adding to the block header and hashing), in the same way that in Bitcoin each nonce variation is tested against the target.</dd>
+</dl>
+<dl class="docutils" id="spending-key">
+<dt>Spending key</dt>
+<dd>A spending key is a type of <a class="reference internal" href="#private-key">private key</a> that allows any user in possession of it to spend the balance of the associated <a class="reference internal" href="#address">address</a>. For <a class="reference internal" href="#shielded-addresses">shielded addresses</a>, possessing the spending key also allows the user to view the address’ balance and <a class="reference internal" href="#transaction">transaction</a> data.</dd>
+</dl>
+<dl class="docutils" id="sprout">
+<dt>Sprout</dt>
+<dd>Sprout is the first version of Zcash, launched on October 28, 2016.</dd>
+</dl>
+<dl class="docutils" id="taz">
+<dt>TAZ</dt>
+<dd>TAZ is the three letter code for the valueless Zcash <a class="reference internal" href="#testnet">testnet</a> currency.</dd>
+</dl>
+<dl class="docutils" id="testnet">
+<dt>Testnet</dt>
+<dd>The Zcash testnet is an alternative <a class="reference internal" href="#blockchain">blockchain</a> that attempts to mimic the main <a class="reference internal" href="#zcash-network">Zcash network</a> for testing purposes. Testnet coins (sometimes referred to as <a class="reference internal" href="#taz">TAZ</a>) are distinct from actual <a class="reference internal" href="#zec">ZEC</a> and do not have value. Developers and users can experiment with the testnet without having to use valuable currency. The testnet is also used to test <a class="reference internal" href="#network-upgrades">network upgrades</a> and their <a class="reference internal" href="#activation">activation</a> before committing to the upgrade on the main <a class="reference internal" href="#zcash-network">Zcash network</a>.</dd>
+</dl>
+<span id="transaction"></span><dl class="docutils" id="transactions">
+<dt>Transaction</dt>
+<dd>A transaction is a payment between users. They are locally created by the user or service then submitted to the <a class="reference internal" href="#zcash-network">Zcash network</a> for verification by nodes and eventual <a class="reference internal" href="#confirmation">confirmation</a> into a <a class="reference internal" href="#block">block</a>.</dd>
+</dl>
+<span id="transaction-expiry"></span><dl class="docutils" id="transaction-expires">
+<dt>Transaction expiry</dt>
+<dd>A transaction expires after staying <a class="reference internal" href="#unconfirmed">unconfirmed</a> in the <a class="reference internal" href="#mempool">mempool</a> for too long and is discarded. Once a transaction expires, it may be resubmitted to the network or a new transaction may be submitted in its place. The default expiry in Zcash is 20 <a class="reference internal" href="#blocks">blocks</a>.</dd>
+</dl>
+<span id="transaction-fee"></span><dl class="docutils" id="transaction-fees">
+<dt>Transaction fee</dt>
+<dd>A transaction fee is an additional value added to a <a class="reference internal" href="#transaction">transaction</a> used to incentivize <a class="reference internal" href="#miners">miners</a> to include the transaction into a <a class="reference internal" href="#block">block</a>. Transactions with low or no fee may still be mined but transactions with the default fee or higher will be preferred. If a transaction has too low of a fee, it may stay in the <a class="reference internal" href="#mempool">mempool</a> until the <a class="reference internal" href="#transaction-expires">transaction expires</a>. The fee value is not protected for transactions containing <a class="reference internal" href="#shielded-addresses">shielded addresses</a> and therefore it is recommended to always use the default fee of <cite>.0001 ZEC</cite>. Unique fees may result in loss of privacy in some cases.</dd>
+</dl>
+<span id="transparent-address"></span><span id="taddr"></span><dl class="docutils" id="transparent-addresses">
+<dt>Transparent address</dt>
+<dd>A transparent <a class="reference internal" href="#address">address</a> (also referred to as a <cite>taddr</cite>) sends or receives <a class="reference internal" href="#transactions">transactions</a> such that the address and associated value are publicly recorded on the Zcash <a class="reference internal" href="#blockchain">blockchain</a>. These addresses start with the letter <cite>t</cite>.  A transparent address does not use <a class="reference internal" href="#zk-snarks">zk-SNARKs</a> to protect transaction data for value sent or received to it. A transaction consisting of only transparent addresses reveals the entire transaction. A transaction consisting of both transparent addresses and <a class="reference internal" href="#shielded-addresses">shielded addresses</a> only reveals the data associated with the transparent address.</dd>
+</dl>
+<dl class="docutils" id="transparent-transaction">
+<dt>Transparent transaction</dt>
+<dd>A transparent transaction is a transaction exclusively between <a class="reference internal" href="#transparent-addresses">transparent addresses</a>. The addresses and value are recorded publicly on the <a class="reference internal" href="#blockchain">blockchain</a>.</dd>
+</dl>
+<span id="activate"></span><span id="activation"></span><span id="upgrade-activation"></span><dl class="docutils" id="activated">
+<dt>Upgrade activation</dt>
+<dd>An upgrade activation is a specific <a class="reference internal" href="#block">block</a> height that triggers a <a class="reference internal" href="#network-upgrade">network upgrade</a>.</dd>
+</dl>
+<dl class="docutils" id="viewing-key">
+<dt>Viewing key</dt>
+<dd>A viewing key is a type of <a class="reference internal" href="#private-key">private key</a> that allows any user in possession of it to view the balance and transaction data of the associated <a class="reference internal" href="#shielded-address">shielded address</a>.</dd>
+</dl>
+<dl class="docutils" id="wallet">
+<dt>Wallet</dt>
+<dd>A Zcash wallet contains <a class="reference internal" href="#private-key-s">private key(s)</a> which allow the owner to spend the <a class="reference internal" href="#zec">ZEC</a> balance it contains. Each Zcash wallet can show you the total balance of all <a class="reference internal" href="#zec">ZEC</a> it controls and lets you pay a specific amount to a specific <a class="reference internal" href="#address">address</a>, just like a real wallet you keep in your pocket or purse. This is different to credit cards where customers are charged by the merchant.</dd>
+</dl>
+<dl class="docutils" id="zcash-network">
+<dt>Zcash network</dt>
+<dd>The Zcash network is a <cite>peer-to-peer</cite> network of nodes where each node may interact directly with the others for broadcasting newly submitted <a class="reference internal" href="#transactions">transactions</a>, <a class="reference internal" href="#mined">mined</a> <a class="reference internal" href="#blocks">blocks</a> and various other messages that regulate behavior. This type of structure removes the need for a trusted regulating central party.</dd>
+</dl>
+<dl class="docutils" id="zcash-protocol">
+<dt>Zcash</dt>
+<dd>Zcash is an in-production cryptocurrency implementation of the Zerocash protocol, with security fixes and improvements to performance and functionality. It bridges the existing transparent payment scheme used by Bitcoin with a <cite>shielded</cite> payment scheme secured by <a class="reference internal" href="#zk-snarks">zk-SNARKs</a>. It implements the <a class="reference internal" href="#equihash">Equihash</a> proof-of-work <a class="reference internal" href="#mining">mining</a> algorithm. Both the network and the associated currency are referred to as <cite>Zcash</cite> with <a class="reference internal" href="#zec">ZEC</a> referring specifically to the currency.</dd>
+</dl>
+<dl class="docutils" id="zcash-foundation">
+<dt>Zcash Foundation</dt>
+<dd>The Zcash Foundation is a 501(c)3 non-profit dedicated to building Internet payment and privacy infrastructure for the public good, primarily serving the users of the Zcash protocol and blockchain.</dd>
+</dl>
+<dl class="docutils" id="zec">
+<dt>ZEC</dt>
+<dd>ZEC is the three letter currency code for the Zcash cryptocurrency. It is also used to help distinguish the <a class="reference internal" href="#zcash-network">Zcash network</a> from the currency. Note that some exchanges use <cite>XZC</cite> as the Zcash currency code to conform with the <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_4217#X_currencies">ISO 4217</a> standard for currencies and similar assets not associated with a nation.</dd>
+</dl>
+<dl class="docutils" id="zerocash">
+<dt>Zerocash</dt>
+<dd>Zerocash is a cryptographic protocol invented by Eli Ben-Sasson, Alessandro Chiesa, Christina Garman, Matthew Green, Ian Miers, Eran Tromer, and Madars Virza in 2014. It improves on the earlier <a class="reference internal" href="#zerocoin">Zerocoin</a> protocol developed by some of the same authors both in functionality and efficiency.</dd>
+</dl>
+<dl class="docutils" id="zerocoin">
+<dt>Zerocoin</dt>
+<dd>Zerocoin is a cryptographic protocol invented by Ian Miers, Christina Garman, Matthew Green, and Aviel D. Rubin in 2013. It is a less efficient predecessor of <a class="reference internal" href="#zerocash">Zerocash</a>.</dd>
+</dl>
+<span id="zk-snarks"></span><dl class="docutils" id="zk-snark">
+<dt>zk-SNARKs</dt>
+<dd>A zk-SNARK is a particular form of zero-knowledge proof used in the <a class="reference internal" href="#zcash-protocol">Zcash protocol</a> which allows <a class="reference internal" href="#shielded-addresses">shielded addresses</a> to prove the validity of associated <a class="reference internal" href="#transactions">transactions</a> without revealing the <a class="reference internal" href="#address">address</a> or value transacted. For Bitcoin and <a class="reference internal" href="#transparent-addresses">transparent addresses</a>, <a class="reference internal" href="#miners">miners</a> can verify that a transaction has not been <a class="reference internal" href="#double-spent">double spent</a> because the addresses and their balances are publicly visible within transactions. zk-SNARKs allow this same double spend protection for shielded addresses. The term, which stands for <cite>zero-knowledge Succinct Non-interactive ARguments of Knowledge</cite>,  was first used in the <a class="reference internal" href="#zerocash">Zerocash</a> whitepaper.</dd>
+</dl>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Electric Coin Company
+      <span class="commit">
+        
+        Revision <code>ce85f384</code>.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="/en/latest/">latest</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="//zcash.readthedocs.io/_/downloads/en/latest/pdf/">pdf</a></dd>
+        
+          <dd><a href="//zcash.readthedocs.io/_/downloads/en/latest/htmlzip/">html</a></dd>
+        
+          <dd><a href="//zcash.readthedocs.io/_/downloads/en/latest/epub/">epub</a></dd>
+        
+      </dl>
+      <dl>
+        
+        <dt>On Read the Docs</dt>
+          <dd>
+            <a href="//readthedocs.org/projects/zcash/?fromdocs=zcash">Project Home</a>
+          </dd>
+          <dd>
+            <a href="//readthedocs.org/builds/zcash/?fromdocs=zcash">Builds</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+</body>
+</html>

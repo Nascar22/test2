@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+	
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Starks Network &#8211; Zero-Knowledge Proof for Polkadot</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Starks Network &raquo; Feed" href="https://starks.network/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Starks Network &raquo; Comments Feed" href="https://starks.network/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/starks.network\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://starks.network/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='yocto-styles-css'  href='https://starks.network/wp-content/themes/yocto/assets/css/style.min.css?ver=1.0.11' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://starks.network/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://starks.network/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://starks.network/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.1" />
+<style type="text/css" id="custom-theme-colors">
+		.site-header {
+			border-top: 10px solid #03a9f4;
+		}
+
+		blockquote,
+		.entry-content .wp-block-quote:not(.is-large),
+		.page-header {
+			border-left: 8px solid #03a9f4;
+		}
+
+		abbr[title],
+		acronym {
+			border-bottom: 2px dotted #03a9f4;
+		}
+
+		::selection,
+		mark,
+		ins,
+		.entry-terms a:hover,
+		.entry-terms a:focus {
+			background: #03a9f4;
+		}
+
+		.footer-widgets a:hover,
+		.page-numbers.current,
+		.widget a,
+		.entry-content a {
+			border-color: #03a9f4;
+		}
+
+		.site-info a:hover,
+		.site-info a:focus,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.widget-area-footer a:hover,
+		.widget-area-footer a:focus,
+		.primary-menu .menu-item.current-menu-item > a,
+		.primary-menu .menu-item a:hover,
+		.primary-menu .menu-item a:focus,
+		.primary-menu .menu-item.focus a:hover,
+		.primary-menu .menu-item.focus a:focus {
+			color: #03a9f4;
+		}
+
+		.primary-menu .sub-menu .menu-item a:hover,
+		.primary-menu .sub-menu .menu-item a:focus,
+		.primary-menu .sub-menu .menu-item.focus a:hover {
+			color: #fff;
+		}
+
+		.site-header {
+			border-top: 10px solid #03a9f4;
+		}
+
+		.site-title a,
+		.calendar_wrap a,
+		.mejs-horizontal-volume-slider:hover,
+		.post-navigation a:hover .post-title,
+		.post-navigation a:focus .post-title,
+		.widget_meta a:hover,
+		.widget_meta a:focus,
+		.widget_pages a:hover,
+		.widget_pages a:focus,
+		.widget_tag_cloud a:hover,
+		.widget_tag_cloud a:focus,
+		.widget_recent_entries a:hover,
+		.widget_recent_entries a:focus,
+		.widget_archive a:hover,
+		.widget_archive a:focus,
+		.widget_categories a:hover,
+		.widget_categories a:focus,
+		.widget_recent_comments a:hover,
+		.widget_recent_comments a:focus,
+		.widget_nav_menu a:hover,
+		.widget_nav_menu a:focus {
+			border-bottom: 2px solid #03a9f4;
+		}
+
+		.menu-toggle {
+			border: 1px solid #03a9f4;
+			background: #03a9f4;
+		}
+	.has-yocto-primary-color { color: #03a9f4 }.has-yocto-primary-background-color { background-color: #03a9f4; }</style><link rel="icon" href="https://starks.network/wp-content/uploads/2020/11/cropped-cropped-Starks-Network_logo_only-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://starks.network/wp-content/uploads/2020/11/cropped-cropped-Starks-Network_logo_only-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://starks.network/wp-content/uploads/2020/11/cropped-cropped-Starks-Network_logo_only-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://starks.network/wp-content/uploads/2020/11/cropped-cropped-Starks-Network_logo_only-270x270.jpg" />
+</head>
+
+<body class="home blog wp-embed-responsive hfeed footer-widgets-0">
+		<a class="screen-reader-text" href="#content">Skip to content</a>
+
+	<header class="site-header" role="banner">
+		<div class="container site-header-container">
+			<div class="site-branding">
+							<h1 class="site-title">
+				<a href="https://starks.network/" rel="home">
+					Starks Network				</a>
+			</h1>
+						<p class="site-description">Zero-Knowledge Proof for Polkadot</p>
+						</div>
+			
+
+	<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+		<button id="js-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<svg class="icon icon-bars" aria-hidden="true" role="img"> <use href="#icon-bars" xlink:href="#icon-bars"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use href="#icon-close" xlink:href="#icon-close"></use> </svg>Menu		</button>
+		<div class="primary-menu-wrapper"><ul id="primary-menu" class="primary-menu"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19"><a href="http://starks.network/" aria-current="page">Home</a></li>
+<li id="menu-item-1463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1463"><a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapp.starks.network#/explorer">APP</a></li>
+<li id="menu-item-1491" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1491"><a href="https://starksnetwork.medium.com">Blog</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://starks.network/about/">About</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://starks.network/contact/">Contact</a></li>
+</ul></div>	</nav><!-- #site-navigation -->
+
+		</div>
+	</header>
+
+	<div class="site-content container" id="content">
+
+<main class="site-main" role="main">
+
+	
+<article id="post-1494" class="post-1494 post type-post status-publish format-standard hentry category-uncategorized">
+
+	
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://starks.network/we-are-rebranded/" rel="bookmark">We are rebranded.</a></h2>		</header>
+
+		<div class="entry-content">
+				<div class="entry-meta">
+		<span class="posted-on">Posted on <a href="https://starks.network/we-are-rebranded/" rel="bookmark"><time class="entry-date published" datetime="2021-03-22T15:42:09+00:00">March 22, 2021</time><time class="updated" datetime="2021-03-22T15:43:38+00:00">March 22, 2021</time></a></span><span class="byline">  by <span class="author vcard"><a class="url fn n" href="https://starks.network/author/zhangxgbctech-cn/">starks_admin</a></span></span>	</div><!-- .entry-meta -->
+<p>The Starks Network project has been rebranded. Please visit our new site: https://zcloak.network. Thank you!</p>
+		</div>
+		
+</article><!-- #post-## -->
+
+<article id="post-1482" class="post-1482 post type-post status-publish format-standard hentry category-uncategorized">
+
+	
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://starks.network/why-starks-network/" rel="bookmark">Why Starks Network</a></h2>		</header>
+
+		<div class="entry-content">
+				<div class="entry-meta">
+		<span class="posted-on">Posted on <a href="https://starks.network/why-starks-network/" rel="bookmark"><time class="entry-date published" datetime="2021-02-03T10:37:59+00:00">February 3, 2021</time><time class="updated" datetime="2021-02-03T12:41:01+00:00">February 3, 2021</time></a></span><span class="byline">  by <span class="author vcard"><a class="url fn n" href="https://starks.network/author/zhangxgbctech-cn/">starks_admin</a></span></span>	</div><!-- .entry-meta -->
+<p>Monopolies like Facebook and Amazon, they track our every move, they monitor every moment in our lives and they exploit our data for profit. These companies are the kings and they rule over kingdoms far larger than any nation in human history. They won; we lost. …The way we win is by creating a new,&hellip; <a href="https://starks.network/why-starks-network/" class="more-link">Read more <span class="screen-reader-text">Why Starks Network</span></a></p>
+		</div>
+		
+</article><!-- #post-## -->
+
+<article id="post-36" class="post-36 post type-post status-publish format-standard hentry">
+
+	
+		<header class="entry-header">
+			<h2 class="entry-title"><a href="https://starks.network/starks-network-introduction/" rel="bookmark">Introduction</a></h2>		</header>
+
+		<div class="entry-content">
+				<div class="entry-meta">
+		<span class="posted-on">Posted on <a href="https://starks.network/starks-network-introduction/" rel="bookmark"><time class="entry-date published" datetime="2020-10-06T16:26:35+00:00">October 6, 2020</time><time class="updated" datetime="2020-10-07T02:06:03+00:00">October 7, 2020</time></a></span><span class="byline">  by <span class="author vcard"><a class="url fn n" href="https://starks.network/author/zhangxgbctech-cn/">starks_admin</a></span></span>	</div><!-- .entry-meta -->
+<p>The Starks Network aims to enrich the Polkadot/Kusama ecosystem with zero-knowledge proof technology. It can bring&nbsp;zk-STARK&nbsp;proof generation/verification capability to general purpose computations. The Starks Network can enable a wide range of applications from data privacy protection to novel DeFi infrastructures. The Starks Node is built upon the the&nbsp;Substrate&nbsp;blockchain framework. At its core, it uses the&nbsp;Distaff&hellip; <a href="https://starks.network/starks-network-introduction/" class="more-link">Read more <span class="screen-reader-text">Introduction</span></a></p>
+		</div>
+		
+</article><!-- #post-## -->
+
+</main><!-- .site-main -->
+
+
+<aside class="widget-area" role="complementary" aria-label="Blog Sidebar">
+	<a class="screen-reader-text" href="#site-footer">Skip to footer</a>
+	<section id="text-2" class="widget widget_text"><h2 class="widget-title">About This Project</h2>			<div class="textwidget"><p>A Web3 grant project.</p>
+<p>Twitter: <a href="https://twitter.com/starks_network">@starks_network</a></p>
+</div>
+		</section></aside><!-- .widget-area -->	
+
+</div>
+
+<footer class="site-footer" id="site-footer" role="contentinfo">
+		<div class="site-info">
+	<span class="powered-by">
+		<a href="https://wordpress.org/">
+			Proudly powered by WordPress		</a>		
+	</span>
+	<span class="sep"> | </span>
+	<span class="site-designer">
+		Theme: Yocto by <a href="https://humblethemes.com/">Humble Themes</a>.	</span>
+</div><!-- .site-info --></footer><!-- .site-footer -->
+
+<script type='text/javascript' src='https://starks.network/wp-content/themes/yocto/assets/js/bundle.min.js?ver=1.0.11' id='yocto-scripts-js'></script>
+<script type='text/javascript' src='https://starks.network/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+<svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+<symbol id="icon-arrow-down" viewBox="0 0 21 32"><path class="path1" d="M19.196 13.143q0 .232-.179.411l-8.321 8.321q-.179.179-.411.179t-.411-.179l-8.321-8.321q-.179-.179-.179-.411t.179-.411l.893-.893q.179-.179.411-.179t.411.179l7.018 7.018 7.018-7.018q.179-.179.411-.179t.411.179l.893.893q.179.179.179.411z"/></symbol>
+<symbol id="icon-bars" viewBox="0 0 27 32"><path class="path1" d="M27.429 24v2.286q0 .464-.339.804t-.804.339H1.143q-.464 0-.804-.339T0 26.286V24q0-.464.339-.804t.804-.339h25.143q.464 0 .804.339t.339.804zm0-9.143v2.286q0 .464-.339.804t-.804.339H1.143q-.464 0-.804-.339T0 17.143v-2.286q0-.464.339-.804t.804-.339h25.143q.464 0 .804.339t.339.804zm0-9.143V8q0 .464-.339.804t-.804.339H1.143q-.464 0-.804-.339T0 8V5.714q0-.464.339-.804t.804-.339h25.143q.464 0 .804.339t.339.804z"/></symbol>
+<symbol id="icon-close" viewBox="0 0 25 32"><path class="path1" d="M23.179 23.607q0 .714-.5 1.214L20.25 27.25q-.5.5-1.214.5t-1.214-.5L12.572 22l-5.25 5.25q-.5.5-1.214.5t-1.214-.5l-2.429-2.429q-.5-.5-.5-1.214t.5-1.214l5.25-5.25-5.25-5.25q-.5-.5-.5-1.214t.5-1.214l2.429-2.429q.5-.5 1.214-.5t1.214.5l5.25 5.25 5.25-5.25q.5-.5 1.214-.5t1.214.5l2.429 2.429q.5.5.5 1.214t-.5 1.214l-5.25 5.25 5.25 5.25q.5.5.5 1.214z"/></symbol>
+<symbol id="icon-folder-open" viewBox="0 0 34 32"><path class="path1" d="M33.554 17q0 .554-.554 1.179l-6 7.071q-.768.911-2.152 1.545t-2.563.634H2.856q-.607 0-1.08-.232t-.473-.768q0-.554.554-1.179l6-7.071q.768-.911 2.152-1.545T12.572 16h19.429q.607 0 1.08.232t.473.768zm-6.125-6.143v2.857H12.572q-1.679 0-3.518.848t-2.929 2.134L.018 23.875q0-.071-.009-.223T0 23.429V6.286q0-1.643 1.179-2.821T4 2.286h5.714q1.643 0 2.821 1.179t1.179 2.821v.571h9.714q1.643 0 2.821 1.179t1.179 2.821z"/></symbol>
+<symbol id="icon-hashtag" viewBox="0 0 32 32"><path class="path1" d="M17.696 18.286l1.143-4.571h-4.536l-1.143 4.571h4.536zm13.715-9l-1 4q-.125.429-.554.429h-5.839l-1.143 4.571h5.554q.268 0 .446.214.179.25.107.5l-1 4q-.089.429-.554.429h-5.839l-1.446 5.857q-.125.429-.554.429h-4q-.286 0-.464-.214-.161-.214-.107-.5l1.393-5.571h-4.536l-1.446 5.857q-.125.429-.554.429H5.857q-.268 0-.446-.214-.161-.214-.107-.5l1.393-5.571H1.143q-.268 0-.446-.214-.161-.214-.107-.5l1-4q.125-.429.554-.429h5.839l1.143-4.571H3.572q-.268 0-.446-.214-.179-.25-.107-.5l1-4q.089-.429.554-.429h5.839l1.446-5.857q.125-.429.571-.429h4q.268 0 .446.214.161.214.107.5l-1.393 5.571h4.536l1.446-5.857q.125-.429.571-.429h4q.268 0 .446.214.161.214.107.5l-1.393 5.571h5.554q.268 0 .446.214.161.214.107.5z"/></symbol>
+<symbol id="icon-pin" viewBox="0 0 32 32"><path d="M32 8c0-4.416-3.586-8-8-8-2.984 0-5.562 1.658-6.938 4.086 0-.002.004-.004.004-.006-.367-.035-.723-.111-1.098-.111-6.629 0-12 5.371-12 12 0 2.527.789 4.867 2.121 6.797L0 32l9.289-6.062a11.952 11.952 0 006.68 2.031c6.629 0 12-5.371 12-12 0-.346-.07-.67-.102-1.008C30.32 13.594 32 11.006 32 8zM15.969 23.969c-4.414 0-8-3.586-8-8 0-4.412 3.586-8 8-8 .012 0 .023.004.031.004 0-.008.004-.014.004-.02 0 .016-.004.031-.004.047 0 .695.117 1.355.281 1.998l-3.172 3.174a4 4 0 105.656 5.656l3.141-3.141c.66.18 1.344.305 2.059.309-.016 4.402-3.594 7.973-7.996 7.973zM24 12c-2.203 0-4-1.795-4-4s1.797-4 4-4 4 1.795 4 4-1.797 4-4 4z"/></symbol>
+</svg>
+</body>
+</html>

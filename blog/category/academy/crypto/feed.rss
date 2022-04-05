@@ -1,0 +1,2515 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Communities &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/category/academy/crypto/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Sat, 12 Jun 2021 23:11:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>Communities &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>AMA Report: Litecoin’s Community</title>
+		<link>https://atomicwallet.io/blog/academy/ama-litecoin-community</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-litecoin-community#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2020 20:39:23 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[ama]]></category>
+		<category><![CDATA[ama session]]></category>
+		<category><![CDATA[atomic]]></category>
+		<category><![CDATA[atomic wallet]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[digest]]></category>
+		<category><![CDATA[litecoin]]></category>
+		<category><![CDATA[ltc]]></category>
+		<category><![CDATA[report]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=26103</guid>
+
+					<description><![CDATA[<p>On April 24th, Litecoin, an open source, global payment network that is fully decentralized without any central authorities, hosted an AMA session with us in their Telegram Chat. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the Litecoin community led by Loshan (Community  Manager).</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-litecoin-community">AMA Report: Litecoin’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/lcn_ama_digest_atomic-1920x1080.png"  alt="AMA w/ LTC cover"  class="wp-image-26117" ></figure>
+
+
+
+<p> On April 24th, <a href="https://litecoin.org/">Litecoin</a>, an open-source, global payment network that is fully decentralized without any central authorities, hosted an AMA session with us in their Telegram Chat. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the Litecoin community.<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Konstantin (K), C (Christina), and the questions from the Litecoin chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What do you think would be a use case for atomic swaps as a general user?</p>
+
+
+
+<p>K: I think the best case for swaps is pegged assets. Currently, the so-called DeFi is growing on Ethereum and some other chains. But now to bring Bitcoin or Litecoin to smart contracts? Only with pegged assets. It can be done with non-custodial atomic swaps. So cross-chain 1:1 interaction is a good case where you don’t care about prices and liquidity much.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Is Atomic Wallet fully decentralized?</p>
+
+
+
+<p>K: Atomic is a non-custodial wallet. Your private keys are encrypted and never leave your local device. This means that only you fully control your crypto which is so-called &#8220;your keys, your funds.&#8221; However, Atomic is a light wallet. We are not forcing you to run your own full node and download the blockchain. The app is connected to various nodes all over the world to get data on your balance and history and broadcast signed transactions. So it is pretty decentralized, however, less than a full node for sure. But it’s still great for most users to feel the nature of crypto.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How does Atomic Wallet provide the most current price in the atomic swap process? Which exchanges or methods does the trade happen?</p>
+
+
+
+<p>K: Unfortunately, we discontinued atomic swaps due to complicated support and liquidity issues. Currently, we work with various partners that are so-called non-KYC instant exchanges. At least they support lots of assets and search for the best rates. Do all background trading for you and it’s still far less risky then store your crypto on centralized exchanges.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can we have multiple wallets integration in the future so we can restore our old Litecoin address to Atomic?</p>
+
+
+
+<p>K: We are planning to add multiple wallets management later this year. I know many users ask us just to import old private keys in Atomic. We will also add keys to sweep soon.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is your biggest advantage compared to other competitors like Trustwallet, Blockchain, and Exodus? Why should users choose Atomic?</p>
+
+
+
+<p>K: Competition simply drives all of us to make better products for users. It’s a win-win for everyone. Even if I like those wallets, I believe we have better user experience and support. Atomic is trusted by over 300,000 users all over the world. We achieved this for less than two years.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How secure is Atomic Wallet?</p>
+
+
+
+<p>K: It’s pretty secure. We use common open-source libraries for a wallet like Bitcoin Core, Web3, etc. Your keys are encrypted and never leave your local device. However, take care of your 12 words backup. Write them down and store in a safe place, better offline.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How do you decide which asset will be available on Atomic Wallet and which don&#8217;t?</p>
+
+
+
+<p>K: We already support almost all top 100 assets from CoinMarketCap. However, we got a lot of requests for new asset integration. We always do our own research looking for community, technology potential, exchange volume, on-chain activity, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which countries Atomic Wallet is presently focusing on? What are your plans to expand your wallet in different regions?</p>
+
+
+
+<p>K: Atomic Wallet has no country restrictions. However, most of our users are from the US, UK, CA, AU, DE, and other EU countries and also from Asia.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are there any plans to support dApps?</p>
+
+
+
+<p>K: Currently, we don&#8217;t have any plans for dApps browser support. I don’t believe in this model, too bad UI/UX. However, we will add some DeFi services in our native interface soon.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the advantages of Atomic Wallet over Trust Wallet?</p>
+
+
+
+<p>K: We have a desktop and cross-chain swaps and I believe we have a better UI.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you share your recent achievements?</p>
+
+
+
+<p>K: I&#8217;d say that our very recent achievement is our decentralized staking. We have already added 10 PoS assets and are planning to add 5-10 more this year.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you tell us how Atomic Wallet is more secure than hardware wallets?</p>
+
+
+
+<p>K: Hardware wallets are more secure by technology but with more complicated UI and you should buy them at least. So it’s more like cold storage. Atomic is for everyday use.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the difference between atomic swaps and instant exchange in the wallet?</p>
+
+
+
+<p>K: Atomic Swaps are non-custodial via time-locked contracts. Instant exchange is provided by 3rd parties.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: When will Atomic launch an IEO?</p>
+
+
+
+<p>K: No plans for an IEO. We have been profitable for over a year.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Currently, atomic swap just supports 3-pair swapping. Do you plan to add more swapping pairs in atomic swap?</p>
+
+
+
+<p>K: Currently, we have no plans for more pairs on atomic swaps.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How many people are behind the success?</p>
+
+
+
+<p>K: We have around 25 people in the team including devs, marketing, and 24/7 support. The team is distributed.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: All current projects are concerned with the speed and quantity of transactions. Old projects have also improved their network. So what else does Atomic do to bring investors?</p>
+
+
+
+<p>C: I think we are trying to build balance in all areas, not only in the performance of our wallet but also adding new most-wanted features, promoting the product, keeping a decent customer care service, and updating the wallet regularly.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you have any plans to integrate private key import function?</p>
+
+
+
+<p>K: Multiple addresses support is planned for this year. However, it is not much about privacy. Most of your addresses are linked in inputs and outputs finally on the blockchain.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Does Atomic wallet intend to include lightning network support for Bitcoin and Litecoin in the near future?</p>
+
+
+
+<p>K: Lighting is pretty cool and it’s on the table. However, it is still a bit complicated in terms of UI/UX.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Does Atomic Wallet have any plans to partner with any exchange?</p>
+
+
+
+<p>C: Yes, we value our reputation to be one of the best wallets for users in the market. We care about partnerships too. Hopefully, we can make our users happy with 1-3 big exchanges this year.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which platform does Atomic Wallet use to obtain the value of each asset?</p>
+
+
+
+<p>K: We use CryptoCompare and some other partners to provide rates.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How&#8217;s Atomic Wallet Support when handling issues of users?</p>
+
+
+
+<p>C: I love our support service and maybe it can sound too subjective because I work for Atomic but the people in the customer care are the best ever. Just have a problem, they&#8217;ll solve everything in a few minutes.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are you committed to the development of the Atomic Wallet? Do you guarantee that you will not abandon the project or sell it at any price?</p>
+
+
+
+<p>K: First, even if we decide to close Atomic, the app will still work locally on your device. You can export 12 words or private keys to any other wallet and get access to your funds. That’s how a decentralized wallet works. Second, I’m in crypto for over 5 years and a well-known public person responsible for this project personally.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the ways Atomic Wallet generates profits and revenue to maintain your project and what is its revenue model?</p>
+
+
+
+<p>K: We cut some fees from each exchange or crypto purchase in a wallet. It is just a regular transactional business model.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: As I can see, the AWC token is not developing well now. Can you explain why? What are your plans to develop AWC?</p>
+
+
+
+<p>C: Since the launch, it has made a great success and developed benefits for more than 40,000 users who participated in our affiliate, bounty, and membership campaigns. We are developing more very hot use-cases at the moment. Stay tuned.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are you planning to start something new with LTC?</p>
+
+
+
+<p>K: Litecoin is a cool tech that is so-called silver in crypto. However, we can’t say about any plans yet. Maybe lightning in the future.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to be hosted by <a href="https://twitter.com/litecoin">Litecoin</a> on their Telegram Chat. Thanks to all the members of the session! Be always aware of our next AMAs and other projects with Atomic Wallet on Twitter, Telegram, Facebook, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-litecoin-community">AMA Report: Litecoin’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-litecoin-community/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Report: QTUM’s Community</title>
+		<link>https://atomicwallet.io/blog/academy/ama-qtum-community</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-qtum-community#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2020 19:34:18 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[ama]]></category>
+		<category><![CDATA[ama session]]></category>
+		<category><![CDATA[atomic]]></category>
+		<category><![CDATA[atomic wallet]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[digest]]></category>
+		<category><![CDATA[qtum]]></category>
+		<category><![CDATA[report]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=26075</guid>
+
+					<description><![CDATA[<p>On April 8th, QTUM, an open-sourced blockchain application platform, hosted an AMA session with us in their Telegram Chat. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the QTUM community.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-qtum-community">AMA Report: QTUM’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/qtum_ama_digest_atomic-1920x1080.png"  alt="AMA w/ QTUM"  class="wp-image-26132" ></figure>
+
+
+
+<p>On April 8th, <a href="https://qtum.org">QTUM</a>, an open-sourced blockchain application platform, hosted an AMA session with us in their <a href="https://t.me/qtumofficial">Telegram Chat</a>. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the QTUM community.<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Konstantin (K), C (Christina), and the questions from the QTUM chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How safe is Atomic Wallet?</p>
+
+
+
+<p>K: As safe as you keep your 12 words in a secure place.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why should we use Atomic Wallet? How smooth is Atomic Wallet compared to other wallets? What is the purpose of the AWC token in Atomic Wallet?</p>
+
+
+
+<p>K: Better to try by yourself. It has a pretty slick design. And yes we have our own token called AWC. It is for cashback rewards, affiliate programs, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What’s your core tech?</p>
+
+
+
+<p>K: Our core is based on common open-source libraries like Bitcoin Core, Web3, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What makes investors, customers and users feel safe when working with AtomicWallet?</p>
+
+
+
+<p>K: Our founders and advisors are well-known people in crypto space like Charlie Shrem and others.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you consider adding QTUM offline staking in Atomic Wallet in the future?</p>
+
+
+
+<p>K: Definitely once QTUM implements offline staking, we will support this in Atomic Wallet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: You have very important partners such as ChangeNOW, Simplex and Binance DEX. How do you evaluate the support you have received from your partners up to now and how did they contribute to Atomic Wallet&#8217;s brand value?</p>
+
+
+
+<p>C: We focus on quality, not quantity. It is important for Atomic&#8217;s image to choose the partners and be the best for the best brands. ChangeNOW, Simplex, Binance DEX and others share our vision and it is really a delight to work together.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: You have now reached over 100K communities and users. Did you expect to have such a high community? How do you evaluate?</p>
+
+
+
+<p>C: We are dedicated to our plans and the concept in general. So I think, yes, people who noticed us would stay with Atomic for a long time.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you tell us how Atomic Wallet is more secure than hardware wallets?</p>
+
+
+
+<p>K: Hardware wallets are usually more secure by design. However, it is harder to use and you should buy the device. In Atomic Wallet, your keys are encrypted and it never leaves your device so it is well secured too.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is your plan to attract more users? If you have sincere advice for investors, what would you recommend?</p>
+
+
+
+<p>K: We have different channels to attract users like SEO, affiliate partnerships, PR and brand marketing. We are also seeking to expand our staking options plus we are very interested to find new fiat gateways to let people buy crypto with better rates.&nbsp;</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What can I do with Atomic Wallet aside from storing my coins and tokens?</p>
+
+
+
+<p>K: You can exchange most of your assets, buy more crypto, stake coins and earn rewards. Soon we will add borrow and lending options.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Is there any plan to burn some tokens of supply in the future to stabilize the price?</p>
+
+
+
+<p>K: We have no issues with the AWC price. We are constantly buying tokens from the market using our profit.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q. Who can you see as your biggest competitors?</p>
+
+
+
+<p>K: Our biggest competitors are Exodus Wallet, Trust Wallet, and Coinbase Wallet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Is the system at risk of generating the same key for another user?</p>
+
+
+
+<p>K: Private keys are generated randomly on your local device so there&#8217;s no chance to generate the same keys.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Tell me the benefits as a user I would have from using AtomicWallet compared to other software wallets?</p>
+
+
+
+<p>C: It is simple, supports 300+ tokens, staking, buy and exchange crypto options, and most importantly we do not store any of your data. In case of any hacking, you are safe. Just don&#8217;t share your backup phrase and private keys with anyone.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you plan to add more security features and options such as email verification and other forms of verification before payments are sent from the wallet?</p>
+
+
+
+<p>K: Basically Atomic Wallet is a decentralized wallet. It is not a custody so 2FA and email verification are not effective if someone gets your 12 words backup. So make sure you have a backup in a secured place and you will be safe. From one point, you fully control your funds but also responsible for your backup safety.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: The opinion of many users says that Atomic Wallet is good but not the best option. How can you change that mentality and improve your adoption?</p>
+
+
+
+<p>C: I guess it is about mutual effort and belief that you are doing something important. We are a great and dedicated team trying to do our best for the users. Atomic has already taken a very good position on the market.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the difference between atomic swaps and instant exchange in the wallet?</p>
+
+
+
+<p>K: The difference is that atomic swap is non-custodial based on time-locked contracts. For instant exchange, you should trust your funds to external service for a short period of time.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Since the launch of the AWC token, its value has grown by more than 500%.&nbsp; Do you expect a higher value in the next few months?</p>
+
+
+
+<p>K: I expect AWC will grow much more once the market turns to the next bull run.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which area is Atomic focusing on at the moment?</p>
+
+
+
+<p>K: Currently we are focusing on app quality improvement in terms of the data speed update and stability. We will also add the most popular DeFi services in our native interface like Compound DAI, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are there any new partnerships and interesting upcoming use cases?</p>
+
+
+
+<p>K: Plenty of new assets and services will be added in Atomic this year. Partnership announcements are waiting.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are Atomic Wallet’s transaction speed and fees? Does Atomic Wallet have any program to help users reduce transaction fees?</p>
+
+
+
+<p>K: We do not charge any fees for transactions. You pay them to miners directly. However, you can choose between speed and cost — faster or cheaper transactions.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is your business model now? Who are your potential customers and which markets are you targeting?</p>
+
+
+
+<p>K: We cut some fees from each exchange and buy crypto transactions. Our target markets are US, UK, AU, CA, DE and the rest of Europe mostly. However, Atomic is available all over the world. We have no country restrictions. It is a decentralized wallet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What type of protocol do you guys use to be an anonymous wallet?</p>
+
+
+
+<p>K: We simply know nothing about your funds, transactions, etc. Those are stored locally on your device and blockchain only.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How does your staking model work? How do you encourage your users to do staking?</p>
+
+
+
+<p>K: We offer on-chain staking. Users choose validators and delegate their assets. It is so-called offline non-custodial staking. You get rewards directly from validators to your Atomic address.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to be hosted by <a href="https://twitter.com/qtumofficial">QTUM</a> on their Telegram group. Thanks to all the members of the session! Be always aware of our next AMAs and other projects with Atomic Wallet on Twitter, Telegram, Facebook, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-qtum-community">AMA Report: QTUM’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-qtum-community/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA with Nano</title>
+		<link>https://atomicwallet.io/blog/academy/ama-with-nano-digest</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-with-nano-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2020 11:02:29 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[ama]]></category>
+		<category><![CDATA[ama session]]></category>
+		<category><![CDATA[atomic]]></category>
+		<category><![CDATA[atomic wallet]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[digest]]></category>
+		<category><![CDATA[nano]]></category>
+		<category><![CDATA[report]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=19767</guid>
+
+					<description><![CDATA[<p> On March 18th, we had an AMA session with Nano, a digital currency designed to provide fast transactions, zero fees and a high level of scalability, in our Telegram Chat. The team members present on the discussion with our community were Colin LeMahieu (Founder &#38; CEO) and Andy Johnson (Communications Manager).</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-nano-digest">AMA with Nano</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png"  alt="AMA w/ Nano cover"  class="wp-image-19768"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>
+On March 18th, we had an AMA session with <a href="https://nano.org">Nano</a>, a digital currency designed to provide fast transactions, zero fees and a high level of scalability, in our <a href="https://t.me/atomicwalletchat">Telegram Chat</a>. The team members present on the discussion with our community were Colin LeMahieu (Founder &amp; CEO) and Andy Johnson (Communications Manager).<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Colin (C), Andy (A) and the questions from our Telegram chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="the-nano-ecosystem-and-its-solutions">The Nano ecosystem and its solutions</h2>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why is Nano unique among other projects providing solutions to payments?</p>
+
+
+
+<p>C: Nano is built to be the fastest and most decentralized currency around. Our transactions settle in less than 1 second and it’s all done on a network with no fees and a tiny environmental footprint. Decentralization is an essential focus for us. Many other cryptocurrencies can get fast or low cost but they can’t also maintain decentralization which I think we do very well.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why is Nano more sustainable than other payment solutions?</p>
+
+
+
+<p>C: Well the sustainability comes from 2 main parts. We have a laser-sharp focus on being the most efficient currency. This means our development stays focused and eventually the number of things going into the code base will trend downward. Once we’ve achieved the goal, we just have to make things more efficient.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the main algorithm behind the transactions that settle in less than one second and how do you manage the transaction fees to zero?</p>
+
+
+
+<p>C: It is a metastable bandwagon voting algorithm. Nodes announce their votes and change their own to match the winner. In this way, eventually, everyone collapses on to a single result.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Has Nano really been applied to the real world? What will convince users and businesses to use Nano for payment instead of conventional solutions?</p>
+
+
+
+<p>A: We are seeing some strong interest in bringing Nano into the real world, beyond the familiar crypto payment platforms and into more mainstream settings.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Many cryptocurrencies have turned to wasteful energy designs to protect their networks. Nano is cleverly designed to address this problem by not relying on mining for your safety as it uses a lightweight and efficient consensus. Can you tell me about this green strategy that Nano uses?</p>
+
+
+
+<p>A: The approach to creating Nano was to remove the inefficiencies that are clearly present in other protocols. Sustainability, rather than being a specific &#8220;green strategy&#8221;, is just a natural benefit of building something efficient from the ground up.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What remains as the hurdles to adoption?</p>
+
+
+
+<p>A: We are happy to be sitting in a position where we can help with the more substantial hurdles to adoption, user and merchant education, regulatory clarity and helping interested and progressive mainstream businesses to identify the benefits of Nano, in comparison to other less suitable payment-focused cryptocurrencies and in some cases traditional fiat money.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What do you think about an extension of privacy into the Nano system?</p>
+
+
+
+<p>A: Privacy is an attractive proposition to users of digital money for obvious reasons, it can be very important. Our position towards privacy is more conservative as we have seen many more hurdles to mainstream adoption being put in front of privacy-based projects. With that being said, there are eyes towards the technical implications of introducing privacy, but it is extremely difficult to do this without incurring slowdowns to settlement times.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What does a novel CAPTCHA faucet system mean and how is it different from the regular ICOs?</p>
+
+
+
+<p>A: Rather than selling Nano via an ICO or distributing it out via mining rewards, we allowed anyone to collect Nano for free by completing those familiar security checks designed to separate humans from bots. This method of distribution has led to the growth of great Nano communities all around the world, following their participation in the CAPTCHA faucet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why would Nano be used as the cash version of crypto? Why would I want to buy a beer with Nano if I&#8217;m going to pay 6% more or less for the next one? What&#8217;s the strategy to make NANO easy to use?</p>
+
+
+
+<p>C: And on simplicity, Nano is probably one of the easiest cryptocurrencies to use. There are no fees to calculate, the UX impact of entering a fee is greatly understated. How much should the fee be? Does my grandma know what network load is? What does it mean with respect to fee? Nano simply has accounts and balances, you send and it lands in their wallet in less than a second. Nothing can be simpler.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What incentives is NANO giving to us the members and what&#8217;s the reason why I and other angel investors should invest in Nano?</p>
+
+
+
+<p>C: Nano’s value is being the fastest, most efficient currency around. Entrepreneurs make use of natural market incentives or natural efficiencies to make money on a business. Cryptocurrency has distorted that term a bit with something more closely resembling subsidies. The transaction fees and block rewards are subsidizing the security parameter and processing prioritization. PoW chains need this subsidy because their security parameter costs a lot. Additionally, we’ve seen miners work to limit the network’s throughput in order to rent-seek on the limited transaction space. The people we’re looking for are the entrepreneurs that know how to make use of a faster, lower-cost currency.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What would happen, hypothetically, if one or some of the biggest votes in terms of voting power (i.e. the biggest delegates/representatives) would broadcast contradictory votes to different parts of the network or would not broadcast a vote at all?</p>
+
+
+
+<p>C: The security parameters assume &gt;50% of the network are good actors. Getting consensus on a particular election requires &gt;50% of the voters approve a transaction before it’s confirmed so unless &gt;50% of the network is malicious, it can’t be confirmed. The network is designed to stall in case of partitioning, nodes would wait for a confirmation quorum that never arrives.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: With the emergence of many blockchain projects, especially payment projects with the latest technology, scalability, efficiency, even without transaction fees, does Nano feel the pressure from this on the race of global blockchain payment solutions?</p>
+
+
+
+<p>A: Of course there is a lot of competition in the space, especially around payment solutions, and we have not stopped improving the protocol. We certainly feel that Nano possesses far and away from the best fundamentals, democratic approach to decentralization, and user experience. Being fully distributed and operating on the mainnet since 2015 is also very important, and puts Nano way ahead of many other projects making bold claims about future potential. Nano is here today and works as one would expect the digital money would.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="nano-and-its-future-plans">Nano and its future plans</h2>
+
+
+
+<p></p>
+
+
+
+<p>Q: With the recent decline in the crypto market, how will Nano stand out and gain interest from new investors? Is there a new strategy by the Nano team?</p>
+
+
+
+<p>C: Volatility is a focus with all cryptocurrencies and it comes from low volume, it’s not intrinsic to cryptocurrency itself. To cure low volume our focus is integrating it into parts of the economy where it solves a problem, rather than just emulating credit cards etc. Not having fees in the network puts us in a very good position for buying beer, for example. Typically credit card providers will charge 2-5% for a purchase, maybe even more, and it tight margin businesses that make 2-5% profit anyway. This is huge.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you tell us the motivation and benefits for investors to hold Nano for the long term? What are the team’s plans to make Nano a top project?</p>
+
+
+
+<p>C: I look at the transfer of value or store of value debate this way: I see store of value as a specialized case of transfer of value, when you want to transfer the value in the future or under a future condition. I don’t think store of value can be done without first being a good transfer of value so that’s where we focus. I differentiate between investment, which has a business model and dividends, from speculation where the hope is an appreciation in the price of what you bought. Nano is not an investment, it does not pay dividends, it’s a currency to make payments and as volume increases, it will shake out its volatility.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What will Nano bring us by 2021? What are your main goals?</p>
+
+
+
+<p>A: Settlement time reduced significantly to less than 200ms, network throughput increased, resource usage and bandwidth on nodes have been reduced, decentralization is trending upwards and Nano has been added to a wide range of well-established wallets, fiat ramps, exchanges, and payment processors.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the role of Coinify in the Nano ecosystem? Is this partnership the stepping stone for the exploration of DeFi?</p>
+
+
+
+<p>C: We integrated with Coinify because our goal is to maximize the on/off ramps for Nano. They have a huge merchant network and getting added as one of their payment options opens up a lot more people to be able to pay with Nano. We’re not looking to expand into DeFi right now. I have some reservations about its viability. One thing I’ve noticed in my many years of seeing technology evolution is to not try and change 2 things at once. We don’t want to simultaneously change the currency people use and also change how finances are done.&nbsp; First, change the currency, then change the finances.</p>
+
+
+
+<p>We were glad to host <a href="https://twitter.com/Nano">Nano</a> on our Telegram. Thanks to the team and all the members of the session!</p>
+
+
+
+<p> Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a> and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon. </p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-nano-digest">AMA with Nano</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-with-nano-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA with Travala</title>
+		<link>https://atomicwallet.io/blog/academy/ama-with-travala-digest</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-with-travala-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Thu, 02 Apr 2020 18:51:44 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[ama]]></category>
+		<category><![CDATA[ama session]]></category>
+		<category><![CDATA[atomic]]></category>
+		<category><![CDATA[atomic wallet]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[digest]]></category>
+		<category><![CDATA[report]]></category>
+		<category><![CDATA[travala]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=19592</guid>
+
+					<description><![CDATA[<p>On March 4th, we had an AMA session with Travala.com, the world’s leading blockchain-based travel booking platform, in our Telegram Chat. The team members present on the discussion with our community were Juan Otero (Co-Founder &#38; CSO), Steve Hipwell (COO) and Drew Cowie (CFO). Here are the essential points of the AMA session: Please welcome […]</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-travala-digest">AMA with Travala</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png"  alt="AMA w/ Travala cover"  class="wp-image-19605"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/travala_ama_digest_atomic-1.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>On March 4th, we had an AMA session with <a href="https://www.travala.com/">Travala.com</a>, the world’s leading blockchain-based travel booking platform, in our <a href="https://t.me/atomicwalletchat">Telegram Chat</a>. The team members present on the discussion with our community were Juan Otero (Co-Founder &amp; CSO), Steve Hipwell (COO) and Drew Cowie (CFO).<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Juan (J), Steve (S), Drew (D) and the questions from our Telegram chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="travala-and-its-platform">Travala and its platform</h2>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why should everyone use Travala?</p>
+
+
+
+<p>J: Travala.com offers better prices, more choices and more transparency and is also a true champion of cryptocurrency adoption so we should all use it for travel bookings.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How anonymous is your client platform? Is complete anonymity possible?&nbsp;&nbsp;</p>
+
+
+
+<p>J: We follow all the standard data protection regulations and as we develop more decentralized aspects of the project we hope we will be able to offer more anonymity.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What non-crypto payment options can we use?</p>
+
+
+
+<p>J: Users can pay with traditional fiat options including credit cards and PayPal as well as with over 25 different leading cryptocurrencies and our native AVA token. As we continue to focus on offering more options for our users, we will keep adding more payment options. We are in the process of adding Alipay, WeChat pay, Apple Pay and Google Pay.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are there any discounts or bonus offers for the users?</p>
+
+
+
+<p>J: Yes. Users staking AVA on the Travala.com platform can get access to further exclusive discounts.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What was your motivation to build Travala?</p>
+
+
+
+<p>J: We want to disrupt the traditional online travel agencies. Travala.com’s vision is to align travel booking with the ethos of decentralized technology. That being, promote accessibility to anyone, anywhere, offer censorship-resistant and peer-to-peer transactions, and build open-source technology controlled by software and governed by users.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Any promotions available for users right now to earn some AVA?</p>
+
+
+
+<p>S: Yes. Invite people to join Travala.com. For every person you invite that completes a booking of US$200 or more, you will both receive US$50 worth of AVA rewards to your wallet after the invitee completes the stay at the property. More info at <a href="https://travala.com/invite">https://travala.com/invite</a>.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why does travel booking need to be decentralized?</p>
+
+
+
+<p>J: The online travel booking model was revolutionary when it arrived over 20 years ago, but in its current form is outdated. The success of disruptors such as Airbnb shows that consumers are ready to migrate to platforms that empower more reasonable pricing, allow smaller suppliers to compete more freely, and make more relevant the impact of user reputation and trustworthy reviews.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Is Travala cheaper than other booking sites?</p>
+
+
+
+<p>J: Yes. We are normally around 15% cheaper than other mainstream travel booking sites.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why should a customer book on Travala instead of booking directly with the hotel?</p>
+
+
+
+<p>J: We offer better prices, more choices, more transparency and several other advantages.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What was the most surprising thing you have learned from your users?</p>
+
+
+
+<p>J: The high engagement. Our users are extremely engaged with our brand and very valuable for us with significantly higher LTVs than industry standards.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How do you deal with cryptocurrency payments?</p>
+
+
+
+<p>D: We have partnerships with multiple cryptocurrency payment processors.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How did the community bring you new opportunities as a business and how did you utilize these opportunities to build?</p>
+
+
+
+<p>D: The community provides feedback, ideas for product and token development, referring friends and much more. We try and reward the community as much as possible.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How can a hotel manager make a partnership with Travala&#8217;s booking services?</p>
+
+
+
+<p>D: We plan to implement a direct contract program and decentralized travel booking platform in the future where local hotels can join the Travala.com ecosystem.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Could you share your team’s background?</p>
+
+
+
+<p>J: Within the Travala.com team are experienced professionals in blockchain development, travel, and FinTech from some of the world’s largest companies. The majority of team members are located in Hanoi, Vietnam, whereas others are globally distributed.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the main factors influencing AVA prices? How can AVA be different and become a potential business?</p>
+
+
+
+<p>D: Supply and demand. Demand is influenced by the utility of AVA and some speculation. The supply of AVA is already determined. As of lately, demand for AVA is outstripping supply which is why prices of AVA are going up.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the advantages of holding AVA for the long term?</p>
+
+
+
+<p>J: AVA features front-and-center in our unique selling proposition to users. It can be used as an additional method of payment for bookings, or as the sole payment method for special offers. It can be staked for access to enhanced rewards, or directly recouped for the equivalent fiat value on partner exchanges.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Compared to the usual payment methods, what is the benefit of paying for cryptocurrencies in travel reservations for customers, partners and Travala?</p>
+
+
+
+<p>D: Transactions fees are lower and for holders of cryptocurrency, we offer them utility. On many occasions, we have also offered special promotions for people to spend cryptocurrency such as our latest offer for 5% cashback with bookings made in Binance Coin.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are there other ways other than the SMART rewards that have been implemented to encourage the use of AVA on the platform instead of many other payment options?</p>
+
+
+
+<p>J: Yes. For example, we recently implemented the option to pay partially with AVA in combination with other payment options. We continue to add more use cases to the AVA token as the main pillar of the Travala.com ecosystem.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the primary use case of AVA token in the Travala ecosystem?</p>
+
+
+
+<p>J: AVA’s functionality makes it critical to the success of Travala.com. The interplay of AVA use cases is designed to encourage loyalty to the Travala.com platform while increasing the distribution and liquidity of the token.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="travala-and-its-partnerships">Travala and its partnerships</h2>
+
+
+
+<p></p>
+
+
+
+<p>Q: What were the reasons that Travala migrated from NEO to Binance Chain?</p>
+
+
+
+<p>J: The main reasons for the migration are that we wanted to improve the tokenomics of our native token (AVA) while offering faster processing times, better performance and ease of on-chain use of AVA within the platform.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: With India&#8217;s lift on crypto encumbrances today, do you have a specific plan for the nation?</p>
+
+
+
+<p>S: Travala.com expanded partnership with an Indian travel supplier called GRNConnect, a strategic partnership expansion to help Travala.com extend its presence into the world’s second most populated country with 1.35 billion citizens. Read more at <a href="https://blog.travala.com/travala-com-partners-with-indian-supplier-grnconnect">https://blog.travala.com/travala-com-partners-with-indian-supplier-grnconnect</a>.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="travala-and-its-future-plans">Travala and its future plans</h2>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is Travala&#8217;s mission?</p>
+
+
+
+<p>D: Our mission is to bring to the travel industry as a whole transparent pricing, innovation, authentic truth, enhanced security, and efficient stakeholder interaction. Going forward we plan to introduce more decentralized business models to Travala.com and pass over more control to the community. This will make us the most engaging travel booking platforms around.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How much do you believe in the future of cryptocurrency in the travel industry?</p>
+
+
+
+<p>J: We believe paying for travel and other major services with crypto will be the norm in the future so we aim to position ourselves as the go-to destination for any travel-related bookings.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are Travala&#8217;s plans to weather the economic standstill in travel that is slowly occurring due to the Coronavirus outbreaks?</p>
+
+
+
+<p>J: We hope to see an increase in local travel, particularly accommodation bookings, instead of international travel and hopefully our growth traction will outweigh the negative impact of the reduction of international travel. In any case, we have a long way to go so we will keep building!</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are Travala&#8217;s plans on how to attract users who don&#8217;t know anything about cryptocurrency?</p>
+
+
+
+<p>D: We offer common fiat booking methods and plan to implement more marketing strategies aimed at the masses. It takes time to build a user base, but so far we are doing a good job. Any help with spreading the word is always appreciated!</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What makes you feel confident about the survival and sustainable success of Travala in the far future?</p>
+
+
+
+<p>J: The growth to date has been significant and driven organically so we&#8217;re confident that the current growth levels, combined with a clear strategy and execution plan by a team of experienced professionals in blockchain development, travel, and FinTech from some of the world’s largest companies will make us successful.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are there any plans to add more services to Travala in the future?</p>
+
+
+
+<p>D: Yes. We plan to offer more travel verticals. It is important for us to be very strong in one vertical before adding more. Flights, rental cars, activities and more are in the pipeline.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What improvement can you expect in the travel industry in the future with the contribution of Travala?</p>
+
+
+
+<p>D: Promote accessibility to anyone, anywhere, offer censorship-resistant and peer-to-peer transactions and build open-source technology controlled by software and governed by users.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: History has proven that the best technology doesn’t always win. Bitcoin has a ten-year head start in marketing and mainstream adoption. How will Travala catch-up?</p>
+
+
+
+<p>J: Travala.com is focusing on a niche market within travel booking and we&#8217;re not competing with Bitcoin or any other major digital asset in the market, it&#8217;s actually the opposite. We process over 25% of our total bookings in Bitcoin. We&#8217;re aiming to play a key role in bringing adoption to the masses and we believe that travel will be crucial for this.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: To what extent Travala can introduce itself and master travel finance in major countries?</p>
+
+
+
+<p>J: Travala.com is already present in over 230 countries worldwide. We have achieved a global presence with 90% organic growth to date so we hope we will continue to extend our reach globally over the next few years as we consolidate our position as market leaders within blockchain travel.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to host <a href="https://twitter.com/travalacom">Travala.com</a> on our Telegram. Thanks to the team and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a> and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-travala-digest">AMA with Travala</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-with-travala-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Session with Nano</title>
+		<link>https://atomicwallet.io/blog/news/ama-with-nano</link>
+					<comments>https://atomicwallet.io/blog/news/ama-with-nano#comments</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Mon, 16 Mar 2020 13:42:42 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=18915</guid>
+
+					<description><![CDATA[<p>On March 18, 1 PM (UTC), we'll host Nano, decentralized, sustainable, and secure digital money, at our AMA session on Telegram! The project will be represented by Colin LeMahieu, CEO &#038; Founder, and Andy Johnson, Communications Manager.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-with-nano">AMA Session with Nano</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png"  alt="AMA w/ Nano cover"  class="wp-image-18985"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/nano_ama_atomic966.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>On March 18, 1 PM (UTC), we&#8217;ll host Nano, decentralized, sustainable, and secure digital money, at our AMA session on Telegram! The project will be represented by Colin LeMahieu, CEO &amp; Founder, and Andy Johnson, Communications Manager.</p>
+
+
+
+<p>The rules are:</p>
+
+
+
+<ul><li>Learn about the project we&#8217;re hosting</li><li>Join the live session in our <a href="https://t.me/atomicwalletchat">Telegram chat</a></li><li>Pass the quiz (link to google forms will be shared at the AMA)</li><li>Take part in the live chat with Nano</li></ul>
+
+
+
+<p>The pool for the AMA with Nano is $500 NANO. </p>
+
+
+
+<ul><li>$350 for all quiz participants, who pass it successfully </li><li>$150 will be shared between users who ask the best questions on Twitter or in the live chat.</li></ul>
+
+
+
+<p>To pass the quiz – learn about <a href="https://nano.org/">Nano</a>.</p>
+
+
+
+<p><a href="https://atomicwallet.io/blog/price/nano-price">Nano Price</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/blog/price/nano-price-prediction-2020">Nano Price Prediction</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/nano-wallet">Nano Wallet</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/downloads">Download</a> Atomic wallet to get a NANO-address!</p>
+
+
+
+<p>Subscribe to our Twitter:</p>
+
+
+
+<ul><li> <a href="https://twitter.com/AtomicWallet">Atomic Wallet</a> </li><li> <a href="https://twitter.com/nano">Nano</a></li></ul>
+
+
+
+<p>Subscribe to Telegram channels:</p>
+
+
+
+<ul><li><a href="https://t.me/atomicwallet">Atomic Wallet</a></li><li><a href="https://t.me/nanocurrency">Nano</a></li></ul>
+
+
+
+<p>The Google forms will be sent during the session in our <a href="https://t.me/atomicwalletchat">Telegram chat</a>. Don&#8217;t miss it out!</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-with-nano">AMA Session with Nano</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/ama-with-nano/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA with Origin Protocol</title>
+		<link>https://atomicwallet.io/blog/academy/ama-with-origin-digest</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-with-origin-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Wed, 04 Mar 2020 11:01:20 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=17981</guid>
+
+					<description><![CDATA[<p>On February 13th, we had an AMA session with Origin Protocol, the blockchain platform for building decentralized marketplaces, in our Telegram Chat. The team members present on the discussion with our community were Kay Yoo (Finance &#38; Operations) and Anna Wang (Regional Manager China).</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-origin-digest">AMA with Origin Protocol</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png"  alt="AMA with Origin Protocol"  class="wp-image-17982"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/origin_ama_digest_atomic.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>On February 13th, we had an AMA session with <a href="https://www.originprotocol.com/">Origin Protocol</a>, the blockchain platform for building decentralized marketplaces, in our <a href="https://t.me/atomicwalletchat">Telegram Chat</a>. The team members present in the discussion with our community were Kay Yoo (Finance &amp; Operations) and Anna Wang (Regional Manager China).<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Kay (K), Anna (A) and the questions from our Telegram chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="about-origin-and-its-platform">About Origin and its platform</h2>
+
+
+
+<p>Q: What is Origin Protocol? What is your mission?</p>
+
+
+
+<p>A: Origin’s mission is to enable peer-to-peer commerce. We have built a blockchain platform that enables many different types of marketplace and e-commerce applications. Users can buy or sell goods and services on these marketplaces, and developers can create their own applications powered by the Origin blockchain. Origin Token (OGN) is used as an incentive, payment, and governance token.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What was the motivation to build Origin?</p>
+
+
+
+<p>K: Since the advent of the Internet, digital marketplaces have paired buyers and sellers of goods and services to enable transactions that were never before possible. Fast forward 20 years, countless Internet marketplace businesses in both the B2C and B2B categories have flourished. In recent times, sharing economy marketplaces like Airbnb, Uber have revolutionized the way we think about sharing economy. However, there are problems in today&#8217;s centralized marketplace model. Value taken by today’s trusted intermediaries is oftentimes not commensurate with the value they created; Data is siloed by private corporations; When marketplaces are governed by individual corporations, these corporations can and will change policies and rules on a whim. The market is ready for a new peer-to-peer form of commerce.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Who is behind Origin Protocol? Tell us about the team.</p>
+
+
+
+<p>K: Origin is led by serial entrepreneurs and seasoned engineers from PayPal, Google, YouTube, Dropbox, etc. We have one of the co-founders of PayPal and the 1st employee at YouTube. We have about 16 full-time employees, as well as a number of part-time employees, open source volunteer developers, etc. Over 170 developers have committed code on GitHub for Origin. We are so thankful for our global developer community. If you are interested in joining our team, please reach out to us.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why are you using an Ethereum-based platform?</p>
+
+
+
+<p>K: We believe that Ethereum has the best community of any application blockchain and the best developer tools. Right now, it would be very difficult for us to build on EOS, TRON or other blockchains. If they offer superior solutions, we will consider switching but this seems unlikely to us.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is Origin’s core technology? What makes your solution unique and why does it require blockchain technology?</p>
+
+
+
+<p>K: The Origin Platform enables buyers and sellers to connect across various applications and transact directly without intermediaries. Sellers post listings and Origin Token (OGN) commissions to the Origin flagship mobile application or third-party applications. All relative data is written to the shared data layer on the Ethereum blockchain and IPFS network. The platform also utilizes multiple middleware and infrastructure services, including the meta-transactions relayer (to subsidize gas fees and drive user adoption), and arbitration/customer services. The platform is designed to be flexible and extensible, allowing applications to utilize either individual parts of the Platform or take advantage of the complete set of services and infrastructure.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Verifying product authenticity could be a herculean task considering bottlenecks. How does ORIGIN deal with this issue and ensure only legitimate products come in the market?</p>
+
+
+
+<p>K: Currently, we as a company are doing our best to implement various fraud detection measures internally. As our mission is to enable truly peer-to-peer commerce, and enabling decentralized marketplaces that are open and free. We want to ensure we can provide the best and healthy ecosystem for our Origin community.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What role Origin will play in making blockchain highly adaptable in the worldwide stage?</p>
+
+
+
+<p>K: We want to build the future of DApps through mobile. To bring blockchain to mass adoption, we need to provide seamless user experience. A big part of what we do at Origin is removing the friction users experience when using cryptocurrency and Ethereum. Our goal has always been to build simple and easy to use tools for the masses, including those who are still learning about blockchain technology, cryptocurrency, and decentralized apps.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="origin-and-its-marketplace">Origin and its marketplace</h2>
+
+
+
+<p>Q: How is trust built on the marketplace?</p>
+
+
+
+<p>K: The fund is held in escrow (smart contract) until the product/service is delivered and review rating is completed and transaction is finalized.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What makes Origin better than Shopify?</p>
+
+
+
+<p>A: Shopify is the go-to product for many people operating e-commerce stores, but it has some shortcomings. Firstly, it takes a cut of almost every transaction via Shopify Payments (on top of subscription fees). Secondly, multiple categories of products are banned on Shopify. The Origin ecommerce store is an open-source, decentralized alternative that does not charge transaction fees and is not censored. It also supports cross-border payments that can be fully customized and is free to run.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Because Origin creates a sharing economy without a third-party, how will Origin solve cases of disputes between buyers and sellers?</p>
+
+
+
+<p>A: As mentioned earlier, we are currently serving as arbitrators for any disputes that may arise between buyers and sellers on our platforms. There haven&#8217;t really been many at all by the way. Down the road, we might have a third-party arbitrator handle these issues. Similar to other marketplaces like eBay, buyers and sellers on Origin will have reviews and ratings (reputation scores, essentially), which will help buyers make informed decisions when purchasing and avoid bad experiences.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What&#8217;s the advantage of Origin Protocol over the other decentralized marketplaces like OpenSea, OpenBazaar, RareBits, LocalCryptos, Gitcoin, Emoon and District0x?</p>
+
+
+
+<p>K: We love other projects that are tackling similar problems using blockchain technology. The biggest advantage that we have over other projects is our team. We have a world-class engineering team that includes co-founder of Paypal, 1st employee at YouTube, engineering managers from Dropbox/Google, etc. Together, we are on a mission to enable truly peer-to-peer commerce, and we are excited to be one of the first DApps to see real usage on the platform built on Ethereum.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="origin-and-its-use-cases">Origin and its use cases</h2>
+
+
+
+<p>Q: What are the use cases for OGN?</p>
+
+
+
+<p>K: OGN is the native utility token used to power various parts of the Origin platform.</p>
+
+
+
+<p>OGN enables incentive systems, future governance mechanisms, and payments. Today, buyers and sellers can transact using OGN in exchange for goods and services.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the main purpose of Origin whether as a payment instrument in the Origin application or as a digital asset?</p>
+
+
+
+<p>K: The OGN token is used to incentivize positive behaviors that users, developers, and partners can undertake to fuel the growth of the platform. In the future, it is intended that OGN will also be used for staking rewards and governance purposes. OGN is the native utility token used to power various parts of the Origin platform and enables incentive systems, payments, and future governance mechanisms.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="origin-and-its-partnerships">Origin and its partnerships</h2>
+
+
+
+<p>Q: With blockchain being such a young industry, partnerships are an indispensable component of any project. What partnerships does Origin have achieved and what are the plans to attract more partnerships?</p>
+
+
+
+<p>A: We have multiple partnerships right now, such as Trips Community, an Italian home-sharing company founded in 2011 with a 20k user community; Trips is building their marketplace application on the Origin platform. Other partners include ZoidPay (crypto payment platform), Hubris One (crypto wallet) and more. Last year, we also partnered with a large Chinese marketplace, SLife, to roll out a Singles Day campaign. We also have multiple partnerships in the pipeline.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the main focus of Origin in building a partnership with Samsung? What will be the benefits for the users?</p>
+
+
+
+<p>K: We look forward to many more collaborations with tech innovators like Samsung in the future, as we bring peer-to-peer commerce to the masses through mobile. We will continue to introduce Origin to the billions of new users around the world, and enable access to decentralized marketplaces. We will continue to introduce Origin to the billions of new users around the world, and enable access to decentralized marketplaces.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="origin-and-its-future-plans">Origin and its future plans</h2>
+
+
+
+<p>Q: What are your priorities for this year?</p>
+
+
+
+<p>K: Our priorities for this year are getting more users on our platform and to build more features that would enhance the overall user experience for the masses!</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Twitter CEO said Africa is the future for everything blockchain. Does ORIGIN have Africa in its plans and how do you seek to reach Africa?</p>
+
+
+
+<p>A: Last year we worked with Team Aktio from Venezuela to understand the local ecosystem better and also organised an&nbsp; education-focused workshop together in Venezuela, where we talked about crypto and blockchain, as well as the benefits of Origin. We haven&#8217;t done anything similar in Africa yet, but it is an important market that we are monitoring.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: One core use of blockchain is to bank the unbanked and Origin claims 2 billion unbanked people can access new markets globally. How do you seek to achieve this adoption when people are ignorant about crypto and also in the areas of low technological advancement?</p>
+
+
+
+<p>A: Serving the unbanked is a core part of our mission. It definitely starts with education and awareness, and although this will be a long process, it will pay huge dividends down the road.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is your plan to develop community throughout the world?</p>
+
+
+
+<p>A: I should also mention that Origin Rewards will play a big role in our community development efforts moving forwards, as it gives us the ability to reward early users and those who help to grow and strengthen the Origin ecosystem.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What&#8217;s next for the Origin platform? What does the future look like with OGN?</p>
+
+
+
+<p>A: 2019 was a crazy year for us and we hit all of the milestones we set out to achieve. We have been launched live on Mainnet for over a year. Everyone can download our app now or visit our DApp at shoporigin.com. Moving forward, there are a lot of exciting things in the works. This year we will be spending a lot of time experimenting with and releasing new OGN use cases. We are also researching a new staking model that will allow token holders to earn a yield. This will make OGN even more attractive to hold. We also plan to release governance features at the end of the year.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to host <a href="https://twitter.com/originprotocol">Origin Protocol</a> on our Telegram. Thanks to the team and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a> and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+
+
+
+<p></p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-origin-digest">AMA with Origin Protocol</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-with-origin-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Report: Atomic in ARK&#8217;s Community</title>
+		<link>https://atomicwallet.io/blog/academy/crypto/ama-report-with-atomic-by-ark-digest</link>
+					<comments>https://atomicwallet.io/blog/academy/crypto/ama-report-with-atomic-by-ark-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Wed, 04 Mar 2020 10:55:31 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=17966</guid>
+
+					<description><![CDATA[<p>On February 6th, ARK, the first open, composable Smart Chain platform with the atomic swap technology, hosted an AMA session with us in their Slack group. Our CEO Konstantin Gladych and PR Manager Christine Khachatryan were present in the discussion with the ARK community.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/crypto/ama-report-with-atomic-by-ark-digest">AMA Report: Atomic in ARK&#8217;s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png"  alt="ARK AMA cover"  class="wp-image-17967"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/ark_ama_digest_atomic.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>On February 6th, <a href="https://ark.io/">ARK</a>, the first open, composable Smart Chain platform with the atomic swap technology, hosted an AMA report session with us in their <a href="https://arkecosystem.slack.com/">Slack group</a>. Our CEO Konstantin Gladych and PR Manager Christine Khachatryan were present in the discussion with the ARK community.</p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Konstantin (K), C (Christina) and the questions from the ARK Slack chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Will Atomic support staking ARK in the near future?</p>
+
+
+
+<p>K: We already have around 10 assets for staking in Atomic Wallet like Tezos (XTZ), Cosmos (ATOM), etc. We are planning to add a bunch of new assets this year. ARK is definitely on our list.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: DeFi is one of the hottest topics in the blockchain space right now. Can you share your opinions about DeFi with us? Do you think DeFi will disrupt the existing financial system? What is Atomic Wallet’s approach towards the DeFi sector?</p>
+
+
+
+<p>K: We are planning to add the most popular DeFi use cases in Atomic Wallet’s native interface like borrow and lend tokens.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which tokens do you find easiest to integrate to your wallet?</p>
+
+
+
+<p>C: ERC20 tokens can be easily added as well as custom tokens you like but the tokens with separate blockchains need deep research and it takes a little time.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do users have the private keys to coins in the atomic wallet?</p>
+
+
+
+<p>K: Atomic Wallet is a non-custodial wallet. Your private keys are encrypted and never leave your device. Basically, Atomic Wallet is just an interface. All your funds are safe on the blockchain.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you have any statistics page for how many wallets are generated per coin or token or how many coins or tokens a certain wallet holds?</p>
+
+
+
+<p>K: Atomic Wallet is an anonymous wallet. It does not collect any data to our servers except anonymous logs in case you have troubles with the app. You can disable logs collection in the settings.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Multi-currency wallets are becoming very popular now. What makes Atomic Wallet stand out among other popular wallets such as Exodus?</p>
+
+
+
+<p>K: We provide a better user experience. The market is huge and growing. It&#8217;s an enough place for everyone. We compete mostly with banks rather than with each other. We prefer to focus on our product, users support and education in crypto.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Does it cost money to integrate bridgechains?</p>
+
+
+
+<p>K: Each integration costs resources. We charge depending on the project, how big the community is, how cool the technology is, how much the trading volume is, and other various factors.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which partner offers fiat in/out?</p>
+
+
+
+<p>K: Currently it&#8217;s Simplex. Soon we will add more partners for fiat gateway.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How many developers does Atomic Wallet have?</p>
+
+
+
+<p>K: Our team has more than 20 people.&nbsp; We have 8 technical guys, developers, admin, project, 5 in marketing and business development. 6 in user support and me.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How did you get funding to start the project? Did you do an ICO for the AWC token?</p>
+
+
+
+<p>K: Atomic Wallet is fully self-funded by me. We planned an ICO but it was cancelled. We are profitable for over a year despite the bear market. We became profitable in 6 months after the start.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you have any upcoming features to be excited about?</p>
+
+
+
+<p>K: Many features coming this year like lightning support, localisation, more assets for staking, DeFi use cases, etc. You can check our 2020 roadmap at https://atomicwallet.io/roadmap-2020.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Blockchain is a rapidly-changing industry. Can Atomic Wallet&#8217;s infrastructure design be promptly changed to be suitable with new blockchain updates?</p>
+
+
+
+<p>C: We try to be always up-to-date in the industry as the user satisfaction and comfort are the priorities and main focus for us. Almost every 1.5 to 2 weeks, we release updates, keeping up with everything that is happening in the crypto world.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do hardware wallets work with the Atomic Wallet?</p>
+
+
+
+<p>K: It is not yet supported. Hardware integrations like Trezor and Ledger are planned for this year.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What have been some of your biggest challenges since starting Atomic Wallet?</p>
+
+
+
+<p>K: I think the biggest challenge is to support all these tons of assets existing on the market and make an easy interface for the users as we have a lot of newcomers in crypto.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How does your staking model work? How do you encourage your users to do staking?</p>
+
+
+
+<p>C: The main thing about staking in Atomic Wallet is that it is decentralized and with zero fees. All rewards users get are directly from validators and the response is great so far. Not much staked but the yields are pretty awesome. You can check them out yourselves.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to be hosted by <a href="https://twitter.com/arkecosystem">ARK</a> on their Slack group. Thanks to all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a> and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/crypto/ama-report-with-atomic-by-ark-digest">AMA Report: Atomic in ARK&#8217;s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/crypto/ama-report-with-atomic-by-ark-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Session with Travala</title>
+		<link>https://atomicwallet.io/blog/academy/ama-with-travala</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-with-travala#comments</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Mon, 02 Mar 2020 14:03:16 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=17910</guid>
+
+					<description><![CDATA[<p>On March 4, 3 PM (UTC), we'll have Travala.com, the world’s leading blockchain-based travel booking platform, at our AMA session on Telegram! The project will be represented by Juan Otero, Co-Founder &#38; CSO, and the Travala's team. </p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-travala">AMA Session with Travala</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png"  alt="AMA w/ Travala Cover"  class="wp-image-17911"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/03/travala_ama_atomic.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>On March 4, 3 PM (UTC), we&#8217;ll have Travala.com, the world’s leading blockchain-based travel booking platform, at our AMA session on Telegram! The project will be represented by Juan Otero, Co-Founder &amp; CSO, and the Travala&#8217;s team. </p>
+
+
+
+<p>The rules are:</p>
+
+
+
+<ul><li>Learn about the project we&#8217;re hosting</li><li>Join the live session in our <a href="https://t.me/atomicwalletchat">Telegram chat</a></li><li>Pass the quiz (link to google forms will be shared at the AMA)</li><li>Take part in the live chat with Travala</li></ul>
+
+
+
+<p>The pool for the AMA with Travala.com is $1500 AVA. </p>
+
+
+
+<ul><li>$1050 for all quiz participants, who pass it successfully </li><li>$450 will be shared between users who ask the best questions on Twitter or in the live chat.</li></ul>
+
+
+
+<p>To pass the quiz – learn about <a href="https://www.travala.com/">Travala</a>.</p>
+
+
+
+<p><a href="https://www.travala.com/social-register">Create an account</a> on Travala.com.</p>
+
+
+
+<p><a href="https://atomicwallet.io/downloads">Download</a> Atomic wallet to get AVA-address!</p>
+
+
+
+<p>Subscribe to our Twitter:</p>
+
+
+
+<ul><li> <a href="https://twitter.com/AtomicWallet">Atomic Wallet</a> </li><li> <a href="https://twitter.com/travalacom">Travala.com</a></li></ul>
+
+
+
+<p>Subscribe to Telegram channels:</p>
+
+
+
+<ul><li><a href="https://t.me/atomicwallet">Atomic Wallet</a></li><li><a href="https://t.me/travala">Travala.com</a></li></ul>
+
+
+
+<p>The Google forms will be sent during the session in our <a href="https://t.me/atomicwalletchat">Telegram chat</a>. Don&#8217;t miss it out!</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-travala">AMA Session with Travala</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-with-travala/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Session with Origin Protocol</title>
+		<link>https://atomicwallet.io/blog/academy/ama-with-origin-protocol</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-with-origin-protocol#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Wed, 12 Feb 2020 11:34:21 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=17229</guid>
+
+					<description><![CDATA[<p>On February 13, 5 AM UTC, we'll have Origin Protocol, the blockchain platform for building decentralized marketplaces at our AMA session on Telegram! The project will be represented by Kay Yoo, Business Ops &#38; Finance, and Anna Wang, Regional Manager, Greater China.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-origin-protocol">AMA Session with Origin Protocol</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png"  alt="AMA Session with Origin Protocol"  class="wp-image-17230"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/origin_protocol_ama_atomic.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>On February 13, 5 AM UTC, we had an AMA session with Origin Protocol, the blockchain platform for building decentralized marketplaces at our AMA session on Telegram! The project will be represented by Kay Yoo, Business Ops &amp; Finance, and Anna Wang, Regional Manager, Greater China.</p>
+
+
+
+<p>The rules are:</p>
+
+
+
+<ul><li>Learn about the project we&#8217;re hosting</li><li>Join the live session in our <a href="https://t.me/atomicwalletchat">Telegram chat</a></li><li>Pass the quiz (link to google forms will be shared at the AMA)</li><li>Take part in the live chat with Origin Protocol</li></ul>
+
+
+
+<p>The pool for the AMA with Origin Protocol is $700 OGN. </p>
+
+
+
+<ul><li>$490 for all quiz participants, who pass it successfully </li><li>$210 will be shared between 5-10 users who ask the best questions on Twitter or in the live chat.</li></ul>
+
+
+
+<p>To pass the quiz – learn about <a href="https://www.originprotocol.com/en">Origin Protocol</a>.</p>
+
+
+
+<p><a href="https://atomicwallet.io/downloads">Download</a> Atomic wallet to get OGN-address!</p>
+
+
+
+<p>Subscribe to our Twitter:</p>
+
+
+
+<ul><li> <a href="https://twitter.com/AtomicWallet">Atomic Wallet</a> </li><li> <a href="https://twitter.com/originprotocol">Origin Protocol</a></li></ul>
+
+
+
+<p>Subscribe to Telegram channels:</p>
+
+
+
+<ul><li><a href="https://t.me/atomicwallet">Atomic Wallet</a></li><li><a href="https://t.me/originprotocol">Origin Protocol</a></li></ul>
+
+
+
+<p>The Google forms will be sent during the session in our <a href="https://t.me/atomicwalletchat">Telegram chat</a>. Don&#8217;t miss it out!</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-origin-protocol">AMA Session with Origin Protocol</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-with-origin-protocol/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Session with Komodo</title>
+		<link>https://atomicwallet.io/blog/academy/ama-with-komodo-digest</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-with-komodo-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Thu, 06 Feb 2020 10:13:47 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=16808</guid>
+
+					<description><![CDATA[<p>On January 24th, we had an AMA session with Komodo, the first open, composable Smart Chain platform with the atomic swap technology, in our Telegram Chat. </p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-komodo-digest">AMA Session with Komodo</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png"  alt="AMA w/ Komodo cover"  class="wp-image-16809"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/02/komodo_ama_digest_atomic.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>On January 24th, we had an AMA session with <a href="https://komodoplatform.com/">Komodo</a>, the first open, composable Smart Chain platform with the atomic swap technology, in our <a href="https://t.me/atomicwalletchat">Telegram Chat</a>. The team members present on the discussion with our community were Kadan Stadelmann (Chief Technology Officer), Jason Brown (Business Developer), Audo Kowitz (Marketing Manager) and Alper Can (Head of Social Media).<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:</p>
+
+
+
+<p>Please welcome Kadan (K), Jason (J), Audo (AK), Alper (AC) and the questions from our Telegram chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<h3 id="komodo-and-its-platform">Komodo and its platform</h3>
+
+
+
+<p>Q: Tell us about the Komodo Platform.</p>
+
+
+
+<p>K: We are an open, composable Smart Chain platform built on top of a multichain architecture. We do provide a set of various technologies and tools that reflect our vision and biggest goal: global blockchain interoperability for all projects that build on KMD and giving them a sovereign and independent blockchain stack to build their dapps, chains, systems and other tools on.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: The Komodo Platform has already outperformed itself for the past 3 years or so. Is there any specific highlight key of KMD that you would like your users to remember about you?</p>
+
+
+
+<p>AK: Komodo is an open, composable multi-chain platform. We strive to achieve a growing ecosystem with different projects building on top of the Komodo Platform.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the major milestones Komodo has achieved so far?</p>
+
+
+
+<p>AK: First Atomic DEX stress test, the public beta launch of Atomic DEX, the launch of the Antara Smart Chain Composer, rebrand and continued to build Antara Modules such as quantum-resistant and more are the major milestones Komodo has achieved so far.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is a smart chain and which field can it be used for? Why does Komodo have an Antara Smart Chain Composer on its platform?</p>
+
+
+
+<p>AK: Smart chains are blockchains that are built with Komodo Platform. Blockchains are mostly naked. Smart Chains, on the other hand, come with a lot of out-of-the-box features like DPoW, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the difference between Komodo Smart Contract and Ethereum Smart Contract? How KMD Smart contact can lead over Ethereum smart contract?</p>
+
+
+
+<p>J: Komodo smart contracts are done at the consensus level where Ethereum contracts use an interpreter. This allows for use of languages better suited for fine control of the hardware such as C as opposed to a high-level language like Solidity. Since contracts in the Komodo system are independent chains, issues such as being at a mainchain’s developer’s mercy are removed. This freedom and autonomy are required for success and currently is not found on Ethereum.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What makes Komodo different from other competitor projects out there? What is the killer score Komodo has?</p>
+
+
+
+<p>AK: The main difference to many platforms is our vision about multi-chain architecture where multiple blockchains work together instead of one single chain or platform. There are a couple of other projects who have also embraced this vision and kudos to them.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How will the privacy feature of Komodo be suitable for enterprise businesses if there are some regulation requirements?</p>
+
+
+
+<p>J: Komodo removed privacy features on its chain. Chains built with Antara can still enable privacy features on their own independent chains. Any regulatory responsibility falls on the project that uses it.</p>
+
+
+
+<p></p>
+
+
+
+<h3 id="komodo-and-the-atomic-dex">Komodo and the Atomic DEX</h3>
+
+
+
+<p>Q: Please elaborate on what Atomic DEX is.</p>
+
+
+
+<p>K: Atomic DEX is a 3rd generation native decentralized exchange technology that our team is working on for over half a decade already. Earlier last year, we entered a public beta phase and since then, the technology has evolved a lot. We do cover compatibility for 99%+ of all CMC-listed cryptocurrencies and tokens and we managed to port our technology to all platforms, operating systems and environments — desktop, server and even mobile. But that is not all. We also got Atomic DEX to run natively within the web-browser environment (WASM).</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why is Atomic DEX the leading market DEX technology?</p>
+
+
+
+<p>AK: Atomic DEX is running almost in a production-ready environment. It has a full platform coverage (OS and device agnostic) on top of that we have even managed to run Atomic DEX in a browser, which means that you will be able to do Atomic Swaps in a browser. AtomicDEX does also fulfill all 4 core requirements to be called a &#8216;True DEX.&#8217;</p>
+
+
+
+<p></p>
+
+
+
+<h3 id="komodo-and-the-kmd-coin">Komodo and the KMD coin</h3>
+
+
+
+<p>Q: How does the Antara Framework benefit KMD coin? How does the KMD coin fit into the Komodo ecosystem in general?</p>
+
+
+
+<p>AK: KMD is the money of the Komodo ecosystem. Every Smart Chain that launches on Komodo Platform using the Antara Framework needs to pay the fees in KMD.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are the major use cases of KMD coin?</p>
+
+
+
+<p>AK: The major use cases of KMD are the gateway to trustless trading, easy mobile payments, and Komodo platform services.</p>
+
+
+
+<p></p>
+
+
+
+<h3 id="komodo-and-its-future-plans">Komodo and its future plans</h3>
+
+
+
+<p>Q: What are your plans for 2020?</p>
+
+
+
+<p>J: Our goal for 2020 is a full scaleup and production test (2nd stress test) as well as completing the beta phase of Atomic DEX and presenting a release candidate towards the end of this year. Additionally, we plan on bringing out a desktop version of Atomic DEX this year as well and continue on with developments in other areas of blockchain technology such as decentralized order matching, improved SPV clients and blockchain modularization.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Any new features going to be added to the Komodo Platform this 2020?</p>
+
+
+
+<p>J: 2020 will bring a lot of refinement to Atomic DEX with more coin additions, improved order matching system and further developments in the gaming sphere. Several community-requested features have been implemented in Atomic DEX such as Segwit support and the ability to run in the background has already been added and we actively seek user feedback in UX development. Additionally, we are launching a community portal for Komodo to better enable collaboration among the many projects in the ecosystem and its users.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are Komodo’s achievements last 2019? What is Komodo’s 2020 development plan?</p>
+
+
+
+<p>AK: We will publish our year-end report for 2019 in the coming weeks as well as the development plan for 2020.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Where precisely are you looking at in about 3 to 5 years from now?</p>
+
+
+
+<p>AK: In 3 to 5 years, we think that most of the current and new projects will realize that the Gas model is flawed and will realize that scaling can be a problem.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is Komodo&#8217;s mission now?</p>
+
+
+
+<p>AK: Komodo is committed to accelerating global blockchain adoption through a composable, multi-chain architecture, an open-source model and an open, business-friendly ecosystem that allows developers, startups and enterprises alike to prosper with blockchain technology.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are your plans to educate and raise awareness among the community to make more people understand the Komodo Platform, its technology, and adoption?</p>
+
+
+
+<p>AK: We see Komodo as the WordPress of Blockchain. We strive to make it as easy as possible to get started with blockchain. For this, we have created the Antara Composer. Everyone is able to create a blockchain under 5 minutes and add plugins (Antara Modules) to the newly created Smart Chain.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the business model for creating Komodo revenue? Is there enough profit to sustain the project in the future?</p>
+
+
+
+<p>J: Fees are collected for integrations into Atomic DEX and DPoW by ecosystem service providers. Additionally, we are working on integrations with credit card services and other value add-ons for Atomic DEX. Komodo, through a variety of means, has acquired funding to last us many years and has assured the support of its DPoW mechanism for the next decade and a half without requiring any additional funding.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: When can we buy KMD through fiat on Binance and Huobi OTC?</p>
+
+
+
+<p>J: Many times, it is up to the exchange to add us to respective services. Currently, there are several fiat gateways —&nbsp; Bittrex and Metal Pay for the US, Bitpanda in the EU, Bitbns in India, Netcoins in Canada and Australia and Upbit for Korea. We are looking to expand to other fiat currencies as well when the opportunity presents itself.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to host <a href="https://twitter.com/KomodoPlatform">Komodo</a> on our Telegram. Thanks to the team and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a> and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.<br></p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-komodo-digest">AMA Session with Komodo</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-with-komodo-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

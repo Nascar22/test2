@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<link rel="manifest" href="/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+<link rel="apple-touch-icon" sizes="192x192" href="https://www.thestartupfounder.com/wp-content/plugins/super-progressive-web-apps/public/images/logo.png">
+<link rel="apple-touch-icon" sizes="512x512" href="https://www.thestartupfounder.com/wp-content/plugins/super-progressive-web-apps/public/images/logo-512x512.png">
+
+
+<meta name="google-site-verification" content="8wtBVOTyRmPQF-m7_3VuNnJkQ75W1l3bwLwB7H0tfF0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="template" content="Author 1.43" />
+
+<title>Blockchain: What are Nodes and SuperNodes? - TheStartupFounder.com</title>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Blockchain: What are Nodes and SuperNodes? - TheStartupFounder.com" />
+<meta property="og:description" content="We will explain the theoretical bases of what a node and a supernode are. So that blockchain projects have created the same, how can we participate and what are their tasks within the blockchain network in which they are executed. What is a Node? A node in the context of&#8230;" />
+<meta property="og:url" content="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/" />
+<meta property="og:site_name" content="TheStartupFounder.com" />
+<meta property="article:published_time" content="2018-12-12T11:16:28+00:00" />
+<meta property="article:modified_time" content="2018-12-19T02:17:27+00:00" />
+<meta property="og:image" content="https://www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd-1024x683.jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="683" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@alejandrob" />
+<meta name="twitter:site" content="@alejandrob" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.thestartupfounder.com/#website","url":"https://www.thestartupfounder.com/","name":"TheStartupFounder.com","description":"The blog of Alejandro Brega","publisher":{"@id":"https://www.thestartupfounder.com/#/schema/person/fce55e38b14125d25f3be4625d610088"},"potentialAction":[{"@type":"SearchAction","target":"https://www.thestartupfounder.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#primaryimage","inLanguage":"en-US","url":"https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?fit=5393%2C3595&ssl=1","width":5393,"height":3595},{"@type":"WebPage","@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#webpage","url":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/","name":"Blockchain: What are Nodes and SuperNodes? - TheStartupFounder.com","isPartOf":{"@id":"https://www.thestartupfounder.com/#website"},"primaryImageOfPage":{"@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#primaryimage"},"datePublished":"2018-12-12T11:16:28+00:00","dateModified":"2018-12-19T02:17:27+00:00","breadcrumb":{"@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/"]}]},{"@type":"BreadcrumbList","@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.thestartupfounder.com/","url":"https://www.thestartupfounder.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.thestartupfounder.com/topics/cryptocurrencies/","url":"https://www.thestartupfounder.com/topics/cryptocurrencies/","name":"Cryptocurrencies"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/","url":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/","name":"Blockchain: What are Nodes and SuperNodes?"}}]},{"@type":"Article","@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#article","isPartOf":{"@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#webpage"},"author":{"@id":"https://www.thestartupfounder.com/#/schema/person/fce55e38b14125d25f3be4625d610088"},"headline":"Blockchain: What are Nodes and SuperNodes?","datePublished":"2018-12-12T11:16:28+00:00","dateModified":"2018-12-19T02:17:27+00:00","mainEntityOfPage":{"@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#webpage"},"commentCount":"1","publisher":{"@id":"https://www.thestartupfounder.com/#/schema/person/fce55e38b14125d25f3be4625d610088"},"image":{"@id":"https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#primaryimage"},"keywords":"Bitcoin,Bitcoin Core,block chain,blockchain,Broadcast,Classification,Control,core,dash,ethereum,Mandatory,Mandatory Access Control,Master,Masternodes,Monero,Napster,Node,nodes,supernodes,Transmit","articleSection":"Cryptocurrencies","inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#respond"]}]},{"@type":["Person","Organization"],"@id":"https://www.thestartupfounder.com/#/schema/person/fce55e38b14125d25f3be4625d610088","name":"Alejandro Brega","logo":{"@id":"https://www.thestartupfounder.com/#personlogo"},"description":"Startup founder. I hold a B.S in Computer Science and have extensive experience and interest in technology, e-commerce, cryptocurrencies and online advertising industry (ad-tech). I worked with leading companies like Softbit, MediaFem, OLX Group, and Telecom. I am living in London, UK.","sameAs":["https://www.linkedin.com/in/abrega/","https://twitter.com/alejandrob"]}]}</script>
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//i0.wp.com' />
+<link rel='dns-prefetch' href='//i1.wp.com' />
+<link rel='dns-prefetch' href='//i2.wp.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="TheStartupFounder.com &raquo; Feed" href="https://www.thestartupfounder.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TheStartupFounder.com &raquo; Comments Feed" href="https://www.thestartupfounder.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TheStartupFounder.com &raquo; Blockchain: What are Nodes and SuperNodes? Comments Feed" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/feed/" />
+<script type="61706e84550136147a5b8cd1-text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.thestartupfounder.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.7"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://c0.wp.com/c/5.4.7/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='ct-author-google-fonts-css' href='//fonts.googleapis.com/css?family=Rokkitt%3A400%2C700%7CLato%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=5.4.7' type='text/css' media='all' />
+<link rel="stylesheet" href="https://www.thestartupfounder.com/wp-content/cache/minify/0d605.css" media="all" />
+<style id='ct-author-style-inline-css' type='text/css'>
+.post-meta{
+	display: none;
+}
+.sidebar{
+	font-size: 1.2em;
+}
+input[type="submit"] {
+	background: #3E4145;
+}
+</style>
+<link rel='stylesheet' id='social-logos-css' href='https://c0.wp.com/p/jetpack/8.9.2/_inc/social-logos/social-logos.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='https://c0.wp.com/p/jetpack/8.9.2/css/jetpack.css' type='text/css' media='all' />
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/c/5.4.7/wp-includes/js/jquery/jquery.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/c/5.4.7/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/p/jetpack/8.9.2/_inc/build/related-posts/related-posts.min.js'></script>
+<!--[if IE 8]>
+<script type='text/javascript' src='https://www.thestartupfounder.com/wp-content/themes/author/js/build/html5shiv.min.js?ver=5.4.7'></script>
+<![endif]-->
+<link rel='https://api.w.org/' href='https://www.thestartupfounder.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.thestartupfounder.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.thestartupfounder.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.4.7" />
+<link rel='shortlink' href='https://wp.me/papyhR-aQ' />
+<link rel="alternate" type="application/json+oembed" href="https://www.thestartupfounder.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thestartupfounder.com%2Fblockchain-what-are-nodes-and-supernodes%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.thestartupfounder.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thestartupfounder.com%2Fblockchain-what-are-nodes-and-supernodes%2F&#038;format=xml" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98638119-1" type="61706e84550136147a5b8cd1-text/javascript"></script>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-98638119-1');
+		</script>
+<style type='text/css'>img#wpstats{display:none}</style> <meta name="onesignal" content="wordpress-plugin" />
+<script type="61706e84550136147a5b8cd1-text/javascript">
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+        OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl("https://www.thestartupfounder.com");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = 'f7c98429-614a-4881-bd2c-1af5ff700691';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "";
+oneSignal_options['welcomeNotification']['message'] = "";
+oneSignal_options['path'] = "https://www.thestartupfounder.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['promptOptions'] = { };
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+<link rel="icon" href="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/11/cropped-Diseño-sin-título.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/11/cropped-Diseño-sin-título.png?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+<meta name="msapplication-TileImage" content="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/11/cropped-Diseño-sin-título.png?fit=270%2C270&#038;ssl=1" />
+<style type="text/css" id="wp-custom-css">
+				.post-meta{
+	display: none;
+}
+.sidebar{
+	font-size: 1.2em;
+}
+input[type="submit"] {
+	background: #3E4145;
+}			</style>
+</head>
+<body id="author" class="post-template-default single single-post postid-672 single-format-standard singular singular-post singular-post-672">
+<a class="skip-content" href="#main">Skip to content</a>
+<div id="overflow-container" class="overflow-container">
+<div class="max-width">
+<div id="main-sidebar" class="main-sidebar">
+<header class="site-header" id="site-header" role="banner">
+<div id="title-container" class="title-container">
+<div id="site-avatar" class="site-avatar" style="background-image: url('https://www.thestartupfounder.com/wp-content/uploads/2018/11/AAEAAQAAAAAAAAK0AAAAJDMxMzk3Mzk1LTFlMzktNGY1NS1iOGZlLTQyNzVlMWY2NDE0Zg.jpg')"></div>
+<div class="container">
+<div id='site-title' class='site-title'><a href='https://www.thestartupfounder.com'><span class='screen-reader-text'>TheStartupFounder.com</span><img class='logo' src='https://www.thestartupfounder.com/wp-content/uploads/2018/11/Logo-462-x-154px-fondo-negro-1.png' alt='TheStartupFounder.com' /></a></div> <p class="tagline">The blog of Alejandro Brega</p> </div>
+</div>
+<button id="toggle-navigation" class="toggle-navigation" aria-expanded="false">
+<span class="screen-reader-text">open primary menu</span>
+<i class="fas fa-bars"></i>
+</button>
+<div class='social-media-icons'><ul> <li>
+<a class="twitter" target="_blank" href="https://twitter.com/founder_startup">
+<i class="fab fa-twitter-square"></i>
+<span class="screen-reader-text">twitter</span>
+</a>
+</li>
+<li>
+<a class="linkedin" target="_blank" href="https://www.linkedin.com/in/abrega">
+<i class="fab fa-linkedin"></i>
+<span class="screen-reader-text">linkedin</span>
+</a>
+</li>
+<li>
+<a class="github" target="_blank" href="https://github.com/alebrega">
+<i class="fab fa-github-square"></i>
+<span class="screen-reader-text">github</span>
+</a>
+</li>
+<li>
+<a class="medium" target="_blank" href="https://medium.com/@aleb">
+<i class="fab fa-medium"></i>
+<span class="screen-reader-text">medium</span>
+</a>
+</li>
+<li>
+<a class="tumblr" target="_blank" href="https://www.tumblr.com/blog/thestartupfounder">
+<i class="fab fa-tumblr-square"></i>
+<span class="screen-reader-text">tumblr</span>
+</a>
+</li>
+</ul></div> <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+<div class="menu-unset"><ul><li class="page_item page-item-227"><a href="https://www.thestartupfounder.com/about-me/">About me</a></li><li class="page_item page-item-224"><a href="https://www.thestartupfounder.com/contact-me/">Contact me</a></li><li class="page_item page-item-221"><a href="https://www.thestartupfounder.com/media-inquiries/">Media inquiries</a></li><li class="page_item page-item-3"><a href="https://www.thestartupfounder.com/privacy-policy/">Privacy Policy</a></li></ul></div></div> </header>
+<aside class="sidebar sidebar-primary" id="sidebar-primary" role="complementary">
+<h1 class="screen-reader-text">Sidebar</h1>
+<section id="text-4" class="widget widget_text"><h2 class="widget-title">Author: Alejandro Brega 🇦🇷 🇬🇧</h2> <div class="textwidget"><p>Founder and CEO at <a href="http://www.zylalabs.com">Zyla Labs</a></p>
+<p><a href="http://www.zylalabs.com">Zyla Labs</a> | <a href="http://www.antler.co">Antler</a> | <a href="http://www.getwoord.com">Woord</a> | <a href="http://www.mediafem.com">MediaFem</a> | <a href="http://www.dealsourcing.co">DealSourcing</a> | <a href="http://www.chefr.co">Chefr</a> |  <a href="http://www.gopostr.com">Postr</a> | <a href="http://www.metals-api.com">Metals-API.com</a></p>
+<p>15 years of experience in SaaS, e-commerce and online advertising &amp; marketing industry (Ad-tech / Mar-Tech).</p>
+<p>Bilingual in English and Spanish.</p>
+<p><span style="font-weight: 400;">I worked with leading companies like Zyla Labs, Softbit (Crypto Exchange), MediaFem, MercadoLibre and OLX Group.</span></p>
+<p>Visit my <a href="https://www.linkedin.com/in/abrega/">Linkedin profile here</a></p>
+</div>
+</section><section id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widget-title">Zyla Labs</h2><div class="textwidget custom-html-widget">We’re looking for experienced entrepreneurs and B2B SaaS companies that want to turn their ideas into a Zyla Labs company or work with us to build future companies.
+<a href="https://7a5h36u4j35.typeform.com/to/ekx7szM5">Partner with us</a>. <br><a href="http://zylalabs.com/">About Zyla Labs</a></div></section><section id="blog_subscription-3" class="widget widget_blog_subscription jetpack_subscription_widget"><h2 class="widget-title">Subscribe</h2>
+<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-3">
+<div id="subscribe-text"><p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+</div> <p id="subscribe-email">
+<label id="jetpack-subscribe-label" class="screen-reader-text" for="subscribe-field-blog_subscription-3">
+Email Address </label>
+<input type="email" name="email" required="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address" />
+</p>
+<p id="subscribe-submit">
+<input type="hidden" name="action" value="subscribe" />
+<input type="hidden" name="source" value="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/" />
+<input type="hidden" name="sub-type" value="widget" />
+<input type="hidden" name="redirect_fragment" value="blog_subscription-3" />
+<button type="submit" name="jetpack_subscriptions_widget">
+Subscribe </button>
+</p>
+</form>
+</section><section id="search-2" class="widget widget_search"><h2 class="widget-title">Search</h2><div class='search-form-container'>
+<form role="search" method="get" class="search-form" action="https://www.thestartupfounder.com/">
+<label class="screen-reader-text" for="search-field">Search</label>
+<input id="search-field" type="search" class="search-field" value="" name="s" title="Search for:" />
+<input type="submit" class="search-submit" value='Go' />
+</form>
+</div></section><section id="top-posts-3" class="widget widget_top-posts"><h2 class="widget-title">Top Posts</h2><ul class='widgets-list-layout no-grav'>
+<li>
+<a href="https://www.thestartupfounder.com/revealing-the-n26-numbers/" title="Revealing the N26 numbers" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/02/34362588015_32ecf5f15a_z.jpg?fit=640%2C427&#038;ssl=1&#038;resize=40%2C40" alt="Revealing the N26 numbers" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/revealing-the-n26-numbers/" title="Revealing the N26 numbers" class="bump-view" data-bump-view="tp">Revealing the N26 numbers</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/advantages-and-disadvantages-of-the-c-corporation-of-stripe-atlas/" title="Advantages and disadvantages of the C Corporation of Stripe Atlas" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i1.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/11/uploadsf497fa2e-e7fa-48d0-9a13-2429d874b942.jpg?fit=1200%2C800&#038;ssl=1&#038;resize=40%2C40" alt="Advantages and disadvantages of the C Corporation of Stripe Atlas" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/advantages-and-disadvantages-of-the-c-corporation-of-stripe-atlas/" title="Advantages and disadvantages of the C Corporation of Stripe Atlas" class="bump-view" data-bump-view="tp">Advantages and disadvantages of the C Corporation of Stripe Atlas</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/digital-banking-vs-traditional-banking-differences-and-opportunities/" title="Digital banking vs. traditional banking: differences and opportunities" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/04/glenn-carstens-peters-203007-unsplash.jpg?fit=1200%2C799&#038;ssl=1&#038;resize=40%2C40" alt="Digital banking vs. traditional banking: differences and opportunities" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/digital-banking-vs-traditional-banking-differences-and-opportunities/" title="Digital banking vs. traditional banking: differences and opportunities" class="bump-view" data-bump-view="tp">Digital banking vs. traditional banking: differences and opportunities</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/the-great-challenges-of-banking-for-2019/" title="The great challenges of banking for 2019 (Updated for 2020)" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/01/calculator-385506_960_720.jpg?fit=960%2C565&#038;ssl=1&#038;resize=40%2C40" alt="The great challenges of banking for 2019 (Updated for 2020)" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/the-great-challenges-of-banking-for-2019/" title="The great challenges of banking for 2019 (Updated for 2020)" class="bump-view" data-bump-view="tp">The great challenges of banking for 2019 (Updated for 2020)</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/how-do-companies-compete-all-about-flixbus-and-blablabus/" title="How do companies compete?: All about Flixbus and Blablabus" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i1.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/03/bench-accounting-49025-unsplash.jpg?fit=1200%2C802&#038;ssl=1&#038;resize=40%2C40" alt="How do companies compete?: All about Flixbus and Blablabus" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/how-do-companies-compete-all-about-flixbus-and-blablabus/" title="How do companies compete?: All about Flixbus and Blablabus" class="bump-view" data-bump-view="tp">How do companies compete?: All about Flixbus and Blablabus</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/an-n26-customer-stolen-80000-euros/" title="An N26 customer stolen 80,000 euros" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i1.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/03/paper-3147856_960_720.jpg?fit=960%2C639&#038;ssl=1&#038;resize=40%2C40" alt="An N26 customer stolen 80,000 euros" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/an-n26-customer-stolen-80000-euros/" title="An N26 customer stolen 80,000 euros" class="bump-view" data-bump-view="tp">An N26 customer stolen 80,000 euros</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/all-you-need-to-know-about-euribor-the-key-to-economic-evolution/" title="All you need to know about Euribor: the key to economic evolution" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i1.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/02/tmpc0f65a85-0306-4eff-b5cb-75f469845284.jpg?fit=1200%2C800&#038;ssl=1&#038;resize=40%2C40" alt="All you need to know about Euribor: the key to economic evolution" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/all-you-need-to-know-about-euribor-the-key-to-economic-evolution/" title="All you need to know about Euribor: the key to economic evolution" class="bump-view" data-bump-view="tp">All you need to know about Euribor: the key to economic evolution</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/multinational-group-playtika-buys-startup-that-created-solitaire-grand-harvest/" title="Multinational Group Playtika buys Startup that Created &quot;Solitaire - Grand Harvest&quot;" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/01/4744890986_1ab4c599fb_o.jpg?fit=1200%2C810&#038;ssl=1&#038;resize=40%2C40" alt="Multinational Group Playtika buys Startup that Created &quot;Solitaire - Grand Harvest&quot;" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/multinational-group-playtika-buys-startup-that-created-solitaire-grand-harvest/" title="Multinational Group Playtika buys Startup that Created &quot;Solitaire - Grand Harvest&quot;" class="bump-view" data-bump-view="tp">Multinational Group Playtika buys Startup that Created &quot;Solitaire - Grand Harvest&quot;</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/cold-brew-coffee-is-a-new-niche-for-german-startups/" title="Cold Brew coffee is a new niche for German startups" class="bump-view" data-bump-view="tp">
+<img width="40" height="40" src="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2019/03/coffee-1281880_1920.jpg?fit=1200%2C799&#038;ssl=1&#038;resize=40%2C40" alt="Cold Brew coffee is a new niche for German startups" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/cold-brew-coffee-is-a-new-niche-for-german-startups/" title="Cold Brew coffee is a new niche for German startups" class="bump-view" data-bump-view="tp">Cold Brew coffee is a new niche for German startups</a>
+</div>
+</li>
+<li>
+<a href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/" title="Blockchain: What are Nodes and SuperNodes?" class="bump-view" data-bump-view="tp" aria-current="page">
+<img width="40" height="40" src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?fit=1200%2C800&#038;ssl=1&#038;resize=40%2C40" alt="Blockchain: What are Nodes and SuperNodes?" data-pin-nopin="true" class="widgets-list-layout-blavatar" />
+</a>
+<div class="widgets-list-layout-links">
+<a href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/" title="Blockchain: What are Nodes and SuperNodes?" class="bump-view" data-bump-view="tp" aria-current="page">Blockchain: What are Nodes and SuperNodes?</a>
+</div>
+</li>
+</ul>
+</section><section id="jetpack_display_posts_widget-2" class="widget widget_jetpack_display_posts_widget"><h2 class="widget-title">Recent Posts: TheStartupFounder.com</h2><div class="jetpack-display-remote-posts"><h4><a href="https://www.thestartupfounder.com/whats-the-most-complete-online-reader-for-students-learning-another-language/">What’s The Most Complete Online Reader For Students Learning Another Language?</a></h4>
+<a title="What’s The Most Complete Online Reader For Students Learning Another Language?" href="https://www.thestartupfounder.com/whats-the-most-complete-online-reader-for-students-learning-another-language/"><img src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2021/08/girl-2771936_1920.jpg?fit=1920%2C1479&ssl=1" alt="What’s The Most Complete Online Reader For Students Learning Another Language?" /></a><h4><a href="https://www.thestartupfounder.com/is-there-any-metals-api-that-can-help-me-diversify-and-improve-my-investments/">Is There Any Metals API That Can Help Me Diversify And Improve My Investments?</a></h4>
+<a title="Is There Any Metals API That Can Help Me Diversify And Improve My Investments?" href="https://www.thestartupfounder.com/is-there-any-metals-api-that-can-help-me-diversify-and-improve-my-investments/"><img src="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2021/08/analysis-1841158_1920.jpg?fit=1920%2C1280&ssl=1" alt="Is There Any Metals API That Can Help Me Diversify And Improve My Investments?" /></a><h4><a href="https://www.thestartupfounder.com/whats-the-best-way-to-obtain-customer-enrichment-for-your-business-using-a-social-media-scanner/">What’s The Best Way To Obtain Customer Enrichment For Your Business Using A Social Media Scanner?</a></h4>
+<a title="What’s The Best Way To Obtain Customer Enrichment For Your Business Using A Social Media Scanner?" href="https://www.thestartupfounder.com/whats-the-best-way-to-obtain-customer-enrichment-for-your-business-using-a-social-media-scanner/"><img src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2021/08/airport-2373727_1920.jpg?fit=1920%2C1280&ssl=1" alt="What’s The Best Way To Obtain Customer Enrichment For Your Business Using A Social Media Scanner?" /></a><h4><a href="https://www.thestartupfounder.com/is-there-any-real-time-api-for-getting-palladium-rate/">Is There Any Real-Time API For Getting Palladium Rate?</a></h4>
+<a title="Is There Any Real-Time API For Getting Palladium Rate?" href="https://www.thestartupfounder.com/is-there-any-real-time-api-for-getting-palladium-rate/"><img src="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2021/08/antonio-uquiche-W6s6eJc0CTY-unsplash-scaled.jpg?fit=2048%2C1365&ssl=1" alt="Is There Any Real-Time API For Getting Palladium Rate?" /></a><h4><a href="https://www.thestartupfounder.com/whats-the-best-text-to-speech-software-with-license-rights-for-reels-on-instagram/">What&#8217;s The Best Text-To-Speech Software With License Rights For Reels On Instagram?</a></h4>
+<a title="What&#8217;s The Best Text-To-Speech Software With License Rights For Reels On Instagram?" href="https://www.thestartupfounder.com/whats-the-best-text-to-speech-software-with-license-rights-for-reels-on-instagram/"><img src="https://i0.wp.com/www.thestartupfounder.com/wp-content/uploads/2021/08/claudio-schwarz-vj3nOtiX85Y-unsplash-scaled.jpg?fit=2048%2C1366&ssl=1" alt="What&#8217;s The Best Text-To-Speech Software With License Rights For Reels On Instagram?" /></a></div></section><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script charset="utf-8" type="61706e84550136147a5b8cd1-text/javascript" src="//ws-eu.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=GB&ID=V20070822%2FGB%2Fthestartupfou-21%2F8001%2Fdebad789-4a6b-4168-8f3e-ed9888f2d451"> </script></div></section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2> <ul>
+<li class="cat-item cat-item-20"><a href="https://www.thestartupfounder.com/topics/ad-tech/">Ad Tech</a>
+</li>
+<li class="cat-item cat-item-98"><a href="https://www.thestartupfounder.com/topics/apps/">Apps</a>
+</li>
+<li class="cat-item cat-item-6916"><a href="https://www.thestartupfounder.com/topics/artificial-intelligence-ai/">Artificial Intelligence (AI)</a>
+</li>
+<li class="cat-item cat-item-23"><a href="https://www.thestartupfounder.com/topics/cloud/">Cloud</a>
+</li>
+<li class="cat-item cat-item-22"><a href="https://www.thestartupfounder.com/topics/cryptocurrencies/">Cryptocurrencies</a>
+</li>
+<li class="cat-item cat-item-958"><a href="https://www.thestartupfounder.com/topics/digital-nomad/">Digital nomad</a>
+</li>
+<li class="cat-item cat-item-21"><a href="https://www.thestartupfounder.com/topics/e-commerce/">E-commerce</a>
+</li>
+<li class="cat-item cat-item-18011"><a href="https://www.thestartupfounder.com/topics/fintech/">Fintech</a>
+</li>
+<li class="cat-item cat-item-10303"><a href="https://www.thestartupfounder.com/topics/saas/">SaaS</a>
+</li>
+<li class="cat-item cat-item-19"><a href="https://www.thestartupfounder.com/topics/startups/">Startups</a>
+</li>
+<li class="cat-item cat-item-178"><a href="https://www.thestartupfounder.com/topics/technology/">Technology</a>
+</li>
+<li class="cat-item cat-item-18"><a href="https://www.thestartupfounder.com/topics/to-review/">To review</a>
+</li>
+</ul>
+</section><section id="tag_cloud-4" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2><div class="tagcloud"><a href="https://www.thestartupfounder.com/tag/api/" class="tag-cloud-link tag-link-6860 tag-link-position-1" style="font-size: 14pt;" aria-label="api (310 items)">api</a>
+<a href="https://www.thestartupfounder.com/tag/bitcoin/" class="tag-cloud-link tag-link-269 tag-link-position-2" style="font-size: 11.6pt;" aria-label="Bitcoin (235 items)">Bitcoin</a>
+<a href="https://www.thestartupfounder.com/tag/blockchain/" class="tag-cloud-link tag-link-34 tag-link-position-3" style="font-size: 8.8pt;" aria-label="blockchain (167 items)">blockchain</a>
+<a href="https://www.thestartupfounder.com/tag/brand-categorization-api/" class="tag-cloud-link tag-link-96584 tag-link-position-4" style="font-size: 8.2pt;" aria-label="brand categorization API (156 items)">brand categorization API</a>
+<a href="https://www.thestartupfounder.com/tag/business/" class="tag-cloud-link tag-link-106 tag-link-position-5" style="font-size: 12.4pt;" aria-label="Business (254 items)">Business</a>
+<a href="https://www.thestartupfounder.com/tag/chinese/" class="tag-cloud-link tag-link-675 tag-link-position-6" style="font-size: 8.2pt;" aria-label="Chinese (156 items)">Chinese</a>
+<a href="https://www.thestartupfounder.com/tag/company-categorization-api/" class="tag-cloud-link tag-link-96568 tag-link-position-7" style="font-size: 8.2pt;" aria-label="Company categorization API (158 items)">Company categorization API</a>
+<a href="https://www.thestartupfounder.com/tag/crypto/" class="tag-cloud-link tag-link-578 tag-link-position-8" style="font-size: 10pt;" aria-label="crypto (192 items)">crypto</a>
+<a href="https://www.thestartupfounder.com/tag/english/" class="tag-cloud-link tag-link-498 tag-link-position-9" style="font-size: 9.4pt;" aria-label="English (180 items)">English</a>
+<a href="https://www.thestartupfounder.com/tag/financial/" class="tag-cloud-link tag-link-499 tag-link-position-10" style="font-size: 8.8pt;" aria-label="Financial (169 items)">Financial</a>
+<a href="https://www.thestartupfounder.com/tag/fintech/" class="tag-cloud-link tag-link-233 tag-link-position-11" style="font-size: 22pt;" aria-label="Fintech (769 items)">Fintech</a>
+<a href="https://www.thestartupfounder.com/tag/forex-data/" class="tag-cloud-link tag-link-96416 tag-link-position-12" style="font-size: 8.8pt;" aria-label="forex data (170 items)">forex data</a>
+<a href="https://www.thestartupfounder.com/tag/free-categorization-api/" class="tag-cloud-link tag-link-96566 tag-link-position-13" style="font-size: 8.4pt;" aria-label="free categorization API (162 items)">free categorization API</a>
+<a href="https://www.thestartupfounder.com/tag/free-categorization-software/" class="tag-cloud-link tag-link-96567 tag-link-position-14" style="font-size: 8.4pt;" aria-label="free categorization software (161 items)">free categorization software</a>
+<a href="https://www.thestartupfounder.com/tag/free-text-to-speech-online/" class="tag-cloud-link tag-link-96419 tag-link-position-15" style="font-size: 9.6pt;" aria-label="free text to speech online (185 items)">free text to speech online</a>
+<a href="https://www.thestartupfounder.com/tag/free-website-categorization-api/" class="tag-cloud-link tag-link-96565 tag-link-position-16" style="font-size: 8.4pt;" aria-label="free website categorization API (163 items)">free website categorization API</a>
+<a href="https://www.thestartupfounder.com/tag/french/" class="tag-cloud-link tag-link-2368 tag-link-position-17" style="font-size: 8.2pt;" aria-label="French (158 items)">French</a>
+<a href="https://www.thestartupfounder.com/tag/german/" class="tag-cloud-link tag-link-128 tag-link-position-18" style="font-size: 10.8pt;" aria-label="German (214 items)">German</a>
+<a href="https://www.thestartupfounder.com/tag/gold/" class="tag-cloud-link tag-link-3077 tag-link-position-19" style="font-size: 9.8pt;" aria-label="Gold (189 items)">Gold</a>
+<a href="https://www.thestartupfounder.com/tag/gold-rates/" class="tag-cloud-link tag-link-96531 tag-link-position-20" style="font-size: 8pt;" aria-label="gold rates (155 items)">gold rates</a>
+<a href="https://www.thestartupfounder.com/tag/google/" class="tag-cloud-link tag-link-354 tag-link-position-21" style="font-size: 11pt;" aria-label="Google (219 items)">Google</a>
+<a href="https://www.thestartupfounder.com/tag/iab-categorization-api/" class="tag-cloud-link tag-link-96576 tag-link-position-22" style="font-size: 8.2pt;" aria-label="IAB categorization API (159 items)">IAB categorization API</a>
+<a href="https://www.thestartupfounder.com/tag/japanese/" class="tag-cloud-link tag-link-1810 tag-link-position-23" style="font-size: 8pt;" aria-label="Japanese (155 items)">Japanese</a>
+<a href="https://www.thestartupfounder.com/tag/metals/" class="tag-cloud-link tag-link-12875 tag-link-position-24" style="font-size: 9.4pt;" aria-label="metals (180 items)">metals</a>
+<a href="https://www.thestartupfounder.com/tag/metals-api/" class="tag-cloud-link tag-link-79401 tag-link-position-25" style="font-size: 9.6pt;" aria-label="metals-api (184 items)">metals-api</a>
+<a href="https://www.thestartupfounder.com/tag/metals-api-2/" class="tag-cloud-link tag-link-96417 tag-link-position-26" style="font-size: 9.4pt;" aria-label="metals api (182 items)">metals api</a>
+<a href="https://www.thestartupfounder.com/tag/money/" class="tag-cloud-link tag-link-311 tag-link-position-27" style="font-size: 11.4pt;" aria-label="Money (228 items)">Money</a>
+<a href="https://www.thestartupfounder.com/tag/palladium/" class="tag-cloud-link tag-link-27001 tag-link-position-28" style="font-size: 9.2pt;" aria-label="Palladium (175 items)">Palladium</a>
+<a href="https://www.thestartupfounder.com/tag/platinum/" class="tag-cloud-link tag-link-8065 tag-link-position-29" style="font-size: 9.4pt;" aria-label="Platinum (183 items)">Platinum</a>
+<a href="https://www.thestartupfounder.com/tag/precious-metals/" class="tag-cloud-link tag-link-79400 tag-link-position-30" style="font-size: 9.6pt;" aria-label="precious metals (185 items)">precious metals</a>
+<a href="https://www.thestartupfounder.com/tag/precious-metals-api/" class="tag-cloud-link tag-link-96436 tag-link-position-31" style="font-size: 9.4pt;" aria-label="precious metals api (182 items)">precious metals api</a>
+<a href="https://www.thestartupfounder.com/tag/silver/" class="tag-cloud-link tag-link-4062 tag-link-position-32" style="font-size: 9.6pt;" aria-label="Silver (185 items)">Silver</a>
+<a href="https://www.thestartupfounder.com/tag/spanish/" class="tag-cloud-link tag-link-672 tag-link-position-33" style="font-size: 9.8pt;" aria-label="Spanish (191 items)">Spanish</a>
+<a href="https://www.thestartupfounder.com/tag/startup/" class="tag-cloud-link tag-link-66 tag-link-position-34" style="font-size: 21.6pt;" aria-label="startup (743 items)">startup</a>
+<a href="https://www.thestartupfounder.com/tag/startups/" class="tag-cloud-link tag-link-102 tag-link-position-35" style="font-size: 20.4pt;" aria-label="startups (650 items)">startups</a>
+<a href="https://www.thestartupfounder.com/tag/technology/" class="tag-cloud-link tag-link-1370 tag-link-position-36" style="font-size: 11.8pt;" aria-label="Technology (237 items)">Technology</a>
+<a href="https://www.thestartupfounder.com/tag/text/" class="tag-cloud-link tag-link-17471 tag-link-position-37" style="font-size: 9pt;" aria-label="Text (171 items)">Text</a>
+<a href="https://www.thestartupfounder.com/tag/text-to-speech/" class="tag-cloud-link tag-link-96130 tag-link-position-38" style="font-size: 10.2pt;" aria-label="text to speech (197 items)">text to speech</a>
+<a href="https://www.thestartupfounder.com/tag/usd/" class="tag-cloud-link tag-link-12062 tag-link-position-39" style="font-size: 8.2pt;" aria-label="USD (156 items)">USD</a>
+<a href="https://www.thestartupfounder.com/tag/voice-recordings/" class="tag-cloud-link tag-link-96426 tag-link-position-40" style="font-size: 8.2pt;" aria-label="voice recordings (158 items)">voice recordings</a>
+<a href="https://www.thestartupfounder.com/tag/website-api/" class="tag-cloud-link tag-link-96561 tag-link-position-41" style="font-size: 8.2pt;" aria-label="website API (157 items)">website API</a>
+<a href="https://www.thestartupfounder.com/tag/website-api-categorization/" class="tag-cloud-link tag-link-96563 tag-link-position-42" style="font-size: 8.2pt;" aria-label="website API categorization (158 items)">website API categorization</a>
+<a href="https://www.thestartupfounder.com/tag/website-categorization/" class="tag-cloud-link tag-link-96562 tag-link-position-43" style="font-size: 8.4pt;" aria-label="website categorization (163 items)">website categorization</a>
+<a href="https://www.thestartupfounder.com/tag/website-categorization-api/" class="tag-cloud-link tag-link-96582 tag-link-position-44" style="font-size: 8.2pt;" aria-label="website categorization API (156 items)">website categorization API</a>
+<a href="https://www.thestartupfounder.com/tag/website-category-api/" class="tag-cloud-link tag-link-96564 tag-link-position-45" style="font-size: 8.2pt;" aria-label="website category API (159 items)">website category API</a></div>
+</section> </aside>
+</div>
+<section id="main" class="main" role="main">
+<p id="breadcrumbs"><span><span><a href="https://www.thestartupfounder.com/">Home</a> » <span><a href="https://www.thestartupfounder.com/topics/cryptocurrencies/">Cryptocurrencies</a> » <span class="breadcrumb_last" aria-current="page">Blockchain: What are Nodes and SuperNodes?</span></span></span></span></p> <div id="loop-container" class="loop-container">
+<div class="post-672 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptocurrencies tag-bitcoin tag-bitcoin-core tag-block-chain tag-blockchain tag-broadcast tag-classification tag-control tag-core tag-dash tag-ethereum tag-mandatory tag-mandatory-access-control tag-master tag-masternodes tag-monero tag-napster tag-node tag-nodes tag-supernodes tag-transmit entry">
+<div class="featured-image"><img width="5393" height="3595" src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?fit=5393%2C3595&amp;ssl=1" class="attachment-full size-full wp-post-image jetpack-lazy-image" alt="" data-attachment-id="671" data-permalink="https://www.thestartupfounder.com/tmp4a750ace-d132-4f1b-836e-649e8942e7bd-jpg/" data-orig-file="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?fit=5393%2C3595&amp;ssl=1" data-orig-size="5393,3595" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;Malte Wingen&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg" data-image-description="" data-medium-file="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?fit=300%2C200&amp;ssl=1" data-large-file="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?fit=1024%2C683&amp;ssl=1" data-lazy-srcset="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?w=5393&amp;ssl=1 5393w, https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?resize=300%2C200&amp;ssl=1 300w, https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?resize=768%2C512&amp;ssl=1 768w, https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?resize=1024%2C683&amp;ssl=1 1024w, https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?w=2000&amp;ssl=1 2000w, https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?w=3000&amp;ssl=1 3000w" data-lazy-sizes="(max-width: 5393px) 100vw, 5393px" data-lazy-src="https://i2.wp.com/www.thestartupfounder.com/wp-content/uploads/2018/12/tmp4a750ace-d132-4f1b-836e-649e8942e7bd.jpg?fit=5393%2C3595&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div> <article>
+<div class='post-header'>
+<h1 class='post-title'>Blockchain: What are Nodes and SuperNodes?</h1>
+<span class="post-meta">
+Published by <a href='https://www.thestartupfounder.com/author/alebrega/'>Alejandro Brega</a> on <a href='https://www.thestartupfounder.com/2018/12/'>December 12, 2018</a></span> </div>
+<div class="post-content">
+<p>We will explain the theoretical bases of what a node and a supernode are. So that blockchain projects have created the same, how can we participate and what are their tasks within the blockchain network in which they are executed.</p>
+<h3>What is a Node?</h3>
+<p>A node in the context of the blockchain, usually refers to a computer that has downloaded the software of the cryptocurrency in question (Bitcoin, Ethereum, Monero, among others) to participate in the network between peers.</p>
+<p>The cryptocurrency blockchain is structured as a network architecture between peers (peer-to-peer or P2P). The term peer-to-peer or P2P means that the computers that participate in the network are equal to each other. The term is not new, because making a bit of history, the first massive use of P2P networks was made by the music file sharing network, Napster.</p>
+<p>While the Napster network was not at all complex (just a file sharing protocol), comparing it with the blockchain networks of now, its basic principles are the same. In that sense, the oldest P2P network, which most resembles the work of the current blockchains, is the SETI @ HOME network. SETI @ HOME is a computer network, created by SETI to analyze the data of radio telescopes located throughout the world, for the analysis of data from them, in the search for intelligent life in the galaxy. People can participate in this network, just downloading the software from its official website and executing it.</p>
+<p>In this way, it is configured that in P2P networks, each computer that participates in the network receives the name of node. In the network, all nodes share the responsibility to provide network services. This is because the interconnection of the network nodes, is what allows the operation of the same.</p>
+<p>So in this way, the term blockchain network refers to the set of nodes that execute the P2P protocol of a given blockchain. The network in its entirety orchestrates and coordinates in a completely federated, decentralized and distributed way, the actions that each user does within the network. This implies that this network of computers throughout the world constantly retransmits and transmits new transactions to each other. Each computer in this network is a node that has downloaded the complete blockchain. With this the network becomes redundant, and the work together makes it scalable with respect to its expansion.</p>
+<p>Due to the decentralization of the blockchain, anyone can participate within them. Simply download the node software from them and execute it. Usually, the main wallets of each project allow this functionality. Initially, the network begins the pareo of the blockchain, until reaching the point of synchronization with the network. At that moment, the node begins its full operation, not only allowing and verifying transactions but also supporting an image of the global blockchain. Normally nodes can perform the following functions: routing, blockchain database, mining and wallet or purse services.</p>
+<p>The nodes are the individual parts of the largest data structure that is a blockchain. As node owners voluntarily contribute their computing resources to store and validate transactions, they have the opportunity to charge transaction fees and earn a reward in the underlying cryptocurrency for doing so.</p>
+<p>The processing of these transactions may require large amounts of computing and processing capacity, which means that the average capabilities of a computer are inadequate. In general, professional miners tend to invest in extremely powerful computing devices known as CPUs (central processing units) or GPUs (graphics processing units) to keep up with the demand for processing power that is required to validate transactions and, as such, earn the rewards that come with doing it.</p>
+<p>A node can be a communication endpoint or a redistribution point of communication, linking to other nodes. Each node in the network is considered equal, however, certain nodes have different roles in the way they support the network. For example, not all nodes will store a complete copy of a chain of blocks or validate transactions.</p>
+<p>A complete node downloads a complete copy of a chain of blocks and checks the new transactions that arise based on the consensus protocol used by that particular cryptocurrency or utility token. All nodes use the same consensus protocol to remain compatible with each other. It is the nodes in the network that confirm and validate the transactions, placing them in blocks. The nodes always come to their own conclusion about whether a transaction is valid and should be added to a block with other transactions, regardless of how other nodes act.</p>
+<h3>What are the basic tasks of a node?</h3>
+<p>When a miner or user by some mechanism of the protocol in question, tries to add a new block of transactions to the blockchain, it transmits the block to all the nodes of the network. On the basis of the legitimacy of the block (validity of the signature and transactions), the nodes can accept or reject the block. When a node accepts a new block of transactions, it saves it and stores it on the rest of the blocks it has already stored. In summary, this is what the nodes do:</p>
+<p>They check if a block of transactions is valid and accept or reject it. Store and store transaction blocks (storing the blockchain transaction history). Transmit and extend this transaction history to other nodes that may need to be synchronized with the blockchain (they must be updated in the transaction history).</p>
+<h3>Classification of Nodes</h3>
+<p>In blockchain networks, there are traditionally three types of nodes, which provide different functions within the network. These types of nodes are:</p>
+<p>Broadcast nodes: they only issue transactions and receive blockchain information, from a third party. They follow what dictates the greatest mining power and are known as light purses, widely used in mobile devices or simply by people who do not want to download the entire blockchain. Complete nodes: when you install a complete node software such as Bitcoin Core, in addition to having the safest wallet, you will be downloading a copy of the blockchain and you will become a node in the Bitcoin network. So you will issue your transactions, propagate the rest of the network and verify that the consensus rules are met. Mining nodes: the miners must necessarily have a copy of the chain of blocks, in addition to operating the software miner they prefer (BTCMiner, CGMiner). These nodes, in addition to mining bitcoins and therefore helping to create new blocks, also issue and propagate transactions.</p>
+<h3>How safe is a node?</h3>
+<p>The nodes can be online or offline. The online nodes are receiving, saving and transmitting all the last blocks of transactions to and from other nodes, while the nodes without connection do not. When an offline node comes back online, it will first have to catch up with the rest of the blockchain by downloading all the blocks that were added to the blockchain since the node was disconnected. This process is often called synchronization with the blockchain.</p>
+<p>Theoretically, a complete blockchain can be executed in a single node, but as it would be stored in a single device, it would be extremely vulnerable to situations like power outages, hackers or systemic failures. The more full nodes are running in a blockchain, the better their recovery capacity in the face of such catastrophes. When the data of the blockchain is distributed in so many devices, it will be very difficult for a corrupt entity to erase all this data at once. Even if a large number of nodes suddenly fall and become inaccessible due to a global crisis, theoretically a single node can keep a whole chain of blocks operational. And even if all the nodes are disconnected, only one node with the complete blockchain history is needed to get back online and make all the data accessible again.</p>
+<p>In addition to the security that the nodes can add to the network, for its large number. The nodes are also vulnerable to computer attacks, which may alter their functioning. For example, a pirate can violate the security of the software in question, and without altering the data of the blockchain, it can redirect the profits of said nodes to addresses different from those programmed by their owners. Stealing address attacks are the types of attacks most common to this type of software, and that is why developers recommend using updated versions of their blockchain software.</p>
+<p>Some of these security flaws can be easily solved, using a bit of common sense towards computer security, or using software tools that create security mechanisms to isolate blockchain software from the rest of our computer systems. Among these measures can be mentioned:</p>
+<p>Use official or developer software with a long and proven track record. Safeguard private keys, mnemonic keys, and any other privileged information of our activity in the blockchain. Use computers or electronic equipment solely and exclusively for our mining activities. Use sandboxing software to isolate software applications from the rest of our system. Use MAC (Mandatory Access Control) systems or system privileges that allow us to run our blockchain software with the minimum access permissions to our OS and other system APIs (this isolation is greater than a sandboxing).</p>
+<h3>What are the Master Nodes (Masternodes)?</h3>
+<p>The master nodes or masters, are unique characteristics of some current blockchains. Masternodes are usually much more equipped than normal nodes. In addition to validating, saving and transmitting transactions, sometimes masternodes also facilitate other events in the chain of blocks depending on their nature, such as voting events, execution of protocol operations and compliance with the laws of the block chain. correspondent. Masternodes are generally always online (24/7) and provide much more memory than normal nodes. Because the accommodation of a masternode usually requires many more resources (electricity, uptime, maintenance, storage space, memory), the accommodation in general provides a payment in the form of interest.</p>
+<p>However, given the peculiarity of the masternodes, not everyone can run one. The power to control a masternode can be abused, and therefore requires the host to deposit a minimum (often quite large) amount of cryptocurrencies as collateral. This guarantee is taken as a hostage when the masternode host violates the rules of the block chain. The interest rate received by a masternode host is calculated on your security deposit. Of this money retained, depends the gain of the owner of the masternode, which is measured by a percentage of all transactions and operations handled by the set of masternodes in question. Projects such as DASH and Ethereum have the use and creation of masternodes in their structure.</p>
+<p>&nbsp;</p>
+<hr>
+<p>
+<em>
+Also published on <a href="https://medium.com/@aleb/blockchain-what-are-nodes-and-supernodes-e33771b7f3ca">Medium</a>. </em>
+</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/#print" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-672" class="share-twitter sd-button share-icon" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button share-icon" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/?share=jetpack-whatsapp" target="_blank" title="Click to share on WhatsApp"><span>WhatsApp</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-672" class="share-facebook sd-button share-icon" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-672" class="share-linkedin sd-button share-icon" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-153853363-672-614ae6076bf1d' data-src='https://widgets.wp.com/likes/#blog_id=153853363&amp;post_id=672&amp;origin=www.thestartupfounder.com&amp;obj_id=153853363-672-614ae6076bf1d' data-name='like-post-frame-153853363-672-614ae6076bf1d'><h3 class="sd-title">Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts'>
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div>
+<div class="post-categories"><span>Published in</span><a href="https://www.thestartupfounder.com/topics/cryptocurrencies/" title="View all posts in Cryptocurrencies">Cryptocurrencies</a></div> <div class="post-tags"><ul><li><a href="https://www.thestartupfounder.com/tag/bitcoin/" title="View all posts tagged Bitcoin">Bitcoin</a></li><li><a href="https://www.thestartupfounder.com/tag/bitcoin-core/" title="View all posts tagged Bitcoin Core">Bitcoin Core</a></li><li><a href="https://www.thestartupfounder.com/tag/block-chain/" title="View all posts tagged block chain">block chain</a></li><li><a href="https://www.thestartupfounder.com/tag/blockchain/" title="View all posts tagged blockchain">blockchain</a></li><li><a href="https://www.thestartupfounder.com/tag/broadcast/" title="View all posts tagged Broadcast">Broadcast</a></li><li><a href="https://www.thestartupfounder.com/tag/classification/" title="View all posts tagged Classification">Classification</a></li><li><a href="https://www.thestartupfounder.com/tag/control/" title="View all posts tagged Control">Control</a></li><li><a href="https://www.thestartupfounder.com/tag/core/" title="View all posts tagged core">core</a></li><li><a href="https://www.thestartupfounder.com/tag/dash/" title="View all posts tagged dash">dash</a></li><li><a href="https://www.thestartupfounder.com/tag/ethereum/" title="View all posts tagged ethereum">ethereum</a></li><li><a href="https://www.thestartupfounder.com/tag/mandatory/" title="View all posts tagged Mandatory">Mandatory</a></li><li><a href="https://www.thestartupfounder.com/tag/mandatory-access-control/" title="View all posts tagged Mandatory Access Control">Mandatory Access Control</a></li><li><a href="https://www.thestartupfounder.com/tag/master/" title="View all posts tagged Master">Master</a></li><li><a href="https://www.thestartupfounder.com/tag/masternodes/" title="View all posts tagged Masternodes">Masternodes</a></li><li><a href="https://www.thestartupfounder.com/tag/monero/" title="View all posts tagged Monero">Monero</a></li><li><a href="https://www.thestartupfounder.com/tag/napster/" title="View all posts tagged Napster">Napster</a></li><li><a href="https://www.thestartupfounder.com/tag/node/" title="View all posts tagged Node">Node</a></li><li><a href="https://www.thestartupfounder.com/tag/nodes/" title="View all posts tagged nodes">nodes</a></li><li><a href="https://www.thestartupfounder.com/tag/supernodes/" title="View all posts tagged supernodes">supernodes</a></li><li><a href="https://www.thestartupfounder.com/tag/transmit/" title="View all posts tagged Transmit">Transmit</a></li></ul></div> </article>
+<nav class="further-reading">
+<div class="previous">
+<span>Previous Post</span>
+<a href="https://www.thestartupfounder.com/invision-from-a-pure-prototyping-tool-to-the-best-product-design/" rel="prev">InVision: From a pure prototyping tool to the best product design</a> </div>
+<div class="next">
+<span>Next Post</span>
+<a href="https://www.thestartupfounder.com/nomadic-digital-the-new-freelancer-worker/" rel="next">Nomadic digital, the new freelancer worker</a> </div>
+</nav> <section id="comments" class="comments">
+<div class="comments-number">
+<h2>
+One Comment </h2>
+</div>
+<ol class="comment-list">
+<li class="pingback even thread-even depth-1" id="li-comment-241">
+<article id="comment-241" class="comment">
+<div class="comment-author">
+<span class="author-name"><a href='https://preprod.atomicwallet.io/blog/academy/nem-xem-complete-guide' rel='external nofollow ugc' class='url'>What is NEM (XEM) Cryptocurrency: A Complete Guide</a></span>
+</div>
+<div class="comment-content">
+<p>[&#8230;] algorithms. A harvesting account is linked to a&nbsp;supernode&nbsp;to harness its computing power, lending its POI score to the supernode for a joint block [&#8230;]</p>
+<div class='jetpack-comment-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-comment-wrapper-153853363-241-614ae60773913' data-src='https://widgets.wp.com/likes/#blog_id=153853363&amp;comment_id=241&amp;origin=www.thestartupfounder.com&amp;obj_id=153853363-241-614ae60773913' data-name='like-comment-frame-153853363-241-614ae60773913'>
+<div class='likes-widget-placeholder comment-likes-widget-placeholder comment-likes'><span class='loading'>Loading...</span></div>
+<div class='comment-likes-widget jetpack-likes-widget comment-likes'><span class='comment-like-feedback'></span><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+</div>
+</div>
+</article>
+</li>
+</ol>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blockchain-what-are-nodes-and-supernodes/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form id="commentform" class="comment-form">
+<iframe title="Comment Form" src="https://jetpack.wordpress.com/jetpack-comment/?blogid=153853363&#038;postid=672&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=0&#038;avatar_default=mystery&#038;greeting=Leave+a+Reply&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en_US&#038;jetpack_version=8.9.2&#038;show_cookie_consent=10&#038;has_cookie_consent=0&#038;token_key=%3Bnormal%3B&#038;sig=0596725743f98a793ad8d3d544b3cf8d3ffaae2e#parent=https%3A%2F%2Fwww.thestartupfounder.com%2Fblockchain-what-are-nodes-and-supernodes%2F" style="width:100%; height: 430px; border:0;" name="jetpack_remote_comment" class="jetpack_remote_comment" id="jetpack_remote_comment" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups"></iframe>
+<!--[if !IE]><!-->
+<script type="61706e84550136147a5b8cd1-text/javascript">
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+<!--<![endif]-->
+</form>
+</div>
+<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+</section>
+</div> </div>
+</section>
+<footer class="site-footer" role="contentinfo">
+<div class="design-credit">
+<span>
+<a href="https://www.competethemes.com/author/" rel="nofollow">Author WordPress Theme</a> by Compete Themes </span>
+</div>
+</footer>
+</div>
+</div>
+<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">Scroll to the top</span><i class="fas fa-arrow-up"></i></button>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.thestartupfounder.com\/blockchain-what-are-nodes-and-supernodes\/":672};
+	</script>
+<div id="sharing_email" style="display: none;">
+<form action="/blockchain-what-are-nodes-and-supernodes/" method="post">
+<label for="target_email">Send to Email Address</label>
+<input type="email" name="target_email" id="target_email" value="" />
+<label for="source_name">Your Name</label>
+<input type="text" name="source_name" id="source_name" value="" />
+<label for="source_email">Your Email Address</label>
+<input type="email" name="source_email" id="source_email" value="" />
+<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" title="This field is for validation and should not be changed" />
+<img style="float: right; display: none" class="loading" src="https://www.thestartupfounder.com/wp-content/plugins/jetpack/modules/sharedaddy/images/loading.gif" alt="loading" width="16" height="16" />
+<input type="submit" value="Send Email" class="sharing_send" />
+<a rel="nofollow" href="#cancel" class="sharing_cancel" role="button">Cancel</a>
+<div class="errors errors-1" style="display: none;">
+Post was not sent - check your email addresses! </div>
+<div class="errors errors-2" style="display: none;">
+Email check failed, please try again </div>
+<div class="errors errors-3" style="display: none;">
+Sorry, your blog cannot share posts by email. </div>
+</form>
+</div>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/p/jetpack/8.9.2/_inc/build/photon/photon.min.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/OneSignalSDKWorker.js.php","disable_addtohome":"0","enableOnDesktop":""};
+/* ]]> */
+</script>
+<script src="https://www.thestartupfounder.com/wp-content/cache/minify/67148.js" type="61706e84550136147a5b8cd1-text/javascript"></script>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+/* <![CDATA[ */
+var ct_author_objectL10n = {"openPrimaryMenu":"open primary menu","closePrimaryMenu":"close primary menu","openChildMenu":"open child menu","closeChildMenu":"close child menu"};
+/* ]]> */
+</script>
+<script src="https://www.thestartupfounder.com/wp-content/cache/minify/d9474.js" type="61706e84550136147a5b8cd1-text/javascript"></script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/c/5.4.7/wp-includes/js/comment-reply.min.js'></script>
+<!--[if IE 8]>
+<script type='text/javascript' src='https://www.thestartupfounder.com/wp-content/themes/author/js/build/respond.min.js?ver=5.4.7'></script>
+<![endif]-->
+<script src="https://www.thestartupfounder.com/wp-content/cache/minify/c4151.js" type="61706e84550136147a5b8cd1-text/javascript"></script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/p/jetpack/8.9.2/_inc/build/postmessage.min.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/p/jetpack/8.9.2/_inc/build/jquery.jetpack-resize.min.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/p/jetpack/8.9.2/_inc/build/likes/queuehandler.min.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/c/5.4.7/wp-includes/js/wp-embed.min.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=5.4.7' async='async'></script>
+<script src="https://www.thestartupfounder.com/wp-content/cache/minify/5b374.js" type="61706e84550136147a5b8cd1-text/javascript"></script>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://c0.wp.com/p/jetpack/8.9.2/_inc/build/sharedaddy/sharing.min.js'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+</script>
+<iframe src='https://widgets.wp.com/likes/master.html?ver=202138#ver=202138' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<!--[if IE]>
+		<script type="text/javascript">
+			if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+				// window.location.reload() doesn't respect the Hash in IE
+				window.location.hash = window.location.hash;
+			}
+		</script>
+		<![endif]-->
+<script type="61706e84550136147a5b8cd1-text/javascript">
+			(function () {
+				var comm_par_el = document.getElementById( 'comment_parent' ),
+					comm_par = ( comm_par_el && comm_par_el.value ) ? comm_par_el.value : '',
+					frame = document.getElementById( 'jetpack_remote_comment' ),
+					tellFrameNewParent;
+
+				tellFrameNewParent = function () {
+					if ( comm_par ) {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=153853363&postid=672&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=0&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=8.9.2&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=0596725743f98a793ad8d3d544b3cf8d3ffaae2e#parent=https%3A%2F%2Fwww.thestartupfounder.com%2Fblockchain-what-are-nodes-and-supernodes%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+					} else {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=153853363&postid=672&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=0&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=8.9.2&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=0596725743f98a793ad8d3d544b3cf8d3ffaae2e#parent=https%3A%2F%2Fwww.thestartupfounder.com%2Fblockchain-what-are-nodes-and-supernodes%2F";
+					}
+				};
+
+				
+				if ( 'undefined' !== typeof addComment ) {
+					addComment._Jetpack_moveForm = addComment.moveForm;
+
+					addComment.moveForm = function ( commId, parentId, respondId, postId ) {
+						var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ),
+							cancelClick, cancel;
+
+						if ( false === returnValue ) {
+							cancel = document.getElementById( 'cancel-comment-reply-link' );
+							cancelClick = cancel.onclick;
+							cancel.onclick = function () {
+								var cancelReturn = cancelClick.call( this );
+								if ( false !== cancelReturn ) {
+									return cancelReturn;
+								}
+
+								if ( ! comm_par ) {
+									return cancelReturn;
+								}
+
+								comm_par = 0;
+
+								tellFrameNewParent();
+
+								return cancelReturn;
+							};
+						}
+
+						if ( comm_par == parentId ) {
+							return returnValue;
+						}
+
+						comm_par = parentId;
+
+						tellFrameNewParent();
+
+						return returnValue;
+					};
+				}
+
+				
+				// Do the post message bit after the dom has loaded.
+				document.addEventListener( 'DOMContentLoaded', function () {
+					var iframe_url = "https:\/\/jetpack.wordpress.com";
+					if ( window.postMessage ) {
+						if ( document.addEventListener ) {
+							window.addEventListener( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						} else if ( document.attachEvent ) {
+							window.attachEvent( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						}
+					}
+				})
+
+			})();
+		</script>
+<script type="61706e84550136147a5b8cd1-text/javascript" src='https://stats.wp.com/e-202138.js' async='async' defer='defer'></script>
+<script type="61706e84550136147a5b8cd1-text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.9.2',blog:'153853363',post:'672',tz:'0',srv:'www.thestartupfounder.com'} ]);
+	_stq.push([ 'clickTrackerInit', '153853363', '672' ]);
+</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="61706e84550136147a5b8cd1-|49" defer=""></script></body>
+</html>

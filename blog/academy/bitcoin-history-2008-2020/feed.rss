@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: History of Bitcoin (2008-2020)	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/bitcoin-history-2008-2020/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/bitcoin-history-2008-2020</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 18:20:37 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Michael Michael		</title>
+		<link>https://atomicwallet.io/blog/academy/bitcoin-history-2008-2020#comment-148</link>
+
+		<dc:creator><![CDATA[Michael Michael]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 17:27:23 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=444#comment-148</guid>
+
+					<description><![CDATA[  The history of Bitcoin is the history of a radical revolution in the financial sector. Congratulations to everyone that has embraced this innovation. This is just the beginning of greater things to come.]]></description>
+			<content:encoded><![CDATA[<p>  The history of Bitcoin is the history of a radical revolution in the financial sector. Congratulations to everyone that has embraced this innovation. This is just the beginning of greater things to come.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

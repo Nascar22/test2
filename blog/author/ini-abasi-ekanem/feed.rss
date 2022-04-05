@@ -1,0 +1,1781 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ini Abasi Ekanem &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/author/ini-abasi-ekanem/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Thu, 17 Jun 2021 22:44:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>Ini Abasi Ekanem &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Uniswap Price Prediction 2021 &#124; Price History of Uniswap</title>
+		<link>https://atomicwallet.io/blog/price-prediction/uniswap-price-prediction-2021</link>
+					<comments>https://atomicwallet.io/blog/price-prediction/uniswap-price-prediction-2021#respond</comments>
+		
+		<dc:creator><![CDATA[Ini Abasi Ekanem]]></dc:creator>
+		<pubDate>Thu, 04 Mar 2021 09:51:55 +0000</pubDate>
+				<category><![CDATA[Price Prediction]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=34332</guid>
+
+					<description><![CDATA[<p>Before the emergence of the&#160;Ethereum&#160;blockchain,&#160;cryptocurrency&#160;trading was done on centralized exchanges like Kraken, Bitfinex, Poloniex, and Gemini, where limit&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/price-prediction/uniswap-price-prediction-2021">Uniswap Price Prediction 2021 | Price History of Uniswap</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/UNISWAP-PRICE-PREDICTION-2021-1918x1080.png"  alt=""  class="wp-image-34333" ></figure>
+
+
+
+<p>Before the emergence of the&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-ethereum-blockchain" rel="noreferrer noopener">Ethereum</a>&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-blockchain" rel="noreferrer noopener">blockchain</a>,&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-cryptocurrency" rel="noreferrer noopener">cryptocurrency</a>&nbsp;trading was done on centralized exchanges like Kraken, Bitfinex, Poloniex, and Gemini, where limit orders and order book-based trading was implemented, with high trade volumes and increasing liquidity. Order book-based trading is a form of trading where buy and sell orders are placed in a list alongside the total amount in each order, showing market depth. Market depth is the amount of buy and sell orders for a digital asset placed in the order book. Trades were executed by placing a buy or sell order matched with a sell or buy order on the opposite side of the order book of any digital asset.&nbsp;</p>
+
+
+
+<h3 id="what-is-uniswap"><strong>WHAT IS UNISWAP?</strong></h3>
+
+
+
+<p><a target="_blank" href="https://uniswap.org/" rel="noreferrer noopener">Uniswap</a>&nbsp;is an open-source,&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-decentralization" rel="noreferrer noopener">decentralized</a>&nbsp;exchange built on the Ethereum blockchain. Uniswap is an automated liquidity protocol where there is no order book or any centralized party required to make trades, allowing users to trade without intermediaries and with a high degree of decentralization and censorship-resistance. Created by Hayden Adams on November 2nd, 2018, to implement a protocol first described by Ethereum co-founder Vitalik Buterin, Uniswap has replaced the traditional architecture of digital asset exchanges with a design called Constant Product Market Maker, a variant of an Automated Market Maker (AMM). Hayden&nbsp;<a target="_blank" href="https://t.co/czTqyRit7u" rel="noreferrer noopener">tweeted</a>&nbsp;the Uniswap news,</p>
+
+
+
+<p><em>&nbsp;&#8220;Excited to announce the launch of @UniswapExchange! It&#8217;s a protocol for automated exchange of ERC20 tokens on Ethereum.&#8221;&nbsp;</em></p>
+
+
+
+<p>Automated market makers are&nbsp;<a target="_blank" href="https://atomicwallet.io/smart-contracts" rel="noreferrer noopener">smart contracts</a>&nbsp;that hold liquidity reserves (or liquidity pools, as the name implies) which traders can trade against. Liquidity providers fund these reserves or pools. Uniswap allows its users to have full control of their funds at all times as opposed to a centralized exchange by giving users control of their&nbsp;<a target="_blank" href="https://atomicwallet.io/what-are-private-keys-and-how-they-work" rel="noreferrer noopener">private keys</a>, also giving room for quick trades. According to&nbsp;<a target="_blank" href="https://defipulse.com/" rel="noreferrer noopener">Defipulse</a>, Uniswap is currently the fifth-largest decentralized finance (DeFi) platform with over $3.7 Billion worth of crypto assets locked away on its protocol. The fast growth and expansion of the DeFi market have catalyzed Uniswap&#8217;s exponential growth, surpassing Coinbase&#8217;s daily trading volume on August 30th, 2020. Hayden Adams, the founder of Uniswap, tweeted this Uniswap news,</p>
+
+
+
+<p><em>&#8220;Wow, Uniswap 24hr trading volume is higher than Coinbase for the first time. Uniswap: $426M Bank Coinbase: $348M. Hard to express with how crazy this is.&#8221;</em></p>
+
+
+
+<p>On September 16th, 2020, Uniswap news of UNI&#8217;s airdrop (Uniswap&#8217;s governance tokens then worth about $1,200) to all its users who interacted with the Decentralized exchange by either swapping tokens or providing liquidity was released. UNI allows its holders to participate in governance decisions like future upgrades via voting. UNI was distributed to about 50,000 active Ethereum addresses, making this airdrop one of the most widely distributed tokens in the cryptocurrency space. September was a month to remember Uniswap users as Uniswap&#8217;s monthly volume of $15.4 Billion surpassed Coinbase&#8217;s monthly volume of $13.6 Billion. This happened just a month after Uniswap surpassed Coinbase in daily trading volume.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1153"  height="710"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png"  alt=""  class="wp-image-34334"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 831w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 1754w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/uni-price-history.png 1153w"  sizes="(max-width: 1153px) 100vw, 1153px" ></figure>
+
+
+
+<p>Upon releasing this Uniswap news, Ethhub founder, Anthony Sassano, explained how this growth in Uniswap volume proves that Ethereum is continuously impacting crypto and blockchain. Sassano said,</p>
+
+
+
+<p><em>&#8220;They told you that decentralized exchanges on Ethereum were a fad &#8211; they were [so] incredibly wrong. DEXs did $23.5 billion worth of volume in September alone! Betting against Ethereum has and always will be a bad move.&#8221;</em></p>
+
+
+
+<h3 id="price-history-of-uniswap"><strong>PRICE HISTORY OF UNISWAP</strong></h3>
+
+
+
+<p>First priced at about $3.6 per UNI, Uniswap value has been on the rise since its initial airdrop, with the initial airdrop worth about $1,200, now worth over $8,300 a Uniswap price of $20.8, an increase of about 500%.&nbsp;&nbsp;</p>
+
+
+
+<p>As many centralized and decentralized exchanges rushed to list UNI, Uniswap price quickly began a downtrend in September with airdrop sellers controlling the market, with UNI price hitting an&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-low" rel="noreferrer noopener">All-Time Low</a>&nbsp;of $1.79 November 5th, 2020. Within this period, DeFi lost some of its momenta as most DeFi coins and tokens hit new lows while the yield farming craze calmed down.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1254"  height="497"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png"  alt=""  class="wp-image-34335"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-1.png 1254w"  sizes="(max-width: 1254px) 100vw, 1254px" ></figure>
+
+
+
+<p>With DeFi gaining popularity with a new wave of users in November, Uniswap price, just like other DeFi coins/ tokens, broke out of its downtrend a few days after hitting it All Time Low, entering an accumulation phase while Bitcoin surged higher. Uniswap prices ranged between $3 and $4 for the remainder of the year.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1266"  height="496"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png"  alt=""  class="wp-image-34336"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-2.png 1266w"  sizes="(max-width: 1266px) 100vw, 1266px" ></figure>
+
+
+
+<p>On December 31st, 2020, UNI price broke out of its accumulation phase, entering an uptrend and moving a massive 1,188% from an all-time low of $1.79 to an&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-high" rel="noreferrer noopener">All-Time High</a>&nbsp;of $22.7 on February 10th, 2021.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1258"  height="501"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png"  alt=""  class="wp-image-34337"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/price-history-uniswap-3.png 1258w"  sizes="(max-width: 1258px) 100vw, 1258px" ></figure>
+
+
+
+<p>Now sitting at a UNI price of $20.8, Uniswap is the fifteenth most valuable cryptocurrency with a market cap of $6.1Billion and a market cap dominance of 0.44%.&nbsp;</p>
+
+
+
+<h3 id="uniswap-price-prediction"><strong>UNISWAP PRICE PREDICTION</strong></h3>
+
+
+
+<p>A $1,000 investment in Uniswap during the accumulation phase between November to December 2020 with an average buy UNI price of $4 would yield a return of investment (ROI) of about 415% ($4,150 with Uniswap&#8217;s current price at $20.8 at the time of writing) or about 460% ($4,600) at All-Time High of $22.7. Different Chartists, technical analysts, and top cryptocurrency influencers have used Uniswap price data to make their Uniswap Price predictions for 2021.</p>
+
+
+
+<p><a target="_blank" href="https://walletinvestor.com/forecast/uniswap-prediction" rel="noreferrer noopener"><strong>Wallet Investor</strong></a><strong>&nbsp;Uniswap Price Prediction for 2021</strong></p>
+
+
+
+<p>Wallet Investor is a recognized investment firm that provides cryptocurrency, stocks, forex, commodity, and real estate statistics and price predictions using a unique Machine Learning and Artificial Intelligence (AI) algorithm. Wallet Investor released its AI&#8217;s Uniswap price prediction with a target of $48 in 2021(an ROI of about 140% from Uniswap&#8217;s current price) and a further parabolic rise to $169 in 2025, an ROI of about 800%. This Uniswap prediction is very bullish for Uniswap price, following the rise in adoption of DeFi and an increasing volume of Uniswap users.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="988"  height="590"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png"  alt=""  class="wp-image-34338"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 857w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 1809w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/Wallet-Investor-Uniswap-Price-Prediction-for-20210A.png 988w"  sizes="(max-width: 988px) 100vw, 988px" ></figure>
+
+
+
+<p><a target="_blank" href="https://digitalcoinprice.com/forecast/uniswap/2025" rel="noreferrer noopener"><strong>DigitalCoin</strong></a><strong>&nbsp;Uniswap Price Prediction for 2021</strong></p>
+
+
+
+<p>DigitalCoin is a crypto firm that provides live price feed for digital assets while also using this data to predict future price action of digital assets. DigitalCoin predicts Uniswap price to surge higher to a peak of $33 in 2021 and a further parabolic high of $69 in 2025, a 235% move from Uniswap&#8217;s current price $20.8.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1200"  height="800"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png"  alt=""  class="wp-image-34339"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png 1620w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/DigitalCoin-Uniswap-Price-Prediction-for-20210A.png 1200w"  sizes="(max-width: 1200px) 100vw, 1200px" ></figure>
+
+
+
+<p><a target="_blank" href="https://longforecast.com/uniswap" rel="noreferrer noopener"><strong>Economy Forecast Agency</strong></a><strong>&nbsp;Uniswap Price Prediction for 2021</strong></p>
+
+
+
+<p>The Economy Forecast Agency is an independent agency specialized in long-range financial market forecasts, using reliable models for long-term forecasting crude oil prices, digital assets, interbank interest rates, stock indices, precious metals prices, and other macroeconomic indicators. The Economy Forecast Agency predicts Uniswap price to hit a high of $32.04 in 2021 while remaining bullish through the entire year.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/Economy-Forecast-Agency-Uniswap-Price-Prediction-for-20210A.png"  alt=""  class="wp-image-34340" ></figure>
+
+
+
+<p>Source: https://longforecast.com/uniswap</p>
+
+
+
+<p><a target="_blank" href="https://citytelegraph.com/crypto/1606/uniswap-uni-price-prediction-2021-2022-will-it-reach-50-mark-this-year/" rel="noreferrer noopener"><strong>City Telegraph</strong></a><strong>&nbsp;Uniswap Price Prediction for 2021</strong></p>
+
+
+
+<p>City Telegraph, a fintech and business-focused media/ news company, has made its Uniswap price prediction with a 2021 target of $33.591 and a further 2026 target of $100.134(about 400% from Uniswap&#8217;s current price) as City Telegraph expects a positive trend for Uniswap price in the coming years.</p>
+
+
+
+<p><a target="_blank" href="https://www.cryptonewsz.com/forecast/uniswap-price-prediction/" rel="noreferrer noopener"><strong>Crypto News</strong></a><strong>&nbsp;Uniswap Price Prediction for 2021</strong></p>
+
+
+
+<p>Crypto News, a pioneer news media network covering events and happenings in the crypto space and the growing blockchain industry, has made its Uniswap price prediction for 2021 with a minimum target of $80 Uniswap price as more adoption of DeFi and blockchain technology takes place. This Uniswap prediction would give an ROI of over 200% from Uniswap&#8217;s current price.</p>
+
+
+
+<h3 id="reasons-for-different-uniswap-price-predictions"><strong>REASONS FOR DIFFERENT UNISWAP PRICE PREDICTIONS</strong></h3>
+
+
+
+<p>Several reasons have resulted in the different Uniswap price predictions.</p>
+
+
+
+<ul><li><strong>Global recognition and adoption of DeFi:</strong>&nbsp;The Federal Reserve Bank of St. Louis, on February 8th, 2021, released a&nbsp;<a target="_blank" href="https://twitter.com/stlouisfed/status/1358883628600721411?s=20" rel="noreferrer noopener">result</a>&nbsp;of its research into DeFi and how it may lead to a new paradigm shift in the financial industry, once again signaling the presence of institutions in the DeFi space. People demand the freedom of money with trust for the traditional financial system collapsing, the need for a decentralized, trustless, immutable and secure system to depend on grows. The cryptocurrency and blockchain industry could thus see increased volatility(impacting Uniswap&#8217;s value) in the coming year as more adoption by financial institutions and corporations occurs.</li></ul>
+
+
+
+<ul><li><strong>COVID-19 pandemic:</strong>&nbsp;The breakout of Coronavirus in 2020 led to many countries and businesses&#8217; shutdown, with a negative ripple effect on businesses and general living. With the end of the pandemic in sight, many corporations and individuals are looking for &#8220;profit yielding opportunities&#8221; such as digital assets trading, which operates 24/7 instead of the traditional markets. This remains one reason for the current parabolic move in the cryptocurrency market, which looks likely to continue.</li></ul>
+
+
+
+<ul><li>Unstable global economy: Andreas Steno, Chief global FX/FI strategist of Nordea, stated that more than $3 trillion was printed in 2020 alone, meaning that about 20% of all existing supply United States Dollar was created in 2020. Incumbent President of the United States, Joe Biden, recently stated his intention to release more stimulus packages before the end of Q1, meaning more dollars would be printed into circulation, reducing its value. This has encouraged investors, financial institutions, and corporate organizations to seek better value in precious metals, commodities, stocks, and other nascent technologies like Bitcoin and digital assets. Further instability in the global economy with events like printing fiat by governments could result in a &#8216;new age&#8217; parabolic advance in the cryptocurrency/ digital assets market.</li></ul>
+
+
+
+<h3 id="uniswap-price-prediction-for-2025"><strong>UNISWAP PRICE PREDICTION FOR 2025</strong></h3>
+
+
+
+<p>Fundamental analysis of Uniswap&#8217;s price suggests a bullish momentum in the coming years as the adoption of decentralized finance continues, with Uniswap&#8217;s value growing massively in both price, volume, user base, and liquidity(from $24Million on June 1st, 2020 to $4.3Billion on February 11th, 2021).</p>
+
+
+
+<p>Technical analysis of Uniswap&#8217;s price suggests a very bullish momentum for Uniswap&#8217;s governance token, UNI. As predicted by many analysts, a peak Uniswap USD price of $100 in 2025 is expected as Uniswap goes into price discovery, surpassing its high of $22.7. A retracement to the buy zones for Uniswap price as shown in the chart below should be expected before a new parabolic move, but in all, the momentum for Uniswap price remains bullish for the coming years.</p>
+
+
+
+<p><em>Source: https://twitter.com/mhonkasalo/status/1312358989561094144/photo/1</em></p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1255"  height="508"  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png"  alt=""  class="wp-image-34341"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2021/03/PREDICTION-VERDICT0A.png 1255w"  sizes="(max-width: 1255px) 100vw, 1255px" ></figure>
+
+
+
+<h3 id="prediction-verdict"><strong>PREDICTION VERDICT</strong></h3>
+
+
+
+<p>Like many investors, institutions, and fintech companies adopt DeFi and blockchain, a parabolic rise in digital assets&#8217; price is expected. In the short term, the Uniswap USD price could witness a few weeks to months of retracement and range from this parabolic move before finding strong support. Traders who can take leveraged longs and/or shorts on Uniswap trading pairs would make profits off a Uniswap price retracement, while long-term investors who have long-term targets hold Uniswap in their wallets. In the short term, Uniswap news of Uniswap listing on new exchanges, adoption, and new developments could send Uniswap price roaring again as the cryptocurrency market remains the most volatile market in the world.</p>
+
+
+
+<p>Uniswap can be a profitable investment option for investors looking to invest in cryptocurrencies/ digital assets or traders monitoring UNI price action. At the current Uniswap USD price of $20.8, a $1,000 fiat purchase is equivalent to 48.1UNI, and based on the above prediction, a long-term increase is expected to happen, with a target price of $100. So within five years, a $1,000 investment would be worth over $4,000 with about 400%. Uniswap can be purchased and managed using Atomic wallet.</p>
+
+
+
+<h3 id="how-to-purchase-uni"><strong>HOW TO PURCHASE UNI?</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/purchase-uni.png"  alt=""  class="wp-image-34343" ></figure>
+
+
+
+<p><a target="_blank" href="https://atomicwallet.io/" rel="noreferrer noopener">Atomic wallet</a>&nbsp;who partnered with Simplex, the largest EU licensed card processing company, to enable its users&#8217; carryout fiat-to-crypto and crypto-to-fiat transactions, is a multi-purpose universal wallet with support for over 500 coins, securely storing your digital assets and allowing other functions like staking, exchanging and managing digital assets with many trading pairs at higher exchange rates,&nbsp;<a target="_blank" href="https://atomicwallet.io/prices" rel="noreferrer noopener">live cryptocurrency price</a>&nbsp;feeds as well as&nbsp;<a target="_blank" href="https://atomicwallet.io/academy" rel="noreferrer noopener">tutoring</a>&nbsp;new traders and investors. Atomic wallet is a decentralized wallet which allows users to generate random 12-words seed phrase offline, with your private keys stored under your password on your device and no one having access to it. How can you buy UNI? It&#8217;s simple:</p>
+
+
+
+<ul><li><a target="_blank" href="https://atomicwallet.io/downloads" rel="noreferrer noopener">Download</a>&nbsp;Atomic wallet on your device.</li><li><a target="_blank" href="https://atomicwallet.io/how-to-store-private-keys-and-mnemonic-seed" rel="noreferrer noopener">Secure</a>&nbsp;your wallet by storing your seed phrase and private keys.</li><li>Fund your bank account with sufficient funds.</li><li>Input the amount of fiat to be spent on purchasing Uniswap.</li></ul>
+
+
+
+<p><em>(source:</em><a target="_blank" href="https://atomicwallet.io/buy-dogecoin" rel="noreferrer noopener"><em>https://atomicwallet.io/</em></a><em>)</em></p>
+
+
+
+<ul><li>Verify your identity(done only once) and complete your purchase by clicking &#8216;buy now.&#8217; In less than 24hours, your crypto/ digital asset would be in your wallet. This is the fastest legal way in the world to buy crypto with a credit card.&nbsp;</li></ul>
+
+
+
+<h3 id="how-to-exchange-uni"><strong>HOW TO EXCHANGE UNI?</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/exchange-unicoin.png"  alt=""  class="wp-image-34342" ></figure>
+
+
+
+<p>You can easily exchange multiple digital assets/ cryptocurrencies to UNI and exchange UNI to other cryptocurrencies using Atomic wallet&#8217;s multi-purpose feature. Follow these steps:</p>
+
+
+
+<ul><li>Login to your already secured Atomic wallet.</li><li>Click &#8216;exchange&#8217; on the wallet home page, as shown below.</li></ul>
+
+
+
+<p>(source:&nbsp;<a target="_blank" href="https://atomicwallet.io/download" rel="noreferrer noopener">https://atomicwallet.io/download</a>)</p>
+
+
+
+<ul><li>Please select your desired cryptocurrency and exchange it with UNI. You can also view your transaction history by simply clicking &#8216;order history.&#8217;</li></ul>
+
+
+
+<h3 id="disclaimer"><strong>DISCLAIMER</strong></h3>
+
+
+
+<p>Uniswap is one of the most successful Cryptocurrency/ blockchain projects. Investing in any cryptocurrency/ digital asset is risky. Investments and trading is no joke as it can result in massive losses if the risk is not managed correctly. The above charts, comments, trading ideas, and information should not be taken as investment advice as all Uniswap predictions are based on speculation and cannot be taken as absolute. The information provided should not in any way be taken as an inducement to buy or sell or invest in cryptocurrencies/ digital assets. Every decision made as a result of the information/ Uniswap predictions provided here is solely your responsibility.</p>
+
+
+
+<p><strong>Uniswap Website</strong></p>
+
+
+
+<p>Visit&nbsp;<a target="_blank" href="https://uniswap.org/" rel="noreferrer noopener">Uniswap&#8217;s</a>&nbsp;Official Website to learn more about Uniswap.</p>
+
+
+
+<p><strong>Uniswap Community</strong></p>
+
+
+
+<p>Join the Uniswap&nbsp;<a target="_blank" href="https://discord.com/invite/XErMcTq" rel="noreferrer noopener">community</a>&nbsp;and get involved in the project.</p>
+
+
+
+<p><strong>Uniswap Block Explorer</strong></p>
+
+
+
+<p>Track your UNI token transactions via the&nbsp;<a target="_blank" href="https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984" rel="noreferrer noopener">etherscan</a>&nbsp;Block Explorer.&nbsp;</p>
+
+
+
+<p><strong>Uniswap Twitter</strong></p>
+
+
+
+<p>Follow&nbsp;<a target="_blank" href="https://twitter.com/Uniswap" rel="noreferrer noopener">@uniswap</a>&nbsp;on Twitter to keep up with the latest updates and news.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/price-prediction/uniswap-price-prediction-2021">Uniswap Price Prediction 2021 | Price History of Uniswap</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/price-prediction/uniswap-price-prediction-2021/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dogecoin Price Prediction in 2021 &#8211; How to Exchange Dogecoin.</title>
+		<link>https://atomicwallet.io/blog/price-prediction/dogecoin-price-prediction-and-forecast-for-2021</link>
+					<comments>https://atomicwallet.io/blog/price-prediction/dogecoin-price-prediction-and-forecast-for-2021#respond</comments>
+		
+		<dc:creator><![CDATA[Ini Abasi Ekanem]]></dc:creator>
+		<pubDate>Thu, 04 Feb 2021 15:37:21 +0000</pubDate>
+				<category><![CDATA[Price Prediction]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?page_id=32700</guid>
+
+					<description><![CDATA[<p>WHAT IS DOGECOIN? Often referred to as a &#8216;joke or fun currency,&#8217; Dogecoin is a&#160;cryptocurrency/ digital asset&#160;that started&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/price-prediction/dogecoin-price-prediction-and-forecast-for-2021">Dogecoin Price Prediction in 2021 &#8211; How to Exchange Dogecoin.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/DOGECOIN-PRICE-PREDICTION-2021-1918x1080.png"  alt=""  class="wp-image-34297" ></figure>
+
+
+
+<p><strong>WHAT IS DOGECOIN?</strong></p>
+
+
+
+<p>Often referred to as a &#8216;joke or fun currency,&#8217; Dogecoin is a&nbsp;<a target="_blank" href="https://atomicwallet.io/cryptocurrency-and-digital-currency" rel="noreferrer noopener">cryptocurrency/ digital asset</a>&nbsp;that started as a joke but turned out to be one of the oldest and widely adopted cryptocurrencies that have withstood the good and bad global financial markets.&nbsp;<a target="_blank" href="https://dogecoin.com/" rel="noreferrer noopener">Dogecoin</a>&nbsp;is a decentralized, peer-to-peer digital currency that enables you to easily send money online via&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-blockchain" rel="noreferrer noopener">Blockchain</a>&nbsp;while often being tagged as &#8220;the internet currency.&#8221; Primarily used as a payment and fundraising currency and being used as a tipping currency for content creators on platforms like Twitter and Reddit, Dogecoin is an open-source, peer-to-peer digital currency created on 6th December 2013 by Billy Markus and Jackson Palmer. Dogecoin uses Litecoin&#8217;s scrypt technology as a fork of Litecoin and is a&nbsp;<a target="_blank" href="https://atomicwallet.io/proof-of-stake-vs-proof-of-work" rel="noreferrer noopener">proof-of-work</a>&nbsp;coin. Palmer and Markus launched Dogecoin and marketed it as a &#8220;fun&#8221; version of&nbsp;<a target="_blank" href="https://atomicwallet.io/bitcoin-explained" rel="noreferrer noopener">Bitcoin</a>, using a Japanese dog known as Shibu Inu as its logo. A few key features of Dogecoin that fundamentally distinguishes it from most other cryptocurrencies are its inflationary nature, fast and cheap cost of transactions, active community, scalability, security, and fast-spreading adoption.&nbsp;</p>
+
+
+
+<p><strong>PRICE HISTORY OF DOGECOIN</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/PRICE-HISTORY-OF-DOGECOIN.png"  alt=""  class="wp-image-32746" ></figure>
+
+
+
+<p>The value of Dogecoin has been on the rise since its inception, making it one of the most profitable cryptocurrencies ever created. From its&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-low" rel="noreferrer noopener">All-Time Low</a>&nbsp;of $0.000088 on 6th May 2015, Dogecoin price surged over 70,000% to record a New&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-high" rel="noreferrer noopener">All-Time High</a>&nbsp;of $0.078175 on 29th January 2021. When Dogecoin launched in 2013, DOGE price hit a yearly low of $0.0000205 on 18th December 2013 before rallying more than 300% to a yearly high of $0.0001514 the next day.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/PRICE-HISTORY-OF-DOGECOIN-2.png"  alt=""  class="wp-image-32735" ></figure>
+
+
+
+<p>(Source:&nbsp;<a target="_blank" href="https://coinmarketcap.com/currencies/dogecoin/" rel="noreferrer noopener">https://coinmarketcap.com/currencies/dogecoin/</a>)</p>
+
+
+
+<p>In 2014, the Dogecoin market cap dropped from $70Million to $6Million from 21st January to 18th August 2014, with Dogecoin price at $0.0001 for a yearly low. Dogecoin price further dropped to its All-Time Low of $0.000088 on 6th May 2015 before making a yearly high of $0.000218 on 22nd June 2015.</p>
+
+
+
+<p>(Source:&nbsp;<a target="_blank" href="https://coinmarketcap.com/currencies/dogecoin/" rel="noreferrer noopener">https://coinmarketcap.com/currencies/dogecoin/</a>)</p>
+
+
+
+<p>During the 2017/2018&nbsp;<a target="_blank" href="https://www.investopedia.com/insights/digging-deeper-bull-and-bear-markets/#:~:text=A%20bull%20market%20is%20a,stocks%20are%20declining%20in%20value." rel="noreferrer noopener">bull market</a>, Dogecoin price made a New All-Time High of $0.018 on 7th January 2018, with a mind-blowing market cap of $2Billion and a daily volume of $268Million, earmarking Dogecoin as one of the most valuable cryptocurrencies at the time. As the entire cryptocurrency market entered a bear market in 2018 to early 2019, investors and DOGE holders struggled to keep Dogecoin price up as it retraced its 2018 parabolic move. On 13th March, 2020, the global markets witnessed a black day as the markets reacted to news about global lockdowns due to the COVID-19 pandemic, resulting in markets falling with Dogecoin price making a new 3year low of $0.0014. As global markets recovered following the announcement of a COVID-19 vaccine, DOGE price recovered similarly. According to Yahoo! Finance, a single three-word tweet from the richest man globally, Elon Musk, in December, sent Dogecoin prices up by 20%. Even though this wasn&#8217;t a Dogecoin news or Dogecoin news related tweet, cryptocurrency investors and traders claimed it could be an indirect Dogecoin news of adoption.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/elon-musk-dogecoin-2.png"  alt=""  class="wp-image-32757" ></figure>
+
+
+
+<p>(source:&nbsp;<a target="_blank" href="https://twitter.com/elonmusk/status/1340590280848908288?s=20" rel="noreferrer noopener">https://twitter.com/elonmusk/status/1340590280848908288?s=20</a>)</p>
+
+
+
+<p>This happened just five months after he posted a photo depicting Dogecoin consuming the global financial system.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/elon-musk-dogecoin.png"  alt=""  class="wp-image-32768" ></figure>
+
+
+
+<p>&nbsp;( source:<a target="_blank" href="https://t.co/eBKnQm6QyF" rel="noreferrer noopener">&nbsp;pic.twitter.com/eBKnQm6QyF</a>)</p>
+
+
+
+<p>On 29th January, 2021, Dogecoin price made a new All-Time High, hitting $0.075 with a $9.6Billion market cap as cryptocurrency traders, TikTok users, and WallStreetBet groups sought to push DOGE price to $1.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/doge-hype.png"  alt=""  class="wp-image-32779" ></figure>
+
+
+
+<p>(Source:&nbsp;<a target="_blank" href="https://coinmarketcap.com/currencies/dogecoin/" rel="noreferrer noopener">https://coinmarketcap.com/currencies/dogecoin/</a>)</p>
+
+
+
+<p>Dogecoin&#8217;s current price of $0.0325 makes it the 14th most valuable cryptocurrency with a market cap of $4.2Billion and a market dominance of 0.4%.&nbsp;&nbsp;</p>
+
+
+
+<p><strong>DOGECOIN PRICE PREDICTION FOR 2021</strong></p>
+
+
+
+<p>A $1,000 investment in Dogecoin in March 2020 during the global market crash with an average buy price of $0.0020, would yield a return of investment (ROI) of 1,510% ($11,500 with Dogecoin&#8217;s current price at $0.0325 at time of writing) or 3,273% ($32,730) at All-Time High of $0.075. With the recent Dogecoin sentiment reaching the roof compared to other altcoins and Dogecoin&#8217;s current price being ten times above its last year value, the popularity of Dogecoin would continue to rise as its price finds a new range and new investors get to hear about Dogecoin. The fact that most of these sentiments are due to the short-lived TikTok trend and the Elon Musk and WallStreetBets group effect might even result in a sharp drop as Dogecoin value ranges.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/DOGECOIN-PRICE-PREDICTION-FOR-20210A.png"  alt=""  class="wp-image-32790" ></figure>
+
+
+
+<p>(Source:&nbsp;<a target="_blank" href="https://primexbt.com/blog/dogecoin-price-prediction/" rel="noreferrer noopener">https://primexbt.com/blog/dogecoin-price-prediction/</a>)</p>
+
+
+
+<p>Different Chartists, technical analysts, and top cryptocurrency influencers have made their Dogecoin Price predictions for 2021.</p>
+
+
+
+<p><a target="_blank" href="https://walletinvestor.com/forecast/dogecoin-prediction" rel="noreferrer noopener"><strong>Wallet Investor</strong></a><strong>&nbsp;Dogecoin Price Prediction for 2021</strong></p>
+
+
+
+<p>Wallet Investor is a renowned firm that provides cryptocurrency, stocks, forex, commodity, and real estate statistics, price changes, and a unique Machine Learning/ Artificial Intelligence (AI) based price prediction. Wallet Investor released its AI Dogecoin price prediction for 2021, 2022, and 2025, predicting a tight range in Dogecoin value between $0.031 and $0.042 in 2021 as global markets recover fully from the pandemic and lockdowns while expecting a rise to $0.050 in 2025.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/Wallet-Investor-Dogecoin-Price-Prediction-for-20210A.png"  alt=""  class="wp-image-32812" ></figure>
+
+
+
+<p>(source:&nbsp;<a target="_blank" href="https://walletinvestor.com/forecast/dogecoin-prediction" rel="noreferrer noopener">https://walletinvestor.com/forecast/dogecoin-prediction</a>)</p>
+
+
+
+<p><a target="_blank" href="https://tradingbeasts.com/price-prediction/dogecoin" rel="noreferrer noopener"><strong>TradingBeasts</strong></a><strong>&nbsp;Dogecoin Price Prediction for 2021</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/TradingBeasts-Dogecoin-Price-Prediction-for-2021.png"  alt=""  class="wp-image-32823" ></figure>
+
+
+
+<p>TradingBeasts, a firm that offers cryptocurrency live prices and crypto price predictions, has released its Dogecoin price prediction, stating that Dogecoin price will range between $0.031 and $0.048 for the remainder of 2021. This prediction is similar to the Dogecoin price prediction by Wallet Investor.</p>
+
+
+
+<p>(source:&nbsp;<a target="_blank" href="https://tradingbeasts.com/price-prediction/dogecoin" rel="noreferrer noopener">https://tradingbeasts.com/price-prediction/dogecoin</a>)</p>
+
+
+
+<p><a target="_blank" href="https://primexbt.com/blog/dogecoin-price-prediction/" rel="noreferrer noopener"><strong>PrimeXbt</strong></a><strong>&nbsp;Dogecoin Price Prediction for 2021</strong></p>
+
+
+
+<p>With Primexbt&#8217;s target of $0.041 already met, the price is expected to hover around $0.041 in the coming weeks/ months as Dogecoin&#8217;s value becomes less volatile. Similar to Wallet investor&#8217;s Dogecoin price prediction, Dogecoin&#8217;s current price of $0.035 could be a midpoint of a range between $0.031 and $0.041.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/PrimeXbt-Dogecoin-Price-Prediction-for-20210A.png"  alt=""  class="wp-image-32834" ></figure>
+
+
+
+<p>(source:&nbsp;<a target="_blank" href="https://primexbt.com/blog/dogecoin-price-prediction/" rel="noreferrer noopener">https://primexbt.com/blog/dogecoin-price-prediction/</a>)</p>
+
+
+
+<p><a target="_blank" href="https://www.cryptoground.com/dogecoin-price-prediction" rel="noreferrer noopener"><strong>Cryptoground</strong></a><strong>&nbsp;Dogecoin Price Prediction for 2021</strong></p>
+
+
+
+<p>Cryptoground, a firm that applies deep learning and neural network algorithm on the historical data of digital assets/ cryptocurrencies to predict their future price action, released its Dogecoin price prediction for 2021; stating that a drop to $0.0033 would occur in a year and a further rise to $0.0126 by 2025. This Dogecoin prediction means that 2021 would be bearish for Dogecoin price.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/Cryptoground-Dogecoin-Price-Prediction-for-2021-2.png"  alt=""  class="wp-image-32867" ></figure>
+
+
+
+<p><em>(source:&nbsp;</em><a target="_blank" href="https://www.cryptoground.com/dogecoin-price-prediction" rel="noreferrer noopener"><em>https://www.cryptoground.com/dogecoin-price-prediction</em></a><em>)</em></p>
+
+
+
+<p><a target="_blank" href="https://digitalcoinprice.com/forecast/dogecoin/2021" rel="noreferrer noopener"><strong>Digital-Coin-Price</strong></a><strong>&nbsp;Dogecoin Price Prediction for 2021</strong></p>
+
+
+
+<p>According to Digital-Coin-Price, an analytics firm that uses cryptocurrency price data to make predictions, the Dogecoin USD price would range between $0.04 to $0.05 in 2021, with a peak price of $0.0515 expected by October 2021. This means that Digital-Coin-Price expects a bullish Dogecoin price in 2021, similar to PrimeXbt&#8217;s Dogecoin prediction.</p>
+
+
+
+<figure class="wp-block-gallery columns-1 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/Digital-Coin-Price-Dogecoin-Price-Prediction-for-20210A.png"  alt=""  data-id="32856"  class="wp-image-32856" ></figure></li></ul></figure>
+
+
+
+<p><em>(source:&nbsp;</em><a target="_blank" href="https://digitalcoinprice.com/forecast/dogecoin/2021" rel="noreferrer noopener"><em>https://digitalcoinprice.com/forecast/dogecoin/2021</em></a><em>)</em></p>
+
+
+
+<p><strong>REASONS FOR DIFFERENT DOGECOIN PRICE PREDICTIONS</strong></p>
+
+
+
+<p>Several reasons have resulted in the different Dogecoin price predictions.</p>
+
+
+
+<ul><li><strong>Prolonged COVID-19 pandemic:</strong>&nbsp;The prolonged dominance of coronavirus (COVID-19) and discovering a new but deadlier strand has put the human population on a hunt for ways to make a profit to afford a healthy lifestyle during this period. With many countries still on full/ partial lockdowns, the effect of these extended lockdowns would result in a &#8216;hunt for profit,&#8217; which could result in volatile markets like the cryptocurrency market being pumped in a bullish parabolic advance, emerging markets and innovations popping up as well as scams and bubbles.</li></ul>
+
+
+
+<ul><li><strong>Unstable global economy:</strong>&nbsp;According to Andreas Steno, Chief global FX/FI strategist of Nordea, more than $3 trillion was created in 2020 alone, meaning that about 20% of all existing supply of the United States Dollar was created in 2020. This increased supply has resulted in a decrease in the value of the US dollar, encouraging investors, financial institutions, and corporate organizations to seek better value elsewhere, especially in metals, stocks, and other nascent technologies like Bitcoin and digital assets. This was seen as positive Dogecoin news and is one of the catalysts for the current crypto bull market. Further unstableness in the global economy could result in a &#8216;never-seen&#8217; parabolic advance in the cryptocurrency markets.</li></ul>
+
+
+
+<ul><li><strong>Freedom of money:</strong>&nbsp;As people continue losing trust in the traditional financial system, the push for a decentralized system continues with people looking for trustless, immutable, and secure systems to depend on, and the cryptocurrency industry is leading in this regard. The industry could thus see increased volatility in the coming year as more institutions and individuals like Elon Musk, Grayscale and Microstrategy adopt cryptocurrencies and blockchain technology.</li></ul>
+
+
+
+<p><strong>DOGECOIN PRICE PREDICTION FOR 2025</strong></p>
+
+
+
+<p>With the current parabolic rise of Dogecoin retracing its move, technical analysis suggests that Dogecoin price would see a retracement of about -84.75% to -94.75% before another parabolic move in a few years. This long term view is similar to Wallet Investor&#8217;s Dogecoin prediction for a bullish DOGE price in the long term.&nbsp;&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/doge-price-prediction-2025.png"  alt=""  class="wp-image-32889" ></figure>
+
+
+
+<p><em>(source:&nbsp;</em><a target="_blank" href="https://www.tradingview.com/chart/OS078Z0e/" rel="noreferrer noopener"><em>https://www.tradingview.com/chart/OS078Z0e/</em></a><em>)</em></p>
+
+
+
+<p>Similar to its late 2017 to 2018 parabolic move, the Dogecoin price surged over 3,200% from its 2020 low of $0.0014 to an all-time high of $0.075 on 29th January 2021, has already retraced a large percent of that move. Dogecoin&#8217;s current price is $0.0325. This parabolic retracement pattern occurred in early 2017 as well, when Dogecoin price retraced -85% after a 2,850% rise.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/DOGECOIN-PRICE-PREDICTION-FOR-20250A.png"  alt=""  class="wp-image-32878" ></figure>
+
+
+
+<p><em>(source:&nbsp;</em><a target="_blank" href="https://www.tradingview.com/chart/OS078Z0e/" rel="noreferrer noopener"><em>https://www.tradingview.com/chart/OS078Z0e/</em></a><em>)</em></p>
+
+
+
+<p>Since history always repeats itself, Dogecoin&#8217;s current price of $0.0325 looks ready to drop slowly to about $0.0055 before its next parabolic move to $0.1 and new All-Time Highs. The next parabolic advance would be fueled by massive Dogecoin news of global adoption as the world moves into an era of Blockchain and cryptocurrency dominance.</p>
+
+
+
+<p><strong>PREDICTION VERDICT</strong></p>
+
+
+
+<p>With many investors hopeful about Dogecoin and many institutions adopting Dogecoin as a means of payment, Dogecoin&#8217;s USD price looks eager to make a new high in the long run. Should Elon Musk, the world&#8217;s richest man, adopt Dogecoin as a means of payment for&nbsp;<a target="_blank" href="https://www.tesla.com/" rel="noreferrer noopener">Tesla</a>, we could have another parabolic advance coming for Dogecoin price. In the short term, Dogecoin USD price could witness a few weeks to months of retracement and range before finding strong support. Traders who long and short Dogecoin with leverage would make profits off this retracement, while long term investors who have long term targets just hold DOGE till their targets are hit. In the short term, Dogecoin news of adoption and new developments, which hasn&#8217;t happened for years, could send DOGE price roaring again as the cryptocurrency market remains the most volatile market in the world. With the Dogecoin community growing and becoming stronger, blockchain development may be agreed upon by the community to boost the technology behind Dogecoin and further increase its chances of gaining massive global adoption.</p>
+
+
+
+<p>DOGE can be a profitable investment option for investors looking to invest in cryptocurrencies/ digital assets. At the current Dogecoin USD price of 0.03250, a $1,000 fiat purchase is equivalent to 3,250DOGE, and based on the above prediction, a long term increase is expected to happen, with a target price of $0.10. So within five years, a $1,000 investment would be worth over $2,800 with an ROI of about 185%. </p>
+
+
+
+<p><strong>HOW TO EXCHANGE DOGECOIN</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/HOW-TO-EXCHANGE-DOGECOIN0A.png"  alt=""  class="wp-image-32900" ></figure>
+
+
+
+<p>Using Atomic wallet&#8217;s multi-purpose feature, you can easily exchange multiple digital assets/ cryptocurrencies to Dogecoin and also exchange Dogecoin to other cryptocurrencies. Simply follow these steps:</p>
+
+
+
+<ul><li>Login to your already secured Atomic wallet.</li><li>Click &#8216;exchange&#8217; on the wallet home page as below.</li></ul>
+
+
+
+<p>(source:&nbsp;<a target="_blank" href="https://atomicwallet.io/download" rel="noreferrer noopener">https://atomicwallet.io/download</a>)</p>
+
+
+
+<ul><li>Select your desired cryptocurrency and exchange it with Dogecoin. You can also view your transaction history by simply clicking &#8216;order history.&#8217;</li></ul>
+
+
+
+<p><strong>DISCLAIMER</strong></p>
+
+
+
+<p>Aside from the fact that Dogecoin was designed as a fun/ joke project, investing in any cryptocurrency/ digital asset is risky. Investments and trading is no joke as it can result in massive losses if the risk is not properly managed. The above charts, comments, trading ideas, and information should not be taken as investment advice as all price predictions are based on speculation and cannot be taken as certain. The information provided should not in any way be taken as an inducement to buy or sell or invest in cryptocurrencies/ digital assets. Every decision made as a result of the information provided here is solely your responsibility.</p>
+
+
+
+<p><strong>Dogecoin Website</strong></p>
+
+
+
+<p>Visit&nbsp;<a target="_blank" href="http://dogecoin.com/" rel="noreferrer noopener">Dogecoin&#8217;s</a>&nbsp;Official Website for more information on Dogecoin.</p>
+
+
+
+<p><strong>Dogecoin Community</strong></p>
+
+
+
+<p>Join the Dogecoin&nbsp;<a target="_blank" href="https://reddit.com/r/dogecoin" rel="noreferrer noopener">community</a>&nbsp;and get involved in the project.</p>
+
+
+
+<p><strong>DOGE Block Explorer</strong></p>
+
+
+
+<p>Track your DOGE transactions via the&nbsp;<a target="_blank" href="https://dogechain.info/chain/Dogecoin" rel="noreferrer noopener">dogechain</a>&nbsp;Block Explorer.&nbsp;</p>
+
+
+
+<p><strong>Dogecoin Twitter</strong></p>
+
+
+
+<p>Follow&nbsp;<a target="_blank" href="https://twitter.com/dogecoin" rel="noreferrer noopener">@dogecoin</a>&nbsp;on Twitter to keep up with the latest updates and news.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/price-prediction/dogecoin-price-prediction-and-forecast-for-2021">Dogecoin Price Prediction in 2021 &#8211; How to Exchange Dogecoin.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/price-prediction/dogecoin-price-prediction-and-forecast-for-2021/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is Ripple (XRP): A COMPLETE BEGINNER GUIDE</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-ripple-a-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-ripple-a-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Ini Abasi Ekanem]]></dc:creator>
+		<pubDate>Mon, 01 Feb 2021 17:03:10 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=32620</guid>
+
+					<description><![CDATA[<p>As the most Corporate&#160;Cryptocurrency, XRP, the native digital asset on the XRP Ledger and RippleNet, is a digital&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-ripple-a-complete-guide">What is Ripple (XRP): A COMPLETE BEGINNER GUIDE</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/what-is-ripple-xrp-1920x1080.png"  alt=""  class="wp-image-32621" ></figure>
+
+
+
+<p>As the most Corporate&nbsp;<a target="_blank" href="https://atomicwallet.io/cryptocurrencies-vs-fiat-money" rel="noreferrer noopener">Cryptocurrency</a>, XRP, the native digital asset on the XRP Ledger and RippleNet, is a digital asset built for payments cross-border settlements. XRP aims to be the best digital asset for global payments, offering financial institutions and large corporations the fastest, most secure, and reliable option for sourcing&nbsp;<a target="_blank" href="https://ripple.com/ripplenet/on-demand-liquidity/" rel="noreferrer noopener">on-demand liquidity.</a>&nbsp;Since the&nbsp;<a target="_blank" href="https://www.investopedia.com/articles/economics/09/subprime-market-2008.asp" rel="noreferrer noopener">2008 global market crash</a>&nbsp;(the worst market crash since the Great Depression of 1929), which was due to the inefficiencies of financial institutions, where there was a loss of over $2trillion from the global economy, many financial institutions have been on the outlook for on-demand liquidity and an efficient solution to cross border payments. This article gives detailed information about XRP, its history, and how it has leveraged the 2008 market crash to become one of the best global payments systems.</p>
+
+
+
+<h3 id="history-of-ripple"><strong>History of Ripple</strong></h3>
+
+
+
+<p>According to&nbsp;<a target="_blank" href="https://www.britannica.com/" rel="noreferrer noopener">Britannica</a>, the financial crisis of 2008, also known as the &#8216;subprime mortgage crisis,&#8217; where a severe contraction and unavailability of global liquidity, which originated in the United States due to the collapse of the US housing market, threatened to destroy the international and global financial system. This global liquidity contraction resulted in the near-failure and collapse of several significant investment and commercial banks, mortgage lenders, insurance companies, savings and loan associations and precipitated the Great Recession of 2008. XRP, the native digital asset of XRP Ledger and RippleNet, functions to satisfy the need for on-demand liquidity. RippleNet, a global payment network built on Ripple&#8217;s&nbsp;<a target="_blank" href="https://www.investopedia.com/terms/c/consensus-mechanism-cryptocurrency.asp" rel="noreferrer noopener">consensus</a>&nbsp;ledger (also known as XRP Ledger or XRPL), is the Financial Network of the Future, smoothly running a high-performance global payments business by streamlining global payments and expanding its client&#8217;s reach to new customers.</p>
+
+
+
+<p>RippleNet offers a service of connecting its clients to financial institutions worldwide via its unique&nbsp;<a target="_blank" href="https://atomicwallet.io/application-programming-interface-api" rel="noreferrer noopener">API</a>&nbsp;(Application Programming Interface) system, making transferring funds faster, cheaper, and more reliable for its customers. RippleNet is a global payment network built on XRP Ledger, while XRP Ledger is an open-source distributed ledger created by its parent company, Ripple. In 2004, Ryan Fugger founded a fintech company known as RipplePay in Vancouver, Canada, long before&nbsp;<a target="_blank" href="https://atomicwallet.io/who-is-satoshi-nakamoto" rel="noreferrer noopener">Satoshi Nakamoto</a>&nbsp;released his first version of the&nbsp;<a target="_blank" href="https://atomicwallet.io/bitcoin-explained" rel="noreferrer noopener">Bitcoin</a>&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-blockchain" rel="noreferrer noopener">blockchain</a>&nbsp;whitepaper. The RipplePay protocol&#8217;s vision was to serve as a peer-to-peer network connecting financial institutions and individuals to replace the banks and traditional institutions. Satoshi Nakamoto knew about RipplePay fintech and gave this remark in a&nbsp;<a target="_blank" href="https://nakamotostudies.org/emails/satoshi-reply-to-mike-hearn/" rel="noreferrer noopener">Bitcoin archive</a>,&nbsp;</p>
+
+
+
+<p><em>&#8220;Ripple is interesting in that it&#8217;s the only other system that does something with trust besides concentrating it into a central server.&#8221;</em></p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/image6.png"  alt=""  class="wp-image-32632" ></figure>
+
+
+
+<p><em>&nbsp;RipplePay logo during the period of the company&#8217;s existence. (Source: Ripplepay.com)</em></p>
+
+
+
+<p>According to RipplePay&#8217;s basic theory of the traditional banking system, since banks update one&#8217;s loan balance to the bank during financial transactions, RipplePay held a firm belief that they could replace banks by creating a peer-to-peer trust network where individuals could directly loan each other financial assets and alterations to these loan balances enable payments/ transactions. Payments and transactions would act as updates to these loan balances, provided that the peer-to-peer trust network can trace a path of relationships from the payer to the recipient. The RipplePay network architecture was not different from the Bitcoin Lightning Network design, except with counterparty risk, where the system was geared towards centralization around a few large banks. However, the vision and goals of the current Ripple system are very opposite to this original idea.</p>
+
+
+
+<p>In 2011, Bitcoin gained some traction and began to capture Ripple&#8217;s target demographic/market&#8217;s attention while succeeding where RipplePay had failed, using a superior peer-to-peer payment network architecture. In May 2011, Jed McCaleb, an early Bitcoin pioneer, joined RipplePay with the hope of addressing some of the flaws of RipplePay. According to WizSec&#8217;s Kim Nilsson&#8217;s analysis of the failure of Mt. Gox, Ryan Fugger, founder of RipplePay, handed over the leadership of RipplePay to McCaleb, who founded Mt. Gox Bitcoin exchange in 2010 and sold the exchange to Mark Karpeles in March 2011 due to insolvency issues. In 2012, Jen McCaleb hired Chris Larsen (Current Executive Chairman of Ripple&#8217;s board of directors and also co-founder of Ripple) to commence the&nbsp;</p>
+
+
+
+<p>OpenCoin era, the first of three name changes occurred between 2012 and 2015. Jesse Powell, founder and CEO of Kraken exchange in October 2012, took part in Ripple&#8217;s first seed round with an investment believed to be worth about $200,000.&nbsp;</p>
+
+
+
+<p>In January 2013, OpenCoin launched its native token/ cryptocurrency, XRP, of which 80% of the total 100billion supply was given to OpenCoin to build its financial technology as the Ripple wiki says:</p>
+
+
+
+<p><em>XRP cannot be debased. When the Ripple network was created, 100 billion XRP was issued. The founders gave 80 billion XRP to the Ripple Labs. Ripple Labs will develop the Ripple software, promote the Ripple payment system, give away XRP, and sell XRP.</em></p>
+
+
+
+<p>In April 2013, Google Ventures, Andreessen Horowitz, IDG Capital Partners, FF Angel, Lightspeed Venture Partners, the Bitcoin Opportunity Fund, and Vast Ventures took part in a $1.5 million fundraiser for OpenCoin, which went ahead to make the source code of Ripple Network open and rename to Ripple Labs. Between June 2013 and May 2014, McCaleb left Ripple Labs and created Stellar&nbsp;<a target="_blank" href="https://atomicwallet.io/stellar-wallet" rel="noreferrer noopener">Lumens (XLM)</a>, a hard fork of XRP. After renaming to &#8216;Ripple&#8217; from &#8216;OpenCoin&#8217; in October 2015, Ripple has gone ahead to partner with over three hundred financial institutions globally with its seven-member board of directors and eight-core team members led by CEO Brad Garlinghouse.</p>
+
+
+
+<p>On December 22, 2020, the&nbsp;<a target="_blank" href="https://www.sec.gov/news/press-release/2020-338" rel="noreferrer noopener">American Securities and Exchange Commission</a>&nbsp;announced that it had filed legal action against Ripple Labs Inc., Two of its executives, who happen to be significant security(XRP coin) holders. The SEC alleged that they raised over $1.3 billion through an unregistered and ongoing digital asset securities offering, which the SEC claims to be illegal.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/image5.png"  alt=""  class="wp-image-32643" ></figure>
+
+
+
+<h3 id="ripple-technology"><strong>Ripple Technology</strong></h3>
+
+
+
+<p>Ripple uses its unique technology called &#8216;Ripple Consensus Protocol&nbsp;<a target="_blank" href="https://atomicwallet.io/blog/academy/cryptocurrency-algorithm" rel="noreferrer noopener">Algorithm</a>&#8216; to run an open-source, permissionless, decentralized blockchain technology that settles transactions within 3-5 seconds. The Ripple Consensus Protocol Algorithm defines how the&nbsp;<a target="_blank" href="https://xrpl.org/xrp-ledger-overview.html" rel="noreferrer noopener">XRP Ledger</a>&nbsp;is managed by a network of independent Ripple validator nodes, of which 80% of these nodes validate and verify transactions on the network. Although anyone can become a validator, Ripple maintains and ensures a given set of validators that can be trusted. This list of trusted nodes is referred to as the Unique Node List (UNL). Ripple uses the XRP Ledger for real-time payments and settlement, acting as the home of XRP, its digital asset assigned to bridge the many different currencies in use worldwide.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/image1.png"  alt=""  class="wp-image-32654" ></figure>
+
+
+
+<p>The Ripple Consensus protocol solves the double-spend problem: preventing a malicious person from successfully spending the same digital money twice. Achieving this without a central authority is difficult as it can result in a dispute about the sequence of transactions, especially when multiple transactions co-occur. Read more about how the XRP Ledger Consensus Protocol solves this problem&nbsp;<a target="_blank" href="https://xrpl.org/consensus-principles-and-rules.html" rel="noreferrer noopener">here</a>. Suppose Jason in Canada wants to send 1,000 Canadian Dollars to Gerd, his son, in Italy. In that case, Jason will send the funds to a Ripple partner&#8217;s financial institution, and this Canadian Dollar would be converted to XRP and the transaction validated on the XRP Ledger and Ripple Network. Once validated successfully, the funds can be withdrawn as Euro by Gerd in Italy. This remittance occurs within seconds. Ripple&#8217;s feature eliminates the need for financial institutions and remittance services to pre-fund accounts with On-Demand Liquidity during cross-border transactions and payments.</p>
+
+
+
+<p>Ripple also uses&nbsp;<a target="_blank" href="https://interledger.org/" rel="noreferrer noopener">Interledger</a>&nbsp;for&nbsp;<a target="_blank" href="https://101blockchains.com/blockchain-interoperability/" rel="noreferrer noopener">Interoperable</a>&nbsp;Payments. Interledger is an open protocol built to send payments across different ledgers. Interledger easily enables interoperability for any value transfer system with its open and less complicated design and protocol. The Interledger provides a coherent global financial infrastructure, where anyone connected to the Interledger can transact with another individual via their choice&#8217;s underlying systems and currencies. The Interledger Protocol is neither a blockchain, a token, nor a central service, but rather it is the core of the Interledger protocol suite. Interledger is a standard way of bridging financial or fintech systems. When two entities or individuals engage in a business transaction online, the sender sends money while receiving money. The Interledger architecture or design allows connectors to forward money from the sender through the network until it reaches the receiver.</p>
+
+
+
+<p><em>Interledger Architecture(source:interledger.org)</em></p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/image3.png"  alt=""  class="wp-image-32665" ></figure>
+
+
+
+<p>Ripple also uses&nbsp;<a target="_blank" href="https://paystring.org/" rel="noreferrer noopener">PayString</a>&nbsp;for its Universal Payment Address service. Paying is a unique protocol for human-readable addresses for all forms of payments and any currency of choice. PayString enables financial institutions to provide their users/ clients with a single and simple, easy-to-use address that works for all their wallet&#8217;s payment networks. It can be referred to as an email for payments. With its open Source standards and protocols, users can use human-readable addresses to transmit value in their chosen currency through the PayString network. This network allows participants to reach one another through a standardized address. The PayString protocol can be used when transacting with any cryptocurrency or fiat currency. Any individual or user can deploy their PayString server quickly and efficiently on HTTP/DNS standards, using a simple ID that works across any payment network and involving any currency.&nbsp;</p>
+
+
+
+<p>RippleNet makes it easier than ever to run a high-performance and efficient payments or financial settlement business with its advanced blockchain technology for global payments, making it easy for financial institutions to expand into new global markets and eliminate pre-funding by leveraging the power of XRP through RippleNet&#8217;s On-Demand Liquidity service. In the words of Daumantas Dvilinskas, Co-Founder and CEO at TransferGo,&nbsp;</p>
+
+
+
+<p><em>&#8220;RippleNet has given us a competitive edge in India, where we&#8217;re making a real difference to people&#8217;s lives by providing faster and cheaper remittances. We&#8217;re also developing new relationships and expanding to new geographies so we can become a global real-time payments service.&#8221;</em></p>
+
+
+
+<p>Currently operating across over 55 countries and 120 currencies, XRP leverages the RippleNet modern infrastructure and cutting-edge blockchain technology to streamline payments services, reduce financial services costs, and eliminate pre-funding with its On-Demand Liquidity. RippleNet&#8217;s simplified network partnering aids its clients to expand their network and reach key corridors easily by simply connecting and transacting with premier receivers in key global markets. According to Prajit Nanu, Co-Founder and CEO at Medium,</p>
+
+
+
+<p><em>&#8220;Through Nium&#8217;s use of Ripple in the Philippines and Mexico corridors, we have been able to eliminate pre-funding requirements and offer faster remittances at a lower cost.&#8221;</em></p>
+
+
+
+<p>Ripple combines its robust technology with its highly secure network to efficiently carry out global payments and financial settlements.</p>
+
+
+
+<h3 id="xrp"><strong>XRP</strong></h3>
+
+
+
+<p>XRP is the native digital asset of the XRP Ledger, functioning to provide liquidity in cross-border transactions and ensure instant financial settlement with its low/ affordable exchange fees and secure network. Being a faster, cheaper, and more scalable digital asset, Ripple uses XRP, RippleNet, and the XRP Ledger to power its innovative technology across the global payment and financial settlement space.&nbsp;</p>
+
+
+
+<p>XRP was created in January 2013 with a total supply of 100billion coins and a circulating supply of 45.5billion coins. XRP is currently valued at $12.5billion at a $0.28/XRP coin price, making it the 5th most valuable cryptocurrency with a&nbsp;<a target="_blank" href="https://atomicwallet.io/cryptocurrency-market-cap" rel="noreferrer noopener">market capitalization</a>&nbsp;dominance of 1.29%. XRP traded at an&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-low" rel="noreferrer noopener">All-Time Low</a>&nbsp;of $0.00268 on May 22, 2014, rising over 11,000% to an&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-high" rel="noreferrer noopener">All-Time High</a>&nbsp;of $3.4 on January 7, 2018, making it one of the most profitable cryptocurrencies ever traded. In June 2019, there was a ripple of tears as hackers successfully breached over 100 Ripple XRP Ledger wallets managed by the service provider, GateHub, stealing over 23million XRP coins worth about $10 million at the time. All the funds were laundered through exchanges and mixer services, including Changelly, Kucoin, Huobi, Binance, and HitBTC. The hack was reported to local authorities, but the funds were never recovered.</p>
+
+
+
+<h3 id="how-does-the-xrp-ledger-work"><strong>How Does the XRP Ledger work?</strong></h3>
+
+
+
+<p>The XRP Ledger is an open, shared, distributed ledger. It operates as a peer-to-peer network of rippled servers that distributes transactions among themselves. The consensus process is a necessary process that determines which transactions get applied to each new version of the ledger. The ledger is maintained by independent members (over 36 validators including universities, exchanges, and even financial institutions) of a global &#8220;XRP Community,&#8221; of which Ripple is an active member, running six validator nodes. Each independent validator node agrees in the order and validity of every XRP transaction on the XRP Ledger. This agreement, referred to as a consensus that occurs every 3-5 seconds, serves as the final and irreversible settlement of the XRP Ledger&#8217;s transactions. XRP Ledger has its unique innovations:</p>
+
+
+
+<p>● xCurrent: xCurrent processes real-time payments and enables banks and other financial institutions to offer cross-border payments services with a low cost of a settlement. xCurrent is designed to operate with the risks, compliance, and information security frameworks of financial institutions. xCurrent is built to interface with the financial institution&#8217;s systems using an API interface.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>xRapid:</strong>&nbsp;Normally, payments into emerging markets often require pre-funded local currency accounts, resulting in the high cost of liquidity. xRapid allows financial institutions and remittance service providers to minimize its liquidity cost while improving their customer experience. xRapid uses XRP to lower the capital required for liquidity by offering on-demand liquidity, enabling real-time payments in emerging markets. This provides an efficient, scalable, and reliable liquidity option to cross-border service payments, settlements, and remittance.</p>
+
+
+
+<p>● xVia: xVia is for corporations, payment providers, and banks that make global payments with a single integration. xVia uses an easy-to-use API that requires no software installation, enabling users to send payments globally with transparency and an option for customized payments.</p>
+
+
+
+<p><strong>Benefits of XRP in Payments</strong></p>
+
+
+
+<p>● Fast: XRP provides fast and swift payments moving across the XRP Ledger, usually settled within 4 seconds.</p>
+
+
+
+<p>● Scalable: XRP consistently and efficiently handles about 1,500 transactions per second every day and can further scale to handle the same throughput as Visa, which handles about 65,000 transactions per second as of July 15, 2019.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>Distributed:</strong>&nbsp;XRP runs on a decentralized, distributed network of 36+ validators globally.</p>
+
+
+
+<p>● Stable: XRP boasts a seven-year record of uninterrupted technology, making it ideal for institutional and global use.</p>
+
+
+
+<p>● Eco-Friendly: XRP Ledger settles XRP transactions instantly without using the same energy required by proof of work (or mining as seen with Bitcoin)</p>
+
+
+
+<h3 id="types-of-payments-using-xrp"><strong>Types of Payments using XRP</strong></h3>
+
+
+
+<p>The XRP Ledger supports different forms of payment types.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>Direct XRP Payments:</strong>&nbsp;Direct XRP payments are the simplest and easiest way to send value in the XRP Ledger.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>Cross-Currency Payments:</strong>&nbsp;Cross-currency payments involve sending funds in the desired currency with the recipient receiving funds in another currency of choice.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>Checks:</strong>&nbsp;Checks allows customers to create deferred payments that can either be canceled or cashed out by the intended recipients.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>Escrow:</strong>&nbsp;Escrows set aside XRP and deliver it later, at an agreed time when given terms and conditions are met. Escrows can either depend on time limits or cryptographic conditions, or both.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>Partial Payments:</strong>&nbsp;This form of payment subtracts fees from the amount sent, delivering a flexible amount. Partial payments are useful for returning unwanted or unrequested payments without incurring additional fees during refund.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<strong>Payment Channels:</strong>&nbsp;Payment Channels enable fast, asynchronous XRP payments divided into tiny micro funds and settled later at the desired time.</p>
+
+
+
+<h3 id="storing-managing-and-exchanging-xrp-coins"><strong>Storing, managing, and exchanging XRP coins</strong></h3>
+
+
+
+<p>Currently listed and actively traded on over thirty centralized and decentralized cryptocurrency exchanges, XRP is supported by multiple wallet providers, including Atomic Wallet. Atomic Wallet enables you to efficiently and&nbsp;<a target="_blank" href="https://atomicwallet.io/buy-ripple" rel="noreferrer noopener">anonymously/securely buy</a>, manage, exchange and store XRP in one wallet application. Atomic Wallet gives you full control over your funds since your&nbsp;<a target="_blank" href="https://atomicwallet.io/what-are-private-keys-and-how-they-work" rel="noreferrer noopener">Private Keys</a>&nbsp;are protected with a&nbsp;<a target="_blank" href="https://atomicwallet.io/how-to-store-private-keys-and-mnemonic-seed" rel="noreferrer noopener">mnemonic seed</a>.&nbsp;<a target="_blank" href="https://atomicwallet.io/" rel="noreferrer noopener">Install</a>&nbsp;the Atomic wallet application now and manage your XRP right in the Atomic Interface.</p>
+
+
+
+<h3 id="ripple-partners-and-clients"><strong>Ripple Partners and Clients</strong></h3>
+
+
+
+<p>Ripple boasts of over 300 high-value clients and customers who use its XRP Ledger and Ripple Network for global payments, remittance, and cross-border settlements. These clients/ customers enjoy Ripple&#8217;s convenient, fail-proof experience and peace-of-mind payments for its users. In the words of Arthit Sriumporn, SVP of Commercial Banking at Siam Commercial Bank,</p>
+
+
+
+<p><em>&#8220;Our customers can send money to family and friends abroad in real-time from their phones. Being part of RippleNet has helped us to completely enhance our customer experience, expand our business and keep SCB moving into the future.&#8221;</em></p>
+
+
+
+<p>Ripple&#8217;s partners and clients include:</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<a target="_blank" href="https://www.moneygram.com/" rel="noreferrer noopener"><strong>MoneyGram</strong></a><strong>:</strong>&nbsp;On January 11, 2018, Moneygram partnered with Ripple to solve its liquidity issues, which most banking and financial institutions suffer regularly. Moneygram will utilize XRP through a model that requires all global payments to be done through the xRapid system. This aids in solving Moneygram&#8217;s liquidity issues and processes all transactions at very low/ negligible fees. This model would also provide very swift transactions/ remittance. XRapid, in this case, represents a ledger of the XRP liquidity system that allows swift, secure, and cost-effective processing of global payments.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<a target="_blank" href="https://www.crowdfundinsider.com/2018/01/127610-mercury-fx-idt-sign-ripples-xrp-program/" rel="noreferrer noopener"><strong>IDT and Mercury FX</strong></a><strong>:</strong>&nbsp;&nbsp;On January 24, 2018, Ripple announced a partnership deal with IDT and Mercury FX in a deal similar to the Ripple-Moneygram partnership, as IDT and Mercury FX also deal with global payment. The idea behind this partnership is to provide their users with a faster, hitch-free, and cost-effective global payment/ remittance system, where one can transfer money anywhere in the world in a matter of seconds.&nbsp;</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<a target="_blank" href="http://www.sbigroup.co.jp/english/" rel="noreferrer noopener"><strong>SBI Holdings</strong></a><strong>:</strong>&nbsp;As of January 30, Ripple established another valuable partnership with SBI Holdings, representing a group of Japanese companies set to launch the SBI virtual currency. SBI Holdings will use XRP as the only digital value supported within their system, leveraging its speed and secure network. This partnership will allow SBI users to obtain near full liquidity during cross global payments using the xRapid system. This would help SBI establish a strong and stable financial connectivity between its users in Japan and the rest of the world, using XRP and other currencies, including JPY.&nbsp;</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<a target="_blank" href="https://www.lianlianpay.com/international/" rel="noreferrer noopener"><strong>LianLian International</strong></a><strong>:</strong>&nbsp;Ripple partnered with LianLian International, one of China&#8217;s biggest payment service providers, on February 14, 2018. This partnership has a groundbreaking strategic significance for LianLian International due to China&#8217;s massive growth in the global trading economy, thanks to Amazon, eBay, and AliExpress. This partnership would enable swift, secure, cheap, and easy payment and remittance between China and the rest of the world, using Ripple&#8217;s xCurrent technology (a payment solution to power financial transactions between China, Europe, and the United States)</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<a target="_blank" href="https://www.consultancy.uk/news/2799/payments-platform-ripple-inks-partnership-with-accenture" rel="noreferrer noopener"><strong>Accenture:</strong></a>&nbsp;In 2015, Accenture struck an alliance with Ripple to take advantage of Ripple&#8217;s low overhead and fast ledger systems, aiding in considerably decreasing Accenture&#8217;s costs in the payment domain, increasing oversight and transaction reliability. Accenture will integrate and recommend Ripple&#8217;s products in its advisory services to clients/ customers as part of the partnership deal.</p>
+
+
+
+<p>●&nbsp; &nbsp; &nbsp;<a target="_blank" href="https://www.americanexpress.com/" rel="noreferrer noopener"><strong>American Express:</strong></a>&nbsp;In 2017, American Express partnered with Ripple to provide real-time gross settlement (RTGS) for business-to-business transactions to efficiently enhance their customers&#8217;/users&#8217; experience. American Express FX International Payments (FXIP) will partner with Santander UK to create a bridge between the United Kingdom and America. Santander&#8217;s global head of transaction banking, José Luis Calderón, stated,&nbsp;</p>
+
+
+
+<p><em>&#8220;This blockchain solution opens up a new channel between the US and the UK and presents a significant opportunity for payments globally. Collaborating with forward-thinking businesses has enabled us to deliver this cutting-edge, secure, friction-free payment solution and extend our &#8216;Simple, Personal, Fair&#8217; philosophy to American Express and their customers.&#8221;&nbsp;</em></p>
+
+
+
+<p>Other partners and clients of Ripple include:</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/image4.png"  alt=""  class="wp-image-32676" ></figure>
+
+
+
+<p>● Santander (USA)</p>
+
+
+
+<p>● Canadian Imperial Bank of Commerce (Canada)</p>
+
+
+
+<p>● Kotak Mahindra Bank (India)</p>
+
+
+
+<p>● Itaú Unibanco (Brazil)</p>
+
+
+
+<p>● IndusInd (India)</p>
+
+
+
+<p>● InstaReM (Singapore)</p>
+
+
+
+<p>● BTech (Brazil)</p>
+
+
+
+<p>● Zip Remit (Canada)</p>
+
+
+
+<p>● RAKBANK (UAE.)</p>
+
+
+
+<p>● IFX (UK.)</p>
+
+
+
+<p>● TransferGo (UK.)</p>
+
+
+
+<p>● Currencies Direct (UK.)</p>
+
+
+
+<p>● Airwallex (Australia)</p>
+
+
+
+<p>● SEB (Sweden)&nbsp;</p>
+
+
+
+<p>● Siam Commercial Bank (Thailand)</p>
+
+
+
+<p>● Krungsri (Thailand)</p>
+
+
+
+<p>● Bank of America.</p>
+
+
+
+<p>● ETH Zurich.</p>
+
+
+
+<p>● The University of Zurich.</p>
+
+
+
+<p>● Ryerson University.</p>
+
+
+
+<p>● Instituto Tecnológico Autónomo de México (ITAM)</p>
+
+
+
+<p><em>Some of Ripple&#8217;s partners and clients (source: ripple.com)</em></p>
+
+
+
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+
+
+
+<p>Many cryptocurrency traders and investors anticipate Flare network&#8217;s Spark&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-airdrop" rel="noreferrer noopener">airdrop</a>&nbsp;and have resolved to ask many unanswered questions.&nbsp;</p>
+
+
+
+<p>On December 12, 2020, Flare Network, designed to offer smart contract services to XRP on a different blockchain, held a snapshot of XRP holders&#8217; account at exactly 00.00UTC select eligible XRP holders to receive Spark airdrop when the network launches in the first half of 2021. This airdrop snapshot was supported by many exchanges and wallets, including Atomic wallet. Flare network will initially distribute 15% of the total Spark airdrop to eligible users (users who held XRP in their wallets during the snapshot). Over the next 25-34 months, the Flare network would airdrop the remaining supply of spark at the rate of 3% each month. If you are eligible for the airdrop and took part in the snapshot, anticipate your airdropped Spark coins within the first half of 2021 while watching as legal issues between the SEC and Ripple unravel.</p>
+
+
+
+<p><strong>Ripple Website</strong></p>
+
+
+
+<p>Visit&nbsp;<a target="_blank" href="https://ripple.com/" rel="noreferrer noopener">Ripple&#8217;s&nbsp;</a>Official Website for more information on Ripple.</p>
+
+
+
+<p><strong>XRP Community</strong></p>
+
+
+
+<p>Join the XRP&nbsp;<a target="_blank" href="https://www.xrpchat.com/" rel="noreferrer noopener">community</a>&nbsp;and get involved in the project.</p>
+
+
+
+<p><strong>XRP Block Explorer</strong></p>
+
+
+
+<p>Track your XRP transactions via the&nbsp;<a target="_blank" href="https://xrpscan.com/" rel="noreferrer noopener">xrpscan</a>&nbsp;Block Explorer.&nbsp;</p>
+
+
+
+<p><strong>Ripple Twitter</strong></p>
+
+
+
+<p>Follow&nbsp;<a target="_blank" href="https://twitter.com/Ripple" rel="noreferrer noopener">@Ripple</a>&nbsp;on Twitter to keep up with the latest updates and news.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-ripple-a-complete-guide">What is Ripple (XRP): A COMPLETE BEGINNER GUIDE</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-ripple-a-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is Polkadot (DOT) Cryptocurrency &#124;A Complete Ultimate Guide</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-polkadot</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-polkadot#respond</comments>
+		
+		<dc:creator><![CDATA[Ini Abasi Ekanem]]></dc:creator>
+		<pubDate>Tue, 26 Jan 2021 06:02:10 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=32416</guid>
+
+					<description><![CDATA[<p>Polkadot Network: Connecting the dots Polkadot&#160;is the flagship project of&#160;Web3 Foundation, a swiss authority established by Dr. Gavin&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-polkadot">What is Polkadot (DOT) Cryptocurrency |A Complete Ultimate Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/01/what-is-polkadot-1536x864-1.png"  alt=""  class="wp-image-32417" ></figure>
+
+
+
+<h3 id="polkadot-network-connecting-the-dots"><strong>Polkadot Network: Connecting the dots</strong></h3>
+
+
+
+<p><a target="_blank" href="https://polkadot.network/about/" rel="noreferrer noopener">Polkadot</a>&nbsp;is the flagship project of&nbsp;<a target="_blank" href="https://web3.foundation/" rel="noreferrer noopener">Web3 Foundation</a>, a swiss authority established by Dr. Gavin Wood to facilitate a fully functional and user-friendly&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-decentralization" rel="noreferrer noopener">decentralized</a>&nbsp;web. It is designed to connect multiple specialized&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-blockchain" rel="noreferrer noopener">blockchain</a>&nbsp;networks into one unified network. Focused on true&nbsp;<a target="_blank" href="https://101blockchains.com/blockchain-interoperability/" rel="noreferrer noopener">interoperability</a>, economic and transactional&nbsp;<a target="_blank" href="https://101blockchains.com/blockchain-scalability-problem-and-solution/" rel="noreferrer noopener">scalability</a>, easy blockchain innovation, and security, Polkadot is built to connect private and consortium chains, public and permissionless networks, oracles, and future technologies that are yet to be created. Polkadot seeks to promote an internet where independent and individual blockchains can communicate efficiently and effectively while exchanging data and transactions in a seamless and trustless way, using the Polkadot relay chain. Polkadot is a top-tier next-generation blockchain protocol that unites multi-purpose blockchain networks, allowing them to operate and function effectively, seamlessly, and securely.&nbsp;</p>
+
+
+
+<h3 id="brief-history"><strong>Brief history</strong></h3>
+
+
+
+<p>Polkadot boasts of one of the best teams and foremost builders in the blockchain and cryptocurrency ecosystem. Polkadot was co-founded in 2016 by Robert Habermeier, a Thiel fellow and member of the Rust community with a background in blockchain, distributed systems, and&nbsp;<a target="_blank" href="https://www.csoonline.com/article/3583976/what-is-cryptography-how-algorithms-keep-information-secret-and-safe.html" rel="noreferrer noopener">cryptography</a>, Dr. Gavin Wood, CTO of&nbsp;<a target="_blank" href="https://atomicwallet.io/ethereum-price-history" rel="noreferrer noopener">Ethereum</a>&nbsp;and President of Web3 Foundation with an experience in blockchain and&nbsp;<a target="_blank" href="https://academy.binance.com/en/articles/proof-of-authority-explained" rel="noreferrer noopener">Proof-of-Authority</a>&nbsp;consensus and Peter Czaban, Technology director for Web3 Foundation with a Masters degree in Engineering from the University of Oxford and background in defense, finance, data analytics, machine learning, and business development.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/01/image2-1.jpg"  alt=""  class="wp-image-32428" ></figure>
+
+
+
+<p>&nbsp;<em>Polkadot co-founders (L-R) Robert Habermeier, Dr Gavin Wood and Peter Czaban</em></p>
+
+
+
+<p>From its inception, Web3 Foundation has partnered with professional entities to build Polkadot and foster the development of the services and applications that will run on its blockchain network. Partners include Inria Paris, ETH Zurich, Parity Technologies, Polychain Capita, Soramitsu, and ChainSafe.</p>
+
+
+
+<h3 id="polkadot-technology"><strong>Polkadot Technology</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/01/image3-1.jpg"  alt=""  class="wp-image-32439" ></figure>
+
+
+
+<p>Many blockchain networks and projects strive to be the &#8216;chief cook and bottle washer,&#8217; incorporating and integrating everything. Building an application on one of these all-in-one blockchain networks binds one to the platform&#8217;s limitations, including its bottlenecks and governance decisions, while also benefiting from that network&#8217;s user base. Polkadot uses a technology that allows specialized chains/ networks to seamlessly exchange messages and communicate with other specialized chains/ networks. Polkadot technology comprises four core features:</p>
+
+
+
+<ul><li><a target="_blank" href="https://wiki.polkadot.network/docs/en/learn-architecture#relay-chain" rel="noreferrer noopener">Relay chains</a>. These are aimed at creating&nbsp;<a target="_blank" href="https://www.investopedia.com/terms/c/consensus-mechanism-cryptocurrency.asp" rel="noreferrer noopener">consensus</a>, interoperability, and shared security across the network of different chains. The Relay Chain is the major chain of Polkadot. The Relay Chain comprises a relatively small number of transaction types, including ways to interact with the governance mechanism, parachain auctions, and participating in network activities, hence, minimizing the functionality of the relay chain.</li></ul>
+
+
+
+<p>This feature allows dozens of blockchains to run in parallel while being connected through one relay chain. It is estimated that a relay chain will be able to host about one hundred parachains. This feature would create a system that would have about one hundred times the current&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-proof-of-stake" rel="noreferrer noopener">Proof-of-Stake</a>&nbsp;system&#8217;s scalability. An improved version of Polkadot could have multiple relay chains attached to the root relay chain developed with&nbsp;<a target="_blank" href="https://www.substrate.io/" rel="noreferrer noopener">Substrate</a>, the same technology stack that most parachains are being built with. This could allow for up to 1,000x to 10,000x scalability compared to current Proof-of-Stake systems.</p>
+
+
+
+<ul><li><a target="_blank" href="https://wiki.polkadot.network/docs/en/learn-parachains#:~:text=A%20parachain%20is%20an%20application,them%20to%20be%20actual%20blockchains." rel="noreferrer noopener">Parachains</a>. Parachains are independent chains with their tokens and specific use cases. Parachains comprise heterogeneous blockchain shards, while the leading Polkadot Relay Chain secures every other component. Peter Mauric, head of public affairs at Parity Technologies, told CoinDesk in an email,&nbsp;</li></ul>
+
+
+
+<p><em>&#8220;Parachains can process more transactions than a single blockchain because the transactions are spread across multiple computers, similar to parallel processing.&#8221;&nbsp;</em></p>
+
+
+
+<p>A significant player in the Polkadot network&#8217;s development is Parity Technologies, a for-profit European-headquartered firm that focuses on building tools for the open-source Polkadot platform.&nbsp;<a target="_blank" href="https://www.parity.io/" rel="noreferrer noopener">Parity</a>&nbsp;is the company behind Substrate, a set of tools for developers and tech-driven individuals and project teams to create blockchain applications and web3.0 applications on Polkadot. In the words of Polkadot co-founder Robert Habermeier,&nbsp;</p>
+
+
+
+<p>&nbsp;<em>&#8220;Substrate is a set of libraries for doing all the things that are annoying about writing blockchains.&#8221;&nbsp;</em></p>
+
+
+
+<p>Substrate effectively puts aside the individual functionalities and activities of a blockchain as modules while grouping them enough so that libraries can still use them effectively for different scenarios. While this is done, Substrate always ensures that their manageability enables near-instant implementation. Substrate has been developed as a useful tool to create blockchains that will easily connect to Polkadot.</p>
+
+
+
+<ul><li><a target="_blank" href="https://wiki.polkadot.network/docs/en/learn-parathreads" rel="noreferrer noopener">Parathread</a>. Like parachains but with flexible connectivity, parathreads function to allow parachains to temporarily participate or be involved in Polkadot security without leasing a parachain slot. Using parathreads, any development team can gain full access to the Polkadot relay chain and bootstrap their application, as well as be involved in the Polkadot network&#8217;s shared security. Parathreads require a minimal bond (50–100 DOTs) and permit chains to submit a block to the relay chain while reaping the relay chain&#8217;s full security and connectivity benefits. Applications that gain heavy adoption and usage can raise the requisite DOTs and upgrade to a full parachain. This upgrade can be done by swapping with an existing parachain.&nbsp;</li></ul>
+
+
+
+<p>Unlike the traditional isolated security system where interconnected chains have individual security levels, and the chain with the weakest security defines the system&#8217;s overall safety, Polkadot gives the same security guarantees for all parachains by pooling their security and delegating it to the Polkadot relay chain via the parathread.</p>
+
+
+
+<ul><li><a target="_blank" href="https://wiki.polkadot.network/docs/en/learn-bridges" rel="noreferrer noopener">Bridges</a>. Bridges allow parachains and parathreads to communicate and connect with external blockchains. Bridges leverage Polkadot shards to enable easy and seamless communication with other blockchains like Ethereum or Bitcoin blockchain. In early 2021, Interlay will introduce Polkadot&#8217;s first trustless wrapped Bitcoin (polkaBTC) to promote interoperability in the Polkadot ecosystem. There are two types of bridges in the Polkadot ecosystem:<ul><li>Bridge modules. Bridge modules are possibly system-level or community-deployed parachains which serve the sole purpose of being consensus-adaptors to external chains. Bridge modules allow non-parachains to act as a &#8220;virtual parachain&#8221; while extending the external or the other chain&#8217;s functionality, with the interoperability benefits of Polkadot. Bridge modules are based on particular chains such as Bitcoin or Ethereum. This means that blockchain networks that are based on the latter will be easily supported as well.</li><li>Bridge contracts. Similar to bridge modules, bridge contracts exist on specific parachains that support smart contracts, linking Polkadot and any other smart contract capable or intelligent contract enabled blockchain.</li></ul></li></ul>
+
+
+
+<p>The advantages of the Polkadot blockchain, which cannot be overemphasized, include:</p>
+
+
+
+<ul><li>On-chain governance: Polkadot native token (DOT) participates in governance decisions like voting transparently.</li></ul>
+
+
+
+<ul><li><strong>Security:</strong>&nbsp;Rather than using the vulnerable&nbsp;<a target="_blank" href="https://atomicwallet.io/proof-of-stake-vs-proof-of-work" rel="noreferrer noopener">Proof-of-work</a>&nbsp;or Proof-of-Stake models to secure its network, Polkadot lets blockchains pool their security by aggregation, making it very secure compared to the Proof-of-Work and Proof-of-Stake models.&nbsp;</li></ul>
+
+
+
+<ul><li>Polkadot uses a GHOST-based Recursive Ancestor Deriving Prefix Agreement(GRANDPA) consensus&nbsp;<a target="_blank" href="https://atomicwallet.io/blog/academy/cryptocurrency-algorithm" rel="noreferrer noopener">algorithm</a>&nbsp;to ensure network security, scalability, and resilience.</li></ul>
+
+
+
+<p><strong><em>Dr. Gavin Wood was presenting Substrate on stage at Web3 Summit 2018, Berlin.</em></strong></p>
+
+
+
+<h3 id="polkadot-ecosystem"><strong>Polkadot Ecosystem</strong></h3>
+
+
+
+<p>Polkadot is a unique blockchain protocol that functions to connect individual blockchain networks into one blockchain network efficiently. Just like the Ethereum-driven ICO craze of 2017, where over 30-50% of cryptocurrency and blockchain projects at the time launched/ built on the Ethereum blockchain and further pushed Ethereum to the position of the second most famous and valuable cryptocurrency, Polkadot&#8217;s entry into the cryptocurrency and blockchain industry has resulted to many projects building on its blockchain. The issues and challenges of scalability, speed, and cost of transaction faced by the Ethereum blockchain have encouraged blockchain and cryptocurrency projects to migrate to and/or build on the Polkadot blockchain, taking advantage of its seamless, efficient and interoperable network.</p>
+
+
+
+<p>The rise in the adoption of&nbsp;<a target="_blank" href="https://consensys.net/blockchain-use-cases/decentralized-finance/" rel="noreferrer noopener">DeFi</a>&nbsp;(Decentralized Finance) has also catapulted the demand for a more efficient and interoperable blockchain like what Polkadot offers. Many Polkadot projects are built using Substrate, the blockchain development framework for parity.io, enabling developers to build high-value applications on Polkadot. The Polkadot ecosystem comprises over three hundred blockchain and cryptocurrency projects. These range from wallets to decentralized exchanges, Non-Fungible Tokens (NFTs), Decentralized Autonomous Organizations (DAOs), Decentralized Finance (DeFi), Smart contracts, Internet-of-Things (IoT), and Automated Market Makers.</p>
+
+
+
+<p><a target="_blank" href="https://paralink.network/" rel="noreferrer noopener"><strong>Interlay</strong></a><strong>&nbsp; &nbsp;</strong></p>
+
+
+
+<p>Interlay is the major Polkadot protocol making decentralized finance interoperable. Interlay is designing a unique and robust bridge-parachain infrastructure on the Polkadot blockchain while also creating a trustless BTC-Parachain. This BTC-Parachain bridge infrastructure is supported by a Web3 Foundation grant and would serve to link the BTC and Polkadot blockchain networks.</p>
+
+
+
+<p><a target="_blank" href="https://diadata.org/" rel="noreferrer noopener"><strong>DIA&nbsp;</strong></a><strong>&nbsp;&nbsp;</strong></p>
+
+
+
+<p>DIA (Decentralised Information Asset) is an open-source substrate-based financial information platform/ oracle that utilizes crypto-economic incentives to source and validates all forms of data. Market players involved can supply, share as well as use financial and digital asset data.</p>
+
+
+
+<p><a target="_blank" href="https://ont.io/" rel="noreferrer noopener"><strong>Ontology</strong></a><strong>&nbsp;&nbsp;</strong>&nbsp;</p>
+
+
+
+<p>Ontology is a blockchain infrastructure built on the Polkadot blockchain for self-sovereign identity.</p>
+
+
+
+<p><a target="_blank" href="https://phala.network/" rel="noreferrer noopener"><strong>Phala Network</strong></a><strong>&nbsp;&nbsp;</strong>&nbsp;</p>
+
+
+
+<p>Phala network is a substrate-based privacy blockchain that functions to ensure confidentiality through Trusted Computing.</p>
+
+
+
+<p><a target="_blank" href="https://riochain.io/" rel="noreferrer noopener"><strong>Rio Chain</strong></a><strong>&nbsp;&nbsp;</strong>&nbsp;</p>
+
+
+
+<p>Rio Chain is a substrate-based decentralized finance protocol built for DeFi with the security, speed, scalability, accessibility, and interoperability needed to connect traditional finance to other decentralized blockchain networks. Rio chain intends to link traditional finance to decentralized finance.</p>
+
+
+
+<p><a target="_blank" href="https://kusamaproject.com/" rel="noreferrer noopener"><strong>KusamaProject</strong></a></p>
+
+
+
+<p>Kusama project is a tooling and infrastructural Polkadot protocol on which ecosystem projects build on.</p>
+
+
+
+<p><a target="_blank" href="https://polkaswap.io/" rel="noreferrer noopener"><strong>Polkaswap</strong></a><strong>&nbsp;</strong>&nbsp;&nbsp;</p>
+
+
+
+<p>Polkaswap is a non-custodial cross-chain Automated Market Maker decentralized exchange designed uniquely for the Polkadot ecosystem and hosted on the SORA v2 network.</p>
+
+
+
+<p><a target="_blank" href="https://paralink.network/" rel="noreferrer noopener"><strong>Paralink</strong>&nbsp;</a>&nbsp;&nbsp;</p>
+
+
+
+<p>Paralink is a substrate-based multi-chain oracle platform for decentralized finance applications powered by the Polkadot blockchain.</p>
+
+
+
+<p><a target="_blank" href="https://www.tidal.finance/" rel="noreferrer noopener"><strong>TIDAL Finance</strong></a></p>
+
+
+
+<p>TIDAL Finance is a substrate-based DeFi platform that ensures assets across chains in custom balanced liquidity pools.</p>
+
+
+
+<p><a target="_blank" href="https://apiprotocol.link/#/" rel="noreferrer noopener"><strong>API Protocol</strong></a></p>
+
+
+
+<p>API (Application Programming Interface) Protocol is a Web 3.0 API Economic infrastructure that functions as a decentralized web API connector protocol for Web 3.0 applications, designed to quickly and efficiently utilize web 3.0 APIs.</p>
+
+
+
+<p><a target="_blank" href="https://www.optionroom.finance/" rel="noreferrer noopener"><strong>OptionRoom</strong></a></p>
+
+
+
+<p>OptionRoom is a decentralized application oracle and forecast market protocol built on Polkadot to serve as an Oracle as a Service.</p>
+
+
+
+<p><a target="_blank" href="https://chainx-org.medium.com/chainx-kusama-parachain-sherpax-light-paper-5341ff855c9c" rel="noreferrer noopener"><strong>SherpaX</strong></a></p>
+
+
+
+<p>SherpaX is a Substrate-based independent research and development network where innovative ideas and technological experiments of ChainX will be tested and explored before they are released on the market.</p>
+
+
+
+<p><a target="_blank" href="https://acala.network/kar-crowdloan" rel="noreferrer noopener"><strong>Karura</strong></a></p>
+
+
+
+<p>Also known as the sister network of the Acala network, Karura is the DeFi hub of Kusama Network, while being based on Substrate protocol.</p>
+
+
+
+<p><a target="_blank" href="https://starks.network/" rel="noreferrer noopener"><strong>Starks Network</strong></a></p>
+
+
+
+<p>Starks network is a Substrate-based protocol that uses a zk-STARK virtual machine to enable data privacy protection via self-proving computations by providing Zero-Knowledge proof as a service to other Polkadot parachains.</p>
+
+
+
+<p><a target="_blank" href="https://aleph.im/" rel="noreferrer noopener"><strong>Aleph.im&nbsp;</strong></a><strong>&nbsp; &nbsp;</strong>&nbsp;</p>
+
+
+
+<p>A decentralized AWS, Aleph.im is an open-source cross-chain decentralized cloud project that provides decentralized databases, computation, and a&nbsp;<a target="_blank" href="https://aleph.im/#/architecture" rel="noreferrer noopener">DID</a>&nbsp;framework.&nbsp;</p>
+
+
+
+<p><a target="_blank" href="https://polkadot.js.org/extension/" rel="noreferrer noopener"><strong>Polkadot{.js} extension</strong></a></p>
+
+
+
+<p>Polkadol{.js} extension is a unique browser extension that manages users accounts and allows the signing of transactions with those accounts on the Polkadot network.</p>
+
+
+
+<p><a target="_blank" href="https://polkastarter.com/" rel="noreferrer noopener"><strong>Polkastarter</strong></a>&nbsp;</p>
+
+
+
+<p>Polkastarter is a decentralized exchange built on Polkadot for cross-chain token pools and auctions. Its primary focus is on enabling startups or existing projects to raise capital securely on a decentralized and interoperable platform.</p>
+
+
+
+<p><a target="_blank" href="https://maplabs.io/" rel="noreferrer noopener"><strong>MAP Protocol</strong></a></p>
+
+
+
+<p>MAP Protocol is a substrate-based open, fully decentralized chain-to-chain interoperable protocol that ensures interoperability between multi-chain consensus blockchains without the presence of a relay chain.</p>
+
+
+
+<p><a target="_blank" href="https://discourse.robonomics.network/" rel="noreferrer noopener"><strong>Robonomics Forum</strong></a></p>
+
+
+
+<p>Robonomics forum is a secure, сost-effective, and futuristic Internet-of-things infrastructure built on the Polkadot blockchain to connect robotics.</p>
+
+
+
+<p><a target="_blank" href="https://clover.finance/" rel="noreferrer noopener"><strong>Clover Finance</strong></a>&nbsp; &nbsp;</p>
+
+
+
+<p>Clover is a Polkadot-based All-in-One decentralized finance service that provides an easy-to-use blockchain infrastructure.</p>
+
+
+
+<p><a target="_blank" href="https://saito.io/" rel="noreferrer noopener"><strong>Saito Network</strong></a><strong>&nbsp;&nbsp;</strong>&nbsp;</p>
+
+
+
+<p>Saito is an open network-layer infrastructure for Web3. Saito lets users run blockchain gaming applications on its platform without any closed plugins, private APIs, or non-open infrastructure.</p>
+
+
+
+<p><a target="_blank" href="https://web3.vc/" rel="noreferrer noopener"><strong>Web3 Capital</strong></a></p>
+
+
+
+<p>Web3 Capital is a decentralized infrastructure with a venture capital fund. The fund is focused on investing in projects building on the Polkadot/Kusama ecosystem. Other projects in the Polkadot ecosystem&nbsp;<a target="_blank" href="https://www.polkaproject.com/" rel="noreferrer noopener">include</a>:&nbsp;</p>
+
+
+
+<ul><li>WalletConnect.</li><li>Apron Network.</li><li>Summa Network.</li><li>HydraDX.</li><li>Trust Wallet.</li><li>Decentralized communication network for Web 3.0.</li><li>Polkadot Ecosystem Promo Team.</li><li>PAID Network.</li><li>PolkaCover.</li><li>DApp Exchange.</li><li>Zeropool.</li><li>Bluzelle.</li><li>Frontier.</li><li>OriginTrail.</li><li>Reef Finance.</li><li>Ankr.</li><li>Celer Network.</li><li>OAX Foundation.</li></ul>
+
+
+
+<h3 id="polkadot-native-token"><strong>Polkadot Native Token</strong></h3>
+
+
+
+<p>The Polkadot native token, DOT, was created after the Web3 Foundation concluded a relatively successful ICO in October 2017 and raised over $140 million by selling 50% of the 10,000,000 DOT token supply. Despite some unfortunate events that led to the loss of over half of the raised funds, Polkadot endured, and the company further conducted two private sales. One in 2019 and the second one in the summer of 2020. During Polkadot&#8217;s ICO in October 2017, DOT tokens were sold at an average of $30 per coin. On August 21st, 2020, the DOT token was effectively redenominated by a factor of 100, and existing holders received 100 new DOT for the old ones they held. In other words, ICO investors have seen a massive increase of roughly around 2000%.&nbsp;</p>
+
+
+
+<p>DOT is currently priced at $16.86 with a total supply of 1billion coins and a market capitalization of $16.1 billion, making it the fourth most valuable cryptocurrency. DOT had a 516.9% price surge from it&#8217;s&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-low" rel="noreferrer noopener">All Time Low</a>&nbsp;of $2.70 on August 20th, 2020, to it&#8217;s&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-high" rel="noreferrer noopener">All-Time High</a>&nbsp;of $19.05 on January 16th, 2021. Thus, giving it a market capitalization dominance of 1.51% as at the time of writing.</p>
+
+
+
+<h3 id="storing-managing-and-staking-dot-tokens"><strong>Storing, managing, and staking DOT tokens</strong></h3>
+
+
+
+<p>Currently listed and actively traded on over twenty centralized and decentralized cryptocurrency exchanges, DOT is supported by multiple wallet providers, including Atomic Wallet. Atomic Wallet enables you to efficiently and securely manage, exchange, buy and stake DOT in one wallet application. Atomic Wallet gives you full control over your funds since your&nbsp;<a target="_blank" href="https://atomicwallet.io/what-are-private-keys-and-how-they-work" rel="noreferrer noopener">Private Keys</a>&nbsp;are protected with a&nbsp;<a target="_blank" href="https://atomicwallet.io/how-to-store-private-keys-and-mnemonic-seed" rel="noreferrer noopener">mnemonic seed</a>.&nbsp;<a target="_blank" href="https://atomicwallet.io/" rel="noreferrer noopener">Install</a>&nbsp;the Atomic wallet application now, manage and&nbsp;<a target="_blank" href="https://atomicwallet.io/polkadot-staking" rel="noreferrer noopener">stake</a>&nbsp;your DOT right in the Atomic Interface to earn staking returns up to 7% per year.&nbsp;</p>
+
+
+
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+
+
+
+<p>With the Chinese government-backed blockchain institution, the Blockchain Service Network (BSN) introduces Polkadot and many other projects. Including Edgeware, Ocean protocol, ChainLink, Speckle OS, Chain X, MXC protocol, and Zerochain. These are all building on Polkadot, and as a result, 2021 would see Polkadot deliver the most robust platform for security, scalability, and innovation. In the words of KR1&#8217;s van Schreven,</p>
+
+
+
+<p><em>&#8220;We&#8217;re going to see a growth of economic activities from all these chains because of this cross-chain aspect of the Polkadot ecosystem.&#8221;</em></p>
+
+
+
+<p><strong>Polkadot Website</strong></p>
+
+
+
+<p>Visit&nbsp;<a target="_blank" href="https://polkadot.network/technology/" rel="noreferrer noopener">Polkadot&#8217;s</a>&nbsp;Official Website for more information on Polkadot.</p>
+
+
+
+<p><strong>Polkadot Community</strong></p>
+
+
+
+<p>Join Polkadot&#8217;s&nbsp;<a target="_blank" href="http://@polkadotofficial" rel="noreferrer noopener">telegram</a>&nbsp;community and get involved in the project.</p>
+
+
+
+<p><strong>Polkadot Block Explorer</strong></p>
+
+
+
+<p>Track your Polkadot transactions with the&nbsp;<a target="_blank" href="https://polkascan.io/" rel="noreferrer noopener">Polkascan</a>&nbsp;Block Explorer.&nbsp;</p>
+
+
+
+<p><strong>Polkadot Twitter</strong></p>
+
+
+
+<p>Follow&nbsp;<a target="_blank" href="https://twitter.com/Polkadot?s=09" rel="noreferrer noopener">@Polkadot</a>&nbsp;on Twitter to keep up with the latest updates and news.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-polkadot">What is Polkadot (DOT) Cryptocurrency |A Complete Ultimate Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-polkadot/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is NEM (XEM) Cryptocurrency: A Complete Guide</title>
+		<link>https://atomicwallet.io/blog/academy/nem-xem-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/nem-xem-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Ini Abasi Ekanem]]></dc:creator>
+		<pubDate>Fri, 15 Jan 2021 16:04:30 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=32347</guid>
+
+					<description><![CDATA[<p>New Economic Movement, NEM, also called Smart Asset&#160;Blockchain, is a blockchain that efficiently manages assets and data at&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/nem-xem-complete-guide">What is NEM (XEM) Cryptocurrency: A Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/03/what-is-nem-1920x1080.png"  alt=""  class="wp-image-34301" ></figure>
+
+
+
+<p>New Economic Movement, NEM, also called Smart Asset&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-blockchain" rel="noreferrer noopener">Blockchain</a>, is a blockchain that efficiently manages assets and data at a low cost. One of the core aims for this innovation is to increase&nbsp;<a target="_blank" href="https://101blockchains.com/blockchain-interoperability/" rel="noreferrer noopener">interoperability</a>&nbsp;between private and public blockchain networks. With companies and corporate firms adopting blockchain technology, especially private blockchain, a blockchain&#8217;s ability to communicate with another blockchain would improve efficiency. NEM enables interoperability between these blockchains in various ways, allowing easy transfer of any digital asset, including tokens, contracts, or files between them.</p>
+
+
+
+<h3 id="mission-and-vision-of-nem"><strong>Mission and vision of NEM</strong></h3>
+
+
+
+<p><a target="_blank" href="https://atomicwallet.io/nem-wallet" rel="noreferrer noopener">NEM</a>&nbsp;exists to ensure that the NEM ecosystem is a significant contributor to blockchain&#8217;s next evolution by providing mainstream adoption and use of NEM&#8217;s blockchain solutions. This can only be achieved through a robust and healthy ecosystem that works together through collaboration, transparency, and openness. NEM shapes blockchain&#8217;s future by nurturing a healthy and robust ecosystem that will contribute to blockchain technology for generations to come.</p>
+
+
+
+<p>NEM aims to create and sustain a viable and robust ecosystem that connects and benefits individuals, developers, businesses, and society. Its focus is to always strive for improvement in the NEM ecosystem and leverage its potential to benefit all the constituent elements.</p>
+
+
+
+<h3 id="history-of-nem"><strong>History of NEM</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/7bc1c9ad-44f2-49ef-88bc-88cf8e6336e1"  alt="" ></figure>
+
+
+
+<p>The New Economy Movement innovation began on Bitcointalk when &#8220;UtopianFuture&#8221; stated how&nbsp;<a target="_blank" href="https://www.coingecko.com/en/coins/nxt" rel="noreferrer noopener">NXT</a>&nbsp;(a trending blockchain payment network at the time) motivated him to build a new blockchain project. By March 2015, a&nbsp;<a target="_blank" href="https://atomicwallet.io/bitcoin-forks-history" rel="noreferrer noopener">fork</a>&nbsp;of NXT was created. This fork was managed by a non-profit organization based in Singapore called&nbsp;<a target="_blank" href="https://nem.io/" rel="noreferrer noopener">NEM Foundation</a>, which decided to develop its code-base for more scalability and usability. Then came the &#8216;New Economic Movement.&#8217; The NEM Group, currently led by Chief Executive Officer David Shaw and Chief Financial Officer Iain Wilson, also Managing Director of NEM Trading, has since focused on increasing NEM adoption through brand awareness, strategic marketing, and training and core partnerships. The NEM team comprises Eight(8) core members who work towards the goal of the project.&nbsp;</p>
+
+
+
+<p>In 2018, NEM was selected by the Ukraine Central Election Commission for a&nbsp;<a target="_blank" href="https://www.coindesk.com/a-ukrainian-election-official-is-trialing-nems-blockchain-for-voting" rel="noreferrer noopener">pilot program</a>&nbsp;to test the feasibility of blockchain-based voting systems. NEM introduced a new-era voting protocol that replaced the former inefficient and less-transparent voting method.</p>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh3.googleusercontent.com/Rwb1Ar9kVnCH2_cPslsxJMUw2tW9FzawO3xLM3bpwwhoVDTlQV9FqMpIF8uM-cUObOERs-Xo14maPa9EQTvPrFz3EzPNoxyrDo__Ev266f6FsLL52PUtOVDMOKkNXWT45gLSv9MZzqF80uQQiw"  alt="" ></figure>
+
+
+
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Image: NEM Block chain center in Kuala Lumpur, Malaysia</em>.</p>
+
+
+
+<h3 id="nem-technology"><strong>NEM Technology</strong></h3>
+
+
+
+<p>NEM aims to build an improved blockchain using two critical concepts of&nbsp;<a target="_blank" href="https://cointelegraph.com/news/proof-of-importance-nem-is-going-to-add-reputations-to-the-blockchain" rel="noreferrer noopener">Proof-of-importance</a>&nbsp;(POI) and&nbsp;<a target="_blank" href="https://www.investopedia.com/tech/meet-nem-xem-harvested-cryptocurrency/" rel="noreferrer noopener">Harvesting</a>.</p>
+
+
+
+<p>While other blockchain networks use Proof-of-work (POW) or Proof-of-stake (POS)&nbsp;<a target="_blank" href="https://www.investopedia.com/terms/c/consensus-mechanism-cryptocurrency.asp" rel="noreferrer noopener">consensus</a>&nbsp;<a target="_blank" href="https://atomicwallet.io/blog/academy/cryptocurrency-algorithm" rel="noreferrer noopener">algorithm</a>, NEM using a Proof-of-importance (POI) consensus algorithm<a target="_blank" href="https://atomicwallet.io/blog/academy/cryptocurrency-algorithm" rel="noreferrer noopener">&nbsp;</a>gives more importance to how much one is invested into the NEM network, with real vested interest. Proof-of-importance is a blockchain consensus algorithm first introduced by NEM to determine which network participants or nodes are eligible to add a block to the blockchain, in a process that is known as &#8216;harvesting.&#8217; Proof-of-importance is a novel blockchain consensus algorithm that measures one&#8217;s overall support for the NEM network, rewarding eligible individuals accordingly. Eligibility for importance on the network is measured in 3 categories:&nbsp;</p>
+
+
+
+<ol><li>Vesting (minimum of 10,000XEM held in an account for a particular duration)</li><li>Transaction partners on the network.</li><li>Number/ Size of transactions in the last 30days.</li></ol>
+
+
+
+<p>The Harvesting approach works differently compared to&nbsp;<a target="_blank" href="https://101blockchains.com/blockchain-proof-of-work/" rel="noreferrer noopener">Proof-of-work</a>&nbsp;and&nbsp;<a target="_blank" href="https://www.investopedia.com/terms/p/proof-stake-pos.asp#:~:text=Proof%20of%20Stake%20(PoS)%20concept,power%20he%20or%20she%20has." rel="noreferrer noopener">Proof-of-stake</a>&nbsp;consensus algorithms. A harvesting account is linked to a&nbsp;<a target="_blank" href="https://www.thestartupfounder.com/blockchain-what-are-nodes-and-supernodes/" rel="noreferrer noopener">supernode</a>&nbsp;to harness its computing power, lending its POI score to the supernode for a joint block harvesting without increasing the supernode&#8217;s processing power and receiving rewards for its contribution to the network. This vested interest/ reward is equivalent to the miner&#8217;s reward in the Proof-of-work consensus algorithm.</p>
+
+
+
+<h3 id="nem-ecosystem"><strong>NEM Ecosystem</strong></h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/5ab12c12-41e7-4137-aaef-166124082161"  alt="" ></figure>
+
+
+
+<p>NEM ecosystem comprises four sectors that optimize the power of blockchain to achieve the set-out goals of the project. They are:</p>
+
+
+
+<h4 id="nem-nis1"><strong>NEM NIS1</strong></h4>
+
+
+
+<p>NEM ecosystem comprises four sectors that optimize blockchain&#8217;s power to achieve the set-out goals of the project. They are:</p>
+
+
+
+<p><strong>NEM NIS1</strong>:This is the blockchain platform for NEM functioning to provide flexible and customizable solutions via very easy-to-use built-in features. NEM NIS1 has had zero downtime, chain hacks, or significant outages since its creation. NIS1 is built for high performance and&nbsp;<a target="_blank" href="https://101blockchains.com/blockchain-scalability-problem-and-solution/" rel="noreferrer noopener">scalability</a>, and modular customization of any application, with its two-tier security architecture, involves Eigentrust++ and NEM node network for high-level security. With its Plug-and-Play architecture, NEM NIS1 provides the perfect blockchain tool to build your project.&nbsp;</p>
+
+
+
+<p>The Proof-of-importance consensus protocol in the NEM NIS1 would be replaced by a Modified Proof-of-stake protocol in the Symbol blockchain when it launches in February 2021. The technology stack between NIS1 and Symbol blockchain is not compatible; hence, the Symbol blockchain will be introduced simultaneously with NIS1. An opt-in process will determine the token allocation of the XYM tokens (the native token of the new Symbol blockchain).</p>
+
+
+
+<p><strong>Symbol blockchain from NEM</strong>: Symbol is a trusted, secure value exchange network that powers possibilities and connects businesses with blockchain. Aimed to increase the flow of data and innovation to supercharge the creation, exchange, and protection of assets, Symbol is the ecosystem that connects businesses, developers, and individuals and enables countless possibilities for blockchain. Launching in February 2021, Symbol, the core technology powering the NEM ecosystem alongside the NEM Group, NEM Ventures, and NEM Trading would bring social, commercial, and technical excellence to NEM blockchain. Features of the Symbol blockchain include:&nbsp;</p>
+
+
+
+<ol><li>Increased security is a contract plug-in framework that makes Symbol more resistant to human error and network attacks.&nbsp;</li><li>Enhanced interoperability to enable Symbol to communicate between blockchains seamlessly. The new&nbsp;<a target="_blank" href="https://www.investopedia.com/terms/a/application-programming-interface.asp" rel="noreferrer noopener">API</a>&nbsp;(Application programming interface) would ensure smooth integration with existing networks and blockchains, and other enterprise systems and processes.&nbsp;</li><li><strong>Scalability, speed, and efficiency:</strong>&nbsp;Symbol&#8217;s tiered architecture and plug-in solutions would increase scalability and flexibility, speed up processing and development time, and lower costs.</li></ol>
+
+
+
+<p>III.<strong>NEM Ventures</strong>: NEM ventures are the venture capital and investments arm of the NEM ecosystem that specializes in investments to promote the entire ecosystem&#8217;s growth. NEM ventures achieve this by identifying, incubating, and making strategic investments in projects that align with the NEM community&#8217;s ethos. NEM ventures manage the pool of funds set out by the NEM community for this purpose. Currently, NEM Ventures is supporting the following projects:</p>
+
+
+
+<ol><li><a target="_blank" href="https://www.amplemeter.com/" rel="noreferrer noopener">Environmental entrepreneur Andrew Hoban founded ample</a>&nbsp;in 2018 to solve the lack of consumer engagement with energy reduction measures.</li><li><a target="_blank" href="https://iodlt.com/" rel="noreferrer noopener">IoDLT</a>&nbsp;(Internet of Distributed Ledger Technology), founded in 2018, utilizes&nbsp;<a target="_blank" href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT" rel="noreferrer noopener">Internet-of-Things</a>&nbsp;and blockchain to provide seamless, secure, and scalable B2B solutions.</li><li><a target="_blank" href="https://www.wavegp.com/" rel="noreferrer noopener">Wave</a>&nbsp;(Wave Financial Group) an international investment management company aimed at providing digital asset fund products for institutions and large corporations.</li><li><a target="_blank" href="https://www.cyclebit.io/" rel="noreferrer noopener">Cyclebit</a>&nbsp;a global company currently operating in Canada, the USA, Spain, Russia, and Vietnam which empowers retailers to take advantage of new payment offerings, modern devices, and user knowledge to provide a simple, affordable and robust medium for retailers and users to accept digital currencies, credit/debit and cash transactions for in-store as well as online and on-the-go purchases.</li><li><a target="_blank" href="https://sharpshark.io/" rel="noreferrer noopener">SharpShark is a</a>&nbsp;blockchain-powered timestamping service built on Symbol blockchain that enables intellectual property transfer while protecting copyrights.&nbsp;</li><li><a target="_blank" href="https://www.propine.com/" rel="noreferrer noopener">Propine</a>&nbsp;was established in 2018, and Propine is the first end-to-end securities service firm designed for digital securities to serve institutional and corporate clients&#8217; needs.</li><li><a target="_blank" href="https://mobiapp.com.au/" rel="noreferrer noopener">Mobi</a>&nbsp;is an Australian based&nbsp;<a target="_blank" href="https://mobiapp.com.au/about/" rel="noreferrer noopener">carpooling</a>&nbsp;app that collaborates with business parks, universities, and city councils to enable their colleagues to integrate their share-a-ride technology to and from work while using the XEM form of payment.</li></ol>
+
+
+
+<p><strong>NEM Community</strong>: NEM community functions to build the NEM brand, improve the technology and foster inclusiveness, leveraging on the most current methods of growth and development. The NEM ecosystem has helped NEM evolve from just an idea to one of the world&#8217;s best blockchain innovations. Join the NEM community&nbsp;<a target="_blank" href="https://nem.io/community/" rel="noreferrer noopener">here</a>.</p>
+
+
+
+<h3 id="projects-and-partnerships"><strong>Projects and partnerships</strong></h3>
+
+
+
+<h4 id="nem-partners-with-telecom-startup-fix-network-on-cell-phone-security"><strong>NEM Partners with Telecom Startup, FIX Network on Cell Phone Security</strong></h4>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh4.googleusercontent.com/IqwpsCPvchS2UHuMZk-yveL3eUoBww-_mNUdFnr9peZ8za3KQGavffFD7IO7rHiUAuc71LvA9TQ2VlknxHV7pOVU39mGQc1cN5MTyF7QTAb-rOZtRSnWCp_hcOjbPpybVE0qGGL9"  alt="" ></figure>
+
+
+
+<p>On March 11th, 2020, New Economy Movement partnered with an Israeli-Lithuanian telecom startup, FIX Network to increase data security and protection for its cell phone users and to solve the rising issue of&nbsp;<a target="_blank" href="https://cointelegraph.com/news/judge-says-plaintiff-can-proceed-against-att-in-24m-hack-case" rel="noreferrer noopener">SIM swapping</a>. Symbol from NEM&#8217;s enterprise-grade blockchain would be integrated by FIX Network into its already existing cellular infrastructure. The aim of this integration is to secure the global eight billion SIM cards from cyber criminals with a new form of privacy, security, management, and safety solutions. CTO of NEM Foundation, Nate D&#8217;Amico stated that,</p>
+
+
+
+<p><em>&#8220;FIX Network takes established infrastructure ….. the worldwide cellular network …. and uses it to create a better, fairer, and safer way to transact.&#8221;</em></p>
+
+
+
+<p>Itamar Kunik, the CEO of FIX Network, added</p>
+
+
+
+<blockquote class="wp-block-quote"><p><em>&#8220;The enterprise nature of Symbol and the native features inherent in its platform are fundamental to the steady adoption and implementation of the FIX Network solution by the telecommunications industry.&#8221;</em></p></blockquote>
+
+
+
+<blockquote class="wp-block-quote"><p>In 2018/2019 alone, it was estimated that approximately $50million was stolen from crypto and blockchain wallets in the US alone through SIM Swapping. Hence, phone numbers may become more important and relevant than even social security numbers. The architectural framework for FIX Network is designed to allow mobile operators to deliver services ranging from digital identity management to cryptocurrency/ blockchain wallets and personal data firewalls to mobile subscribers. This is enabled by the storage of the user&#8217;s private keys on the user&#8217;s SIM card. The first product to be launched will be the FIX identity application, which will securely identify users through a unique global phone number that serves as unique digital identities to secure the user&#8217;s phone number. Symbol will facilitate rapid integration of this innovation and ensure that the performance and reliability standards of FIX Network are met.</p></blockquote>
+
+
+
+<h3 id="luxtag-partners-with-nem"><strong>LuxTag Partners with NEM</strong></h3>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh4.googleusercontent.com/WjglXb_K0Gqa6PQjcNEM1fQc78aSspVxqGgUVnVH1GbQkkDmhKzirEwTYx9uOdpkML85FX5l30Utv6mmjo5wZulpA0vDu9NXDvA71DjYi_xknkyivxB-UTPhCfWbBlGlUprB228e"  alt="" ></figure>
+
+
+
+<p>In 2019,&nbsp;<a target="_blank" href="https://luxtag.io/" rel="noreferrer noopener">LuxTag</a>&nbsp;partnered with&nbsp;<a target="_blank" href="http://nem.io/" rel="noreferrer noopener">NEM</a>&nbsp;in a bid to give her clients a world-class level of versatility and quality.&nbsp;<a target="_blank" href="http://luxtag.io/" rel="noreferrer noopener">LinuxTag</a>, a partner with&nbsp;<a target="_blank" href="http://www.chronoswiss.com/startseite.html#chronoswiss/4" rel="noreferrer noopener">Chronoswiss</a>&nbsp;has embedded its patent-pending technology in the application layer to maximally utilize the&nbsp;<a target="_blank" href="http://nem.io/" rel="noreferrer noopener">NEM</a>&nbsp;Blockchain in generating and maintaining digital certificates. The&nbsp;<a target="_blank" href="http://nem.io/" rel="noreferrer noopener">NEM</a>&nbsp;Blockchain was picked by LuxTag due to its innovative features, including:</p>
+
+
+
+<ul><li>Security, Speed and Scalability.</li><li>Encrypted and Open Messaging.</li><li>Namespaces.</li><li>Mosaics.</li><li>Multisignature and Multi-user Accounts.&nbsp;</li></ul>
+
+
+
+<p>These unique features would allow&nbsp;<a target="_blank" href="http://luxtag.io/" rel="noreferrer noopener">LuxTag to provide</a>&nbsp;its customers with enhanced high-level security of their products and valuable assets.</p>
+
+
+
+<h3 id="nbsp-tech-bureau-holdings-partners-with-nem-io-foundation">&nbsp;<strong>Tech Bureau Holdings Partners with NEM.io Foundation</strong></h3>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh4.googleusercontent.com/dcuuc9Jt6CclGzDTrSee6p1NNvsv1LXRKH0s3AZ3iBnK9TdzvvJ3eA9r-ZWfTveZgP0yyj8EPyKF9m8sSvIu9_bHN3Y0INISDBlB42839bwbJNQklJ9hjH2YCVZEofva0o5RFiNz"  alt="" ></figure>
+
+
+
+<p>On July 9th, 2019, Tech Bureau Holdings, Corp., an international fintech and cryptocurrency solutions company, announced its business partnership agreement with NEM.io Foundation. This business partnership is to further strengthen the company&#8217;s overseas sales promotions and marketing activities for &#8220;mijin&#8221;. Mijin is a versatile private blockchain product offered since September 2015, with its latest next-generation core engine being &#8220;mijin Catapult (v.2)&#8221;.&nbsp;&nbsp;</p>
+
+
+
+<p>Tech Bureau Corp. has continued to provide financial support for the development of NEM&#8217;s next-generation platform, &#8216;Catapult&#8217;. This business partnership is aimed at strengthening NEM Foundation&#8217;s revenue base and the Tech Bureau&#8217;s overseas sales promotions and marketing activities while fostering cooperation between the two companies. The two companies have agreed to share an agreed percentage of revenues from overseas sales of the company&#8217;s BaaS products by NEM.io Foundation. The mijin (v.1) blockchain solution is available for Microsoft Azure users in 140 countries worldwide.</p>
+
+
+
+<p>Other projects and partnerships with New Economy Movement include:</p>
+
+
+
+<ol><li>NEM partnership with&nbsp;<a target="_blank" href="https://www.originsonnem.com/" rel="noreferrer noopener">Origins.</a></li><li>NEM partnership with&nbsp;<a target="_blank" href="https://www.ksfootball.io/" rel="noreferrer noopener">KS Football.</a></li><li>NEM partnership with&nbsp;<a target="_blank" href="https://www.thevault.foundation/" rel="noreferrer noopener">Thebault Ltd.</a></li><li>NEM partnership with China&#8217;s largest online artwork trading market and artwork database,&nbsp;<a target="_blank" href="https://www.gubi.com/" rel="noreferrer noopener">GUBI.</a>&nbsp;</li><li>NEM partnership with&nbsp;<a target="_blank" href="http://www.vnx.io" rel="noreferrer noopener">NX Exchange</a>.</li></ol>
+
+
+
+<h3 id="xem"><strong>XEM</strong></h3>
+
+
+
+<p>XEM is the utility token that drives the NEM blockchain, playing roles ranging from vesting to gain voting and block approval rights as well as serving as a cryptocurrency with lightning-fast transaction times and facilitating smart contracts. As there was no initial coin offering proposed for XEM, the redemption process for NEMStake (the original token for NEM) took place via two ways: first, a voluntary BTC contribution through Bitcointalk community forum or a NXT contribution through the then NXT Asset Exchange. Stakes were also given freely to users who contributed to the initial growth, development, and promotion of the New Economy Movement (NEM).&nbsp;</p>
+
+
+
+<p>Rising from its&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-low" rel="noreferrer noopener">all-time low</a>&nbsp;price of $0.00008482 on September 5th, 2012, XEM has been one of the best performing cryptocurrencies, with a 259803.5% rise to an&nbsp;<a target="_blank" href="https://atomicwallet.io/all-time-high" rel="noreferrer noopener">all-time high</a>&nbsp;of $1.87 on January 7th, 2018. Listed on over fifteen (15) centralized and decentralized exchanges, XEM is currently priced at $0.220781 with a market capitalization of $1,985,468,321 and a cryptocurrency market share of 0.25%, making it the twentieth most valuable cryptocurrency in the world. XEM can be bought, sold, stored, and managed efficiently using Atomic Wallet&nbsp;<a target="_blank" href="https://atomicwallet.io/" rel="noreferrer noopener">here</a>.</p>
+
+
+
+<p>In January 2018, a famous cryptocurrency exchange,&nbsp;<a target="_blank" href="https://www.coingecko.com/en/exchanges/coincheck" rel="noreferrer noopener">Coincheck</a>, was hacked, and 523 million XEM coins worth $400million were stolen by the hackers. Although these funds were never recovered, NEM group has reported wallets and accounts linked to the hack to the government for further investigation.</p>
+
+
+
+<h3 id="future-milestone"><strong>FUTURE MILESTONE</strong></h3>
+
+
+
+<p>Currently in its last stage of testing,NEM plans to launch its enterprise-focused Symbol blockchain platform live in early 2021. In December, 2020, the code for Symbol blockchain was announced to have been “frozen” in its current iteration, as the final steps were being made towards the mainnet launch. The NEM developer team has been building Symbol and its “unique” hybrid public and private architecture for years and hope to have a smooth and successful mainnet launch.&nbsp;</p>
+
+
+
+<p><em>“Created for enterprise use, Symbol is purpose- built to be flexible to a suite of use cases, spanning regulated markets, supply chain, fintech, healthcare, government and more”.</em></p>
+
+
+
+<p>said Dave Hodgson, CIO of NEM Group. Symbol will launch version 1.0 of its blockchain on the 14th of January, 2021 and will be available for use by token holders, businesses and others. According to Kristy-Leigh Minehan, CTO of NEM Software,</p>
+
+
+
+<p>&nbsp;<em>“As a hybrid network, Symbol offers a best of both world’s scenario and more flexibility to businesses in how they manage and share data”&nbsp;</em></p>
+
+
+
+<p>Symbol’s hybrid technology means businesses can not only benefit from the transparency brought by Symbol to the public blockchain, but also allow data security, data protection,&nbsp; data restrictions and encryption measures to protect businesses’ confidential information and foster interoperability and communication between different blockchain.</p>
+
+
+
+<p>In February 2021, NEM would launch the Symbol public blockchain where XEM token holders would opt-in to receive free XYM in a 1:1 ratio. Opt-in for this Airdrop ends in January of 2021 (dependent on the outcome of POI community vote) while the snapshot for the airdrop will take place at approximately 10pm AEDT on 14th January, 2021. You can look up all details about the Symbol Airdrop here: https://nemplatform.com/symbol-migration/ </p>
+
+
+
+<p>Currently, in its last stage of testing, NEM plans to launch its enterprise-focused Symbol blockchain platform live in early 2021. In December 2020, the code for Symbol blockchain was announced to have been &#8220;frozen&#8221; in its current iteration, as the final steps were being made towards the main net launch. The NEM developer team has been building Symbol and its &#8220;unique&#8221; hybrid public and private architecture for years and hope to have a smooth and successful main net launch.&nbsp;</p>
+
+
+
+<p><em>&#8220;Created for enterprise use, Symbol is purpose-built to be flexible to a suite of use cases, spanning regulated markets, supply chain, fintech, healthcare, government and more&#8221;.</em></p>
+
+
+
+<p>said Dave Hodgson, CIO of NEM Group. A symbol will launch version 1.0 of its blockchain on January 14th, 2021 and will be available for use by token holders, businesses and others. According to Kristy-Leigh Minehan, CTO of NEM Software,</p>
+
+
+
+<p>&nbsp;<em>&#8220;As a hybrid network, Symbol offers a best of both world&#8217;s scenario and more flexibility to businesses in how they manage and share data&#8221;&nbsp;</em></p>
+
+
+
+<p>Symbol&#8217;s hybrid technology means businesses can not only benefit from the transparency brought by Symbol to the public blockchain but also allow data security, data protection, data restrictions and encryption measures to protect businesses&#8217; confidential information and foster interoperability and communication between different blockchain.</p>
+
+
+
+<p>In February 2021, NEM would launch the Symbol public blockchain, where XEM token holders would opt-in to receive free XYM in a 1:1 ratio. Opt-in for this Airdrop ends in January of 2021 (dependent on the outcome of POI community vote), while the snapshot for the airdrop will take place at approximately 10 pm AEDT on January 14th, 2021. You can look up all details about the Symbol Airdrop here: <a href="https://nemplatform.com/symbol-migration/">https://nemplatform.com/symbol-migration/</a></p>
+
+
+
+<p><img  loading="lazy"  width="554"  height="344"  src="https://lh5.googleusercontent.com/EXd6VU-CmAFGTubTvJAPFAm2FtDj5eVgwjvFmt_yjjYI_lVmstHFSDq5KoWI1z3HdnIw8oc_TZ335EFhY9APZfIYhi2AZKHzQ0HlnbAxrO1jZ52Y_JbhI2l_oHWEHaCb7bwOD2E_" ></p>
+
+
+
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+
+
+
+<p>Bouncing back from the 2018 Coincheck hack to become one of the most interactive blockchain communities is mind blowing. NEM appears to have found its niche in the blockchain industry and with its formidable team, you can expect this project to gain more attention as more scheduled events go live.&nbsp;</p>
+
+
+
+<p>Do you hold NEM and will you opt-in for the XYM airdrop? Feel free to comment your opinion and of course ask questions in the comment box below. Remember, this is not financial advice. Please do your own research.</p>
+
+
+
+<h4 id="nem-website"><strong>NEM Website</strong></h4>
+
+
+
+<p>Visit <a href="https://nem.io/">NEM Official Website</a> for more information on New Economy Movement.</p>
+
+
+
+<h4 id="nem-facebook-community"><strong>NEM Facebook Community</strong></h4>
+
+
+
+<p>Join <a href="https://www.facebook.com/217174381806901">NEM’s Facebook community</a> and get involved in the project.</p>
+
+
+
+<h4 id="nem-block-explorer"><strong>NEM Block Explorer</strong></h4>
+
+
+
+<p>Track your NEM transactions with the <a href="http://chain.nem.ninja/">Nembex V.3.2</a> Block Explorer.&nbsp;</p>
+
+
+
+<h4 id="nem-twitter"><strong>NEM Twitter</strong></h4>
+
+
+
+<p>Follow <a href="https://twitter.com/nemofficial">@NEMofficial</a> on Twitter to keep up with the latest updates and news.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/nem-xem-complete-guide">What is NEM (XEM) Cryptocurrency: A Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/nem-xem-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

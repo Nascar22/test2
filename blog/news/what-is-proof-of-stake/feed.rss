@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: What is Proof of Stake?	</title>
+	<atom:link href="https://atomicwallet.io/blog/news/what-is-proof-of-stake/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/news/what-is-proof-of-stake</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 17:09:12 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Anikys3reasure		</title>
+		<link>https://atomicwallet.io/blog/news/what-is-proof-of-stake#comment-163</link>
+
+		<dc:creator><![CDATA[Anikys3reasure]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 22:43:05 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=740#comment-163</guid>
+
+					<description><![CDATA[  Woohoo! Thanks for this. So detailed
+
+I have been looking for a good article that explains this well, I just got this. Great Job from Atomic Team.]]></description>
+			<content:encoded><![CDATA[<p>  Woohoo! Thanks for this. So detailed</p>
+<p>I have been looking for a good article that explains this well, I just got this. Great Job from Atomic Team.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Abdul		</title>
+		<link>https://atomicwallet.io/blog/news/what-is-proof-of-stake#comment-23</link>
+
+		<dc:creator><![CDATA[Abdul]]></dc:creator>
+		<pubDate>Thu, 23 Apr 2020 15:22:57 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=740#comment-23</guid>
+
+					<description><![CDATA[ I stake tezos, Atom, algorand, tron on atomicwallet, I&#039;m happy to say returns are quite satisfying ????]]></description>
+			<content:encoded><![CDATA[<p> I stake tezos, Atom, algorand, tron on atomicwallet, I&#8217;m happy to say returns are quite satisfying ????</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

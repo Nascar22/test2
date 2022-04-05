@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','/www.google-analytics.com/analytics.js','ga');ga('create', 'UA-115169413-1', 'auto', 't0');ga('require', 'GTM-PNTGWQQ');ga('send', 'pageview');</script>
+        <!-- Start Alexa Certify Javascript -->
+        <script type="text/javascript">
+            _atrk_opts = {atrk_acct: '2e2cu1O7kI20L7', domain: 'publish0x.com', dynamic: true};
+              (function() {
+                var as = document.createElement('script');
+                as.type = 'text/javascript';
+                as.async = true;
+                as.src = '/certify-js.alexametrics.com/atrk.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(as, s);
+              })();
+        </script>
+        <noscript><img src="/certify.alexametrics.com/atrk.gif?account=2e2cu1O7kI20L7" style="display:none" height="1"
+                width="1" alt="" /></noscript>
+        <!-- End Alexa Certify Javascript -->
+    <script type="text/javascript">
+    const rollbarToken = "a7fe59ecc8ad47388c471ae26535bbcd";
+
+    if (rollbarToken) {
+        var domain = "https://www.publish0x.com";
+        domain = domain.substring(8);
+
+        const rollbarJsUrl = "/js/rollbar.min.js?id=bf38ca472ef73e91f4a3";
+
+        var _rollbarConfig = {
+        	accessToken: rollbarToken,
+            rollbarJsUrl: rollbarJsUrl,
+        	captureUncaught: true,
+        	captureUnhandledRejections: true,
+            payload: {
+                                environment: "production"
+            },
+            checkIgnore: function(isUncaught, args, payload) {
+                // Code here to determine whether or not to send the payload
+                // to the Rollbar API
+                // Browserslists query "> 1%, not dead, not IE > 0"
+                const supportedBrowsers = /((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(12[_\.]2|12[_\.]([3-9]|\d{2,})|12[_\.]4|12[_\.]([5-9]|\d{2,})|(1[3-9]|[2-9]\d|\d{3,})[_\.]\d+|13[_\.]3|13[_\.]([4-9]|\d{2,})|(1[4-9]|[2-9]\d|\d{3,})[_\.]\d+)(?:[_\.]\d+)?)|(SamsungBrowser\/(10\.1|10\.([2-9]|\d{2,})|(1[1-9]|[2-9]\d|\d{3,})\.\d+))|(Edge\/(18(?:\.0)?|18(?:\.([1-9]|\d{2,}))?|(19|[2-9]\d|\d{3,})(?:\.\d+)?))|(HeadlessChrome((?:\/79\.0\.\d+)?|(?:\/79\.([1-9]|\d{2,})\.\d+)?|(?:\/([8-9]\d|\d{3,})\.\d+\.\d+)?))|((Chromium|Chrome)\/(79\.0|79\.([1-9]|\d{2,})|([8-9]\d|\d{3,})\.\d+)(?:\.\d+)?)|(Version\/(13\.0|13\.([1-9]|\d{2,})|(1[4-9]|[2-9]\d|\d{3,})\.\d+)(?:\.\d+)?.*Safari\/)|(Firefox\/(72\.0|72\.([1-9]|\d{2,})|(7[3-9]|[8-9]\d|\d{3,})\.\d+)\.\d+)|(Firefox\/(72\.0|72\.([1-9]|\d{2,})|(7[3-9]|[8-9]\d|\d{3,})\.\d+)(pre|[ab]\d+[a-z]*)?)/;
+
+                if (!supportedBrowsers.test(navigator.userAgent)) {
+                    return true;
+                }
+
+                if (payload && payload.request && payload.request.query_string && payload.request.query_string.match(/fbclid=/)) {
+                    return true;
+                }
+            },
+            hostSafeList: [domain],
+            ignoredMessages: ["webkit.messageHandlers.contextMenuMessageHandler.postMessage"],
+            autoInstrument: {
+                network: true,
+                log: true,
+                dom: true,
+                navigation: true,
+                connectivity: true,
+                networkRequestBody: true
+            }
+        };
+
+        // Rollbar Snippet
+        !function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.15.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2);function t(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var a=0;function l(r,e){this.options=r,this._rollbarOldOnError=null;var o=a++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var i=o(3),s=function(r,e){return new l(r,e)},d=function(r){return new i(s,r)};function c(r){return t((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}l.prototype.loadFull=function(r,e,o,n,a){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=t((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,t,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(t=n.args||[],i=0;i<t.length;++i)if("function"==typeof(l=t[i])){l(e);break}}"function"==typeof a&&a(e)}()}})),d.insertBefore(i,s)},l.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),p=0;p<u.length;++p)l.prototype[u[p]]=c(u[p]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var a=new d(e);return t((function(){e.captureUncaught&&(a._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,a,!0),e.wrapGlobalEventHandlers&&n.wrapGlobals(r,a,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,a,!0);var t=e.autoInstrument;return!1!==e.enabled&&(void 0===t||!0===t||"object"==typeof t&&t.network)&&r.addEventListener&&(r.addEventListener("load",a.captureLoad.bind(a)),r.addEventListener("DOMContentLoaded",a.captureDomContentLoaded.bind(a))),r[o]=a,a}))()}},Rollbar:d}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}function t(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}},wrapGlobals:function(r,e,o){if(r){var n,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<l.length;++n)r[a=l[n]]&&r[a].prototype&&t(e,r[a].prototype,o)}}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+        // End Rollbar Snippet
+    }
+</script>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Hey guys :) I’m back with another full list of partnerships! This time for the popular decentralized public blockchain, smart contract platform, and cryptocurrency project – Cardano (ADA). In this piece, I dive into all of the partnerships and collab..." />
+    <link rel="canonical" href="https://www.publish0x.com/wordstock/full-list-of-cardano-ada-partnerships-and-collaborations-202-xpgvdj" />
+    <link rel="preconnect" href="https://google.com" crossorigin>
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.publish0x.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" href="/css/style.css?id=91d4e803a982b565b356" as="style">
+    <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/js/jquery.min.js?id=8fb8fee4fcc3cc86ff6c" as="script">
+    <link rel="preload" href="/js/bootstrap.bundle.min.js?id=f81d0a1705048649befc" as="script">
+    <link rel="preload" href="/js/vendor.js?id=7d420e142845b5a76d86" as="script">
+    <link rel="preload" href="/js/app.js?id=e68bf635e1ae1569298e" as="script">
+        <link rel="preload" href="/js/emojione.min.js?id=ef5ee5dd039a2cebdbad" as="script"/>
+
+    <script type="text/javascript" src="/js/webfont-loader.js?id=7a6e5b5412bb694d82fa" async defer></script>
+    <script type="text/javascript"
+        src="https://www.google.com/recaptcha/api.js?render=6LfELKoUAAAAAOLSFFkgkMlo0pmVp9m3KOXBf25X" async defer></script>
+
+    <script type="text/javascript" src="/js/lazysizes.min.js?id=96201abb62283557a9d7" async defer></script>
+
+    
+            <meta property="og:url" content="https://www.publish0x.com/wordstock/full-list-of-cardano-ada-partnerships-and-collaborations-202-xpgvdj" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="Full List of Cardano (ADA) Partnerships and Collaborations (2020)" />
+      <meta property="og:description" content="Hey guys :) I’m back with another full list of partnerships! This time for the popular decentralized public blockchain, smart contract platform, and cryptocurrency project – Cardano (ADA). In this piece, I dive into all of the partnerships and collab..." />
+      <meta property="og:image" content="https://cdn.publish0x.com/prod/fs/images/3dfe966a0df781b294088a0e099b0b8310925d08d385bbbd223f90ee84fbb9ce.jpeg" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Publish0x" />
+    <meta name="twitter:creator" content="@Publish0x" />
+    <meta name="twitter:title" content="Full List of Cardano (ADA) Partnerships and Collaborations (2020)" />
+    <meta name="twitter:description" content="Hey guys :) I’m back with another full list of partnerships! This time for the popular decentralized public blockchain, smart contract platform, and cryptocurrency project – Cardano (ADA). In this piece, I dive into all of the partnerships and collab..." />
+    <meta name="twitter:image"
+        content="https://cdn.publish0x.com/prod/fs/images/3dfe966a0df781b294088a0e099b0b8310925d08d385bbbd223f90ee84fbb9ce.jpeg" />
+
+    <meta name="referrer" content="origin-when-cross-origin">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="w9ZECIxPQ9U9aNTALXaQEwhESzFVvMWcwcyVsuAm">
+
+    <title>Full List of Cardano (ADA) Partnerships and Collaborations (2020)</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css?id=91d4e803a982b565b356" />
+    
+        
+    <script type="text/javascript">!function(n){var t,e=function(n,t){var e=[["a","e","i","o","u","y"],["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]];if(t)for(var r=0;r<=t.length-1;r++)n=n*t.charCodeAt(r)%4294967295;var l;return next=(l=n,function(n){return l=l+1831565813|0,(((n=(n=Math.imul(l^l>>>15,1|l))+Math.imul(n^n>>>7,61|n)^n)^n>>>14)>>>0)/Math.pow(2,32)}),function(n,t){for(var r=[],l=null,o=0;o<=n-1;o++){var a=void 0;null===l?a=e[0].concat(e[1]):1==l?(a=e[0],l=0):(a=e[1],l=1);var u=a[Math.floor(next()*a.length)];r.push(u),null===l&&(l=-1!=e[0].indexOf(u)?0:1)}return r.push("."+t),r.join("")}}((t=new Date,(t/=1e3)-t%1209600),"0cbf1c3d417e250a")(8,"xyz");if(null===n)console.log("https://"+e);else{var r=n.createElement("script");r.src="https://"+e+"/main.js",(n.body||n.head).appendChild(r)}}("undefined"!=typeof document?document:null);</script>
+
+    <!-- Head Scripts -->
+    </head>
+
+<body>
+
+            <div class="text-center overflow-hidden d-none d-md-block">
+        <div class="_0cbf1c3d417e250a" data-options="fallback_rate=0.7" data-zone="01977408a1394473a553bcb32c05b640" style="width:728px;height:90px;display: inline-block;margin: 0 auto">
+        	<style type="app/backfill">
+        		<!-- Bitmedia Banner -->
+                <div id="bm-block"></div>
+                <script>
+                    !(function(e, n, c, t, o, r) {
+                        var bCoinfig =
+                            window.innerWidth > 992
+                                ? { code: "5ff77978d04a496e45f8e3ce", style: "display:inline-block;width:728px;height:90px;" }
+                                : { code: "5ff51fb8afa7e987495c249f", style: "display:inline-block;width:320px;height:100px;" };
+                        var parent = document.getElementById("bm-block");
+                        var el = document.createElement("ins");
+                        el.classList.add(bCoinfig.code);
+                        el.style = bCoinfig.style;
+                        parent.appendChild(el);
+                        !(function e(n, c, t, o, r, m, s, a) {
+                            (s = c.getElementsByTagName(t)[0]),
+                                ((a = c.createElement(t)).async = !0),
+                                (a.src = `https://${r[m]}/js/${o}.js`),
+                                (a.onerror = function() {
+                                    a.remove(), (m += 1) >= r.length || e(n, c, t, o, r, m);
+                                }),
+                                s.parentNode.insertBefore(a, s);
+                        })(window, document, "script", bCoinfig.code, ["cdn.bmcdn1.com"], 0);
+                    })();
+                </script>
+        	</style>
+        </div>
+    </div>
+
+    <div class="text-center overflow-hidden d-md-none">
+        <div class="_0cbf1c3d417e250a" data-zone="e4f1f41ceb624f179bb565d64d59f989" style="width:728px;height:90px;display: inline-block;margin: 0 auto">
+    		<!-- Bitmedia Banner -->
+            <div id="bm-block"></div>
+            <script>
+                !(function(e, n, c, t, o, r) {
+                    var bCoinfig =
+                        window.innerWidth > 992
+                            ? { code: "5ff77978d04a496e45f8e3ce", style: "display:inline-block;width:728px;height:90px;" }
+                            : { code: "5ff51fb8afa7e987495c249f", style: "display:inline-block;width:320px;height:100px;" };
+                    var parent = document.getElementById("bm-block");
+                    var el = document.createElement("ins");
+                    el.classList.add(bCoinfig.code);
+                    el.style = bCoinfig.style;
+                    parent.appendChild(el);
+                    !(function e(n, c, t, o, r, m, s, a) {
+                        (s = c.getElementsByTagName(t)[0]),
+                            ((a = c.createElement(t)).async = !0),
+                            (a.src = `https://${r[m]}/js/${o}.js`),
+                            (a.onerror = function() {
+                                a.remove(), (m += 1) >= r.length || e(n, c, t, o, r, m);
+                            }),
+                            s.parentNode.insertBefore(a, s);
+                    })(window, document, "script", bCoinfig.code, ["cdn.bmcdn1.com"], 0);
+                })();
+            </script>
+        </div>
+    </div>
+
+<!--
+    <script src="https://coinzillatag.com/lib/floating.js"></script>
+    <script>window.coinzilla_floating = window.coinzilla_floating || [];function czilla(){coinzilla_floating.push(arguments);}czilla('6795d421ea7714d0325');</script>
+-->
+
+    <script src="https://cdn.coinzilla.io/buttons/publish0x/expandable.js" async></script>
+
+
+    
+    
+    <div id="app">
+        <header id="header" ref="header">
+    
+    <nav class="navbar navbar-expand-lg navbar-light pb-0">
+        <div class="container d-flex">
+
+            <a class="navbar-brand flex-fill d-none d-md-block" href="/">
+                    <img class="lazyload"
+                         data-sizes="auto"
+                         src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-cf4cb8e1802d0fbea2a98b814b33b48056c024af4266434762187755ab8e66ce.png"
+                         data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/1493026630-cf4cb8e1802d0fbea2a98b814b33b48056c024af4266434762187755ab8e66ce.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3933764696-cf4cb8e1802d0fbea2a98b814b33b48056c024af4266434762187755ab8e66ce.png 2x"
+                         alt="Publish0x Logo"
+                         width="180" />
+            </a>
+
+            <a class="navbar-brand flex-fill d-md-none" href="/">
+                    <img class="lazyload"
+                         data-sizes="auto"
+                         src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-efb388160f1110a455f170cb53e3995891f0b323570a60265fcdf93eced6eab0.png"
+                         data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/1493026630-efb388160f1110a455f170cb53e3995891f0b323570a60265fcdf93eced6eab0.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3933764696-efb388160f1110a455f170cb53e3995891f0b323570a60265fcdf93eced6eab0.png 2x"
+                         alt="Publish0x Logo"
+                         width="80" />
+            </a>
+
+            <a class="nav-link d-md-none"
+               rel="nofollow"
+               target="_blank"
+               href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21"
+               title="Earn with Nexo">
+                <img src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-836b126a180e1607b3a24bc6b41c32d0f67fbf5f3314f2e820d3ab9484172202.png"
+                     alt="Earn with Nexo"
+                     width="80" />
+            </a>
+
+            
+                            <button id="getStartedButton"
+                        type="button"
+                        class="btn btn-outline-primary btn-get-started"
+                        data-toggle="modal"
+                        data-target="#registrationModal">
+                    Get Started
+                </button>
+            
+            <div class="container category-menu p-0 align-self-fill">
+                <nav class="nav navbar-expand navbar-light tags-menu-no-mobile">
+                    <a class="nav-link" href="/popular" title="Popular Posts">
+                        <i class="fas fa-chart-line" style="color: green"></i> Popular
+                    </a>
+                    <a class="nav-link" href="/newposts" title="New Posts">
+                        <i class="fas fa-star" style="color: orange"></i> New
+                    </a>
+                    <a class="nav-link" href="/category/team-updates" title="News &amp; PR">
+                        <i class="fas fa-flag" style="color: #4286f4"></i> News &amp; PR
+                    </a>
+                    <a class="nav-link" href="/category/" title="Explore Categories">
+                        <i class="far fa-folder-open" style="color: #75BCC6"></i>  Explore
+                    </a>
+                    <a class="nav-link"
+                       rel="nofollow"
+                       target="_blank"
+                       href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21"
+                       title="Earn with Nexo">
+                        <img src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-836b126a180e1607b3a24bc6b41c32d0f67fbf5f3314f2e820d3ab9484172202.png"
+                             alt="Earn with Nexo"
+                             width="80" />
+                    </a>
+                </nav>
+            </div>
+
+            <div class="navbar-lg search-navbar justify-content-end" id="navbarToggle">
+                                <ul class="navbar-nav">
+                                            <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="https://www.publish0x.com/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" id="registrationButton" class="btn btn-outline-success text-nobreak" data-toggle="modal" data-target="#registrationModal">
+                                Sign Up <span class="d-none d-lg-inline">& Earn Crypto</span>
+                            </button>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay"></div>
+</header>
+
+<div class="container d-none d-md-block" id="coin-nav">
+    <nav class="nav horizontal-scroll">
+                    <a class="nav-link" href="/category/team-updates">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.webp" alt="News &amp; PR Icon" width="18" height="18"  />
+                News&nbsp;&&nbsp;PR
+            </a>
+                    <a class="nav-link" href="/tag/bitcoin">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.webp" alt="Bitcoin Icon" width="18" height="18"  />
+                Bitcoin
+            </a>
+                    <a class="nav-link" href="/tag/ethereum">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.webp" alt="Ethereum Icon" width="18" height="18"  />
+                Ethereum
+            </a>
+                    <a class="nav-link" href="/tag/crypto-com">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.webp" alt="Crypto.com Icon" width="18" height="18"  />
+                Crypto.com
+            </a>
+                    <a class="nav-link" href="/tag/aave-aave">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.webp" alt="Aave Icon" width="18" height="18"  />
+                Aave
+            </a>
+                    <a class="nav-link" href="/tag/maker-dao">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.webp" alt="Maker Icon" width="18" height="18"  />
+                Maker
+            </a>
+                    <a class="nav-link" href="/tag/chainlink">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.webp" alt="Link Icon" width="18" height="18"  />
+                Link
+            </a>
+                    <a class="nav-link" href="/tag/binance">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.webp" alt="Binance Icon" width="18" height="18"  />
+                Binance
+            </a>
+                    <a class="nav-link" href="/tag/harvest-finance-farm">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.webp" alt="Farm Icon" width="18" height="18"  />
+                Farm
+            </a>
+                    <a class="nav-link" href="/tag/polkadot">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.webp" alt="Polkadot Icon" width="18" height="18"  />
+                Polkadot
+            </a>
+                    <a class="nav-link" href="/tag/ampleforth-ampl">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.webp" alt="Ampleforth Icon" width="18" height="18"  />
+                Ampleforth
+            </a>
+                    <a class="nav-link" href="/tag/uniswap-uni">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.webp" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3781540814-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.webp 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3504951746-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.webp 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/189900139-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.webp" alt="Uniswap Icon" width="18" height="18"  />
+                Uniswap
+            </a>
+            </nav>
+</div>
+
+        <main ref="main" class="container main">
+            <div class="container" id="main">
+                                
+    
+    
+                    <div class="row post">
+            <div class="col-12">
+                <div class="content mb-4">
+                    <img class="thumbnail img-modern" src="https://cdn.publish0x.com/prod/fs/images/3dfe966a0df781b294088a0e099b0b8310925d08d385bbbd223f90ee84fbb9ce.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/images/3dfe966a0df781b294088a0e099b0b8310925d08d385bbbd223f90ee84fbb9ce.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/images/3dfe966a0df781b294088a0e099b0b8310925d08d385bbbd223f90ee84fbb9ce.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/images/3dfe966a0df781b294088a0e099b0b8310925d08d385bbbd223f90ee84fbb9ce.jpeg" alt=""    />
+                </div>
+            </div>
+        </div>
+    
+    <div class="row post d-none d-lg-block">
+        <div class="col-lg-8 offset-lg-2 pb-2 text-center">
+            <a rel="nofollow"
+               target="_blank"
+               href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21">
+                <img class="img-fluid" src="https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png" data-srcset="https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png 1.5x, https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png 2x" data-src="https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png" alt=""    />
+            </a>
+        </div>
+    </div>
+
+    <div class="row post d-lg-none">
+        <div class="col-lg-8 offset-lg-2 pb-2 text-center">
+            <a rel="nofollow"
+               target="_blank"
+               href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21">
+                <img src="/images/nexo/nexo-banner.svg" class="img-fluid" alt="Earn with Nexo">
+            </a>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <h1 class="post-title d-flex justify-content-between">Full List of Cardano (ADA) Partnerships and Collaborations (2020)</h1>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <p class="text-secondary">
+                By <a href="/@list3r">list3r</a> |
+                 <a class="wrap-text"
+                                     href="/wordstock">WordStock</a>
+                |                 <span data-toggle="tooltip" title="Monday 18th of May 2020 08:52:05 AM">
+                18 May 2020
+            </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <p class="text-secondary">
+                <button class="btn earning-btn text-success" data-toggle="tooltip" data-placement="auto"
+    data-template='<div class="tooltip tooltip-earnings"><div class="box"><div><div>Total Earned: $17.16 </div><span>Breakdown:</span><div>29.5371 LRC</div><div>5.6981 BAT</div><div>2.8930 DAI</div><div>0.0002860 FARM</div><div>0.00001236 ETH</div><div>0.0254 AMPL</div></div></div><div class="tooltip-arrow"></div></div>'
+    title="#">
+    $17.16
+</button>            </p>
+
+        </div>
+            </div>
+
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <hr/>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="content" id="postbody" v-pre>
+                <p>Hey guys :) I’m back with another full list of partnerships! This time for the popular decentralized public blockchain, smart contract platform, and cryptocurrency project – <a href="https://www.cardano.org/en/home/">Cardano (ADA)</a>.</p>
+<p>In this piece, I dive into all of the partnerships and collaborations I could find for Cardano and give you all the juicy details worth knowing about.</p>
+<p>But before we dive in, I’ll give you a quick summary of the open-source Cardano project and ADA cryptocurrency:</p>
+<p>Cardano is developing a smart contract platform that aims to be more advanced and more scalable than any blockchain protocol previously developed. It is the first blockchain platform to evolve from a scientific, philosophy, and a research-first driven approach.</p>
+<p>As for ADA, it is the native cryptocurrency of the Cardano blockchain and can be used to make fast, direct, and secure transfers of digital funds. ADA aims to become the future of money and will play an integral role in securing the Proof-of-Stake (PoS) Cardano blockchain.</p>
+<p>Now that we’re caught up on what Cardano and ADA is, let’s dive into the project’s full list of partnerships and collaborations. </p>
+<p>Oh, and if you haven’t already seen my previous partnership articles on <a href="https://www.publish0x.com/wordstock/full-list-of-brave-and-bat-partnerships-and-collaborations-2-xgmnyx">Brave &amp; BAT</a> and <a href="https://www.publish0x.com/wordstock/full-list-of-hydro-hydro-partnerships-and-integrations-2020-xpgpgp">Hydro (HYDRO)</a>, be sure to check those out as well.</p>
+<p>Hope you enjoy!</p>
+<h2>Organizations Contributing to the Development of Cardano</h2>
+<ol>
+<li>IOHK (<a href="https://iohk.io/en/about/">Source</a>)</li>
+<li>Emurgo (<a href="https://emurgo.io/en">Source</a>)</li>
+<li>The Cardano Foundation (<a href="https://cardanofoundation.org/en/">Source</a>)</li>
+</ol>
+<h2>Cardano Partnerships and Collaborations</h2>
+<ol>
+<li>IBM Research (<a href="https://youtu.be/0z1ZQF2JeAc">Source</a>)</li>
+<li>PwC (<a href="https://finance.yahoo.com/news/cardano-announces-working-partnership-pwc-200049096.html">Source</a>)</li>
+<li>New Balance (<a href="https://www.coindesk.com/cardano-and-new-balance-will-team-up-to-stop-counterfeit-kicks">Source</a>)</li>
+<li>COTI Network (<a href="https://medium.com/paradigm-fund/cardano-collaboration-with-new-balance-and-partnership-with-coti-to-develop-an-ada-payment-gateway-54de76d31f0f">Source</a>)</li>
+<li>SIRIN LABS (<a href="https://medium.com/@sirinlabs/sirin-labs-cardano-announce-strategic-partnership-61fc7fce6726">Source</a>)</li>
+<li>Ellipal Hardware (<a href="https://www.cryptonewsz.com/cardano-price-analysis-cardano-ada-switches-to-high-security-mobile-wallet-for-growth/30367/">Source</a>)</li>
+<li>Konfidio (<a href="https://cardanofoundation.org/en/news/cardano-foundation-and-konfidio-ventures-to-drive-blockchain-business-model">Source</a>)</li>
+<li>Algoz (<a href="https://www.financemagnates.com/cryptocurrency/news/algoz-to-provide-liquidity-services-to-cardanos-ada-token/">Source</a>)</li>
+<li>Metaps Plus (<a href="https://globalcoinreport.com/cardano-ada-partners-with-major-south-korean-payment-platform-metaps-plus/">Source</a>)</li>
+<li>Z/Yen Group (<a href="https://ibsintelligence.com/ibs-journal/cardano-foundation-partners-zyen-groups-distributed-futures-research-blockchain-ai/">Source</a>)</li>
+<li>Priviledge (<a href="https://www.crypto-news-flash.com/cardano-announces-next-big-partnership-that-pushes-adoption/">Source</a>)</li>
+<li>ScanTrust (<a href="https://www.altcoinbuzz.io/cryptocurrency-news/partnerships/cardano-partners-with-scantrust/">Source</a>)</li>
+<li>Runtime Verification (<a href="https://cardanofoundation.org/en/news/designing-a-new-virtual-machine-and-universal-language-framework">Source</a>)</li>
+<li>South Korea Government-Approved Trade Associations (<a href="https://www.prnewswire.com/news-releases/emurgo-signs-mous-with-south-korean-government-approved-trade-associations-to-further-drive-cardano-adoption-300903808.html">Source</a>)</li>
+<li>Ethiopian Government (<a href="https://cryptoslate.com/cardano-enters-ethiopia-enterprise-blockchain-atala/">Source</a>)</li>
+<li>Georgian Government (<a href="https://cointelegraph.com/news/georgian-govt-iohk-partner-to-develop-blockchain-in-education-ministry-services">Source</a>)</li>
+<li>Edinburgh University (<a href="https://www.coindesk.com/edinburgh-university-partners-with-iohk-on-blockchain-research-hub/">Source</a>)</li>
+</ol>
+<h3>Organizations Contributing to the Development of Cardano:</h3>
+<h2>1. IOHK</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-e761aee6229147d654c512acd78ec5b0e181f48f2ece74d52e66f38a5bcd5b7f.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-e761aee6229147d654c512acd78ec5b0e181f48f2ece74d52e66f38a5bcd5b7f.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-e761aee6229147d654c512acd78ec5b0e181f48f2ece74d52e66f38a5bcd5b7f.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-e761aee6229147d654c512acd78ec5b0e181f48f2ece74d52e66f38a5bcd5b7f.jpeg" alt="351665157-e761aee6229147d654c512acd78ec5b0e181f48f2ece74d52e66f38a5bcd5b7f.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/e761aee6229147d654c512acd78ec5b0e181f48f2ece74d52e66f38a5bcd5b7f.jpeg" /></p>
+<p>(<a href="https://iohk.io/en/about/">Source</a>)</p>
+<p>Input Output Hong Kong (IOHK) is a leading cryptocurrency research and development company that is contracted to work on the development of Cardano until 2020. The IOHK organization studies new tools and paradigms for cryptographic research and the architecture of Cardano. It is responsible for actively developing Cardano and completing all milestones on the Cardano roadmap. </p>
+<p><a href="https://iohk.io/en/">IOHK</a> was founded by Charles Hoskinson, who is also one of Cardano’s founders. The organization is committed to researching and developing peer-to-peer innovations to provide new financial services to the world. IOHK actively works on both Cardano (ADA)and Ethereum Classic (ETC).</p>
+<h2>2. Emurgo</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-d7701455a333413e8058e529f4d8584b5da9c3e85df7944f65d7653dcb39f336.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-d7701455a333413e8058e529f4d8584b5da9c3e85df7944f65d7653dcb39f336.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-d7701455a333413e8058e529f4d8584b5da9c3e85df7944f65d7653dcb39f336.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-d7701455a333413e8058e529f4d8584b5da9c3e85df7944f65d7653dcb39f336.jpeg" alt="351665157-d7701455a333413e8058e529f4d8584b5da9c3e85df7944f65d7653dcb39f336.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/d7701455a333413e8058e529f4d8584b5da9c3e85df7944f65d7653dcb39f336.jpeg" /></p>
+<p>(<a href="https://emurgo.io/en">Source</a>)</p>
+<p>Like IOHK, Emurgo is another key partner for Cardano that’s dedicated to developing, supporting, and growing Cardano’s decentralized blockchain ecosystem. Emurgo is an investment-focused organization that directly invests in Cardano-related startups and develops commercial partners interested in using blockchain technology.</p>
+<p><a href="https://emurgo.io/en">Emurgo</a> helps to drive the adoption of Cardano and adds value to ADA holders by building, investing in, and advising projects or organizations that adopt Cardano’s decentralized blockchain ecosystem. Emurgo employs more than 40 people across 7 countries and plays a critical role in the development and success of Cardano.</p>
+<h2>3. The Cardano Foundation</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-6456e201e4932336c89d2252c9944483cba8087d56dc129b1aa4571283585b09.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-6456e201e4932336c89d2252c9944483cba8087d56dc129b1aa4571283585b09.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-6456e201e4932336c89d2252c9944483cba8087d56dc129b1aa4571283585b09.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-6456e201e4932336c89d2252c9944483cba8087d56dc129b1aa4571283585b09.jpeg" alt="351665157-6456e201e4932336c89d2252c9944483cba8087d56dc129b1aa4571283585b09.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/6456e201e4932336c89d2252c9944483cba8087d56dc129b1aa4571283585b09.jpeg" /></p>
+<p>(<a href="https://cardanofoundation.org/en/">Source</a>)</p>
+<p>Like the IOHK and Emurgo partnerships, the Cardano Foundation is a separate entity from Cardano but is closely tied to the research, development, and adoption of Cardano. The foundation helps to support and grow Cardano’s decentralized blockchain ecosystem and has the following goals:</p>
+<ul>
+<li>Drive adoption for Cardano</li>
+<li>Shape legislation and commercial standards</li>
+<li>Grow the global Cardano community</li>
+<li>Ensure stakeholder accountability</li>
+<li>Facilitate Cardano partnerships</li>
+</ul>
+<p><a href="https://cardanofoundation.org/en/">The Cardano Foundation</a> is based in Switzerland and has the core responsibilities of helping, overseeing, and supervising the development of Cardano and its blockchain ecosystem.</p>
+<h3>Cardano Partnerships and Collaborations:</h3>
+<h2>1. IBM Research</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-8a6f61eb93367bae244780dfe79376f406dc56ea5381f660fdc4cddb4cd79478.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-8a6f61eb93367bae244780dfe79376f406dc56ea5381f660fdc4cddb4cd79478.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-8a6f61eb93367bae244780dfe79376f406dc56ea5381f660fdc4cddb4cd79478.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-8a6f61eb93367bae244780dfe79376f406dc56ea5381f660fdc4cddb4cd79478.jpeg" alt="351665157-8a6f61eb93367bae244780dfe79376f406dc56ea5381f660fdc4cddb4cd79478.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/8a6f61eb93367bae244780dfe79376f406dc56ea5381f660fdc4cddb4cd79478.jpeg" /></p>
+<p>(<a href="https://youtu.be/0z1ZQF2JeAc">Source</a>)</p>
+<p><strong>January 17, 2020: </strong>Charles Hoskinson revealed in a video that Cardano has been working on a software distribution project with the IBM Research team. No further details were provided.</p>
+<p><a href="https://www.research.ibm.com/">IBM Research</a> is the research arm of IBM, an American multinational technology company. IBM Research focuses on pioneering the most promising and disruptive technologies including the future of AI, blockchain, and quantum computing. IBM Research is one of the world’s largest and most influential corporate research labs.</p>
+<h2>2. PwC</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/2386933728-850e8104d393815701ff61b7c186dc1690857c572e47f7cda53e37b695531b15.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/1847167737-850e8104d393815701ff61b7c186dc1690857c572e47f7cda53e37b695531b15.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/2538204065-850e8104d393815701ff61b7c186dc1690857c572e47f7cda53e37b695531b15.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/2386933728-850e8104d393815701ff61b7c186dc1690857c572e47f7cda53e37b695531b15.png" alt="351665157-850e8104d393815701ff61b7c186dc1690857c572e47f7cda53e37b695531b15.png" width="381" height="289" data-zoom-src="https://cdn.publish0x.com/prod/fs/images/850e8104d393815701ff61b7c186dc1690857c572e47f7cda53e37b695531b15.png" /></p>
+<p>(<a href="https://finance.yahoo.com/news/cardano-announces-working-partnership-pwc-200049096.html">Source</a>)</p>
+<p><strong>January 27, 2020: </strong>Charles Hoskinson revealed in a Livestream that Cardano will be working with professional services network PriceWaterhouseCoopers (PwC) to generate a new commercial strategy. Hoskinson said that PwC will be consolidating research information from Cardano.</p>
+<p><a href="https://www.pwc.com/">PriceWaterhouseCoopers (PwC)</a> is a multinational professional services network of firms operating as partnerships under the PwC brand. The global network of firms delivers world-class assurance, tax, and consulting services to businesses. </p>
+<h2>3. New Balance</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-537daa151d706846e5bc1f87b4ec8b974c229b64b3de24bb243c0a49c13f4569.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-537daa151d706846e5bc1f87b4ec8b974c229b64b3de24bb243c0a49c13f4569.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-537daa151d706846e5bc1f87b4ec8b974c229b64b3de24bb243c0a49c13f4569.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-537daa151d706846e5bc1f87b4ec8b974c229b64b3de24bb243c0a49c13f4569.jpeg" alt="351665157-537daa151d706846e5bc1f87b4ec8b974c229b64b3de24bb243c0a49c13f4569.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/537daa151d706846e5bc1f87b4ec8b974c229b64b3de24bb243c0a49c13f4569.jpeg" /></p>
+<p>(<a href="https://www.coindesk.com/cardano-and-new-balance-will-team-up-to-stop-counterfeit-kicks">Source</a>)</p>
+<p>Cardano and New Balance have a strategic collaboration which resulted in the first commercial deployment of its blockchain – as retail customers can now log their purchases of athletic footwear on the Cardano blockchain. All goods that are sold by New Balance can now be digitally proven to be authentic.</p>
+<p><a href="https://www.newbalance.com/">New Balance</a> is an American brand athletic footwear and sportswear apparel company that was founded in 1906. New Balance shoes are sold across the globe and the company’s collaboration with Cardano is its first collaboration with blockchain technology.</p>
+<h2>4. COTI Network</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-2f2254cb346c5287d56b18bd28a0d7bd630797fc65c32eec5efd7f26ed7992af.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-2f2254cb346c5287d56b18bd28a0d7bd630797fc65c32eec5efd7f26ed7992af.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-2f2254cb346c5287d56b18bd28a0d7bd630797fc65c32eec5efd7f26ed7992af.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-2f2254cb346c5287d56b18bd28a0d7bd630797fc65c32eec5efd7f26ed7992af.jpeg" alt="351665157-2f2254cb346c5287d56b18bd28a0d7bd630797fc65c32eec5efd7f26ed7992af.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/2f2254cb346c5287d56b18bd28a0d7bd630797fc65c32eec5efd7f26ed7992af.jpeg" /></p>
+<p>(<a href="https://medium.com/paradigm-fund/cardano-collaboration-with-new-balance-and-partnership-with-coti-to-develop-an-ada-payment-gateway-54de76d31f0f">Source</a>)</p>
+<p><strong>October 31, 2019: </strong>Cardano has teamed up with COTI Network to offer an ADA payment processing solution for merchants. COTI Network’s ADA payment solution can be integrated into a website via an ADA Pay button or a QR-based point of sale (PoS) system and it will allow merchants to accept near-instant ADA payments that can be settled into 35 fiat currencies. </p>
+<p><a href="https://coti.io/">COTI Network</a> is an enterprise-grade fintech platform that provides seamless digital payment solutions for companies. COTI empowers organizations to build their own payment solution and digitize any currency to facilitate fast and inexpensive payments. </p>
+<h2>5. SIRIN LABS</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-9e8c438fd9f12b241692431f725f3b582558262aa540b6e9940c50c42176be78.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-9e8c438fd9f12b241692431f725f3b582558262aa540b6e9940c50c42176be78.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-9e8c438fd9f12b241692431f725f3b582558262aa540b6e9940c50c42176be78.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-9e8c438fd9f12b241692431f725f3b582558262aa540b6e9940c50c42176be78.jpeg" alt="351665157-9e8c438fd9f12b241692431f725f3b582558262aa540b6e9940c50c42176be78.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/9e8c438fd9f12b241692431f725f3b582558262aa540b6e9940c50c42176be78.jpeg" /></p>
+<p>(<a href="https://medium.com/@sirinlabs/sirin-labs-cardano-announce-strategic-partnership-61fc7fce6726">Source</a>)</p>
+<p><strong>February 14, 2018: </strong>Cardano and SIREN LABS entered into a strategic partnership that will see that the Cardano blockchain protocol is integrated into the FINNEY smartphone and SIRIN OS. As well, Cardano’s ADA cryptocurrency will be available within the FINNEY cold storage wallet and  SIREN LABS ecosystem.</p>
+<p><a href="https://sirinlabs.com/">SIREN LABS</a> is a blockchain technology company that developed a premium blockchain smartphone, FINNEY, which comes with P2P resource sharing, a built-in cold storage crypto wallet, and distributed ledger consensus. SIREN LABS also developed its own operating system (OS) dedicated to securely storing and managing cryptocurrency in a mobile environment.</p>
+<h2>6. Ellipal Hardware</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-ed85105202073ffdb6f613b94aafcabcfb91bfa52b0df118d0db78008a475e61.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-ed85105202073ffdb6f613b94aafcabcfb91bfa52b0df118d0db78008a475e61.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-ed85105202073ffdb6f613b94aafcabcfb91bfa52b0df118d0db78008a475e61.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-ed85105202073ffdb6f613b94aafcabcfb91bfa52b0df118d0db78008a475e61.jpeg" alt="351665157-ed85105202073ffdb6f613b94aafcabcfb91bfa52b0df118d0db78008a475e61.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/ed85105202073ffdb6f613b94aafcabcfb91bfa52b0df118d0db78008a475e61.jpeg" /></p>
+<p>(<a href="https://www.cryptonewsz.com/cardano-price-analysis-cardano-ada-switches-to-high-security-mobile-wallet-for-growth/30367/">Source</a>)</p>
+<p><strong>July 3, 2019: </strong>Cardano has partnered with Ellipal Hardware for the secure air-gapped hardware wallet with mobile support of the ADA cryptocurrency. This was a big partnership at the time because there were few hardware and mobile wallets supporting the ADA cryptocurrency.</p>
+<p><a href="https://www.ellipal.com/">Ellipal Hardware</a> is a cryptocurrency wallet company that provides a safe and convenient cold storage wallet solution that works seamlessly with your mobile phone. Ellipal’s wallet is air-gapped which means it’s completely connection free with protection against all remote attacks.</p>
+<h2>7. Konfidio</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-381c249de39f7c0a69b9889bce642c2f63689c2b24513302163383c3dc674454.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-381c249de39f7c0a69b9889bce642c2f63689c2b24513302163383c3dc674454.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-381c249de39f7c0a69b9889bce642c2f63689c2b24513302163383c3dc674454.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-381c249de39f7c0a69b9889bce642c2f63689c2b24513302163383c3dc674454.jpeg" alt="351665157-381c249de39f7c0a69b9889bce642c2f63689c2b24513302163383c3dc674454.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/381c249de39f7c0a69b9889bce642c2f63689c2b24513302163383c3dc674454.jpeg" /></p>
+<p>(<a href="https://cardanofoundation.org/en/news/cardano-foundation-and-konfidio-ventures-to-drive-blockchain-business-model">Source</a>)</p>
+<p><strong>August 15, 2019: </strong>Cardano and Konfidio have entered into a strategic partnership to drive blockchain business model platform adoption. Both entities will try to accelerate blockchain models with corporations, small and medium enterprises (SMEs), and governments. The primary purpose of this partnership is to enable real-world business cases on the Cardano blockchain.</p>
+<p><a href="https://konfidio.com/">Konfidio</a> is a company builder and venture accelerator that focuses on leveraging blockchain technology to build decentralized applications and business models for both permissioned and permissionless distributed systems. The company has a focus on enterprise-grade blockchain businesses and applications.</p>
+<h2>8. Algoz</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-70ecda526e180e1b3f3326d4c25ff9f5e8ea59bdc9387cf183929cf4d4a12c44.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-70ecda526e180e1b3f3326d4c25ff9f5e8ea59bdc9387cf183929cf4d4a12c44.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-70ecda526e180e1b3f3326d4c25ff9f5e8ea59bdc9387cf183929cf4d4a12c44.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-70ecda526e180e1b3f3326d4c25ff9f5e8ea59bdc9387cf183929cf4d4a12c44.jpeg" alt="351665157-70ecda526e180e1b3f3326d4c25ff9f5e8ea59bdc9387cf183929cf4d4a12c44.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/70ecda526e180e1b3f3326d4c25ff9f5e8ea59bdc9387cf183929cf4d4a12c44.jpeg" /></p>
+<p>(<a href="https://www.financemagnates.com/cryptocurrency/news/algoz-to-provide-liquidity-services-to-cardanos-ada-token/">Source</a>)</p>
+<p><strong>June 26, 2019: </strong>Cardano has partnered with Algoz to provide liquidity services and trading solutions for Cardano’s ADA token. The partnership has increased ADA’s liquidity and its accessibility. </p>
+<p><a href="https://www.algoz.io/">Algoz</a> is a Fingenom group company that provides projects, exchanges, and individuals with liquidity solutions and trading services for crypto assets. Algoz’s mission is to bridge the gap between the established algorithmic trading world and the nascent crypto economy, to make it more progressive, reliable and accessible.</p>
+<h2>9. Metaps Plus</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-0889deab281cf6807bd9420e71727fe07ac0bb234d9b69bb7b7bcf2d66700155.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-0889deab281cf6807bd9420e71727fe07ac0bb234d9b69bb7b7bcf2d66700155.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-0889deab281cf6807bd9420e71727fe07ac0bb234d9b69bb7b7bcf2d66700155.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-0889deab281cf6807bd9420e71727fe07ac0bb234d9b69bb7b7bcf2d66700155.jpeg" alt="351665157-0889deab281cf6807bd9420e71727fe07ac0bb234d9b69bb7b7bcf2d66700155.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/0889deab281cf6807bd9420e71727fe07ac0bb234d9b69bb7b7bcf2d66700155.jpeg" /></p>
+<p>(<a href="https://globalcoinreport.com/cardano-ada-partners-with-major-south-korean-payment-platform-metaps-plus/">Source</a>)</p>
+<p><strong>May 10, 2018: </strong>Cardano secured a major partnership with Metaps Plus to integrate its ADA cryptocurrency into the MeTaps Plus mobile payments platform. With this partnership, ADA can now be used in over 33,000 offline franchise stores in the Korean market. </p>
+<p><a href="http://www.metapsplus.com/">Metaps Plus</a> is one of the largest mobile payment platforms in South Korea. The Metaps Plus app services 300,000 daily active users, achieves 100 million app downloads per year and is partnered with nearly 40,000 merchants. </p>
+<h2>10. Z/Yen Group</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-bcf99d517c5217d0cc6787ada3841473a99d93ae4a039b0297a1b1ac078dac33.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-bcf99d517c5217d0cc6787ada3841473a99d93ae4a039b0297a1b1ac078dac33.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-bcf99d517c5217d0cc6787ada3841473a99d93ae4a039b0297a1b1ac078dac33.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-bcf99d517c5217d0cc6787ada3841473a99d93ae4a039b0297a1b1ac078dac33.png" alt="351665157-bcf99d517c5217d0cc6787ada3841473a99d93ae4a039b0297a1b1ac078dac33.png" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/bcf99d517c5217d0cc6787ada3841473a99d93ae4a039b0297a1b1ac078dac33.png" /></p>
+<p>(<a href="https://ibsintelligence.com/ibs-journal/cardano-foundation-partners-zyen-groups-distributed-futures-research-blockchain-ai/">Source</a>)</p>
+<p><strong>December 5, 2017: </strong>Cardano partnered with Z/Yen Group’s Distributed Futures practice as a research partner on blockchain applications and to help the development of the Cardano Protocol and its ADA cryptocurrency. The partnership also led to the launch of proof of concept projects and pilot testing.</p>
+<p><a href="https://www.zyen.com/">Z/Yen Group</a> is a leading commercial think tank based in the city of London. The group helps its client organizations make better choices that enhance their reward, reduce their risk, and increase certainty. The Z/Yen staff consists of 25 full-time staff and over 300 associate experts.</p>
+<h2>11. Priviledge</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-e354279ba996c1a394ff72bf155c2c1a645215a627eb2d9284001efdb6a297c0.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-e354279ba996c1a394ff72bf155c2c1a645215a627eb2d9284001efdb6a297c0.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-e354279ba996c1a394ff72bf155c2c1a645215a627eb2d9284001efdb6a297c0.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-e354279ba996c1a394ff72bf155c2c1a645215a627eb2d9284001efdb6a297c0.jpeg" alt="351665157-e354279ba996c1a394ff72bf155c2c1a645215a627eb2d9284001efdb6a297c0.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/e354279ba996c1a394ff72bf155c2c1a645215a627eb2d9284001efdb6a297c0.jpeg" /></p>
+<p>(<a href="https://www.crypto-news-flash.com/cardano-announces-next-big-partnership-that-pushes-adoption/">Source</a>)</p>
+<p><strong>January 24, 2020: </strong>Cardano has joined a consortium with the European Union called Priviledge to study decentralized software updates. By joining this consortium, Cardano will conduct and publish research on DLT. </p>
+<p><a href="https://priviledge-project.eu/consortium">Priviledge Consortium</a> focuses on innovative solutions and the development of distributed ledger technology (DLT). The consortium includes members from all fields including scientific universities and companies from the sector such as IBM or GuardTime. </p>
+<h2>12. ScanTrust</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-0b0bacc6a4ac39b39d086071ee25cd4fcefc4574335913e925a0ccd748a3467b.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-0b0bacc6a4ac39b39d086071ee25cd4fcefc4574335913e925a0ccd748a3467b.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-0b0bacc6a4ac39b39d086071ee25cd4fcefc4574335913e925a0ccd748a3467b.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-0b0bacc6a4ac39b39d086071ee25cd4fcefc4574335913e925a0ccd748a3467b.jpeg" alt="351665157-0b0bacc6a4ac39b39d086071ee25cd4fcefc4574335913e925a0ccd748a3467b.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/0b0bacc6a4ac39b39d086071ee25cd4fcefc4574335913e925a0ccd748a3467b.jpeg" /></p>
+<p>(<a href="https://www.altcoinbuzz.io/cryptocurrency-news/partnerships/cardano-partners-with-scantrust/">Source</a>)</p>
+<p><strong>January 21, 2020: </strong>Cardano accepted an offer to implement a Proof-of-Concept integration with ScanTrust. Together, Cardano and ScanTrust will co-develop “Cardano Connector”, which is a blockchain-enabled product provenance and authenticity tool.</p>
+<p><a href="https://www.scantrust.com/">ScanTrust</a> is a smart packaging services company that digitizes a product's supply chain by associating physical products with an online identity. ScanTrust enables companies to actively protect their brand, become supply chain aware, and drive consumer engagement. </p>
+<h2>13. Runtime Verification</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-49b919022ba8665afd501629c015afdfe0c0b7a9b1578114631e1da4f663a2cb.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-49b919022ba8665afd501629c015afdfe0c0b7a9b1578114631e1da4f663a2cb.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-49b919022ba8665afd501629c015afdfe0c0b7a9b1578114631e1da4f663a2cb.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-49b919022ba8665afd501629c015afdfe0c0b7a9b1578114631e1da4f663a2cb.jpeg" alt="351665157-49b919022ba8665afd501629c015afdfe0c0b7a9b1578114631e1da4f663a2cb.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/49b919022ba8665afd501629c015afdfe0c0b7a9b1578114631e1da4f663a2cb.jpeg" /></p>
+<p>(<a href="https://cardanofoundation.org/en/news/designing-a-new-virtual-machine-and-universal-language-framework">Source</a>)</p>
+<p><strong>December 18, 2017: </strong>Cardano offered Runtime Verification a research and development contract to design a next-generation virtual machine and a universal language framework to be used for future blockchain technologies. </p>
+<p><a href="https://runtimeverification.com/">Runtime Verification</a> is a University of Illinois start-up founded by computer science, Professor Grigore Rosu. The startup designs formal models for high-value application domains and then uses these models to develop domain-specific products and services.</p>
+<h2>14. South Korea Government-Approved Trade Associations</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-a545aa807dd4f3e5e4849c0b0daf50da9277d08fee032650515e7c86c0892317.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-a545aa807dd4f3e5e4849c0b0daf50da9277d08fee032650515e7c86c0892317.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-a545aa807dd4f3e5e4849c0b0daf50da9277d08fee032650515e7c86c0892317.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-a545aa807dd4f3e5e4849c0b0daf50da9277d08fee032650515e7c86c0892317.jpeg" alt="351665157-a545aa807dd4f3e5e4849c0b0daf50da9277d08fee032650515e7c86c0892317.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/a545aa807dd4f3e5e4849c0b0daf50da9277d08fee032650515e7c86c0892317.jpeg" /></p>
+<p>(<a href="https://www.prnewswire.com/news-releases/emurgo-signs-mous-with-south-korean-government-approved-trade-associations-to-further-drive-cardano-adoption-300903808.html">Source</a>)</p>
+<p><strong>August 20, 2019: </strong>Cardano has signed a memorandum of understanding with two government-approved trade associations in South Korea – Korea Blockchain Contents Association (KBCCA) &amp; Korea Mobile Game Association (KMGA). The partnerships will focus on implementing Cardano for Korean digital content and mobile gaming.</p>
+<p>The Korea Blockchain Contents Association (KBCCA) and the Korea Mobile Game Association (KMGA) are both approved by the South Korean Ministry of Science and ICT. South Korea is the fourth-largest mobile gaming market in the world and also has the highest smartphone penetration rate in the world. </p>
+<h2>15. Ethiopian Government</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-64c8495e4673b0b4e6147b561853e8a9d0fe6af389ca886dd29b8be211159336.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-64c8495e4673b0b4e6147b561853e8a9d0fe6af389ca886dd29b8be211159336.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-64c8495e4673b0b4e6147b561853e8a9d0fe6af389ca886dd29b8be211159336.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-64c8495e4673b0b4e6147b561853e8a9d0fe6af389ca886dd29b8be211159336.jpeg" alt="351665157-64c8495e4673b0b4e6147b561853e8a9d0fe6af389ca886dd29b8be211159336.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/64c8495e4673b0b4e6147b561853e8a9d0fe6af389ca886dd29b8be211159336.jpeg" /></p>
+<p>(<a href="https://cryptoslate.com/cardano-enters-ethiopia-enterprise-blockchain-atala/">Source</a>)</p>
+<p><strong>April 30, 2019: </strong>Cardano’s IOHK is working with the Ethiopian government to help them build a new digital payment system for the nation. Cardano will do this through its Atala project, which is an enterprise blockchain solution that helps governments in developing nations build systems for voting, property registration, and supply chain.</p>
+<p>The Ethiopian government is the first government to be implementing Cardano’s Atala blockchain framework for digital payments and also plans to combine the payments system with an identity card.</p>
+<h2>16. Georgian Government</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-9dfc2c7c84c9cc91c6c93d210edd5ed778ddf0bc111b271108ddedf3e3b0af83.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-9dfc2c7c84c9cc91c6c93d210edd5ed778ddf0bc111b271108ddedf3e3b0af83.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-9dfc2c7c84c9cc91c6c93d210edd5ed778ddf0bc111b271108ddedf3e3b0af83.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-9dfc2c7c84c9cc91c6c93d210edd5ed778ddf0bc111b271108ddedf3e3b0af83.jpeg" alt="351665157-9dfc2c7c84c9cc91c6c93d210edd5ed778ddf0bc111b271108ddedf3e3b0af83.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/9dfc2c7c84c9cc91c6c93d210edd5ed778ddf0bc111b271108ddedf3e3b0af83.jpeg" /></p>
+<p>(<a href="https://cointelegraph.com/news/georgian-govt-iohk-partner-to-develop-blockchain-in-education-ministry-services">Source</a>)</p>
+<p><strong>June 17, 2019: </strong>Cardano’s IOHK has secured a partnership with the government of Georgia who signed a memorandum of understanding (MoU) with IOHK. The MoU will see that IOHK implements Cardano blockchain-enabled projects across business, education and government services.</p>
+<p>Cardano and the Georgian Ministry of Education and Science will collaborate on developing blockchain projects that support fintech businesses in the blockchain and digital asset sector.</p>
+<h2>17. Edinburgh University</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-c0c6de4623abf06de4a271d24909d6be181d75c332bb958bb9559af175b676d1.jpeg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2323943622-c0c6de4623abf06de4a271d24909d6be181d75c332bb958bb9559af175b676d1.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3388675994-c0c6de4623abf06de4a271d24909d6be181d75c332bb958bb9559af175b676d1.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/4004191306-c0c6de4623abf06de4a271d24909d6be181d75c332bb958bb9559af175b676d1.jpeg" alt="351665157-c0c6de4623abf06de4a271d24909d6be181d75c332bb958bb9559af175b676d1.jpeg" width="710"  data-zoom-src="https://cdn.publish0x.com/prod/fs/images/c0c6de4623abf06de4a271d24909d6be181d75c332bb958bb9559af175b676d1.jpeg" /></p>
+<p>(<a href="https://www.coindesk.com/edinburgh-university-partners-with-iohk-on-blockchain-research-hub/">Source</a>)</p>
+<p><strong>February 24, 2017: </strong>Cardano’s IOHK partnered with Scotland’s University of Edinburgh on a new research lab dedicated to blockchain technology. The partnership will see that undergraduates and Ph.D. students conduct a range of blockchain-related research projects.</p>
+<p><a href="https://www.ed.ac.uk/">The University of Edinburgh</a> is the sixth oldest university in the English-speaking world and is one of Scotland’s ancient universities. The university consists of 5 main campuses and is considered to be one of the world’s top universities. </p>
+<p><em>Hope you enjoyed that read :) Let me know if I have missed any partnerships or collaborations in the comment section below.</em></p>
+            </div>
+
+            
+            <div class="mt-3 mb-3">
+                                    <a class="btn btn-secondary btn-tag" href="/tag/cryptocurrency">
+                        Cryptocurrency
+                    </a>
+                                    <a class="btn btn-secondary btn-tag" href="/tag/blockchain">
+                        Blockchain
+                    </a>
+                                    <a class="btn btn-secondary btn-tag" href="/tag/cardano">
+                        Cardano (ADA)
+                    </a>
+                                    <a class="btn btn-secondary btn-tag" href="/tag/crypto-investment-teaavje">
+                        crypto investment
+                    </a>
+                            </div>
+
+
+            <div class="vote mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="h5 text-center">
+    How do you rate this article?
+</p>
+
+<div class="row">
+
+    
+    
+        <div class="col-6 text-right">
+            <span class="btn text-secondary" data-toggle="modal" data-target="#joinModal">
+                <i class="fa fa-2x fa-thumbs-up fa-outline"></i><br />
+                <span class="badge badge-pill badge-secondary">121</span>
+            </span>
+        </div>
+
+        <div class="col-6">
+            <span class="btn text-secondary" data-toggle="modal" data-target="#joinModal">
+                <i class="fa fa-2x fa-thumbs-down fa-flip-horizontal"></i><br />
+                <span class="badge badge-pill badge-secondary">0</span>
+            </span>
+        </div>
+
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="row summary">
+        <div class="col-lg-8 offset-lg-2">
+            <hr/>
+            <div class="row">
+    <div class="col-md-6 col-12">
+        <div class="row">
+
+            <div class="col-3">
+                <img class="img-fluid rounded-circle lazyload bg-light" src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2250556940-50ea32e509c7cd49747e91a4385d53319610ab03085e7a846ed5295e38966b6c.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3359023426-50ea32e509c7cd49747e91a4385d53319610ab03085e7a846ed5295e38966b6c.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-50ea32e509c7cd49747e91a4385d53319610ab03085e7a846ed5295e38966b6c.jpeg" alt="list3r" width="84" height="84"  />
+            </div>
+
+        	<div class="col-9">
+
+        		<a href="/@list3r">
+        			list3r
+        		</a>
+
+                
+
+        		<p class="about">
+        		    Show me what you&#039;ve got.
+        	    </p>
+
+                
+        	</div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-12">
+
+        <hr class="d-sm-block d-md-none" />
+
+                    <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid rounded lazyload bg-primary" src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2250556940-46e727054242cfa188a820e01230d6d552cf6850c227284854f793aea8020949.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3359023426-46e727054242cfa188a820e01230d6d552cf6850c227284854f793aea8020949.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-46e727054242cfa188a820e01230d6d552cf6850c227284854f793aea8020949.jpeg" alt="WordStock" width="84" height="84"  />
+                </div>
+
+            	<div class="col-9">
+
+            		<a class="wrap-text" href="/wordstock">
+            			WordStock
+            		</a>
+
+            		<p class="about">
+            			It&#039;s all about the moon, isn&#039;t it? 
+Also, register at publish0x with my link if you like my content: https://www.publish0x.com/?a=K9b64EneEv
+            		</p>
+            	</div>
+            </div>
+        
+    </div>
+
+</div>
+        </div>
+    </div>
+
+
+            <div class="row post">
+            <div class="col-lg-8 offset-lg-2 mt-3">
+                <div class="row tipbox">
+    <div class="col-lg-12 my-auto">
+    	<div class="row">
+    		<div class="col-lg-3 my-auto">
+    			<img class="img-fluid" src="/images/logo-claim-2.png?id=095df4e3744ed6020cbd"/>
+    		</div>
+
+    		<div class="col-lg-6 my-auto">
+    			<p class="p-0 m-0">
+        			Send a $0.01 microtip in crypto to the author,
+        			and earn yourself as you read!
+    			</p>
+    			<input type="range"
+    				id="tipslider"
+    				class="custom-range"
+    				name="split"
+    				value="80"
+    				min="20"
+    				max="100"
+    				step="1"/>
+    			<b><span class="toauthor">20</span>% to author / <span class="tome">80</span>% to me.</b> <br />
+    			We pay the tips from our rewards pool.
+    		</div>
+
+    		<div class="col-lg-3 pb-3 pt-3 my-auto">
+          <button class="btn btn-info btn-claim"  data-toggle="modal" data-target="#joinModal">
+            <i class="fas fa-star"></i> TIP
+          </button>
+    		</div>
+    	</div>
+	</div>
+</div>
+
+            </div>
+        </div>
+
+		<div class="row post">
+			<div class="col-12">
+				<div class="pb-2 pt-2 text-center">
+        <!-- Coinzilla Banner 728x90 -->
+        <script async src="https://coinzillatag.com/lib/display.js"></script>
+        <div class="coinzilla" data-zone="C-5635d421ea76d99f214"></div>
+        <script>
+            window.coinzilla_display = window.coinzilla_display || [];
+            var c_display_preferences = {};
+            c_display_preferences.zone = "5635d421ea76d99f214";
+            c_display_preferences.width = "728";
+            c_display_preferences.height = "90";
+            coinzilla_display.push(c_display_preferences);
+        </script>
+    </div>
+			</div>
+		</div>
+
+                    <div class="row post">
+                <div class="col-lg-8 offset-lg-2 mt-3">
+                    <div class="related-posts">
+    <div class="row">
+                    <div class="col-sm-4 mt-3">
+            	<div class="card h-100">
+            		<div class="card-body h-100 text-left">
+            			<a href="/bitcoin-price-drop-what-just-happened/wisdom-from-steve-jobs-to-satoshi-nakamoto-xrnpexo" title="Wisdom from Steve Jobs to Satoshi Nakamoto">
+            				<img class="img-fluid w-100 img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4152688123-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/268113530-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg" alt="Wisdom from Steve Jobs to Satoshi Nakamoto" width="340" height="191"  />
+            			</a>
+            			<a href="/bitcoin-price-drop-what-just-happened/wisdom-from-steve-jobs-to-satoshi-nakamoto-xrnpexo" title="Wisdom from Steve Jobs to Satoshi Nakamoto" class="m-0">
+                            Wisdom from Steve Jobs to Satoshi Nakamoto
+            			</a>
+            		</div>
+            		            			<div class="card-footer row m-0 mt-2">
+            				<div class="col-2 p-0">
+            					<img class="img-fluid lazyload bg-secondary" src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/339502131-21cacaea1befd683ce634a81628b5e6590c0abb9fa15f22fab6c749634f71562.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/2533658452-21cacaea1befd683ce634a81628b5e6590c0abb9fa15f22fab6c749634f71562.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-21cacaea1befd683ce634a81628b5e6590c0abb9fa15f22fab6c749634f71562.png" alt="xuanling11" width="200" height="200"  />
+            				</div>
+            				<div class="col-10">
+            					<p class="m-0 d-flex">
+            						<span class="text-ellipsis">
+            						    <a href="/@xuanling11-" title="xuanling11">
+            							    xuanling11
+            						    </a>
+            					    </span>
+            					</p>
+            					<p class="m-0">
+            						<small>11 hours ago</small><br />
+            						<small>7 minute read</small>
+            					</p>
+            				</div>
+            			</div>
+            		            	</div>
+            </div>
+                    <div class="col-sm-4 mt-3">
+            	<div class="card h-100">
+            		<div class="card-body h-100 text-left">
+            			<a href="/superumans/superumans-13-ap-wine-tokenomics-and-uma-tools-that-may-help-xooojod" title="SuperUMAns #13: AP Wine Tokenomics and UMA tools that may help">
+            				<img class="img-fluid w-100 img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-0c0c143085530cc5fc3bf3b160dfd0c80446a9327a8e34cdba726ba8c9223824.jpg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4152688123-0c0c143085530cc5fc3bf3b160dfd0c80446a9327a8e34cdba726ba8c9223824.jpg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/268113530-0c0c143085530cc5fc3bf3b160dfd0c80446a9327a8e34cdba726ba8c9223824.jpg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-0c0c143085530cc5fc3bf3b160dfd0c80446a9327a8e34cdba726ba8c9223824.jpg" alt="SuperUMAns #13: AP Wine Tokenomics and UMA tools that may help" width="340" height="191"  />
+            			</a>
+            			<a href="/superumans/superumans-13-ap-wine-tokenomics-and-uma-tools-that-may-help-xooojod" title="SuperUMAns #13: AP Wine Tokenomics and UMA tools that may help" class="m-0">
+                            SuperUMAns #13: AP Wine Tokenomics and UMA tools that may help
+            			</a>
+            		</div>
+            		            			<div class="card-footer row m-0 mt-2">
+            				<div class="col-2 p-0">
+            					<img class="img-fluid lazyload bg-primary" src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/339502131-c7dd934c034f129f0033a3bef522286c44bdf34e45cae71e067f18d308ae5496.jpg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/2533658452-c7dd934c034f129f0033a3bef522286c44bdf34e45cae71e067f18d308ae5496.jpg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-c7dd934c034f129f0033a3bef522286c44bdf34e45cae71e067f18d308ae5496.jpg" alt="PVMihalache" width="200" height="200"  />
+            				</div>
+            				<div class="col-10">
+            					<p class="m-0 d-flex">
+            						<span class="text-ellipsis">
+            						    <a href="/@PVMihalache" title="PVMihalache">
+            							    PVMihalache
+            						    </a>
+            					    </span>
+            					</p>
+            					<p class="m-0">
+            						<small>27 Sep 2021</small><br />
+            						<small>6 minute read</small>
+            					</p>
+            				</div>
+            			</div>
+            		            	</div>
+            </div>
+                    <div class="col-sm-4 mt-3">
+            	<div class="card h-100">
+            		<div class="card-body h-100 text-left">
+            			<a href="/interesting-crypto-projects/bitcoin-btc-fails-to-move-above-44-dollars-000-cents-resista-xmmgwrv" title="Bitcoin (BTC) Fails to Move Above $44,000 Resistance - (TA - 28th of September)">
+            				<img class="img-fluid w-100 img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-a57b351cb56c96e7b0287c852dffd3dbbf1a46669afff81d585e66fc82bf13f8.jpg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4152688123-a57b351cb56c96e7b0287c852dffd3dbbf1a46669afff81d585e66fc82bf13f8.jpg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/268113530-a57b351cb56c96e7b0287c852dffd3dbbf1a46669afff81d585e66fc82bf13f8.jpg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-a57b351cb56c96e7b0287c852dffd3dbbf1a46669afff81d585e66fc82bf13f8.jpg" alt="Bitcoin (BTC) Fails to Move Above $44,000 Resistance - (TA - 28th of September)" width="340" height="191"  />
+            			</a>
+            			<a href="/interesting-crypto-projects/bitcoin-btc-fails-to-move-above-44-dollars-000-cents-resista-xmmgwrv" title="Bitcoin (BTC) Fails to Move Above $44,000 Resistance - (TA - 28th of September)" class="m-0">
+                            Bitcoin (BTC) Fails to Move Above $44,000 Resistance - (TA - 28th of September)
+            			</a>
+            		</div>
+            		            			<div class="card-footer row m-0 mt-2">
+            				<div class="col-2 p-0">
+            					<img class="img-fluid lazyload bg-white" src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/339502131-de669b43c2499c1c2490ca71d163831248a169743aa1cd7a1b3bc19bb3b8b252.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/2533658452-de669b43c2499c1c2490ca71d163831248a169743aa1cd7a1b3bc19bb3b8b252.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-de669b43c2499c1c2490ca71d163831248a169743aa1cd7a1b3bc19bb3b8b252.jpeg" alt="pheonixdown-dee" width="200" height="200"  />
+            				</div>
+            				<div class="col-10">
+            					<p class="m-0 d-flex">
+            						<span class="text-ellipsis">
+            						    <a href="/@pheonixdown-dee" title="pheonixdown-dee">
+            							    pheonixdown-dee
+            						    </a>
+            					    </span>
+            					</p>
+            					<p class="m-0">
+            						<small>2 hours ago</small><br />
+            						<small>2 minute read</small>
+            					</p>
+            				</div>
+            			</div>
+            		            	</div>
+            </div>
+        	</div>
+</div>
+                </div>
+            </div>
+                
+    
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2 mt-5">
+                            <comment
+                        :guest=true
+                        :max-depth=10
+                        :post-id=&quot;ngGR1NQD4jvXM5Bd&quot;>
+                </comment>
+                    </div>
+    </div>
+
+    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="h2">
+                                Get FREE CRYPTO <br/> Just for Tipping this Article.
+                            </p>
+                            <p>
+                                Register now at Publish0x to claim your <b>$$$</b>. <br/>
+                                It only takes 15 seconds and it's free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="/login" class="btn btn-info">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="/register" class="btn btn-info">
+                        <i class="fas fa-user-plus"></i> Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center pt-1" id="totop">
+    <i class="fas fa-arrow-up fa-lg"></i>
+</div>
+
+
+            </div>
+        </main>
+        <footer id="footer">
+    <div class="container">
+        <div class="row">
+        	<div class="col-lg-6">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/page/how-it-works">How it Works</a></li>
+                    <li class="list-inline-item"><a href="/page/frequently-asked-questions">FAQ</a></li>
+                    <li class="list-inline-item"><a href="/ambassadors">Ambassador Program</a></li>
+                    <li class="list-inline-item"><a href="/page/terms" title="Terms and Conditions">Terms</a></li>
+                    <li class="list-inline-item"><a href="/page/privacy" title="Privacy Policy">Privacy</a></li>
+					<li class="list-inline-item"><a href="/stats" title="Stats">Stats</a></li>
+                </ul>
+        	</div>
+
+        	<div class="col-lg-6 align-bottom">
+        		<div class="social d-flex justify-content-around justify-content-md-end">
+        			<a href="https://www.facebook.com/publish0x/" aria-label="Publish0x Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook "></i></a>
+        			<a href="https://twitter.com/publish0x" aria-label="Publish0x Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+        			<a href="https://t.me/publish0x" aria-label="Publish0x Telegram" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+        			<a href="https://reddit.com/r/publish0x" aria-label="Publish0x Reddit" target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a>
+        			<a href="https://instagram.com/publish0x/" aria-label="Publish0x Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        			<a href="https://www.youtube.com/c/Publish0x" aria-label="Publish0x Youtube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        		</div>
+
+                <p class="recaptcha mt-4">
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy">Privacy Policy</a>
+                    and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                </p>
+
+                <p class="text-right">Copyright © 2021 - All rights reserved.</p>
+
+        	</div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+        <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+    <div class="col-12" style="background-color: #00a8ec">
+        <h1 class="text-center text-white pt-3 pb-3">
+            Earn Crypto for Publishing and Reading
+        </h1>
+    </div>
+</div>
+
+<h2 class="text-center title">Join Now - Registration is Free and Instant</h2>
+
+<div class="row justify-content-center mb-2">
+			<div class="col-12 col-md text-center mb-1">
+			<a href="/oauth/facebook/redirect" class="btn btn-block btn-primary social-login" rel="nofollow">
+				<i class="fab fa-facebook-f"></i> Sign Up with Facebook
+			</a>
+		</div>
+	
+			<div class="col-12 col-md text-center mb-1">
+			<a href="/oauth/twitter/redirect" class="btn btn-block btn-info social-login" rel="nofollow">
+				<i class="fab fa-twitter"></i> Sign Up with Twitter
+			</a>
+		</div>
+	
+	</div>
+<p class="text-center">
+    <a href="/register">
+        <i class="fas fa-arrow-right"></i> Alternatively sign up with email
+    </a>
+</p>
+
+<hr />
+
+<p class="text-center">
+    Already have an account? <a href="https://www.publish0x.com/login">Login</a>
+</p>                </div>
+            </div>
+        </div>
+    </div>
+    
+        <script type="text/javascript" src="/js/emojione.min.js?id=ef5ee5dd039a2cebdbad"></script>
+    <script src="/js/medium-zoom.min.js?id=ea523c1dc9f3c70d2bf8"></script>
+    <script type="text/javascript" src="/js/manifest.js?id=d91051ea7d0c9bd1981e"></script>
+    <script type="text/javascript" src="/js/jquery.min.js?id=8fb8fee4fcc3cc86ff6c"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js?id=f81d0a1705048649befc"></script>
+    <script type="text/javascript" src="/js/vendor.js?id=7d420e142845b5a76d86"></script>
+    <script type="text/javascript" src="/js/app.js?id=e68bf635e1ae1569298e"></script>
+    <script type="text/javascript" src="/js/current.js?id=2e1152ee7b9a30fd2427"></script>
+    <script>
+        (function(d) {
+            const css = d.createElement('link');
+            css.href = '/css/fontawesome.css?id=04e137648424ef407e8d';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            d.getElementsByTagName('head')[0].appendChild(css);
+        })(document);
+    </script>
+    <script src="/js/layout.js?id=a2d7c72552cbdaa7dee6"></script>
+
+            <script>
+            const appId = "e3be072b-6d48-4702-8a51-abbe84addc53";
+        </script>
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+        <script src="/js/layoutOneSignal.js?id=37d987c3f11a1175b2c3"></script>
+    
+    <script>
+    $(document).ready(function() {
+
+        /* Get default split from config */
+        toauthor = 80;
+        tome = 100 - toauthor;
+        $(".toauthor").html(toauthor);
+        $(".tome").html(tome);
+
+		$("#tipslider").on("input change", function() {
+			toauthor = this.value;
+			tome = 100 - toauthor;
+			$(".toauthor").html(toauthor);
+            $(".tome").html(tome);
+		});
+
+    });
+</script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('#totop').fadeIn();
+            } else {
+                $('#totop').fadeOut();
+            }
+        });
+
+        $('#totop').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+
+      });
+    </script>
+        <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+          },
+        });
+        $('#removeNotification').click(function(e) {
+          e.preventDefault();
+          let messageId = $(this).attr('message-id');
+          $.ajax({
+            type: 'POST',
+            url: '/admin/messages/post/remove',
+            data: {post_id:66743, messageId: messageId},
+            success: function(data) {
+              $('#postNotification').alert('close');
+            },
+          });
+        });
+      });
+    </script>
+    <script>
+      let authorTrusted = 0;
+    </script>
+    <script src="/js/reframe.min.js?id=ff95c22c199b68cfd30b"></script>
+    <script src="/js/post.js?id=c9bc012a4ccae1273d95"></script>
+    <script src="/js/prism.js?id=d56137217007980cc365"></script>
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"list3r"},"dateModified":"2020-05-18T08:52:05+00:00","datePublished":"2020-05-18T08:52:05+00:00","headline":"Full List of Cardano (ADA) Partnerships and Collaborations (2020)","image":"https:\/\/cdn.publish0x.com\/prod\/fs\/images\/3dfe966a0df781b294088a0e099b0b8310925d08d385bbbd223f90ee84fbb9ce.jpeg","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.publish0x.com\/wordstock\/full-list-of-cardano-ada-partnerships-and-collaborations-202-xpgvdj"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https:\/\/cdn.publish0x.com\/prod\/fs\/cachedimages\/3514176606-f3cb156779489da8e12ce1d074f7d692b4c12b8787c1245563ee7f688f01109a.png"},"name":"Publish0x"},"url":"https:\/\/www.publish0x.com\/wordstock\/full-list-of-cardano-ada-partnerships-and-collaborations-202-xpgvdj"}</script>
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"WordStock","item":"https:\/\/www.publish0x.com\/wordstock"},{"@type":"ListItem","position":2,"name":"Full List of Cardano (ADA) Partnerships and Collaborations (2020)","item":"https:\/\/www.publish0x.com\/wordstock\/full-list-of-cardano-ada-partnerships-and-collaborations-202-xpgvdj"}]}</script>
+
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e81f952b73a5fac"></script>
+    
+    <script src="/js/Publish0xCookies.js?id=89ad92bc5c3c05758a6a"></script>
+    <script>
+        let systemWideNotificationCookie = new Publish0xCookies('systemWideMessage', 'system', 2);
+        let systemNotification = systemWideNotificationCookie.get('systemWideMessage');
+
+        if (systemNotification === 'system') {
+            $('#systemWideNotification').hide();
+        }
+
+        $('#systemWideNotification').on('closed.bs.alert', function() {
+            systemWideNotificationCookie.set();
+        });
+    </script>
+    <div class="modal fade" id="registerPopup" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="bg-light">
+
+                    <div class="row m-3">
+
+                        <div class="col-lg-6 order-lg-2 ml-auto">
+                            <span role="button" class="float-right">
+                                <i class="fas fa-times" id='registerPopupCloseModal' style="cursor: pointer;"></i>
+                            </span>
+                            <img src="https://www.publish0x.com/images/popup.png" class="img-fluid" alt="wrappixel" />
+                        </div>
+
+                        <div class="col-lg-6 order-lg-1 ml-auto text-center text-lg-left">
+
+                            <p class="h2 my-3">
+                                Earn Crypto for<br /> Reading & Writing Content
+                            </p>
+
+                            <p>Over $429,646 Paid out to users</p>
+
+                            <a class="btn btn-success btn-md btn-block"
+                                href="/register?utm_source=publish0xWebsite&utm_medium=signupPopupV1&utm_campaign=signupPopups">
+                                <span>Sign Up in 20 seconds!</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            <script>
+            $(document).ready(function() {
+                const popUpRegisterCloseCookie = new Publish0xCookies('popUpRegisterClosed', 0, 2880);
+                let popupClosedTimes = popUpRegisterCloseCookie.get('popUpRegisterClosed');
+
+                $('#registerPopupCloseModal').click(function() {
+                    $('#registerPopup').modal('hide');
+                });
+
+                $('#registerPopup').on("hidden.bs.modal", function () {
+                    popupClosedTimes++;
+                    const popUpRegisterCloseCookie = new Publish0xCookies('popUpRegisterClosed', popupClosedTimes, 2880);
+                    popUpRegisterCloseCookie.set();
+                });
+
+                let registerTimer = setTimeout(function() {
+                  $('#registerPopup').modal('show');
+                }, 15000);
+
+                if (popupClosedTimes >= 2) {
+                  clearTimeout(registerTimer);
+                }
+
+                $('#registrationButton').click(function() {
+                  clearTimeout(registerTimer);
+                });
+
+                $('#getStartedButton').click(function() {
+                  clearTimeout(registerTimer);
+                });
+            });
+        </script>
+    </body>
+
+</html>

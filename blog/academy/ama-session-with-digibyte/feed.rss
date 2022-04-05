@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: AMA with Digibyte	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/ama-session-with-digibyte/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/ama-session-with-digibyte</link>
+	<description></description>
+	<lastBuildDate>Sat, 12 Jun 2021 20:05:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: GodRACE		</title>
+		<link>https://atomicwallet.io/blog/academy/ama-session-with-digibyte#comment-206</link>
+
+		<dc:creator><![CDATA[GodRACE]]></dc:creator>
+		<pubDate>Sun, 03 May 2020 19:49:10 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=1750#comment-206</guid>
+
+					<description><![CDATA[  I love the partnership of Atomicwallet and Digibyte.
+Success is definitely inevitable for you guys]]></description>
+			<content:encoded><![CDATA[<p>  I love the partnership of Atomicwallet and Digibyte.<br />
+Success is definitely inevitable for you guys</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

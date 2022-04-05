@@ -1,0 +1,2238 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Motiur Rahman &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/author/md-motiur-rahman/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Thu, 17 Jun 2021 14:43:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>Motiur Rahman &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What is Monero (XMR) cryptocurrency? &#8211; Full Complete Guide</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-monero-xmr-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-monero-xmr-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2021 08:41:18 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=33884</guid>
+
+					<description><![CDATA[<p>You have probably heard about the Monero coin and its contributions to the cryptocurrency industry and the global&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-monero-xmr-complete-guide">What is Monero (XMR) cryptocurrency? &#8211; Full Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2021/02/what-is-monero-1920x1080.png"  alt=""  class="wp-image-33885" ></figure>
+
+
+
+<p>You have probably heard about the Monero coin and its contributions to the cryptocurrency industry and the global financial system at large. But if you haven&#8217;t, and have been looking for a privacy coin, which will allow you to carry out digital transactions with full anonymity, look no further because Monero is the answer.</p>
+
+
+
+<p>Throughout this complete guide to Monero, we will be walking you through every aspect of Monero, including its features, advantages, history, and even how to make anonymous transactions with it.</p>
+
+
+
+<p>Before we do that, let&#8217;s begin with&#8230;</p>
+
+
+
+<p><strong>WHAT IS MONERO?</strong></p>
+
+
+
+<p>Monero (XMR) is simply an efficient cryptocurrency developed on the&nbsp;<a target="_blank" href="https://atomicwallet.io/what-is-blockchain" rel="noreferrer noopener">Blockchain</a>&nbsp;technology, to be open-source, allowing anyone to use it, created to achieve privacy while performing digital assets transactions.</p>
+
+
+
+<p>This unique digital currency guarantees the privacy, anonymity, and security of cryptocurrency transactions with ease.</p>
+
+
+
+<p>Monero is a leading privacy-centric cryptocurrency</p>
+
+
+
+<p>based on the Cryptonote protocol. As of November 2017, it is one of the most popular cryptocurrencies at a market capitalization of USD 1.5B. While Bitcoin, the first and currently largest cryptocurrency, explicitly identifies which coin in the transaction graph is being spent, Cryptonote allows users to obscure the transaction graph by including chaff transaction inputs called</p>
+
+
+
+<p>&#8220;mixins.&#8221; As a result, Monero has attracted users&#8217; attention requiring privacy that is superior to those Bitcoin provides.&nbsp;</p>
+
+
+
+<p><strong>BRIEF HISTORY OF MONERO</strong></p>
+
+
+
+<p>Monero is a cryptocurrency that originated from a cryptocurrency called Bytecoin, which was first released in 2012, using the CryptoNote technology as its underlying technology.</p>
+
+
+
+<p>With the help of this technology, the full privacy of transactions carried out with the Bytecoin and any other CryptoNote based coin is guaranteed since it combines different keys while processing a transaction so that it will be impossible to track the origin of a transaction.</p>
+
+
+
+<p>Due to some challenges with the supply of the Bytecoin, a team of 7 developers consisting of Riccardo Spagni and David Latapie and five others, who are well experienced in the digital assets industry, resolved to the creation of an even better digital currency. Bitmonero, popularly called Monero, a word that means coin in Esperanto, was created by forking the Bytecoin Blockchain.</p>
+
+
+
+<p><strong>XMR TECHNOLOGY AND ADVANTAGES</strong></p>
+
+
+
+<p>Monero has great features embedded in it, which makes it superior to many similar cryptocurrencies out there.</p>
+
+
+
+<p>The idea behind Monero is simple: You and I should be able to give money to causes we believe in without anyone else knowing what causes we choose to support. We should be able to buy and sell things online without anyone else in the world knowing what we bought, who we bought it from, or that we even spent our money on.</p>
+
+
+
+<p>In other words, we should have complete online payment privacy. And Monero aims to provide it.</p>
+
+
+
+<p>Monero has five key features that make it the most secure and private cryptocurrency currently available, And they are as follow;</p>
+
+
+
+<p><strong>Stealth Address</strong>: The stealth address feature is a massive upgrade over bitcoin&#8217;s privacy. Here&#8217;s the best way to think of it. With bitcoin, you reveal your real &#8220;home address&#8221; to send and receive bitcoin. With Monero, you use the equivalent of a &#8220;post office box&#8221; as your address to send and receive Monero. By using a virtual P.O. box instead of your actual address, your transactions cannot be linked back to you.</p>
+
+
+
+<p><strong>Ring Signatures</strong>: A ring signature is a way to make sure a transaction can&#8217;t be tied back to a specific individual. Think about this example…Imagine a million $100 notes with a thousand fingerprints on each note. It would be impossible to tie the note to a single person. As you transact through the network, it mixes the public information of hundreds of transactions. (Your money is still yours. It&#8217;s never commingled with anyone else&#8217;s.) A $100 bill with 100 sets of fingerprints on it, and yours is one of those sets. There&#8217;s no way anyone can tie that $100 bill back to you. That&#8217;s how ring signatures work. With each transaction, digital fingerprints (called signatures) are attached to the transaction… effectively making it impossible for anyone to conclusively prove that the transaction came from you.</p>
+
+
+
+<p><strong>Public-View Key:</strong>&nbsp;The public-view key feature is what separates Monero from any other privacy solution. You can share your public-view key so other people can see your transactions. Here&#8217;s why this is a powerful feature. A common knock against bitcoin is that it&#8217;s too open. Banks and brokers like the low costs of using a blockchain but are concerned by how easy it is to track transactions. They fear competitors might use that knowledge to poach clients. At the same time, regulators support banks adopting the blockchain because it makes auditing them easier. Monero&#8217;s public-view key feature solves this problem. It gives banks total transactional secrecy plus complete openness with the regulators via the public-view key. With the public-view key, regulators can view all of the transactions.</p>
+
+
+
+<p><strong>Limited Supply</strong>: Unlike traditional currency, Monero will have a set coin supply and programmed inflation rate. This ensures that the value of Monero cannot be diluted by endless money creation. Over the next eight years, the supply of mined coins will be 18.4 million coins. (As of this writing, 14,546,692 coins have been mined.) After eight years, Monero will adopt a 0.86% annual inflation rate. This ensures a steady supply of coins to compensate miners for maintaining the Monero network.</p>
+
+
+
+<p><strong>Built-in Scalability</strong>: Another big knock against bitcoin is that it limits each block&#8217;s size in the blockchain to just 1 megabyte. As bitcoin has grown, the block sizes have stayed the same. This has caused the bitcoin network to slow down. It just can&#8217;t handle a lot of transactions at once. For instance, the Visa payment network can handle up to 56,000 transactions per second. By comparison, bitcoin can only handle seven per second.</p>
+
+
+
+<p>Monero has no such preprogrammed limit. It&#8217;s designed with a &#8220;look-back&#8221; window. That means the network reviews the initial transactions and automatically adjusts the blocks&#8217; size to account for transaction volume.</p>
+
+
+
+<p>That makes Monero scalable. And that means as more people use Monero, it will be able to overgrow.</p>
+
+
+
+<p><strong>How to Mine Monero</strong></p>
+
+
+
+<p>Monero runs on all leading O.S. platforms, including Windows, macOS, Linux, Android, and FreeBSD. The currency supports a mining process where individuals get rewarded for their activities by joining mining pools or mine coins individually.</p>
+
+
+
+<p>Monero mining can be performed on a standard computer and does not need any specific hardware, such as the application-specific integrated circuits (ASICs). An ASIC is a costly form of hardware that is commonly used to mine cryptocurrencies like Bitcoin. Instead, you can use the CPU or GPU of your computer to mine the currency. A full list of hardware that can be used is available on the Monero website;<a target="_blank" href="https://mymonero.com/#/" rel="noreferrer noopener">https://mymonero.com</a>. Users can also install certain software, which may cost a developer fee.</p>
+
+
+
+<p>According to the company&#8217;s website, Monero relies on proof-of-work mining. This is an algorithm that provides security to certain cryptocurrencies like Monero. This system prevents double-spending problems, which can skew the supply, showing there&#8217;s much more than actually available.</p>
+
+
+
+<p>Purchasing the currency is as easy as going on an exchange or looking for a seller who&#8217;s willing to unload their supply. You can also buy Monero through an automated teller machine (ATM) that is enabled for cryptocurrencies.</p>
+
+
+
+<p>You don&#8217;t need any special hardware to mine Monero. The currency runs on all major operating systems, including Windows, macOS, Linux, Android, and FreeBSD.</p>
+
+
+
+<p><strong>DISADVANTAGES OF MONERO</strong></p>
+
+
+
+<p>Despite the many advantages of Monero, it is also plagued by a few disadvantages, some of which are:</p>
+
+
+
+<ul><li>Just a few cryptocurrency wallets support Monero, seeing no many developed wallets fashioned for this digital currency.</li></ul>
+
+
+
+<ul><li>Monero is also confronted by the mining process&#8217;s centralization, where a few miners are in charge of the mining.</li></ul>
+
+
+
+<ul><li>Due to the lack of adequate wallets for Monero, its storage is quite tedious, which makes it very challenging for most users.</li></ul>
+
+
+
+<ul><li>Having Monero based applications is also challenging because it is not based on the very popular Blockchains.</li></ul>
+
+
+
+<p><strong>PERSPECTIVES AND TAKEAWAYS</strong></p>
+
+
+
+<p>Monero was created to be more than a regular cryptocurrency. Rather, it was designed to help solve the problem that different users face while carrying out financial transactions.&nbsp;</p>
+
+
+
+<p>As a privacy coin, Monero is the cryptocurrency of the future. It helps ensure that anonymity is maintained during transactions, eliminating the privacy challenges in the cryptocurrency industry and beyond.&nbsp;</p>
+
+
+
+<p>It doesn&#8217;t just make digital transactions seamless but also makes them fully secured and private, which is exactly what many people are looking for in the crypto space.&nbsp;</p>
+
+
+
+<p>Monero is the best of its kind and is functioning effectively, releasing great benefits to its users.&nbsp;</p>
+
+
+
+<p><strong>Monero FAQs</strong></p>
+
+
+
+<p><strong>Is Monero Illegal?</strong></p>
+
+
+
+<p>Monero is not an illegal cryptocurrency. Unlike others, it is a privacy-oriented cryptocurrency that provides users with anonymity. This means it is not traceable. However, this characteristic makes it very popular on the darknet and for use with certain activities such as gambling and the sale of drugs.</p>
+
+
+
+<p><strong>Is Monero a Good Investment?</strong></p>
+
+
+
+<p>If you&#8217;re interested in cryptocurrencies, Monero may be a good investment. The currency price jumped more than 137% between Jan. 15, 2020, and Jan. 15, 2021. Additionally, it doesn&#8217;t cost much to start, as you don&#8217;t need any special hardware. You can use the CPU of your computer to mine it, and Monero works with all major operating systems. This will save you a lot of money in fees.</p>
+
+
+
+<p><strong>Where Can I Buy Monero?</strong></p>
+
+
+
+<p>You can purchase Monero through a digital or virtual currency exchange. Or you can search for an individual seller or an ATM enabled for cryptocurrencies.</p>
+
+
+
+<p><strong>How Long Does It Take to Mine One Monero?</strong></p>
+
+
+
+<p>It can take about two minutes to mine one coin, although there is no maximum block size.1&nbsp;</p>
+
+
+
+<p><strong>Can XMR Be Traced?</strong></p>
+
+
+
+<p>Monero, or XMR, is untraceable. Unlike other coins, such as Bitcoin, Monero has a non-traceable transaction history. This characteristic offers participants a much safer network where they don&#8217;t run the risk of having their held units be refused or blacklisted by others.&nbsp;</p>
+
+
+
+<p>The Bottom Line</p>
+
+
+
+<p>Cryptocurrencies are a very popular investment for many people. But the popularity and price of Bitcoin may be a turnoff. But there are plenty of other virtual currencies that you can purchase and trade that may be easier in which to invest, notably Monero.</p>
+
+
+
+<p>The privacy-rich attributes have helped Monero become one of the largest cryptocurrencies in the world based on its market capitalization as of January 2021, according to CoinMarketCap. Investors can trade in Monero on leading cryptocurrency exchanges like Kraken, Poloniex, and Bitfinex. However, it&#8217;s important to remember that what makes Monero so popular—namely, its privacy features—can also lead to some major challenges, such as its use in illegal activities.</p>
+
+
+
+<p>Investing in cryptocurrencies and other Initial Coin Offerings (&#8220;ICOs&#8221;) is highly risky and speculative. This article is not a recommendation by the writer to invest in cryptocurrencies or other ICOs. Since each individual&#8217;s situation is unique, a qualified professional should always be consulted before making any financial decisions.</p>
+
+
+
+<p><strong>HOW TO STORE MONERO</strong></p>
+
+
+
+<p>Features of the best Monero Wallet are as follow;</p>
+
+
+
+<p>First and foremost, your wallet should support Monero coins.</p>
+
+
+
+<p>a.) The user interface should be simple for users to use and should have all the essential features.</p>
+
+
+
+<p>b.) Privacy feature of the wallet so that the user&#8217;s identity is safe and secure.</p>
+
+
+
+<p>c.) Security features of the wallet should be up-to-date with the latest available in the market. Also, look for the backup feature so that you can recover your wallet if lost.</p>
+
+
+
+<p>d.) Good customer support.</p>
+
+
+
+<p>The wallet should be backed by an expert development team so that there is always scope for future enhancement of the wallet.</p>
+
+
+
+<p>e.) Look for the latest customer reviews of the wallet</p>
+
+
+
+<p>The best wallet to be used when storing Monero is the&nbsp;<a target="_blank" href="https://atomicwallet.io/" rel="noreferrer noopener">Atomic</a>&nbsp;Wallet, as it has all the features above.&nbsp;</p>
+
+
+
+<p>Atomic Wallet is a new multi-asset, a non-custodial solution with an actively growing user base and one of the best Monero wallets. Atomic Wallet already supports 300+ top coins and tokens that can be managed in an intuitive, user-friendly interface.&nbsp;</p>
+
+
+
+<p>Atomic Wallet is available for all major OS: Windows, Mac, and Linux. Mobile apps for Android and IOS</p>
+
+
+
+<p>Apart from the intuitive U.I., Atomic Wallet has offered a wide range of features, such as decentralized storage for private keys, a built-in option to buy crypto with a bank card, Atomic Swaps, instant exchange via Changelly or Shapeshift, and an interface for custom tokens. What makes Atomic Wallet so unique is Atomic Swaps&#8217; support, a relatively new decentralized exchange technology based on hash timelock contracts.</p>
+
+
+
+<p>The storage of Monero has become easier and better, as we will go through the necessary steps.&nbsp;</p>
+
+
+
+<p>The first step is to head to&nbsp;<a target="_blank" href="https://atomicwallet.io/" rel="noreferrer noopener">Atomic Wallet</a>&nbsp;and then click on &#8220;Download&#8221;, on your Android or IOS devices, respectively. Proceed to create an account.</p>
+
+
+
+<p>Then go through the details on the security of your login details.&nbsp;</p>
+
+
+
+<p>Correctly write your private login key and then re-enter it into the provided space, and then you have successfully created a wallet.&nbsp;</p>
+
+
+
+<p>To send your XMR into the wallet, copy the address at the top of the account screen.&nbsp;</p>
+
+
+
+<p>Head to the exchange or wallet you send the XMR from, and navigate to the withdrawal section.&nbsp;</p>
+
+
+
+<p>Paste the earlier copied address in the withdrawal space</p>
+
+
+
+<p>Enter the amount you wish to send and then carry out the necessary confirmations.&nbsp;</p>
+
+
+
+<p>Congratulations, you have successfully sent out XMR, which will safely arrive in this wallet.&nbsp;</p>
+
+
+
+<p><strong>MONERO PRICE PREDICTION 2025</strong></p>
+
+
+
+<p>Monero is estimated to reach around 1,397 USD by 2025. 2021 and 2022 might be seen as the rising year in the world of cryptos, where they might experience a rise like never before. It is expected that by 2023, Monero might make it to the $900 mark.</p>
+
+
+
+<p>While other cryptocurrencies in circulation are pseudonymous, Monero is an anonymous cryptocurrency, which has gained prominence in recent times. With teeming crypto users looking for anonymous cryptocurrencies in the nearest future to perform their transactions, industry experts recommend that investors should invest in Monero at the current price in other to get huge returns in the nearest future.&nbsp;</p>
+
+
+
+<p><strong>IN SUMMARY&nbsp;</strong></p>
+
+
+
+<p>Monero is what the world needs to thrive in the cryptocurrency industry due to its unique features and advantages over other cryptocurrencies.&nbsp;</p>
+
+
+
+<p>Once utilized, it could be very efficient in carrying out cryptocurrency transactions with great security and privacy.&nbsp;</p>
+
+
+
+<p><strong>Monero Website</strong></p>
+
+
+
+<p>For more information about Monero, navigate to&nbsp;<a target="_blank" href="http://getmonero.org/" rel="noreferrer noopener">http://getmonero.org/</a>.&nbsp;</p>
+
+
+
+<p><strong>Monero Twitter</strong></p>
+
+
+
+<p>Head to&nbsp;<a target="_blank" href="https://twitter.com/monero" rel="noreferrer noopener">https://twitter.com/monero</a>&nbsp;to be on top of the recent happenings on Monero via Twitter.</p>
+
+
+
+<p><strong>Monero Reddit</strong></p>
+
+
+
+<p>To participate in Monero related discussions, join the Monero subreddit&nbsp;<a target="_blank" href="https://reddit.com/r/monero" rel="noreferrer noopener">https://reddit.com/r/monero</a>.&nbsp;</p>
+
+
+
+<p><strong>Monero Telegram&nbsp;</strong></p>
+
+
+
+<p>To engage with other users in the Monero telegram community, head to&nbsp;<a target="_blank" href="https://t.me/Monero" rel="noreferrer noopener">https://t.me/Monero</a>.&nbsp;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-monero-xmr-complete-guide">What is Monero (XMR) cryptocurrency? &#8211; Full Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-monero-xmr-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DeFi Yield Farming Explained / How Yield Farming Works</title>
+		<link>https://atomicwallet.io/blog/academy/defi-yield-farming-explained</link>
+					<comments>https://atomicwallet.io/blog/academy/defi-yield-farming-explained#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Sun, 18 Oct 2020 11:52:58 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://preprod.atomicwallet.io/?p=32270</guid>
+
+					<description><![CDATA[<p>The goal of this article is to enlighten you on all matters DeFi. Here you will learn its concepts such as yield farming, liquidity mining, and the genesis of DeFi. You will also learn of the different perspectives of industry experts on this topic. </p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/defi-yield-farming-explained">DeFi Yield Farming Explained / How Yield Farming Works</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/Yield-Farming.png"  alt="yield farming cover"  class="wp-image-32271" ></figure>
+
+
+
+<p>The goal of this article is to enlighten you on all matters DeFi. Here you will learn its concepts such as yield farming, liquidity mining, and the genesis of DeFi. You will also learn of the different perspectives of industry experts on this topic.&nbsp;</p>
+
+
+
+<p>DeFi has been the craze in crypto for the better part of 2020. While Bitcoin and other projects have lagged, DeFi projects have been going parabolic. The excitement around DeFi has a lot to do with FOMO and the nature of the space. The FOMO around it is reminiscent of ICOs when most investors rushed into ICOs and triggered the 2017 rally. Similarly, when the year started with DeFi projects outperforming the market, investors jumped in, creating a self-reinforcing loop. The excitement around DeFi also has a lot to do with the potential for non-speculative profiteering. In DeFi, you can make money by lending with interest, a process that is known as yield farming. You can also make money by borrowing to take advantage of profitable opportunities. These are opportunities that have drawn many to DeFi after several years of holding crypto without many gains. The DeFi space is also being driven by the growth of blockchain solutions that make borrowing and lending without an intermediary possible. Decentralized oracles such as Chainlink have been entirely instrumental on this front.&nbsp;</p>
+
+
+
+<h2 id="what-is-yield-farming"><br>What Is Yield Farming?</h2>
+
+
+
+<p>Yield farming entails lending crypto through a decentralized pool in the hopes of increasing one&#8217;s crypto holdings. DeFi and its related concepts, such as yield farming, can be directly attributed to the launch of the ERC20 standard in 2015, which paved the way for the development of complex smart contracts. The ERC20 standard is the brainchild of Ethereum developer Fabian Vogelsteller. Not only did his innovation open the way for the ICO boom of 2017, but it also laid down the groundwork for DeFi. However, the implementation of DeFi and the start of yield farming is more related to the launch of a project called Compound (COMP) that was launched in 2017 with the backing of significant crypto players like Coinbase. Compound opened the DeFi space through an algorithm that autonomously calculates interests, allowing developers to build a wide array of financial applications. Rather than let crypto lie idle in a wallet, it offered investors a way to make money by joining pools and earning interest by lending. A yield farmer on Compound can choose a pool with the most gains and grow their crypto holdings over time. The project also introduced a governance token called COMP, which is one of the most revolutionary in crypto. Through the comp token, investors can determine things like yield rates, among other governance issues. Since then, more projects have come up in the DeFi space, and it keeps growing. Some of the key names behind Compound that are influential to the growth of yield farming are as below:</p>
+
+
+
+<ul><li>Robert Leshner (CEO)</li><li>Geoffrey Hayes (CTO)</li><li>Torrey Atcitty</li><li>Calvin Liu (Strategy Lead)</li><li>Coburn Bery (Senior Engineer)</li><li>Jared Flatow (Senior Engineer)&nbsp;</li><li>Jayson Hobby (Head of Design)</li><li>Max Wolff (Software Engineer)</li><li>Mykel Pereira (Software Engineer)</li></ul>
+
+
+
+<p>Many other people have been instrumental to Compound and the growth of DeFi and yield farming in general. As more developers enter the space, so has the development of the number of projects where investors can earn a profit by lending.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/Yield-Farming-sketch1.png"  alt="pic 2 yield farming"  class="wp-image-32282" ></figure>
+
+
+
+<h2 id="why-is-defi-hyping-now"><br>Why is DeFi Hyping Now?</h2>
+
+
+
+<p>There is a lot of hype around DeFi at the moment, and this is evident in the increased mentions of the same on Google trends. For instance, the terms DeFi and Yield Farming have been gaining in searches over the past 12 months and peaked out in September. Similarly, the amount of Ethereum locked up in DeFi has been on the rise over the past year. All this excitement around yield farming has a basis in crypto trends post-2017 and the nature of DeFi.&nbsp;</p>
+
+
+
+<h3 id="crypto-post-2017"><br>Crypto post-2017</h3>
+
+
+
+<p>The crypto bubble burst in December 2017 left the market in very dull territory. This means that the average crypto holder has not made much from HODLing both Bitcoin and altcoins. DeFi and the concept of yield farming gave lots of crypto investors an alternative way to make money in crypto without having to rely on speculation. In the early days, only crypto diehards made money from yield farming, but as word spread, the number of people doing it increased. Over time, this created FOMO and triggered the massive Bull Run that the DeFi space has experienced since the start of the year.&nbsp;</p>
+
+
+
+<h3 id="the-nature-of-defi"><br>The Nature of DeFi</h3>
+
+
+
+<p>By its nature, yield farming is quite attractive to crypto investors. That&#8217;s because it allows investors to earn money by lending at rates that are unmatched by any centralized financial entity. This makes it attractive to investors who are looking for a way to earn a passive income in crypto. This has seen big players enter the DeFi space and further drive the positive momentum and add to the overall upside momentum.</p>
+
+
+
+<h3 id="the-borrowing-opportunity"><br>The Borrowing Opportunity</h3>
+
+
+
+<p>The ability to borrow without background checks has also been instrumental to the rise of DeFi. When it comes to lending on DeFi, one only needs to over collateralize to eliminate the risk of default on the lender. At the same time, it offers investors a chance to make money through trading. One of the biggest uses of crypto borrowed in DeFi is arbitrage. This entails taking advantage of differences between crypto prices on different exchanges to make money before repaying and keeping the difference as profit.&nbsp;</p>
+
+
+
+<h2 id="how-the-yield-farming-works"><br>How the Yield Farming Works</h2>
+
+
+
+<p>Yield farming is relatively easy to understand, even to someone new to crypto. As mentioned earlier, yield farming is simply about lending crypto to earn more crypto. The first step to start yield farming is to find a DeFi project with acceptable interest rates, then get involved. Since all DeFi projects are Ethereum projects, you first need to buy Ethereum, then transfer it to your DeFi project of choice. Breaking it down, here is how to make money in DeFi.&nbsp;</p>
+
+
+
+<ol><li>Buy Ethereum and store it in a wallet like Atomic Wallet.</li><li>Send Ethereum to a DeFi project of your choice.</li><li>Join a pool and start lending.</li></ol>
+
+
+
+<h2 id="liquidity-mining"><br>Liquidity Mining</h2>
+
+
+
+<p>Once you get involved in DeFi, you will come across the term liquidity mining a lot alongside yield farming and many others. So what exactly is liquidity mining? Simply put, liquidity mining is the process of lending crypto to provide liquidity to a pool. The pool gains liquidity to keep growing, while the token holder earns interest in the token they are lending. When doing liquidity mining, the lender also benefits by taking part in the projects&#8217; governance that they are involved in mining. To better understand DeFi meaning, one needs to look at a major DeFi project like Compound concerning DeFi mining. When one locks in their assets in Compound, they get an annualized income and also get a certain number of COMP tokens. By holding these tokens, one is then in a position to take part in the governance of the project.</p>
+
+
+
+<p>On top of that, one can liquidate their tokens for Ethereum and grow their holding. Liquidity mining is set to keep growing because it plays some critically essential functions in DeFi. Some of the most important tasks of liquidity mining are as below:</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/Yield-Farming-sketch3.png"  alt="pic 3 yield farming"  class="wp-image-32293" ></figure>
+
+
+
+<h3 id="project-growth"><br>Project Growth</h3>
+
+
+
+<p>One of the key differences between DeFi projects and traditional financial organizations is in their source of liquidity. While conventional finance organizations have access to capital from central banks, DeFi projects do not have this luxury. While the founders and their backers can fund the initial part of it, they may not sustain it as the project grows. This leaves liquidity mining as the only sustainable way to grow. When investors lock in crypto hoping for gains, the project can unlock a pool of liquidity that makes it possible to lend to a possibly unlimited number of people and compete with traditional finance.</p>
+
+
+
+<h3 id="it-helps-in-price-discovery"><br>It Helps in Price Discovery</h3>
+
+
+
+<p>Liquidity mining also helps in price discovery in the DeFi space. As investors lock in crypto and liquidity grows, the rate of crypto exchange through lending and borrowing also increases. The result is that the actual value of the project is revealed. This is beneficial to the projects and the investors holding the project tokens.&nbsp;</p>
+
+
+
+<h2 id="what-are-the-risks-of-liquidity-mining"><br>What Are The Risks of Liquidity Mining?</h2>
+
+
+
+<h3 id="the-risk-of-getting-liquidated"><br>The Risk of Getting Liquidated</h3>
+
+
+
+<p>One of the most significant risks in DeFi is that you can get liquidated if the contract malfunctions. An excellent example of such a malfunction relates to Compound in June 2020. At the time, there was a malfunction in the pledge rate settings, and investors lost thousands of dollars.&nbsp;</p>
+
+
+
+<h3 id="systemic-risk"><br>Systemic Risk</h3>
+
+
+
+<p>Like every other financial system, there are systemic risks when it comes to DeFi. One of these risks is pushing the limit of the collateralized debt position. This can lead to a collapse in the entire system and cause losses to investors. While there are safeguards against such, it is always a risk that can materialize and was evident when Compound (COMP) made changes to its mining system in Mid-2020. This created a surge in demand for DAI and led to an unhealthy increase in the collateralized debt position.&nbsp;</p>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives and Takeaways</h2>
+
+
+
+<p>&nbsp;As DeFi grows, industry experts have weighed in on its development. In July, the head of trading at NEM stated that,</p>
+
+
+
+<p><em>&#8220;The recent boom in the DeFi market follows the well-documented innovation adoption curve. Growth for an innovation, in this instance DeFi, is largely led by technological advancements, followed by capital and regulatory growth. Therefore, the overall growth of the space or &#8216;development&#8217;, is a function of usership, technological and regulatory growth, and capital. At its core, DeFi is providing a means of decentralized lending, lenders earn a yield and the loan is secured by some amount of collateral in the form of a token. That being said, DeFi is still very much in its infancy, with the infrastructure and processes still in the experiment phase – this was proven by the recent YAM finance collapse which recently fell 90% in value due to a bug in its code.&#8221;</em></p>
+
+
+
+<p>Another industry professional that has weighed in on DeFi recently is Vitalik Buterin. While most people are bullish on DeFi, Vitalik is calling for caution. In a tweet in early September, he stated that,</p>
+
+
+
+<p><em>&#8220;Seriously, the sheer volume of coins that needs to be printed nonstop to pay liquidity providers in these 50-100%/year yield farming regimes makes major national central banks look like they&#8217;re all run by Ron Paul.&#8221;</em></p>
+
+
+
+<p>These opinions by industry experts offer important pointers on the future of DeFi, and everything about it, such as yield farming and liquidity mining. One important takeaway is that DeFi is a groundbreaking innovation with the power to change society and reward investors&#8217; big time. However, it poses risks, mainly due to the greed for extraordinary gains by investors. Therefore, for it to thrive, there needs to be a balance between the need to grow the space and the urge for exponential gains in the short-term.&nbsp;</p>
+
+
+
+<h2 id="where-to-manage-defi-tokens"><br>Where to Manage DeFi Tokens</h2>
+
+
+
+<p>There are many wallets where one can store and manage their DeFi tokens. In this crowded space, Atomic Wallet stands out for its superiority in terms of security and variety in listed DeFi tokens. When using Atomic wallet, you have full control over your private keys. The wallet also gives you access to hundreds of tokens, which means you have the opportunity to profit from as many projects as possible. The team is also planning on adding its native AWC token to the yield farm. This will further open up opportunities for DeFi investors.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/Yield-Farming-sketch2.png"  alt="pic 4"  class="wp-image-32304" ></figure>
+
+
+
+<h2 id="faqs-about-defi"><br>FAQs about DeFi</h2>
+
+
+
+<h3 id="what-is-yield-farming-2"><br>What is Yield Farming?</h3>
+
+
+
+<p>Yield farming entails lending crypto through a decentralized pool in the hopes of increasing their holdings.</p>
+
+
+
+<h3 id="what-is-liquidity-mining"><br>What is Liquidity Mining?</h3>
+
+
+
+<p>Liquidity mining is the process of lending crypto to provide liquidity to a pool.</p>
+
+
+
+<h3 id="what-is-the-best-wallet-for-defi"><br>What Is The Best Wallet for DeFi?</h3>
+
+
+
+<p>Atomic wallet is the best for DeFi. It gives the user full control over their tokens and also has quite an array of DeFi tokens.</p>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>Yield farming entails lending crypto through a decentralized pool in the hopes of increasing crypto holdings due to the development of enabling technologies such as decentralized oracles. The underperformance of crypto HODLNG has also driven it since 2018. DeFi Space is also driven by a wallet such as Atomic wallet that is safe and supports several DeFi projects.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/defi-yield-farming-explained">DeFi Yield Farming Explained / How Yield Farming Works</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/defi-yield-farming-explained/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is Slashing in Staking &#8211; Risk Management for Staking</title>
+		<link>https://atomicwallet.io/blog/academy/risk-management-for-staking-what-is-slashing</link>
+					<comments>https://atomicwallet.io/blog/academy/risk-management-for-staking-what-is-slashing#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Thu, 15 Oct 2020 18:16:43 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://preprod.atomicwallet.io/?p=32208</guid>
+
+					<description><![CDATA[<p>Staking is one of the best ways to earn a passive income in crypto. The year 2020 saw a proliferation of cryptos that investors can stake that have attracted hundreds of millions of dollars in investments. While staking is a great way to earn in crypto space, it carries its risks, and if you are not aware of them, they can cost you a lot, especially if you are a large investor — one of the most significant risks that you face in crypto. Simply put, slashing means forfeiting your crypto holding of staked cryptos in case you break the staking rules of the concerned project. The goal is to ensure that all staking nodes adhere to the rules and keep the project safe. Unfortunately, if you are not fully conversant with the rules, it can cost you a lot since you would nearly lose your hard-earned money, with no option of getting them back. The essence of this guide is to help you manage the risks that come with staking, especially the risk of losing your coins. To make it easier for you, the guide delves deeper into proof-of-stake and the various aspects to it that can make you a better investor.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/risk-management-for-staking-what-is-slashing">What is Slashing in Staking &#8211; Risk Management for Staking</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/slashing-guide-1.png"  alt="slashing cover"  class="wp-image-32209" ></figure>
+
+
+
+<p>Staking is one of the best ways to earn a passive income in crypto. The year 2020 saw a proliferation of cryptos that investors can stake that have attracted hundreds of millions of dollars in investments. While staking is a great way to earn in crypto space, it carries its risks, and if you are not aware of them, they can cost you a lot, especially if you are a large investor — one of the most significant risks that you face in crypto. Simply put, slashing means forfeiting your crypto holding of staked cryptos in case you break the staking rules of the concerned project. The goal is to ensure that all staking nodes adhere to the rules and keep the project safe. Unfortunately, if you are not fully conversant with the rules, it can cost you a lot since you would nearly lose your hard-earned money, with no option of getting them back. The essence of this guide is to help you manage the risks that come with staking, especially the risk of losing your coins. To make it easier for you, the guide delves deeper into proof-of-stake and the various aspects to it that can make you a better investor.</p>
+
+
+
+<h2 id="pow-v-pos"><br>PoW v PoS</h2>
+
+
+
+<p>To understand how to manage the risks that come with staking, it is imperative to comprehend Proof of Stake as compared to Proof-of-work. Proof-of-Stake is a consensus algorithm whereby new blocks are chosen through a distributed consensus. In contrast, Proof-of-Work id is a consensus algorithm whereby new blocks come into existence through computational work that takes both time and energy. Bitcoin, the largest cryptocurrency is the best example of a Proof-of-Work consensus. Miners expend energy and time on computations that generate a new block of Bitcoin. Besides their differing approach to the generation of a new block, the two consensus algorithms have several other differences. One such difference is in how they protect themselves from malicious attacks.</p>
+
+
+
+<p>Proof-of-Work blockchains protect themselves from malicious attacks by making it almost impossible to raise the amount of power needed to control the network. For one to take over a Proof-of-Work blockchain, one would need to generate computational power that is equal to 51% of the entire network. This is not only expensive but also impractical for specific cryptocurrencies such as Bitcoin. On the other hand, Proof-of-Stake blockchains protect themselves from malicious attacks by making it economically mute to attack the network. To strike a PoS network, one would need to take ownership of 51% of the cryptos in the network. Not only is this expensive, but the price drop that would follow would diminish the whole essence of committing resources to such an endeavour. The other difference between the two consensus algorithms is in the way they reward those who generate new blocks. In a Proof-of-Work blockchain, the first person to solve the computational problem is awarded new coins. In Proof-of-Stake blockchains, those who stake their coins and participate in the process of creating new blocks are rewarded with a transaction fee.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/slashing-guide-3-1.png"  alt="pic 2"  class="wp-image-32232" ></figure>
+
+
+
+<h2 id="the-pos-advantage"><br>The PoS Advantage</h2>
+
+
+
+<p>While PoW is still the most dominant consensus algorithm in the crypto market, PoS is gaining acceptance fast. So fast that Ethereum, the second-largest cryptocurrency by market capitalization is in the process of shifting to PoS. Several benefits make PoS attractive as the future of consensus in the blockchain. Some of them are as below:</p>
+
+
+
+<h3 id="energy-efficiency"><br>Energy Efficiency</h3>
+
+
+
+<p>While PoW is highly secure, it is also largely energy inefficient. Not only is this harmful to the environment, but it also creates risks of centralization. For instance, Bitcoin mining is currently concentrated in China due to the country’s low energy costs. In a situation where crypto gets adopted widely as a means of exchange and value storage, such a scenario is not tenable. PoS avoid this situation because no work is put in the process of generating new blocks. This energy efficiency makes PoS the tenable option as the future of blockchain consensus.</p>
+
+
+
+<h3 id="speed"><br>Speed</h3>
+
+
+
+<p>The second benefit of PoS is that it is fast. Since no complex problems are being solved to bring up new blocks, transactions are processed faster in PoS. This also means that the network can scale more quickly, making it practical for large scale applications such as global payments at scale. The poS consensus is also less efficient overall because it does not require a supercomputer for it to function. This is unlike PoW, which continuously requires more sophisticated computers for it to work. For context, in the early days of Bitcoin, it was possible to mine using a laptop. However, as the computations became more complex, it required more complicated equipment. Today, only highly sophisticated and specialized equipment can be used for this purpose. All these make PoS, a more practical consensus method.</p>
+
+
+
+<h2 id="pos-main-functionalities"><br>PoS Main functionalities</h2>
+
+
+
+<p>PoS has multiple functionalities that allow it to function effectively. Some of these functionalities are as below:</p>
+
+
+
+<h3 id="slashing"><br>Slashing</h3>
+
+
+
+<p>Slashing is functionality that aims to ensure that all those staking coins to keep the network do not act in a manner that may harm the network. When a validator node acts in a way that compromises the smooth running of the network, they lose 5-20% of their staked cryptos. The tokens are then redistributed to other stakeholders or banned. Some of the factors that can lead to slashing are as below:</p>
+
+
+
+<h4 id="downtime"><br>Downtime</h4>
+
+
+
+<p>Downtime means that a node is not signing transactions. Depending on the rules on how much downtime can be tolerated, once a node meets this parameter, it automatically loses its validator status and the staked tokens. It can simply happen due to power outage. Thus, it’s important to backup nodes; i.e., when one is down, another one starts working immediately.</p>
+
+
+
+<h4 id="double-signing"><br>Double-signing</h4>
+
+
+
+<p>This entails signing one block twice. In most cases, this is usually the act of an adversary trying to attack the network. However, it can also happen with a valid node due to a poorly set infrastructure that makes the node double sign a block. To protect the network, nodes that keep double signing lose their privileges, including forfeiture of the tokens staked.</p>
+
+
+
+<h3 id="minting"><br>Minting</h3>
+
+
+
+<p>Unlike staking, where investors buy tokens then stake them to protect the network, minting takes an entirely different approach. Under this system, validators are chosen randomly by the network to verify transactions and keep the network secure. One can think of them as miners in a PoW network. For their work, the validators are rewarded with fees and new tokens. Minting tends to have better rewards than staking as one earns both the staking rewards and other incentives for keeping the network secure.</p>
+
+
+
+<h3 id="bonding"><br>Bonding</h3>
+
+
+
+<p>Bonding is a proof-of-stake approach whereby network users set aside a part of their stake as a way of influencing the generation of new blocks. Such users lock a segment of their tokens for a pre-specified period, in return for a stake in the next block. When it comes to voting on the direction of the protocol, their voting power is directly proportional to the amount that they have locked up. Like other aspects of proof-of-stake, Bonded Proof-of-Stake has its drawbacks. One of them is that the user cannot spend their crypto while they are still in the bond. This can be detrimental to the investor staking their tokens if prices drop. However, there are exceptions to the rule. For instance, for someone looking to stake Algorand, they can bond their tokens, and spend them at any time they wish.</p>
+
+
+
+<h2 id="what-is-slashing"><br>What is slashing?</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/slashing-guide-2-1.png"  alt="pic 3"  class="wp-image-32243" ></figure>
+
+
+
+<p>As discussed above, slashing is a PoS functionality that entails the loss of staked cryptos for nodes that do not do their part in ensuring the smooth running of the network. Due to their highly punitive nature, blockchains that use slashing to punish bad actors tend to run the majority of the time smoothly. That’s because those staking tokens have a lot to lose and as such have the motivation to act in a manner that safeguards their interests. Some of the significant PoS blockchains that use slashing as a tool to guarantee network efficiency are listed below. The list includes&nbsp; projects that you can find on Atomic Wallet, those being listed there soon, and major non-listed projects that slash.</p>
+
+
+
+<p><a href="https://atomicwallet.io/cosmos-atom-staking">Cosmos</a> (Supported)</p>
+
+
+
+<p>Harmony (Not supported)</p>
+
+
+
+<p><a href="https://atomicwallet.io/icon-staking">Icon</a> (Coming soon)</p>
+
+
+
+<p>IRIS (Not supported)</p>
+
+
+
+<p>LivePeer (Not supported)</p>
+
+
+
+<p>Terra (Not supported)</p>
+
+
+
+<p>It is also noteworthy that the wallet is decentralized and uses cross-chain atomic swaps. As such, you can exchange these tokens for any other crypto without leaving the safety of your wallet.</p>
+
+
+
+<h2 id="slashing-risks-and-how-to-minimize-them"><br>Slashing Risks and How to Minimize Them</h2>
+
+
+
+<p>The biggest risk that comes with slashing is the loss of your staked tokens. Cryptocurrencies are investments just like any other, and when someone puts in the capital, they expect growth. The risk of losing one’s entire holding through a wrong staking move is too high. The good news is that there are multiple ways to minimize the risk of slashing, while at the same time making money through staking. For someone who is risk-averse and would want to avoid the risk of slashing altogether, the best approach would be to go for projects that do not slash at all. Some of the biggest proof-of-stake projects that do not slash are:&nbsp;</p>
+
+
+
+<p><a href="https://atomicwallet.io/cosmos-atom-staking">Cosmos</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/tron-trx-staking">Tron</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/band-staking">Band</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/neo-gas-staking">Neo</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/komodo-kmd-staking">Komodo</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/vechain-staking">VeChain</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/tezos-staking">Tezos</a></p>
+
+
+
+<p>Aion&nbsp; (Not supported by Atomic Wallet)</p>
+
+
+
+<p><a href="https://atomicwallet.io/algorand-algo-staking">Algorand</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/polkadot-staking">Polkadot</a></p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://preprod.atomicwallet.io/blog/wp-content/uploads/2020/10/slashing-guide4-1.png"  alt="pic 4"  class="wp-image-32254" ></figure>
+
+
+
+<p>Most of them are available on Atomic Wallet, and you can stake them on the wallet without having to worry about losing your staked tokens through slashing. However, if you would rather take the risk and stake a project that has slashing, there are ways to minimize the risks while also enjoying the rewards. One way to minimize risk is to look at the threshold that has to be met before slashing happens. For a lower risk level, one can go for a project that is tolerant enough to the point that the only for slashing to happen is if one is incompetent. For instance, ICON only slashes if downtime on a staking node is above 15%. That’s quite lenient considering that for a staking node to have a downtime of over 15%, it would mean that the node has serious configuration issues. That’s an issue that would be easily noticeable way before slashing happens.</p>
+
+
+
+<h2 id="to-stake-safely-choose-a-trustworthy-validator"><br>To Stake Safely – Choose a Trustworthy Validator</h2>
+
+
+
+<p>Any digital system is vulnerable to hacking, and blockchain is no exception. In the case of staking, technical problems can lead to downtime for individual validators, which will affect the overall network performance.&nbsp;</p>
+
+
+
+<p>Why is it important to delegate only to a reliable validator? The first and most obvious reason is that your income will depend on it. In the event of long downtime, part of the reward will be lost not only to the validator himself but also to the stakers who delegated the coins to this baker. Another reason is the possible security threats. If the validator nodes will be caught for fraud attempts, everyone will be fined, including the delegates. And if the attack is successful, the delegates will suffer because of an insecure validator. The main idea of all this is to conduct own analysis and due diligence.</p>
+
+
+
+<p>(Bohdan Opryshko, COO at <a href="https://everstake.one/">Everstake</a>).</p>
+
+
+
+<h2 id="staking-perspectives-and-takeaways"><br>Staking perspectives and takeaways</h2>
+
+
+
+<p>Staking is a great way to earn in crypto space. Regardless of the perspective that a PoS project takes, you get to make some money through fees, and other staking rewards. Besides the rewards, staking is a crucial component to the Proof-of-Stake consensus mechanism, which is the future of blockchain technology. It is energy efficient and allows for the development of highly scalable networks, good enough to handle the needs of the DeFi revolution that is just taking shape.</p>
+
+
+
+<h2 id="faqs-about-staking"><br>FAQs about Staking</h2>
+
+
+
+<h3 id="what-is-staking"><br>What is staking?</h3>
+
+
+
+<p>Staking is the process of actively taking part in validating transactions in a proof-of-stake blockchain.</p>
+
+
+
+<h3 id="is-staking-safe"><br>Is staking safe?</h3>
+
+
+
+<p>Staking is safe, especially when doing it from a cold storage wallet like <a href="https://atomicwallet.io/">Atomic Wallet</a>. You get to retain full control over your private keys, and you can withdraw your tokens at any time.</p>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>Staking is an excellent way to make a passive income in crypto. However, one needs to be aware of the risks and how to manage them. One of the dangers that one can encounter is slashing, which entails the loss of staked tokens for not fulfilling the network validation requirements. The good news is that it is a manageable risk by choosing projects that have a high threshold on what could lead to the execution of slashing.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/risk-management-for-staking-what-is-slashing">What is Slashing in Staking &#8211; Risk Management for Staking</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/risk-management-for-staking-what-is-slashing/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is Ampleforth (AMPL) &#8211; A Complete Guide.</title>
+		<link>https://atomicwallet.io/blog/academy/ampleforth-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/ampleforth-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Tue, 18 Aug 2020 16:40:59 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Guides]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30476</guid>
+
+					<description><![CDATA[<p>One of the biggest problems facing cryptocurrencies today is their heavy correlation to Bitcoin. While the crypto market&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ampleforth-complete-guide">What is Ampleforth (AMPL) &#8211; A Complete Guide.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth-guide-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-30477" ></figure>
+
+
+
+<p>One of the biggest problems facing cryptocurrencies today is their heavy correlation to Bitcoin. While the crypto market has come a long way in development over the last ten years, prices still follow Bitcoin’s price action. A dump in the price of Bitcoin almost always guarantees the same in the price of the altcoins market. This poses a risk to the long-term development of the market because it could ultimately starve high-potential projects of investments. That’s because the crypto market as a whole is still a volatile, high-risk environment. Therefore, if investors can get a return on their money by investing in bitcoin, there is no point in seeking investments in altcoins, which are even riskier with the possibility of bigger losses in case the market dumps. In this environment, the only way for the market to grow is by using a different valuation approach where a correlation is not the basis of price. Ampleforth is a crypto project that offers this solution. The Ampleforth protocol reacts to market fluctuations by algorithmically changing the supply of AMPL tokens based on the prevailing nominal exchange rate, rather than the price. This gives investors a chance to build a portfolio that is not entirely driven by the price of Bitcoin.</p>
+
+
+
+<h2 id="what-is-ampleforth"><br>What is Ampleforth?</h2>
+
+
+
+<p>Ampleforth is a crypto project that uses an algorithm to keep its purchasing power stable through variable monetary supply. Unlike stable coins that peg their price at $1, the price of Ampleforth moves by changing supply to reflect prevailing demand. Essentially, when the price of the AMPL tokens drops below a certain price level, the protocol cuts the token supply and stabilizes the price. On the other hand, if the price rises above a certain price range, the protocol automatically increases the token supply and stabilizes the price. At the moment, it is pegged to $1, which means that supply is altered to keep the token’s value at around a dollar. However, the protocol is still taking in data from the consumer price index. This will act as a basis for determining the value of AMPL tokens in the future. Essentially, Ampleforth is smart synthetic money, but with the same attributes as natural scarce commodities like silver and gold that are also used as money. One key thing to note about Ampleforth is that all wallets fluctuate simultaneously, which means that the proportion of tokens held increases and decreases does not affect investors holding AMPL tokens.&nbsp;</p>
+
+
+
+<h2 id="brief-history"><br>Brief History</h2>
+
+
+
+<p>In 2018, robotics researcher Evan Kuo and his colleague Brandon Iles set out to solve the problem of correlation between digital assets. The two formed a team and got the financial backing of $3 million from a host of big names such as Coinbase’s Brian Armstrong, True Ventures, and Pantera Capital. This initial round of funding was done on 13th March 2018 and saw the allocation of 9,250,000 AMPL tokens at $0.32. Then the project did another private ICO on 10th December 2018 and raised $1,750,000 in a funds drive that allocated 1,650,000 AMPL tokens at $1.06 each. The project finally went public on 13th June 2019, through a Bitfinex Initial Exchange Offering that allocated 5 million tokens at $0.98 per token. Besides having big names such as Brian Armstrong on its investor list, the project has some equally big names in its list of advisors. Its advisors are Niall Ferguson, a senior fellow at Hoover Institution, Manuel Rincon, also a researcher at the same institution, Noah Jessop, a venture capitalist at Founder Collective, Joey Krug of Pantera Capital, Sam Lessin, the founder of Fin and Paul Veradttakit, also of Pantera Capital.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png"  alt=""  class="wp-image-30488"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="ampleforth-technology-amp-advantages"><br>Ampleforth Technology &amp; Advantages</h2>
+
+
+
+<p>Ampleforth uses an algorithm to determine the number of tokens that are in circulation at any one moment. This ensures that the price of the token is determined by forces of demand and supply, and is not at the mercy of Bitcoin’s price movements as is the case with the majority of the altcoins. Several inherent benefits come with the technology that the Ampleforth protocol uses. Some of them are as below:</p>
+
+
+
+<ul><li>It solves the problem of correlation between digital assets</li></ul>
+
+
+
+<p>Bitcoin was the first cryptocurrency ever developed and has an over 50% dominance of the crypto market at any one time. The result is that most of the cryptocurrencies that came later tend to follow Bitcoin’s price movements the majority of the time. Anytime Bitcoin experiences a selloff, the rest of the market follows suit. The sad part is that some of these projects are so technologically advanced that they should not pump and dump simply because of Bitcoin’s price movements. The correlation with bitcoin not only slows down such projects, but it also keeps most of the institutional money flowing into cryptocurrencies in bitcoin. Ampleforth solves this problem by creating a different approach to crypto valuation. Unlike other altcoins that take a price-based approach to trading, Ampleforth makes use of supply as the key metric. Every 24-hours, Ampleforth’s supply is adjusted to reflect the prevailing demand. To determine the supply, the protocol’s algorithm uses data from multiple credible oracles to establish the nominal exchange rates between different cryptocurrencies and adjusts the supply accordingly. For practicality, assuming X has 1 AMPL that is priced at $1. Then within the day demand for the token doubles to create a situation where X now still has 1 AMPL tokens valued at $2. To keep prices stable, Ampleforth reestablishes a new equilibrium by increasing the supply. This means that X will now have 2 AMPL tokens that are valued at a dollar each. The reverse also happens if the demand declines. Essentially this creates a situation where Ampleforth is not correlated to the rest of the crypto market and is valued at a price that reflects its demand at any given time. It does this while allowing investors to take advantage of the volatility of the crypto market. That’s because, by its nature, Ampleforth is not a stable coin. While a stable coin eliminates volatility, AMPL tokens can rise and fall in value, albeit without a direct correlation to the rest of the market. This is evident in its recent price action, where it hit a high of $4 and has since dropped to under a dollar. Ampleforth is essentially money that is governed by the laws of economics and not the ups and downs of Bitcoin. In the long run, this could see it gain adoption as synthetic commodity money, and stand in the same league as natural wealth commodity money, such as gold and silver.</p>
+
+
+
+<ul><li>It opens up the viability of cryptocurrencies as money</li></ul>
+
+
+
+<p>While cryptocurrencies are used as a form of transfer of value, they are yet to make any meaningful entry into this space. For the most part, they are used as speculative assets. While there are multiple reasons for the low adoption, the main reason is that most cryptocurrencies are deflationary. This makes them lose attractiveness as base money for underpinning an economy. Any country that uses them as a base currency would be at risk of contraction in economic activity. That’s because, by design, they disincentive work by encouraging hoarding. Ampleforth does not have this problem. By design, Ampleforth has an elastic supply which makes it useful as a base currency for economic activity. This places at the forefront of bringing cryptocurrencies to the fore as modes of payment. It also does this without the challenge of its price being under the cloud of Bitcoin’s price movements. Most importantly, it offers a massive opportunity for unbanked all across the world to build wealth using various DeFi tools while using AMPL as a means of everyday transactions and value storage.&nbsp;</p>
+
+
+
+<ul><li>It is a tool for diversification in the crypto environment</li></ul>
+
+
+
+<p>Every asset class in the market allows investors to diversify within it except for crypto. For instance, when it comes to the stock markets, an investor can choose between stocks in different sectors and protect themselves from adverse price movements, while growing their portfolio. In the crypto market, this opportunity has not been there for a very long time. That’s because, even if one were to buy several cryptos, their price movements would still move in tandem with Bitcoin, defeating the whole point of diversification. The only recourse is to get into stable coins, which do not offer any value growth. Ampleforth changes this by offering a real break from the Bitcoin controlled market. Since its price movements are a function of supply and not Bitcoin’s price action, it can be used as a hedge for those seeking growth and safety. This creates an incentive for big money players to get into the crypto market and create a diversified portfolio. By acting as a hedge in the market, Ampleforth could help deepen liquidity in the crypto market and stabilize prices in the long run.&nbsp;</p>
+
+
+
+<h2 id="how-does-ampleforth-work"><br>How does Ampleforth work?</h2>
+
+
+
+<p>Ampleforth works by sourcing for pricing data from Chainlink oracles and its internal oracles. The data is mainly obtained from Kucoin and Bitfinex, and the algorithm checks if the price of AMPL is in the $0.96 and $1.06 equilibrium range. If the prevailing price is higher than $1.06, the protocol automatically increases the supply. Conversely, if the price drops below $0.96, the algorithm decreases the supply. This calculation is done daily, reducing the risk of instant correction. However, despite being pegged to $1, Ampleforth is not a stable coin. Unlike stable coins, Ampleforth is specifically pegged to 2019 dollars, which are inflating at a 2-3% rate annually, which means that this token has the potential to gain in value, in the long run.&nbsp;</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png"  alt=""  class="wp-image-30499"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>It is also important to note that the Ampleforth protocol is not decentralized, but it is autonomous. This means that the Ampleforth foundation can change the supply and even freeze the tokens in circulation. Another important component of the Ampleforth working mechanism is that it has a system for incentivizing user-generated liquidity. The system is called the Ampleforth Geyser and is actualized in collaboration with Uniswap. It works by rewarding AMPL users for depositing their tokens in the Uniswap protocol and helps in keeping the whole ecosystem stable.</p>
+
+
+
+<h2 id="perspectives-amp-takeaways"><br>Perspectives &amp; Takeaways</h2>
+
+
+
+<p>Ampleforth offers an opportunity for altcoins to decouple from the chokehold that Bitcoin has on their prices. The tremendous rise of Ampleforth since the idea was conceived points to a market that is hungry for such an alternative protocol. Its public offer when it launched on Bitfinex was sold out in under 17 seconds. Since then, it has attracted lots of positive press both in the mainstream media and on social media. On August 6th, Crypto News Flash reported that data from sentiment was showing an increase in Ampleforth uptake. It <a href="https://www.crypto-news-flash.com/santiment-ethereum-might-face-correction-defi-token-ampleforth-will-rise/">stated</a> that,</p>
+
+
+
+<p><em>“Santiment highlighted in a separate report the newcomer Ampleforth (AMPL) and the fast price development of the token. The analysis firm claims that the token has gained popularity and investor confidence&#8230;Santiment describes investors’ perception of AMPL as “extremely positive” with the potential to continue that trend.”</em></p>
+
+
+
+<p><a href="https://twitter.com/hashtag/Ampleforth?src=hashtag_click">On Twitter, one user</a> recently wrote that,</p>
+
+
+
+<p><em>&#8220;The problem with global financial markets is the lack of sound money. Gold and Bitcoin do not solve this. #Ampleforth solves this.&#8221;</em></p>
+
+
+
+<p>This all points to crypto that is increasingly more visible in the market, as a solution to the problems that Bitcoin and other altcoins have failed to solve.&nbsp;</p>
+
+
+
+<h2 id="ampleforth-website"><br>Ampleforth website</h2>
+
+
+
+<p>To learn more about Ampleforth, one can check out their website on <a href="https://www.ampleforth.org/">https://www.ampleforth.org/</a>.</p>
+
+
+
+<h2 id="ampleforth-github"><br>Ampleforth Github</h2>
+
+
+
+<p>To learn more about Ampleforth’s development, one can check out its Github on <a href="https://github.com/ampleforth">https://github.com/ampleforth</a>.</p>
+
+
+
+<h2 id="ampleforth-twitter"><br>Ampleforth Twitter</h2>
+
+
+
+<p>To learn more about the project, follow them on Twitter at <a href="https://twitter.com/ampleforthorg">https://twitter.com/ampleforthorg</a>.</p>
+
+
+
+<h2 id="ampleforth-reddit"><br>Ampleforth Reddit</h2>
+
+
+
+<p>To contribute to the Ampleforth community, join them on Reddit at <a href="https://twitter.com/ampleforthorg">https://twitter.com/ampleforthorg</a></p>
+
+
+
+<h2 id="how-to-store-and-manage-ampl"><br>How to store and manage AMPL</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png"  alt=""  class="wp-image-30510"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/ampleforth2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>There are multiple ways to store AMPL tokens. One of the best is <a href="https://atomicwallet.io/">Atomic Wallet</a>. This wallet is safe because it gives you control over your private keys. It also has over 300 coins and tokens that one can trade their AMPL tokens for. The wallet also allows for staking to grow crypto incomes passively.</p>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>Ampleforth is a crypto project that bases its price on supply. This allows its price to move independently of Bitcoin, unlike other altcoins. Since its launch, the project’s price movement has largely been independent of Bitcoin. Ampleforth currently has a market cap of $181 million. The project continues to evolve and recently announced that it was removing the pause function. This was motivated by the need to enhance transparency in governance and grow the project.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ampleforth-complete-guide">What is Ampleforth (AMPL) &#8211; A Complete Guide.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ampleforth-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Aave (LEND) Crypto: An Explained Guide</title>
+		<link>https://atomicwallet.io/blog/academy/assets/what-is-aave-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/assets/what-is-aave-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Thu, 30 Jul 2020 12:25:30 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30271</guid>
+
+					<description><![CDATA[<p>Decentralized Finance has been gaining traction for the last few years, and for a good reason. It gives financial access to people who would not get the benefits of the central banking system. With decentralized finance, anyone can borrow and lend in crypto without needing the requirements that come with the legacy banking system such as KYC. As DeFi grows in acceptance, the number of protocols serving the space has grown with platforms like MakerDAO now becoming more visible in crypto space. One of the platforms that have taken the DeFi space by storm is Aave (LEND).</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/assets/what-is-aave-complete-guide">Aave (LEND) Crypto: An Explained Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave-guide4-1920x1080.png"  alt="Aave Cover"  class="wp-image-30272" ></figure>
+
+
+
+<p>Decentralized Finance has been gaining traction for the last few years, and for a good reason. It gives financial access to people who would not get the benefits of the central banking system. With decentralized finance, anyone can borrow and lend in crypto without needing the requirements that come with the legacy banking system such as KYC. As DeFi grows in acceptance, the number of protocols serving the space has grown with platforms like MakerDAO now becoming more visible in crypto space. One of the platforms that have taken the DeFi space by storm is&nbsp;Aave (LEND).</p>
+
+
+
+<h2 id="what-is-aave"><br>What is Aave?</h2>
+
+
+
+<p>Aave is a protocol that allows people to create their own money markets in a decentralized environment. Aave launched its main net in 2017 at a time when most people did not even have an idea of what DeFi is all about. Simply put, Aave is a platform where people can borrow by agreeing on repayment terms with lenders, without involving a third party. The native token on the Aave ecosystem is dubbed LEND. At the moment, Aave (LEND) has a circulating supply of 1,299, 999,942, and a total supply of the same amount.</p>
+
+
+
+<h2 id="brief-history"><br>Brief History</h2>
+
+
+
+<p>Aave was launched in 2017 by Stani Kulechov. The project started with the ETHLend ICO that&nbsp;<a target="_blank" href="https://medium.com/aave/ethlend-token-sale-event-successfully-closes-with-16-2-million-usd-raised-d0e0a1206141" rel="noreferrer noopener">raised $16.2 million</a>&nbsp;on November 30, 2017. For the token sale, ETHLend partnered with Eidoo and worked with more than 5000 applicants for the token sale following a strict KYC policy. After a successful ICO, the project was&nbsp;<a target="_blank" href="https://medium.com/aave/ethlend-reveals-a-new-parent-brand-aave-launching-multiple-products-e94362a5204e" rel="noreferrer noopener">rebranded to Aave</a>&nbsp;in 2018. The goal was to integrate its platform with traditional technology offerings and grow further. Even after the rebrand, the team remained the same and was headed by Stani. Some of the other key players are:</p>
+
+
+
+<ul><li>Jordan – Chief Operating Officer</li><li>Rowan – Creative director</li><li>Alexandra – Risk manager</li><li>Emilio – Software engineer</li><li>Ernesto – Software engineer</li><li>Andrey – Software engineer</li><li>Villle – Chief compliance officer</li></ul>
+
+
+
+<p>Finally, on January 8, 2020, the Aave protocol officially went live on the Ethereum mainnet with some innovative features such as;</p>
+
+
+
+<ul><li><em>Flash loans</em>,&nbsp;one of the most important features of Aave protocol, which enable users to borrow instantly without the need for collateral.</li></ul>
+
+
+
+<ul><li><em>Aave interest bearing tokens (aTokens)</em>,&nbsp;an innovative tokenization model that are minted upon deposit and burned when redeemed. As mentioned on Aave&#8217;s website, &#8220;The aTokens are pegged 1:1 to the value of the underlying asset that is deposited in Aave protocol. ATokens, such as aDai, can be freely stored, transferred, and traded&#8221;. Most importantly, the tokens collect interest in real-time that you can notice your wallet balance is increasing continuously.</li></ul>
+
+
+
+<ul><li><em>Stable rate model</em><strong>,</strong>&nbsp;works as a fixed-rate loan that protects borrowers from the volatility of variable interest rates.</li></ul>
+
+
+
+<ul><li><em>Rate switching</em><strong>&nbsp;</strong>allows users to switch between stable and variable rates, which helps to get the best interest rates.</li></ul>
+
+
+
+<ul><li><em>Perpetual loans&nbsp;</em>enable users to get liquidity from their deposits without any repayment schedule. This could be possible by the over-collateralization of all loans, which is the primary goal of decentralized finance.</li></ul>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png"  alt="2017 pic 2"  class="wp-image-30283"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave1.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="how-does-aave-work"><br>How does Aave work?</h2>
+
+
+
+<p>The working mechanism of Aave is pretty simple. You need to offer collateral that is larger (over collateralized) than the amount that you are borrowing. For context, when you want to borrow, you have to deposit coins in a pool. The pool then decides amongst itself, how much of the money in its possession it wants to lend out. The rest of the money is put in a reserve. The goal of the reserve is to protect lenders from the volatility that characterizes the crypto market. It also gives lenders the leeway to withdraw their money at any time. Once you deposit money into a pool, you can then go ahead and borrow an amount lower than the amount you have raised as collateral. If you are unable to repay the loan in the stipulated time, you automatically lose the amount you had raised as collateral. Similarly, if the dollar value of the amount raised as collateral falls below the required collateral level, they are also automatically liquidated. To collect data on prices about the assets offered as collateral on the platform, Aave employs&nbsp;<a target="_blank" href="https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e" rel="noreferrer noopener">Chainlink (LINK) oracles</a>. The number of assets that one can borrow and lend on Aave is quite diverse. Some of them are as below:</p>
+
+
+
+<ol><li>Dai (DAI)</li><li>True USD (TUSD)</li><li>Tether (USDT)</li><li>Synthetix USD (SUSD)</li><li>Binance USD (BUSD)</li><li>Ethereum (ETH)</li><li>ETHLend (LEND)</li><li>Basic Attention Token (BAT)</li><li>Enjin (ENJ)</li><li>Ren (REN)</li><li>Kyber Network (KNC)</li><li>Chainlink (LINK)</li><li>Decentraland (MANA)</li><li>Maker (MKR)</li><li>Augur (REP)</li><li>Synthetix Network Token (SNX)</li><li>Wrapped Bitcoin (WBTC)</li><li>0x (ZRX)</li></ol>
+
+
+
+<p>You are probably wondering how interest rates are decided, right? Well, just like in traditional banking, there are two types of interest rates on Aave, namely: Stable (Fixed) and Variable. The borrower has the option of choosing between the two. The stable rate is calculated as the average of interest rates in 30 days. On the other hand, the variable rate is determined by an algorithm based on the usage of funds in a pool. Usually, the higher the utilization of a pool, the higher the interest rates.</p>
+
+
+
+<p>It is important to note that the Aave token is the native token to the Aave ecosystem. When one deposits coins with the goal of lending or borrowing, they are automatically converted into Aave tokens. The tokens are then added to the user&#8217;s Ethereum wallet and can be converted to the underlying asset. The Aave token (LEND) is also used to pay fees on the Aave protocol and is then burned. The protocol also intends to use the token for governance, which means that token holders can use them to vote on the direction the project takes in the future.</p>
+
+
+
+<p>Another aspect of Aave that users need to understand is the concept of flash loans. This entails getting a loan without raising any collateral. For a flash loan to work, the crypto that is borrowed has to be repaid by the time the next Ethereum block is mined. Failure to repay means that all transactions that happened between the time of borrowing and the block mining are canceled. These loans are given for incredibly short periods and are mostly used by arbitrage traders.</p>
+
+
+
+<h2 id="aave-technology-and-advantages"><br>Aave Technology and Advantages</h2>
+
+
+
+<p>Aave technology that allows people to create lending markets has several advantages as below:&nbsp;</p>
+
+
+
+<h3 id="it-enables-cross-border-lending-nbsp"><br>It enables cross-border lending&nbsp;</h3>
+
+
+
+<p>With the traditional banking system, individuals can only borrow money within their home countries. This is due to the risks involved in cross-border lending and differing government regulations. The problem is that this denies millions of people access to crucial funding for their various business endeavors. With Aave, anyone from anywhere in the world can borrow in a free market environment provided they can raise the necessary collateral. Once this gains traction worldwide, it could open a global business in ways that the centralized banking system can never do.</p>
+
+
+
+<h3 id="it-does-not-need-a-bank-nbsp"><br>It does not need a bank&nbsp;</h3>
+
+
+
+<p>Most people take the idea of having a bank account for granted. Unfortunately, this is the luxury that a lot of people do not have. Research shows that up to 2 billion people do not have a bank account. This means that those 2 billion people do not have access to loans that can help them change their lives. With Aave, one does not need a bank account to get financial services. As such, even the most remote societies that are unbanked have an opportunity to compete effectively with people who have access to the traditional banking system.</p>
+
+
+
+<h3 id="it-8217-s-an-investment-opportunity"><br>It&#8217;s an investment opportunity</h3>
+
+
+
+<p>The crypto market is still young, and prices are likely to stay volatile for a while. Crypto projects like Aave offer investors an option to make money as they await the markets to stabilize. That&#8217;s because investors can earn money by charging interest when lending crypto. Since the DeFi space is not yet fully developed, and competition is low, the interest rates can be quite high. This makes lending a good hedge for crypto volatility.</p>
+
+
+
+<h3 id="aave-eliminates-the-need-for-credit-ratings"><br>Aave eliminates the need for credit ratings</h3>
+
+
+
+<p>In the legacy banking system, a person&#8217;s ability to get their credit ratings to determine a loan—the better the credit rating, the better the chances of accessing a loan. Unfortunately, there are times when one falls into a bad credit rating due to unavoidable circumstances such as the current coronavirus pandemic. Aave eliminates this problem because there is no credit rating required. So long as one can raise the necessary crypto collateral, you can access a loan on the Aave DeFi protocol.</p>
+
+
+
+<h3 id="it-is-fast-nbsp"><br>It is fast&nbsp;</h3>
+
+
+
+<p>Anyone who has ever tried to take a bank loan knows that it is a tedious process. You have to do a lot of paperwork; the bank will then review that for them to establish whether you are creditworthy or not. These are issues that one does not have to deal with when using Aave. With Aave, there are no central organizations involved, which means there is no paperwork. So one gets a loan fast no matter where the person is on the planet. Such efficiency is necessary, especially when one needs money for emergency reasons. They do not have the time to go through the lengthy and tedious processes of the traditional bank.</p>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives and Takeaways</h2>
+
+
+
+<p>Aave, like other DeFi protocols, is changing finance. Opening up lending even to the unbanked will drive up financial inclusion in ways never seen before.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png"  alt="pic 3"  class="wp-image-30294"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>What&#8217;s even more impressive is how positive the crypto community is towards the technology. On July 13, 2020, Coindesk reported that Aave had started a new feature called credit delegation. With the new feature, Aave users will be in a position to set up credit lines that can be used for peer-to-peer lending. Using the new feature, an investor in Aave can deposit stable coins, and instead of using them as collateral, give the right to borrow to someone else. The investor delegating the role to borrow can then earn more interest since they are bearing higher risk.&nbsp;</p>
+
+
+
+<p>The new feature attracted praise from multiple quarters, including Su Zhu, the CEO of Three Arrows Capital, a Singapore-based digital assets fund. Zhu said that,&nbsp;</p>
+
+
+
+<p>&#8220;Aave&#8217;s introduction of credit delegation is groundbreaking.&#8221;</p>
+
+
+
+<p>Such recognition goes to show that not only is DeFi going mainstream and getting accepted internationally, Aave as a DeFi project is gaining traction too.&nbsp;</p>
+
+
+
+<p>The Aave team is cognizant of this fact and has been working to improve the project continually and meet the growing demand. Commenting on the addition of the new credit delegation feature,&nbsp;<a target="_blank" href="https://www.coindesk.com/first-mover-aave-lend-token-defi-hype" rel="noreferrer noopener">Aave CEO</a>&nbsp;stated that,</p>
+
+
+
+<p>&#8220;Most of the traction comes due to our wide asset selection that you can use as collateral and the ability to borrow flash loans without collateral, which has become a popular tool.&#8221;&nbsp;</p>
+
+
+
+<p>In an earlier&nbsp;<a target="_blank" href="https://twitter.com/StaniKulechov/status/1280500978266132493?utm_source=newsletters&amp;utm_medium=firstmover&amp;utm_campaign=&amp;clid=00Q1I00000KJy0CUAT" rel="noreferrer noopener">tweet</a>, he acknowledged the growing DeFi space and highlighted the steps the project was taking to grow He said,</p>
+
+
+
+<p>&#8220;Credit Delegation allows @AaveAave to scale DeFi TVL into financial debt markets worldwide, making DeFi the liquidity backbone of finance. The overall DeFi narrative expands from deposit capital; to DeFi to source capital from DeFi. As a lawyer, my passion in the space has been always to bring Smart Contracts and Law together to help end-user consumers. First, we brought earnings back to consumers, and now we are bringing the alternative liquidity for consumers by injecting DeFi liquidity into the debt markets.&#8221;</p>
+
+
+
+<p>The above tweet hints at the direction that Aave is taking. The project is looking to become a bona fide alternative to finance 1.0, which operates outside of the control of centralized banking systems.</p>
+
+
+
+<p>In essence, as crypto space grows in acceptance, the depth of Aave will grow as well. It is a validation of this project, as a serious player in crypto space, one with a good chance of long-term growth.</p>
+
+
+
+<h2 id="aave-website"><br>Aave Website</h2>
+
+
+
+<p>To learn more about Aave, check out their website on&nbsp;<a target="_blank" href="https://aave.com/" rel="noreferrer noopener">https://aave.com/</a></p>
+
+
+
+<h2 id="aave-github"><br>Aave Github</h2>
+
+
+
+<p>To follow this project&#8217;s technical development, check out their Github on&nbsp;<a target="_blank" href="https://github.com/aave/aave-protocol" rel="noreferrer noopener">https://github.com/aave/aave-protocol</a></p>
+
+
+
+<h2 id="aave-twitter"><br>Aave Twitter</h2>
+
+
+
+<p>You can also follow them on twitter at&nbsp;<a target="_blank" href="https://twitter.com/aaveaave" rel="noreferrer noopener">https://twitter.com/aaveaave</a></p>
+
+
+
+<h2 id="aave-reddit"><br>Aave Reddit</h2>
+
+
+
+<p>To contribute to the Aave community on Reddit, join&nbsp;<a target="_blank" href="https://www.reddit.com/r/Aave_Official/" rel="noreferrer noopener">https://www.reddit.com/r/Aave_Official/</a></p>
+
+
+
+<h2 id="how-to-store-and-manage-lend"><br>How to store and manage LEND</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png"  alt="pic 4"  class="wp-image-30305"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/aave2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>There are multiple ways to store LEND. One of the best wallets for it is&nbsp;<a target="_blank" href="https://atomicwallet.io/" rel="noreferrer noopener">Atomic wallet</a>. With Atomic, you retain control of your private keys, which makes it highly secure. With this wallet, you can also exchange your LEND for a wide variety of cryptos securely and anonymously.</p>
+
+
+
+<h2 id="the-bottom-line"><br>The bottom line</h2>
+
+
+
+<p>Aave is changing finance by giving unbanked populations access to loans. The project is continually being improved and has completed most of its roadmap for the year 2020. For instance, on July 16, 2020, the project team announced that it&#8217;s adding new features to the platform. Some of them include adding new assets and the introduction of new risk parameters. These improvements can be seen on the project website or their Github page.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/assets/what-is-aave-complete-guide">Aave (LEND) Crypto: An Explained Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/assets/what-is-aave-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is MakerDAO: A Complete Ultimate Guide</title>
+		<link>https://atomicwallet.io/blog/academy/makerdao-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/makerdao-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Mon, 20 Jul 2020 10:54:44 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30135</guid>
+
+					<description><![CDATA[<p>In this article, we will focus on the history of MakerDAO, how it works, and its advantages to the crypto ecosystem, especially in decentralized finance (DeFi). </p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/makerdao-complete-guide">What is MakerDAO: A Complete Ultimate Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/makerdao-cover-1920x1080.png"  alt="MakerDAO guide"  class="wp-image-30136" ></figure>
+
+
+
+<p>MakerDAO is a decentralized organization built on the Ethereum blockchain. It&#8217;s designed to allow people to borrow and lend in crypto, in processes that are executed using smart contracts.&nbsp;</p>
+
+
+
+<p>You are probably wondering how this happens yet cryptocurrencies are highly volatile, right? Well, the MakerDAO ecosystem uses a stable coin called DAI in pricing lending rates and amounts repayable. The MakerDAO ecosystem also has another token called MKR (More on this later).&nbsp;</p>
+
+
+
+<p>In this article, we will focus on the history of MakerDAO, how it works, and its advantages to the crypto ecosystem, especially in decentralized finance (DeFi).&nbsp;</p>
+
+
+
+<h2 id="brief-history-nbsp"><br>Brief History<strong>&nbsp;</strong></h2>
+
+
+
+<p>MakerDAO was founded by Rune Christensen in 2014 and has its headquarters in Santa Cruz, California. In 2018, MakerDAO received a capital boost of $15 million from Andreessen Horowitz. He bought 6% of the total Maker (MKR) in circulation. At this point, MakerDAO is the longest-running project on the Ethereum blockchain. The project has more than 2.3 million Ethereum in its protocol, about 2% of the total Ethereum in circulation.&nbsp;</p>
+
+
+
+<p>Currently, the MakerDAO team has 11 members. Besides Rune Christensen, who is the CEO, the core members of the team are:</p>
+
+
+
+<ul><li>Steven Becker, (COO)</li><li>Andy Milenius (CTO)</li><li>Soren Peter Nielsen (Head of product)</li><li>Jacek Czamecki (General Counsel)</li><li>Arran Kitson (Senior Digital Asset Analyst)</li><li>Matthew Cooper (Business Development, Account Manager)</li><li>Gustav Arentoft (Business Development)</li></ul>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png"  alt="dai 2014 "  class="wp-image-30183"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao1-2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id=""><br></h2>
+
+
+
+<h2 id="makerdao-technology-and-advantages">MakerDAO Technology and Advantages</h2>
+
+
+
+<p>MakerDAO has several advantages that make it a key player in the decentralized finance ecosystem. They are as below:</p>
+
+
+
+<h4 id="it-solves-the-tether-usdt-problem">It solves the Tether (USDT) problem</h4>
+
+
+
+<p>The use of stable coins is not unique to MakerDAO. In fact, the most widely used stable coin in the market is Tether (USDT). However, Tether has several problems that make it a weak link for the entire crypto ecosystem. One of the disadvantages of<a href="https://capital.com/research-80-of-stablecoin-tether-is-controlled-by-300-addresses"> Tether</a> is that it is centralized. It is run by the same people who run Bitfinex, and there are controversies around it. In a situation where the people behind Bitfinex go under, Tether could collapse as well.</p>
+
+
+
+<p>&nbsp;MakerDAO stable coins do not have this problem because they are decentralized. Unlike Tether generated from a central source, new DAIs are created through user-generated collateralized debt positions (CDPs).&nbsp;</p>
+
+
+
+<p>Users lock-in Ethereum in smart contract pools and create CDPs. It is the CDP that then makes the user&#8217;s DAI while giving out interest on the total Ethereum pooled. In essence, there is no single point of failure for DAI. This stable coin would be a safe bet if USDT fails.</p>
+
+
+
+<h4 id="it-creates-transparency-in-the-crypto-ecosystem">It creates transparency in the crypto ecosystem</h4>
+
+
+
+<p>Centralized coins dominate the stable coin ecosystem. While they work pretty fine, there is always the issue of transparency. For instance, if a single source only generates a stable coin, the market can never know if the coins in circulation are backed 1:1 by actual dollars. This poses a risk because a discrepancy could lead to collapse and negatively impact the entire crypto ecosystem.</p>
+
+
+
+<p>MakerDAO stable coins do not have this problem. That&#8217;s because the DAI stable coins are created through collateralized debt positions, as mentioned above. As such, there can never be a hole in the funding of all DAI in circulation.</p>
+
+
+
+<h4 id="makerdao-solves-the-bitcoin-manipulation-problem">MakerDAO solves the Bitcoin manipulation problem</h4>
+
+
+
+<p>There has been a growing issue in crypto with regards to Bitcoin Tether manipulation. Reports are showing that anytime new Tether enters circulation, the price of Bitcoin rises. Even more damning are reports that up to 80% of Bitcoin&#8217;s value is derived from Tether.</p>
+
+
+
+<p>MakerDAO stable coins solve this problem because all DAI&#8217;s generated are recorded on the blockchain, and execute based on instructions put on the smart contract. This makes it a solution to the problem of Bitcoin manipulation.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png"  alt="money MKR &amp; DAI"  class="wp-image-30158"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<h2 id="how-does-makerdao-work"><br>How does MakerDAO work?</h2>
+
+
+
+<p>MakerDAO is a credit facility that gives loans at a predetermined interest rate. The process starts with an Ethereum deposit into a Maker smart contract, which creates a collateralized debt position (CDP).&nbsp;</p>
+
+
+
+<p>For context, if Ethereum is trading at $100 and a user deposits 1 Ethereum at a hypothetical collateralized rate of 150%, they would be allowed to receive 40 DAI. If the price of Ethereum drops below $100, the user gets automatically closed out of their position. For such a user to get their Ethereum back from the MakerDAO, they would need to pay back the amount they received and a fee. The same concept applies to any amount of Ethereum and at any price.&nbsp;</p>
+
+
+
+<p>The entire system is controlled by a MakerDAO native token called MKR. Holders of the MKR token have control of various aspects of the protocol that includes annual borrowing, the amount of collateral for CDPs, and shutting down in case of an emergency Ethereum crash. It is the MKR that also makes the MakerDAO a fully decentralized system.&nbsp;</p>
+
+
+
+<p>It is also important to note that when fees are paid, a dollar value of the MKR is bought out of the market, and used to pay the stability fee. The working of MakerDAO can be summed up in the loop cycle below:</p>
+
+
+
+<ol><li>User opens a collateralized debt position</li><li>If Ethereum depreciates, the user gets closed out and pays a fee.</li><li>If Ethereum price appreciates, the user draws DAI from the CDP</li><li>The user buys more Ethereum with newly created DAI&nbsp;</li><li>The user adds more Ethereum to their CDP to protect against a drop in Ethereum value.</li><li>Cycle repeats.&nbsp;</li></ol>
+
+
+
+<h2 id="perspectives-and-takeaways"><br>Perspectives and takeaways</h2>
+
+
+
+<p>While decentralized finance is still way off from going mainstream, it is gaining traction. This is driven by the fact that huge segments of the world population do not have access to centralized financial systems. As an alternative decentralized system takes root, MakerDAO and its decentralized lending ecosystem will grow too.&nbsp;</p>
+
+
+
+<p>On top of that, the issue of Bitcoin control by Tether will ultimately drive the market towards decentralized stable coins, and MakerDAO is one of the oldest and most tested on this front. The MakerDAO is also constantly innovating and recently introduced multi-collateral DAI. This entails allowing users to make DAI stable coins that are backed by multiple crypto assets.&nbsp;</p>
+
+
+
+<h2 id="views-on-makerdao"><br>Views on MakerDAO</h2>
+
+
+
+<p>Since its launch, the MakerDAO has grown in popularity because it is at the core of decentralized finance. With more people getting into decentralized finance, commentary on DAI in the media by top voices in crypto has been on the rise. In 2018, Ethereum founder Vitalik Buterin <a href="https://twitter.com/VitalikButerin/status/1050778499307450368">twitted</a> that, &#8220;MakerDAO is great&#8221; and got lots of positive feedback about it.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png"  alt="dai coin"  class="wp-image-30169"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/dao2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>Another interesting comment is by Arentoft concerning the launch of <a href="https://blockchain.news/news/makerdaoon-the-significance-of-multi-collateral-dai-and-dai-savings-rate">multi collateral DAI</a>. He stated that &#8220;It&#8217;s very similar to having a US dollar-denominated savings account. It works as a form of staking, the savings accounts will take some part of the profits from the system and distribute them back to the users on the system. One of the benefits of having a decentralized system is that we don&#8217;t have to abide by traditional monetary policy but can instead focus a lot more on helping people.&#8221;</p>
+
+
+
+<h2 id="makerdao-website"><br>MakerDAO Website</h2>
+
+
+
+<p>For complete information about MakerDAO visit <a href="https://makerdao.com/en/">https://makerdao.com/en/</a></p>
+
+
+
+<h2 id="makerdao-github"><br>MakerDAO Github</h2>
+
+
+
+<p>For complete information about the MakerDAO code, visit <a href="https://github.com/makerdao">https://github.com/makerdao</a>&nbsp;</p>
+
+
+
+<h2 id="makerdao-twitter"><br>MakerDAO Twitter</h2>
+
+
+
+<p>Follow <a href="https://twitter.com/makerdao?lang=en">@MakerDAO</a> for the latest news on MakerDAO.</p>
+
+
+
+<h2 id="makerdao-reddit"><br>MakerDAO Reddit</h2>
+
+
+
+<p>Join MakerDAO subreddit <a href="https://www.reddit.com/r/MakerDAO/">r/MakerDAO</a> to discuss MakerDAO with the rest of the DAO community.&nbsp;</p>
+
+
+
+<h2 id="how-to-store-and-manage-mkr-amp-dai"><br>How to store and manage MKR &amp; DAI</h2>
+
+
+
+<p><a href="https://atomicwallet.io/">Atomic wallet</a> is one of the most secure multi-currency wallets for managing Maker tokens. The first step in hodling them is to download Atomic wallet. Next, create a password and store the 12-word automatically generated backup phrase in a safe location.&nbsp;</p>
+
+
+
+<p>Next, send the Maker tokens to your wallet for safe storage. Besides the password and the mnemonic phrase, your private keys never leave your device. On top of that, you can buy more MakerDAO tokens, or exchange them for other cryptos in the wallet.</p>
+
+
+
+<h2 id="conclusion"><br>Conclusion</h2>
+
+
+
+<p>MakerDAO tokens DAI and MKR are supported by Atomic wallet and many other wallets. MakerDAO is at the center of the growing DeFi ecosystem because it is decentralized, and allows for lending and borrowing using crypto. With the introduction of multi-collateral DAI, the future of MakerDAO is bright.&nbsp;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/makerdao-complete-guide">What is MakerDAO: A Complete Ultimate Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/makerdao-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What are Mining Pools?</title>
+		<link>https://atomicwallet.io/blog/academy/what-are-mining-pools</link>
+					<comments>https://atomicwallet.io/blog/academy/what-are-mining-pools#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Thu, 16 Jul 2020 16:01:22 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blockchain]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=27033</guid>
+
+					<description><![CDATA[<p>Check this article to learn why people need mining pools, what are the most common types and what are the most popular Bitcoin and Ethereum mining pools?</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-are-mining-pools">What are Mining Pools?</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2019/09/bitcoin-mining-pool-3.png"  alt="Mining Pools - Explained"  class="wp-image-11238" ></figure>
+
+
+
+<p>All about Mining pools, so a mining pool is a particular server that is used to distribute tasks for Bitcoin mining or other types of digital coins between the participants of the pool.</p>
+
+
+
+<p>Each member entering the pool sends the power of his equipment to decrypt the block, which he receives a reward. Even if the power of the hardware is small, the participant gets a proportion in the total earnings, commensurate with his costs.</p>
+
+
+
+<h3 id="why-do-people-need-mining-pools">Why do People Need Mining Pools?</h3>
+
+
+
+<p>If earlier one could mine using one computer of average power; now, taking into account the complexity of mining, it is necessary to have very powerful and expensive equipment or join pools.</p>
+
+
+
+<h3 id="types">Types</h3>
+
+
+
+<p>Analyzing the types of mining pools, miners usually divide them into single and multi-coin pools. They differ in coins they mine and the method they collect power.</p>
+
+
+
+<h4 id="single-and-multi-coin-pools">Single and Multi Coin Pools</h4>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1380"  height="480"  src="https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png"  alt="Single and Multi Coin Pools"  class="wp-image-11250"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/single-and-multi-coins-pools.png 1380w"  sizes="(max-width: 1380px) 100vw, 1380px" ></figure>
+
+
+
+<p>A single coin pool offers clients to mine only one type of cryptocurrency &#8211; for example,&nbsp;<a href="https://atomicwallet.io/bitcoin-wallet">Bitcoin</a>&nbsp;or&nbsp;<a href="https://atomicwallet.io/ethereum-wallet">Ethereum</a>.</p>
+
+
+
+<p>Multi coin pools give miners a possibility to mine a bunch of coins simultaneously preserving efficiency between digital assets. Today, some pools automatically switch to the most profitable cryptocurrency and then convert profits into BTC.</p>
+
+
+
+<h3 id="cloud">Cloud</h3>
+
+
+
+<p>In addition to mining using pools, cloud mining is another effective option. This is the same cryptocurrency mining in pools, but using leased equipment. All a user needs to do is to purchase a contract and wait for the income.</p>
+
+
+
+<h3 id="mining-pools-features">Mining Pools Features</h3>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1380"  height="480"  src="https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png"  alt="Mining Pools Features"  class="wp-image-11262"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools-features.png 1380w"  sizes="(max-width: 1380px) 100vw, 1380px" ></figure>
+
+
+
+<p>While searching for a profitable mining pool, one should pay attention to the fees and the payments systems the pool uses.</p>
+
+
+
+<ul><li>It is worth noting that the owner of the server charges a fee from the remuneration that the miners participating in the mining pool receive for closing the block. As a rule, commission costs range from 0.1 to 5 percent.</li><li>The size of the possible profit ultimately depends on the correct choice of the mining pool, since different pools determine the mechanism for calculating the income of participants differently.</li></ul>
+
+
+
+<ul><li>PPS (Pay Per Share). According to this algorithm, each filed share is paid for by a certain amount of Bitcoin divided by the current network complexity.</li><li>PROP (Proportional) &#8211; obtaining the remuneration by the participant, depending on the percentage of shares that were sent to the pool during the calculation of the block.</li><li>PPLNS (Pay Per Last N Shares). Similar to the proportional algorithm, but instead of taking into account the number of shares filed in each round, this method rewards new shares, regardless of the boundaries of the round.</li></ul>
+
+
+
+<h3 id="bitcoin-mining-pools">Bitcoin Mining Pools</h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2019/09/bitcoin-mining-pools.png"  alt="Bitcoin Mining Pools"  class="wp-image-11274" ></figure>
+
+
+
+<p>There are lots of pools on the market; however, not all of them has a trustworthy reputation. In this regard, we have selected the top 10 most reliable pools for Bitcoin mining.</p>
+
+
+
+<h3 id="top-10-bitcoin-mining-pools">Top 10 Bitcoin Mining Pools</h3>
+
+
+
+<ul><li>BTC.com.&nbsp;This is the most powerful Bitcoin pool today; its share now stands at 19.2%, it is organized by the well-known computer equipment manufacturer Bitmain Technologies through its subsidiary.</li><li>Slush pool&nbsp;is the first pool on the market since the existence of Bitcoin.</li><li>ViaBTC&nbsp;is a young mining pool that focuses on miners from China, but one can connect to it from other countries.</li><li>F2pool.&nbsp;The mining pool has been functioning since 2013, also known as Discus Fish.</li><li>AntPool&nbsp;conducts mining under the management of a private company Bitmain Technologies Ltd., which is based in Beijing, China.</li><li>BTC China&nbsp;is another Chinese pool that operates with a large amount of hardware.</li><li>Eligius&nbsp;&#8211; an interesting pool, which is named after the Catholic saint Eligiya, who was engaged in coin minting. Perhaps this is the largest pool that does not require registration.</li><li>BitFury&nbsp;differs from other pools in the list in that its hardware is deployed not in China, but in Iceland, where the climate contributes to lowering the cost of heat dissipation.</li><li>Zpool&nbsp;– an American platform for mining. Exchange operations occur in automatic mode, which is very convenient for newcomers.</li><li>Bixin.&nbsp;The company was established in 2014 as an aggregator of Bitcoin cryptocurrency wallets, later a pool appeared.</li></ul>
+
+
+
+<h3 id="ethereum-mining-pools">Ethereum Mining Pools</h3>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2019/09/ethereum-mining-pools.png"  alt="Ethereum Mining Pools"  class="wp-image-11286" ></figure>
+
+
+
+<p>Ethereum mining pools are collective groups of users who decide to collect their resources together for more efficient ETH mining.</p>
+
+
+
+<h3 id="top-10-ethereum-mining-pools">Top 10 Ethereum Mining Pools</h3>
+
+
+
+<ul><li>ETHpool.org.&nbsp;The first and official pool for Ethereum mining. Some time ago, the pool did not accept new users due to a high workload and worked only with old clients.</li><li>F2pool.&nbsp;The pool was launched in 2013 and was initially oriented towards users from China.</li><li>Nanopool.&nbsp;Millions of miners use it, and during its existence, the pool has earned the trust of the community. The minimum withdrawal amount is 0.2 ETH.</li><li>Dwarfpool.&nbsp;Even though there are fewer users involved in mining, the pool can be considered reliable. The minimum withdrawal amount is 1.01 ETH.</li><li>Mining pool hub.&nbsp;The pool allows to mine dozens of different coins, among which is ETH.</li><li>Whalesburg&nbsp;&#8211; new switchable mining pool for ETH, ETC, UBQ, ELLA and other coins on the ETHash algorithm.</li><li>BitClub Pool.&nbsp;This is a very simple and fast pool for Ethereum mining with zero commissions, which allows withdrawing money directly to the card.</li><li>Ethfans&nbsp;is another ETH mining pool located in China.</li><li>Coinotron.&nbsp;This is the first pool that supports the mining of several coins, including Ethereum.</li><li>Waterhole Pool.&nbsp;The minimum commission constitutes 1%, and anonymous and secure mining is supported.</li></ul>
+
+
+
+<h3 id="conclusion">Conclusion</h3>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1380"  height="480"  src="https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png"  alt="Mining Pools"  class="wp-image-11298"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2019/09/mining-pools.png 1380w"  sizes="(max-width: 1380px) 100vw, 1380px" ></figure>
+
+
+
+<p>In general, mining pools are an excellent option for passive earnings. Mining using pool allows to significantly increase the chances of success, which is especially crucial at present when competition in the mining industry is incredibly severe, and the complexity of the network is continuously growing.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-are-mining-pools">What are Mining Pools?</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-are-mining-pools/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>DeFi: Explained</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-defi-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-defi-complete-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Thu, 18 Jun 2020 14:52:40 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=28040</guid>
+
+					<description><![CDATA[<p>In this article, we will take you through what DeFi is, its advantages, risks, and challenges while highlighting some of the top DeFi projects to look out for soon. But first, how does DeFi differentiate itself from existing FinTech solutions?</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-defi-complete-guide">DeFi: Explained</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi-1920x1080.png"  alt="defi cover"  class="wp-image-28438" ></figure>
+
+
+
+<p>There is a brand new monetary system on the horizon. As evidenced by the 2008 global financial crisis,  cryptocurrencies have emerged as a solution given the inequalities and inefficiencies of traditional institutions.</p>
+
+
+
+<p>Since the advent of Bitcoin, the adoption of blockchain technology in the finance world has increased the decentralization of financial services, creating a new world of decentralized financial services, also known as DeFi.</p>
+
+
+
+<p>In this article, we will take you through what DeFi is, its advantages, risks, and challenges while highlighting some of the top DeFi projects to look out for soon. But first, how does DeFi differentiate itself from existing FinTech solutions?</p>
+
+
+
+<h2 id="defi-vs-fintech"><br>DeFi vs. Fintech</h2>
+
+
+
+<p>At its core, FinTech (Financial Technology) is the use of innovation to enhance and replace existing traditional financial methods of delivering financial services. Although it might be easy for anyone to argue that decentralized finance DeFi is the same as FinTech solutions, nothing could be further from the truth.</p>
+
+
+
+<p>Sure, both FinTech and DeFi aim to establish financial inclusion, efficiency, and freedom through the use of technology.&nbsp;&nbsp;</p>
+
+
+
+<p>However, one of the key differences that distinguish the two is that FinTech solutions emerge from specific centralized companies. At the same time, DeFi applications are open source systems that operate autonomously without the support of a centralized entity.</p>
+
+
+
+<p>DeFi applications stand out from the fact that they take on a new open-source approach that allows many services to be launched on top of the blockchain. An excellent example of how DeFi operates is how the internet, a decentralized network of computers, is designed to be a platform from which other services with a central entity can be built. The internet itself has no owner.</p>
+
+
+
+<h2 id="defi-8217-s-main-advantages"><br>DeFi&#8217;s Main Advantages</h2>
+
+
+
+<p>One of the main benefits of DeFi is permission-less finance. DeFi applications apply practical solutions to the&nbsp;<a target="_blank" href="https://globalfindex.worldbank.org/" rel="noreferrer noopener">world&#8217;s unbanked</a>&nbsp;by offering access to financial services that were previously inaccessible.</p>
+
+
+
+<p>Although there exist some FinTech solutions such as Mpesa that have succeeded in encouraging the inclusivity of the unbanked, the&nbsp;<a target="_blank" href="https://www.worldometers.info/world-population/" rel="noreferrer noopener">data reveals</a>&nbsp;that there is still much to be done. Despite the emergence of mobile money solutions, banks still rely on IDs and credit scores to verify customers, yet most of the unbanked lack these credentials. With DeFi applications, users do not need to have IDs or credit scores to benefit.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png"  alt="defi2"  class="wp-image-28449"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi2.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>Another advantage that DeFi offers is its efficient methods of user verification. Given the vulnerability of financial products to fraud, KYC (know your customer) and AML (anti-money laundering) protocols have been put in place as a solution for verifying and identifying customers.&nbsp;</p>
+
+
+
+<p>However, these methods put the customer&#8217;s identity at risk since that data is stored by the central entity collecting a customer&#8217;s ID for verification. If a hack was to happen at a specified FinTech company, the customer&#8217;s identity could be sold on black markets.&nbsp;</p>
+
+
+
+<p>DeFi applications come to the rescue with a solution that efficiently prevents fraud while ensuring installing a reliable verification process without the need of a customer&#8217;s details.&nbsp;</p>
+
+
+
+<p>By design, DeFI solutions are taking trust out of the hands of humans and embedding it into the code that runs the entire technology. This protects the customer&#8217;s identity in the event of an attack and makes it impossible for corrupt and malicious activities to thrive on the network.</p>
+
+
+
+<p>In light of the current pandemic, DeFi solutions could provide a much more effective and efficient alternative for disbursing a universal basic income from governments. With DeFi, millions of people can get funding from the government in an instant with traceable payments that are cost-effective.&nbsp;</p>
+
+
+
+<h2 id="defi-8217-s-projects"><br>DeFi&#8217;s Projects</h2>
+
+
+
+<p>Various industries can benefit from decentralized finance. You will find DeFi projects in different sectors, including insurance, merging trading, asset management tools, and analytics, to mention only a few.</p>
+
+
+
+<p>Here is a quick look at some DeFi projects out there.</p>
+
+
+
+<h3 id="decentralized-exchanges"><br>Decentralized exchanges</h3>
+
+
+
+<p>Examples of DeFi exchanges include applications such as&nbsp;<a target="_blank" href="https://www.airswap.io/" rel="noreferrer noopener">AirSwap</a>. This is a peer to peer token trading platform built on Ethereum&#8217;s blockchain. AirSwap&#8217;s most outstanding feature is that it operates as an exchange without trading fees.  Another one is&nbsp;<a target="_blank" href="https://1inch.exchange/#/r/0xEbDb626C95a25f4e304336b1adcAd0521a1Bdca1" rel="noreferrer noopener">1inch.exchange</a>. As a cost efficiency measure, this application splits orders to several decentralized exchanges such as KyberNetwork, Bancor, and UniswapExchange.</p>
+
+
+
+<h3 id="defi-lending"><br>DeFi Lending</h3>
+
+
+
+<p>Here you will find applications such as&nbsp;<a target="_blank" href="https://atomic.loans/" rel="noreferrer noopener">Atomic Loans</a>, which allow you to lock your Bitcoin in a non-custodial escrow. Then, you can borrow stable coins and lend them out while you earn interest.&nbsp;<a target="_blank" href="https://fulcrum.trade/" rel="noreferrer noopener">Fulcrum</a>&nbsp;is another DeFi platform pushing the idea of margin trading and lending to the next level. With Fulcrum, users not only get to lend assets for interest, but they can also get into short or leveraged positions through tokenized margin trading. By this design, Fulcrum makes it possible for users to maximize gains through issuing loans and taking compassable margin trade positions.&nbsp;</p>
+
+
+
+<h2 id="defi-marketplaces-nbsp"><br>DeFi Marketplaces&nbsp;</h2>
+
+
+
+<p>If you are looking for an online marketplace free from the controls of a central entity, these DeFi marketplaces will be a good fit.&nbsp;<a target="_blank" href="https://gitcoin.co/" rel="noreferrer noopener">GitCoin</a>, for instance, acts as a market where freelance developers get to interact with one another and with clients to work remotely on open source software projects.  Another one is&nbsp;<a target="_blank" href="https://opensea.io/" rel="noreferrer noopener">OpenSea</a>, a peer-to-peer marketplace for crypto enthusiasts looking to exchange crypto collectibles.</p>
+
+
+
+<h2 id="decentralized-prediction-markets-nbsp"><br>Decentralized prediction markets&nbsp;</h2>
+
+
+
+<p>With a decentralized finance solution, the outcome of events can be traded on a peer-to-peer platform where predictions can be priced based on the market&#8217;s judgment. One particular application in this area is&nbsp;<a target="_blank" href="https://www.augur.net/" rel="noreferrer noopener">Augur</a>. This DeFi application enables users to vote and put a price on the outcome of events. By this logic, anyone can tap into the crowd&#8217;s collective wisdom and make predictions of future events.&nbsp;&nbsp;</p>
+
+
+
+<h2 id="what-8217-s-next-for-defi"><br>What&#8217;s next for DeFi?</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1280"  height="445"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png"  alt="defi3"  class="wp-image-28460"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/06/DeFi3.png 1280w"  sizes="(max-width: 1280px) 100vw, 1280px" ></figure>
+
+
+
+<p>As the world continues to embrace blockchain technology, the future of DeFi applications seems to get brighter. As time progresses, the DeFi industry is set to redesign all the services present in the traditional finance world today.&nbsp;</p>
+
+
+
+<p>In the face of crypto and blockchain&#8217;s mass adoption, the future will see crypto wallets become the gateway to all digital asset activity. Picture using your crypto wallet as the interface for interacting with a variety of blockchain networks where you can manage your digital assets, lock some of it on an open-source finance protocol or even create smart contracts for your next mortgage.&nbsp;</p>
+
+
+
+<p>While there is still a long way to go to achieve this, significant strides are being made by DeFi developers in sectors such as insurance. Projects such as&nbsp;<a target="_blank" href="https://opyn.co/" rel="noreferrer noopener">Opyn</a>&nbsp;are developing insurance layers for the benefit of decentralized finance projects, while projects like&nbsp;<a target="_blank" href="https://etherisc.com/" rel="noreferrer noopener">Etherisc</a>&nbsp;are providing insurance protocols that enable collective risk transfer solutions.&nbsp;</p>
+
+
+
+<p>There is also a progressive shift towards decentralized governance with projects like Maker Dao showcasing how large organizations can be run by stakeholders who vote and make decisions.</p>
+
+
+
+<h2 id="challenges-amp-risks"><br>Challenges &amp; Risks</h2>
+
+
+
+<p>DeFi applications present unique and practical solutions to the problems faced by the current financial system. However, as much as DeFi solutions offer a direct route to the customer, improving efficiency and security in the process, DeFi applications are challenged by speed,&nbsp;<a target="_blank" href="https://www.nasdaq.com/articles/overcoming-defis-challenges-and-providing-solutions-in-an-economic-crisis-2020-04-29" rel="noreferrer noopener">scalability, and liquidity</a>.</p>
+
+
+
+<p>Currently, DeFi application on public Blockchains cannot process large volumes of transactions as traditional FinTech solutions like Visa. While&nbsp;<a target="_blank" href="https://www.visa.ie/" rel="noreferrer noopener">Visa</a>&nbsp;is capable of 24,000 transactions per second, Ethereum can only manage 15TPS, and Bitcoin can manage 7TPS.&nbsp;&nbsp;</p>
+
+
+
+<p>This lack of speed makes it challenging to scale DeFi solutions to the masses. Lack of liquidity is another problem faced by DeFi applications, as evidenced by the price volatility of cryptocurrencies.&nbsp;</p>
+
+
+
+<h2 id="solving-defi-8217-s-challenges-preparing-for-the-future"><br>Solving DeFi&#8217;s challenges (Preparing for the future)</h2>
+
+
+
+<p>Even though the DeFi landscape is plagued by challenges highlighted above, several projects are working towards solutions.&nbsp;</p>
+
+
+
+<p>Bitcoin&#8217;s&nbsp;<a target="_blank" href="https://cointelegraph.com/lightning-network-101/what-is-lightning-network-and-how-it-works" rel="noreferrer noopener">lightning network</a>&nbsp;is a good example of an attempt to make the Bitcoin blockchain scalable by recording some of the transactions off-chain. The&nbsp;<a target="_blank" href="https://thenextweb.com/hardfork/2019/03/28/vitalik-buterin-concerns-ethereum-proof-of-stake/" rel="noreferrer noopener">Ethereum</a>&nbsp;blockchain is also set to move from a Proof of Work protocol to a fast and power-efficient Proof of Stake protocol soon.</p>
+
+
+
+<p>Furthermore, like any other emerging financial product, DeFi applications are in their nascent stage and therefore bound to have a list of challenges beyond what could be covered in this post.&nbsp;</p>
+
+
+
+<p>Overall, DeFi applications present a huge potential for transforming the world of finance as we know it. Even though the current landscape is playing catch up to the traditional financial system, anyone can guess what the future holds if the industry is given room to grow.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-defi-complete-guide">DeFi: Explained</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-defi-complete-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Verge (XVG) Blockchain: Complete Guide</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-verge-blockchain-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-verge-blockchain-complete-guide#comments</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Fri, 15 May 2020 19:14:19 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=26883</guid>
+
+					<description><![CDATA[<p>Since Bitcoin was created and launched in 2009, more than 1500 different cryptocurrencies, collectively termed altcoins, are now&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-verge-blockchain-complete-guide">Verge (XVG) Blockchain: Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/verge2.png"  alt=""  class="wp-image-26884" ></figure>
+
+
+
+<p>Since Bitcoin was created and launched in 2009, more than 1500 different cryptocurrencies, collectively termed altcoins, are now available to buy, trade and sell. Verge is an interesting example of an altcoin as it is faster, cheaper and offers even more privacy than Bitcoin!</p>
+
+
+
+<h2 id="what-is-verge-xvg-nbsp"><br>What is Verge (XVG)?&nbsp;</h2>
+
+
+
+<p>Verge (XVG) is a decentralized open-source cryptocurrency with a strong focus on anonymity and privacy. Launched in 2014 by Justin Sunerok as DogeCoinDark and rebranded into Verge in 2016, the company became famous after partnering with Pornhub in 2018, where it is possible to pay for a premium subscription with Verge (XVG). Verge is an open-source cryptocurrency, meaning it is not backed up by any company. The developers categorize Verge as an easy-to-use currency for everyday transactions.&nbsp;<br></p>
+
+
+
+<p>Despite having a transparent ledger where all the transactions are shown, the addresses or identities of the users cannot be inferred due to IP obfuscation by Tor (see below). The mission of Verge is to improve on the shortcomings of Bitcoin and provide individual users and businesses with a decentralized, fast and efficient way of performing confidential transactions.<br></p>
+
+
+
+<h2 id="brief-history-nbsp"><br>Brief history&nbsp;</h2>
+
+
+
+<p>The project was started in 2014 with the aim of rendering blockchain transactions completely anonymous and untraceable.&nbsp;<br></p>
+
+
+
+<p>In February 2016 rebranding Of DogeCoinDark to Verge took place to separate the project from &#8220;dark&#8221; associations. After that, the team has been fully committed to promoting the coin and encouraging adoption.<br></p>
+
+
+
+<p>In 2017, a somewhat controversial incident took place: <em>John McAfee, a prominent personality in the cryptocurrency world, posted a tweet about Verge, calling it a good coin to invest in and making a price prediction of $15 for XVG</em>. This, allegedly, led to a further increase in the price of Verge to $0.3, which became its historical high, despite McAfee later withdrawing his claims and even discrediting the currency and its protocol in early 2018.&nbsp;<br></p>
+
+
+
+<p>In November 2017, CoinPouch, a wallet supported by the Verge team, lost around 125 million XVG as a result of a hack. To this day, it is not clear what exactly happened, as neither party wants to take responsibility, and the account that the coins were transferred to suggests that the hackers might have sold them through an exchange.<br></p>
+
+
+
+<p><em>Verge became famous for partnering with Pornhub where it is possible to buy Premium subscription with XVG. This partnership is considered one of the biggest cases of cryptocurrency adoption by a totally different industry.</em><br></p>
+
+
+
+<p>In April and May 2018, Verge suffered from 51% miners (double-spending) attacks. Basically, the hackers forced the system to use only one algorithm by altering block timestamps. The mining difficulty dropped significantly; as a result, they were able to incorporate a new block every second. Verge experienced a total of 3 attacks in a couple of months.&nbsp;<br></p>
+
+
+
+<h2 id="verge-xvg-technology"><br>Verge (XVG) technology</h2>
+
+
+
+<p>The key features of Verge include:</p>
+
+
+
+<ul><li>Tor IP obfuscation. Tor (an acronym of The Onion Router, the original software project name) is an IP obfuscation service which ensures anonymous communication across a layered circuit-based network. Tor is integrated in all of Verge wallets, thus eliminating any possibility that the communicating peers can be identified through network surveillance which usually relies on knowing its source and destination.</li><li>Multi-algorithm mining. Verge Currency uses Proof-of-Work (PoW) mining principle and one of the very few cryptocurrencies to have multi-algorithm support. Specifically, Verge utilizes 5 different hash functions: Scrypt,&nbsp; Lyra2rev2, X17, blake2s, and myr-groestl. Such design allows for equal access to different groups of miners. Mining is the only way to create new XVG since Verge is not a private company funded by pre-mined coins or an ICO.</li><li>Atomic Swaps. Atomic Swap technology, or atomic cross-chain trading, is a technology that enables direct peer-to-peer trading across different blockchains with BIP65 support, thus eliminating the need for trusted third parties or intermediaries. In the future, traditional centralized exchanges can be replaced by decentralized exchanges (DEX), which would completely eliminate the need to rely on&nbsp; intermediaries. By enabling Atomic Swaps capability, Verge takes a proactive step towards a decentralized future.</li><li>Dual-key stealth addressing. Dual-Key Stealth Addressing enables senders to create an unlimited amount of one-time destination addresses on behalf of the recipient without any interaction between the parties whatsoever. Stealth addresses provide an additional level of obfuscation for further protection of the receiving party when performing transactions with Verge. If multiple users send funds to one stealth address, these transactions do not appear on the blockchain as multiple payments to the same address. Instead,&nbsp; they look like multiple payments going to different addresses.</li><li>Verge runs on a Proof-of-Work consensus mechanism and uses five types of mining algorithms: Scrypt, X17, Blake2s, Groestl, and Lyra2rev2. Unlike other anonymity-focused digital currencies, e.g., Monero and Dash, it offers more transparency in public verification of transactions.</li><li>The block time is 30 seconds vs Bitcoin&#8217;s 10 minutes, and the capacity of Verge is 100 transactions per second as opposed to Bitcoin&#8217;s 7.&nbsp;</li><li>The transaction fee is 0.01 XVG, which is practically free.&nbsp;</li><li>The maximum supply of Verge is limited to 16.5 billion coins, which is supposed to provide a more fair distribution in the community and, to a certain extent,&nbsp; prevent market manipulations,&nbsp;</li><li>Wraith protocol. For the first time in the history of cryptocurrency, Verge made it&nbsp; possible to choose between public and private ledgers while staying anonymous in both cases.&nbsp;</li></ul>
+
+
+
+<p>Technology-wise, Verge does not utilize cryptography as much as its fellow privacy-focused cryptocurrencies (Monero, Zcash etc). The main feature of Verge is the ability to obfuscate the users&#8217; IP address and location using I2P (Invisible Internet Project) and TOR (The Onion Router) network layers. While anyone can view the transactions that occur on the Verge ledger, the participants&#8217; location or IP cannot be identified. All Core Verge wallets offer built-in TOR integration, supported by an additional level of SSL (Secure Sockets Layer) encryption.&nbsp;<br></p>
+
+
+
+<h2 id="why-not-simply-use-vpn"><br>Why not simply use VPN?</h2>
+
+
+
+<p>When communicating via Virtual Private Network (VPN), the only encrypted part of the connection is from you to your VPN provider. From there on, the communication stays unprotected. Therefore, VPN service requires trust that your provider does not disclose information, logs, and records about your operations. On the other hand, with Verge, the user does not have to rely on any third party for the protection of confidentiality, which makes it more reliable and secure than using a VPN.<br></p>
+
+
+
+<h2 id="perspectives-nbsp"><br>Perspectives&nbsp;</h2>
+
+
+
+<p>One feature currently under development is RSK smart contracts. RSK is the first open-source smart contract platform with a 2-way peg to Verge that also rewards the Verge miners via merge-mining, allowing them to actively participate in the Smart Contract revolution. The aim of RSK&nbsp; is to add value and functionality to the Verge ecosystem and increase scalability by enabling smart-contracts and near-instant payments. RSK can achieve the same security as Verge in terms of double-spend prevention and settlement finality, since the blockchain is secured by merge-mining.<br></p>
+
+
+
+<p>The implementation of the Wraith protocol was an important event in the history of cryptocurrency in general. Verge is a stable member of Top-100 cryptocurrencies in terms of market capitalization, it has established several long-term partnerships with important players in the industry, and has an ambitious roadmap. In general, the consensus among the members of the cryptocurrency community is that this altoin has occupied its niche and will experience a bright future.&nbsp;<br></p>
+
+
+
+<h2 id="takeaways"><br>Takeaways</h2>
+
+
+
+<p>Created in 2014 under the original name&nbsp; DogecoinDark, Verge (XVG) is an open-source cryptocurrency and a privacy-focused coin with a team of international developers. Verge uses Tor and an anonymous network layer I2Pas in order to hide the IP addresses and locations of specific transactions. The block time (and transaction speed) of Verge is estimated to be at 5-30 seconds thanks to the use of SPV (Simple Payment Verification). Recent introduction of the Wraith Protocol upgrade enabled users to send and receive payments completely anonymously across the Verge blockchain via stealth addressing services. Following the update, Verge users are reportedly able to switch between private and public ledgers on the Verge blockchain. Verge offers five different Proof-of-Work algorithms for mining &#8211; Lyra2rev2, Scrypt, X17, blake2s and myr-groestl, which significantly expands the pool of miners and serves to minimize the possibility of double-spending attacks.&nbsp;<br></p>
+
+
+
+<h2 id="verge-website"><br>Verge Website</h2>
+
+
+
+<p>For the ultimate source of information, visit <a href="https://vergecurrency.com/">Verge Official Website</a>.<br></p>
+
+
+
+<h2 id="verge-blockchain-explorer"><br>Verge Blockchain Explorer</h2>
+
+
+
+<p>Track your Digibyte transactions with <a href="https://verge-blockchain.info/">Verge Block Explorer</a>.&nbsp;<br></p>
+
+
+
+<h2 id="verge-reddit"><br>Verge Reddit</h2>
+
+
+
+<p>Join <a href="https://www.reddit.com/r/vergecurrency/">Verge subreddit</a> to discuss the currency with the rest of the community.<br></p>
+
+
+
+<h2 id="verge-twitter"><br>Verge Twitter</h2>
+
+
+
+<p>Follow Verge on <a href="https://twitter.com/vergecurrency?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a> to keep up with the latest updates.<br></p>
+
+
+
+<h4 id="how-to-store-and-manage-xvg"><br>How to store and manage XVG</h4>
+
+
+
+<p>Looking for a robust wallet to safely store your crypto? Verge (XVG) is supported by multiple wallet providers, including <a href="https://atomicwallet.io/verge-wallet">Atomic Wallet</a>. In Atomic, you can manage and exchange XVG, buy XVG with your bank card, and swap XVG with Atomic Swaps &#8211; everything you need in one wallet application. Atomic Wallet empowers you with full control over your funds since your Private Keys are protected with a mnemonic seed and never leave your device. Atomic Wallet provides you with one of the best options to store, send, exchange, and buy XVG. Install the app now and manage your XVG right in the Atomic Interface.<br></p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-verge-blockchain-complete-guide">Verge (XVG) Blockchain: Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-verge-blockchain-complete-guide/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Digibyte Blockchain: Complete Guide</title>
+		<link>https://atomicwallet.io/blog/academy/what-is-digibyte-blockchain-complete-guide</link>
+					<comments>https://atomicwallet.io/blog/academy/what-is-digibyte-blockchain-complete-guide#comments</comments>
+		
+		<dc:creator><![CDATA[Motiur Rahman]]></dc:creator>
+		<pubDate>Fri, 15 May 2020 19:07:43 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Assets]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=26787</guid>
+
+					<description><![CDATA[<p>What is DigiByte (DGB)?&#160; DigiByte blockchain is a rapidly growing public blockchain with a strong focus on cybersecurity&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-digibyte-blockchain-complete-guide">Digibyte Blockchain: Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1380"  height="800"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/What-is-Digibyte-DGB-1.png"  alt="Digibyte Blockchain: Complete Guide"  class="wp-image-26821" ></figure>
+
+
+
+<p><br></p>
+
+
+
+<h2 id="what-is-digibyte-dgb-nbsp">What is DigiByte (DGB)?&nbsp;</h2>
+
+
+
+<p></p>
+
+
+
+<p>DigiByte blockchain is a rapidly growing public blockchain with a strong focus on cybersecurity of digital payments and decentralized applications. Created by Jared Tate in 2014, it is currently the world&#8217;s longest major blockchain. The DigiByte currency (DGB) was created to improve on the shortcomings of BTC and LTC, specifically high fees, vulnerability to attacks, poor scalability, low bandwidth, and volatility. <br><br></p>
+
+
+
+<h2 id="brief-history">Brief history</h2>
+
+
+
+<p>Jared Tate, the founder of DigiByte, comes from computer programming, blockchain, and cybersecurity background. He designed DigiByte in 2013 with the incentive to offer a faster and more secure alternative to Bitcoin. The official start of the project was marked with the mining of the genesis block in January 2014. As there was no initial coin offering (ICO), the project start did not draw any significant media interest. Instead of this, the project was funded through donations granted to the DigiByte Foundation &#8211; a dedicated organization in charge of promoting the project at the global level.<br></p>
+
+
+
+<p><em>The DGB Genesis block contains a direct allusion to Bitcoin&#8217;s Genesis block: &#8220;USA Today: 10/Jan/2014, Target: Data stolen from up to 110M customers&#8221;.&nbsp;</em><br></p>
+
+
+
+<p>Some of the main milestones:<br></p>
+
+
+
+<ul><li>January 2014: The launch of DigiByte</li><li>September 2014: DigiByte successfully implements its second hardfork that allows mining on 5 different algorithms. It becomes the first-ever blockchain to do so.</li><li>June 2016: Official partnership with Microsoft BizSpark</li><li>April 2017: DigiByte becomes the first major blockchain to implement SegWit support, outrunning Bitcoin and Litecoin</li><li>Q2 2018: DigiByte added to Atomic Wallet<br><br></li></ul>
+
+
+
+<h2 id="digibyte-technology">DigiByte technology</h2>
+
+
+
+<p>What makes DigiByte unique in the world of cryptocurrency is the complex architecture of its blockchain and the tendency towards new technological trends.&nbsp;</p>
+
+
+
+<p>The mottos of DigiByte can be defined as follows:<br></p>
+
+
+
+<ul><li>A faster-than-average network. DigiByte claims to have the fastest block generation speed of all public UTXO blockchains (e.g. Bitcoin, Litecoin) in operation today. Furthermore, it was one of the first adopters of SegWit (Segregated Witness) protocol which conferred unprecedented scalability and security to the network.&nbsp;</li><li>Security does not have to be the weak point of the crypto world. DigiByte developers believe that its blockchain implementation is capable of plugging the majority of potential security-related leaks thanks to its global-level decentralization involving more than 200000 devices such as computers, phones, nodes, and servers. Additionally, to manage the difficulty stability and protect itself from recurring malicious attacks, Digibyte implemented its pioneering DigiShield and MultiShield technologies.</li><li>Blockchain implementation needs to be more progressive in its applications. DigiByte is keeping an eye on three key technologies that are expected to transform the world: Artificial Intelligence (AI), cybersecurity, and the Internet of Things (IoT). DigiByte hopes to extend its innovations in security to IoT devices and combine its blockchain technology with AI in order to become one of the main players in the field of data analytics, cybersecurity, and automation.</li></ul>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="498"  height="376"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/tenor-1.gif"  alt=""  class="wp-image-26810" ></figure>
+
+
+
+<p>DigiByte&#8217;s complex architecture is what defined its functionality and made it famous in the crypto-community. Ever since the beginning, the focus of its development was on scalability, decentralization, payment security, and speed. For this, the blockchain has a layered structure and includes:</p>
+
+
+
+<ul><li>Core Protocol Layer as the Prime Mover. Located at the bottom o the layered structure, it takes care of data management and communication between the nodes and handles all operations taking place on the blockchain.</li><li>Digital Asset and Public Ledger Layer as the Security and Administrative Hub is where all the data from the network is stored. This layer also hosts the security mechanism that incentivizes miners and prevents meddling with the data.</li><li>Application Layer as the Front of the DigiByte Architecture is the topmost layer which is the one that users actually interact with. This is also where the dApps and Smart Contract platform will be located once implemented (see below).&nbsp;</li></ul>
+
+
+
+<p>Both DigiByte and Bitcoin operate using Unspent Transaction Output (UTXO), which is a technical method for keeping track of blockchain transactions between accounts. Nevertheless, as of July 2019, DigiByte had over 9 million blocks as compared to Bitcoin’s 600,000 blocks. Besides, DigiByte is 40 times faster than Bitcoin, making it the fastest and longest UTXO blockchain in the world.<br></p>
+
+
+
+<p><em>Since April 2017, DigiByte has had over 275,000 full nodes downloaded and 15,000 nodes active globally.</em><br></p>
+
+
+
+<p>DigiByte has a well-defined supply and distribution schedule. A total amount of DGB &#8211; 21 billion &#8211; will be created and mined gradually in the course of 21 years (from 2014 to 2035). Since there was no DigiByte ICO or any other token distribution event, mining is the only way for new DGB to be produced.&nbsp;<br></p>
+
+
+
+<p>As opposed to most conventional blockchains, DigiByte uses five cryptographic mining algorithms, which prevents mining centralization. The block time is 15 seconds. Thanks to Segregated Witness (SegWit) implementation, cross-chain transactions, and single confirmation transactions are made possible. A distinct feature of DigiByte transactions is a set limit in size and scope, which leads to an increase in throughput, speed, and efficiency, while also helping maintain security.&nbsp;&nbsp;<br></p>
+
+
+
+<p>Another characteristic feature of DigiByte is the presence of several functional hardforks:<br></p>
+
+
+
+<ul><li>DigiShield is a pioneering asymmetrical difficulty adjustment mining technology created by DigiByte. Conceptually, it protects the blockchain from multipools that mine large amounts of DGB at low difficulty. It is a widely used technology and that be found in the core of many other blockchains (Dogecoin, Startcoin, Zcash, CasinoCoin, CreativeCoin, Granite, Huncoin, Monacoin, AuroraCoin, BitcoinGold, BitTokens, CasinoCoin, CreativeCoin, Granite, Huncoin, Monacoin, Mooncoin, Nautiluscoin, Quatloo, StartCoin, SuperiorCoin, Ubiq, SakuraCoin, Scorecoin, SmartCoin). DigiByte was also the first blockchain to fork from a single proof-of-work (PoW) algorithm to multi-algorithm mining. (Not the first cryptocurrency to use multi-algorithm though &#8211; Huntercoin was ahead.)</li><li>The MultiAlgo hardfork was activated in September 2014 from Myriadcoin source code and allowed for multi-algorithm mining. Its goal was to accommodate different types of existing mining capabilities (dedicated ASIC mining, GPU, and CPU mining) by creating a number of different proof-of-work (PoW) mining methods. Naturally, this allows for a larger number of people to access DigiByte mining pools, therefore creating a more decentralized blockchain featuring the groups of users who were previously unable to mine the coin on its original single-algorithm (Scrypt) fork.</li><li>MultiShield was activated in December 2014 and served to enable DigiShield across the new MultiAlgo platform and accomplish the same goals on all five mining pools.</li><li>DigiSpeed was activated in December 2015 and focused on increasing the speed of DigiByte transactions. Besides, the block time was reduced by 50% (15 seconds), and a new block propagation code was added with the help of Microsoft.<br></li></ul>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="498"  height="280"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/tenor-2.gif"  alt=""  class="wp-image-26799" ></figure>
+
+
+
+<p></p>
+
+
+
+<h2 id="perspectives-and-takeaways">Perspectives and takeaways</h2>
+
+
+
+<p><em>Going beyond Being a Payment Platform</em>.</p>
+
+
+
+<p>The philosophy of DigiByte is built on the belief that focusing solely on payments and transactions is not enough, and by doing so, cryptocurrencies are bound to slowly die out. Instead, DigiByte closely follows the developments in the fields of Cybersecurity, Artificial Intelligence (AI) and IoT (Internet of Things). The DigiByte team believes that the scalability and security of the network are ideal for the use with IoT devices that can number thousands and grow really fast. This is why DGB already has a plan of pairing its blockchain technology with AI for the protection of IoT devices.<br></p>
+
+
+
+<p>The newest release from DigiByte is DigiAssets &#8211; the top layer of the DigiByte blockchain that enables the implementation of smart contracts, decentralized applications, and programmable tokens, much like Ethereum. The team believes that DigiByte’s elevated security and scalability offer the ideal base protocol for a platform like DigiAssets. The DigiByte founder Jared Tate was the creator of the first two DigiAssets called DigiTorch and DigiFlame in April 2019. Those are meant to be passed on by different DigiByte community members as they build new projects on the platform.<br></p>
+
+
+
+<p>Apart from constantly developing technical upgrades and improvements for the core protocol, DigiByte launched DigiStats in the autumn of 2019. The aim of DigiStats is to increase mobile and payment processing options, create more fiat and USDT stablecoin pairings on different exchanges, and provide interactive and historical blockchain statistics.<br></p>
+
+
+
+<p>In January 2020, as the network turned six years old, the company launched the DigiByte Foundation which serves to help with fund-raising inside the community.<br></p>
+
+
+
+<p>While the aforementioned plans are still in development, it is worth noting that DigiByte was always willing to expand its technology beyond cryptocurrency. Back in 2017, for instance, DigiByte Gaming division was launched with the aim of promoting digital advertising and user engagement in games through prizes and micropayments delivered in cryptocurrency.<br></p>
+
+
+
+<p>That said, the biggest and most important upcoming plan for DigiByte is still the growth and development of DigiAssets. If all goes according to plan, the entire ecosystem of dapps and ICO will be an integral part of the network.&nbsp;<br><br></p>
+
+
+
+<h2 id="digibyte-website">DigiByte Website</h2>
+
+
+
+<p>For the ultimate source of information, visit <a href="https://digibyte.io/">DigiByte&#8217;s Official Website</a>.<br><br></p>
+
+
+
+<h2 id="digibyte-blockchain-explorer">DigiByte Blockchain Explorer</h2>
+
+
+
+<p>Track your Digibyte transactions with <a href="https://chainz.cryptoid.info/dgb/">DigiByte Block Explorer</a>.&nbsp;<br><br></p>
+
+
+
+<h2 id="digibyte-reddit">DigiByte Reddit</h2>
+
+
+
+<p>Join Digibyte&#8217;s subreddit <a href="https://www.reddit.com/r/Digibyte/">r/Digibyte</a> to discuss the currency with the rest of the community.<br><br></p>
+
+
+
+<h2 id="digibyte-twitter">DigiByte Twitter</h2>
+
+
+
+<p>Follow <a href="https://twitter.com/DigiByteCoin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">@DigiByteCoin</a> on Twitter to keep up with the latest updates.<br><br></p>
+
+
+
+<h2 id="how-to-store-and-manage-dgb">How to store and manage DGB</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1602"  height="929"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/digibyte_crypto_wallet.png"  alt=""  class="wp-image-26788"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/05/digibyte_crypto_wallet.png 1602w, https://atomicwallet.io/blog/wp-content/uploads/2020/05/digibyte_crypto_wallet-883x512.png 883w, https://atomicwallet.io/blog/wp-content/uploads/2020/05/digibyte_crypto_wallet-300x174.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/05/digibyte_crypto_wallet-768x445.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/05/digibyte_crypto_wallet-1536x891.png 1536w"  sizes="(max-width: 1602px) 100vw, 1602px" ></figure>
+
+
+
+<p>DigiByte (DGB) is supported by multiple wallet providers, including <a href="https://atomicwallet.io/digibyte-wallet">Atomic Wallet</a>. In Atomic, you can manage, exchange, and buy DGB with your bank card &#8211; everything you need in one wallet application. Atomic Wallet empowers you with full control over your funds since your Private Keys are protected with a mnemonic seed and never leave your device. Atomic Wallet provides you with one of the best options to store, send, exchange, and buy DGB. Install the app now and manage your DGB right in the Atomic Interface.<br></p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/what-is-digibyte-blockchain-complete-guide">Digibyte Blockchain: Complete Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/what-is-digibyte-blockchain-complete-guide/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

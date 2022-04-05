@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>nano &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/tag/nano/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Jun 2020 14:31:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>nano &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>AMA with Nano</title>
+		<link>https://atomicwallet.io/blog/academy/ama-with-nano-digest</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-with-nano-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2020 11:02:29 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[ama]]></category>
+		<category><![CDATA[ama session]]></category>
+		<category><![CDATA[atomic]]></category>
+		<category><![CDATA[atomic wallet]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[digest]]></category>
+		<category><![CDATA[nano]]></category>
+		<category><![CDATA[report]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=19767</guid>
+
+					<description><![CDATA[<p> On March 18th, we had an AMA session with Nano, a digital currency designed to provide fast transactions, zero fees and a high level of scalability, in our Telegram Chat. The team members present on the discussion with our community were Colin LeMahieu (Founder &#38; CEO) and Andy Johnson (Communications Manager).</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-nano-digest">AMA with Nano</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png"  alt="AMA w/ Nano cover"  class="wp-image-19768"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/04/nano_ama_digest_atomic.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>
+On March 18th, we had an AMA session with <a href="https://nano.org">Nano</a>, a digital currency designed to provide fast transactions, zero fees and a high level of scalability, in our <a href="https://t.me/atomicwalletchat">Telegram Chat</a>. The team members present on the discussion with our community were Colin LeMahieu (Founder &amp; CEO) and Andy Johnson (Communications Manager).<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Colin (C), Andy (A) and the questions from our Telegram chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="the-nano-ecosystem-and-its-solutions">The Nano ecosystem and its solutions</h2>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why is Nano unique among other projects providing solutions to payments?</p>
+
+
+
+<p>C: Nano is built to be the fastest and most decentralized currency around. Our transactions settle in less than 1 second and it’s all done on a network with no fees and a tiny environmental footprint. Decentralization is an essential focus for us. Many other cryptocurrencies can get fast or low cost but they can’t also maintain decentralization which I think we do very well.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why is Nano more sustainable than other payment solutions?</p>
+
+
+
+<p>C: Well the sustainability comes from 2 main parts. We have a laser-sharp focus on being the most efficient currency. This means our development stays focused and eventually the number of things going into the code base will trend downward. Once we’ve achieved the goal, we just have to make things more efficient.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the main algorithm behind the transactions that settle in less than one second and how do you manage the transaction fees to zero?</p>
+
+
+
+<p>C: It is a metastable bandwagon voting algorithm. Nodes announce their votes and change their own to match the winner. In this way, eventually, everyone collapses on to a single result.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Has Nano really been applied to the real world? What will convince users and businesses to use Nano for payment instead of conventional solutions?</p>
+
+
+
+<p>A: We are seeing some strong interest in bringing Nano into the real world, beyond the familiar crypto payment platforms and into more mainstream settings.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Many cryptocurrencies have turned to wasteful energy designs to protect their networks. Nano is cleverly designed to address this problem by not relying on mining for your safety as it uses a lightweight and efficient consensus. Can you tell me about this green strategy that Nano uses?</p>
+
+
+
+<p>A: The approach to creating Nano was to remove the inefficiencies that are clearly present in other protocols. Sustainability, rather than being a specific &#8220;green strategy&#8221;, is just a natural benefit of building something efficient from the ground up.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What remains as the hurdles to adoption?</p>
+
+
+
+<p>A: We are happy to be sitting in a position where we can help with the more substantial hurdles to adoption, user and merchant education, regulatory clarity and helping interested and progressive mainstream businesses to identify the benefits of Nano, in comparison to other less suitable payment-focused cryptocurrencies and in some cases traditional fiat money.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What do you think about an extension of privacy into the Nano system?</p>
+
+
+
+<p>A: Privacy is an attractive proposition to users of digital money for obvious reasons, it can be very important. Our position towards privacy is more conservative as we have seen many more hurdles to mainstream adoption being put in front of privacy-based projects. With that being said, there are eyes towards the technical implications of introducing privacy, but it is extremely difficult to do this without incurring slowdowns to settlement times.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What does a novel CAPTCHA faucet system mean and how is it different from the regular ICOs?</p>
+
+
+
+<p>A: Rather than selling Nano via an ICO or distributing it out via mining rewards, we allowed anyone to collect Nano for free by completing those familiar security checks designed to separate humans from bots. This method of distribution has led to the growth of great Nano communities all around the world, following their participation in the CAPTCHA faucet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why would Nano be used as the cash version of crypto? Why would I want to buy a beer with Nano if I&#8217;m going to pay 6% more or less for the next one? What&#8217;s the strategy to make NANO easy to use?</p>
+
+
+
+<p>C: And on simplicity, Nano is probably one of the easiest cryptocurrencies to use. There are no fees to calculate, the UX impact of entering a fee is greatly understated. How much should the fee be? Does my grandma know what network load is? What does it mean with respect to fee? Nano simply has accounts and balances, you send and it lands in their wallet in less than a second. Nothing can be simpler.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What incentives is NANO giving to us the members and what&#8217;s the reason why I and other angel investors should invest in Nano?</p>
+
+
+
+<p>C: Nano’s value is being the fastest, most efficient currency around. Entrepreneurs make use of natural market incentives or natural efficiencies to make money on a business. Cryptocurrency has distorted that term a bit with something more closely resembling subsidies. The transaction fees and block rewards are subsidizing the security parameter and processing prioritization. PoW chains need this subsidy because their security parameter costs a lot. Additionally, we’ve seen miners work to limit the network’s throughput in order to rent-seek on the limited transaction space. The people we’re looking for are the entrepreneurs that know how to make use of a faster, lower-cost currency.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What would happen, hypothetically, if one or some of the biggest votes in terms of voting power (i.e. the biggest delegates/representatives) would broadcast contradictory votes to different parts of the network or would not broadcast a vote at all?</p>
+
+
+
+<p>C: The security parameters assume &gt;50% of the network are good actors. Getting consensus on a particular election requires &gt;50% of the voters approve a transaction before it’s confirmed so unless &gt;50% of the network is malicious, it can’t be confirmed. The network is designed to stall in case of partitioning, nodes would wait for a confirmation quorum that never arrives.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: With the emergence of many blockchain projects, especially payment projects with the latest technology, scalability, efficiency, even without transaction fees, does Nano feel the pressure from this on the race of global blockchain payment solutions?</p>
+
+
+
+<p>A: Of course there is a lot of competition in the space, especially around payment solutions, and we have not stopped improving the protocol. We certainly feel that Nano possesses far and away from the best fundamentals, democratic approach to decentralization, and user experience. Being fully distributed and operating on the mainnet since 2015 is also very important, and puts Nano way ahead of many other projects making bold claims about future potential. Nano is here today and works as one would expect the digital money would.</p>
+
+
+
+<p></p>
+
+
+
+<h2 id="nano-and-its-future-plans">Nano and its future plans</h2>
+
+
+
+<p></p>
+
+
+
+<p>Q: With the recent decline in the crypto market, how will Nano stand out and gain interest from new investors? Is there a new strategy by the Nano team?</p>
+
+
+
+<p>C: Volatility is a focus with all cryptocurrencies and it comes from low volume, it’s not intrinsic to cryptocurrency itself. To cure low volume our focus is integrating it into parts of the economy where it solves a problem, rather than just emulating credit cards etc. Not having fees in the network puts us in a very good position for buying beer, for example. Typically credit card providers will charge 2-5% for a purchase, maybe even more, and it tight margin businesses that make 2-5% profit anyway. This is huge.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you tell us the motivation and benefits for investors to hold Nano for the long term? What are the team’s plans to make Nano a top project?</p>
+
+
+
+<p>C: I look at the transfer of value or store of value debate this way: I see store of value as a specialized case of transfer of value, when you want to transfer the value in the future or under a future condition. I don’t think store of value can be done without first being a good transfer of value so that’s where we focus. I differentiate between investment, which has a business model and dividends, from speculation where the hope is an appreciation in the price of what you bought. Nano is not an investment, it does not pay dividends, it’s a currency to make payments and as volume increases, it will shake out its volatility.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What will Nano bring us by 2021? What are your main goals?</p>
+
+
+
+<p>A: Settlement time reduced significantly to less than 200ms, network throughput increased, resource usage and bandwidth on nodes have been reduced, decentralization is trending upwards and Nano has been added to a wide range of well-established wallets, fiat ramps, exchanges, and payment processors.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the role of Coinify in the Nano ecosystem? Is this partnership the stepping stone for the exploration of DeFi?</p>
+
+
+
+<p>C: We integrated with Coinify because our goal is to maximize the on/off ramps for Nano. They have a huge merchant network and getting added as one of their payment options opens up a lot more people to be able to pay with Nano. We’re not looking to expand into DeFi right now. I have some reservations about its viability. One thing I’ve noticed in my many years of seeing technology evolution is to not try and change 2 things at once. We don’t want to simultaneously change the currency people use and also change how finances are done.&nbsp; First, change the currency, then change the finances.</p>
+
+
+
+<p>We were glad to host <a href="https://twitter.com/Nano">Nano</a> on our Telegram. Thanks to the team and all the members of the session!</p>
+
+
+
+<p> Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a> and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon. </p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-with-nano-digest">AMA with Nano</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-with-nano-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

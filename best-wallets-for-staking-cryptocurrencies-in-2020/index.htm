@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="_preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	<meta name="google-site-verification" content="U-rSO2CzgIOXU1sVg-YPla8Ri3J1gjyNbyNi7tupOzw" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	
+	
+	<!-- This site is optimized with the Yoast SEO Premium plugin v15.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>4 Best Wallets For Staking Cryptocurrencies In 2020</title><style id="rocket-critical-css">.awd-visible-phone{display:none!important}.awd-visible-desktop{display:inherit!important}@media (min-width:768px) and (max-width:979px){.awd-visible-desktop{display:none!important}}@media (max-width:767px){.awd-visible-desktop{display:none!important}.awd-visible-phone{display:inherit!important}.awd-hidden-phone{display:none!important}}.wprpsp-columns *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:none!important}.wprpsp-gridbox-slider *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:none!important}.wprpsp-clearfix:before,.wprpsp-clearfix:after{content:"";display:table}.wprpsp-clearfix::after{clear:both}.wprpsp-post-overlay{position:relative}.wprpsp-slider-conf{display:none}h2.wprpsp-post-title a{text-decoration:none!important;border-bottom:0px!important}.wprpsp-gridbox-slider h2{margin:5px 0!important;line-height:normal!important;padding-top:0px!important;font-size:22px!important;padding-bottom:0px!important}.wprpsp-gridbox-slider h2.wprpsp-post-title a{font-size:22px!important;line-height:normal!important;color:#444}.wprpsp-gridbox-slider.wprpsp-image-fit .wprpsp-post-image-wrap .wprpsp-post-img{height:100%;width:100%;object-fit:cover;object-position:top center;border-radius:0px}.wprpsp-gridbox-slider{visibility:hidden;opacity:0}.wprpsp-gridbox-slider.wprpsp-design-4{margin:0px -2px!important}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-columns{padding:2px}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-image-wrap{background:#f1f1f1}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-short-cnt{clear:both;height:100%;bottom:0;color:#fff;left:0;padding:15px 15px;position:absolute;right:0;box-sizing:border-box}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-slides a.wprpsp-link-overlay{position:absolute;height:100%;width:100%;top:0px;left:0px;z-index:1}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-date{color:#fff}.wprpsp-gridbox-slider.wprpsp-design-4 h2 a{color:#fff}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-bottom-content{position:absolute;bottom:30px;left:15px;right:15px}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-overlay{overflow:hidden}.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-short-cnt{background:rgba(0,0,0,0.5)}.wprpsp-columns{position:relative;padding-left:0.9375em;padding-right:0.9375em;width:100%;float:left}@media only screen and (min-width:40.0625em){.wprpsp-medium-4{width:33.33333%}}@media only screen and (max-width:480px){.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-image-wrap{height:250px!important}}article,aside,header,nav,section{display:block}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}h1{margin:.67em 0;font-size:2em}hr{height:0;-moz-box-sizing:content-box;box-sizing:content-box}img{border:0}button,input{margin:0;font-family:inherit;font-size:100%}button,input{line-height:normal}button{text-transform:none}button{-webkit-appearance:button}input[type="search"]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:62.5%}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff}input,button{font-family:inherit;font-size:inherit;line-height:inherit}button,input{background-image:none}a{color:#428bca;text-decoration:none}img{vertical-align:middle}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);border:0}p{margin:0 0 10px}h1,h2,h5{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1}h1,h2{margin-top:20px;margin-bottom:10px}h5{margin-top:10px;margin-bottom:10px}h1{font-size:36px}h2{font-size:30px}h5{font-size:14px}ul{margin-top:0;margin-bottom:10px}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.container:before,.container:after{display:table;content:" "}.container:after{clear:both}.container:before,.container:after{display:table;content:" "}.container:after{clear:both}.row{margin-right:-15px;margin-left:-15px}.row:before,.row:after{display:table;content:" "}.row:after{clear:both}.row:before,.row:after{display:table;content:" "}.row:after{clear:both}.col-sm-11,.col-sm-12,.col-md-4,.col-md-8{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:768px){.container{max-width:750px}.col-sm-11{float:left}.col-sm-11{width:91.66666666666666%}.col-sm-12{width:100%}}@media (min-width:992px){.container{max-width:970px}.col-md-4,.col-md-8{float:left}.col-md-4{width:33.33333333333333%}.col-md-8{width:66.66666666666666%}}@media (min-width:1200px){.container{max-width:1170px}}label{display:inline-block;margin-bottom:5px;font-weight:bold}input[type="search"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.collapse{display:none}.navbar-collapse{max-height:340px;padding-right:15px;padding-left:15px;overflow-x:visible;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);-webkit-overflow-scrolling:touch}.navbar-collapse:before,.navbar-collapse:after{display:table;content:" "}.navbar-collapse:after{clear:both}.navbar-collapse:before,.navbar-collapse:after{display:table;content:" "}.navbar-collapse:after{clear:both}@media (min-width:768px){.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.clearfix:before,.clearfix:after{display:table;content:" "}.clearfix:after{clear:both}.pull-right{float:right!important}.pull-left{float:left!important}@-ms-viewport{width:device-width}@media screen and (max-width:400px){@-ms-viewport{width:320px}}.visible-xs{display:none!important}@media (max-width:767px){.visible-xs{display:block!important}}.hidden-xs{display:block!important}@media (max-width:767px){.hidden-xs{display:none!important}}.pswp,.pswp__bg,.pswp__scroll-wrap{height:100%;width:100%}.pswp,.pswp__item,.pswp__scroll-wrap{overflow:hidden;top:0;position:absolute;left:0}.pswp,.pswp__bg,.pswp__container{-webkit-backface-visibility:hidden}.pswp,.pswp__bg,.pswp__item,.pswp__scroll-wrap{position:absolute}.pswp{display:none;-ms-touch-action:none;touch-action:none;z-index:1500;-webkit-text-size-adjust:100%;outline:0}.pswp *{-webkit-box-sizing:border-box;box-sizing:border-box}.pswp__bg{left:0;top:0;background:#000;opacity:0;transform:translateZ(0);will-change:opacity}.pswp__container{-ms-touch-action:none;touch-action:none;position:absolute;left:0;right:0;top:0;bottom:0}.pswp__container{-webkit-touch-callout:none}.pswp__item{right:0;bottom:0}.pswp__button{position:relative;overflow:visible;-webkit-appearance:none;display:block;border:0;padding:0;margin:0;float:right;opacity:.75;-webkit-box-shadow:none;box-shadow:none}.pswp__button::-moz-focus-inner{padding:0;border:0}.pswp__button,.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{background:url(https://cdn.shortpixel.ai/spai/w_1920+q_lossless+ret_img/https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/photoswipe/default-skin/default-skin.png) no-repeat;background-size:264px 88px;width:44px;height:44px}.pswp__button--close{background-position:0 -44px}.pswp__button--share{background-position:-44px -44px}.pswp__button--fs{display:none}.pswp__button--zoom{display:none;background-position:-88px 0}.pswp__button--arrow--left,.pswp__button--arrow--right{background:0 0;top:50%;margin-top:-50px;width:70px;height:100px;position:absolute}.pswp__button--arrow--left{left:0}.pswp__button--arrow--right{right:0}.pswp__button--arrow--left:before,.pswp__button--arrow--right:before{content:'';top:35px;background-color:rgba(0,0,0,.3);height:30px;width:32px;position:absolute}.pswp__button--arrow--left:before{left:6px;background-position:-138px -44px}.pswp__button--arrow--right:before{right:6px;background-position:-94px -44px}.pswp__share-modal{display:block;background:rgba(0,0,0,.5);width:100%;height:100%;top:0;left:0;padding:10px;position:absolute;z-index:1600;opacity:0;-webkit-backface-visibility:hidden;will-change:opacity}.pswp__share-modal--hidden{display:none}.pswp__share-tooltip{z-index:1620;position:absolute;background:#FFF;top:56px;border-radius:2px;display:block;width:auto;right:44px;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.25);box-shadow:0 2px 5px rgba(0,0,0,.25);-webkit-transform:translateY(6px);-ms-transform:translateY(6px);transform:translateY(6px);-webkit-backface-visibility:hidden;will-change:transform}.pswp__counter,.pswp__preloader{height:44px;top:0;position:absolute}.pswp__counter{left:0;font-size:13px;line-height:44px;color:#FFF;opacity:.75;padding:0 10px}.pswp__caption{position:absolute;left:0;bottom:0;width:100%;min-height:44px}.pswp__caption__center{text-align:left;max-width:420px;margin:0 auto;font-size:13px;padding:10px;line-height:20px;color:#CCC}.pswp__ui{visibility:visible}.pswp__preloader{width:44px;left:50%;margin-left:-22px;opacity:0;will-change:opacity;direction:ltr}.pswp__preloader__icn{width:20px;height:20px;margin:12px}@media screen and (max-width:1024px){.pswp__preloader{position:relative;left:auto;top:auto;margin:0;float:right}}.pswp__ui{-webkit-font-smoothing:auto;opacity:1;z-index:1550}.pswp__top-bar{position:absolute;left:0;top:0;height:44px;width:100%}.pswp__caption,.pswp__top-bar{-webkit-backface-visibility:hidden;will-change:opacity}.pswp__caption,.pswp__top-bar{background-color:rgba(0,0,0,.5)}.pswp__ui--hidden .pswp__button--arrow--left,.pswp__ui--hidden .pswp__button--arrow--right,.pswp__ui--hidden .pswp__caption,.pswp__ui--hidden .pswp__top-bar{opacity:.001}.pswp{z-index:100000}.pswp .pswp__caption__center{text-align:center}.clearfix:after,.clearfix:before{display:table;content:" "}.clearfix:after{clear:both}input[type=search]{display:block;width:100%;height:auto;vertical-align:middle;border-color:#CCC;border-style:solid;border-width:1px;background-color:#FFF;color:#555;font-size:1em;padding:6px 10px}button{background-color:#FFF;background-image:none;border-color:#CCC;border-style:solid;border-width:1px;color:#333;display:inline-block;padding:8px 16px;margin-bottom:0;font-size:1em;font-weight:700;line-height:1em;text-align:center;vertical-align:middle}.button{background-color:#FFF;background-image:none;border:1px solid rgba(0,0,0,.2);color:#333;display:inline-block;padding:9px 27px;margin-bottom:0;font-size:1em;font-weight:700;line-height:1.4;text-align:center;vertical-align:middle;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px}#pojo-scroll-up{position:fixed;bottom:50px;display:none;z-index:9998}#pojo-scroll-up .pojo-scroll-up-inner{display:table;width:100%;height:100%;line-height:1}#pojo-scroll-up .pojo-scroll-up-button{display:table-cell;margin:0;text-align:center;vertical-align:middle;outline:0}#pojo-scroll-up.pojo-scroll-up-right{right:50px}@media only screen and (max-width:767px){#pojo-scroll-up{bottom:20px}#pojo-scroll-up.pojo-scroll-up-right{right:20px}}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}.widget-image.align-center{text-align:center}.form{position:relative;padding-bottom:20px}.navbar-collapse{padding:0!important}.wprpsp-gridbox-slider{visibility:visible!important;opacity:1!important}body{font-size:13px}h1,h2,h5{margin-top:15px;margin-bottom:15px}p{margin:0 0 20px}.navbar-collapse{border:none;-webkit-box-shadow:none;box-shadow:none;padding-right:0;padding-left:0}.form .field,input[type=search]{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.button,button{border-width:3px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}ul{list-style-type:square}h2 a{color:inherit}#breadcrumbs a{color:inherit}#sub-header .widget{display:inline-block}#header{border-top:1px solid}#header:after,#header:before{content:" ";display:table}#header:after{clear:both}#header.logo-left .logo{float:left}#header.logo-left .nav-main{float:right}.search-header{display:inline-block}.search-toggle{float:right;padding:0 20px;outline:0}.search-section{padding:10px 0}.search-section .container{position:relative}.search-section .form-search{position:relative;margin:0;padding-right:50px;padding-bottom:0}.search-section .form-search label{display:block}.search-section .form-search .field{background-color:transparent;height:40px;border:none}.search-section .form-search .button{display:none}.search-section .fa{position:absolute;right:35px;top:0;line-height:40px;text-align:center}.sf-menu{margin:0;padding:0;list-style:none;display:inline-block}.sf-menu li{float:left;position:relative}.sf-menu li a{display:block;position:relative;padding:0 1em;text-decoration:none;z-index:2}.sf-menu li.current-menu-parent{visibility:inherit}.sf-menu>li>a{padding:0 5px}.sf-menu>li>a>span{display:inline-block;line-height:1;padding:5px 10px}.sf-menu *{margin:0;padding:0;list-style:none}.navbar-toggle{background-color:transparent;border:0 none;margin:0 auto;padding:5px 0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.nav-main .nav-main-inner{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}.nav-main .navbar-collapse{max-height:360px}.nav-main .navbar-collapse .mobile-menu{list-style:none outside none;margin:0;padding:0}.nav-main .navbar-collapse .mobile-menu>li{display:block;margin:0;padding:0}.nav-main .navbar-collapse .mobile-menu>li a{border-top:1px solid rgba(0,0,0,.1);padding:5px 15px;display:block}#primary{margin:auto}#primary #content{margin-top:30px;margin-bottom:30px}.entry-header{margin-bottom:30px}.entry-header .page-title h1{margin-top:0}.entry-meta{line-height:1em}.entry-meta span a{color:inherit}.entry-meta span:before{content:'\2022';margin-right:5px}.entry-meta span:first-child{margin-left:0}.entry-meta span:first-child:before{content:'';margin-right:0}.entry-meta span .avatar{margin-top:-2px;margin-right:5px}.single .entry-post .entry-meta{border-top:1px solid;border-bottom:3px solid}.single .entry-post .entry-meta .avatar{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}#sidebar h2 a{color:inherit}#sidebar .widget{margin-bottom:30px}#sidebar .widget .widget-title{margin-top:0}img{height:auto;max-width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#primary .widget .widget-title{line-height:1;border-bottom:3px solid;margin:20px 0;padding-bottom:20px}#primary .widget .widget-title span{line-height:1}#primary .widget .widget-title span:before{content:'';width:16px;height:16px;display:inline-block;vertical-align:top;margin-right:14px;line-height:1}@media (min-width:992px){#primary #main.sidebar-right{border-right:3px solid;padding-right:30px;width:70%}#primary #main.sidebar-right+#sidebar{padding-left:30px;width:30%}#primary #main .entry-post .entry-header+.entry-content{width:100%;padding-right:0;padding-left:0}}@media (min-width:768px) and (max-width:991px){.container{max-width:950px}.sf-menu a{font-size:.85em!important;padding:0 .5em}}@media (max-width:767px){#header{height:auto!important}#header.logo-left .logo{float:none;margin-top:15px;margin-bottom:15px;max-width:100%}#header.logo-left .logo:after,#header.logo-left .logo:before{content:" ";display:table}#header.logo-left .logo:after{clear:both}#header.logo-left .logo .logo-img{float:left}#header.logo-left .logo .navbar-toggle{float:right}#header.logo-left .nav-main{float:none;max-width:100%}#header.logo-left .nav-main:after,#header.logo-left .nav-main:before{content:" ";display:table}#header.logo-left .nav-main:after{clear:both}#header.logo-left .nav-main a{display:block}#header.logo-left .nav-main .nav-main-inner{display:block}#primary #content{margin-top:1em;margin-bottom:1em}#primary #content #main{margin-top:20px;margin-bottom:20px}#primary #content #main.sidebar-right{float:none}.single .entry-content{width:100%;padding:0}.single .entry-header{margin-bottom:20px}}.cc-window{opacity:1}.cc-link{text-decoration:underline}.cc-window{position:fixed;overflow:hidden;box-sizing:border-box;font-family:Helvetica,Calibri,Arial,sans-serif;font-size:16px;line-height:1.5em;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999}.cc-window.cc-banner{padding:1em 1.8em;width:100%;-ms-flex-direction:row;flex-direction:row}.cc-link{opacity:.8;display:inline-block;padding:.2em}.cc-link:visited{color:initial}.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap}.cc-bottom{bottom:1em}.cc-window.cc-banner{-ms-flex-align:center;align-items:center}.cc-banner.cc-bottom{left:0;right:0;bottom:0}.cc-banner .cc-message{display:block;-ms-flex:1 1 auto;flex:1 1 auto;max-width:100%;margin-right:1em}.cc-compliance{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:justify;align-content:space-between}@media screen and (max-width:900px){.cc-btn{white-space:normal}}@media screen and (max-width:414px) and (orientation:portrait),screen and (max-width:736px) and (orientation:landscape){.cc-window.cc-bottom{bottom:0}.cc-window.cc-banner{left:0;right:0}.cc-window.cc-banner{-ms-flex-direction:column;flex-direction:column}.cc-window.cc-banner .cc-compliance{-ms-flex:1 1 auto;flex:1 1 auto}.cc-window .cc-message{margin-bottom:1em}.cc-window.cc-banner{-ms-flex-align:unset;align-items:unset}.cc-window.cc-banner .cc-message{margin-right:0}}.cc-theme-edgeless.cc-window{padding:0}.cc-banner.cc-theme-edgeless .cc-btn{margin:0;padding:.8em 1.8em;height:100%}.cc-banner.cc-theme-edgeless .cc-message{margin-left:1em}.price-label .row{margin:0;padding:0}.price-label .row li{background:#eee;list-style:none;padding:6px;margin:6px;box-shadow:1px 1px 3px -1px #252525;max-width:100%;box-sizing:border-box;display:inline-block;vertical-align:top}.price-label .row li .ccpw_icon{display:inline-block;vertical-align:middle}.price-label .row li .ccpw_icon img{margin-left:0;vertical-align:middle}.price-label .row li .style-1 .ccpw_icon img{width:24px;height:auto}.price-label .row li .style-1 span.name{font-weight:700;font-size:16px;margin-left:5px}.price-label .row li .style-1 span.ticker-price{font-size:15px;margin-left:5px;display:inline-block}@media only screen and (max-width:768px){.price-label .row li.style-1{width:48%;margin:1%;vertical-align:top}}@media only screen and (max-width:480px){.price-label .row li.style-1{width:100%}}</style><link rel="_preload" as="style" href="https://fonts.googleapis.com/css?family=Oswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPT%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPT%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="_preload" href="https://fonts.googleapis.com/css?family=Oswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPT%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" /></noscript>
+	<meta name="description" content="Coin staking is becoming very popular among cryptocurrency investors. One of the reasons for that is because it allows holders to earn passively. Amid" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="4 Best Wallets For Staking Cryptocurrencies In 2020" />
+	<meta property="og:description" content="Coin staking is becoming very popular among cryptocurrency investors. One of the reasons for that is because it allows holders to earn passively. Amid" />
+	<meta property="og:url" content="https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/" />
+	<meta property="og:site_name" content="CryptoPotato" />
+	<meta property="article:publisher" content="http://www.facebook.com/CryptoPotato/" />
+	<meta property="article:published_time" content="2020-02-08T09:15:11+00:00" />
+	<meta property="article:modified_time" content="2020-10-14T09:21:21+00:00" />
+	<meta property="og:image" content="https://cryptopotato.com/wp-content/uploads/2020/02/staking_wallets-1.jpg" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="360" />
+	<meta property="fb:app_id" content="1420970937995283" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@Crypto_Potato" />
+	<meta name="twitter:site" content="@Crypto_Potato" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://cryptopotato.com/#organization","name":"CryptoPotato","url":"https://cryptopotato.com/","sameAs":["http://www.facebook.com/CryptoPotato/","http://www.linkedin.com/company/cryptopotato/","http://www.youtube.com/channel/UCUv89KvVvjuH-NngyBhfwTg","https://twitter.com/Crypto_Potato"],"logo":{"@type":"ImageObject","@id":"https://cryptopotato.com/#logo","inLanguage":"en-US","url":"https://cryptopotato.com/wp-content/uploads/2020/10/potato-logo12.png","width":1200,"height":519,"caption":"CryptoPotato"},"image":{"@id":"https://cryptopotato.com/#logo"}},{"@type":"WebSite","@id":"https://cryptopotato.com/#website","url":"https://cryptopotato.com/","name":"CryptoPotato","description":"Crypto Blog","publisher":{"@id":"https://cryptopotato.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://cryptopotato.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#primaryimage","inLanguage":"en-US","url":"https://cryptopotato.com/wp-content/uploads/2020/02/staking_wallets-1.jpg","width":600,"height":360,"caption":"staking_wallets"},{"@type":"WebPage","@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#webpage","url":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/","name":"4 Best Wallets For Staking Cryptocurrencies In 2020","isPartOf":{"@id":"https://cryptopotato.com/#website"},"primaryImageOfPage":{"@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#primaryimage"},"datePublished":"2020-02-08T09:15:11+00:00","dateModified":"2020-10-14T09:21:21+00:00","description":"Coin staking is becoming very popular among cryptocurrency investors. One of the reasons for that is because it allows holders to earn passively. Amid","breadcrumb":{"@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/"]}]},{"@type":"BreadcrumbList","@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://cryptopotato.com/","url":"https://cryptopotato.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"/bitcoin-cryptocurrency-guides-101/","url":"/bitcoin-cryptocurrency-guides-101/","name":"Guides"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/","url":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/","name":"4 Best Wallets For Staking Cryptocurrencies In 2020"}}]},{"@type":["Article","NewsArticle"],"@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#article","isPartOf":{"@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#webpage"},"author":{"@id":"https://cryptopotato.com/#/schema/person/7e7f612ac052b5e876aa3f9e03bc2a53"},"headline":"4 Best Wallets For Staking Cryptocurrencies In 2020","datePublished":"2020-02-08T09:15:11+00:00","dateModified":"2020-10-14T09:21:21+00:00","mainEntityOfPage":{"@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#webpage"},"publisher":{"@id":"https://cryptopotato.com/#organization"},"image":{"@id":"https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/#primaryimage"},"keywords":"Binance,Coinbase,Proof of Stake (PoS),Tezos","articleSection":"AA News,Editorials,Guides","inLanguage":"en-US","copyrightYear":"2020","copyrightHolder":{"@id":"https://cryptopotato.com/#organization"}},{"@type":"Person","@id":"https://cryptopotato.com/#/schema/person/7e7f612ac052b5e876aa3f9e03bc2a53","name":"Jordan Lyanchev","image":{"@type":"ImageObject","@id":"https://cryptopotato.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/c3036dd22568e4d75e548f5754860294?s=96&d=mm&r=g","caption":"Jordan Lyanchev"},"description":"Jordan got into crypto in 2016 by trading and investing. He began writing about blockchain technology in 2017. He has managed numerous crypto-related projects and is passionate about all things blockchain. Contact Jordan: LinkedIn","sameAs":["http://www.linkedin.com/in/yordan-lyanchev-54b127111/"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="amphtml" href="https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020/?amp" /><meta name="generator" content="AMP for WP 1.0.68"/><link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.gstatic.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//google-analytics.com' />
+<link rel='dns-prefetch' href='//www.google-analytics.com' />
+<link rel='dns-prefetch' href='//ssl.google-analytics.com' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//connect.facebook.net' />
+<link rel='dns-prefetch' href='//facebook.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="CryptoPotato &raquo; Feed" href="https://cryptopotato.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CryptoPotato &raquo; Comments Feed" href="https://cryptopotato.com/comments/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/aryo-widget-device/assets/css/style.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/wp-responsive-recent-post-slider-pro/assets/css/slick.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/wp-responsive-recent-post-slider-pro/assets/css/wprpsp-public.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop-child/ico_includes/css/style-widgets.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop/assets/bootstrap/css/bootstrap.min.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload'   href='https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/photoswipe/photoswipe.min.css?ver=5.5.6' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload'   href='https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/photoswipe/default-skin/default-skin.min.css?ver=5.5.6' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop/core/assets/css/style.min.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop-child/assets/css/style.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload'   href='https://cryptopotato.com/wp-content/themes/scoop/assets/css/style.min.css?ver=5.5.6' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop-child/assets/font-awesome/css/font-awesome.min.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://cryptopotato.com/wp-json/" /><link rel="alternate" type="application/json" href="https://cryptopotato.com/wp-json/wp/v2/posts/50363" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://cryptopotato.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://cryptopotato.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.6" />
+<link rel='shortlink' href='https://cryptopotato.com/?p=50363' />
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NFZNCC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=!0;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-NFZNCC');</script>
+<!-- End Google Tag Manager --><!-- Related Posts for WP Premium CSS -->
+<style type='text/css'>
+.rp4wp-related-posts { width:100%; overflow:hidden;}ul.rp4wp-posts-list {width:100%; margin:0 !important; padding:0 !important; list-style:none !important; float:left;}ul.rp4wp-posts-list .rp4wp-col {width:100% !important;margin-bottom:30px !important;list-style:none !important;box-sizing:border-box;overflow:hidden;float:left;}.rp4wp_component_wrapper {width:100% !important;float:left;}.rp4wp_component {width:100% !important;padding:0 0 5% !important;box-sizing:border-box;float:left;overflow:hidden !important;}.rp4wp_component a {border:0 !important;}.rp4wp_component_image a {display:block; height:100% !important;} .rp4wp_component_image img {width:100% !important;height:100% !important;}.rp4wp_component_title a {text-decoration:none !important; font-weight:bold; border:0 !important;}@media (min-width: 768px) {ul.rp4wp-posts-list .rp4wp-col {width:34.333333333333% !important;padding:0 2% !important;}ul.rp4wp-posts-list .rp4wp-col-first {width:32.333333333333% !important;padding-left:0 !important;padding-right:2% !important;}ul.rp4wp-posts-list .rp4wp-col-last {width:32.333333333333% !important;padding-right:0 !important;padding-left:2% !important;}.rp4wp_component_wrapper {width:50% !important;}.rp4wp_component_wrapper_left {padding-right:5% !important;}.rp4wp_component_wrapper_right {padding-left:5% !important;}}.rp4wp_component_2{height:40% !important;}.rp4wp_component_3{height:20% !important;}@media (min-width:799px){.rp4wp_component_image img {     height: 150px !important;}}
+</style>
+<script type="text/javascript">var ajaxurl='https://cryptopotato.com/wp-admin/admin-ajax.php';</script>
+<style type="text/css">body{background-color: rgba(242, 242, 242, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;color: #2b2b2b; font-family: 'Arial', Arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 25px;}#primary{background-color: rgba(255, 255, 255, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;}button,.button,#commentform .button{color: #000000; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 15px;text-transform: uppercase;background-color: #fed319;border-color: #fed319;}button:hover,.button:hover,#commentform .button:hover{color: #fed319;background-color: #000000;border-color: #ffffff;}div.logo-text a{color: #4bb8ab; font-family: 'Arial', Arial, sans-serif; font-weight: bold; font-size: 38px;line-height: 1em;}.logo{margin-top: 25px;margin-bottom: 1px;}#top-bar{background-color: rgba(51, 51, 51, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}#top-bar, #top-bar .widget-title{color: #7c7c7c; font-family: 'Open Sans', Arial, sans-serif; font-weight: 600; font-size: 12px;text-transform: uppercase;letter-spacing: 0px;line-height: 0px;}#top-bar a{color: #8f8f8f;}#top-bar a:hover{color: #aaaaaa;}#header, .sticky-header{background-color: rgba(59, 59, 59, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}.sf-menu a, .mobile-menu a{color: #ffffff; font-family: 'Arial', Arial, sans-serif; font-weight: 700; font-size: 18px;text-transform: capitalize;letter-spacing: -0.5px;}.sf-menu a:hover,.sf-menu li.active a, .sf-menu li.current-menu-item > a,.sf-menu .sfHover > a,.sf-menu .sfHover > li.current-menu-item > a,.sf-menu li.current-menu-ancestor > a,.mobile-menu a:hover,.mobile-menu li.current-menu-item > a, a.search-toggle .fa-times{color: #000000;}.nav-main .sf-menu .sub-menu{background-color: #333333;}.nav-main .sf-menu .sub-menu li:hover > a,.nav-main .sf-menu .sub-menu li.current-menu-item > a{background-color: #333333;color: #ffffff;}.nav-main .sf-menu .sub-menu li a{color: #bdbdbd; font-family: 'Arial', Arial, sans-serif; font-weight: normal; font-size: 12px;line-height: 3.3em;}.search-section{background-color: rgba(51, 51, 51, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}.search-section,.search-section .form-search .field{color: #8f8f8f;}#sub-header{background-color: rgba(254, 211, 25, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}#sub-header, #sub-header .widget-title{color: #3b3b3b; font-family: 'Arial', Arial, sans-serif; font-weight: 600; font-size: 14px;text-transform: capitalize;letter-spacing: 0.3px;line-height: 45px;}#sub-header a{color: #3b3b3b;}#sub-header a:hover{color: #aaaaaa;}#title-bar{height: 16px;line-height: 16px;color: #fed319; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 19px;text-transform: uppercase;}#title-bar.title-bar-style-custom_bg{background-color: rgba(254, 211, 25, 1);background-position: center center;background-repeat: repeat;background-size: cover;background-attachment: scroll;}#title-bar div.breadcrumbs, #title-bar div.breadcrumbs a{color: #000000; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;letter-spacing: 1.2px;}a{color: #2d50ff;}a:hover, a:focus{color: #878787;}::selection{color: #ffffff;background: #fed319;}::-moz-selection{color: #ffffff;background: #fed319;}h1{color: #0a0a0a; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 40px;text-transform: none;line-height: 1.3em;}h2{color: #4c4c4c; font-family: 'Oswald', Arial, sans-serif; font-weight: 200; font-size: 36px;text-transform: none;line-height: 1.3em;}h3{color: #353535; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 21px;text-transform: none;line-height: 31px;}h4{color: #494949; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 20px;text-transform: none;line-height: 1.2em;}h5{color: #7f7f7f; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 17px;text-transform: none;letter-spacing: 1.2px;line-height: 1.2em;}h6{color: #6d6d6d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 17px;text-transform: none;line-height: 1.5em;}h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: 500; font-size: 18px;text-transform: none;line-height: 1em;}.media.list-two h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 16px;text-transform: none;line-height: 1.3em;}.media.list-three h3.media-heading{color: #7a7a7a; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 15px;text-transform: uppercase;line-height: 1.2em;}.media.list-big-thumbnail h3.media-heading{color: #000000; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 30px;text-transform: none;line-height: 35px;}.media.list-format h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 27px;text-transform: none;line-height: 30px;}.grid-item.grid-one h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: 600; font-size: 16px;text-transform: none;line-height: 1.2em;}.grid-item.grid-two h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 23px;text-transform: none;line-height: 1.2em;}.grid-item.grid-three h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 19px;text-transform: uppercase;line-height: 1.3em;}.grid-item.grid-four h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: 600; font-size: 15px;text-transform: none;line-height: 1.2em;}.posts-group .featured-post h3.media-heading,.posts-group .featured-post h3.grid-heading{color: #0a0a0a; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 22px;text-transform: none;line-height: 1.2em;}.posts-group h3.media-heading,.posts-group h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 17px;text-transform: none;line-height: 20px;}.entry-meta > span, .more-link span,.read-more, .grid-item .entry-thumbnail .entry-meta span{color: #b8b8b8; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;letter-spacing: 1.2px;line-height: 2em;}.entry-post .entry-meta > span{color: #6f6f6f; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;letter-spacing: 1.2px;line-height: 3em;}.entry-excerpt{color: #6f6f6f; font-family: 'Arial', Arial, sans-serif; font-weight: normal; font-size: 15px;text-transform: none;letter-spacing: 0px;font-style: normal;line-height: 1.2em;}.entry-post .entry-excerpt{color: #0a0a0a; font-family: 'PT Sans', Arial, sans-serif; font-weight: bold; font-size: 21px;letter-spacing: 0.2px;font-style: italic;line-height: 24px;}.category-label{color: #ffffff; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 9px;text-transform: uppercase;}#primary #breadcrumbs,#primary #breadcrumbs a, nav.post-navigation a{color: #929292; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;line-height: 4em;}#sidebar{color: #878787; font-family: 'Arial', Arial, sans-serif; font-weight: normal; font-size: 15px;line-height: 21px;}#sidebar a{color: #a8a8a8;}#sidebar a:hover{color: #bcbcbc;}#sidebar .widget-title{color: #929292; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 17px;text-transform: uppercase;letter-spacing: 1.2px;line-height: 1;}#footer-widgets{background-color: rgba(65, 65, 65, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;color: #b0b0b0; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 15px;letter-spacing: 0.1px;line-height: 1.5em;}#footer-widgets a{color: #888888;}#footer-widgets a:hover{color: #b7b7b7;}#footer-widgets .widget-title{color: #fed319; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 17px;text-transform: uppercase;letter-spacing: 1.5px;line-height: 20px;}#footer-copyright{background-color: rgba(65, 65, 65, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;color: #8e8e8e; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 10px;text-transform: uppercase;line-height: 70px;}#footer-copyright a{color: #c1c1c1;}#footer-copyright a:hover{color: #ffffff;}#pojo-scroll-up{width: 50px;height: 50px;line-height: 50px;background-color: rgba(51, 51, 51, 0.6);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;}#pojo-scroll-up a{color: #eeeeee;}#primary #main.sidebar-right,#primary #main.sidebar-left,#primary .media, .align-pagination .pagination,.single .entry-post .entry-meta, #primary #main .entry-post .entry-sharing + .entry-content,.author-info, body.rtl #primary #main.sidebar-right,body.rtl #primary #main.sidebar-left,body.rtl #primary #main .entry-post .entry-sharing + .entry-content, .media.grid-item.list-two:nth-child(n+3) .item-inner,.media.grid-item.list-three:nth-child(n+4) .item-inner,.posts-group .grid-item.media.featured-post .item-inner,.posts-group .grid-item.media.list-item:nth-child(n+4) .item-inner,.posts-group.featured-list-aside .media.list-item:nth-child(n+3) .item-inner,#primary .widget .widget-title, #primary .pb-widget-inner .pb-widget-title{border-color: #8c8c8c;}#header, .sf-menu .sub-menu li > a{border-color: #3f3f3f;}#footer-copyright .content-copyright{border-color: #494949;}.sf-menu a, .menu-no-found,.sf-menu li.pojo-menu-search,.search-header{line-height: 120px;}.sf-menu li:hover ul, .sf-menu li.sfHover ul{top: 120px;}a.search-toggle{color: #ffffff;}.navbar-toggle{border-color: #ffffff;}.icon-bar{background-color: #ffffff;}#top-bar ul.social-links li a .social-icon:before{line-height: 0px;height: 0px;width: 0px;}#sub-header ul.social-links li a .social-icon:before{line-height: 45px;height: 45px;width: 45px;}			.sf-menu > li.active > a > span, .sf-menu > li:hover > a > span, .sf-menu > li.current-menu-item > a > span, .sf-menu > li.current-menu-parent > a > span, .sf-menu > li.current-menu-ancestor > a > span, .sf-menu > li.current_page_item > a > span, .sf-menu > li.current_page_paren > a > span, .sf-menu > li.current_page_ancestor > a > span {background-color: #fed319;}
+			.sf-menu > li.active > a.sf-with-ul > span:after, .sf-menu > li:hover > a.sf-with-ul > span:after, .sf-menu > li.current-menu-item > a.sf-with-ul > span:after, .sf-menu > li.current-menu-parent > a.sf-with-ul > span:after, .sf-menu > li.current-menu-ancestor > a.sf-with-ul > span:after, .sf-menu > li.current_page_item > a.sf-with-ul > span:after, .sf-menu > li.current_page_paren > a.sf-with-ul > span:after, .sf-menu > li.current_page_ancestor > a.sf-with-ul > span:after {border-top-color: #fed319;}
+			.category-label {background-color: rgba(254,211,25,0.8);}
+			.grid-item .entry-thumbnail .entry-meta {background-color:  #fed319;}
+			#primary .widget-inner .pb-widget-title span:before,#primary .pb-widget-inner .pb-widget-title span:before,#primary .widget-inner .widget-title span:before,#primary .pb-widget-inner .widget-title span:before  {background-color:  #fed319;}
+			.align-pagination .pagination > li > a:hover,.align-pagination .pagination > li > span:hover,.align-pagination .pagination > .active > a,.align-pagination .pagination > .active > span,.align-pagination .pagination > .active > a:hover,.align-pagination .pagination > .active > span:hover,.align-pagination .pagination > .active > a:focus,.align-pagination .pagination > .active > span:focus {background-color: #EBEBEB; color: #fed319;}
+			.pojo-loadmore-wrap .button,.pojo-loadmore-wrap .pojo-loading,.pojo-loading-wrap .button,.pojo-loading-wrap .pojo-loading {background-color: #fed319; color: #EBEBEB;}
+			.pojo-loadmore-wrap .button:hover,.pojo-loadmore-wrap .pojo-loading,.pojo-loading-wrap .button:hover,.pojo-loading-wrap .pojo-loading:hover {border-color: #fed319; color: #fed319;}
+			.entry-tags a {background-color: #EBEBEB;}
+			.entry-tags a:hover {background-color: #fed319; color: #EBEBEB;}
+			.author-info .author-name small {color: #fed319;}
+			.category-filters li a {color: #EBEBEB;}
+			.category-filters li a:hover,.category-filters li a.active {color: #fed319;}
+			.widget_tag_cloud a, #sidebar-footer .widget_tag_cloud a {color: #EBEBEB;}
+			.widget_tag_cloud a:hover, #sidebar-footer .widget_tag_cloud a:hover {background-color: #fed319; color: #EBEBEB;}
+			.navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar {background-color: #fed319;}
+			#comments,#respond {background-color: #EBEBEB;}
+			#primary .widget .widget-title span:before, #primary .pb-widget-inner .pb-widget-title span:before {background-color: #fed319;}.sf-menu > li.theme-color-1.active > a > span, .sf-menu > li.theme-color-1:hover > a > span, .sf-menu > li.theme-color-1.current-menu-item > a > span, .sf-menu > li.theme-color-1.current-menu-parent > a > span, .sf-menu > li.theme-color-1.current-menu-ancestor > a > span, .sf-menu > li.theme-color-1.current_page_item > a > span, .sf-menu > li.theme-color-1.current_page_paren > a > span, .sf-menu > li.theme-color-1.current_page_ancestor > a > span {background-color: #eb4326;}
+			.sf-menu > li.theme-color-1.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-1:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-1.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-1.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-1.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-1.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-1.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-1.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #eb4326;}
+			#primary .theme-color-1 .category-label {background-color: rgba(235,67,38, 0.8);}
+			.theme-color-1 .grid-item .entry-thumbnail .entry-meta {background-color: #eb4326;}
+			#primary .theme-color-1 .widget-inner .pb-widget-title span:before,#primary .theme-color-1 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-1 .widget-title span:before,#primary .theme-color-1 .pb-widget-inner .widget-title span:before {background-color: #eb4326;}.sf-menu > li.theme-color-2.active > a > span, .sf-menu > li.theme-color-2:hover > a > span, .sf-menu > li.theme-color-2.current-menu-item > a > span, .sf-menu > li.theme-color-2.current-menu-parent > a > span, .sf-menu > li.theme-color-2.current-menu-ancestor > a > span, .sf-menu > li.theme-color-2.current_page_item > a > span, .sf-menu > li.theme-color-2.current_page_paren > a > span, .sf-menu > li.theme-color-2.current_page_ancestor > a > span {background-color: #00abff;}
+			.sf-menu > li.theme-color-2.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-2:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-2.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-2.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-2.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-2.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-2.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-2.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #00abff;}
+			#primary .theme-color-2 .category-label {background-color: rgba(0,171,255, 0.8);}
+			.theme-color-2 .grid-item .entry-thumbnail .entry-meta {background-color: #00abff;}
+			#primary .theme-color-2 .widget-inner .pb-widget-title span:before,#primary .theme-color-2 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-2 .widget-title span:before,#primary .theme-color-2 .pb-widget-inner .widget-title span:before {background-color: #00abff;}.sf-menu > li.theme-color-3.active > a > span, .sf-menu > li.theme-color-3:hover > a > span, .sf-menu > li.theme-color-3.current-menu-item > a > span, .sf-menu > li.theme-color-3.current-menu-parent > a > span, .sf-menu > li.theme-color-3.current-menu-ancestor > a > span, .sf-menu > li.theme-color-3.current_page_item > a > span, .sf-menu > li.theme-color-3.current_page_paren > a > span, .sf-menu > li.theme-color-3.current_page_ancestor > a > span {background-color: #4cb8ab;}
+			.sf-menu > li.theme-color-3.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-3:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-3.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-3.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-3.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-3.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-3.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-3.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #4cb8ab;}
+			#primary .theme-color-3 .category-label {background-color: rgba(76,184,171, 0.8);}
+			.theme-color-3 .grid-item .entry-thumbnail .entry-meta {background-color: #4cb8ab;}
+			#primary .theme-color-3 .widget-inner .pb-widget-title span:before,#primary .theme-color-3 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-3 .widget-title span:before,#primary .theme-color-3 .pb-widget-inner .widget-title span:before {background-color: #4cb8ab;}.sf-menu > li.theme-color-4.active > a > span, .sf-menu > li.theme-color-4:hover > a > span, .sf-menu > li.theme-color-4.current-menu-item > a > span, .sf-menu > li.theme-color-4.current-menu-parent > a > span, .sf-menu > li.theme-color-4.current-menu-ancestor > a > span, .sf-menu > li.theme-color-4.current_page_item > a > span, .sf-menu > li.theme-color-4.current_page_paren > a > span, .sf-menu > li.theme-color-4.current_page_ancestor > a > span {background-color: #6185f3;}
+			.sf-menu > li.theme-color-4.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-4:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-4.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-4.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-4.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-4.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-4.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-4.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #6185f3;}
+			#primary .theme-color-4 .category-label {background-color: rgba(97,133,243, 0.8);}
+			.theme-color-4 .grid-item .entry-thumbnail .entry-meta {background-color: #6185f3;}
+			#primary .theme-color-4 .widget-inner .pb-widget-title span:before,#primary .theme-color-4 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-4 .widget-title span:before,#primary .theme-color-4 .pb-widget-inner .widget-title span:before {background-color: #6185f3;}.sf-menu > li.theme-color-5.active > a > span, .sf-menu > li.theme-color-5:hover > a > span, .sf-menu > li.theme-color-5.current-menu-item > a > span, .sf-menu > li.theme-color-5.current-menu-parent > a > span, .sf-menu > li.theme-color-5.current-menu-ancestor > a > span, .sf-menu > li.theme-color-5.current_page_item > a > span, .sf-menu > li.theme-color-5.current_page_paren > a > span, .sf-menu > li.theme-color-5.current_page_ancestor > a > span {background-color: #c5dd23;}
+			.sf-menu > li.theme-color-5.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-5:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-5.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-5.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-5.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-5.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-5.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-5.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #c5dd23;}
+			#primary .theme-color-5 .category-label {background-color: rgba(197,221,35, 0.8);}
+			.theme-color-5 .grid-item .entry-thumbnail .entry-meta {background-color: #c5dd23;}
+			#primary .theme-color-5 .widget-inner .pb-widget-title span:before,#primary .theme-color-5 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-5 .widget-title span:before,#primary .theme-color-5 .pb-widget-inner .widget-title span:before {background-color: #c5dd23;}.sf-menu > li.theme-color-6.active > a > span, .sf-menu > li.theme-color-6:hover > a > span, .sf-menu > li.theme-color-6.current-menu-item > a > span, .sf-menu > li.theme-color-6.current-menu-parent > a > span, .sf-menu > li.theme-color-6.current-menu-ancestor > a > span, .sf-menu > li.theme-color-6.current_page_item > a > span, .sf-menu > li.theme-color-6.current_page_paren > a > span, .sf-menu > li.theme-color-6.current_page_ancestor > a > span {background-color: #f34163;}
+			.sf-menu > li.theme-color-6.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-6:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-6.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-6.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-6.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-6.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-6.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-6.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #f34163;}
+			#primary .theme-color-6 .category-label {background-color: rgba(243,65,99, 0.8);}
+			.theme-color-6 .grid-item .entry-thumbnail .entry-meta {background-color: #f34163;}
+			#primary .theme-color-6 .widget-inner .pb-widget-title span:before,#primary .theme-color-6 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-6 .widget-title span:before,#primary .theme-color-6 .pb-widget-inner .widget-title span:before {background-color: #f34163;}.sf-menu > li.theme-color-7.active > a > span, .sf-menu > li.theme-color-7:hover > a > span, .sf-menu > li.theme-color-7.current-menu-item > a > span, .sf-menu > li.theme-color-7.current-menu-parent > a > span, .sf-menu > li.theme-color-7.current-menu-ancestor > a > span, .sf-menu > li.theme-color-7.current_page_item > a > span, .sf-menu > li.theme-color-7.current_page_paren > a > span, .sf-menu > li.theme-color-7.current_page_ancestor > a > span {background-color: #a63d27;}
+			.sf-menu > li.theme-color-7.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-7:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-7.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-7.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-7.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-7.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-7.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-7.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #a63d27;}
+			#primary .theme-color-7 .category-label {background-color: rgba(166,61,39, 0.8);}
+			.theme-color-7 .grid-item .entry-thumbnail .entry-meta {background-color: #a63d27;}
+			#primary .theme-color-7 .widget-inner .pb-widget-title span:before,#primary .theme-color-7 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-7 .widget-title span:before,#primary .theme-color-7 .pb-widget-inner .widget-title span:before {background-color: #a63d27;}.sf-menu > li.theme-color-8.active > a > span, .sf-menu > li.theme-color-8:hover > a > span, .sf-menu > li.theme-color-8.current-menu-item > a > span, .sf-menu > li.theme-color-8.current-menu-parent > a > span, .sf-menu > li.theme-color-8.current-menu-ancestor > a > span, .sf-menu > li.theme-color-8.current_page_item > a > span, .sf-menu > li.theme-color-8.current_page_paren > a > span, .sf-menu > li.theme-color-8.current_page_ancestor > a > span {background-color: #b17fee;}
+			.sf-menu > li.theme-color-8.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-8:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-8.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-8.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-8.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-8.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-8.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-8.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #b17fee;}
+			#primary .theme-color-8 .category-label {background-color: rgba(177,127,238, 0.8);}
+			.theme-color-8 .grid-item .entry-thumbnail .entry-meta {background-color: #b17fee;}
+			#primary .theme-color-8 .widget-inner .pb-widget-title span:before,#primary .theme-color-8 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-8 .widget-title span:before,#primary .theme-color-8 .pb-widget-inner .widget-title span:before {background-color: #b17fee;}.sf-menu > li.theme-color-9.active > a > span, .sf-menu > li.theme-color-9:hover > a > span, .sf-menu > li.theme-color-9.current-menu-item > a > span, .sf-menu > li.theme-color-9.current-menu-parent > a > span, .sf-menu > li.theme-color-9.current-menu-ancestor > a > span, .sf-menu > li.theme-color-9.current_page_item > a > span, .sf-menu > li.theme-color-9.current_page_paren > a > span, .sf-menu > li.theme-color-9.current_page_ancestor > a > span {background-color: #542e61;}
+			.sf-menu > li.theme-color-9.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-9:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-9.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-9.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-9.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-9.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-9.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-9.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #542e61;}
+			#primary .theme-color-9 .category-label {background-color: rgba(84,46,97, 0.8);}
+			.theme-color-9 .grid-item .entry-thumbnail .entry-meta {background-color: #542e61;}
+			#primary .theme-color-9 .widget-inner .pb-widget-title span:before,#primary .theme-color-9 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-9 .widget-title span:before,#primary .theme-color-9 .pb-widget-inner .widget-title span:before {background-color: #542e61;}.sf-menu > li.theme-color-10.active > a > span, .sf-menu > li.theme-color-10:hover > a > span, .sf-menu > li.theme-color-10.current-menu-item > a > span, .sf-menu > li.theme-color-10.current-menu-parent > a > span, .sf-menu > li.theme-color-10.current-menu-ancestor > a > span, .sf-menu > li.theme-color-10.current_page_item > a > span, .sf-menu > li.theme-color-10.current_page_paren > a > span, .sf-menu > li.theme-color-10.current_page_ancestor > a > span {background-color: #FFBF00;}
+			.sf-menu > li.theme-color-10.active > a.sf-with-ul span:after, .sf-menu > li.theme-color-10:hover > a.sf-with-ul span:after, .sf-menu > li.theme-color-10.current-menu-item > a.sf-with-ul span:after, .sf-menu > li.theme-color-10.current-menu-parent > a.sf-with-ul span:after, .sf-menu > li.theme-color-10.current-menu-ancestor > a.sf-with-ul span:after, .sf-menu > li.theme-color-10.current_page_item > a.sf-with-ul span:after, .sf-menu > li.theme-color-10.current_page_paren > a.sf-with-ul span:after, .sf-menu > li.theme-color-10.current_page_ancestor > a.sf-with-ul span:after {border-top-color: #FFBF00;}
+			#primary .theme-color-10 .category-label {background-color: rgba(255,191,0, 0.8);}
+			.theme-color-10 .grid-item .entry-thumbnail .entry-meta {background-color: #FFBF00;}
+			#primary .theme-color-10 .widget-inner .pb-widget-title span:before,#primary .theme-color-10 .pb-widget-inner .pb-widget-title span:before,#primary .theme-color-10 .widget-title span:before,#primary .theme-color-10 .pb-widget-inner .widget-title span:before {background-color: #FFBF00;}.wp-caption {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 30px;
+margin-top: 0;
+    padding: 0 4px 5px;
+}
+ar li {
+  padding: 15px;
+}
+.a.linkb:link {
+    color:red;
+}
+.a.linkb:visited {
+    color:red;
+}
+.button3 {
+border-radius: 8px;
+border-color:grey;
+font-size:16pt;
+padding:8px;
+background-color: #f0f1f2; 
+color: white;
+margin-bottom:20px;
+}
+
+.button3:hover {
+    background-color: white; 
+    color: white;
+border-color:grey;
+}
+.title-primary {
+	 display: none!important;
+}
+.dtr-title{
+text-align:left;
+}
+.dtr-data{
+text-align:leftt;
+}
+.data-dtr-index{
+text-align:left;
+}
+.widget-image align-none{
+    text-align: center;
+}
+.icolist_evlautation_div{
+    text-align: center;
+    width: 350px;
+}
+.icolist_evlautation_title_div{
+  padding: 25px;
+    font-weight: bold;
+    font-size: 27px;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+.icolist_evlautation_score_div{
+    padding: 25px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Oswald', Arial, sans-serif;
+    background-color: #821313;
+    color :white;
+    text-align: center;
+   margin-left:50px;
+margin-right:50px;
+}
+.icolist_evalutation_li{
+font-weight:bold;
+    font-family: 'Oswald', Arial, sans-serif;
+    color: #821313;}
+body.single-ico .entry-footer .author-info{
+	visibility:hidden;
+}
+
+.center {
+text-align:center;
+}
+
+.table_button{
+border-radius: 20px;
+text-align:center;
+margin-top: 20px;
+}
+.responsive-tabs .responsive-tabs__panel {
+    padding: 1px 4px 0 !important;
+}
+.responsive-tabs .responsive-tabs__list__item--active, .responsive-tabs .responsive-tabs__list__item--active:hover {
+font-weight:bold;
+font-color:#3f51b5;
+}
+.responsive-tabs__list__item{
+font-weight:bold;
+}
+.ccpw_table.table.style-5 {
+	direction: ltr;
+}
+body #zeroIDModal{
+    display: block;
+    position: relative;
+    color: #212121;
+}
+
+body #zeroIDModal .mdc-dialog__surface{
+    border: 12px solid #FFD31A;
+}
+
+body #zeroIDModal .mdc-dialog__header {
+    font-size:16px;
+    line-height:16px;
+    margin-bottom:10px;
+}
+
+body #zeroIDModal .mdc-dialog__header h2{
+    font-size:16px;
+    line-height:16px;
+}
+body #zeroIDModal #mdc-dialog-default-description{
+    font-size: 14px;
+    line-height: 14px;
+}
+body #zeroId_saveButton{   
+    background-color: #FFD31A;
+}
+
+
+#sub-header ul.menu li, #top-bar ul.menu li {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right:30px;
+}
+h3 {
+    font-size:28px;
+    line-height:28px;
+}
+#menu-submenu .menu-item{
+	padding-bottom:5px;
+	
+}
+body .entry-content h2{
+	font-weight:500;
+}
+body .entry-content .heateor_sss_horizontal_sharing{
+	margin-bottom:25px;
+	margin-top:-10px;
+}
+
+body.postid-8157 .entry-content ol li{
+	margin-bottom:20px;
+}
+body.postid-8164 .entry-content ol li{
+	margin-bottom:20px;
+}
+body.postid-11859 .entry-content ul{
+	padding-left:1px;
+	font-size:28px;
+	margin-top:46px;
+}
+body.postid-14084 .entry-content ul{
+	padding-left:24px !important;
+}
+body.postid-14084 .entry-content ol{
+	padding-left:24px;
+	margin-left:-6px;
+}
+body.postid-14441 #builder-section-3 .widget-column ul{
+	padding-left:26px;
+}
+body.postid-3358 .entry-content h3{
+	font-size:26px;
+}
+body.postid-19467 .entry-content ol{
+	padding-left:10px;
+}
+body.postid-21115 .entry-content ol{
+	padding-left:24px;
+}
+body.postid-24883 .entry-content > ol{
+	padding-left:14px;
+}
+body.postid-26220 .entry-content ol{
+	padding-left:20px;
+}
+body.page-id-7752 #list-items .media-body .media-heading{
+	font-size:40px;
+	font-weight:500;
+}
+body.page-id-23146 #list-items .media-body .media-heading{
+	font-size:40px;
+	font-weight:500;
+}
+body.page-id-26235 #list-items .media-body .media-heading{
+	font-weight:500;
+	font-size:40px;
+}
+
+.entry-content .titlehome{
+	padding-left: 15px !important;
+    color: rgba(254,211,25,1) !important;
+    background: #3f3f3f !important;
+padding-bottom:10px;
+padding-top:10px;
+font-weight: 700;
+margin-bottom: 10px !important;
+padding-bottom: 10px !important;
+border-bottom: 0px solid !important;
+text-align: justify !important;
+}
+@media screen and (min-width: 799px) {
+span.cp-follow-button a {
+display: inline-block;
+position: relative;
+top: 0;
+}
+#title-bar {display: none;}
+.desktop-hide {display: none;}
+.desktop-show {display: block;}
+.coincodex-content ul li{margin-bottom:12px;}
+.compTable ul li{margin-bottom:2px;}
+}
+
+.codebegin {
+    border: 1px solid #ffce9c;
+    padding: 0px 15px;
+    margin: -5px 0px 15px 0px;
+    background: #fff5d7;
+    font-weight: 700;
+    color: black;
+}
+.entry-content .titlebegin {
+    margin-top: 40px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    background: #f79219;
+}
+#tablesorter tr p{
+	font-weight:500;
+	color:#000000;
+}
+.list-item {
+    padding-bottom: 20px !important;
+}
+#footer-copyright {
+margin-bottom: -25px;
+}
+.post-57470 h3 {
+font-size: 18px;
+}
+.post-57470 .media.list-item .entry-meta span { 
+margin-bottom: 0px;
+}
+.post-57470  .wprpsp-post-content {
+font-size: 14px;
+}
+.post-57470  .wprpsp-block-right-title {
+font-size: 16px;
+}
+
+@media (max-width:799px){
+
+#primary #breadcrumbs, #primary #breadcrumbs a, nav.post-navigation a {
+line-height: 1.6em;
+margin-bottom:15px;
+}
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+.logo div {
+width: 170px;
+}
+.logo {
+    position: relative;
+    top: 11px;
+}
+}
+.home #title-bar {
+display: none;
+}
+#sidebar  .caption {
+position: absolute;
+bottom: 0;
+background: rgba(255, 255, 255, 0.8);
+color: #000;
+padding: 10px;
+}
+#sidebar  .item-inner{
+position: relative;
+}
+.wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-short-cnt {
+    background: rgba(0,0,0,.5);
+}
+@media (min-width:992px){
+#sidebar .code-block .code-block-47 .ai-viewport-1 {
+max-width: 300px; 
+margin: 0 auto 30px auto !important;
+width: 100%;
+}
+span.cp-follow-button a:hover {
+top: -5px;
+}
+
+}
+#sidebar .widget-title {
+  padding-left: 15px !important;
+    color: rgba(254,211,25,1) !important;
+    background: #3f3f3f !important;
+padding-bottom:10px;
+padding-top:10px;
+font-weight: 700;
+margin-bottom: 15px !important;
+padding-bottom: 10px !important;
+border-bottom: 0px solid !important;
+text-align: justify !important;
+}
+#sidebar .widget-title span:before {
+display: none !important;
+}
+
+.sidebart {
+    padding-left: 15px !important;
+    color: rgba(254,211,25,1) !important;
+    background: #3f3f3f !important;
+padding-bottom:10px;
+padding-top:10px;
+font-weight: 700;
+}
+.sideline .caption{
+position: absolute;
+bottom: 0;
+background: rgba(255, 255, 255, 0.8);
+color: #000;
+padding: 10px;
+}
+.author-info .author-bio { margin-bottom: 30px; }
+.entry-post .entry-meta>span 
+color: #2b2b2b !important;
+line-height: 2em !important;
+}
+#sub-header a:hover {
+color: #ffffff !important;
+background-color: #3f3f3f;
+}
+section#text-37 {
+text-align: center;
+}
+html { scroll-behavior: smooth; }
+
+</style>
+		<link data-minify="1" rel="_preload" type="text/css" href="https://cryptopotato.com/wp-content/cache/min/1/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css?ver=1631551441" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" defer></script>
+<script>window.addEventListener("load",function(){window.cookieconsent.initialise({"palette":{"popup":{"background":"#3b3b3b"},"button":{"background":"#ffd120"}},"theme":"edgeless","content":{"message":"This website uses cookies to ensure you get the best experience.","href":"https://cryptopotato.com/privacy-policy/"}})});</script><style type="text/css">
+.wprpsp-gridbox-slider.wprpsp-design-6 .wprpsp-bottom-content h2.wprpsp-post-title a { font-size: 18px !important;}
+.wprpsp-gridbox-slider.wprpsp-design-6 .wprpsp-bottom-content { bottom: auto; top: 0;}
+.dark-bg .wprpsp-gridbox-slider.wprpsp-design-6 .wprpsp-post-short-cnt {background: rgba(0, 0, 0, 0.7);}
+.bitcoin-img .wprpsp-gridbox-slider.wprpsp-design-6 .wprpsp-bottom-content {bottom:15px;top:auto;}
+.bitcoin-img .wprpsp-gridbox-slider.wprpsp-design-6 .wprpsp-post-image-wrap  { height: 300px !important; }
+.gridbox-sidebar .wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-post-image-wrap { height:180px !important; }
+.gridbox-sidebar .wprpsp-gridbox-slider.wprpsp-design-4 p {display:none;}
+.gridbox-sidebar .wprpsp-gridbox-slider.wprpsp-design-4 h2 {line-height: 1px !important;}
+.gridbox-sidebar .wprpsp-gridbox-slider.wprpsp-design-4 h2 a { color: #fff !important; font-size: 18px !important;font-weight: 600;}
+.gridbox-sidebar .wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-bottom-content{left:5px; right:5px;bottom: 10px;}
+.widget .wprpsp-gridbox-slider.wprpsp-design-4 .wprpsp-medium-4 {width:100%;}
+.wprpsp-recent-post-carousel button.slick-prev, .wprpsp-recent-post-carousel button.slick-next {width: 20px !important;height: 30px !important;}
+.wprpsp-recent-post-carousel.wprpsp-design-11 .wprpsp-post-short-cnt h2, .wprpsp-recent-post-carousel.wprpsp-design-11 .wprpsp-post-short-cnt h2 a { line-height:20px !important;font-size:18px !important;}
+.wprpsp-recent-post-carousel.wprpsp-design-11 .wprpsp-post-short-cnt {padding:5px 20px;}
+
+
+@media only screen and (max-width: 40em) {
+.bitcoin-img .wprpsp-gridbox-slider.wprpsp-design-6 .wprpsp-post-image-wrap {height: 180px !important;}
+.wprpsp-recent-post-nav-3.wprpsp-recent-post-nav {display: none;}
+.wprpsp-recent-post-nav-4.wprpsp-recent-post-nav {display:none; }
+}
+</style>
+<link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossless+ret_img/https://cryptopotato.com/wp-content/uploads/2020/07/cropped-potato-fav2-32x32.jpg" data-spai-egr="1" sizes="32x32" />
+<link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossless+ret_img/https://cryptopotato.com/wp-content/uploads/2020/07/cropped-potato-fav2-192x192.jpg" data-spai-egr="1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://cdn.shortpixel.ai/spai/q_lossless+ret_img/https://cryptopotato.com/wp-content/uploads/2020/07/cropped-potato-fav2-180x180.jpg" data-spai-egr="1" />
+<meta name="msapplication-TileImage" content="https://cryptopotato.com/wp-content/uploads/2020/07/cropped-potato-fav2-270x270.jpg" />
+		<style type="text/css" id="wp-custom-css">
+			.pojo-loadmore-wrap .button {
+color: black!important;
+}
+@media (min-width: 992px){
+.entry-post .entry-meta > span {
+	line-height: 2em;
+	
+}
+	#ccpw-price-label-7349.price-label .row li span.name {
+	display:none;
+	
+}
+}
+
+.recent-post.media.list-three.grid-item h3.media-heading.entry-title a {
+    font-size: 13px;
+}
+@media (min-width: 768px){
+	.recent-post.media.list-three.grid-item .item-inner>.pull-left, .media>.pull-left {
+			max-width: 50%;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+ #list-items article .entry-excerpt,
+ #list-items article .read-more,
+ #list-items article .entry-meta .entry-time{
+		display:none;
+ }
+ #list-items article .entry-meta span {
+    margin-bottom: 0px;
+	line-height:25px;
+	display: contents;
+}
+	#list-items article .media-heading {
+		font-size:15px !important;
+	}
+  
+}
+@media (min-width: 768px) {
+.recent-medium-column {
+    width: 23%;
+		margin-bottom: 30px;
+margin-right: 5px;
+	margin-left: 5px;
+    float: left;
+}
+}
+@media (max-width: 767px) {
+	.entry-date:lang(he) {
+  margin-right:63px;
+}
+	.entry-meta {
+		line-height:3px; 
+		
+	}
+	
+	.wprpsp-recent-post-nav {display:none !important;}
+.recent-medium-column {
+    		margin: 5px;
+    }
+	
+	#title-bar.title-bar-style-custom_bg .breadcrumbs, #title-bar.title-bar-style-transparent .breadcrumbs  {
+		padding-top: 0px;
+			}
+}
+.entry-content .titlehome{clear:both;}
+div.heateor_sss_sharing_title {
+	margin-top:30px;
+}
+
+.rpwe-block a {
+	font-size: 16px;
+}
+.code-block-8 div {
+	margin: 0px 0px 40px 0px; 
+}
+section#pojo_image-9.widget  {
+	margin-bottom: 3px
+}		</style>
+		<style>
+.ai-viewports                 {--ai: 1;}
+.ai-viewport-3                { display: none !important;}
+.ai-viewport-2                { display: none !important;}
+.ai-viewport-1                { display: inherit !important;}
+.ai-viewport-0                { display: none !important;}
+@media (min-width: 768px) and (max-width: 979px) {
+.ai-viewport-1                { display: none !important;}
+.ai-viewport-2                { display: inherit !important;}
+}
+@media (max-width: 767px) {
+.ai-viewport-1                { display: none !important;}
+.ai-viewport-3                { display: inherit !important;}
+}
+</style>
+<script>
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("_preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="_preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))</script>	<meta property="og:url" content="https://cryptopotato.com/best-wallets-for-staking-cryptocurrencies-in-2020//" /><link href="https://cdn.shortpixel.ai" rel="preconnect" crossorigin></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-50363 single-format-standard layout-sidebar-right">
+<!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em>
+	<a href="http://browsehappy.com/">Upgrade to a different browser</a> or
+	<a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.
+</p><![endif]-->
+
+<div id="container" class="wide">
+		
+			<section id="top-bar">
+			<div class="container">
+				<div class="pull-left">
+									</div>
+				<div class="pull-right">
+									</div>
+			</div><!-- .container -->
+		</section>
+		<header id="header" class="logo-left" role="banner">
+			<div class="container">
+				<div class="logo">
+											<div class="logo-img awd-hidden-phone">
+							<a href="https://cryptopotato.com/" rel="home"><img src="https://cdn.shortpixel.ai/spai/q_lossless+ret_img/https://cryptopotato.com/wp-content/uploads/2020/11/cplogo3.png" data-spai-egr="1" alt="CryptoPotato" class="logo-img-primary" /></a>
+						</div>
+					<div class="logo-img awd-visible-phone">
+							<a href="https://cryptopotato.com/" rel="home"><img src="https://cdn.shortpixel.ai/spai/q_lossless+ret_img/https://cryptopotato.com/wp-content/uploads/cplogo3m.png" data-spai-egr="1" alt="CryptoPotato" class="logo-img-primary" /></a>
+						</div>
+															<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="javascript:void(0);" class="search-toggle visible-xs" data-target="#search-section-primary">
+                        <i class="fa fa-search"></i>
+                    </a>                    
+									</div><!--.logo -->
+				<nav class="nav-main" role="navigation">
+					<div class="navbar-collapse collapse">
+						<div class="nav-main-inner">
+															<ul id="menu-top-bar" class="sf-menu hidden-xs"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-crypto-news first-item menu-item-2171"><a href="https://cryptopotato.com/crypto-news/"><span>Crypto News</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-margin-trading menu-item-26829"><a href="https://cryptopotato.com/bitcoin-and-crypto-margin-trading-exchanges-and-guide-for-beginners/"><span>Margin Trading</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-guides menu-item-28317"><a href="https://cryptopotato.com/bitcoin-cryptocurrency-guides-101/"><span>Guides</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-bitcoin-crypto-guides-101 menu-item-40516"><a href="https://cryptopotato.com/bitcoin-cryptocurrency-guides-101/"><span>Bitcoin &#038; Crypto Guides 101</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-bitcoin-for-beginners menu-item-2975"><a href="https://cryptopotato.com/bitcoin-for-beginners/"><span>Bitcoin For Beginners</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-editorials menu-item-60819"><a href="https://cryptopotato.com/category/editorials/"><span>Editorials</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-defi-news menu-item-114354"><a href="https://cryptopotato.com/defi-news/"><span>DeFi News</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-buy menu-item-2940"><a href="https://cryptopotato.com/buy-bitcoin-5-easy-steps/"><span>Buy</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-language menu-item-3390"><a href="#"><span>Language</span></a></li>
+</ul><ul id="menu-mobile1" class="mobile-menu visible-xs"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-crypto-news first-item menu-item-16575"><a href="https://cryptopotato.com/crypto-news/"><span>Crypto News</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-bitcoin-for-beginners menu-item-16570"><a href="https://cryptopotato.com/bitcoin-for-beginners/"><span>Bitcoin For Beginners</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-cryptocurrency-guides-101 menu-item-40515"><a href="https://cryptopotato.com/bitcoin-cryptocurrency-guides-101/"><span>Cryptocurrency Guides 101</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-editorials menu-item-71147"><a href="https://cryptopotato.com/category/editorials/"><span>Editorials</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-bitcoin-crypto-margin-trading menu-item-28323"><a href="https://cryptopotato.com/bitcoin-and-crypto-margin-trading-exchanges-and-guide-for-beginners/"><span>Bitcoin &#038; Crypto Margin Trading</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-defi-nft-news menu-item-114356"><a href="https://cryptopotato.com/defi-news/"><span>DeFi &#038; NFT News</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-bitcoin-price-analysis menu-item-16574"><a href="https://cryptopotato.com/bitcoin-price-analysis/"><span>Bitcoin Price Analysis</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-cryptopotato-crypto-fund menu-item-34720"><a href="https://cryptopotato.com/crypto-fund/"><span>CryptoPotato Crypto Fund</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-ethereum-eth-price-analysis menu-item-47577"><a href="https://cryptopotato.com/ethereum-price-analysis/"><span>Ethereum (ETH) Price Analysis</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-ripple-xrp-price-analysis menu-item-47576"><a href="https://cryptopotato.com/ripple-price-analysis/"><span>Ripple (XRP) Price Analysis</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-market-updates menu-item-23157"><a href="https://cryptopotato.com/market-updates/"><span>Market Updates</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-interviews menu-item-23159"><a href="https://cryptopotato.com/interviews/"><span>Interviews</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-buy-bitcoin-with-card menu-item-16576"><a href="https://cryptopotato.com/buy-bitcoin-5-easy-steps/"><span>Buy Bitcoin with Card</span></a></li>
+</ul>																	<div class="search-header hidden-xs">
+										<a href="javascript:void(0);" class="search-toggle" data-target="#search-section-primary">
+											<i class="fa fa-search"></i>
+										</a>
+									</div>
+																					</div>
+					</div>
+				</nav><!--/#nav-menu -->
+			</div><!-- /.container -->
+		</header>
+
+					<div id="search-section-primary" class="search-section" style="display: none;">
+                <div class="container">
+                    <form role="search" method="get" class="form form-search" action="https://cryptopotato.com/">
+	<label for="s">
+		<span class="sr-only">Search for:</span>
+		<input type="search" title="Search" name="s" value="" placeholder="Search..." class="field search-field">
+	</label>
+	<button value="Search" class="search-submit button" type="submit">Search</button>
+</form>
+<i class="fa fa-search" onClick="jQuery('.form-search').submit()"></i>
+                </div>
+            </div>
+		
+		<section id="sub-header">
+			<div class="container">
+				<div class="pull-left">
+					<div class="widget_text awd-visible-phone"><section id="custom_html-4" class="widget_text widget widget_custom_html"><div class="widget_text widget-inner"><div class="textwidget custom-html-widget"><!-- Cryptocurrency Widgets PRO 2.8  !--><div id="ccpw-price-label-7349" class="ccpw-container price-label "><div class="row"><li id="bitcoin" class="style-1"  ><div class="coin-container style-1"><div class="ccpw_icon"><img style="width:32px;" id="bitcoin" alt="bitcoin" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZjcnlwdG9wb3RhdG8uY29tJTJGd3AtY29udGVudCUyRnBsdWdpbnMlMkZjcnlwdG9jdXJyZW5jeS1wcmljZS10aWNrZXItd2lkZ2V0LXBybyUyRmFzc2V0cyUyRmNvaW4tbG9nb3MlMkZiaXRjb2luLnN2ZyIgZGF0YS13PSIxIiBkYXRhLWg9IjEiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1"></div><span class="name">BTC</span><span class="ticker-price">&#36;41,867.00</span></div></li><li id="ethereum" class="style-1"  ><div class="coin-container style-1"><div class="ccpw_icon"><img style="width:32px;" id="ethereum" alt="ethereum" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZjcnlwdG9wb3RhdG8uY29tJTJGd3AtY29udGVudCUyRnBsdWdpbnMlMkZjcnlwdG9jdXJyZW5jeS1wcmljZS10aWNrZXItd2lkZ2V0LXBybyUyRmFzc2V0cyUyRmNvaW4tbG9nb3MlMkZldGhlcmV1bS5zdmciIGRhdGEtdz0iMSIgZGF0YS1oPSIxIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1"></div><span class="name">ETH</span><span class="ticker-price">&#36;2,906.29</span></div></li></div></div><style type='text/css'>
+			  #ccpw-price-label-7349.price-label .row li,
+			  #ccpw-price-label-7349.price-label .row li.style-2 .style-2 .ccpw_icon {background-color:#ffffff;}
+			  #ccpw-price-label-7349.price-label .row li span.name,
+			  #ccpw-price-label-7349.price-label .row li span.symbol,
+			  #ccpw-price-label-7349.price-label .row li span.ticker-price,
+			  #ccpw-price-label-7349.price-label .row li .ccpw-multi-price-text,
+			  #ccpw-price-label-7349.price-label .row li .style-4 .live-pricing {color:#000;}
+		  @media (max-width:339px){
+#ccpw-price-label-7349.price-label .row li span.name {
+	display:none;
+	
+}
+}
+@media (max-width:799px){
+.price-label #bitcoin{
+	font-weight: 400;
+	background-color:transparent !important;
+	border-color:transparent !important;
+	border-width:0px;
+	border-style:hidden;
+	list-style-position:outside;
+	box-sizing:border-box;
+	height:auto;
+	width:auto;
+	text-transform:uppercase;
+	line-height:1.6px;
+	text-align:left;
+	letter-spacing:0px;
+	text-indent:inherit;
+	word-wrap:normal;
+	margin:auto;
+	box-shadow:none;
+}
+
+.price-label #ethereum {
+	font-weight: 400;
+	background-color:transparent !important;
+	border-color:transparent !important;
+	border-width:0px;
+	border-style:hidden;
+	list-style-position:outside;
+	box-sizing:border-box;
+	height:auto;
+	width:auto;
+	text-transform:uppercase;
+	line-height:1.6px;
+	text-align:left;
+	letter-spacing:0px;
+	text-indent:inherit;
+	word-wrap:normal;
+	margin:auto;
+	box-shadow:none;
+}
+}
+
+@media (min-width:799px){
+#ccpw-price-label-7349.price-label .row li{
+    box-shadow: none;
+}
+#bitcoin {
+margin: 0px;
+}
+#ethereum {
+margin: 0px;
+}
+}
+</style></div></div></section></div>				</div>
+				<div class="pull-right">
+					<div class="awd-visible-desktop"><section id="nav_menu-5" class="widget widget_nav_menu"><div class="widget-inner"><div class="menu-submenu-container"><ul id="menu-submenu" class="menu"><li id="menu-item-23155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23155"><a href="https://cryptopotato.com/market-updates/">Market Updates</a></li>
+<li id="menu-item-23152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23152"><a href="https://cryptopotato.com/bitcoin-price-analysis/">BTC Analysis</a></li>
+<li id="menu-item-47006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47006"><a href="https://cryptopotato.com/ethereum-price-analysis/">ETH Analysis</a></li>
+<li id="menu-item-47015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47015"><a href="https://cryptopotato.com/ripple-price-analysis/">XRP Analysis</a></li>
+<li id="menu-item-26830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26830"><a href="https://cryptopotato.com/interviews/">Interviews</a></li>
+<li id="menu-item-114355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114355"><a href="https://cryptopotato.com/crypto-fund/">Crypto Fund</a></li>
+</ul></div></div></section></div>				</div>
+			</div><!-- .container -->
+		</section>
+
+		<div class="sticky-header-running"></div>
+
+		
+	
+		
+	<div id="primary">
+		<div class="container">
+			<div id="content" class="row">		<section id="main" class="col-sm-12 col-md-8 sidebar-right" role="main">
+	<div class='code-block code-block-2 ai-viewport-2 ai-viewport-3' style='margin: 8px 0; clear: both; height: 100px;'>
+<!-- Coinzilla Banner 320x100 -->
+<center><script async src="https://coinzillatag.com/lib/display.js"></script>
+<div class="coinzilla" data-zone="C-505735b361ea05837d"></div>
+<script>window.coinzilla_display=window.coinzilla_display||[];var c_display_preferences={};c_display_preferences.zone="505735b361ea05837d";c_display_preferences.width="320";c_display_preferences.height="100";coinzilla_display.push(c_display_preferences);</script></center></div>
+<div class='code-block code-block-6 ai-viewport-1' style='margin: 8px 0; clear: both; height: 90px;'>
+<!-- Coinzilla Banner 728x90 -->
+<script async src="https://coinzillatag.com/lib/display.js"></script>
+<center><div class="coinzilla" data-zone="C-206345b361cf55e134"></div>
+<script>window.coinzilla_display=window.coinzilla_display||[];var c_display_preferences={};c_display_preferences.zone="206345b361cf55e134";c_display_preferences.width="728";c_display_preferences.height="90";coinzilla_display.push(c_display_preferences);</script></center></div>
+
+<style>
+.entry-tags a {
+	padding: 5px 10px;
+	font-size: .8em;
+	color: inherit;
+	border-radius: 5px;
+	
+}
+.entry-tags {
+ line-height: 30px;
+}
+.showinmobile {
+	display:none;
+}
+.entry-post .entry-meta > span {
+	text-transform: capitalize;
+}
+.entry-meta span .avatar{
+		width: 24px;
+}
+@media only screen and (min-width: 601px) {
+	.entry-post .entry-meta > span {
+		
+    	font-size: 18px;
+		
+	}
+	
+}
+@media only screen and (max-width: 600px) {
+	.entry-meta span .avatar{
+		width: 55px;
+		margin-right: 15px;
+		position: relative;
+		top: 12px;
+	}
+	.entry-meta span a {
+    	text-decoration: underline;
+	}
+	
+	.showinmobile {
+		display:block;
+	}
+	.entry-meta span:before {
+		content: none;
+	}
+	.entry-date{
+		padding-left: 70px;
+    	position: relative;
+    	bottom: 18px;
+	}
+	.entry-post .entry-meta > span {
+		line-height: 22px;
+    	color: #000000;
+    	text-transform: capitalize;
+    	font-size: 14px;
+		letter-spacing: 0px;
+	}
+	.page-title h1 {
+		line-height: 42px;
+	}}
+
+</style>		
+
+		<article id="post-50363" class="post-50363 post type-post status-publish format-standard has-post-thumbnail hentry category-newsmain category-editorials category-guides tag-binance tag-coinbase tag-proof-of-stake-pos tag-tezos">
+			<div class="entry-post">
+				<header class="entry-header">
+											<div id="breadcrumbs"><span><span><a href="https://cryptopotato.com/">Home</a> » <span><a href="/bitcoin-cryptocurrency-guides-101/">Guides</a> » <span class="breadcrumb_last" aria-current="page">4 Best Wallets For Staking Cryptocurrencies In 2020</span></span></span></span></div>																<div class="page-title">
+							<h1>
+								4 Best Wallets For Staking Cryptocurrencies In 2020							</h1>
+						</div>
+										<div class="entry-meta">
+								
+						
+													<span class="entry-user"><img alt='' src='https://secure.gravatar.com/avatar/c3036dd22568e4d75e548f5754860294?s=75&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c3036dd22568e4d75e548f5754860294?s=150&#038;d=mm&#038;r=g 2x' class='avatar avatar-75 photo' height='75' width='75' />Author: 							
+							
+							 <a href="https://cryptopotato.com/author/yordan/" rel="author" class="fn">Jordan Lyanchev</a></span>
+												<br class="showinmobile">
+											
+						<br class="showinmobile">
+																<span class="entry-date">Last Updated <span class="last-modified-timestamp">Oct 14, 2020 @ 09:21</span></span>
+												
+											</div>
+									</header>
+								<div class="entry-content col-sm-11">
+					<div class="coincodex-content">
+																<p>Coin staking is becoming very popular among cryptocurrency investors. One of the reasons for that is because it allows holders to earn passively. Amid stacking pools and wallets, more and more exchanges are jumping on the staking bandwagon as well.</p>
+<p>The increased interest was recently exemplified in a recent Binance Research <a href="https://cryptopotato.com/6-4-billion-worth-of-crypto-is-being-staked-according-to-binance-research/" data-wpel-link="internal">report</a>, showing that the total amount being staked exceeds $6.4 billion.</p>
+<h2>What Is Staking?</h2>
+<p>Essentially, staking requires the investor to &#8220;lock&#8221; a certain amount of coins that are based on the <a href="https://cryptopotato.com/basic-crypto-terms/#pos" data-wpel-link="internal">Proof-of-Stake</a> consensus algorithm or many of its varieties. While they are being called differently within the numerous PoS-based blockchains, token holders who &#8220;stake&#8221; a certain amount of their cryptocurrency usually get the right to vote and to participate in the governance of the network. Because they stake that amount without using it, they are rewarded. This is how staking can become rather profitable.</p>
+<p>There are various types of the Proof-of-Stake consensus algorithm, one of the most popular among which is the Delegated Proof-of-Stake (DPoS). With <a href="http://en.bitcoinwiki.org/wiki/DPoS" data-wpel-link="external" target="_blank">DPoS</a>, users can commit their balances as votes, which are used to elect a particular number of delegates. It is these delegates who manage the blockchain operations on behalf of the people who gave their votes for it.</p>
+<figure id="attachment_39956" aria-describedby="caption-attachment-39956" style="width: 700px" class="wp-caption aligncenter"><a href="https://cryptopotato.com/wp-content/uploads/2019/09/tezos_logo3-min-min.jpg" data-wpel-link="internal"><img class="size-full wp-image-39956" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MDAgNDY3IiB3aWR0aD0iNzAwIiBoZWlnaHQ9IjQ2NyIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMTklMkYwOSUyRnRlem9zX2xvZ28zLW1pbi1taW4uanBnIiBkYXRhLXc9IjcwMCIgZGF0YS1oPSI0NjciIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="tezos_logo3-min-min" width="700" height="467"   /></a><figcaption id="caption-attachment-39956" class="wp-caption-text">Tezos, the king of staking</figcaption></figure>
+<h2>Staking On Wallets</h2>
+<p>Crypto investors can hold their cryptocurrencies in their designated wallets, and take an active part in the staking efforts. Usually, this is happening as a part of staking pools, but some wallets can easily add your coins for staking.</p><div class='code-block code-block-8' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
+<!-- Coinzilla Banner 300x250 -->
+<center><span style="font-size:11px; color: gray;">ADVERTISEMENT</span></center>
+<script async src="https://coinzillatag.com/lib/display.js"></script>
+<div class="coinzilla" data-zone="C-524055b361cf5562e6"></div>
+<script>window.coinzilla_display=window.coinzilla_display||[];var c_display_preferences={};c_display_preferences.zone="524055b361cf5562e6";c_display_preferences.width="300";c_display_preferences.height="250";coinzilla_display.push(c_display_preferences);</script></div>
+
+<h3>Ledger</h3>
+<p>The <a href="https://cryptopotato.com/ledger-nano-s-complete-guide-hardware-wallet/" data-wpel-link="internal">Ledger hardware wallet</a> is one of the most popular ones in the community when it comes to digital asset storage. It provides two options for staking – using the Ledger Live or external wallet apps.</p>
+<p>The first option requires the user to install the cryptocurrency app on the device and the creation of an account on Ledger Live. After that, the funds should be migrated, and staking is triggered automatically.</p>
+<p>The second one works similarly, but after installing the Ledger Live app, the user needs to choose an appropriate third-party wallet to manage the assets. After that, the funds should be migrated, and users can start earning rewards.</p>
+<p>It&#8217;s also worth noting that Ledger is a cold-storage wallet, which is generally considered as the more <a href="https://cryptopotato.com/9-must-tips-securing-crypto-wallet/" data-wpel-link="internal">secure option</a> since it&#8217;s a physical offline device.</p>
+<p>According to Ledger’s Growth Marketing Mattia Sarfati, “So far you can only stake Tezos within the Ledger live.”</p>
+<p>“However, you can stake other coins using third party wallets (like TRX using TronScan wallet). Our idea is to develop this future within the Ledger Live in the near future.”</p>
+<figure id="attachment_6682" aria-describedby="caption-attachment-6682" style="width: 1050px" class="wp-caption aligncenter"><a href="https://cryptopotato.com/wp-content/uploads/2018/01/ledger_nano_s_5.jpg" data-wpel-link="internal"><img class="size-full wp-image-6682" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDUwIDc4OCIgd2lkdGg9IjEwNTAiIGhlaWdodD0iNzg4IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGY3J5cHRvcG90YXRvLmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAxOCUyRjAxJTJGbGVkZ2VyX25hbm9fc181LmpwZyIgZGF0YS13PSIxMDUwIiBkYXRhLWg9Ijc4OCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="ledger_nano_s_5" width="1050" height="788"   /></a><figcaption id="caption-attachment-6682" class="wp-caption-text">Ledger Nano S. Photo by: CryptoPotato</figcaption></figure>
+<h3>Exodus</h3>
+<p>Exodus is a <a href="https://cryptopotato.com/top-6-multi-currency-digital-wallets/" data-wpel-link="internal">popular multi-currency wallet</a>, desktop and mobile compatible. Its app can also be easily integrated with the hardware wallet <a href="https://cryptopotato.com/trezor-complete-guide-bitcoin-wallet/" data-wpel-link="internal">Trezor</a>.</p>
+<p>Exodus wallet allows the cryptocurrency staking option, following a recent <a href="http://www.switchain.com/blog/switchains-partnership-with-exodus-wallet/" data-wpel-link="external" target="_blank">partnership</a> with Switchain. The last delivered staking fixed-rate exchange API for the wallet’s users.</p>
+<p>Besides, Switchain&#8217;s system is designed to only hold the information instead of having custody on it; thus, it operates in a &#8220;non-custodial&#8221; manner.</p>
+<p>The wallet creates an exchange on behalf of the user who sends the coins and receives the already-exchanged assets. The whole operation is completed in a few minutes.</p>
+<p>So far, the Exodus wallet <a href="http://www.reddit.com/r/ExodusWallet/comments/em04e3/what_coins_does_exodus_support_that_earn_passive/" data-wpel-link="external" target="_blank">provides</a> staking rewards for Ontology and Neo and new coins are expected to be added soon.</p>
+<h3>Atomic Wallet</h3>
+<p>Atomic Wallet is another great multi-currency wallet, compatible with desktop operating systems Windows, macOS, Ubuntu, Debian, and Fedora, as well as on mobile devices both for Android and iOS.</p>
+<p>To take advantage of the staking service, one should transfer the coins to the staking address the wallet provides. Once the rewards are received, the investor can convert them into a <a href="https://cryptopotato.com/basic-crypto-terms/#fiat" data-wpel-link="internal">FIAT currency</a> or a different digital asset and even use them through a built-in cryptocurrency exchange.</p>
+<p>Atomic Wallet allows staking for Tezos, Cosmos, NEO, VeChain, and Ontology.</p>
+<h3>Trust Wallet</h3>
+<p>Trust Wallet is a &#8220;secure multi-coin wallet,&#8221; which can be installed on mobile devices working with Android and iOS. Recently, Binance had <a href="http://www.binance.com/en/support/articles/360010790652" data-wpel-link="external" target="_blank">acquired</a> Trust Wallet last year to increase the security of its growing number of users.</p>
+<p>The setup process of Trust Wallet is similar to the other wallets in the category – after downloading and installing it on the device, the user needs to send over the cryptocurrency to the staking address provided.</p>
+<p>Trust Wallet offers a broad array of cryptos for staking: VeChain, TRON, Callisto, TomoChain, Tezos, Cosmos, IoTeX, Algorand, and more to come soon.</p>
+<h2>More Staking Ways: Exchanges and Pools</h2>
+<p>Another option is staking on crypto exchanges. The leading cryptocurrency exchanges <a href="https://cryptopotato.com/starting-today-kraken-joins-binance-and-coinbase-to-allow-tezos-xtz-staking/" data-wpel-link="internal">have spotted</a> the trend and are offering a large number of cryptocurrencies that are eligible for on-exchange staking.</p>
+<p>Exchanges that support staking include Binance, Coinbase, Kraken, OKEx, KuCoin, Huobi, Bithumb, Poloniex, and more. Moreover, some of them are even offering zero-fee staking for specific coins.</p>
+<p>Additionally, users can participate in staking pools that allow multiple stakeholders to combine their resources as a way to increase rewards from stacking and meet the required minimum amount.</p>
+<p>Each stacking pool has its own operator who manages it, and the stakeholders who decide to join it have to lock their coins onto the pool’s stacking address. Since it’s a smart contract, the coins are considered to be safe, safer than on an exchange.</p>
+<div class='code-block code-block-12' style='margin: 8px 0; clear: both;'>
+<div><center><span style="font-size:11px; color: gray;">SPECIAL OFFER (Sponsored)</span></center>
+<b>Binance Futures 50 USDT FREE Voucher: <a href="https://cryptopotato.com/pl/binancef50" rel="nofollow" data-wpel-link="internal">Use this link</a> to register & get 10% off fees and 50 USDT when trading 500 USDT (limited offer).</b><br><br>
+<b>PrimeXBT Special Offer: <a href="https://cryptopotato.com/pl/primexbt2" rel="nofollow" data-wpel-link="internal">Use this link</a> to register & enter POTATO50 code to get 50% free bonus on any deposit up to 1 BTC.</b><br><br></div></div>
+<div class="rp4wp-related-posts rp4wp-related-post">
+
+	<h3>You Might Also Like:</h3>	<ul class="rp4wp-posts-list">
+		<li class="rp4wp-col rp4wp-col-first">
+	<div class="rp4wp_component rp4wp_component_image rp4wp_component_2"><a href="https://cryptopotato.com/binance-huobi-okex-announce-support-for-qtum-offline-staking-to-further-defi-involvement-in-asia/" data-wpel-link="internal"><img width="750" height="450" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIiB3aWR0aD0iNzUwIiBoZWlnaHQ9IjQ1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjAlMkYwOCUyRlFUVU1fb2ZmbGluZV9zdGFraW5nLmpwZyIgZGF0YS13PSI3NTAiIGRhdGEtaD0iNDUwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" class="attachment-my-thumbnail-size size-my-thumbnail-size wp-post-image" alt="QTUM_offline_staking"   /></a></div><div class="rp4wp_component rp4wp_component_title rp4wp_component_3"><a href="https://cryptopotato.com/binance-huobi-okex-announce-support-for-qtum-offline-staking-to-further-defi-involvement-in-asia/" data-wpel-link="internal">Binance, Huobi, OKEx Announce Support for QTUM Offline Staking to Further DeFi Involvement in Asia</a></div></li><li class="rp4wp-col">
+	<div class="rp4wp_component rp4wp_component_image rp4wp_component_2"><a href="https://cryptopotato.com/5-ways-you-can-passively-earn-bitcoin-other-cryptocurrencies/" data-wpel-link="internal"><img width="600" height="360" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzYwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM2MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjAlMkYwOSUyRkJpdGNvaW5BY2N1bXVsYXRpb24tbWluLmpwZyIgZGF0YS13PSI2MDAiIGRhdGEtaD0iMzYwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" class="attachment-my-thumbnail-size size-my-thumbnail-size wp-post-image" alt="BitcoinAccumulation"   /></a></div><div class="rp4wp_component rp4wp_component_title rp4wp_component_3"><a href="https://cryptopotato.com/5-ways-you-can-passively-earn-bitcoin-other-cryptocurrencies/" data-wpel-link="internal">5 Ways You Can Passively Earn Bitcoin & Other Cryptocurrencies</a></div></li><li class="rp4wp-col rp4wp-col-last">
+	<div class="rp4wp_component rp4wp_component_image rp4wp_component_2"><a href="https://cryptopotato.com/ethereum-social-sentiment-surges-as-staking-starts/" data-wpel-link="internal"><img width="1201" height="720" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAxIDcyMCIgd2lkdGg9IjEyMDEiIGhlaWdodD0iNzIwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGY3J5cHRvcG90YXRvLmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMCUyRjEwJTJGZXRoZXJldW1fY292ZXItMi5qcGciIGRhdGEtdz0iMTIwMSIgZGF0YS1oPSI3MjAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" class="attachment-my-thumbnail-size size-my-thumbnail-size wp-post-image" alt="ethereum_cover"   /></a></div><div class="rp4wp_component rp4wp_component_title rp4wp_component_3"><a href="https://cryptopotato.com/ethereum-social-sentiment-surges-as-staking-starts/" data-wpel-link="internal">Ethereum Social Sentiment Surges as Staking Starts</a></div></li>	</ul>
+	</div><!-- AI CONTENT END 1 -->
+						
+																			<div class="entry-tags" style="margin-bottom:15px; font-weight: bold; text-align:center;">Tags: <a href="https://cryptopotato.com/tag/binance/" rel="tag">Binance</a> <a href="https://cryptopotato.com/tag/coinbase/" rel="tag">Coinbase</a> <a href="https://cryptopotato.com/tag/proof-of-stake-pos/" rel="tag">Proof of Stake (PoS)</a> <a href="https://cryptopotato.com/tag/tezos/" rel="tag">Tezos</a></div>
+												
+										</div>
+					
+					
+<div class="share">
+    <div style="font-weight: bold;">							
+									Enjoy reading? Share with your friends</div>
+
+    <div class="share-links">
+                    <a href="http://www.facebook.com/share.php?u=https%3A%2F%2Fcryptopotato.com%2Fbest-wallets-for-staking-cryptocurrencies-in-2020%2F"
+               target="_blank"
+               class="share-link share-link--facebook"
+               title="Facebook"
+               onclick="event.preventDefault(); window.open( this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600' );"
+            >
+                <span class="sr-only">Facebook</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-5 -5 42 42"><path d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z" fill="#fff"></path></svg>            </a>
+                    <a href="https://twitter.com/intent/tweet?text=4+Best+Wallets+For+Staking+Cryptocurrencies+In+2020%20&#038;url=https%3A%2F%2Fcryptopotato.com%2Fbest-wallets-for-staking-cryptocurrencies-in-2020%2F"
+               target="_blank"
+               class="share-link share-link--twitter"
+               title="Twitter"
+               onclick="event.preventDefault(); window.open( this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600' );"
+            >
+                <span class="sr-only">Twitter</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-4 -4 39 39"><path d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z" fill="#fff"></path></svg>            </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&#038;title=4+Best+Wallets+For+Staking+Cryptocurrencies+In+2020&#038;url=https%3A%2F%2Fcryptopotato.com%2Fbest-wallets-for-staking-cryptocurrencies-in-2020%2F"
+               target="_blank"
+               class="share-link share-link--linkedin"
+               title="LinkedIn"
+               onclick="event.preventDefault(); window.open( this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600' );"
+            >
+                <span class="sr-only">LinkedIn</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-2 -2 35 39"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#fff"/></svg>            </a>
+                    <a href="https://telegram.me/share/url?text=4+Best+Wallets+For+Staking+Cryptocurrencies+In+2020&#038;url=https%3A%2F%2Fcryptopotato.com%2Fbest-wallets-for-staking-cryptocurrencies-in-2020%2F"
+               target="_blank"
+               class="share-link share-link--telegram"
+               title="Telegram"
+               onclick="event.preventDefault(); window.open( this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600' );"
+            >
+                <span class="sr-only">Telegram</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -3 36 36" width="100%" height="100%"><path fill="#fff" d="M25.515 6.896L6.027 14.41c-1.33.534-1.322 1.276-.243 1.606l5 1.56 1.72 5.66c.226.625.115.873.77.873.506 0 .73-.235 1.012-.51l2.43-2.363 5.056 3.734c.93.514 1.602.25 1.834-.863l3.32-15.638c.338-1.363-.52-1.98-1.41-1.577z"/></svg>            </a>
+            </div>
+</div>
+					<hr>
+					<footer class="entry-footer">
+						<div class="entry-edit">
+													</div>
+						
+													<style>
+							.custom-author-info{
+								border-top:none;
+								margin:0px; 
+								margin-bottom:25px;
+								background: #f1f1f1;
+							}
+							.custom-author-info .author-title{
+								margin-top:0px; 
+								color:#3b3b3b; 
+								background:#fed319; 
+								padding:5px 15px; 
+								font-size: 20px;
+							}
+							.author-info .author-avatar {
+								margin: 0px 25px 0px 15px;
+							}
+							.custom-author-info .author-avatar img{
+								border-radius: 50%;
+								border: 2px solid #d0c9c9;
+								padding: 3px;
+							}
+							</style>
+                            <div class="custom-author-info author-info media">
+								<div class="author-info-inner">
+									<h3 class="author-title">							
+									About The Author</h3>
+									<div class="author-avatar pull-left">
+										<img alt='' src='https://secure.gravatar.com/avatar/c3036dd22568e4d75e548f5754860294?s=90&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c3036dd22568e4d75e548f5754860294?s=180&#038;d=mm&#038;r=g 2x' class='avatar avatar-90 photo' height='90' width='90' />									</div>
+									<div class="author-content media-body">
+										<h4 class="author-name">
+											Jordan Lyanchev<br>
+											<small><a href="https://cryptopotato.com/author/yordan/" style="color:#2d50ff;" rel="author" class="fn">
+											More posts by this author</a></small>
+										</h4>
+										<p class="author-bio">
+											Jordan got into crypto in 2016 by trading and investing. He began writing about blockchain technology in 2017. He has managed numerous crypto-related projects and is passionate about all things blockchain. <b>Contact Jordan: </b><a href="http://www.linkedin.com/in/yordan-lyanchev-54b127111/">LinkedIn</a><br />
+										</p>
+									</div>
+								</div>
+							</div>
+																	</footer>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+
+			
+
+
+
+		</article>
+			</section><!-- section#main -->
+		<aside id="sidebar" class="col-sm-12 col-md-4" role="complementary">
+	<section id="pojo_image-9" class="widget widget_pojo_image"><div class="widget-inner"><div class="widget-image align-center"><a href="https://cryptopotato.com/stormgain-banner" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMzAiIHdpZHRoPSIxODAiIGhlaWdodD0iMzAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZjcnlwdG9wb3RhdG8uY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIxJTJGMDklMkZzdG9ybWdhaW4tYnV0dG9uLnBuZyIgZGF0YS13PSIxODAiIGRhdGEtaD0iMzAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="stormgain" /></a></div></div></section><div class="widget_text awd-visible-desktop"><section id="custom_html-5" class="widget_text widget widget_custom_html"><div class="widget_text widget-inner"><div class="textwidget custom-html-widget"><center><!-- Cryptocurrency Widgets PRO 2.8  !--><div id="ccpw-price-label-7349" class="ccpw-container price-label "><div class="row"><li id="bitcoin" class="style-1"  ><div class="coin-container style-1"><div class="ccpw_icon"><img style="width:32px;" id="bitcoin" alt="bitcoin" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZjcnlwdG9wb3RhdG8uY29tJTJGd3AtY29udGVudCUyRnBsdWdpbnMlMkZjcnlwdG9jdXJyZW5jeS1wcmljZS10aWNrZXItd2lkZ2V0LXBybyUyRmFzc2V0cyUyRmNvaW4tbG9nb3MlMkZiaXRjb2luLnN2ZyIgZGF0YS13PSIxIiBkYXRhLWg9IjEiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1"></div><span class="name">BTC</span><span class="ticker-price">&#36;41,867.00</span></div></li><li id="ethereum" class="style-1"  ><div class="coin-container style-1"><div class="ccpw_icon"><img style="width:32px;" id="ethereum" alt="ethereum" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxIDEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZjcnlwdG9wb3RhdG8uY29tJTJGd3AtY29udGVudCUyRnBsdWdpbnMlMkZjcnlwdG9jdXJyZW5jeS1wcmljZS10aWNrZXItd2lkZ2V0LXBybyUyRmFzc2V0cyUyRmNvaW4tbG9nb3MlMkZldGhlcmV1bS5zdmciIGRhdGEtdz0iMSIgZGF0YS1oPSIxIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1"></div><span class="name">ETH</span><span class="ticker-price">&#36;2,906.29</span></div></li></div></div><style type='text/css'>
+			  #ccpw-price-label-7349.price-label .row li,
+			  #ccpw-price-label-7349.price-label .row li.style-2 .style-2 .ccpw_icon {background-color:#ffffff;}
+			  #ccpw-price-label-7349.price-label .row li span.name,
+			  #ccpw-price-label-7349.price-label .row li span.symbol,
+			  #ccpw-price-label-7349.price-label .row li span.ticker-price,
+			  #ccpw-price-label-7349.price-label .row li .ccpw-multi-price-text,
+			  #ccpw-price-label-7349.price-label .row li .style-4 .live-pricing {color:#000;}
+		  @media (max-width:339px){
+#ccpw-price-label-7349.price-label .row li span.name {
+	display:none;
+	
+}
+}
+@media (max-width:799px){
+.price-label #bitcoin{
+	font-weight: 400;
+	background-color:transparent !important;
+	border-color:transparent !important;
+	border-width:0px;
+	border-style:hidden;
+	list-style-position:outside;
+	box-sizing:border-box;
+	height:auto;
+	width:auto;
+	text-transform:uppercase;
+	line-height:1.6px;
+	text-align:left;
+	letter-spacing:0px;
+	text-indent:inherit;
+	word-wrap:normal;
+	margin:auto;
+	box-shadow:none;
+}
+
+.price-label #ethereum {
+	font-weight: 400;
+	background-color:transparent !important;
+	border-color:transparent !important;
+	border-width:0px;
+	border-style:hidden;
+	list-style-position:outside;
+	box-sizing:border-box;
+	height:auto;
+	width:auto;
+	text-transform:uppercase;
+	line-height:1.6px;
+	text-align:left;
+	letter-spacing:0px;
+	text-indent:inherit;
+	word-wrap:normal;
+	margin:auto;
+	box-shadow:none;
+}
+}
+
+@media (min-width:799px){
+#ccpw-price-label-7349.price-label .row li{
+    box-shadow: none;
+}
+#bitcoin {
+margin: 0px;
+}
+#ethereum {
+margin: 0px;
+}
+}
+</style></center></div></div></section></div><section id="text-37" class="widget widget_text"><div class="widget-inner"><h5 class="widget-title"><span>Join Our Community</span></h5>			<div class="textwidget"><style id='cpfollow-inspanne-css' type='text/css'>
+.cp-follow-buttons {
+    text-aspangn: left !important;
+}
+       .cp-follow-buttons {
+  text-aspangn: left !important;
+       }
+       .cp-follow-buttons .cp-follow-button,
+       .cp-follow-buttons .cp-follow-button a,
+       .cp-follow-buttons .cp-follow-button a img {
+  width: 40px !important;
+  height: 40px !important;
+       }
+       .cp-follow-buttons .cp-follow-button {
+  margin: 4px !important;
+       }
+     .cp-follow-buttons .cp-follow-button a img {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    vertical-aspangn: top;
+}</p>
+</style>
+<p><span class="cp-follow-buttons"><span class="cp-follow-button"><a href="https://www.facebook.com/CryptoPotato/" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGY3J5cHRvcG90YXRvLmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGc29jaWFsJTJGZmFjZWJvb2sucG5nIiBkYXRhLXc9IjQwIiBkYXRhLWg9IjQwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="Facebook" /></a></span><span class="cp-follow-button"><a href="https://twitter.com/Crypto_Potato" title="Twitter" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGY3J5cHRvcG90YXRvLmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGc29jaWFsJTJGdHdpdHRlci5wbmciIGRhdGEtdz0iNDAiIGRhdGEtaD0iNDAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="Twitter" /></a></span><span class="cp-follow-button"><a href="https://www.youtube.com/c/CryptoPotato?sub_confirmation=1" title="YouTube" target="_blank" rel="noopener noreferrer"> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGY3J5cHRvcG90YXRvLmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGc29jaWFsJTJGeW91dHViZS5wbmciIGRhdGEtdz0iNDAiIGRhdGEtaD0iNDAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1"
+ alt="YouTube"/></a></span><span class="cp-follow-button"><a href="https://t.me/CryptoPotato" title="Telegram" target="_blank" rel="noopener noreferrer"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGY3J5cHRvcG90YXRvLmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGc29jaWFsJTJGdGVsZWdyYW0ucG5nIiBkYXRhLXc9IjQwIiBkYXRhLWg9IjQwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="Telegram" /></a></span></span></p>
+<hr>
+</div>
+		</div></section><div class="awd-hidden-phone"><section id="pojo_image-10" class="widget widget_pojo_image"><div class="widget-inner"><div class="widget-image align-center"><a href="https://cryptopotato.com/anathabanner" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjUwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjI1MCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjElMkYwOSUyRmJhbm5lci1hbmF0aGEuanBnIiBkYXRhLXc9IjMwMCIgZGF0YS1oPSIyNTAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="anatha" /></a></div></div></section></div><section id="pojo_recent_posts-15" class="widget widget_pojo_recent_posts"><div class="widget-inner"><h5 class="widget-title"><span><a href="https://cryptopotato.com/category/editorials/">Bitcoin Editorials</a></span></h5><div class="list-items"><div class="recent-post grid-item grid-one format-icon-hide post-141997 post type-post status-publish format-standard has-post-thumbnail hentry category-btceur category-btcgbp category-btcusd category-btcusdt category-crypto-news category-editorials category-featured1 category-social tag-bitcoin tag-china tag-crypto-ban">
+	<div class="item-inner">
+					<div class="entry-thumbnail">
+				<a href="https://cryptopotato.com/chinas-long-history-of-bitcoin-fud-timeline/" title="China&#8217;s Long History of Bitcoin FUD: Timeline" rel="bookmark" class="image-link">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzg1IiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM4NSIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRnRodW1icyUyRmNoYWluLWJhbi0zZTR3eXVhbGFqcTY4ZHF0cnc3N3lpLmpwZyIgZGF0YS13PSI2MDAiIGRhdGEtaD0iMzg1IiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="China&#8217;s Long History of Bitcoin FUD: Timeline" class="media-object" />
+									</a>
+				<div class="entry-meta">
+																								</div>
+			</div>
+				<div class="caption">
+							<h4 class="grid-heading entry-title">
+					<a href="https://cryptopotato.com/chinas-long-history-of-bitcoin-fud-timeline/" title="China&#8217;s Long History of Bitcoin FUD: Timeline" rel="bookmark">China&#8217;s Long History of Bitcoin FUD: Timeline</a>
+				</h4>
+											</div>
+	</div>
+</div><div class="recent-post grid-item grid-one format-icon-hide post-140095 post type-post status-publish format-standard has-post-thumbnail hentry category-editorials category-guides category-margin-trading-exchange">
+	<div class="item-inner">
+					<div class="entry-thumbnail">
+				<a href="https://cryptopotato.com/apollox-crypto-derivatives-exchange-guide-review/" title="ApolloX Crypto Derivatives Exchange Guide &#038; Review" rel="bookmark" class="image-link">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzg1IiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM4NSIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRnRodW1icyUyRmFwb2xsb3gtcHItM2R5bmR5OGFwYTRwNWprbGx3Y21idS5qcGciIGRhdGEtdz0iNjAwIiBkYXRhLWg9IjM4NSIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="ApolloX Crypto Derivatives Exchange Guide &#038; Review" class="media-object" />
+									</a>
+				<div class="entry-meta">
+																								</div>
+			</div>
+				<div class="caption">
+							<h4 class="grid-heading entry-title">
+					<a href="https://cryptopotato.com/apollox-crypto-derivatives-exchange-guide-review/" title="ApolloX Crypto Derivatives Exchange Guide &#038; Review" rel="bookmark">ApolloX Crypto Derivatives Exchange Guide &#038; Review</a>
+				</h4>
+											</div>
+	</div>
+</div><div class="recent-post grid-item grid-one format-icon-hide post-139752 post type-post status-publish format-standard has-post-thumbnail hentry category-adabtc category-adausd category-crypto-news category-editorials category-featured1 category-social tag-cardano">
+	<div class="item-inner">
+					<div class="entry-thumbnail">
+				<a href="https://cryptopotato.com/in-depth-cardanos-hardfork-smart-contracts-vs-criticism-and-whats-ahead/" title="In-Depth: Cardano&#8217;s Hardfork, Smart Contracts vs. Criticism, and What&#8217;s Ahead?" rel="bookmark" class="image-link">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzg1IiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM4NSIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRnRodW1icyUyRmNhcmRhbm9fY292ZXItM2UyZGhvYjMydmxyYm04cG1hdXN5Mi5qcGciIGRhdGEtdz0iNjAwIiBkYXRhLWg9IjM4NSIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="In-Depth: Cardano&#8217;s Hardfork, Smart Contracts vs. Criticism, and What&#8217;s Ahead?" class="media-object" />
+									</a>
+				<div class="entry-meta">
+																								</div>
+			</div>
+				<div class="caption">
+							<h4 class="grid-heading entry-title">
+					<a href="https://cryptopotato.com/in-depth-cardanos-hardfork-smart-contracts-vs-criticism-and-whats-ahead/" title="In-Depth: Cardano&#8217;s Hardfork, Smart Contracts vs. Criticism, and What&#8217;s Ahead?" rel="bookmark">In-Depth: Cardano&#8217;s Hardfork, Smart Contracts vs. Criticism, and What&#8217;s Ahead?</a>
+				</h4>
+											</div>
+	</div>
+</div><div class="recent-post grid-item grid-one format-icon-hide post-136409 post type-post status-publish format-standard has-post-thumbnail hentry category-btceur category-btcgbp category-btcusd category-btcusdt category-crypto-news category-editorials category-opinions category-social tag-bitcoin tag-bitcoin-adoption tag-el-salvador">
+	<div class="item-inner">
+					<div class="entry-thumbnail">
+				<a href="https://cryptopotato.com/how-the-life-of-el-salvadors-people-could-change-following-bitcoin-legalization-in-10-days-opinion/" title="How the Life of El Salvador&#8217;s People Could Change Following Bitcoin Legalization in 10 days (Opinion)" rel="bookmark" class="image-link">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzg1IiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM4NSIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRnRodW1icyUyRkJpdGNvaW5FbFNhbHZhZG9yLTNkaWtlY3hjZDdpZDl1YnBlMXc5YWkuanBnIiBkYXRhLXc9IjYwMCIgZGF0YS1oPSIzODUiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="How the Life of El Salvador&#8217;s People Could Change Following Bitcoin Legalization in 10 days (Opinion)" class="media-object" />
+									</a>
+				<div class="entry-meta">
+																								</div>
+			</div>
+				<div class="caption">
+							<h4 class="grid-heading entry-title">
+					<a href="https://cryptopotato.com/how-the-life-of-el-salvadors-people-could-change-following-bitcoin-legalization-in-10-days-opinion/" title="How the Life of El Salvador&#8217;s People Could Change Following Bitcoin Legalization in 10 days (Opinion)" rel="bookmark">How the Life of El Salvador&#8217;s People Could Change Following Bitcoin Legalization in 10 days (Opinion)</a>
+				</h4>
+											</div>
+	</div>
+</div><div class="recent-post grid-item grid-one format-icon-hide post-136148 post type-post status-publish format-standard has-post-thumbnail hentry category-crypto-news category-editorials category-opinions category-social tag-taxation tag-united-states">
+	<div class="item-inner">
+					<div class="entry-thumbnail">
+				<a href="https://cryptopotato.com/industry-grows-lobbying-efforts-as-u-s-house-takes-up-crypto-tax-proposal/" title="Industry Grows Lobbying Efforts as U.S. House Takes Up Crypto Tax Proposal (Opinion)" rel="bookmark" class="image-link">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzg1IiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM4NSIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRnRodW1icyUyRlVTQ29uZ3Jlc3MtMS0zZHhubWp6cWtuczVubWh1dGNocWZlLmpwZyIgZGF0YS13PSI2MDAiIGRhdGEtaD0iMzg1IiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="Industry Grows Lobbying Efforts as U.S. House Takes Up Crypto Tax Proposal (Opinion)" class="media-object" />
+									</a>
+				<div class="entry-meta">
+																								</div>
+			</div>
+				<div class="caption">
+							<h4 class="grid-heading entry-title">
+					<a href="https://cryptopotato.com/industry-grows-lobbying-efforts-as-u-s-house-takes-up-crypto-tax-proposal/" title="Industry Grows Lobbying Efforts as U.S. House Takes Up Crypto Tax Proposal (Opinion)" rel="bookmark">Industry Grows Lobbying Efforts as U.S. House Takes Up Crypto Tax Proposal (Opinion)</a>
+				</h4>
+											</div>
+	</div>
+</div></div></div></section><div class="awd-visible-desktop"><section id="mo_optin_widgets-2" class="widget widget_mo_optin_widgets"><div class="widget-inner"><h5 class="widget-title"><span>Join Our Newsletter</span></h5>
+<!-- This site converts visitors into subscribers and customers with the MailOptin WordPress plugin v2.2.32.0 - https://mailoptin.io -->
+<div id='jzfKDBSOsw' class="moOptinForm mo-optin-form-sidebar mo-has-email" data-optin-type='sidebar' style=''><div class='mo-optin-form-container' id='jzfKDBSOsw_sidebar_container' style='position:relative;margin: 0 auto;'><script type="rocketlazyloadscript" data-rocket-type="text/javascript">var jzfKDBSOsw=jzfKDBSOsw_sidebar={"optin_uuid":"jzfKDBSOsw","optin_campaign_id":1,"optin_campaign_name":"sideform1","optin_type":"sidebar","post_id":0,"cookie":30,"success_cookie":30,"global_cookie":0,"global_success_cookie":30,"success_message":"Thanks for subscribing!","name_field_required":!0,"is_split_test":!1,"success_action":"success_message","test_mode":!1,"icon_close":!1,"unexpected_error":"Unexpected error. Please try again.","email_missing_error":"Please enter a valid email.","name_missing_error":"Please enter a name.","custom_field_required_error":"A required field is empty.","note_acceptance_error":"Please accept our terms.","honeypot_error":"Your submission has been flagged as potential spam.","effects":"","device_targeting_hide_desktop":!1,"device_targeting_hide_tablet":!1,"device_targeting_hide_mobile":!1};</script><style id="mo-optin-form-stylesheet" type="text/css">html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container { margin: 10px auto; width: 100%; max-width: 500px; padding: 20px 10px 0; background: #fff; border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border: 1px solid #ccc; position: relative; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container * { font-size: 16px; text-align: center; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_clear::before, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_clear::after { content: " "; display: table; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_clear::after { clear: both; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_miniHeader { text-transform: uppercase; font-weight: 700; color: #bebebe; font-size: 16px; display: block; border: 0px; line-height: normal; height: auto; font-family: inherit, Helvetica, Arial, sans-serif; display:none; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_main .rescript_description { font-size: 16px; line-height: 1.8; color: #bebebe; display: block; border: 0px; height: auto; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .mo-optin-error { display: none; color: #ff0000; text-align: center; padding: 10px; font-size: 14px; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField { border: 2px solid #fed319; width: 100%; max-width: 100%; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; padding: 10px; height: 60px !important; font-weight: 400; padding-left: 25px !important; color: #737373; text-align: left; margin: 0; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField:focus, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container input.rescript_submitBtn:focus { outline: 0; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_blockify { position: relative; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_headline { line-height: 1.5; color: #2c2f33; font-weight: bold; font-size: 24px; margin: 20px 0; display: block; border: 0px; height: auto; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_form { padding: 20px 0; position: relative; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container input.rescript_submitBtn { width: 100%; background: #ff7f45; border: 0; padding: 10px; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; height: 60px !important; color: #fff; font-weight: 700; text-transform: uppercase; margin-top: 20px; } div#jzfKDBSOsw.mo-cta-button-display .rescript_ctaBtn { width: 100% !important; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_note, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_note * { margin-top: 5px; text-align: center; font-size: 14px !important; font-style: italic; display: inline; border: 0; line-height: normal; } /* Responsive cases*/ @media only screen and (min-width: 230px) { html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_copy { padding: 10px; } } html div#jzfKDBSOsw.mo-has-name-email div#jzfKDBSOsw_sidebar.rescript_container input, html div#jzfKDBSOsw.mo-optin-has-custom-field div#jzfKDBSOsw_sidebar.rescript_container input, html div#jzfKDBSOsw.mo-optin-has-custom-field div#jzfKDBSOsw_sidebar.rescript_container textarea { margin-bottom: 15px; } html div#jzfKDBSOsw.mo-has-name-email div#jzfKDBSOsw_sidebar.rescript_container .rescript_submitBtn, html div#jzfKDBSOsw.mo-optin-has-custom-field div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField + .rescript_submitBtn { margin-top: 0; } html div#jzfKDBSOsw.mo-optin-has-custom-field div#jzfKDBSOsw_sidebar.rescript_container textarea.mo-optin-form-custom-field.textarea-field { min-height: 80px; padding-top: 20px; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField.select-field { margin-bottom: 10px; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField.radio-field, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField.checkbox-field { height: auto !important; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; text-align: left; margin-bottom: 10px; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField.radio-field input, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField.checkbox-field input { vertical-align: text-top; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField.radio-field *, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField.checkbox-field *{ text-align: left; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .mo-optin-fields-wrapper .list_subscription-field:not(select) { display: initial; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .mo-optin-fields-wrapper .mo-optin-form-custom-field.select-field, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .mo-optin-fields-wrapper select.list_subscription-field { margin-bottom: 15px; }div#jzfKDBSOsw *, div#jzfKDBSOsw *:before, div#jzfKDBSOsw *:after {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}div#jzfKDBSOsw_sidebar_container div#jzfKDBSOsw_sidebar .mo-optin-field:focus {outline:0}div#jzfKDBSOsw_sidebar_container div#jzfKDBSOsw_sidebar .mo-optin-form-submit-button:focus {outline:0}div#jzfKDBSOsw_sidebar_container div.mo-optin-powered-by{margin:5px auto 2px;text-align:center;}div#jzfKDBSOsw_sidebar_container div.mo-optin-powered-by a {font-size:16px !important; text-decoration: none !important;box-shadow:none !important;border-bottom-width:0px !important;cursor:pointer !important;}div#jzfKDBSOsw_sidebar_container .mo-acceptance-checkbox {background-color: #fff;line-height: 0;border: 1px solid #bbb;width: 16px;min-width: 16px;height: 16px;margin: 0 5px 0 0 !important;outline: 0;text-align: center;vertical-align: middle;clear: none;cursor: pointer;}div#jzfKDBSOsw_sidebar_container .mo-acceptance-label {cursor:pointer}div#jzfKDBSOsw_sidebar_container div#jzfKDBSOsw_sidebar p {padding:0px !important;margin:0px !important}div#jzfKDBSOsw .mo-optin-form-wrapper label {color:inherit;font-weight: normal;margin: 0;padding:0;}div#jzfKDBSOsw div#jzfKDBSOsw_sidebar_container div#jzfKDBSOsw_sidebar input[type=submit] {-webkit-appearance: none;}div#jzfKDBSOsw div#jzfKDBSOsw_sidebar_container div#jzfKDBSOsw_sidebar input {z-index: auto;}div#jzfKDBSOsw.mo-cta-button-flag .mo-optin-form-note .mo-acceptance-label {display:none;}div#jzfKDBSOsw .mailoptin-video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; } div#jzfKDBSOsw .mailoptin-video-container iframe, div#jzfKDBSOsw .mailoptin-video-container object, div#jzfKDBSOsw .mailoptin-video-container embed, div#jzfKDBSOsw .mailoptin-video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.mo-optin-form-wrapper {max-width:300px !important}div#jzfKDBSOsw_sidebar #mo-optin-form-name-field {display: none !important;}#jzfKDBSOsw .mo-optin-form-container .mo-optin-spinner { border-radius: inherit; position: absolute; width: 100%; height: 100%; background: #fff url(https://cdn.shortpixel.ai/spai/w_1920+q_lossless+ret_img/https://cryptopotato.com/wp-content/plugins/mailoptin/src/core/src/assets/images/spinner.gif) 50% 50% no-repeat; left: 0; top: 0; opacity: 0.99; filter: alpha(opacity=80); } #jzfKDBSOsw .mo-optin-form-container .mo-optin-success-close { font-size: 32px !important; font-family: "HelveticaNeue - Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; color: #282828 !important; font-weight: 300 !important; position: absolute !important; top: 0 !important; right: 10px !important; background: none !important; text-decoration: none !important; width: auto !important; height: auto !important; display: block !important; line-height: 32px !important; padding: 0 !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; } #jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-success-msg { font-size: 21px; font-family: "HelveticaNeue - Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color: #282828 !important; font-weight: 300; text-align: center; margin: 0 auto; width: 100%; position: absolute !important; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } #jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-success-msg a { color: #0000EE; text-decoration: underline; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field:not(select), html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field, html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field, html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field { margin-top: 6px; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field, html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field, html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field { text-align: left; padding: 6px; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field label, html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field label { display: block; text-align: left; margin-top: 6px; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field label input, html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field label input { margin-right: 5px; vertical-align: middle; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field select { width: 100%; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-fields-wrapper .list_subscription-field:not(select), html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-fields-wrapper .mo-optin-form-custom-field.checkbox-field, html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-fields-wrapper .mo-optin-form-custom-field.radio-field { padding: 0 !important; border: 0 !important; background: transparent !important; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field label { display: block !important; margin: 5px 0 !important; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field label:last-child { margin: 0; } html div#jzfKDBSOsw .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field input[type=checkbox] { cursor: pointer; } div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-headline, div#jzfKDBSOsw div.mo-optin-form-container h2, div#jzfKDBSOsw div.mo-optin-form-container h1 { font-size: 20px !important; }div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-description, div#jzfKDBSOsw div.mo-optin-form-container div#jzfKDBSOsw_sidebar p { font-size: 16px !important; }div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-note { font-size: 10px !important; }@media screen and (max-width: 768px) { div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-headline, div#jzfKDBSOsw div.mo-optin-form-container div#jzfKDBSOsw_sidebar h2, div#jzfKDBSOsw div.mo-optin-form-container div#jzfKDBSOsw_sidebar h1 { font-size: 24px !important; } div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-description, div#jzfKDBSOsw div.mo-optin-form-container div#jzfKDBSOsw_sidebar p { font-size: 16px !important; } div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-note { font-size: 14px !important; } }@media screen and (max-width: 480px) { div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-headline, div#jzfKDBSOsw div.mo-optin-form-container div#jzfKDBSOsw_sidebar h2, div#jzfKDBSOsw div.mo-optin-form-container div#jzfKDBSOsw_sidebar h1 { font-size: 20px !important; } div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-description, div#jzfKDBSOsw div.mo-optin-form-container div#jzfKDBSOsw_sidebar p { font-size: 14px !important; } div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-note, div#jzfKDBSOsw div#jzfKDBSOsw_sidebar .mo-optin-form-note * { font-size: 10px !important; } } #jzfKDBSOsw #jzfKDBSOsw_sidebar .mo-optin-field.mo-optin-form-name-field::-webkit-input-placeholder { color: #737373 !important; } #jzfKDBSOsw #jzfKDBSOsw_sidebar .mo-optin-field.mo-optin-form-name-field:-ms-input-placeholder { color: #737373 !important; } #jzfKDBSOsw #jzfKDBSOsw_sidebar .mo-optin-field.mo-optin-form-name-field::placeholder { color: #737373 !important; } #jzfKDBSOsw #jzfKDBSOsw_sidebar .mo-optin-field.mo-optin-form-email-field::-webkit-input-placeholder { color: #737373 !important; } #jzfKDBSOsw #jzfKDBSOsw_sidebar .mo-optin-field.mo-optin-form-email-field:-ms-input-placeholder { color: #737373 !important; } #jzfKDBSOsw #jzfKDBSOsw_sidebar .mo-optin-field.mo-optin-form-email-field::placeholder { color: #737373 !important; } div#jzfKDBSOsw .mo-mailchimp-interest-container { margin: 0 10px 2px; } div#jzfKDBSOsw .mo-mailchimp-interest-label { font-size: 16px; margin: 5px 0 2px; } div#jzfKDBSOsw input.mo-mailchimp-interest-choice { line-height: normal; border: 0; margin: 0 5px; } div#jzfKDBSOsw span.mo-mailchimp-choice-label { vertical-align: middle; font-size: 14px; } div#jzfKDBSOsw .mo-mailchimp-interest-choice-container { margin: 5px 0; }</style><style id="mo-optin-form-custom-css" type="text/css">html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container input.rescript_submitBtn { margin-top:5px; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_main .rescript_description { line-height: 1.3; margin-bottom: -5px; } html div#jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_headline { line-height:1.2; margin: -10px 0px 5px 5px ; } #jzfKDBSOsw_sidebar_submit_button { border-radius: 0 !important; } #jzfKDBSOsw div#jzfKDBSOsw_sidebar.rescript_container .rescript_inputField { border-radius: 0 !important; }</style><div id="jzfKDBSOsw_sidebar" class="mo-optin-form-wrapper mo-has-email rescript_container" style="position: relative;margin-right: auto;margin-left: auto;background: #ffffff;border-color: #ffffff;line-height: normal;"><form method="post" class='mo-optin-form' id='jzfKDBSOsw_sidebar_form' style='margin:0;'><div class="rescript_main"><div class="rescript_copy"><div class="rescript_miniHeader">Become a CryptoPotato VIP</div><div class="mo-optin-form-headline rescript_headline" style="color: #2c2f33;">One Weekly Email Can Change Your Crypto Life.</div><div class="mo-optin-form-description rescript_description" style="color: #a5a5a5;">Sign-up FREE to receive our extended weekly market update and coin analysis report</div><div class="rescript_form rescript_clear"><div class="rescript_blockify"><div class="mo-optin-fields-wrapper" style=""><input id="jzfKDBSOsw_sidebar_name_field" class="mo-optin-field mo-optin-form-name-field rescript_inputField" style='color: #737373;background-color: #ffffff;height: auto;display: none;' type="text" placeholder="Enter your email..." name="mo-name" autocomplete="on" value=""> <input id="jzfKDBSOsw_sidebar_email_field" class="mo-optin-field mo-optin-form-email-field rescript_inputField" style="color: #737373;background-color: #ffffff;height: auto;" type="email" placeholder="Your email address" name="mo-email" autocomplete="on" value=""> <input id="jzfKDBSOsw_sidebar_submit_button" class="mo-optin-form-submit-button rescript_submitBtn" style="background: #fed319;color: #000000;height: auto;text-shadow: none;" type="submit" value=" SIGN ME UP"> <div class="mo-optin-form-note rescript_note" style="color: #bebebe;"><span class="mo-note-content"><span>We NEVER send spam. You can unsubscribe at any time.</span></span></div><div class="mo-optin-error " style=''>Invalid email address</div></div><input id="jzfKDBSOsw_sidebar_cta_button" class="mo-optin-form-cta-button rescript_submitBtn rescript_ctaBtn" style="background: #ff7f45;color: #ffffff;height: auto;text-shadow: none;display: none;" type="submit" value="Take Action Now!"> </div></div></div></div><input id='jzfKDBSOsw_sidebar_honeypot_email_field' type='text' name='mo-hp-email' value='' style='display:none'/><input id="jzfKDBSOsw_sidebar_honeypot_website_field" type="text" name="mo-hp-website" value="" style="display:none"/></form><div class='mo-optin-spinner' style='display:none'></div><div class="mo-optin-success-msg" style="display:none">Thanks for subscribing!</div></div></div></div><!-- / MailOptin WordPress plugin. -->
+<input id="jzfKDBSOsw_sidebar_honeypot_timestamp" type="hidden" name="mo-timestamp" value="1632826612" style="display:none" /></div></section></div></aside>				</div><!-- #content -->
+		</div><!-- .container -->
+	</div><!-- #primary -->
+
+			<div id="footer-widgets">
+	<div class="container">
+		<div class="row">
+			<section id="text-5" class="widget widget_text col-sm-4"><div class="widget-inner"><h5 class="widget-title"><span>About</span></h5>			<div class="textwidget"><a href="https://cryptopotato.com/advertise">Advertise on CryptoPotato<a>
+<br>
+<a href="https://cryptopotato.com/aboutus">About Us<a>  |  <a href="https://cryptopotato.com/contact">Contact Us</a>  |  <a href="https://cryptopotato.com/careers">Careers</a>
+<br>
+<br>
+<a href="https://cryptopotato.com/terms">Terms of service</a> |  <a href="https://cryptopotato.com/privacy-policy">Privacy Policy</a>  |  <a href="https://cryptopotato.com/gdpr">GDPR</a></div>
+		</div></section><section id="text-13" class="widget widget_text col-sm-4"><div class="widget-inner"><h5 class="widget-title"><span>More Sections</span></h5>			<div class="textwidget"><a href="https://cryptopotato.com/ico-list/">IEO List</a> |  <a href="https://cryptopotato.com/ico-evaluations/">Evaluations</a>  
+<br>
+<a href="https://cryptopotato.com/airdrops/">Airdrops</a>
+<br>
+<a href="https://cryptopotato.com/cryptopotato-scholarship">Scholarship</a>
+<br>
+<a href="https://cryptopotato.com/cannabis-stock-news/">Cannabis Stocks News</a>
+| <a href="https://cryptopotato.com/stock-market-analysis-overview/">Market Analysis</a>
+<br></div>
+		</div></section><section id="text-10" class="widget widget_text col-sm-4"><div class="widget-inner"><h5 class="widget-title"><span>Disclaimer</span></h5>			<div class="textwidget"><span style="font-style: italic; color: #808080;"><span style="font-size: small;">Disclaimer: Information found on CryptoPotato is those of writers quoted. It does not represent the opinions of CryptoPotato on whether to buy, sell, or hold any investments. You are advised to conduct your own research before making any investment decisions. Use provided information at your own risk. <a href="https://cryptopotato.com/disclaimer">Full disclaimer</a></span></span></div>
+		</div></section>		</div>
+	</div>
+</div>		<footer id="footer-copyright" role="contentinfo">
+			<div class="container">
+				<div class="content-copyright">
+					<div class="pull-left-copyright">
+											</div>
+					<div class="pull-right-copyright">
+						© Copyright CryptoPotato 2016 - 2021					</div>
+				</div>
+			</div><!-- .container -->
+		</footer>
+	
+</div><!-- #container -->
+		<div id="pojo-scroll-up" class="pojo-scroll-up-right" data-offset="50" data-duration="750" style="font-size: 20px;border-radius: 6px">
+			<div class="pojo-scroll-up-inner">
+				<a class="pojo-scroll-up-button" href="javascript:void(0);" title="Scroll to top">
+					<span class="fa fa-chevron-up"></span><span class="sr-only">Scroll to top</span>
+				</a>
+			</div>
+		</div>
+				<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="pswp__bg"></div>
+			<div class="pswp__scroll-wrap">
+				<div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				</div>
+				<div class="pswp__ui pswp__ui--hidden">
+					<div class="pswp__top-bar">
+						<div class="pswp__counter"></div>
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+						<button class="pswp__button pswp__button--share" title="Share"></button>
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+								<div class="pswp__preloader__cut">
+									<div class="pswp__preloader__donut"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div>
+					</div>
+
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+					</button>
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+					</button>
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<link rel='preload'   href='https://cryptopotato.com/wp-content/plugins/cryptocurrency-price-ticker-widget-pro/assets/css/min/ccpwp-styles.min.css?ver=2.8' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link data-minify="1" rel='preload'   href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/cryptocurrency-price-ticker-widget-pro/assets/css/ccpw-icons.css?ver=1631551441' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<link rel='preload'   href='https://cryptopotato.com/wp-content/plugins/cryptocurrency-price-ticker-widget-pro/assets/css/min/ccpw-price-label.min.css?ver=2.8' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+<script type='text/javascript' src='https://cryptopotato.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' id='mailoptin-js-extra'>
+/* <![CDATA[*/var mailoptin_globals={"public_js":"https:\/\/cryptopotato.com\/wp-content\/plugins\/mailoptin\/src\/core\/src\/assets\/js\/src","mailoptin_ajaxurl":"\/best-wallets-for-staking-cryptocurrencies-in-2020\/?mailoptin-ajax=%%endpoint%%","is_customize_preview":"false","disable_impression_tracking":"false","sidebar":"0","js_required_title":"Title is required."};/*]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/plugins/mailoptin/src/core/src/assets/js/mailoptin.min.js?ver=2.2.32.0' id='mailoptin-js' defer></script>
+<script type='text/javascript' id='spai-scripts-js-extra'>
+/* <![CDATA[ */
+var spai_settings = {"api_url":"https:\/\/cdn.shortpixel.ai\/spai\/w_%WIDTH%+q_lossless+ret_img","api_short_url":"https:\/\/cdn.shortpixel.ai\/spai\/ret_img","method":"src","crop":"","lqip":"","lazy_threshold":"500","hover_handling":"","native_lazy":"1","serve_svg":"1","debug":"","site_url":"https:\/\/cryptopotato.com","plugin_url":"https:\/\/cryptopotato.com\/wp-content\/plugins\/shortpixel-adaptive-images","version":"2.3.2","excluded_selectors":[],"eager_selectors":["img.logo-img-primary",".cp-follow-button a img","section#custom_html-5 img"],"noresize_selectors":[],"alter2wh":"1","use_first_sizes":[],"active_integrations":{"nextgen":false,"modula":false,"elementor":false,"elementor-addons":false,"viba-portfolio":false,"envira":false,"everest":false,"wp-bakery":false,"woocommerce":false,"wpc-variations":false,"foo":false,"oxygen":false,"slider-revolution":false,"custom-facebook-feed":false,"smart-slider":false,"real3d-flipbook":false,"wp-grid-builder":false,"the-grid":false,"social-pug":false,"content-views":false,"acf":true,"soliloquy":false,"wp-rocket":{"lazyload":false,"css-filter":true,"minify-css":true,"defer-all-js":false},"swift-performance":false,"imagify":{"active":false},"wp-fastest-cache":false,"litespeed-cache":false,"w3-total-cache":false,"wp-optimize":false,"theme":"Scoop Child"},"parse_css_files":"1","lazy_bg_style":"","backgrounds_max_width":"1920","sep":"+","webp":"1","extensions_to_nextgenimg":{"png":true,"jpg":true,"gif":true},"sniper":"https:\/\/cryptopotato.com\/wp-content\/plugins\/shortpixel-adaptive-images\/assets\/img\/target.cur","affected_tags":"{\"script\":2,\"link\":1,\"figure\":2}","ajax_url":"https:\/\/cryptopotato.com\/wp-admin\/admin-ajax.php","excluded_paths":["cmVnZXg6L1wvXC8oW15cL10qXC58KWdyYXZhdGFyLmNvbVwvLw==","aHR0cHM6Ly9jcnlwdG9wb3RhdG8uY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy90aHVtYnMvY3Jhc2hfY292ZXItMS0zY2ZoeHQ5ODc3ZTJtc243dzhnZGZ1LmpwZw==","aHR0cHM6Ly9jcnlwdG9wb3RhdG8uY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIxLzAzL3BhaWRjaGFydC5qcGc=","aHR0cHM6Ly9jcnlwdG9wb3RhdG8uY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIxLzAzL2JpdGNvaW5fY292ZXItMy5qcGc=","aHR0cHM6Ly9jcnlwdG9wb3RhdG8uY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIxLzA3L2ZsYXNobG9hbnMtcGljMS5qcGc="]};
+/* ]]> */
+</script>
+<script data-cfasync="false" type='text/javascript' src='https://cryptopotato.com/wp-content/plugins/shortpixel-adaptive-images/assets/js/ai-2.0.min.js?ver=2.3.2' id='spai-scripts-js' defer></script>
+<script type='text/javascript' id='q2w3_fixed_widget-js-extra'>
+/* <![CDATA[*/var q2w3_sidebar_options=[{"sidebar":"pojo-main-sidebar","margin_top":10,"margin_bottom":380,"stop_id":"","screen_max_width":0,"screen_max_height":0,"width_inherit":!1,"refresh_interval":1500,"window_load_hook":!1,"disable_mo_api":!1,"widgets":["mo_optin_widgets-2"]}];/*]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/plugins/q2w3-fixed-widget/js/q2w3-fixed-widget.min.js?ver=5.1.9' id='q2w3_fixed_widget-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/themes/scoop/assets/bootstrap/js/bootstrap.min.js?ver=3.2.0' id='pojo-plugins-js' defer></script>
+<script type='text/javascript' id='pojo-scripts-js-extra'>
+/* <![CDATA[*/var Pojo={"ajaxurl":"https:\/\/cryptopotato.com\/wp-admin\/admin-ajax.php","css_framework_type":"bootstrap","superfish_args":{"delay":150,"animation":{"opacity":"show","height":"show"},"speed":"fast"}};/*]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/themes/scoop/assets/js/frontend.min.js?ver=1.8.1' id='pojo-scripts-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/themes/scoop/core/assets/masterslider/masterslider.min.js?ver=2.9.5' id='masterslider-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/photoswipe/photoswipe.min.js?ver=4.1.2' id='photoswipe-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/photoswipe/photoswipe-ui-default.min.js?ver=4.1.2' id='photoswipe-ui-js' defer></script>
+<script type='text/javascript' id='pojo-lightbox-app-js-extra'>
+/* <![CDATA[*/var PojoLightboxOptions={"script_type":"photoswipe","smartphone":"","woocommerce":"","lightbox_args":{"loop":!0,"closeOnScroll":!0,"closeOnVerticalDrag":!0,"escKey":!0,"arrowKeys":!0,"history":!0,"captionEl":!0,"closeEl":!0,"fullscreenEl":!0,"zoomEl":!0,"counterEl":!0,"arrowEl":!0,"shareEl":!0}};/*]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/js/app.min.js?ver=5.5.6' id='pojo-lightbox-app-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://cryptopotato.com/wp-content/plugins/cryptocurrency-price-ticker-widget-pro/assets/js/numeral.min.js?ver=2.8' id='ccpw-numeral-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">(function(){var expirationDate=new Date();expirationDate.setTime(expirationDate.getTime()+31536000*1000);document.cookie="pll_language=en; expires="+expirationDate.toUTCString()+"; path=/; secure"}());</script>
+<!-- This site converts visitors into subscribers and customers with the MailOptin WordPress plugin v2.2.32.0 - https://mailoptin.io -->
+<div id='aTVpVjliYG' class="moOptinForm mo-optin-form-lightbox mo-has-email" data-optin-type='lightbox' style='display: none;position: fixed;zoom: 1;text-align: center;z-index: 99999999;left: 0;top: 0;width: 100%;padding: 0 10px;height: 100%;overflow: auto;background: rgba(0,0,0,0.7)'><div class='mo-optin-form-container' id='aTVpVjliYG_lightbox_container' style='position:relative;margin: 0 auto;'><script type="rocketlazyloadscript" data-rocket-type="text/javascript">var aTVpVjliYG=aTVpVjliYG_lightbox={"optin_uuid":"aTVpVjliYG","optin_campaign_id":2,"optin_campaign_name":"popup1","optin_type":"lightbox","post_id":95568,"cookie":30,"success_cookie":30,"global_cookie":0,"global_success_cookie":30,"success_message":"Thanks for subscribing!","name_field_required":!0,"is_split_test":!1,"x_seconds_status":!0,"x_seconds_value":100,"success_action":"success_message","test_mode":!1,"icon_close":!1,"body_close":!0,"keyClose":!0,"unexpected_error":"Unexpected error. Please try again.","email_missing_error":"Please enter a valid email.","name_missing_error":"Please enter a name.","custom_field_required_error":"A required field is empty.","note_acceptance_error":"Please accept our terms.","honeypot_error":"Your submission has been flagged as potential spam.","effects":"","device_targeting_hide_desktop":!1,"device_targeting_hide_tablet":!1,"device_targeting_hide_mobile":!1};</script><style id="mo-optin-form-stylesheet" type="text/css">html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container *, html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_submitButton, html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_form_field { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container { background: #9d58e2; border-radius: 10px; text-align: center; margin: 10px auto; border: 0; width: 100%; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_copy .letterBox_header { color: #ffffff; font-size: 24px; padding: 0 20px; font-weight: 700; margin: 15px auto; line-height: normal; height: auto; display: block; border: 0; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_copy .letterBox_description { color: #ffffff; font-size: 16px; padding: 0 20px; font-weight: 400; line-height: normal; height: auto; display: block; border: 0; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_inner { padding: 10px 0 20px; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_form_field { width: 100%; max-width: 100%; padding: 15px; border: 0px; border-radius: 5px; color: #444; font-size: 15px; margin: 0 0 10px; display: inline-block; line-height: normal; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_form_field.radio-field, html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_form_field.checkbox-field { background-color: #fff; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_form_field:focus, html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_submitButton:focus, { outline: 0 } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_form_field:focus { background: #ececec; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .mo-optin-error { display: none; color: #ff0000; text-align: center; padding: 5px; font-size: 14px; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container input[type="submit"].letterBox_submitButton { width: 100%; border-radius: 0; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border: 0; background: #8000e2; color: #ffffff; padding: 20px; font-size: 18px; text-align: center; white-space: nowrap; vertical-align: middle; -webkit-appearance: button; cursor: pointer; font-weight: 700; display: inline-block; line-height: normal; margin: 0; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_submitButton:hover{ color: #ffffff; border-color: #3a3a3a; background-color: #3a3a3a; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_field_wrapper { padding: 0px 20px; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_closeBtn { position: absolute; right: 10px; top: 7px; width: 35px; height: 35px; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterbox_note { margin: 0 auto 10px; text-align: center; font-size: 14px; font-style: italic; display: block; border: 0; line-height: normal; } @media only screen and (min-width: 600px){ html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_copy .letterBox_header { font-size: 28px; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_copy .letterBox_description { font-size: 21px; } } @media only screen and (min-width: 1000px){ html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container input[type="submit"].letterBox_submitButton{ padding: 25px; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container .letterBox_form_field { font-size: 20px; } } html div#aTVpVjliYG div#aTVpVjliYG_lightbox.letterBox_container textarea.mo-optin-form-custom-field.textarea-field { min-height: 80px; }div#aTVpVjliYG *, div#aTVpVjliYG *:before, div#aTVpVjliYG *:after {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}div#aTVpVjliYG_lightbox_container div#aTVpVjliYG_lightbox .mo-optin-field:focus {outline:0}div#aTVpVjliYG_lightbox_container div#aTVpVjliYG_lightbox .mo-optin-form-submit-button:focus {outline:0}div#aTVpVjliYG_lightbox_container div.mo-optin-powered-by{margin:5px auto 2px;text-align:center;}div#aTVpVjliYG_lightbox_container div.mo-optin-powered-by a {font-size:16px !important; text-decoration: none !important;box-shadow:none !important;border-bottom-width:0px !important;cursor:pointer !important;}div#aTVpVjliYG_lightbox_container .mo-acceptance-checkbox {background-color: #fff;line-height: 0;border: 1px solid #bbb;width: 16px;min-width: 16px;height: 16px;margin: 0 5px 0 0 !important;outline: 0;text-align: center;vertical-align: middle;clear: none;cursor: pointer;}div#aTVpVjliYG_lightbox_container .mo-acceptance-label {cursor:pointer}div#aTVpVjliYG_lightbox_container div#aTVpVjliYG_lightbox p {padding:0px !important;margin:0px !important}div#aTVpVjliYG .mo-optin-form-wrapper label {color:inherit;font-weight: normal;margin: 0;padding:0;}div#aTVpVjliYG div#aTVpVjliYG_lightbox_container div#aTVpVjliYG_lightbox input[type=submit] {-webkit-appearance: none;}div#aTVpVjliYG div#aTVpVjliYG_lightbox_container div#aTVpVjliYG_lightbox input {z-index: auto;}div#aTVpVjliYG.mo-cta-button-flag .mo-optin-form-note .mo-acceptance-label {display:none;}div#aTVpVjliYG .mailoptin-video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; } div#aTVpVjliYG .mailoptin-video-container iframe, div#aTVpVjliYG .mailoptin-video-container object, div#aTVpVjliYG .mailoptin-video-container embed, div#aTVpVjliYG .mailoptin-video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } #aTVpVjliYG.moModal a.mo-close-modal { position: absolute; top: -15px; right: -14px; display: block; width: 30px; height: 30px; text-indent: -9999px; background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAANjr9RwUqgAAACBjSFJNAABtmAAAc44AAPJxAACDbAAAg7sAANTIAAAx7AAAGbyeiMU/AAAG7ElEQVR42mJkwA8YoZjBwcGB6fPnz4w/fvxg/PnzJ2N6ejoLFxcX47Rp036B5Dk4OP7z8vL+P3DgwD+o3v9QjBUABBALHguZoJhZXV2dVUNDgxNIcwEtZnn27Nl/ZmZmQRYWFmag5c90dHQY5OXl/z98+PDn1atXv79+/foPUN9fIP4HxRgOAAggRhyWMoOwqKgoq6GhIZe3t7eYrq6uHBDb8/Pz27Gysloga/jz588FYGicPn/+/OapU6deOnXq1GdgqPwCOuA31AF/0S0HCCB0xAQNBU4FBQWB0NBQublz59oADV37Hw28ePHi74MHD/6ii3/8+HEFMGQUgQ6WEhQU5AeZBTWTCdkigABC9ylIAZeMjIxQTEyMysaNG/3+/v37AGTgr1+//s2cOfOXm5vbN6Caz8jY1NT0a29v76/v37//g6q9sHfv3khjY2M5YAgJgsyEmg0PYYAAQreUk4+PT8jd3V1l1apVgUAzfoIM2rlz5x9gHH5BtxAdA9PB1zNnzvyB+R6oLxoopgC1nBPZcoAAgiFQnLIDMb+enp5iV1eXBzDeHoI0z58//xcwIX0mZCkMg9S2trb+hFk+ffr0QCkpKVmQ2VA7QHYxAgQQzLesQMwjIiIilZWVZfPu3bstMJ+SYikyBmUzkBnA9HEMyNcCYgmQHVC7mAACCJagOEBBbGdnp7lgwYJEkIavX7/+BcY1SvAaGRl9tba2xohjMTGxL8nJyT+AWQsuxsbG9vnp06e/QWYdPHiwHmiWKlBcCGQXyNcAAQSzmBuoSQqYim3u37+/EKR48uTJv5ANB+bVr7Dga2xs/AkTV1JS+gq0AJyoQIkPWU9aWtoPkPibN2/2A/l6QCwJ9TULQADB4hcY//xKXl5eHt++fbsAUmxhYYHiM1DiAsr9R7ZcVVUVbikIdHd3/0TWIyws/AWYVsByAgICdkAxRSAWAGI2gACClV7C4uLiOv7+/lEgRZ8+ffqLLd6ABck3ZMuB6uCWrlu37je29HDx4kVwQisvL88FFqkaQDERUHADBBAomBl5eHiYgQmLE1hSgQQZgIUD1lJm69atf4HR8R1YKoH5QIPAWWP9+vV/gOI/gHkeQw+wGAXTwAJJ5t+/f/BUDRBA4NIEKMDMyMjICtQIiniG379/4yza7t69+//Lly8oDrty5co/bJaCAEwcZCkwwTJDLWYCCCCwxcDgY3z16hXDnTt3voP4EhISWA0BFgZMwNqHExh3jMiG1tbWsgHjnA2bHmAeBtdWwOL1MycnJ7wAAQggBmi+kgIW/OaKiorJwOLuFShO0LMSMPF9AUYBSpz6+vqixHlOTs4P9MIEWHaDsxSwYMoE2mEGFJcG5SKAAGJCqjv/AbPUn8ePH98ACQQHB6NUmZqamkzABIgSp5s3bwbHORCA1QDLAWZkPc7OzszA8oHl5cuXVy5duvQBGIXwWgoggGA+FgO6xkBNTS28r69vDrT2+Y1cIMDyJchX6KkXVEmAshd6KB06dAic94EO3AzkBwGxPhCLg8ptgACCZyeQp9jZ2b2AmsuAefM8tnxJCk5ISPgOLTKfAdNEOVDMA2QHLDsBBBC8AAFlbmCLwlZISCg5JSVlJizeQAaQaimoWAUFK0g/sGGwHiiWCMS2yAUIQAAxI7c4gEmeFZi4OJ48ecLMzc39CRiEmgEBASxA/QzA8vYvAxEgNjaWZc2aNezAsprp2LFjp4FpZRdQ+AkQvwLij0AMSoC/AQIIXklAC3AVUBoBxmE8sPXQAiyvN8J8fuPGjR/h4eHf0eMdhkENhOPHj8OT+NGjR88BxZuBOA5kJtRseCUBEECMSI0AdmgBDooDaaDl8sASTSkyMlKzpqZGU1paGlS7MABLrX83b978A6zwwakTmE0YgIkSnHpBfGCV+gxYh98qKSk5CeTeAxVeQPwUiN8AMSjxgdLNX4AAYkRqCLBAXcMHtVwSaLkMMMHJAvOq9IQJE9R8fHxElJWV1bEF8aNHj+7t27fvLTDlXwXGLyhoH0OD+DnU0k/QYAa1QP8BBBAjWsuSFWo5LzRYxKFYAljqiAHzqxCwIBEwMTERBdZeoOYMA7Bl+RFYEbwB5oS3IA9D4/IFEL+E4nfQ6IDFLTgvAwQQI5ZmLRtSsINSuyA0uwlBUyQPMPWD20/AKo8ByP4DTJTfgRgUjB+gFoEc8R6amGDB+wu5mQsQQIxYmrdMUJ+zQTM6NzQEeKGO4UJqOzFADQMZ/A1qCSzBfQXi71ALfyM17sEAIIAY8fQiWKAYFgIwzIbWTv4HjbdfUAf8RPLhH1icojfoAQKIEU8bG9kRyF0aRiz6YP0k5C4LsmUY9TtAADEyEA+IVfufGEUAAQYABejinPr4dLEAAAAASUVORK5CYII=") no-repeat 0 0; background-size: 30px 30px; } @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { #aTVpVjliYG.moModal a.mo-close-modal { background-image: url(https://cdn.shortpixel.ai/spai/w_1920+q_lossless+ret_img/https://cryptopotato.com/wp-content/plugins/mailoptin/src/core/src/assets/images/close@2x.png); } } #aTVpVjliYG.moModal .mo-optin-form-container { max-width: 700px; } #aTVpVjliYG.moModal .mo-optin-form-container p { margin: 0; } #aTVpVjliYG div#aTVpVjliYG_lightbox_container div.mailoptin-powered-by { bottom: -28px; box-sizing: border-box; color: #fff; font-size: 15px; font-weight: 700; letter-spacing: 0; line-height: 15px; margin: 0; position: absolute; text-align: center; width: 100%; font-family: helvetica,arial,sans-serif; } #aTVpVjliYG div#aTVpVjliYG_lightbox_container div.mailoptin-powered-by a { background-color: transparent; box-sizing: border-box; color: #fff; font-weight: 700; outline: 0; text-decoration: underline !important; }div#aTVpVjliYG_lightbox #mo-optin-form-name-field {display: none !important;}#aTVpVjliYG .mo-optin-form-container .mo-optin-spinner { border-radius: inherit; position: absolute; width: 100%; height: 100%; background: #fff url(https://cdn.shortpixel.ai/spai/w_1920+q_lossless+ret_img/https://cryptopotato.com/wp-content/plugins/mailoptin/src/core/src/assets/images/spinner.gif) 50% 50% no-repeat; left: 0; top: 0; opacity: 0.99; filter: alpha(opacity=80); } #aTVpVjliYG .mo-optin-form-container .mo-optin-success-close { font-size: 32px !important; font-family: "HelveticaNeue - Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; color: #282828 !important; font-weight: 300 !important; position: absolute !important; top: 0 !important; right: 10px !important; background: none !important; text-decoration: none !important; width: auto !important; height: auto !important; display: block !important; line-height: 32px !important; padding: 0 !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; } #aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-success-msg { font-size: 21px; font-family: "HelveticaNeue - Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color: #282828 !important; font-weight: 300; text-align: center; margin: 0 auto; width: 100%; position: absolute !important; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } #aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-success-msg a { color: #0000EE; text-decoration: underline; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field:not(select), html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field, html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field, html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field { margin-top: 6px; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field, html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field, html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field { text-align: left; padding: 6px; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field label, html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field label { display: block; text-align: left; margin-top: 6px; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field label input, html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field label input { margin-right: 5px; vertical-align: middle; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field select { width: 100%; } html div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-fields-wrapper .list_subscription-field:not(select), html div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-fields-wrapper .mo-optin-form-custom-field.checkbox-field, html div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-fields-wrapper .mo-optin-form-custom-field.radio-field { padding: 0 !important; border: 0 !important; background: transparent !important; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field label { display: block !important; margin: 5px 0 !important; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field label:last-child { margin: 0; } html div#aTVpVjliYG .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field input[type=checkbox] { cursor: pointer; } div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-headline, div#aTVpVjliYG div.mo-optin-form-container h2, div#aTVpVjliYG div.mo-optin-form-container h1 { font-size: 26px !important; }div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-description, div#aTVpVjliYG div.mo-optin-form-container div#aTVpVjliYG_lightbox p { font-size: 21px !important; }div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-note { font-size: 14px !important; }@media screen and (max-width: 768px) { div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-headline, div#aTVpVjliYG div.mo-optin-form-container div#aTVpVjliYG_lightbox h2, div#aTVpVjliYG div.mo-optin-form-container div#aTVpVjliYG_lightbox h1 { font-size: 24px !important; } div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-description, div#aTVpVjliYG div.mo-optin-form-container div#aTVpVjliYG_lightbox p { font-size: 16px !important; } div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-note { font-size: 14px !important; } }@media screen and (max-width: 480px) { div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-headline, div#aTVpVjliYG div.mo-optin-form-container div#aTVpVjliYG_lightbox h2, div#aTVpVjliYG div.mo-optin-form-container div#aTVpVjliYG_lightbox h1 { font-size: 20px !important; } div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-description, div#aTVpVjliYG div.mo-optin-form-container div#aTVpVjliYG_lightbox p { font-size: 14px !important; } div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-note, div#aTVpVjliYG div#aTVpVjliYG_lightbox .mo-optin-form-note * { font-size: 12px !important; } } #aTVpVjliYG #aTVpVjliYG_lightbox .mo-optin-field.mo-optin-form-name-field::-webkit-input-placeholder { color: #444444 !important; } #aTVpVjliYG #aTVpVjliYG_lightbox .mo-optin-field.mo-optin-form-name-field:-ms-input-placeholder { color: #444444 !important; } #aTVpVjliYG #aTVpVjliYG_lightbox .mo-optin-field.mo-optin-form-name-field::placeholder { color: #444444 !important; } #aTVpVjliYG #aTVpVjliYG_lightbox .mo-optin-field.mo-optin-form-email-field::-webkit-input-placeholder { color: #444444 !important; } #aTVpVjliYG #aTVpVjliYG_lightbox .mo-optin-field.mo-optin-form-email-field:-ms-input-placeholder { color: #444444 !important; } #aTVpVjliYG #aTVpVjliYG_lightbox .mo-optin-field.mo-optin-form-email-field::placeholder { color: #444444 !important; } div#aTVpVjliYG .mo-mailchimp-interest-container { margin: 0 10px 2px; } div#aTVpVjliYG .mo-mailchimp-interest-label { font-size: 16px; margin: 5px 0 2px; } div#aTVpVjliYG input.mo-mailchimp-interest-choice { line-height: normal; border: 0; margin: 0 5px; } div#aTVpVjliYG span.mo-mailchimp-choice-label { vertical-align: middle; font-size: 14px; } div#aTVpVjliYG .mo-mailchimp-interest-choice-container { margin: 5px 0; }</style><div id="aTVpVjliYG_lightbox" class="mo-optin-form-wrapper mo-has-email letterBox_container" style="position: relative;margin-right: auto;margin-left: auto;background: #fed319;border-color: #0e67e0;line-height: normal;"><form method="post" class='mo-optin-form' id='aTVpVjliYG_lightbox_form' style='margin:0;'><a href='#' rel="moOptin:close" title="Close optin form" class="mo-optin-form-close-icon " style=''><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2IiB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZGF0YS11PSJodHRwcyUzQSUyRiUyRmNyeXB0b3BvdGF0by5jb20lMkZ3cC1jb250ZW50JTJGcGx1Z2lucyUyRm1haWxvcHRpbiUyRnNyYyUyRmxpYnNvZGl1bSUyRnNyYyUyRlByZW1pdW1UZW1wbGF0ZXMlMkZhc3NldHMlMkZvcHRpbiUyRmNsb3NlLnBuZyIgZGF0YS13PSIyNTYiIGRhdGEtaD0iMjU2IiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" class="letterBox_closeBtn"></a><div class="letterBox_inner"><div class="letterBox_copy"><div class="mo-optin-form-headline letterBox_header" style="color: #000000;">One Weekly Email Can Change Your Crypto Life.</div><div class="mo-optin-form-description letterBox_description" style="color: #636363;"><p>Sign-up FREE to receive our extended weekly market update and coin analysis report</p></div></div></div><div class="letterBox_form"><div class="mo-optin-fields-wrapper" style=""><div class="letterBox_field_wrapper"><input id="aTVpVjliYG_lightbox_name_field" class="mo-optin-field mo-optin-form-name-field letterBox_form_field" style='color: #444444;background-color: #ffffff;height: auto;display: none;' type="text" placeholder="Enter your name here..." name="mo-name" autocomplete="on" value=""> <input id="aTVpVjliYG_lightbox_email_field" class="mo-optin-field mo-optin-form-email-field letterBox_form_field" style="color: #444444;background-color: #ffffff;height: auto;" type="email" placeholder="Enter your email here" name="mo-email" autocomplete="on" value=""> <div class="mo-optin-form-note letterbox_note" style="color: #000000;"><span class="mo-note-content"><span>We never send SPAM. You can unsubscribe at any moment</span></span></div></div><div class="mo-optin-error " style=''>Invalid email address</div><input id="aTVpVjliYG_lightbox_submit_button" class="mo-optin-form-submit-button letterBox_submitButton" style="background: #707070;color: #ffffff;height: auto;text-shadow: none;" type="submit" value="SIGN ME UP"> </div><input id="aTVpVjliYG_lightbox_cta_button" class="mo-optin-form-cta-button letterBox_submitButton" style="background: #8000e2;color: #ffffff;height: auto;text-shadow: none;display: none;" type="submit" value="Take Action Now!"> </div><input id='aTVpVjliYG_lightbox_honeypot_email_field' type='text' name='mo-hp-email' value='' style='display:none'/><input id="aTVpVjliYG_lightbox_honeypot_website_field" type="text" name="mo-hp-website" value="" style="display:none"/></form><div class='mo-optin-spinner' style='display:none'></div><div class="mo-optin-success-msg" style="display:none">Thanks for subscribing!</div></div></div></div><!-- / MailOptin WordPress plugin. -->
+<input id="aTVpVjliYG_lightbox_honeypot_timestamp" type="hidden" name="mo-timestamp" value="1632826612" style="display:none" /><script type="rocketlazyloadscript">"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="_preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPT%20Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link data-minify="1" rel='stylesheet' id='awd-style-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/aryo-widget-device/assets/css/style.css?ver=1631551441' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='wpos-slick-style-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/wp-responsive-recent-post-slider-pro/assets/css/slick.css?ver=1631551441' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='wprpsp-public-style-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/wp-responsive-recent-post-slider-pro/assets/css/wprpsp-public.css?ver=1631551441' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='widgets-style-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop-child/ico_includes/css/style-widgets.css?ver=1631551441' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='pojo-css-framework-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop/assets/bootstrap/css/bootstrap.min.css?ver=1631551441' type='text/css' media='all' /><link rel='stylesheet' id='photoswipe-css'  href='https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/photoswipe/photoswipe.min.css?ver=5.5.6' type='text/css' media='all' /><link rel='stylesheet' id='photoswipe-skin-css'  href='https://cryptopotato.com/wp-content/plugins/pojo-lightbox/assets/photoswipe/default-skin/default-skin.min.css?ver=5.5.6' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='pojo-base-style-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop/core/assets/css/style.min.css?ver=1631551441' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='pojo-style-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop-child/assets/css/style.css?ver=1631551441' type='text/css' media='all' /><link rel='stylesheet' id='parent-theme-css'  href='https://cryptopotato.com/wp-content/themes/scoop/assets/css/style.min.css?ver=5.5.6' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='font-awesome-internal-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/themes/scoop-child/assets/font-awesome/css/font-awesome.min.css?ver=1631551441' type='text/css' media='all' /><link data-minify="1" rel="stylesheet" type="text/css" href="https://cryptopotato.com/wp-content/cache/min/1/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css?ver=1631551441" /><link rel='stylesheet' id='ccpwp-styles-css'  href='https://cryptopotato.com/wp-content/plugins/cryptocurrency-price-ticker-widget-pro/assets/css/min/ccpwp-styles.min.css?ver=2.8' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='ccpwp-icons-css'  href='https://cryptopotato.com/wp-content/cache/min/1/wp-content/plugins/cryptocurrency-price-ticker-widget-pro/assets/css/ccpw-icons.css?ver=1631551441' type='text/css' media='all' /><link rel='stylesheet' id='ccpw-price-label-css'  href='https://cryptopotato.com/wp-content/plugins/cryptocurrency-price-ticker-widget-pro/assets/css/min/ccpw-price-label.min.css?ver=2.8' type='text/css' media='all' /></noscript></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

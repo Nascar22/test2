@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6ed30cb1fb","applicationID":"5015381","transactionName":"dA5WQ0YNVQoEFE0WV1AESxhGC1oODQ8REg==","queueTime":0,"applicationTime":462,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"6ed30cb1fb",applicationID:"5015381"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <title>Rich List | Tether</title>
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <link href="/assets/favicon-f2cd9bf947060dc6445d1d5c40a6f7d242a043d9b54e4afcdcb3d49817a9893e.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57245981-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <link rel='stylesheet'
+        id='redux-google-fonts-css'
+        href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&#038;subset=latin&#038;ver=1423677925'
+        type='text/css'
+        media='all'
+  />
+  <style type="text/css" title="dynamic-css" class="options-output">
+        body{font-family:Arial, Helvetica, sans-serif;line-height:22px;font-weight:400;font-style:normal;color:#3d3d3d;font-size:15px;}h1,
+        h1 a{font-family:Open Sans;line-height:52px;font-weight:600;font-style:normal;color:#3d3d3d;font-size:46px;}h2,h2 a{font-family:Open Sans;line-height:42px;font-weight:600;
+        font-style:normal;color:#3d3d3d;font-size:34px;}h3,h3 a{font-family:Open Sans;line-height:32px;font-weight:600;font-style:normal;color:#3d3d3d;font-size:28px;}h4,
+        h4 a{font-family:Open Sans;line-height:32px;font-weight:600;font-style:normal;color:#3d3d3d;font-size:24px;}h5,h5 a{font-family:Open Sans;line-height:24px;font-weight:600;
+        font-style:normal;color:#3d3d3d;font-size:18px;}h6,h6 a{font-family:Open Sans;line-height:20px;font-weight:600;font-style:normal;color:#3d3d3d;font-size:14px;}a{color:#0e74bb;}
+        a:hover{color:#545454;}.mybtn,input[type="submit"]{font-family:Open Sans;font-weight:400;font-style:normal;}#slide-top{font-family:Open Sans;line-height:22px;font-weight:300;
+        font-style:normal;color:#ffffff;font-size:14px;}#slide-top h1,#slide-top h2,#slide-top h3,#slide-top h4,#slide-top h5,#slide-top h6,#slide-top h1 a,#slide-top h2 a,
+        #slide-top h3 a,#slide-top h4 a,#slide-top h5 a,#slide-top h6 a{color:#ffffff;}#slide-top a{color:#ffffff;}#slide-top a:hover{color:#060606;}#topbar,
+        #topbar a{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;color:#ffffff;font-size:14px;}#topbar a:hover{color:#545454;}
+        #topbar .social li i{color:#ffffff;}.sf-menu a{font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-style:normal;color:#FFF;font-size:16px;}
+        .sf-menu li a:hover{color:#a2a2a2;}.sf-menu li.current-menu-item a,.sf-menu li.current-menu-ancestor > a{color:#a2a2a2;}.sf-menu li li a{font-family:Arial,
+        Helvetica, sans-serif;font-weight:400;font-style:normal;font-size:14px;}.sf-menu ul{background-color:#060606;}.sf-menu li li a,.sf-menu li li:hover > a,
+        .sf-menu li.current-menu-item li a{color:#ffffff;}.sf-menu li li a:hover{color:#a2a2a2;}.page-title{font-family:Open Sans;font-weight:600;font-style:normal;
+        color:#3d3d3d;font-size:34px;}.breadcrumbs{font-weight:normal;font-style:normal;color:#b8b8b8;font-size:11px;}#page-header a{color:#0e74bb;}#page-header
+        a:hover{color:#545454;}#footer{font-family:Open Sans;line-height:22px;font-weight:400;font-style:normal;color:#000000;font-size:14px;}#footer h1,#footer
+        h2,#footer h3,#footer h4,#footer h5,#footer h6,#footer h1 a,#footer h2 a,#footer h3 a,#footer h4 a,#footer h5 a,#footer h6 a,.twitter-info{color:#ffffff;}
+        #footer a{color:#000000;}#footer a:hover{color:#545454;}.widget-title{font-family:Open Sans;font-weight:400;font-style:normal;font-size:18px;}
+        .social li i{color:#b8b8b8;}#slide-top .social li i{color:#ffffff;}#footer .social li i{color:#b8b8b8;}.color,.link-underline,.filter_nav li a:hover,
+        .filter_nav li .active,.widget-email,.widget-email a,#footer .widget-email,#footer .widget-email a,.widget-phone,.pf-quote .quote-source,.pf-link-source,
+        .custom-tagcloud a:hover{color:#ce0027;}body{background-color:#ffffff;}.pad-top-none .sidebar{margin-top:60px;}#topbar{background-color:#060606;}
+        #topbar{padding-top:10px;padding-bottom:10px;}#header{background-color:#ffffff;}#header{padding-top:30px;padding-bottom:30px;}
+        .logo a{font-family:Arial,Helvetica,sans-serif;line-height:30px;font-weight:normal;font-style:normal;font-size:30px;}.logo a{color:#ffffff;}
+        .logo a:hover{color:#ffffff;}.logo .logo-retina{height:50px;width:176px;}.is-sticky #header .logo img{width:100px;}
+        .menu-wrapper{margin-top:0;}#page-header{background-color:#f4f4f4;}#page-header{padding-top:20px;padding-bottom:20px;}#footer{background-color:transparent;}
+        #footer{padding-top:60px;padding-bottom:20px;}.shopping-cart-dropdown{padding-top:10px;}
+  </style>
+
+  <style type="text/css">
+    #header { background-color: #50AF95; }
+
+    #page-header { border-bottom: 1px solid #e0e0e0; }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .logo .logo-standard { display: none; }
+      .logo .logo-retina { display: block; }
+    }
+    .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon:before {
+      color: #FEC10D;
+    }
+
+    article a, article a:visited {
+      color: #0E74BB;
+    }
+
+    article a:hover {
+      color: #b8b8b8;
+    }
+
+    .wpb_accordion_header a {
+      color: #060606 !important;
+    }
+    .wpb_accordion_header a:hover {
+      color: #b8b8b8 !important;
+    }
+
+    .mybtn-flat-white {
+      color: white;
+    }
+
+    h4.quote {
+      font-family: Open Sans;
+      line-height: 28px;
+      font-weight: 600;
+      font-style: normal;
+      color: #3d3d3d;
+      font-size: 18px;
+    }
+  </style>
+  <style type="text/css" data-type="vc_shortcodes-custom-css">
+    .vc_custom_1423178173484{
+      background-color: rgb(80,175,149);
+    }
+    .vc_custom_1423177963641{padding-top: 70px !important;text-align: center; min-height: 260px;}
+    a.menu-item-link{color: #ffffff;font-size: 13px;font-weight: bold;padding-right:20px;padding-left:20px;text-transform:uppercase;letter-spacing:0px; border-bottom-width: 0;}
+    a.menu-item-link:hover{color: #fff !important;  border-bottom-width: 100%;}
+    li.menu-item:hover > a.menu-item-link {border-bottom:2px solid #ffffff;}
+  </style>
+<script async src='/cdn-cgi/challenge-platform/h/b/scripts/invisible.js'></script></head>
+
+<body>
+  <section id="header-wrapper" class="clearfix">
+
+    <div id="header-v1" class="clearfix">
+      <div id="responsive-menu">
+      </div>
+      <div id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 logo">
+              <a href="https://tether.to" title="Tether">
+                <img src="https://tether.to/wp-content/uploads/2018/09/TetherLogo_white_diamond.png" alt="Tether">
+              </a>
+            </div>
+            <!-- .logo -->
+          </div>
+        </div>
+      </div>
+      <!-- #header -->
+    </div>
+    <!-- #header variation -->
+  </section>
+
+  <!-- #header-wrapper -->
+  <section id="content-main" class="pad-top-none pad-bottom-none">
+    <div class="fullwidth-row  vc_row-fluid vc_custom_1423178173484" >
+      <div class="vc_row wpb_row">
+        <div class="vc_col-sm-12 wpb_column vc_column_container">
+          <div class="wpb_wrapper">
+            <div class="wpb_text_column wpb_content_element  vc_custom_1423177963641">
+              <div class="wpb_wrapper">
+                  <h1><span style="color: #ffffff; font-weight: 100;">Rich List</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="entry-content">
+            <link href="/assets/richlist-0b3df88d32261188a47ebfd756508710135aae8fa6c10c9e3209da70cc2d06f2.css" media="screen" rel="stylesheet" />
+
+<div id="richlist">
+
+    <div style="text-align:center;margin-top:35px; margin-bottom: 30px;">
+        <h4>Top USD₮ Balances</h4>
+        <strong>Last Updated:</strong>Sep 28 09:03 AM UTC
+    </div>
+
+    <table style="width:100%;" class="history table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>Balance</th>
+          <th>Protocol</th>
+            <th>Remark</th>
+        </tr>
+      </thead>
+      <tbody>
+
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TMuA6YqfCeX8EhbfYEg5y7S4DqzSJireY9" target="_blank">TMuA6YqfCeX8EhbfYEg5y7S4DqzSJireY9</a></td>
+            <td class="balance">7,000,000,000</td>
+            <td>trc20</td>
+              <td>Binance Cold Wallet</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TAUN6FwrnwwmaEqYcckffC7wYmbaS6cBiX" target="_blank">TAUN6FwrnwwmaEqYcckffC7wYmbaS6cBiX</a></td>
+            <td class="balance">6,319,002,116</td>
+            <td>trc20</td>
+              <td>Binance</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TNaRAoLUyYEV2uF7GUrzSjRQTU8v5ZJ5VR" target="_blank">TNaRAoLUyYEV2uF7GUrzSjRQTU8v5ZJ5VR</a></td>
+            <td class="balance">2,606,385,464</td>
+            <td>trc20</td>
+              <td>Huobi</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xa929022c9107643515f5c777ce9a910f0d1e490c" target="_blank">0xa929022c9107643515f5c777ce9a910f0d1e490c</a></td>
+            <td class="balance">1,957,682,810</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TKHuVq1oKVruCGLvqVexFs6dawKv6fQgFs" target="_blank">TKHuVq1oKVruCGLvqVexFs6dawKv6fQgFs</a></td>
+            <td class="balance">1,923,958,337</td>
+            <td>trc20</td>
+              <td>Tether Treasury</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TT1DyeqXaaJkt6UhVYFWUXBXknaXnBudTK" target="_blank">TT1DyeqXaaJkt6UhVYFWUXBXknaXnBudTK</a></td>
+            <td class="balance">1,870,000,000</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TFsmkjujT9omG5TFrEXYbDocTdjeeHgcrQ" target="_blank">TFsmkjujT9omG5TFrEXYbDocTdjeeHgcrQ</a></td>
+            <td class="balance">1,440,000,007</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R" target="_blank">TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R</a></td>
+            <td class="balance">1,385,083,374</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503" target="_blank">0x47ac0fb4f2d84898e4d9e7b4dab3c24507a6d503</a></td>
+            <td class="balance">1,350,000,115</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TRYL7PKCG4b4xRCM554Q5J6o8f1UjUmfnY" target="_blank">TRYL7PKCG4b4xRCM554Q5J6o8f1UjUmfnY</a></td>
+            <td class="balance">1,121,000,001</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x0a98fb70939162725ae66e626fe4b52cff62c2e5" target="_blank">0x0a98fb70939162725ae66e626fe4b52cff62c2e5</a></td>
+            <td class="balance">1,059,562,475</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb" target="_blank">TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb</a></td>
+            <td class="balance">1,000,000,000</td>
+            <td>trc20</td>
+              <td>Binance Cold Wallet</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi" target="_blank">TV6MuMXfmLbBqPZvBHdwFsDnQeVfnmiuSi</a></td>
+            <td class="balance">996,941,407</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TUAVzJ916T7z6oqpdCCaTv6ipC2mmBMJev" target="_blank">TUAVzJ916T7z6oqpdCCaTv6ipC2mmBMJev</a></td>
+            <td class="balance">929,999,813</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7" target="_blank">0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7</a></td>
+            <td class="balance">682,618,777</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xf977814e90da44bfa03b6295a0616a897441acec" target="_blank">0xf977814e90da44bfa03b6295a0616a897441acec</a></td>
+            <td class="balance">620,000,000</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xeee28d484628d41a82d01e21d12e2e78d69920da" target="_blank">0xeee28d484628d41a82d01e21d12e2e78d69920da</a></td>
+            <td class="balance">532,273,813</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x5754284f345afc66a98fbb0a0afe71e0f007b949" target="_blank">0x5754284f345afc66a98fbb0a0afe71e0f007b949</a></td>
+            <td class="balance">451,932,992</td>
+            <td>erc20</td>
+              <td>Tether Treasury</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://www.omniexplorer.info/address/1NTMakcgVwQpMdGxRQnFKyb3G1FAJysSfz" target="_blank">1NTMakcgVwQpMdGxRQnFKyb3G1FAJysSfz</a></td>
+            <td class="balance">434,260,601</td>
+            <td>omni</td>
+              <td>Tether Treasury</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xa7a93fd0a276fc1c0197a5b5623ed117786eed06" target="_blank">0xa7a93fd0a276fc1c0197a5b5623ed117786eed06</a></td>
+            <td class="balance">426,575,501</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x89e51fa8ca5d66cd220baed62ed01e8951aa7c40" target="_blank">0x89e51fa8ca5d66cd220baed62ed01e8951aa7c40</a></td>
+            <td class="balance">396,222,896</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS" target="_blank">TYASr5UV6HEcXatwdFQfmLVUqQQQMUxHLS</a></td>
+            <td class="balance">379,882,880</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xe78388b4ce79068e89bf8aa7f218ef6b9ab0e9d0" target="_blank">0xe78388b4ce79068e89bf8aa7f218ef6b9ab0e9d0</a></td>
+            <td class="balance">366,613,655</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x5041ed759dd4afc3a72b8192c143f72f4724081a" target="_blank">0x5041ed759dd4afc3a72b8192c143f72f4724081a</a></td>
+            <td class="balance">336,941,019</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x28c6c06298d514db089934071355e5743bf21d60" target="_blank">0x28c6c06298d514db089934071355e5743bf21d60</a></td>
+            <td class="balance">303,264,921</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G" target="_blank">TNXoiAJ3dct8Fjg4M9fkLFh9S2v9TXc32G</a></td>
+            <td class="balance">278,224,489</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf" target="_blank">0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf</a></td>
+            <td class="balance">269,206,108</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xda816e2122a8a39b0926bfa84edd3d42477e9efd" target="_blank">0xda816e2122a8a39b0926bfa84edd3d42477e9efd</a></td>
+            <td class="balance">234,260,812</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TNDqjZtmKSqPd2X7b3qLhT4bJBHAQYwo1U" target="_blank">TNDqjZtmKSqPd2X7b3qLhT4bJBHAQYwo1U</a></td>
+            <td class="balance">200,000,000</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x48759f220ed983db51fa7a8c0d2aab8f3ce4166a" target="_blank">0x48759f220ed983db51fa7a8c0d2aab8f3ce4166a</a></td>
+            <td class="balance">197,974,824</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a" target="_blank">0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a</a></td>
+            <td class="balance">195,839,814</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xf5565f298d47c95de222d0e242a69d2711fe3e89" target="_blank">0xf5565f298d47c95de222d0e242a69d2711fe3e89</a></td>
+            <td class="balance">193,258,577</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xd51a44d3fae010294c616388b506acda1bfaae46" target="_blank">0xd51a44d3fae010294c616388b506acda1bfaae46</a></td>
+            <td class="balance">175,725,579</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9" target="_blank">0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9</a></td>
+            <td class="balance">168,356,079</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TKcEU8ekq2ZoFzLSGFYCUY6aocJBX9X31b" target="_blank">TKcEU8ekq2ZoFzLSGFYCUY6aocJBX9X31b</a></td>
+            <td class="balance">160,549,142</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x3ed3b47dd13ec9a98b44e6204a523e766b225811" target="_blank">0x3ed3b47dd13ec9a98b44e6204a523e766b225811</a></td>
+            <td class="balance">158,987,408</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x69166e49d2fd23e4cbea767d7191be423a7733a5" target="_blank">0x69166e49d2fd23e4cbea767d7191be423a7733a5</a></td>
+            <td class="balance">155,473,324</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x41318419cfa25396b47a94896ffa2c77c6434040" target="_blank">0x41318419cfa25396b47a94896ffa2c77c6434040</a></td>
+            <td class="balance">150,085,454</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TTMWTPp1vonsdYBuLey3x8k6PsAvZcdR1J" target="_blank">TTMWTPp1vonsdYBuLey3x8k6PsAvZcdR1J</a></td>
+            <td class="balance">150,000,000</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x66f820a414680b5bcda5eeca5dea238543f42054" target="_blank">0x66f820a414680b5bcda5eeca5dea238543f42054</a></td>
+            <td class="balance">149,500,001</td>
+            <td>erc20</td>
+              <td>Bittrex</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xfdb16996831753d5331ff813c29a93c76834a0ad" target="_blank">0xfdb16996831753d5331ff813c29a93c76834a0ad</a></td>
+            <td class="balance">134,568,698</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not" target="_blank">TNCmcTdyrYKMtmE1KU2itzeCX76jGm5Not</a></td>
+            <td class="balance">132,643,135</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xc564ee9f21ed8a2d8e7e76c085740d5e4c5fafbe" target="_blank">0xc564ee9f21ed8a2d8e7e76c085740d5e4c5fafbe</a></td>
+            <td class="balance">131,354,202</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x06da0fd433c1a5d7a4faa01111c044910a184553" target="_blank">0x06da0fd433c1a5d7a4faa01111c044910a184553</a></td>
+            <td class="balance">124,630,274</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0xf7b2f3cd946052f8b397f801299b80f053515af9" target="_blank">0xf7b2f3cd946052f8b397f801299b80f053515af9</a></td>
+            <td class="balance">116,000,000</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TTd9qHyjqiUkfTxe3gotbuTMpjU8LEbpkN" target="_blank">TTd9qHyjqiUkfTxe3gotbuTMpjU8LEbpkN</a></td>
+            <td class="balance">114,714,568</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TLe6mMSZy3vaiJzYj7tUaQR2Dua9jmURdf" target="_blank">TLe6mMSZy3vaiJzYj7tUaQR2Dua9jmURdf</a></td>
+            <td class="balance">111,600,190</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ" target="_blank">TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ</a></td>
+            <td class="balance">106,787,425</td>
+            <td>trc20</td>
+              <td>Bitfinex</td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://tronscan.org/#/address/TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd" target="_blank">TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd</a></td>
+            <td class="balance">106,769,550</td>
+            <td>trc20</td>
+              <td></td>
+          </tr>
+          <tr class="tr-border">
+            <td><a href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x8a446971dbb112f3be15bc38c14d44b94d9e94b9" target="_blank">0x8a446971dbb112f3be15bc38c14d44b94d9e94b9</a></td>
+            <td class="balance">105,216,876</td>
+            <td>erc20</td>
+              <td></td>
+          </tr>
+
+      </tbody>
+    </table>
+    <center><h5>Can you identify other exchange wallets? <a href="mailto:support@tether.to?Subject=Exchange%20Wallet%20Identification" target="_top">Let us know!</a></center></h5>
+</div>
+
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- #content -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class='col-md-4 col-sm-4 col-xs-12'><div id="text-4" class="widget widget_text">
+          <div class="textwidget"><a href="https://tether.to/">
+            <img src="https://tether.to/wp-content/uploads/2018/09/TetherLogo_diamond.png"></a>
+            <br>
+            <span style=" font-size: 12px;">© 2020 Tether. All rights reserved.</span></div>
+          </div>
+        </div>
+        <div class='col-md-4 col-sm-4 col-xs-12'>
+          <div id="text-3" class="widget widget_text">
+            <div class="textwidget">
+              <br>
+              <a href="https://tether.to/faqs">FAQs</a>  |
+              <a href="https://tether.to/press">Press</a>   |
+              <a href="https://tether.to/contact-us">Contact</a> |
+              <a href="https://tether.to/legal">Legal</a>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-4 col-sm-4 col-xs-12'>
+          <div id="text-5" class="widget widget_text">
+            <div class="textwidget">
+             <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+    if(window.analytics=window.analytics||[],window.analytics.included)window.console&&console.error&&console.error("analytics.js included twice");else{window.analytics.included=!0,window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(a){return function(){var n=Array.prototype.slice.call(arguments);return n.unshift(a),window.analytics.push(n),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(a){var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+a+"/analytics.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(n,t)},window.analytics.SNIPPET_VERSION="2.0.9",
+      window.analytics.load("RkkdZdHlXDEbD0ooOUhecQoAE0Op8Cjf")}
+      window.analytics.page();
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'695c82f84da9c3ca',m:'GNoWuc.HqIfaIIVpCsW2l6eX5JWAU9XiWSeHiQP3rhw-1632827283-0-AduNNQn4+BWI5tiB0/qasROmf1P3W7yVY9ID8koVVYGGx9SUyg/828pi1QLSqDUOQ2HHw5sYQbs4+CjOz+r25prdnVwPVmnbIAkXg4oYB6u5dlEvXUlnQf3ck9PdQaxt4Q==',s:[0xccf69d8330,0x31081772b9],u:'/cdn-cgi/challenge-platform/h/b'}})();</script></body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Anti-Money Laundering (AML)	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/anti-money-laundering-aml/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/anti-money-laundering-aml</link>
+	<description></description>
+	<lastBuildDate>Mon, 25 May 2020 23:01:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: GodRACE		</title>
+		<link>https://atomicwallet.io/blog/academy/anti-money-laundering-aml#comment-235</link>
+
+		<dc:creator><![CDATA[GodRACE]]></dc:creator>
+		<pubDate>Mon, 25 May 2020 23:01:36 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=14138#comment-235</guid>
+
+					<description><![CDATA[ Great and insightful read.
+Atomic wallet is a good place to spend your day learning about cryptocurrency matters]]></description>
+			<content:encoded><![CDATA[<p> Great and insightful read.<br />
+Atomic wallet is a good place to spend your day learning about cryptocurrency matters</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

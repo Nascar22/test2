@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" lang="en-GB"><![endif]--><!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" lang="en-GB"><![endif]--><!--[if gt IE 9]><!----><html class="no-js no-svg" lang="en-GB"><!--<![endif]--><head>
+    <meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-09f7233bed18d62a831",applicationID:"139537559"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#F7AF00"> 
+	<link rel="icon" type="image/png" sizes="180x180" href="https://invezz.com/wp-content/themes/invezz-theme/static/icons/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://invezz.com/wp-content/themes/invezz-theme/static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://invezz.com/wp-content/themes/invezz-theme/static/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="https://invezz.com/wp-content/themes/invezz-theme/static/icons/favicon-32x32.png">
+
+    
+      <link rel="dns-prefetch" href="https://pro.fontawesome.com">
+    
+      <link rel="preload" href="/wp-content/themes/invezz-theme/static/fonts/source-serif-pro-latin-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/wp-content/themes/invezz-theme/static/fonts/source-serif-pro-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/wp-content/themes/invezz-theme/static/fonts/lato-latin-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/wp-content/themes/invezz-theme/static/fonts/lato-latin-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+  <link rel="preload" href="/wp-content/themes/invezz-theme/static/fonts/source-serif-pro-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">  
+  <link rel="preload" as="image" href="https://ik.imagekit.io/invezz/uploads/tr:f-webp,fo-auto,bl-0,w-810,h-400/2020/10/cardano-1.jpg" media="(min-width: 601px) and (max-width: 5000px)"><link rel="preload" as="image" href="https://ik.imagekit.io/invezz/uploads/tr:f-webp,fo-auto,bl-0,w-600,h-260/2020/10/cardano-1.jpg" media="(min-width: 421px) and (max-width: 600px)"><link rel="preload" as="image" href="https://ik.imagekit.io/invezz/uploads/tr:f-webp,fo-auto,bl-0,w-420,h-182/2020/10/cardano-1.jpg" media="(min-width: 0px) and (max-width: 420px)"><title>Cardano (ADA) is about to get its first stablecoin — AgeUSD | Invezz</title>
+<meta name="robots" content="max-image-preview:large">
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v13.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="GravitX (GRX) coin price has shot up registering a 145% rise in the last 24 hours thus attracting the attention of most crypto investors">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cardano (ADA) is about to get its first stablecoin — AgeUSD | Invezz">
+<meta property="og:description" content="GravitX (GRX) coin price has shot up registering a 145% rise in the last 24 hours thus attracting the attention of most crypto investors">
+<meta property="og:url" content="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+<meta property="og:site_name" content="Invezz">
+<meta property="article:publisher" content="https://www.facebook.com/invezz/">
+<meta property="article:section" content="Cryptocurrency">
+<meta property="article:published_time" content="2021-01-28T12:36:37+00:00">
+<meta property="article:modified_time" content="2021-01-28T12:36:45+00:00">
+<meta property="og:updated_time" content="2021-01-28T12:36:45+00:00">
+<meta property="og:image" content="https://invezz.com/wp-content/uploads/2020/10/cardano-1.jpg">
+<meta property="og:image:secure_url" content="https://invezz.com/wp-content/uploads/2020/10/cardano-1.jpg">
+<meta property="og:image:width" content="848">
+<meta property="og:image:height" content="565">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="GravitX (GRX) coin price has shot up registering a 145% rise in the last 24 hours thus attracting the attention of most crypto investors">
+<meta name="twitter:title" content="Cardano (ADA) is about to get its first stablecoin — AgeUSD | Invezz">
+<meta name="twitter:site" content="@invezzportal">
+<meta name="twitter:image" content="https://invezz.com/wp-content/uploads/2020/10/cardano-1.jpg">
+<meta name="twitter:creator" content="@alir1272">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://invezz.com/#organization","name":"Invezz","url":"https://invezz.com/","sameAs":["https://www.facebook.com/invezz/","https://www.linkedin.com/company/invezz","https://twitter.com/invezzportal"],"logo":{"@type":"ImageObject","@id":"https://invezz.com/#logo","inLanguage":"en-GB","url":"https://invezz.com/wp-content/uploads/2021/05/invezz-logo.png","width":1180,"height":316,"caption":"Invezz"},"image":{"@id":"https://invezz.com/#logo"}},{"@type":"WebSite","@id":"https://invezz.com/#website","url":"https://invezz.com/","name":"Invezz","inLanguage":"en-GB","publisher":{"@id":"https://invezz.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://invezz.com/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"ImageObject","@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#primaryimage","inLanguage":"en-GB","url":"https://invezz.com/wp-content/uploads/2020/10/cardano-1.jpg","width":848,"height":565,"caption":"Charles Hoskinson suggests hosting next elections on Cardano blockchain"},{"@type":"WebPage","@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#webpage","url":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/","name":"Cardano (ADA) is about to get its first stablecoin \u2014 AgeUSD | Invezz","isPartOf":{"@id":"https://invezz.com/#website"},"inLanguage":"en-GB","primaryImageOfPage":{"@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#primaryimage"},"datePublished":"2021-01-28T12:36:37+00:00","dateModified":"2021-01-28T12:36:45+00:00","description":"GravitX (GRX) coin price has shot up registering a 145% rise in the last 24 hours thus attracting the attention of most crypto investors","breadcrumb":{"@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#breadcrumb"},"potentialAction":[{"@type":"ReadAction","target":["https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/"]}]},{"@type":"BreadcrumbList","@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://invezz.com/","url":"https://invezz.com/","name":"<i class=\"fa fa-home\"></i>"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"/news/","url":"/news/","name":"News"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://invezz.com/news/cryptocurrency/","url":"https://invezz.com/news/cryptocurrency/","name":"Cryptocurrency"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/","url":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/","name":"Cardano (ADA) is about to get its first stablecoin \u2014 AgeUSD"}}]},{"@type":"NewsArticle","@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#article","isPartOf":{"@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#webpage"},"author":{"@context":"https://schema.org","@type":"Person","name":"Ali Raza","description":["Ali plays a key role in the cryptocurrency news team. He loves travelling during his spare time and enjoys playing cricket, snooker, and pigeons."],"image":"https://secure.gravatar.com/avatar/81419dab75086e007394681d92f9785d?s=96&d=wp_user_avatar&r=g","jobTitle":"News Reporter","knowsAbout":"Cryptocurrency, blockchain, technology, cricket.","sameAs":["https://muckrack.com/ali-raza","https://twitter.com/alir1272"],"alumniOf":[{"@type":"EducationalOrganization","name":"Islamia University, 2009"},{"@type":"EducationalOrganization","name":"Islamia University, 2013"},{"@type":"EducationalOrganization","name":"Complete Stock Trading Course, 2020"}]},"headline":"Cardano (ADA) is about to get its first stablecoin \u2014 AgeUSD","datePublished":"2021-01-28T12:36:37+00:00","dateModified":"2021-01-28T12:36:45+00:00","commentCount":0,"mainEntityOfPage":{"@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#webpage"},"publisher":{"@id":"https://invezz.com/#organization"},"image":{"@id":"https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#primaryimage"},"articleSection":"Cardano,Cryptocurrency","inLanguage":"en-GB","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/#respond"]}],"copyrightYear":"2021","copyrightHolder":{"@id":"https://invezz.com/#organization"}}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="amphtml" href="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/?amp"><meta name="generator" content="AMP for WP 1.0.77.9"><link rel="alternate" type="application/rss+xml" title="Invezz &raquo; Feed" href="https://invezz.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Invezz &raquo; Comments Feed" href="https://invezz.com/comments/feed/">
+<link rel="stylesheet" id="promotions-css" href="https://invezz.com/wp-content/plugins/platform-offers/dist/css/promotions.css?id=33fde5215b3e07dad688&#038;ver=5.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="invezz-styles-css" href="https://invezz.com/wp-content/themes/invezz-theme/dist/invezz.css?ver=1626363329" type="text/css" media="all">
+
+<style>:root {
+			--lazy-loader-animation-duration: 300ms;
+		}
+		  
+		.lazyload {
+	display: block;
+}
+
+.lazyload,
+        .lazyloading {
+			opacity: 0;
+		}
+
+
+		.lazyloaded {
+			opacity: 1;
+			transition: opacity 300ms;
+			transition: opacity var(--lazy-loader-animation-duration);
+		}</style><noscript><style>.lazyload { display: none; } .lazyload[class*="lazy-loader-background-element-"] { display: block; opacity: 1; }</style></noscript><link rel="alternate" href="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/" hreflang="en">
+<link rel="alternate" href="https://invezz.com/es/noticias/2021/01/28/cardano-ada-esta-a-punto-de-obtener-su-primera-stablecoin-ageusd/" hreflang="es">
+<link rel="alternate" href="https://invezz.com/it/notizie/2021/01/28/cardano-ada-prima-stablecoin-ageusd/" hreflang="it">
+<link rel="alternate" href="https://invezz.com/fr/actualites/2021/01/28/cardano-ada-est-sur-point-dobtenir-son-premier-stablecoin-ageusd/" hreflang="fr">
+<link rel="alternate" href="https://invezz.com/sv/nyheter/2021/01/29/cardano-ada-far-sin-forsta-stablecoin-ageusd/" hreflang="sv">
+<link rel="alternate" href="https://invezz.com/nl/nieuws/2021/01/28/cardano-eerste-stablecoin-ageusd/" hreflang="nl">
+
+      <link rel="preload" href="/wp-content/plugins/investoo-offers/dist/offers.css?ver=3.0.26" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="/wp-content/plugins/investoo-offers/dist/offers.css?ver=3.0.26"></noscript> 
+    <link rel="icon" href="https://invezz.com/wp-content/uploads/2020/04/favicon-128x128-1.png" sizes="32x32">
+<link rel="icon" href="https://invezz.com/wp-content/uploads/2020/04/favicon-128x128-1.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://invezz.com/wp-content/uploads/2020/04/favicon-128x128-1.png">
+<meta name="msapplication-TileImage" content="https://invezz.com/wp-content/uploads/2020/04/favicon-128x128-1.png">
+
+	</head>
+
+	<body class="post-template-default single single-post postid-355265 single-format-standard wp-custom-logo bg-grey-100">
+		
+<div class="inv-sticky-when-scrolling-up inv-onscroll-sticky-top-0 z-50">
+	<header class="inv-topbar bg-white">
+		<div class="container">
+			<div class="flex items-center h-topbar">
+
+				<a href="https://invezz.com/">
+					<img src="https://invezz.com/wp-content/themes/invezz-theme/static/logo-dark.svg" alt="Invezz" width="106" height="28" class="h-logo w-logo lazyload-ignore">
+				</a>
+
+				<nav role="navigation" class="inv-navigation flex-1">
+					<div class="flex items-center justify-end">
+													<div x-data="{ mobileIsActive: false, mobileLanguageSelectActive: false }" x-on:mobile-menu-toggle.window="mobileIsActive = !mobileIsActive" class="inv-topbar__topLevelLinks" :class="{ 'inv-topbar__topLevelLinks--active': mobileIsActive }">
+								<div class="inv-topbar__topLevelLinkItems flex font-source text-md text-grey-500 leading-100 lowercase">
+									<a href="https://invezz.com/" class="p-4 mb-2 hidden lg:hidden" :class="{ 'hidden': !mobileIsActive }">
+										<img src="https://invezz.com/wp-content/themes/invezz-theme/static/logo-dark.svg" alt="Invezz" width="106" height="28" class="h-logo w-logo lazyload-ignore">
+									</a>
+
+																																																			<div x-data="XNavDropdownIcons()" x-on:resize.window="init" x-on:click.away="active = false" x-init="init" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-341254 menu-item-has-children relative px-3 py-1 lg:py-0">
+												<a href="https://invezz.com/invest/" target class="flex text-grey-500 lg:hover:text-grey-900" x-on:click.prevent="active = !active">
+													Invest
+
+																											<span class="inline-block inv-transition text-sm transform ml-auto lg:ml-2" x-bind:class="{ 'rotate-180': active }">
+															<i class="fa fa-angle-down"></i>
+														</span>
+																									</a>
+																									<div x-ref="dropdown" class="
+																																																																																																																																																																																																																																														inv-navigation__dropdown hidden lg:block lg:invisible
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												inv-navigation__dropdown--icons
+																																																																																																																																																																																																																																														 inv-navigation__dropdown--hasTwoColumns
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										" x-bind:class="{'hidden lg:invisible': !active}">
+																													<div class="inv-navigation__dropdownColumns flex flex-wrap -mx-5 lg:-mb-5">
+			<div class="inv-navigation__dropdownColumn w-full px-5 mt-4 lg:mb-5 lg:w-1/2">
+			<a href="https://invezz.com/stocks/" class="group flex items-center text-grey-500 lg:font-lato lg:font-700 lg:text-grey-900 lg:whitespace-no-wrap">
+									<div class="hidden w-nav-submenu-icon mr-3 lg:block">
+						<i class="fas fa-chart-pie text-grey-300 group-hover:text-blue-900"></i>
+					</div>
+				
+				<span class="text-xs lg:text-base group-hover:inv-text-link-underline">Invest in Stocks &#038; shares</span>
+				<i class="fa fa-angle-right text-xs ml-2 lg:hidden group-hover:text-blue-900"></i>
+			</a>
+
+										<div class="inv-navigation__dropdownDescription mt-2 hidden lg:block">
+					<p>Build a portfolio of shares &#038; grow your capital over time.</p>
+
+				</div>
+					</div>
+			<div class="inv-navigation__dropdownColumn w-full px-5 mt-4 lg:mb-5 lg:w-1/2">
+			<a href="https://invezz.com/cryptocurrency/" class="group flex items-center text-grey-500 lg:font-lato lg:font-700 lg:text-grey-900 lg:whitespace-no-wrap">
+									<div class="hidden w-nav-submenu-icon mr-3 lg:block">
+						<i class="fab fa-bitcoin text-grey-300 group-hover:text-blue-900"></i>
+					</div>
+				
+				<span class="text-xs lg:text-base group-hover:inv-text-link-underline">Invest in Cryptocurrency</span>
+				<i class="fa fa-angle-right text-xs ml-2 lg:hidden group-hover:text-blue-900"></i>
+			</a>
+
+										<div class="inv-navigation__dropdownDescription mt-2 hidden lg:block">
+					<p>Decode digital currency &#038; buy your first Bitcoin.</p>
+
+				</div>
+					</div>
+			<div class="inv-navigation__dropdownColumn w-full px-5 mt-4 lg:mb-5 lg:w-1/2">
+			<a href="https://invezz.com/commodities/" class="group flex items-center text-grey-500 lg:font-lato lg:font-700 lg:text-grey-900 lg:whitespace-no-wrap">
+									<div class="hidden w-nav-submenu-icon mr-3 lg:block">
+						<i class="fas fa-tint text-grey-300 group-hover:text-blue-900"></i>
+					</div>
+				
+				<span class="text-xs lg:text-base group-hover:inv-text-link-underline">Invest in Commodities</span>
+				<i class="fa fa-angle-right text-xs ml-2 lg:hidden group-hover:text-blue-900"></i>
+			</a>
+
+										<div class="inv-navigation__dropdownDescription mt-2 hidden lg:block">
+					<p>Materials are a go-to investment class. Find out why.</p>
+
+				</div>
+					</div>
+			<div class="inv-navigation__dropdownColumn w-full px-5 mt-4 lg:mb-5 lg:w-1/2">
+			<a href="https://invezz.com/index/" class="group flex items-center text-grey-500 lg:font-lato lg:font-700 lg:text-grey-900 lg:whitespace-no-wrap">
+									<div class="hidden w-nav-submenu-icon mr-3 lg:block">
+						<i class="fas fa-layer-group text-grey-300 group-hover:text-blue-900"></i>
+					</div>
+				
+				<span class="text-xs lg:text-base group-hover:inv-text-link-underline">Invest in Indices</span>
+				<i class="fa fa-angle-right text-xs ml-2 lg:hidden group-hover:text-blue-900"></i>
+			</a>
+
+										<div class="inv-navigation__dropdownDescription mt-2 hidden lg:block">
+					<p>Capitalise on broad markets by investing in stock indices.</p>
+
+				</div>
+					</div>
+			<div class="inv-navigation__dropdownColumn w-full px-5 mt-4 lg:mb-5 lg:w-1/2">
+			<a href="https://invezz.com/forex/" class="group flex items-center text-grey-500 lg:font-lato lg:font-700 lg:text-grey-900 lg:whitespace-no-wrap">
+									<div class="hidden w-nav-submenu-icon mr-3 lg:block">
+						<i class="fas fa-money-bill-wave text-grey-300 group-hover:text-blue-900"></i>
+					</div>
+				
+				<span class="text-xs lg:text-base group-hover:inv-text-link-underline">Invest in Forex</span>
+				<i class="fa fa-angle-right text-xs ml-2 lg:hidden group-hover:text-blue-900"></i>
+			</a>
+
+										<div class="inv-navigation__dropdownDescription mt-2 hidden lg:block">
+					<p>Forex is the world’s largest financial market, learn more.</p>
+
+				</div>
+					</div>
+	</div>
+																											</div>
+																							</div>
+																																																													<div class=" menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-341251 menu-item-has-children relative px-3 py-1 lg:py-0">
+												<a href="https://invezz.com/news/" target class="flex text-grey-500 lg:hover:text-grey-900">
+													News
+
+																									</a>
+																							</div>
+																																																													<div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-345817 relative px-3 py-1 lg:py-0">
+												<a href="https://invezz.com/news/analysis/" target class="flex text-grey-500 lg:hover:text-grey-900">
+													Analysis
+
+																									</a>
+																							</div>
+																																																													<div class=" menu-item menu-item-type-post_type_archive menu-item-object-inv-course menu-item-341261 menu-item-has-children relative px-3 py-1 lg:py-0">
+												<a href="https://invezz.com/courses/" target class="flex text-grey-500 lg:hover:text-grey-900">
+													Education
+
+																									</a>
+																							</div>
+																																																													<div class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-350589 menu-item-has-children relative px-3 py-1 lg:py-0">
+												<a href="https://invezz.com/markets/" target class="flex text-grey-500 lg:hover:text-grey-900">
+													Markets
+
+																									</a>
+																							</div>
+																																																													<div class=" menu-item menu-item-type-post_type_archive menu-item-object-invzz-broker-review menu-item-341527 menu-item-has-children relative px-3 py-1 lg:py-0">
+												<a href="https://invezz.com/reviews/" target class="flex text-grey-500 lg:hover:text-grey-900">
+													Reviews
+
+																									</a>
+																							</div>
+																																																		<div x-data="{ active: false }" x-on:click.away="active = false" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-341267 menu-item-has-children relative px-3 py-1 lg:hidden">
+												<a href="#" class="flex text-grey-500" x-on:click.prevent="active = !active">
+													More
+
+													<span class="inline-block inv-transition text-sm transform ml-auto" x-bind:class="{ 'rotate-180': active }">
+														<i class="fa fa-angle-down"></i>
+													</span>
+												</a>
+												<div x-show="active" style="display: none;">
+																											<div class="mt-3 lg:mt-0">
+															<a href="https://invezz.com/about/" class="group flex items-center hover:inv-text-link-underline">
+																<span class="text-sm">About</span>
+																<i class="fa fa-angle-right text-xs ml-2"></i>
+															</a>
+														</div>
+																											<div class="mt-3 lg:mt-0">
+															<a href="https://invezz.com/feeds/" class="group flex items-center hover:inv-text-link-underline">
+																<span class="text-sm">RSS Feeds</span>
+																<i class="fa fa-angle-right text-xs ml-2"></i>
+															</a>
+														</div>
+																											<div class="mt-3 lg:mt-0">
+															<a href="https://invezz.com/search/" class="group flex items-center hover:inv-text-link-underline">
+																<span class="text-sm">Search</span>
+																<i class="fa fa-angle-right text-xs ml-2"></i>
+															</a>
+														</div>
+																											<div class="mt-3 lg:mt-0">
+															<a href="https://invezz.com/tools/" class="group flex items-center hover:inv-text-link-underline">
+																<span class="text-sm">Tools</span>
+																<i class="fa fa-angle-right text-xs ml-2"></i>
+															</a>
+														</div>
+																									</div>
+											</div>
+
+																														
+									<div class="flex-grow lg:hidden"></div>
+
+									<div class="relative normal-case px-3 mt-5 hidden lg:hidden" :class="{ 'hidden': !mobileIsActive }">
+										<div class="flex justify-end">
+											<div class="flex items-center font-500 text-base mb-2" x-on:click="mobileLanguageSelectActive = !mobileLanguageSelectActive">
+												<span class="flex-1 text-grey-700">
+													<i class="fa fa-globe-africa text-sm mr-1"></i>
+													English
+												</span>
+												<span class="inv-transition transform ml-2">
+													<i class="fa fa-angle-down text-sm"></i>
+												</span>
+											</div>
+										</div>
+
+										<div x-show="mobileLanguageSelectActive" class="absolute bottom-7 left-4 right-4 bg-white shadow z-20 text-xs p-3" style="display: none;">
+											<div style="position: absolute; bottom: -10px; right: 20px; width: 0;height: 0;border-style: solid;border-width: 20px 15px 0 15px;border-color: #ffffff transparent transparent transparent;"></div>
+											<ul class="col-count-2">
+																									<li class="mb-3">
+																													<span class="font-700">
+																															English
+																																</span>
+																											</li>
+																									<li class="mb-3">
+																														<a class=" hover:inv-text-link-underline" href="https://invezz.com/es/noticias/2021/01/28/cardano-ada-esta-a-punto-de-obtener-su-primera-stablecoin-ageusd/">
+																																Español
+																															</a>
+																											</li>
+																									<li class="mb-3">
+																														<a class=" hover:inv-text-link-underline" href="https://invezz.com/it/notizie/2021/01/28/cardano-ada-prima-stablecoin-ageusd/">
+																																Italiano
+																															</a>
+																											</li>
+																									<li class="mb-3">
+																														<a class=" hover:inv-text-link-underline" href="https://invezz.com/de/">
+																																Deutsch
+																															</a>
+																											</li>
+																									<li class="mb-3">
+																														<a class=" hover:inv-text-link-underline" href="https://invezz.com/fr/actualites/2021/01/28/cardano-ada-est-sur-point-dobtenir-son-premier-stablecoin-ageusd/">
+																																Français
+																															</a>
+																											</li>
+																									<li class="mb-3">
+																														<a class=" hover:inv-text-link-underline" href="https://invezz.com/sv/nyheter/2021/01/29/cardano-ada-far-sin-forsta-stablecoin-ageusd/">
+																																Svenska
+																															</a>
+																											</li>
+																									<li class="mb-3">
+																														<a class=" hover:inv-text-link-underline" href="https://invezz.com/nl/nieuws/2021/01/28/cardano-eerste-stablecoin-ageusd/">
+																																Nederlands
+																															</a>
+																											</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+								<div class="inv-topbar__mobileOverlay" x-on:click="mobileIsActive = false"></div>
+							</div>
+						
+						<div class="flex items-center text-sm text-grey-500 leading-100 ml-4">
+															<div x-data="{ active: false }" x-on:click.away="active = false" class="relative whitespace-no-wrap hidden lg:block">
+									<button type="button" class="px-2 mt-2px" x-on:click="active = !active">
+										<noscript><img src="https://invezz.com/wp-content/themes/invezz-theme/static/menu-icon.svg" alt="more" width="18" height="16"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2016%22%3E%3C%2Fsvg%3E" alt="more" width="18" height="16" data-src="https://invezz.com/wp-content/themes/invezz-theme/static/menu-icon.svg" loading="lazy" class=" lazyload">
+									</button>
+									<div x-show="active" class="inv-navigation__dropdown inv-navigation__dropdown--more" style="display: none;">
+										<div class="text-xs">
+											<ul class="-mb-3">
+																									<li class="mb-3">
+														<a href="https://invezz.com/about/" class=" hover:inv-text-link-underline">
+															About
+														</a>
+													</li>
+																									<li class="mb-3">
+														<a href="https://invezz.com/feeds/" class=" hover:inv-text-link-underline">
+															RSS Feeds
+														</a>
+													</li>
+																									<li class="mb-3">
+														<a href="https://invezz.com/search/" class=" hover:inv-text-link-underline">
+															Search
+														</a>
+													</li>
+																									<li class="mb-3">
+														<a href="https://invezz.com/tools/" class=" hover:inv-text-link-underline">
+															Tools
+														</a>
+													</li>
+																							</ul>
+										</div>
+									</div>
+								</div>
+							
+							<div x-data="{ active: false }" class="hidden lg:block lg:relative" x-on:click.away="active = false">
+								<button class="px-2 lg:hover:text-grey-900" x-on:click="active = !active">
+									<i class="fa fa-globe-africa"></i>
+								</button>
+								<div x-show="active" class="inv-navigation__dropdown inv-navigation__dropdown--language" style="display: none;">
+	<div class="flex items-center text-base mb-4">
+		<i class="fa fa-language text-grey-300 mr-3"></i>
+		<span class="font-700 text-grey-900">
+			Choose your language:
+		</span>
+	</div>
+	<div class="text-xs">
+		<ul class="col-count-2">
+							<li class="mb-3">
+											<span class="font-700">
+													English
+														</span>
+									</li>
+							<li class="mb-3">
+												<a class=" hover:inv-text-link-underline" href="https://invezz.com/es/noticias/2021/01/28/cardano-ada-esta-a-punto-de-obtener-su-primera-stablecoin-ageusd/">
+														Español
+													</a>
+									</li>
+							<li class="mb-3">
+												<a class=" hover:inv-text-link-underline" href="https://invezz.com/it/notizie/2021/01/28/cardano-ada-prima-stablecoin-ageusd/">
+														Italiano
+													</a>
+									</li>
+							<li class="mb-3">
+												<a class=" hover:inv-text-link-underline" href="https://invezz.com/de/">
+														Deutsch
+													</a>
+									</li>
+							<li class="mb-3">
+												<a class=" hover:inv-text-link-underline" href="https://invezz.com/fr/actualites/2021/01/28/cardano-ada-est-sur-point-dobtenir-son-premier-stablecoin-ageusd/">
+														Français
+													</a>
+									</li>
+							<li class="mb-3">
+												<a class=" hover:inv-text-link-underline" href="https://invezz.com/sv/nyheter/2021/01/29/cardano-ada-far-sin-forsta-stablecoin-ageusd/">
+														Svenska
+													</a>
+									</li>
+							<li class="mb-3">
+												<a class=" hover:inv-text-link-underline" href="https://invezz.com/nl/nieuws/2021/01/28/cardano-eerste-stablecoin-ageusd/">
+														Nederlands
+													</a>
+									</li>
+					</ul>
+	</div>
+</div>
+							</div>
+							<div id="invezz-topbar-algolia-search" data-invezz-vue data-invezz-vue-component="invezz-algolia-search" class="overflow-hidden">
+  <invezz-algolia-search app-id="POUGSAHZ4X" search-api-key="c95a8a1d63de91e0732db9f7431d8360" language="en" search-url="https://invezz.com/search/" :translations="{&quot;inputPlaceholder&quot;:&quot;Type to search...&quot;,&quot;filterHeading&quot;:&quot;Filter results&quot;,&quot;resultsHeading&quot;:&quot;Displaying %d results loaded in %ss&quot;,&quot;beginner&quot;:&quot;Beginner&quot;,&quot;intermediate&quot;:&quot;Intermediate&quot;,&quot;advanced&quot;:&quot;Advanced&quot;,&quot;currency&quot;:&quot;Currency&quot;,&quot;stock&quot;:&quot;Stock&quot;,&quot;no_x_results&quot;:&quot;No %s Results&quot;,&quot;loadMore&quot;:&quot;Load more results&quot;,&quot;markets&quot;:&quot;Markets&quot;,&quot;news&quot;:&quot;News&quot;,&quot;education&quot;:&quot;Education&quot;,&quot;reviews&quot;:&quot;Reviews&quot;,&quot;content&quot;:&quot;Content&quot;}">
+    <button class="px-2 hover:text-grey-900" x-data="{}" x-on:click="$dispatch('inv-open-search')">
+      <i class="fa fa-search"></i>
+    </button>	
+  </invezz-algolia-search>
+</div>							<button x-data="{}" class="pl-2 lg:hidden" x-on:click="$dispatch('mobile-menu-toggle')">
+								<img src="https://invezz.com/wp-content/themes/invezz-theme/static/menu-icon.svg" alt="menu" width="18" height="16" class="lazyload-ignore">
+							</button>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+			
+
+    
+<div class="inv-submenu relative py-3 lg:py-0 bg-yellow-100">
+  <div class="container">
+    <div class="flex flex-wrap lg:flex-no-wrap">
+
+      <div x-data="XSubmenu()" x-on:click="toggle($dispatch)" class="flex items-center flex-1 font-700 text-lg text-grey-900 leading-125">
+        <span class="flex-1">News</span>
+        <button class="inv-transition transform text-xs lg:hidden" :class="{ 'rotate-180': active }">
+          <i class="fa fa-angle-down"></i>
+        </button>
+      </div>
+
+      <div class="inv-submenu__items flex items-center text-xs text-grey-700" x-data="{ mobileSubmenuActive: false }" x-on:mobile-submenu-toggle.window="mobileSubmenuActive = !mobileSubmenuActive" :class="{ 'inv-submenu__items--active': mobileSubmenuActive }">
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341395 hover:text-grey-900">
+            <a href="https://invezz.com/news/stocks/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                              ">
+              Stocks
+                            
+            </a>
+
+            
+          </div>
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341397 hover:text-grey-900">
+            <a href="https://invezz.com/news/cryptocurrency/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                 
+                  font-700 lg:shadow-underline-yellow 
+                              ">
+              Cryptocurrency
+                            
+            </a>
+
+            
+          </div>
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341396 hover:text-grey-900">
+            <a href="https://invezz.com/news/forex/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                              ">
+              Forex
+                            
+            </a>
+
+            
+          </div>
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341398 hover:text-grey-900">
+            <a href="https://invezz.com/news/commodities/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                              ">
+              Commodities
+                            
+            </a>
+
+            
+          </div>
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341401 hover:text-grey-900">
+            <a href="https://invezz.com/news/analysis/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                              ">
+              Market Analysis
+                            
+            </a>
+
+            
+          </div>
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341399 hover:text-grey-900">
+            <a href="https://invezz.com/news/world/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                              ">
+              World
+                            
+            </a>
+
+            
+          </div>
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341400 hover:text-grey-900">
+            <a href="https://invezz.com/news/bonds/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                              ">
+              Bonds
+                            
+            </a>
+
+            
+          </div>
+                  <div class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-341402 hover:text-grey-900">
+            <a href="https://invezz.com/news/real-estate/" target class="
+                flex items-center lg:h-submenu-item lg:px-3
+                lg:hover:shadow-underline-yellow
+                              ">
+              Real Estate
+                            
+            </a>
+
+            
+          </div>
+            
+      </div>
+    </div>
+  </div>
+</div>	
+			
+	
+<div class="inv-term-menu relative whitespace-no-wrap -mt-1 lg:mx-0 lg:mt-0 bg-yellow-100">
+	<div class="h-1px border-t border-grey-300 mx-4 lg:hidden"></div>
+	<div class="container">
+		<div class="flex py-2 lg:py-3">
+						<span class="font-600 font-source text-sm text-grey-900 mr-2">Cryptocurrency</span>
+			<div class="border-r border-grey-300 h-4 w-1px mr-2 lg:hidden"></div>
+			<span class="w-1px h-4 bg-grey-900 ml-5 mr-3 hidden lg:block"></span>
+			<div class="flex text-xs overflow-x-auto -ml-1 lg:ml-0">
+									<a href="https://invezz.com/news/cryptocurrency/bitcoin/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						Bitcoin
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/nfts/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						NFTs
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/solana/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						Solana
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/ethereum/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						Ethereum
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/cardano/" class="mx-1 lg:mx-3 hover:inv-text-link-underline  font-600 ">
+						Cardano
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/chainlink/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						Chainlink
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/ripple/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						XRP
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/blockchain/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						Blockchain
+					</a>
+									<a href="https://invezz.com/news/cryptocurrency/dogecoin/" class="mx-1 lg:mx-3 hover:inv-text-link-underline ">
+						Dogecoin
+					</a>
+							</div>
+		</div>
+	</div>
+</div>
+	</div>
+
+		<section id="content" role="main">			
+			<div>
+					
+<div class="bg-grey-700">
+	<div class="container py-3">
+		<div class="flex items-center">
+			<nav id="inv-breadcrumbs" class="flex-grow"><span><span><a href="https://invezz.com/"><i class="fa fa-home"></i></a> <i class="fa fa-chevron-right"></i> <span><a href="/news/">News</a> <i class="fa fa-chevron-right"></i> <span><a href="https://invezz.com/news/cryptocurrency/">Cryptocurrency</a>  </span></span></span></span></nav>
+
+
+							<div class="text-xs text-yellow-100 mx-2 sm:mx-3" data-popper role="tooltip">
+					<span>Ad disclosure</span>
+
+					<i class="fa fa-info-circle text-yellow-900 text-2xs ml-1"></i>
+
+					<div data-popper-tooltip>
+						<div data-popper-arrow></div>
+						<button data-popper-dismiss type="button" class="p-1">
+							<i class="fa fa-times"></i>
+						</button>
+
+						<p>Invezz is an independent platform with the goal of helping users achieve financial freedom. In order to fund our work, we partner with advertisers who compensate us for users that Invezz refers to their services. While our reviews and assessments of each product on the site are independent and unbiased, brands may pay to appear higher up our table rankings or place ads in specific areas of the site. The order in which products and services appear on Invezz does not represent an endorsement from us, and please be aware that there may be other platforms available to you than the products and services that appear on our website. <a href="https://invezz.com/about/how-invezz-works/">Read more about how we make money &gt;</a></p>
+
+					</div>
+				</div>
+					</div>
+	</div>
+</div>
+
+	<article id="invezz-post-355265">
+		
+<div class="inv-section--dark relative bg-grey-700  py-4  inv-news-hero">
+	<div class="absolute top-0 left-0 right-0 bottom-0 opacity-015 pointer-events-none bg-zigzag"></div>
+	<div class="container"> 				<div class="flex -mx-3" style="padding-bottom: 250px; margin-bottom: -245px">
+					<div class="w-full px-3 -mb-3 lg:w-2/3 lg:mt-4 lg:mb-0">
+						<h1 class="text-white">Cardano (ADA) is about to get its first stablecoin — AgeUSD</h1>
+					</div>
+				</div>
+					</div>
+	</div>
+
+		<div class="container">
+			<div class="flex flex-wrap -mx-4 lg:-mx-3">
+
+				<!-- main -->
+				<div class="w-full lg:px-3 lg:w-2/3">
+					<figure class="overflow-hidden hidden lg:block">
+						
+
+	
+<picture class=" lazyload">
+						<source data-srcset="https://ik.imagekit.io/invezz/uploads/tr:f-webp,fo-auto,bl-0,w-810,h-400/2020/10/cardano-1.jpg" srcset media="(min-width: 601px)" type="image/webp">
+								<source data-srcset="https://ik.imagekit.io/invezz/uploads/tr:f-webp,fo-auto,bl-0,w-600,h-260/2020/10/cardano-1.jpg" srcset media="(min-width: 421px)" type="image/webp">
+								<img data-src="https://ik.imagekit.io/invezz/uploads/tr:f-webp,fo-auto,bl-0,w-420,h-182/2020/10/cardano-1.jpg" src alt="Cardano (ADA) is about to get its first stablecoin — AgeUSD" class="lazyload object-cover w-full h-full" width="420" height="182">
+			</picture>
+					</figure>
+
+					<div class="inv-block-container inv-block-container--news bg-white px-4 lg:px-6 lg:py-6">
+						<div class="py-2 lg:py-0 lg:-mt-2 lg:mb-3">
+							
+<div class="flex flex-wrap text-grey-300 text-xs -mb-1">
+	<div class="mb-1 mr-3">
+		<div data-popper role="tooltip" data-placement="bottom-start">
+			By:
+			<span class="no-inherit font-700 border-b border-dotted  text-grey-700  hover:inv-text-link">
+				Ali Raza
+			</span>
+
+			<div data-popper-tooltip class="sm:min-w-author-tooltip">
+				<div data-popper-arrow></div>
+				<button data-popper-dismiss type="button" class="p-1">
+					<i class="fa fa-times"></i>
+				</button>
+
+				<div class="flex text-sm py-2">
+					<noscript><img src="https://secure.gravatar.com/avatar/81419dab75086e007394681d92f9785d?s=110&amp;d=wp_user_avatar&amp;r=g" alt="Ali Raza" width="110" height="110" class="w-author-avatar-xs h-author-avatar-xs mr-3 block lg:w-author-avatar-tooltip lg:h-author-avatar-tooltip lg:mr-4"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20110%20110%22%3E%3C%2Fsvg%3E" alt="Ali Raza" width="110" height="110" class="w-author-avatar-xs h-author-avatar-xs mr-3 block lg:w-author-avatar-tooltip lg:h-author-avatar-tooltip lg:mr-4 lazyload" data-src="https://secure.gravatar.com/avatar/81419dab75086e007394681d92f9785d?s=110&amp;d=wp_user_avatar&amp;r=g" loading="lazy">
+					<div class="leading-125">
+													Ali plays a key role in the cryptocurrency news team. He loves travelling during his spare time and enjoys&hellip;
+												<a href="https://invezz.com/author/raza/" class="no-inherit text-blue-900 hover:inv-text-link-underline">read more</a>.
+
+						<div class="flex text-grey-300 mt-2">
+							
+															<a href="https://twitter.com/alir1272" target="_blank" class="no-inherit mr-3 hover:inv-text-link-underline">
+									<i class="fab fa-twitter"></i>
+								</a>
+							
+							
+							
+															<a href="https://muckrack.com/ali-raza" target="_blank" class="no-inherit mr-3 hover:inv-text-link-underline">
+									<i class="fa fa-newspaper"></i>
+								</a>
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<div class="mb-1 mr-3">
+			on
+			<span class=" text-grey-700 ">Jan 28, 2021</span>
+		</div>
+	
+	</div>
+						</div>
+
+													
+
+<div class="inv-card inv-card--yellow p-4 bg-yellow-100 -mx-4 mb-4 lg:mx-0">
+		<div>
+													<ul class="inv-news-summary">
+																					<li>
+												Blockchain project Cardano is soon to receive its first stablecoin, known as AgeUSD.
+											</li>
+																					<li>
+												The stablecoin integration is a result of a collaboration of IOHK, Ergo, and EMURGO.
+											</li>
+																					<li>
+												It will be a crypto-backed stablecoin, and it might roll out on ADA&#039;s blockchain by the end of Q3 2021.
+											</li>
+																			</ul>
+									</div>
+</div>
+						
+						<div class="font-source">
+							
+							<p>Cardano, the blockchain project behind the 6th-largest coin by market cap, ADA, is about to receive its first stablecoin &mdash; AgeUSD. The stablecoin protocol was announced by three entities &mdash; EMURGO, the Ergo Foundation, and IOHK itself.</p>
+
+
+
+<h2>AgeUSD stablecoin to arrive on Cardano</h2>
+
+
+
+<p>According to what is known, the stablecoin protocol is based on the Ergo blockchain. However, IOHK CTO, Roman Pellerin, explained that it will also be available on Cardano, once the project finally unlocks its smart contract functionality.</p>
+
+
+
+<figure class="wp-block-embed-twitter wp-block-embed is-type-rich is-provider-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true"><p lang="en" dir="ltr">Our first stablecoin on <a href="https://twitter.com/hashtag/Ergo?src=hash&amp;ref_src=twsrc%5Etfw">#Ergo</a>, soon on <a href="https://twitter.com/hashtag/Cardano?src=hash&amp;ref_src=twsrc%5Etfw">#Cardano</a> with Plutus &#128406; <a href="https://t.co/U6tHq8xktz">https://t.co/U6tHq8xktz</a></p>&mdash; Romain Pellerin (@rom1_pellerin) <a href="https://twitter.com/rom1_pellerin/status/1353089918231343107?ref_src=twsrc%5Etfw">January 23, 2021</a></blockquote>
+</div></figure>
+
+
+
+<p><em class="font-700">
+  Are you looking for fast-news, hot-tips and market analysis?
+  <a href data-typeform x-data="{
+      url: 'https://invezzz.typeform.com/to/b1PyObLW?implementation=contextual&amp;language=en&amp;category=cryptocurrency'
+    }" x-on:click.prevent="
+      window.typeformEmbed.makePopup(url , {
+        mode: 'drawer_right',
+        autoOpen: true,
+        autoClose: 0,
+        hideHeaders: false,
+        hideFooter: false,
+        onSubmit: null,
+      });
+  ">
+    Sign-up for the Invezz newsletter, today.
+  </a>
+</em></p><p>EMURGO, one of the partnering firms, is a multinational blockchain firm that is in charge of creating various solutions for Cardano. This was the firm that <a href="https://github.com/Emurgo/age-usd">announced </a>the stablecoin&rsquo;s launch on January 24th, during the Ergo Summit 2021.</p>
+
+
+
+<p>As mentioned, the stablecoin is based on Ergo&rsquo;s blockchain, and one thing that makes it stand out is the fact that it is not pegged to any fiat currency. Other stablecoins, such as <a href="https://invezz.com/cryptocurrency/prices/usdt-usd/">Tether (USDT)</a>, are pegged to USD, and backed by it.</p>
+
+
+
+<p>AgeUSD, on the other hand, is a crypto-backed stablecoin, meaning that it does not rely on CDPs (Collateralized Debt Positions). As such, liquidation events for the stablecoin are impossible.</p>
+
+
+
+<h2>AgeUSD will demonstrate the Cardano chain&rsquo;s new functionalities</h2>
+
+
+
+<p>It is also known that AgeUSD will use Ergo&rsquo;s native coin in its protocol, and that it could, theoretically, be deployed to other chains, aside from Ergo and Cardano. However, due to the fact that both firms are rather closely connected to IOHK, Cardano was the obvious choice.</p>
+
+
+
+<p>At the same time, the arrival of the stablecoin will allow IOHK to show off the new functionalities and capabilities of Cardano, following the release of its smart contracts. The joint project will also demonstrate the compatibility of Cardano&rsquo;s smart contract programming language, Plutus, and ErgoScript.</p>
+
+
+
+<p>The only detail that the projects failed to disclose as of yet is when the stablecoin might be rolled out. However, with Cardano&rsquo;s next phase, Goguen, coming along shortly &mdash; it is likely that AgeUSD could be fully operational on Cardano by Q3 2021.</p>
+
+
+		
+
+
+	
+<div class="flex flex-wrap mb-4">
+	<div class="leading-150 w-full mb-2 lg:w-auto lg:flex-1">
+		Invest in crypto, stocks, ETFs &amp; more in minutes with our preferred broker,
+		<a href="https://offers.igms.io/api/v1/public/visit/etoro-stocks?component=np_iccta" rel="nofollow noopener" class="no-inherit font-700 group">
+			<span class="group-hover:underline">eToro</span>
+		</a>
+		<div class="flex flex-wrap text-xs">
+			<div>
+				
+				<span class="text-yellow-900">
+            <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+      
+    
+  </span>				<span class="font-700 mx-2">10/10</span>
+			</div>
+			<div class="text-grey-500">
+				67% of retail CFD accounts lose money
+			</div>
+		</div>
+	</div>
+
+	<div class="w-full lg:w-auto">
+		
+<a href="https://offers.igms.io/api/v1/public/visit/etoro-stocks?component=np_iccta" target="_blank" class="inv-button font-700 text-center
+	
+				    	
+				     block w-full 	
+				     bg-yellow-900 border-yellow-900 text-white hover:bg-yellow-500
+				      	
+				     px-4 py-4
+				    	
+				     inv-button--icon-hover-only 	
+				     inv-button-animate-icon inv-button-animate-icon--move-right
+				    	
+				    
+				  " rel="nofollow noopener">
+	<span>
+		Visit site
+
+					<i class="fa fa fa-arrow-right ml-2"></i>
+			</span>
+	</a>
+	</div>
+</div>
+
+
+													</div>
+
+						<div class="flex flex-wrap mt-4 pb-2 lg:pb-0 lg:mt-6">
+															
+<a href="https://invezz.com/news/cryptocurrency/cardano/" class="inv-button font-700 text-center
+	
+				    	
+				    	
+				     bg-grey-100 border-grey-100 text-grey-900 hover:text-blue-900
+				      	
+				     text-xs px-2 py-1
+				      	
+				     inv-button--icon-hover-only 	
+				     inv-button-animate-icon inv-button-animate-icon--move-right
+				    	
+				    mb-2 mr-2
+				  ">
+	<span>
+		Cardano
+
+					<i class="fa fa fa-arrow-right ml-2"></i>
+			</span>
+	</a>
+															
+<a href="https://invezz.com/news/cryptocurrency/" class="inv-button font-700 text-center
+	
+				    	
+				    	
+				     bg-grey-100 border-grey-100 text-grey-900 hover:text-blue-900
+				      	
+				     text-xs px-2 py-1
+				      	
+				     inv-button--icon-hover-only 	
+				     inv-button-animate-icon inv-button-animate-icon--move-right
+				    	
+				    mb-2 mr-2
+				  ">
+	<span>
+		Cryptocurrency
+
+					<i class="fa fa fa-arrow-right ml-2"></i>
+			</span>
+	</a>
+													</div>
+					</div>
+				</div>
+				<!-- end main -->
+
+				<!-- sidebar -->
+				<aside id="invezz-post-sidebar-widgets-355265" class="w-full px-4 bg-white lg:bg-transparent lg:px-3 lg:w-1/3">
+					<div class="inv-news-sidebar-sharers hidden flex-wrap text-grey-300 -mx-1 lg:flex">
+						<button class="px-1 hover:text-white" data-sharer="twitter" data-title="Cardano (ADA) is about to get its first stablecoin — AgeUSD" data-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+  <i class="fab fa-twitter"></i>
+</button>
+<button class="px-1 hover:text-white" data-sharer="facebook" data-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+  <i class="fab fa-facebook-square"></i>
+</button>
+<button class="px-1 hover:text-white" data-sharer="reddit" data-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+  <i class="fab fa-reddit"></i>
+</button>
+<button class="px-1 hover:text-white" data-sharer="linkedin" data-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+  <i class="fab fa-linkedin"></i>
+</button>
+<button class="px-1 hover:text-white" data-sharer="whatsapp" data-title="Cardano (ADA) is about to get its first stablecoin — AgeUSD" data-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+  <i class="fab fa-whatsapp"></i>
+</button>
+<button class="px-1 hover:text-white" data-sharer="telegram" data-title="Cardano (ADA) is about to get its first stablecoin — AgeUSD" data-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+  <i class="fab fa-telegram"></i>
+</button>
+<button class="px-1 hover:text-white" data-sharer="email" data-to data-title="Cardano (ADA) is about to get its first stablecoin — AgeUSD" data-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/">
+  <i class="fa fa-envelope"></i>
+</button>					</div>
+
+											<div class="inv-news-sidebar flex flex-col pt-5 lg:pt-7">
+							<div x-data="XExpandable({ active: true, max_width: 640 })" class="inv-sidebar-widget bg-grey-100 p-3 lg:bg-transparent lg:p-0">
+	<div class="flex items-center font-source text-lg text-white" x-on:click.prevent="toggle">
+		<h3 class="flex-1 mb-0 lg:mb-2">Related posts</h3>
+		<button type="button" class="text-sm text-grey-300 sm:hidden">
+			<i class="fa fa-minus" x-bind:class="{ 'fa-plus': !active, 'fa-minus': active }"></i>
+		</button>
+	</div>
+
+	<div x-ref="slideTarget" class="-mb-3 mt-2 lg:mt-0">
+		
+<div class="
+  h-line w-part-line
+   bg-blue-900
+      
+
+  mb-3
+"></div>					<div class="mb-3">
+				<div class="flex flex-wrap flex-col-reverse lg:flex-col">
+	<div class="flex items-center w-full font-700 text-xs text-grey-300 mb-1">
+		<i class="far fa-calendar-alt mr-2"></i>
+		<span>28th September</span>
+		<div class="flex-1 h-px border-t border-grey-300 ml-2"></div>
+	</div>
+	<a href="https://invezz.com/news/2021/09/28/where-to-buy-bnbpay-bpay-coin-the-future-of-merchant-crypto-payment/" class=" font-700  text-overflow-ellipsis clamp-2 hover:inv-text-link-underline">
+		Where to buy BNBPay (BPAY) coin: the future of merchant crypto payment
+	</a>
+</div>
+			</div>
+					<div class="mb-3">
+				<div class="flex flex-wrap flex-col-reverse lg:flex-col">
+	<div class="flex items-center w-full font-700 text-xs text-grey-300 mb-1">
+		<i class="far fa-calendar-alt mr-2"></i>
+		<span>27th September</span>
+		<div class="flex-1 h-px border-t border-grey-300 ml-2"></div>
+	</div>
+	<a href="https://invezz.com/news/2021/09/27/starter-launchpad-to-host-asia-focused-dex-nasdex-launch/" class=" font-700  text-overflow-ellipsis clamp-2 hover:inv-text-link-underline">
+		Exclusive: Starter launchpad to host Asia-focused DEX NASDEX launch
+	</a>
+</div>
+			</div>
+					<div class="mb-3">
+				<div class="flex flex-wrap flex-col-reverse lg:flex-col">
+	<div class="flex items-center w-full font-700 text-xs text-grey-300 mb-1">
+		<i class="far fa-calendar-alt mr-2"></i>
+		<span>27th September</span>
+		<div class="flex-1 h-px border-t border-grey-300 ml-2"></div>
+	</div>
+	<a href="https://invezz.com/news/2021/09/27/where-to-buy-marginswap-mfi-coin-top-daily-gainer-in-the-avalanche-ecosystem/" class=" font-700  text-overflow-ellipsis clamp-2 hover:inv-text-link-underline">
+		Where to buy Marginswap (MFI) coin: top daily gainer in the Avalanche ecosystem
+	</a>
+</div>
+			</div>
+					<div class="mb-3">
+				<div class="flex flex-wrap flex-col-reverse lg:flex-col">
+	<div class="flex items-center w-full font-700 text-xs text-grey-300 mb-1">
+		<i class="far fa-calendar-alt mr-2"></i>
+		<span>27th September</span>
+		<div class="flex-1 h-px border-t border-grey-300 ml-2"></div>
+	</div>
+	<a href="https://invezz.com/news/2021/09/27/is-the-uni-token-worth-investing-in-after-chinas-ban-on-cryptocurrencies/" class=" font-700  text-overflow-ellipsis clamp-2 hover:inv-text-link-underline">
+		Is the UNI token worth investing in after China’s ban on cryptocurrencies?
+	</a>
+</div>
+			</div>
+					<div class="mb-3">
+				<div class="flex flex-wrap flex-col-reverse lg:flex-col">
+	<div class="flex items-center w-full font-700 text-xs text-grey-300 mb-1">
+		<i class="far fa-calendar-alt mr-2"></i>
+		<span>27th September</span>
+		<div class="flex-1 h-px border-t border-grey-300 ml-2"></div>
+	</div>
+	<a href="https://invezz.com/news/2021/09/27/where-to-buy-gravitx-grx-coin-a-cryptocurrency-designed-to-rise-by-at-least-12-every-8-hours/" class=" font-700  text-overflow-ellipsis clamp-2 hover:inv-text-link-underline">
+		Where to buy GravitX (GRX) coin: a cryptocurrency designed to rise by at least 12% every 8 hours
+	</a>
+</div>
+			</div>
+			</div>
+</div>
+<div class="inv-sidebar-widget order-first lg:h-full lg:order-none">
+  <div class="lg:sticky lg:top-8">
+    <h3>Related markets</h3>
+    
+<div class="
+  h-line w-part-line
+   bg-blue-900
+      
+
+  mb-3
+"></div>
+    <div class="-mb-3">
+              <div class="mb-3">
+          <div id="invezz-vue-6152efe993274" class="relative" data-invezz-vue data-invezz-vue-component="invezz-market-quote-widget">
+  <invezz-market-quote-widget symbol="ADA/USD" figi name="ADA/USD" link="https://invezz.com/cryptocurrency/prices/ada-usd/" layout="compact" api-module="crypto"></invezz-market-quote-widget>
+</div>        </div>                
+                    
+    </div>   
+  </div>
+</div>	<div class="mb-4">
+		<a href="https://invezz.com/visit/blackbull-markets-forex?component=np_sb" rel="nofollow">
+			<noscript><img src="https://invezz.com/wp-content/uploads/2020/08/blackbull-300-250.png" alt class="mx-auto" width="300" height="250"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%20250%22%3E%3C%2Fsvg%3E" alt class="mx-auto lazyload" width="300" height="250" data-src="https://invezz.com/wp-content/uploads/2020/08/blackbull-300-250.png" loading="lazy">
+		</a>
+	</div>
+<div class="flex-grow"></div>
+
+<div class="
+    inv-sidebar-widget relative p-4 mb-4 lg:mb-0
+     bg-grey-700   " data-typeform x-data="XNewsletterSignUp({ 
+    language: 'en', 
+    position: 'news_sidebar', 
+    category: 'cryptocurrency',
+    useTypeform: true
+  })" x-init="init" x-bind:class="{ 'animate__animated animate__500 animate__ishake': isVisible }">
+  <div class="absolute top-0 left-0 right-0 bottom-0 opacity-015 pointer-events-none bg-zigzag"></div>
+
+  <div class="relative z-10">
+    <form x-on:submit.prevent="submit">
+      <div class="text-lg  text-grey-300 ">
+        Cryptocurrency
+      </div>
+      <div class="font-source text-2xl mt-4  text-white ">
+        Newsletter
+      </div>
+      
+<div class="
+  h-line w-part-line
+    
+
+  mb-3
+"></div>
+      <div x-show="hasCompleted" class=" text-white " style="display: none;">
+        Thanks for subscribing.
+      </div>
+      <div x-show="!hasCompleted">
+        <div class="flex flex-wrap text-sm mb-2">
+          <div class="w-full mb-3 xs:mb-0 xs:w-1/2 lg:w-3/5">
+            
+<div class="inv-floating-input  w-full ">
+  <input type="email" name="email" placeholder=" " class="
+      px-3 pt-5 pb-2 
+       
+        bg-grey-500 text-white 
+             w-full       
+    " required x-model="email">
+  <label class="font-700  text-grey-300 ">Email</label>
+</div>          </div>
+          <div class="w-full xs:w-1/2 lg:w-2/5">
+            
+<button class="inv-button font-700 text-center
+	
+				    	
+				     block w-full 	
+				     bg-yellow-900 border-yellow-900 text-white hover:bg-yellow-500
+				      	
+				     px-4 py-4
+				    	
+				     inv-button--icon-hover-only 	
+				     inv-button-animate-icon inv-button-animate-icon--move-right
+				    	
+				    
+				  " type="submit" :disabled="loading" :loading="loading" :class="{ 'inv-button-animate-icon': !loading }">
+	<span x-show="!loading">
+		Submit
+
+					<i class="fa fa fa-arrow-right ml-2"></i>
+			</span>
+			<i class="fa fa-sync-alt fa-spin" style="display: none;" x-show="loading"></i>
+	</button>
+          </div>
+        </div>
+        <div class="text-grey-300">
+          
+<label class="
+    inv-checkbox 
+     inv-checkbox--small text-xs      inv-checkbox--dark   ">
+  By signing up, you agree to our <a href="/about/privacy-policy/">privacy policy</a>.
+  <input id="6152efe99e9be" type="checkbox" name="privacy_consent" value x-model="privacyConsent">
+  <span></span>
+</label>           
+        </div>         
+      </div> 
+    </form>
+  </div>  
+</div>
+						</div>
+									</aside>
+				<!-- end sidebar -->
+			</div>
+		</div>
+
+					<div class="container">
+				<div class="my-4 lg:my-6 lg:w-2/3">
+					<a href="https://invezz.com/visit/etoro-crypto?component=np_inf" rel="nofollow">
+						<noscript><img src="https://invezz.com/wp-content/uploads/2021/05/etoro-leaderboard.gif" alt class="mx-auto" width="728" height="90"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20728%2090%22%3E%3C%2Fsvg%3E" alt class="mx-auto lazyload" width="728" height="90" data-src="https://invezz.com/wp-content/uploads/2021/05/etoro-leaderboard.gif" loading="lazy">
+					</a>
+				</div>
+			</div>
+			</article>
+
+			<div id="invezz-post-scroller--355265" data-invezz-vue data-invezz-vue-component="invezz-news-article-continual-scroll">
+			<invezz-news-article-continual-scroll initial-id="355265" initial-url="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/" initial-post-title="Cardano (ADA) is about to get its first stablecoin — AgeUSD" category-id="62" google-analytics-id></invezz-news-article-continual-scroll>
+		</div>
+	
+			</div>
+		</section>
+
+		
+
+<div class="inv-section--dark relative bg-grey-700  py-4  lg:pt-6">
+	<div class="absolute top-0 left-0 right-0 bottom-0 opacity-015 pointer-events-none bg-zigzag"></div>
+	<div class="container"> 	<footer>
+		<div class="flex flex-wrap -mx-3 mb-5">
+
+			<div class="w-full px-3 md:w-1/2">
+				<!-- Newsletter -->
+				<div x-data="XExpandable({ active: true, max_width: 640 })" class="sm:mb-7">
+					<div class="flex items-center font-source text-lg text-white mb-3" x-on:click.prevent="toggle">
+						<div class="flex-1">Newsletter</div>
+						<button type="button" class="text-sm text-grey-300 sm:hidden">
+							<i class="fa fa-minus" x-bind:class="{ 'fa-plus': !active, 'fa-minus': active }"></i>
+						</button>
+					</div>
+					
+<div class="
+  h-line w-part-line
+   bg-blue-900
+      
+
+  mb-5 hidden sm:block
+"></div>
+					<div x-ref="slideTarget" class="my-5">
+						<form x-data="XNewsletterSignUp({ language: 'en', position: 'footer' })" x-on:submit.prevent="submit">
+							<div x-show="hasCompleted" class="text-white" style="display: none;">
+								Thanks for subscribing.
+							</div>
+							<div x-show="!hasCompleted">
+								<div class="flex flex-wrap mb-2">
+									<div class="w-full mb-3 xs:mb-0 xs:w-1/2">
+										
+<div class="inv-floating-input  w-full ">
+  <input type="email" name="email" placeholder=" " class="
+      px-3 pt-5 pb-2 
+       
+        bg-grey-500 text-white 
+             w-full       
+    " required x-model="email">
+  <label class="font-700  text-grey-300 ">Email</label>
+</div>									</div>
+									<div class="w-full xs:w-1/2 lg:w-1/3">
+										
+<button class="inv-button font-700 text-center
+	
+				    	
+				     block w-full 	
+				     bg-yellow-900 border-yellow-900 text-white hover:bg-yellow-500
+				      	
+				     px-4 py-4
+				    	
+				     inv-button--icon-hover-only 	
+				     inv-button-animate-icon inv-button-animate-icon--move-right
+				    	
+				    
+				  " type="submit" :disabled="loading" :loading="loading" :class="{ 'inv-button-animate-icon': !loading }">
+	<span x-show="!loading">
+		Submit
+
+					<i class="fa fa fa-arrow-right ml-2"></i>
+			</span>
+			<i class="fa fa-sync-alt fa-spin" style="display: none;" x-show="loading"></i>
+	</button>
+									</div>
+								</div>
+								<div class="text-grey-300">
+									
+<label class="
+    inv-checkbox 
+     inv-checkbox--small text-xs      inv-checkbox--dark   ">
+  By signing up, you agree to our <a href="/about/privacy-policy/">privacy policy</a>.
+  <input id="6152efea052b9" type="checkbox" name="privacy_consent" value x-model="privacyConsent">
+  <span></span>
+</label>								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<hr class="border-grey-500 my-5 sm:hidden lg:my-3">
+
+				<!-- Where featured -->
+				<div x-data="XExpandable({ active: false, max_width: 640 })" class="lg:mb-5">
+					<div class="flex items-center font-source text-lg text-white sm:mb-3" x-on:click.prevent="toggle">
+						<div class="flex-1">
+							Where we&#039;ve been featured
+            </div>
+            <button type="button" class="text-sm text-grey-300 sm:hidden">
+              <i class="fa fa-plus" x-bind:class="{ 'fa-plus': !active, 'fa-minus': active }"></i>
+            </button>
+          </div>
+          
+<div class="
+  h-line w-part-line
+   bg-blue-900
+      
+
+  mb-5 hidden sm:block
+"></div>
+          <div x-ref="slideTarget" class="flex-wrap items-center mt-5 hidden sm:flex">
+                                        
+              <noscript><img src="https://invezz.com/wp-content/uploads/2021/01/the-wall-street-journal.png" alt height="40" width="76" class="max-h-6 w-auto mb-5 mr-5"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2076%2040%22%3E%3C%2Fsvg%3E" alt height="40" width="76" class="max-h-6 w-auto mb-5 mr-5 lazyload" data-src="https://invezz.com/wp-content/uploads/2021/01/the-wall-street-journal.png" loading="lazy">
+                                        
+              <noscript><img src="https://invezz.com/wp-content/uploads/2021/01/the-guardian.png" alt height="40" width="228" class="max-h-6 w-auto mb-5 mr-5"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20228%2040%22%3E%3C%2Fsvg%3E" alt height="40" width="228" class="max-h-6 w-auto mb-5 mr-5 lazyload" data-src="https://invezz.com/wp-content/uploads/2021/01/the-guardian.png" loading="lazy">
+                                        
+              <noscript><img src="https://invezz.com/wp-content/uploads/2021/01/forbes.png" alt height="40" width="103" class="max-h-6 w-auto mb-5 mr-5"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20103%2040%22%3E%3C%2Fsvg%3E" alt height="40" width="103" class="max-h-6 w-auto mb-5 mr-5 lazyload" data-src="https://invezz.com/wp-content/uploads/2021/01/forbes.png" loading="lazy">
+                                        
+              <noscript><img src="https://invezz.com/wp-content/uploads/2021/01/coindesk.png" alt height="40" width="205" class="max-h-6 w-auto mb-5 mr-5"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20205%2040%22%3E%3C%2Fsvg%3E" alt height="40" width="205" class="max-h-6 w-auto mb-5 mr-5 lazyload" data-src="https://invezz.com/wp-content/uploads/2021/01/coindesk.png" loading="lazy">
+                                        
+              <noscript><img src="https://invezz.com/wp-content/uploads/2021/01/barrons.png" alt height="40" width="192" class="max-h-6 w-auto mb-5 mr-5"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20192%2040%22%3E%3C%2Fsvg%3E" alt height="40" width="192" class="max-h-6 w-auto mb-5 mr-5 lazyload" data-src="https://invezz.com/wp-content/uploads/2021/01/barrons.png" loading="lazy">
+                      </div>
+        </div>
+        <hr class="border-grey-500 my-5 sm:hidden lg:my-3">
+
+        <!-- Find us online -->
+        <div x-data="XExpandable({ active: false, max_width: 640 })" class="sm:mb-7 md:mb-0">
+          <div class="flex items-center font-source text-lg text-white sm:mb-3" x-on:click.prevent="toggle">
+            <div class="flex-1">
+              Find us online
+            </div>
+            <button type="button" class="text-sm text-grey-300 sm:hidden">
+              <i class="fa fa-plus" x-bind:class="{ 'fa-plus': !active, 'fa-minus': active }"></i>
+            </button>
+          </div>
+          
+<div class="
+  h-line w-part-line
+   bg-blue-900
+      
+
+  mb-5 hidden sm:block
+"></div>
+          <div x-ref="slideTarget" class="hidden items-center text-xl my-5 sm:flex">
+                          <a href="https://twitter.com/invezzportal" target="_blank" class="text-grey-300 mr-4 hover:text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+            
+                          <a href="https://www.facebook.com/invezz/" target="_blank" class="text-grey-300 mr-4 hover:text-white">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            
+                          <a href="https://www.linkedin.com/company/invezz" target="_blank" class="text-grey-300 mr-4 hover:text-white">
+                <i class="fab fa-linkedin"></i>
+              </a>
+                      </div>
+        </div>
+        <hr class="border-grey-500 my-5 sm:hidden lg:my-3">
+      </div>
+
+      <div class="w-full px-3 md:w-1/2">
+        <!-- Footer menu 1 -->
+                  <div x-data="XExpandable({ active: false, max_width: 640 })" class="sm:mb-7">
+            <div class="flex items-center font-source text-lg text-white sm:mb-4" x-on:click.prevent="toggle">
+              <div class="flex-1">
+                Information
+              </div>
+              <button type="button" class="text-sm text-grey-300 sm:hidden">
+                <i class="fa fa-plus" x-bind:class="{ 'fa-plus': !active, 'fa-minus': active }"></i>
+              </button>
+            </div>
+            
+<div class="
+  h-line w-part-line
+   bg-blue-900
+      
+
+  mb-5 hidden sm:block
+"></div>
+            <div x-ref="slideTarget" class="hidden my-5 sm:block">            
+              <ul class="sm:-mb-4 md:col-count-2">
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/" class="text-white hover:text-grey-300">
+                      Home
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/about/" class="text-white hover:text-grey-300">
+                      About
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/about/advertising/" class="text-white hover:text-grey-300">
+                      Advertising
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/about/contact/" class="text-white hover:text-grey-300">
+                      Contact Us
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/about/editorial-policy/" class="text-white hover:text-grey-300">
+                      Editorial policy
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/about/jobs/" class="text-white hover:text-grey-300">
+                      Jobs
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/about/partners/" class="text-white hover:text-grey-300">
+                      Partners
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/about/press/" class="text-white hover:text-grey-300">
+                      Press
+                    </a>
+                  </li>
+                                  <li class="mb-4">
+                    <a href="https://invezz.com/feeds/" class="text-white hover:text-grey-300">
+                      RSS Feeds
+                    </a>
+                  </li>
+                              </ul>
+            </div>
+          </div>
+          <hr class="border-grey-500 my-5 sm:hidden lg:my-3">
+        
+        <!-- Languages -->
+        <div x-data="XExpandable({ active: false, max_width: 640 })" class="sm:mb-7">
+          <div class="flex items-center font-source text-lg text-white sm:mb-4" x-on:click.prevent="toggle">
+            <div class="flex-1">
+              Languages
+            </div>
+            <button type="button" class="text-sm text-grey-300 sm:hidden">
+              <i class="fa fa-plus" x-bind:class="{ 'fa-plus': !active, 'fa-minus': active }"></i>
+            </button>
+          </div>
+          
+<div class="
+  h-line w-part-line
+   bg-blue-900
+      
+
+  mb-4 hidden sm:block
+"></div>
+          <div x-ref="slideTarget" class="hidden my-5 sm:block">
+            <div class="relative w-3/5 border border-grey-300 text-grey-300">
+              <select class="w-full bg-transparent border-0 appearance-none p-4 cursor-pointer" onchange="window.location.href = this.value">
+                                  <option class="bg-grey-700 text-grey-100" value="https://invezz.com/news/2021/01/28/cardano-ada-is-about-to-get-its-first-stablecoin-ageusd/" selected>
+                    English
+                  </option>
+                                  <option class="bg-grey-700 text-grey-100" value="https://invezz.com/es/noticias/2021/01/28/cardano-ada-esta-a-punto-de-obtener-su-primera-stablecoin-ageusd/">
+                    Español
+                  </option>
+                                  <option class="bg-grey-700 text-grey-100" value="https://invezz.com/it/notizie/2021/01/28/cardano-ada-prima-stablecoin-ageusd/">
+                    Italiano
+                  </option>
+                                  <option class="bg-grey-700 text-grey-100" value="https://invezz.com/de/">
+                    Deutsch
+                  </option>
+                                  <option class="bg-grey-700 text-grey-100" value="https://invezz.com/fr/actualites/2021/01/28/cardano-ada-est-sur-point-dobtenir-son-premier-stablecoin-ageusd/">
+                    Français
+                  </option>
+                                  <option class="bg-grey-700 text-grey-100" value="https://invezz.com/sv/nyheter/2021/01/29/cardano-ada-far-sin-forsta-stablecoin-ageusd/">
+                    Svenska
+                  </option>
+                                  <option class="bg-grey-700 text-grey-100" value="https://invezz.com/nl/nieuws/2021/01/28/cardano-eerste-stablecoin-ageusd/">
+                    Nederlands
+                  </option>
+                              </select>
+              <i class="absolute top-4 right-2 fa fa-angle-down pointer-events-none"></i>
+            </div>
+          </div>
+        </div>
+        <hr class="border-grey-500 my-5 sm:hidden lg:my-3">
+
+        <div class="flex items-center">
+          <noscript><img src="https://invezz.com/wp-content/themes/invezz-theme/static/icons/favicon-180x180.png" alt="Invezz" class="w-6 h-6 mr-4 md:mr-5 md:w-8 md:h-8" width="48" height="48"></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2048%2048%22%3E%3C%2Fsvg%3E" alt="Invezz" class="w-6 h-6 mr-4 md:mr-5 md:w-8 md:h-8 lazyload" width="48" height="48" data-src="https://invezz.com/wp-content/themes/invezz-theme/static/icons/favicon-180x180.png" loading="lazy">
+          <div class="leading-100 text-white text-xs -mb-1 md:text-base">
+                          <div class="mb-1">
+                Invezz
+              </div>
+            
+                          <div class="mb-1">
+                34-37 Liverpool Street, London, EC2M 7PP
+              </div>
+            
+                          <div class="mb-1">
+                Company no.
+                10497349
+              </div>
+                      </div>
+        </div>
+      </div>
+
+    </div>
+
+          <div class="text-xs text-grey-300 mb-5">
+        <p>Invezz does not provide financial advice. Our aim is to simplify information about investing, enabling each user to make educated decisions with their money and to take control of their financial future. We do not take responsibility for individual investment decisions, profits, or losses, and it’s important to remember that 67% of new traders lose money.</p>
+
+      </div>
+    
+    <hr class="border-grey-500 mb-5 hidden lg:block">
+
+    <div class="flex flex-wrap text-xs">
+      <div class="w-full md:flex-1">
+                  <div class="flex flex-wrap md:flex-no-wrap mb-4">
+                          <a href="https://invezz.com/about/privacy-policy/" class="text-white mr-4 hover:text-grey-300">
+                Privacy Policy
+              </a>
+                          <a href="https://invezz.com/about/disclaimer/" class="text-white mr-4 hover:text-grey-300">
+                Disclaimer
+              </a>
+                          <a href="https://invezz.com/about/modern-slavery/" class="text-white mr-4 hover:text-grey-300">
+                Modern Slavery
+              </a>
+                      </div>
+              </div>
+      <div class="w-full text-grey-300 md:w-auto">
+        &copy; Invezz
+        2021. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+			</div>
+	</div>
+
+<script src="https://invezz.com/script/helpers?ver=1632825321" id="helpers-js"></script>
+<script src="https://invezz.com/wp-content/plugins/platform-offers/dist/js/promotions.js?id=d5ef4d678fe17686d444&#038;ver=5.7.2" id="promotions-js"></script>
+<script id="invezz-js-js-extra">
+var ajax_var = {"url":"https:\/\/invezz.com\/wp-admin\/admin-ajax.php","nonce":"9a42e34924"};
+</script>
+<script src="https://invezz.com/wp-content/themes/invezz-theme/dist/invezz.js?ver=1626363329" id="invezz-js-js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js?ver=5.7.2" id="web-font-loader-js"></script>
+<script id="web-font-loader-js-after">
+      WebFont.load({
+        custom: {
+          families: ["FontAwesome"],
+          urls: ["https://pro.fontawesome.com/releases/v5.15.1/css/all.css"],
+          testStrings: {
+            "FontAwesome": "\uf00c\uf000"
+          }
+        }        
+      });
+    
+</script>
+<script src="https://invezz.com/wp-content/plugins/lazy-loading-responsive-images/js/lazysizes.min.js?ver=1623939195" id="lazysizes-js"></script>
+<script src="https://invezz.com/wp-content/plugins/lazy-loading-responsive-images/js/ls.unveilhooks.min.js?ver=1623939195" id="lazysizes-unveilhooks-js"></script>
+<script src="https://invezz.com/wp-content/plugins/lazy-loading-responsive-images/js/ls.native-loading.min.js?ver=1623939195" id="lazysizes-native-loading-js"></script>
+<script type="text/javascript">(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=en; expires=" + expirationDate.toUTCString() + "; path=/";
+			}());</script>
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-55GGXX6');</script>
+<!-- End Google Tag Manager -->
+		<div x-data="XCookieConsent()" class="hidden fixed bottom-0 w-full bg-grey-700 text-grey-100 z-20" x-bind:class="{ 'hidden': !show }">
+  <div class="container py-2">
+    <div class="flex items-center">
+      <div class="flex-1 text-xs opacity-75">
+        Invezz uses cookies to provide you with a great user experience. By using Invezz, you accept our <a href="https://invezz.com/about/privacy-policy/" class="underline">privacy policy</a>.
+      </div>        
+      <button class="opacity-75 pl-4 hover:text-yellow-900" x-on:click="consent()">
+        <i class="fa fa-times"></i>
+      </button>
+    </div>      
+  </div>
+</div>	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-09f7233bed18d62a831","applicationID":"139537559","transactionName":"MhBSZQoZX0VVWkIMXAtacVIMEV5YG0pfC1QJEA==","queueTime":0,"applicationTime":1155,"atts":"HldRE0IDTEs=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body>
+</html></html></html>

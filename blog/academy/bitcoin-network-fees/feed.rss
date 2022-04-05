@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Bitcoin Network Fees: Explained	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/bitcoin-network-fees/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/bitcoin-network-fees</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 18:19:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Mazel CrypTOV		</title>
+		<link>https://atomicwallet.io/blog/academy/bitcoin-network-fees#comment-222</link>
+
+		<dc:creator><![CDATA[Mazel CrypTOV]]></dc:creator>
+		<pubDate>Mon, 18 May 2020 05:50:13 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=804#comment-222</guid>
+
+					<description><![CDATA[ Very detailed! Short but it has got everything you need to know about Bitcoin network fees. Thanks for sharing this article.]]></description>
+			<content:encoded><![CDATA[<p> Very detailed! Short but it has got everything you need to know about Bitcoin network fees. Thanks for sharing this article.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Anikys3reasure		</title>
+		<link>https://atomicwallet.io/blog/academy/bitcoin-network-fees#comment-166</link>
+
+		<dc:creator><![CDATA[Anikys3reasure]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 22:58:10 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=804#comment-166</guid>
+
+					<description><![CDATA[  I never use to understand network fee, I just pay. But I guess this has helped. I will also share to people like me ????.
+Thanks for sharing.]]></description>
+			<content:encoded><![CDATA[<p>  I never use to understand network fee, I just pay. But I guess this has helped. I will also share to people like me ????.<br />
+Thanks for sharing.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

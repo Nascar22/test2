@@ -1,0 +1,1299 @@
+
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]> <html class="ie ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-US"> <!--<![endif]-->
+
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+
+
+<meta charset="UTF-8" />
+<title>Tezos makes great progress in 2019 - new partnerships and goals</title>
+
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="pingback" href="https://www.crypto-news-flash.com/xmlrpc.php" />
+	
+<link rel="shortcut icon" href="https://www.crypto-news-flash.com/wp-content/uploads/2019/07/9897favicon.png" />	
+
+<link rel="apple-touch-icon-precomposed" href="https://www.crypto-news-flash.com/wp-content/uploads/2019/07/favicon_152_152.png" />
+	
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<link rel="alternate" hreflang="x-default" href="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" />
+<link rel="alternate" hreflang="en" href="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" />
+<link rel="alternate" hreflang="de" href="https://www.crypto-news-flash.com/de/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" />
+<link rel="alternate" hreflang="fr" href="https://www.crypto-news-flash.com/fr/tezos-fait-de-grands-progres-en-2019/" />
+<link rel="alternate" hreflang="es" href="https://www.crypto-news-flash.com/es/tezos-alcanza-gran-progreso-en-2019-nuevas-asociaciones-y-metas/" />
+<link rel="alternate" hreflang="pt" href="https://www.crypto-news-flash.com/pt-pt/tezos-faz-grandes-progressos-em-2019/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="The Tezos Foundation presented the most important achievements of 2019. Tezos&#039; (XTZ) performance was one of the best of the year." />
+	<link rel="canonical" href="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Tezos makes great progress in 2019 - new partnerships and goals" />
+	<meta property="og:description" content="The Tezos Foundation presented the most important achievements of 2019. Tezos&#039; (XTZ) performance was one of the best of the year." />
+	<meta property="og:url" content="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" />
+	<meta property="og:site_name" content="Crypto News Flash" />
+	<meta property="article:published_time" content="2019-12-21T12:58:12+00:00" />
+	<meta property="article:modified_time" content="2019-12-21T19:49:23+00:00" />
+	<meta property="og:image" content="https://www.crypto-news-flash.com/wp-content/uploads/2019/06/Stanslavs-tezos.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="667" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Reynaldo" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="2 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.crypto-news-flash.com/#organization","name":"Crypto News Flash","url":"https://www.crypto-news-flash.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://www.crypto-news-flash.com/#logo","inLanguage":"en-US","url":"https://www.crypto-news-flash.com/wp-content/uploads/2019/12/crypto-news-flash-logo-2x.png","contentUrl":"https://www.crypto-news-flash.com/wp-content/uploads/2019/12/crypto-news-flash-logo-2x.png","width":420,"height":180,"caption":"Crypto News Flash"},"image":{"@id":"https://www.crypto-news-flash.com/#logo"}},{"@type":"WebSite","@id":"https://www.crypto-news-flash.com/#website","url":"https://www.crypto-news-flash.com/","name":"Crypto News Flash","description":"","publisher":{"@id":"https://www.crypto-news-flash.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.crypto-news-flash.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#primaryimage","inLanguage":"en-US","url":"https://www.crypto-news-flash.com/wp-content/uploads/2019/06/Stanslavs-tezos.jpg","contentUrl":"https://www.crypto-news-flash.com/wp-content/uploads/2019/06/Stanslavs-tezos.jpg","width":1000,"height":667},{"@type":"WebPage","@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#webpage","url":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/","name":"Tezos makes great progress in 2019 - new partnerships and goals","isPartOf":{"@id":"https://www.crypto-news-flash.com/#website"},"primaryImageOfPage":{"@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#primaryimage"},"datePublished":"2019-12-21T12:58:12+00:00","dateModified":"2019-12-21T19:49:23+00:00","description":"The Tezos Foundation presented the most important achievements of 2019. Tezos' (XTZ) performance was one of the best of the year.","breadcrumb":{"@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/"]}]},{"@type":"BreadcrumbList","@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://www.crypto-news-flash.com/"},{"@type":"ListItem","position":2,"name":"Tezos makes great progress in 2019 &#8211; new partnerships and goals"}]},{"@type":["Article","NewsArticle"],"@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#article","isPartOf":{"@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#webpage"},"author":{"@id":"https://www.crypto-news-flash.com/#/schema/person/e3835e4a7db9b05be0a90981097cc304"},"headline":"Tezos makes great progress in 2019 &#8211; new partnerships and goals","datePublished":"2019-12-21T12:58:12+00:00","dateModified":"2019-12-21T19:49:23+00:00","mainEntityOfPage":{"@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#webpage"},"wordCount":469,"publisher":{"@id":"https://www.crypto-news-flash.com/#organization"},"image":{"@id":"https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#primaryimage"},"thumbnailUrl":"https://www.crypto-news-flash.com/wp-content/uploads/2019/06/Stanslavs-tezos.jpg","keywords":["Tezos","XTZ"],"articleSection":["News"],"inLanguage":"en-US","copyrightYear":"2019","copyrightHolder":{"@id":"https://www.crypto-news-flash.com/#organization"}},{"@type":"Person","@id":"https://www.crypto-news-flash.com/#/schema/person/e3835e4a7db9b05be0a90981097cc304","name":"Reynaldo","image":{"@type":"ImageObject","@id":"https://www.crypto-news-flash.com/#personlogo","inLanguage":"en-US","url":"https://www.crypto-news-flash.com/wp-content/uploads/2021/06/reynaldo-150x150.png","contentUrl":"https://www.crypto-news-flash.com/wp-content/uploads/2021/06/reynaldo-150x150.png","caption":"Reynaldo"},"description":"Reynaldo Marquez has closely followed the growth of Bitcoin and blockchain technology since 2016. He has since worked as a columnist on crypto coins covering advances, falls and rises in the market, bifurcations and developments. He believes that crypto coins and blockchain technology will have a great positive impact on people's lives.","url":"https://www.crypto-news-flash.com/author/reynaldo/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Crypto News Flash &raquo; Feed" href="https://www.crypto-news-flash.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Crypto News Flash &raquo; Comments Feed" href="https://www.crypto-news-flash.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.0.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script type="rocketlazyloadscript" src="//www.googletagmanager.com/gtag/js?id=UA-141360478-2"  data-rocket-type="text/javascript" data-cfasync="false" async></script>
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-cfasync="false">
+				var mi_version = '8.0.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-141360478-2',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						if ( document.cookie.indexOf( disableStrs[ index ] + '=true' ) > -1 ) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						document.cookie = disableStrs[ index ] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if ( mi_track_user ) {
+					function __gtagDataLayer() {
+						dataLayer.push( arguments );
+					}
+
+					function __gtagTracker( type, name, parameters ) {
+						if ( type === 'event' ) {
+							
+															parameters.send_to = monsterinsights_frontend.ua;
+								__gtagDataLayer.apply( null, arguments );
+													} else {
+							__gtagDataLayer.apply( null, arguments );
+						}
+					}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dZGIzZG' : true,
+											} );
+															__gtagTracker( 'config', 'UA-141360478-2', {"forceSSL":"true","anonymize_ip":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+																				if ( ! ( ! args.hasOwnProperty(arg) || ! gaMap.hasOwnProperty(arg) ) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='lptw-advanced-tables-style-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/advanced-tables/css/advanced-tables.css'  media='all' />
+<link rel='stylesheet' id='stacktable-style-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/advanced-tables/css/stacktable.css'  media='all' />
+<link rel='stylesheet' id='chain-wire-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/chainwire-integration/public/css/chain-wire-public.css'  media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/contact-form-7/includes/css/styles.css'  media='all' />
+<link rel='stylesheet' id='sp-ea-font-awesome-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/easy-accordion-free/public/assets/css/font-awesome.min.css'  media='all' />
+<link rel='stylesheet' id='sp-ea-style-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/easy-accordion-free/public/assets/css/ea-style.css'  media='all' />
+<style id='sp-ea-style-inline-css' type='text/css'>
+#sp-ea-66409 .spcollapsing { height: 0; overflow: hidden; transition-property: height;transition-duration: 500ms;} .sp-easy-accordion iframe {width: 100%;}#sp-ea-66409.sp-easy-accordion>.sp-ea-single {border: 1px solid #e2e2e2; }#sp-ea-66409.sp-easy-accordion>.sp-ea-single>.ea-header a {color: #444;}#sp-ea-66409.sp-easy-accordion>.sp-ea-single>.sp-collapse>.ea-body {background: #fff; color: #444;}#sp-ea-66409.sp-easy-accordion>.sp-ea-single {background: #2bbc9d;}#sp-ea-66409.sp-easy-accordion>.sp-ea-single>.ea-header a .ea-expand-icon.fa { float: left; color: #444;font-size: 16px;}#sp-ea-65850 .spcollapsing { height: 0; overflow: hidden; transition-property: height;transition-duration: 500ms;} .sp-easy-accordion iframe {width: 100%;}#sp-ea-65850.sp-easy-accordion>.sp-ea-single {border: 1px solid #e2e2e2; }#sp-ea-65850.sp-easy-accordion>.sp-ea-single>.ea-header a {color: #444;}#sp-ea-65850.sp-easy-accordion>.sp-ea-single>.sp-collapse>.ea-body {background: #fff; color: #444;}#sp-ea-65850.sp-easy-accordion>.sp-ea-single {background: #2bbc9d;}#sp-ea-65850.sp-easy-accordion>.sp-ea-single>.ea-header a .ea-expand-icon.fa { float: left; color: #444;font-size: 16px;}#sp-ea-64459 .spcollapsing { height: 0; overflow: hidden; transition-property: height;transition-duration: 500ms;} .sp-easy-accordion iframe {width: 100%;}#sp-ea-64459.sp-easy-accordion>.sp-ea-single {border: 1px solid #e2e2e2; }#sp-ea-64459.sp-easy-accordion>.sp-ea-single>.ea-header a {color: #444;}#sp-ea-64459.sp-easy-accordion>.sp-ea-single>.sp-collapse>.ea-body {background: #fff; color: #444;}#sp-ea-64459.sp-easy-accordion>.sp-ea-single {background: #2bbc9d;}#sp-ea-64459.sp-easy-accordion>.sp-ea-single>.ea-header a .ea-expand-icon.fa { float: left; color: #444;font-size: 16px;}#sp-ea-62279 .spcollapsing { height: 0; overflow: hidden; transition-property: height;transition-duration: 500ms;} .sp-easy-accordion iframe {width: 100%;}#sp-ea-62279.sp-easy-accordion>.sp-ea-single {border: 1px solid #e2e2e2; }#sp-ea-62279.sp-easy-accordion>.sp-ea-single>.ea-header a {color: #444;}#sp-ea-62279.sp-easy-accordion>.sp-ea-single>.sp-collapse>.ea-body {background: #fff; color: #444;}#sp-ea-62279.sp-easy-accordion>.sp-ea-single {background: #2bbc9d;}#sp-ea-62279.sp-easy-accordion>.sp-ea-single>.ea-header a .ea-expand-icon.fa { float: left; color: #444;font-size: 16px;}#sp-ea-63128 .spcollapsing { height: 0; overflow: hidden; transition-property: height;transition-duration: 500ms;} .sp-easy-accordion iframe {width: 100%;}#sp-ea-63128.sp-easy-accordion>.sp-ea-single {border: 1px solid #e2e2e2; }#sp-ea-63128.sp-easy-accordion>.sp-ea-single>.ea-header a {color: #444;}#sp-ea-63128.sp-easy-accordion>.sp-ea-single>.sp-collapse>.ea-body {background: #fff; color: #444;}#sp-ea-63128.sp-easy-accordion>.sp-ea-single {background: #2bbc9d;}#sp-ea-63128.sp-easy-accordion>.sp-ea-single>.ea-header a .ea-expand-icon.fa { float: left; color: #444;font-size: 16px;}
+</style>
+<link rel='stylesheet' id='menu-image-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/menu-image/includes/css/menu-image.css'  media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://www.crypto-news-flash.com/wp-includes/css/dashicons.min.css'  media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/revslider/public/assets/css/settings.css'  media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='ppress-frontend-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css'  media='all' />
+<link rel='stylesheet' id='ppress-flatpickr-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css'  media='all' />
+<link rel='stylesheet' id='ppress-select2-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css'  media='all' />
+<link rel='stylesheet' id='wpml-menu-item-0-css'  href='//www.crypto-news-flash.com/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css'  media='all' />
+<link rel='stylesheet' id='ez-icomoon-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css'  media='all' />
+<link rel='stylesheet' id='ez-toc-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css'  media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}
+</style>
+<link rel='stylesheet' id='smartmag-core-css'  href='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/style.css'  media='all' />
+<link rel='stylesheet' id='smartmag-fonts-css'  href='https://www.crypto-news-flash.com/wp-content/uploads/sgf-css/font-fed5e1c4ea4b0eea8ac199ea006bf523.css'  media='all' />
+<link rel='stylesheet' id='smartmag-responsive-css'  href='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/css/responsive.css'  media='all' />
+<link rel='stylesheet' id='pretty-photo-css'  href='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/css/prettyPhoto.css'  media='all' />
+<link rel='stylesheet' id='smartmag-font-awesome-css'  href='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/css/fontawesome/css/font-awesome.min.css'  media='all' />
+<link rel='stylesheet' id='easy-social-share-buttons-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/easy-social-share-buttons3/assets/css/easy-social-share-buttons.min.css'  media='all' />
+<link rel='stylesheet' id='easy-social-share-buttons-subscribe-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/easy-social-share-buttons3/assets/css/essb-subscribe.min.css'  media='all' />
+<link rel='stylesheet' id='easy-social-share-buttons-display-methods-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/easy-social-share-buttons3/assets/css/essb-display-methods.min.css'  media='all' />
+<link rel='stylesheet' id='cookie-notice-front-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/cookie-notice/includes/../css/front.min.css'  media='all' />
+<link rel='stylesheet' id='smartmag-skin-css'  href='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/css/skin-thezine.css'  media='all' />
+<style id='smartmag-skin-inline-css' type='text/css'>
+.post-content > p:first-child { font-size: inherit; color: inherit;; }
+
+.post-content a:hover { color: #00a37a; }
+
+
+.cat-12, 
+.cat-title.cat-12,
+.block-head.cat-text-12 .heading { 
+	background: #33bda0;
+}
+
+.block-head.cat-text-12 {
+	border-color: #33bda0;
+}
+				
+.cat-text-12, .section-head.cat-text-12 { color: #33bda0; }
+				 
+
+.navigation .menu > .menu-cat-12:hover > a, .navigation .menu > .menu-cat-12.current-menu-item > a, .navigation .menu > .menu-cat-12.current-menu-parent > a {
+	border-bottom-color: #33bda0;
+}
+
+
+
+.cat-11, 
+.cat-title.cat-11,
+.block-head.cat-text-11 .heading { 
+	background: #ff6a5a;
+}
+
+.block-head.cat-text-11 {
+	border-color: #ff6a5a;
+}
+				
+.cat-text-11, .section-head.cat-text-11 { color: #ff6a5a; }
+				 
+
+.navigation .menu > .menu-cat-11:hover > a, .navigation .menu > .menu-cat-11.current-menu-item > a, .navigation .menu > .menu-cat-11.current-menu-parent > a {
+	border-bottom-color: #ff6a5a;
+}
+
+
+
+.cat-25, 
+.cat-title.cat-25,
+.block-head.cat-text-25 .heading { 
+	background: #e76f51;
+}
+
+.block-head.cat-text-25 {
+	border-color: #e76f51;
+}
+				
+.cat-text-25, .section-head.cat-text-25 { color: #e76f51; }
+				 
+
+.navigation .menu > .menu-cat-25:hover > a, .navigation .menu > .menu-cat-25.current-menu-item > a, .navigation .menu > .menu-cat-25.current-menu-parent > a {
+	border-bottom-color: #e76f51;
+}
+
+
+
+.cat-42, 
+.cat-title.cat-42,
+.block-head.cat-text-42 .heading { 
+	background: #33bda0;
+}
+
+.block-head.cat-text-42 {
+	border-color: #33bda0;
+}
+				
+.cat-text-42, .section-head.cat-text-42 { color: #33bda0; }
+				 
+
+.navigation .menu > .menu-cat-42:hover > a, .navigation .menu > .menu-cat-42.current-menu-item > a, .navigation .menu > .menu-cat-42.current-menu-parent > a {
+	border-bottom-color: #33bda0;
+}
+
+
+
+.cat-37, 
+.cat-title.cat-37,
+.block-head.cat-text-37 .heading { 
+	background: #ff6a5a;
+}
+
+.block-head.cat-text-37 {
+	border-color: #ff6a5a;
+}
+				
+.cat-text-37, .section-head.cat-text-37 { color: #ff6a5a; }
+				 
+
+.navigation .menu > .menu-cat-37:hover > a, .navigation .menu > .menu-cat-37.current-menu-item > a, .navigation .menu > .menu-cat-37.current-menu-parent > a {
+	border-bottom-color: #ff6a5a;
+}
+
+
+
+.cat-47, 
+.cat-title.cat-47,
+.block-head.cat-text-47 .heading { 
+	background: #e76f51;
+}
+
+.block-head.cat-text-47 {
+	border-color: #e76f51;
+}
+				
+.cat-text-47, .section-head.cat-text-47 { color: #e76f51; }
+				 
+
+.navigation .menu > .menu-cat-47:hover > a, .navigation .menu > .menu-cat-47.current-menu-item > a, .navigation .menu > .menu-cat-47.current-menu-parent > a {
+	border-bottom-color: #e76f51;
+}
+
+
+
+
+</style>
+<link rel='stylesheet' id='coinmc-fontawesome-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/css/fontawesome.min.css'  media='all' />
+<link rel='stylesheet' id='coinmc-flatpickr-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/css/flatpickr.min.css'  media='all' />
+<link rel='stylesheet' id='coinmc-grid-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/css/flexboxgrid.css'  media='all' />
+<link rel='stylesheet' id='mcw-crypto-datatable-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/css/jquery.dataTables.min.css'  media='all' />
+<link rel='stylesheet' id='coinmc-crypto-table-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/css/table.css'  media='all' />
+<link rel='stylesheet' id='coinmc-tippy-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/css/tippy.min.css'  media='all' />
+<link rel='stylesheet' id='coinmc-crypto-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/css/style.css'  media='all' />
+<link rel='stylesheet' id='mcw-crypto-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/massive-cryptocurrency-widgets/assets/public/css/style.css'  media='all' />
+<link rel='stylesheet' id='mcw-crypto-select-css'  href='https://www.crypto-news-flash.com/wp-content/plugins/massive-cryptocurrency-widgets/assets/public/css/selectize.custom.css'  media='all' />
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.crypto-news-flash.com","hash_tracking":"false","ua":"UA-141360478-2","v4_id":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.js' id='monsterinsights-frontend-script-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/chainwire-integration/public/js/chain-wire-public.js' id='chain-wire-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js' id='tp-tools-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js' id='revmin-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js' id='ppress-flatpickr-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js' id='ppress-select2-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/js/jquery.prettyPhoto.js' id='pretty-photo-smartmag-js'></script>
+<script type='text/javascript' id='wpml-browser-redirect-js-extra'>
+/* <![CDATA[ */
+var wpml_browser_redirect_params = {"pageLanguage":"en","languageUrls":{"en_us":"https:\/\/www.crypto-news-flash.com\/tezos-makes-great-progress-in-2019-new-partnerships-and-goals\/","en":"https:\/\/www.crypto-news-flash.com\/tezos-makes-great-progress-in-2019-new-partnerships-and-goals\/","us":"https:\/\/www.crypto-news-flash.com\/tezos-makes-great-progress-in-2019-new-partnerships-and-goals\/","de_de":"https:\/\/www.crypto-news-flash.com\/de\/tezos-makes-great-progress-in-2019-new-partnerships-and-goals\/","de":"https:\/\/www.crypto-news-flash.com\/de\/tezos-makes-great-progress-in-2019-new-partnerships-and-goals\/","fr_fr":"https:\/\/www.crypto-news-flash.com\/fr\/tezos-fait-de-grands-progres-en-2019\/","fr":"https:\/\/www.crypto-news-flash.com\/fr\/tezos-fait-de-grands-progres-en-2019\/","es_es":"https:\/\/www.crypto-news-flash.com\/es\/tezos-alcanza-gran-progreso-en-2019-nuevas-asociaciones-y-metas\/","es":"https:\/\/www.crypto-news-flash.com\/es\/tezos-alcanza-gran-progreso-en-2019-nuevas-asociaciones-y-metas\/","pt_pt":"https:\/\/www.crypto-news-flash.com\/pt-pt\/tezos-faz-grandes-progressos-em-2019\/","pt":"https:\/\/www.crypto-news-flash.com\/pt-pt\/tezos-faz-grandes-progressos-em-2019\/","pt-pt":"https:\/\/www.crypto-news-flash.com\/pt-pt\/tezos-faz-grandes-progressos-em-2019\/"},"cookie":{"name":"_icl_visitor_lang_js","domain":"www.crypto-news-flash.com","path":"\/","expiration":24}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/sitepress-multilingual-cms/dist/js/browser-redirect/app.js' id='wpml-browser-redirect-js'></script>
+
+<meta name="generator" content="WPML ver:4.4.12 stt:1,4,3,41,2;" />
+<style id="wplmi-inline-css" type="text/css"> span.wplmi-user-avatar { width: 16px;display: inline-block !important;flex-shrink: 0; } img.wplmi-elementor-avatar { border-radius: 100%;margin-right: 3px; } 
+
+</style>
+	<link rel="preload" href="https://www.crypto-news-flash.com/wp-content/themes/smart-mag/css/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" type="font/woff2" crossorigin="anonymous" as="font">
+	<link rel="preload" href="https://www.crypto-news-flash.com/wp-content/plugins/easy-social-share-buttons3/assets/fonts/essb.woff" type="font/woff" crossorigin="anonymous" as="font">
+<style type="text/css">.essb_displayed_sidebar { left: 5px !important; } .essb_displayed_sidebar_right { right: 5!important;}.essb_displayed_postfloat { margin-left: -65px !important; }@media screen and (max-width: 750px) { .essb_links.essb_displayed_sidebar, .essb_links.essb_displayed_sidebar_right, .essb_links.essb_displayed_postfloat { display: none; } }@media screen and (max-width: 750px) { .essb_links { display: none; } }@media screen and (max-width: 750px) { .essb-mobile-sharebar, .essb-mobile-sharepoint, .essb-mobile-sharebottom, .essb-mobile-sharebottom .essb_links, .essb-mobile-sharebar-window .essb_links, .essb-mobile-sharepoint .essb_links { display: block; } }@media screen and (max-width: 750px) { .essb-mobile-sharebar .essb_native_buttons, .essb-mobile-sharepoint .essb_native_buttons, .essb-mobile-sharebottom .essb_native_buttons, .essb-mobile-sharebottom .essb_native_item, .essb-mobile-sharebar-window .essb_native_item, .essb-mobile-sharepoint .essb_native_item { display: none; } }@media screen and (min-width: 750px) { .essb-mobile-sharebar, .essb-mobile-sharepoint, .essb-mobile-sharebottom { display: none; } }</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">var essb_settings = {"ajax_url":"https:\/\/www.crypto-news-flash.com\/wp-admin\/admin-ajax.php","essb3_nonce":"9b9fab8cc6","essb3_plugin_url":"https:\/\/www.crypto-news-flash.com\/wp-content\/plugins\/easy-social-share-buttons3","essb3_stats":false,"essb3_ga":false,"essb3_ga_mode":"simple","blog_url":"https:\/\/www.crypto-news-flash.com\/","essb3_postfloat_stay":false,"post_id":30790};</script><meta name="generator" content="Powered by Slider Revolution 5.4.7.4 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://www.crypto-news-flash.com/wp-content/uploads/2021/04/cropped-favicon_128-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.crypto-news-flash.com/wp-content/uploads/2021/04/cropped-favicon_128-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.crypto-news-flash.com/wp-content/uploads/2021/04/cropped-favicon_128-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.crypto-news-flash.com/wp-content/uploads/2021/04/cropped-favicon_128-270x270.png" />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			aside.col-3.sidebar {
+	  padding-left: 0px;
+    padding-right: 0px;
+}
+#custom_html-4 .coinzilla {
+	width:300px !important;
+	height:250px !important;
+}
+#custom_html-4 .coinzilla iframe {
+	width:300px !important;
+	height:250px !important;
+}
+.home #custom_html-5 .coinzilla iframe {
+	width:300px !important;
+	height:250px !important;
+}body.coinpage .coin-price{font-size:1em;line-height:1em;}
+body.coinpage .coin-price span{font-size:1.1em;}
+.breadcrumbs .current{font-weight:bold;}
+.main.wrap{margin-top:20px;}
+.main>.row{overflow:visible;}
+.post-header-b .cat-title{margin-bottom:10px;}
+.sc-button span{font-weight:bold;font-size:18px;}
+
+.featured-grid-b .image-link,
+.featured-grid-b .medium-item .image-link,
+.featured-grid-b .small-item .image-link{
+min-height:auto;
+}
+
+.single-post .post-content.post-dynamic .featured{
+    float: right;
+    max-width: 400px;
+    height: auto;
+    margin-left: 30px;
+    width: 100%;
+}
+.single-post .post-content.post-dynamic .featured .wp-post-image{
+box-shadow: 0 0 10px #ddd;
+}
+.single-post .navigate-posts{
+display:none;
+}
+.post-header .featured{
+display:none;
+}
+.main-content .comments{
+display:none;
+}
+@media only screen and (min-width: 1366px) {
+.wrap {
+width: 1200px;
+}
+}
+
+@media only screen and (max-width: 749px){
+    #cookie-notice{bottom: 50px;}
+.single-post .post-content.post-dynamic .featured{
+    float: none;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+.main-content .adform-adbox{
+max-width:100%!important;
+}
+}
+
+.post-content blockquote, .post-content .pullquote {
+    color: #00a37a;
+}
+
+.post-content .cryptoboxes table.dataTable tbody td{
+padding-left:8px;
+padding-right:8px;
+}
+
+.single-post span.cat-title + span.cat-title{
+margin-left:15px;
+}
+.top-bar.dark .top-bar-content {
+	padding:0px;
+}
+.bythr_widgettitle {
+    margin-bottom: 2px;
+    color: #fff;
+    font-family: Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+	    padding: 0 14px;
+    line-height: 34px ;
+	font-size:13px;
+	text-transform: uppercase;
+	color:#444;
+}
+
+.main-head.dark .right {
+    line-height: 100px;
+}
+
+.bythr_adtitle {
+	padding:0px;
+	margin:0px;
+	line-height:20px;
+}
+#main-head .custom-html-widget {
+
+}
+
+.bythr_over_banner {
+	text-align:center;
+}
+.bythr_over_banner img {
+	text-align:center;
+	max-width: 100%;
+	height:auto
+}
+
+
+/* Sidebar on mobile */
+@media only screen and (max-width: 797px){
+	.sidebar {
+		text-align:center;
+	}
+}
+
+ul.coinmc-tabs-list li:nth-child(5), ul.coinmc-tabs-list li:nth-child(6) {
+    display: none;
+}
+
+		</style>
+			
+<!--[if lt IE 9]>
+<script src="https://www.crypto-news-flash.com/wp-content/themes/smart-mag/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<meta name="coinzilla" content="a3ddc6415d865d9bcb4f648aa76a4a59" />
+</head>
+
+
+<body class="post-template-default single single-post postid-30790 single-format-standard page-builder right-sidebar full skin-tech post-layout-modern has-nav-dark-b has-nav-full has-head-dark has-mobile-head cookies-not-set">
+<div class="main-wrap">
+
+	
+	
+	<div class="top-bar dark">
+
+		<div class="wrap">
+			<section class="top-bar-content cf">
+			
+							
+				
+				
+								
+			</section>
+		</div>
+		
+	</div>
+	
+	<div id="main-head" class="main-head dark">
+		<!--<div class="bythr_over_banner">
+            <a href="https://mining.ecos.am/?utm_source=cryptonewsflash&utm_medium=banner&utm_campaign=cloudmining" target="_blank" rel="nofollow">
+            <img src="https://www.crypto-news-flash.com/wp-content/uploads/2021/05/thumbnail_cryptonewsflash.png"/>
+            </a>
+            </div>-->
+		<div class="wrap">
+			
+							<div class="mobile-head">
+				
+					<div class="menu-icon"><a href="#"><i class="fa fa-bars"></i></a></div>
+					<div class="title">
+								<a href="https://www.crypto-news-flash.com/" title="Crypto News Flash" rel="home">
+		
+														
+								
+				<img src="https://www.crypto-news-flash.com/wp-content/uploads/2019/12/crypto-news-flash-logo.png" class="logo-image" alt="Crypto News Flash" />
+					 
+						
+		</a>					</div>
+					<div class="search-overlay">
+						<a href="#" title="Search" class="search-icon"><i class="fa fa-search"></i></a>
+					</div>
+					
+				</div>
+			
+			<header class="dark">
+			
+				<div class="title">
+							<a href="https://www.crypto-news-flash.com/" title="Crypto News Flash" rel="home">
+		
+														
+								
+				<img src="https://www.crypto-news-flash.com/wp-content/uploads/2019/12/crypto-news-flash-logo.png" class="logo-image" alt="Crypto News Flash" />
+					 
+						
+		</a>				</div>
+				
+									
+					<div class="right">
+										</div>
+					
+								
+			</header>
+				
+							
+		</div>
+		
+		
+<div class="main-nav">
+	<div class="navigation-wrap cf" data-sticky-nav="1" data-sticky-type="normal">
+	
+		<nav class="navigation cf nav-full has-search nav-dark nav-dark-b">
+		
+			<div class="wrap">
+			
+				<div class="mobile" data-type="off-canvas" data-search="1">
+					<a href="#" class="selected">
+						<span class="text">Navigate</span><span class="current"></span> <i class="hamburger fa fa-bars"></i>
+					</a>
+				</div>
+				
+				<div class="menu-englisch-menu-container"><ul id="menu-englisch-menu" class="menu"><li id="menu-item-9747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9747"><a href="https://www.crypto-news-flash.com/news/">News</a></li>
+<li id="menu-item-9787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9787"><a href="https://www.crypto-news-flash.com/marketcap/">Marketcap</a></li>
+<li id="menu-item-9748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9748"><a href="https://www.crypto-news-flash.com/buy-crypto/">Buy Crypto</a>
+<ul class="sub-menu">
+	<li id="menu-item-21134" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21134"><a href="https://www.crypto-news-flash.com/buy-bitcoin/">Buy Bitcoin</a></li>
+	<li id="menu-item-21135" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21135"><a href="https://www.crypto-news-flash.com/buy-ethereum/">Buy Ethereum</a></li>
+	<li id="menu-item-21136" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21136"><a href="https://www.crypto-news-flash.com/buy-ripple-xrp/">Buy XRP</a></li>
+	<li id="menu-item-21137" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21137"><a href="https://www.crypto-news-flash.com/buy-bitcoin-cash/">Buy Bitcoin Cash</a></li>
+	<li id="menu-item-21138" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21138"><a href="https://www.crypto-news-flash.com/buy-litecoin/">Buy Litecoin</a></li>
+	<li id="menu-item-21139" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-cat-69 menu-item-21139"><a href="https://www.crypto-news-flash.com/category/buy-crypto/">See all guides</a></li>
+</ul>
+</li>
+<li id="menu-item-9749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9749"><a href="https://www.crypto-news-flash.com/wallets/">Wallets</a>
+<ul class="sub-menu">
+	<li id="menu-item-21131" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21131"><a href="https://www.crypto-news-flash.com/bitcoin-wallet-test-comparison/">Bitcoin Wallet</a></li>
+	<li id="menu-item-21132" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21132"><a href="https://www.crypto-news-flash.com/ethereum-wallet-test-guide/">Ethereum Wallet</a></li>
+	<li id="menu-item-21141" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21141"><a href="https://www.crypto-news-flash.com/dogecoin-wallet-review-test/">Dogecoin Wallet</a></li>
+	<li id="menu-item-21142" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21142"><a href="https://www.crypto-news-flash.com/monero-wallet-test-guide-review/">Monero Wallet</a></li>
+	<li id="menu-item-21143" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21143"><a href="https://www.crypto-news-flash.com/tron-trx-wallet-review-test/">Tron (TRX) Wallet</a></li>
+	<li id="menu-item-21146" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21146"><a href="https://www.crypto-news-flash.com/hardware-wallet-test/">Hardware Wallet Review</a></li>
+	<li id="menu-item-21144" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-cat-71 menu-item-21144"><a href="https://www.crypto-news-flash.com/category/wallets/">See all guides</a></li>
+</ul>
+</li>
+<li id="menu-item-9750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9750"><a href="https://www.crypto-news-flash.com/coins/">Coins</a>
+<ul class="sub-menu">
+	<li id="menu-item-21159" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21159"><a href="https://www.crypto-news-flash.com/what-is-bitcoin-btc-history-and-beginner-guide/">What is Bitcoin?</a></li>
+	<li id="menu-item-21160" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21160"><a href="https://www.crypto-news-flash.com/what-is-ethereum-history-and-beginners-guide/">What is Ethereum?</a></li>
+	<li id="menu-item-21161" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21161"><a href="https://www.crypto-news-flash.com/what-is-ripple-and-what-is-xrp-origin-and-beginner-guide/">What is Ripple?</a></li>
+	<li id="menu-item-21162" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21162"><a href="https://www.crypto-news-flash.com/what-is-dogecoin-doge-the-fun-crypto-currency/">What is Dogecoin?</a></li>
+	<li id="menu-item-21168" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21168"><a href="https://www.crypto-news-flash.com/what-is-tron-trx-beginner-guide-roadmap/">What is Tron?</a></li>
+	<li id="menu-item-21169" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-cat-72 menu-item-21169"><a href="https://www.crypto-news-flash.com/category/coins/">All Coins</a></li>
+</ul>
+</li>
+<li id="menu-item-9751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9751"><a href="https://www.crypto-news-flash.com/advertise/">Advertise</a></li>
+<li id="menu-item-114385" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-114385"><a href="https://www.crypto-news-flash.com/were-hiring/">We’re hiring!</a></li>
+<li id="menu-item-wpml-ls-55-en" class="menu-item wpml-ls-slot-55 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-has-children menu-item-wpml-ls-55-en"><a title="English" href="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/"><span class="wpml-ls-native" lang="en">English</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-wpml-ls-55-de" class="menu-item wpml-ls-slot-55 wpml-ls-item wpml-ls-item-de wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-55-de"><a title="Deutsch" href="https://www.crypto-news-flash.com/de/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/"><span class="wpml-ls-native" lang="de">Deutsch</span></a></li>
+	<li id="menu-item-wpml-ls-55-fr" class="menu-item wpml-ls-slot-55 wpml-ls-item wpml-ls-item-fr wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-55-fr"><a title="Français" href="https://www.crypto-news-flash.com/fr/tezos-fait-de-grands-progres-en-2019/"><span class="wpml-ls-native" lang="fr">Français</span></a></li>
+	<li id="menu-item-wpml-ls-55-es" class="menu-item wpml-ls-slot-55 wpml-ls-item wpml-ls-item-es wpml-ls-menu-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-55-es"><a title="Español" href="https://www.crypto-news-flash.com/es/tezos-alcanza-gran-progreso-en-2019-nuevas-asociaciones-y-metas/"><span class="wpml-ls-native" lang="es">Español</span></a></li>
+	<li id="menu-item-wpml-ls-55-pt-pt" class="menu-item wpml-ls-slot-55 wpml-ls-item wpml-ls-item-pt-pt wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-55-pt-pt"><a title="Português" href="https://www.crypto-news-flash.com/pt-pt/tezos-faz-grandes-progressos-em-2019/"><span class="wpml-ls-native" lang="pt-pt">Português</span></a></li>
+</ul>
+</li>
+</ul></div>				
+						
+			</div>
+			
+		</nav>
+	
+				
+		<div class="nav-search nav-dark-search wrap">
+					
+			<div class="search-overlay">
+				<a href="#" title="Search" class="search-icon"><i class="fa fa-search"></i></a>
+				
+		<div class="search">
+			<form role="search" action="https://www.crypto-news-flash.com/" method="get">
+				<input type="text" name="s" class="query live-search-query" value="" placeholder="Search..."/>
+				<button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div> <!-- .search -->			</div>
+		</div>
+		
+				
+	</div>
+</div>		
+	</div>	
+	<div class="breadcrumbs-wrap">
+		
+		<div class="wrap">
+		<div class="breadcrumbs"><ol itemscope itemtype="http://schema.org/BreadcrumbList"><span class="location">You are at:</span><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.crypto-news-flash.com/"><span itemprop="name">Home</span></a><meta itemprop="position" content="1" /></li><span class="delim">&raquo;</span><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item"  href="https://www.crypto-news-flash.com/category/news/"><span itemprop="name">News</span></a><meta itemprop="position" content="2" /></li><span class="delim">&raquo;</span><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/"><span itemprop="name">Tezos makes great progress in 2019 &#8211; new partnerships and goals</span></a><meta itemprop="position" content="3" /></li></ol></div>		</div>
+		
+	</div>
+
+
+<div class="main wrap cf">
+
+		
+	<div class="row">
+	
+		<div class="col-9 main-content">
+		
+				
+				
+<article id="post-30790" class="post-30790 post type-post status-publish format-standard has-post-thumbnail category-news tag-tezos-2 tag-xtz-2">
+	
+	<header class="post-header-b cf">
+	
+		<div class="category cf">
+												<span class="cat-title cat-68 cat-news" ><a href="https://www.crypto-news-flash.com/category/news/" title="News">News</a></span>
+						</div>
+	
+		<div class="heading cf">
+				
+			<h1 class="post-title">
+			Tezos makes great progress in 2019 &#8211; new partnerships and goals			</h1>
+		
+		</div>
+        
+		<div class="post-meta-b cf">
+		
+			<span class="author-img"><img data-del="avatar" src='https://www.crypto-news-flash.com/wp-content/uploads/2021/06/reynaldo-36x36.png' class='avatar pp-user-avatar avatar-35 photo ' height='35' width='35'/></span>
+			
+			<span class="posted-by">By 
+				<a href="https://www.crypto-news-flash.com/author/reynaldo/" title="Posts by Reynaldo" rel="author">Reynaldo</a>			</span>
+			 
+			<span class="posted-on">
+				<time class="post-date" datetime="2019-12-21T13:58:12+01:00">21. December 2019</time>
+			</span>
+			
+			<a href="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/#respond" class="comments"><i class="fa fa-comments-o"></i>No Comments</a>
+				
+		</div>	
+
+		
+			
+	</header><!-- .post-header -->
+
+	
+
+	<div class="post-content post-dynamic">
+	
+				
+				
+		
+	<div class="featured">
+				
+						
+						
+								    
+					<img width="1000" height="600" src="https://www.crypto-news-flash.com/wp-content/uploads/2019/06/Stanslavs-tezos-1000x600.jpg" class="attachment-main-featured size-main-featured wp-post-image" alt="" loading="lazy" title="Tezos makes great progress in 2019 &#8211; new partnerships and goals" />				
+								
+										
+						
+			</div><div class="essb_links essb_displayed_postfloat essb_share essb_template_default4-retina essb_template_glow-retina essb_1884820083 essb_fixedwidth_50_ print-no" id="essb_displayed_postfloat_1884820083" data-essb-postid="30790" data-essb-position="postfloat" data-essb-button-style="icon" data-essb-template="default4-retina essb_template_glow-retina" data-essb-counter-pos="hidden" data-essb-url="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" data-essb-twitter-url="https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" data-essb-instance="1884820083">
+<ul class="essb_links_list essb_force_hide_name essb_force_hide">
+<li class="essb_item essb_link_facebook nolightbox"> <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/&#038;t=Tezos makes great progress in 2019 - new partnerships and goals" title="" onclick="essb.window(&#39;https://www.facebook.com/sharer/sharer.php?u=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/&#038;t=Tezos makes great progress in 2019 - new partnerships and goals&#39;,&#39;facebook&#39;,&#39;1884820083&#39;); return false;" target="_blank" rel="nofollow" class="nolightbox" ><span class="essb_icon essb_icon_facebook"></span><span class="essb_network_name essb_noname"></span></a></li>
+<li class="essb_item essb_link_twitter nolightbox"> <a href="#" title="" onclick="essb.window(&#39;https://twitter.com/intent/tweet?text=Tezos makes great progress in 2019 - new partnerships and goals&amp;url=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/&amp;counturl=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/&#39;,&#39;twitter&#39;,&#39;1884820083&#39;); return false;" target="_blank" rel="nofollow" class="nolightbox" ><span class="essb_icon essb_icon_twitter"></span><span class="essb_network_name essb_noname"></span></a></li>
+<li class="essb_item essb_link_linkedin nolightbox"> <a href="https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=Tezos makes great progress in 2019 - new partnerships and goals&amp;url=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/" title="" onclick="essb.window(&#39;https://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=Tezos makes great progress in 2019 - new partnerships and goals&amp;url=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/&#39;,&#39;linkedin&#39;,&#39;1884820083&#39;); return false;" target="_blank" rel="nofollow" class="nolightbox" ><span class="essb_icon essb_icon_linkedin"></span><span class="essb_network_name essb_noname"></span></a></li>
+<li class="essb_item essb_link_reddit nolightbox"> <a href="http://reddit.com/submit?url=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/&amp;title=Tezos makes great progress in 2019 - new partnerships and goals" title="" onclick="essb.window(&#39;http://reddit.com/submit?url=https://www.crypto-news-flash.com/tezos-makes-great-progress-in-2019-new-partnerships-and-goals/&amp;title=Tezos makes great progress in 2019 - new partnerships and goals&#39;,&#39;reddit&#39;,&#39;1884820083&#39;); return false;" target="_blank" rel="nofollow" class="nolightbox" ><span class="essb_icon essb_icon_reddit"></span><span class="essb_network_name essb_noname"></span></a></li>
+<li class="essb_item essb_link_telegram nolightbox"> <a href="https://telegram.me/share/url?url=https%3A%2F%2Fwww.crypto-news-flash.com%2Ftezos-makes-great-progress-in-2019-new-partnerships-and-goals%2F&#038;text=Tezos%20makes%20great%20progress%20in%202019%20-%20new%20partnerships%20and%20goals" title="" onclick="essb.tracking_only('', 'telegram', '1884820083', true);" target="_blank" rel="nofollow" class="nolightbox" ><span class="essb_icon essb_icon_telegram"></span><span class="essb_network_name essb_noname"></span></a></li>
+</ul>
+</div>
+<ul>
+<li><strong>The Tezos Foundation presents the achievements it has made during 2019 in a new blog post. </strong></li>
+<li><strong>Tezos (XTZ) has been one of the best performing cryptocurrencies of this year.</strong></li>
+</ul>
+<hr />
+<p>The Tezos Foundation decided to review the achievements, partnerships and progress made during 2019. During the year, the Tezos Foundation has consolidated important strategic cooperations with the objective of creating real use cases for <a href="https://www.crypto-news-flash.com/what-is-tezos-a-serious-challenger-for-ethereum/">Tezos (XTZ)</a>.</p>
+<h2>Achievements and strategic alliances of Tezos (XTZ) in 2019</h2>
+<p>The <a href="https://tezos.foundation/category/news" target="_blank" rel="nofollow noopener noreferrer">publication</a> of the Tezos Foundation focuses on three areas: performance, partnerships and funded entities. In addition, the Tezos Foundation gives great importance to the role that the community has played in the achievements during the year.</p>
+<p>The publication highlights the performance of the Tezos network, registering 430 delegates before the end of the year. This achievement is related to the growth that the price of XTZ has had during the year.</p>
+<p>In addition Tezos has introduced 3 new programming languages for smart contracts with 6 varieties of syntax and had 2 updates approved by its governance model.</p>
+<p>During this year, the blockchain of Tezos (XTZ) reached an important goal. It became the first blockchain to update automatically without using a hard fork.</p>
+<p>Other relevant achievements for Tezos during 2019:</p>
+<ul>
+<li>Updating of the Tezos protocol by Athens and Babylon amendments.</li>
+<li>Launch of the governance explorer Tezos Agora.</li>
+<li>Training of more than 1300 Tezos developers.</li>
+</ul>
+<p>In terms of partnerships, Tezos&#8217; achievements are equally important. The Tezos Foundation has joined forces with banks, groups and platforms to further develop Tezos&#8217; potential.</p>
+<p>Among the most relevant partners you can find Securitize, Globacap, BTG Pactual, Fundament Group. Many of the partners mentioned will use Tezos (XTZ) as part of solutions applied to everyday life.</p>
+<p>On the other hand, the Tezos community also saw a significant growth. During the year there were 3 international TQuorum events with more than 300 participants, 5 regional organizations were founded (in India, Africa, Brazil, Ukraine, China) and more than 40 Tezos community meetings around the world were conducted.</p>
+<h3>Tezos (XTZ) enters the top 10 of cryptocurrencies by capitalization</h3>
+<p>During 2019, several of the major cryptoexchanges <a href="https://www.crypto-news-flash.com/tezos-enters-the-top-10-reasons-behind-the-xtz-price-rally/" target="" rel="noopener noreferrer">enabled staking for Tezos (XTZ)</a>. Coinbase, Binance and Kraken have seen a positive growth of user joining the plattforms. Users of the platforms will see a return of 6% per month, paid every other day of the week.</p>
+<p>For this reason the price of XTZ saw a significant boost in its performance overtaking cryptocurrencies such as Bitcoin. Its upward trend could continue due to the role that exchanges play in the market.</p>
+<p>The <a href="https://www.crypto-news-flash.com/tezos-price-chart/">price of XTZ</a> is $1.52 USD with a profit of 2.29% in the last 24 hours. Due to the significant growth Tezos entered the top 10 crypto ranking by market capitalization of the biggest cryptocurrencies worldwide.</p>
+<p>Follow us on <a href="https://www.facebook.com/Crypto-News-Flash-100120928103470/" target="_blank" rel="nofollow noopener noreferrer">Facebook</a> and <a href="https://twitter.com/CryptoNewsFlas3" target="_blank" rel="nofollow noopener noreferrer">Twitter</a> and don’t miss any hot news anymore! Do you like our <a href="https://www.crypto-news-flash.com/marketcap/">price indices</a>?</p>
+<div class="essb_break_scroll"></div>		
+		
+		
+				
+				
+				
+					<div class="tagcloud"><a href="https://www.crypto-news-flash.com/tag/tezos-2/" rel="tag">Tezos</a> <a href="https://www.crypto-news-flash.com/tag/xtz-2/" rel="tag">XTZ</a></div>
+				
+	</div><!-- .post-content -->
+		
+	
+			
+</article>
+
+
+	<!-- Coinzilla Banner 728x90 -->
+<script type="rocketlazyloadscript" async src="https://coinzillatag.com/lib/display.js"></script>
+<div class="coinzilla" data-zone="C-277607dd63990fae550"></div>
+<script type="rocketlazyloadscript">
+window.coinzilla_display = window.coinzilla_display || [];
+var c_display_preferences = {};
+c_display_preferences.zone = "277607dd63990fae550";
+c_display_preferences.width = "728";
+c_display_preferences.height = "90";
+coinzilla_display.push(c_display_preferences);
+</script>
+
+
+	<div class="author-box">
+		<h3 class="section-head">About Author</h3>
+
+				<section class="author-info">
+		
+			<img data-del="avatar" src='https://www.crypto-news-flash.com/wp-content/uploads/2021/06/reynaldo-150x150.png' class='avatar pp-user-avatar avatar-100 photo ' height='100' width='100'/>			
+			<div class="description">
+				<a href="https://www.crypto-news-flash.com/author/reynaldo/" title="Posts by Reynaldo" rel="author">Reynaldo</a>				
+				<ul class="social-icons">
+								</ul>
+				
+<p class="bio">
+Reynaldo Marquez has closely followed the growth of Bitcoin and blockchain technology since 2016. He has since worked as a columnist on crypto coins covering advances, falls and rises in the market, bifurcations and developments. He believes that crypto coins and blockchain technology will have a great positive impact on people's lives.                </p>
+			</div>
+			
+		</section>	</div>
+
+
+
+	
+	<section class="related-posts">
+		<h3 class="section-head"><span class="color">Related</span> Posts</h3> 
+		<ul class="highlights-box three-col related-posts">
+		
+				
+			<li class="highlights column one-third">
+				
+				<article>
+						
+					<a href="https://www.crypto-news-flash.com/morgan-stanley-buys-additional-58000-gbtc-shares-total-approaches-7-million-shares/" title="Morgan Stanley buys additional 58,000 GBTC shares- total approaches 7 million shares" class="image-link">
+						<img width="214" height="140" src="https://www.crypto-news-flash.com/wp-content/uploads/2021/09/bitcoin-6631099_1920-214x140.jpg" class="image wp-post-image" alt="" loading="lazy" title="Morgan Stanley buys additional 58,000 GBTC shares- total approaches 7 million shares" srcset="https://www.crypto-news-flash.com/wp-content/uploads/2021/09/bitcoin-6631099_1920-214x140.jpg 214w, https://www.crypto-news-flash.com/wp-content/uploads/2021/09/bitcoin-6631099_1920-104x69.jpg 104w" sizes="(max-width: 214px) 100vw, 214px" />	
+											</a>
+					
+										
+					<h2><a href="https://www.crypto-news-flash.com/morgan-stanley-buys-additional-58000-gbtc-shares-total-approaches-7-million-shares/" title="Morgan Stanley buys additional 58,000 GBTC shares- total approaches 7 million shares">Morgan Stanley buys additional 58,000 GBTC shares- total approaches 7 million shares</a></h2>
+					
+								<div class="cf listing-meta meta below">
+					
+				<time datetime="2021-09-28T13:16:05+02:00" class="meta-item">28. September 2021</time>					
+			</div>
+							
+				</article>
+			</li>
+			
+				
+			<li class="highlights column one-third">
+				
+				<article>
+						
+					<a href="https://www.crypto-news-flash.com/report-shows-institutional-investors-bought-the-crypto-dip-caused-by-china/" title="Report shows institutional investors bought the crypto dip caused by China" class="image-link">
+						<img width="214" height="140" src="https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-214x140.jpg" class="image wp-post-image" alt="" loading="lazy" title="Report shows institutional investors bought the crypto dip caused by China" srcset="https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-214x140.jpg 214w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-104x69.jpg 104w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-24x16.jpg 24w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-36x24.jpg 36w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-48x32.jpg 48w" sizes="(max-width: 214px) 100vw, 214px" />	
+											</a>
+					
+										
+					<h2><a href="https://www.crypto-news-flash.com/report-shows-institutional-investors-bought-the-crypto-dip-caused-by-china/" title="Report shows institutional investors bought the crypto dip caused by China">Report shows institutional investors bought the crypto dip caused by China</a></h2>
+					
+								<div class="cf listing-meta meta below">
+					
+				<time datetime="2021-09-28T12:55:11+02:00" class="meta-item">28. September 2021</time>					
+			</div>
+							
+				</article>
+			</li>
+			
+				
+			<li class="highlights column one-third">
+				
+				<article>
+						
+					<a href="https://www.crypto-news-flash.com/major-challenges-for-bitcoin-btc-in-the-near-future/" title="Major challenges for Bitcoin (BTC) in the near future" class="image-link">
+						<img width="214" height="140" src="https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-214x140.jpg" class="image wp-post-image" alt="" loading="lazy" title="Major challenges for Bitcoin (BTC) in the near future" srcset="https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-214x140.jpg 214w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-104x69.jpg 104w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-24x16.jpg 24w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-36x24.jpg 36w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-48x32.jpg 48w" sizes="(max-width: 214px) 100vw, 214px" />	
+											</a>
+					
+										
+					<h2><a href="https://www.crypto-news-flash.com/major-challenges-for-bitcoin-btc-in-the-near-future/" title="Major challenges for Bitcoin (BTC) in the near future">Major challenges for Bitcoin (BTC) in the near future</a></h2>
+					
+								<div class="cf listing-meta meta below">
+					
+				<time datetime="2021-09-28T11:55:49+02:00" class="meta-item">28. September 2021</time>					
+			</div>
+							
+				</article>
+			</li>
+			
+				</ul>
+	</section>
+
+	
+				<div class="comments">
+				
+	
+	<div id="comments">
+
+			<p class="nocomments">Comments are closed.</p>
+		
+	
+		
+	<!--<small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</small>-->
+
+	</div><!-- #comments -->
+				</div>
+	
+				
+		</div>
+		
+		
+			
+		
+		
+		<aside class="col-3 sidebar">
+		
+					<div class="">
+			
+				<ul>
+				
+				
+			<li id="bunyad-latest-posts-widget-4" class="widget latest-posts">			
+							<h3 class="widgettitle">Latest News</h3>						
+			<ul class="posts-list">
+			
+							<li>
+				
+					<a href="https://www.crypto-news-flash.com/morgan-stanley-buys-additional-58000-gbtc-shares-total-approaches-7-million-shares/"><img width="104" height="69" src="https://www.crypto-news-flash.com/wp-content/uploads/2021/09/bitcoin-6631099_1920-104x69.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" title="Morgan Stanley buys additional 58,000 GBTC shares- total approaches 7 million shares" srcset="https://www.crypto-news-flash.com/wp-content/uploads/2021/09/bitcoin-6631099_1920-104x69.jpg 104w, https://www.crypto-news-flash.com/wp-content/uploads/2021/09/bitcoin-6631099_1920-214x140.jpg 214w" sizes="(max-width: 104px) 100vw, 104px" />					
+																					
+					</a>
+					
+					<div class="content">
+					
+											
+						<a href="https://www.crypto-news-flash.com/morgan-stanley-buys-additional-58000-gbtc-shares-total-approaches-7-million-shares/" title="Morgan Stanley buys additional 58,000 GBTC shares- total approaches 7 million shares">
+							Morgan Stanley buys additional 58,000 GBTC shares- total approaches 7 million shares</a>
+							
+									<div class="cf listing-meta meta below">
+					
+				<time datetime="2021-09-28T13:16:05+02:00" class="meta-item">28. September 2021</time>					
+			</div>
+																			
+					</div>
+				
+				</li>
+							<li>
+				
+					<a href="https://www.crypto-news-flash.com/report-shows-institutional-investors-bought-the-crypto-dip-caused-by-china/"><img width="104" height="69" src="https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-104x69.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" title="Report shows institutional investors bought the crypto dip caused by China" srcset="https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-104x69.jpg 104w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-300x199.jpg 300w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-1024x678.jpg 1024w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-768x508.jpg 768w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-1536x1017.jpg 1536w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-214x140.jpg 214w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-24x16.jpg 24w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-36x24.jpg 36w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920-48x32.jpg 48w, https://www.crypto-news-flash.com/wp-content/uploads/2021/07/bitcoin-3890350_1920.jpg 1920w" sizes="(max-width: 104px) 100vw, 104px" />					
+																					
+					</a>
+					
+					<div class="content">
+					
+											
+						<a href="https://www.crypto-news-flash.com/report-shows-institutional-investors-bought-the-crypto-dip-caused-by-china/" title="Report shows institutional investors bought the crypto dip caused by China">
+							Report shows institutional investors bought the crypto dip caused by China</a>
+							
+									<div class="cf listing-meta meta below">
+					
+				<time datetime="2021-09-28T12:55:11+02:00" class="meta-item">28. September 2021</time>					
+			</div>
+																			
+					</div>
+				
+				</li>
+							<li>
+				
+					<a href="https://www.crypto-news-flash.com/major-challenges-for-bitcoin-btc-in-the-near-future/"><img width="104" height="69" src="https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-104x69.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" title="Major challenges for Bitcoin (BTC) in the near future" srcset="https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-104x69.jpg 104w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-300x200.jpg 300w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-1024x683.jpg 1024w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-768x512.jpg 768w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-1536x1024.jpg 1536w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-214x140.jpg 214w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-24x16.jpg 24w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-36x24.jpg 36w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920-48x32.jpg 48w, https://www.crypto-news-flash.com/wp-content/uploads/2021/08/bitcoin-6566979_1920.jpg 1920w" sizes="(max-width: 104px) 100vw, 104px" />					
+																					
+					</a>
+					
+					<div class="content">
+					
+											
+						<a href="https://www.crypto-news-flash.com/major-challenges-for-bitcoin-btc-in-the-near-future/" title="Major challenges for Bitcoin (BTC) in the near future">
+							Major challenges for Bitcoin (BTC) in the near future</a>
+							
+									<div class="cf listing-meta meta below">
+					
+				<time datetime="2021-09-28T11:55:49+02:00" class="meta-item">28. September 2021</time>					
+			</div>
+																			
+					</div>
+				
+				</li>
+							<li>
+				
+					<a href="https://www.crypto-news-flash.com/coinbase-to-allow-direct-paycheck-deposition-into-user-online-accounts/"><img width="104" height="69" src="https://www.crypto-news-flash.com/wp-content/uploads/2021/02/Coinbase-7-104x69.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Coinbase 7" loading="lazy" title="Coinbase to allow direct paycheck deposition into user online accounts" srcset="https://www.crypto-news-flash.com/wp-content/uploads/2021/02/Coinbase-7-104x69.jpg 104w, https://www.crypto-news-flash.com/wp-content/uploads/2021/02/Coinbase-7-300x200.jpg 300w, https://www.crypto-news-flash.com/wp-content/uploads/2021/02/Coinbase-7-1024x683.jpg 1024w" sizes="(max-width: 104px) 100vw, 104px" />					
+																					
+					</a>
+					
+					<div class="content">
+					
+											
+						<a href="https://www.crypto-news-flash.com/coinbase-to-allow-direct-paycheck-deposition-into-user-online-accounts/" title="Coinbase to allow direct paycheck deposition into user online accounts">
+							Coinbase to allow direct paycheck deposition into user online accounts</a>
+							
+									<div class="cf listing-meta meta below">
+					
+				<time datetime="2021-09-28T11:37:27+02:00" class="meta-item">28. September 2021</time>					
+			</div>
+																			
+					</div>
+				
+				</li>
+						</ul>
+			
+			</li>
+<li id="custom_html-14" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- Coinzilla Banner 300x250 -->
+<script type="rocketlazyloadscript" async src="https://coinzillatag.com/lib/display.js"></script>
+<div class="coinzilla" data-zone="C-229607dd639904ac581"></div>
+<script type="rocketlazyloadscript">
+window.coinzilla_display = window.coinzilla_display || [];
+var c_display_preferences = {};
+c_display_preferences.zone = "229607dd639904ac581";
+c_display_preferences.width = "300";
+c_display_preferences.height = "250";
+coinzilla_display.push(c_display_preferences);
+</script></div></li>
+		
+				</ul>
+		
+			</div>
+		
+		</aside>
+		
+		
+	</div> <!-- .row -->
+		
+	
+</div> <!-- .main -->
+
+
+		
+	<footer class="main-footer">
+	
+			<div class="wrap">
+		
+					<ul class="widgets row cf">
+				<li class="widget col-3 widget_text"><h3 class="widgettitle">About us and additional Info</h3>			<div class="textwidget"><p><img class="aligncenter wp-image-5055" src="https://www.crypto-news-flash.com/wp-content/uploads/2019/05/cnf_final_weiß_quadratisch-150x150.png" alt="Crypto News Flash" width="130" height="130" loading="lazy"/></p>
+<p>Crypto News Flash is your number one source for the latest news and information from the world of cryptocurrencies.</p>
+<p><a href="https://www.crypto-news-flash.com/about-us/" rel="noopener">About us</a><br />
+<a href="https://www.crypto-news-flash.com/contact-us/">Contact us</a><br />
+<a href="https://www.crypto-news-flash.com/legals/" rel="nofollow">Legals</a><br />
+<a href="https://www.crypto-news-flash.com/privacy-policy/" rel="nofollow">Data protection policy</a></p>
+<p>*= Affiliate-Link</p>
+</div>
+		</li><li class="widget col-3 widget_text"><h3 class="widgettitle">Charts</h3>			<div class="textwidget"><ul>
+<li><a title="Bitcoin Price" href="https://www.crypto-news-flash.com/bitcoin-price-chart/">Bitcoin Price</a></li>
+<li><a title="Ethereum Price" href="https://www.crypto-news-flash.com/ethereum-price-chart/">Ethereum Price</a></li>
+<li><a title="XRP Price" href="https://www.crypto-news-flash.com/ripple-price-chart/">XRP Price</a></li>
+<li><a title="Litecoin Price" href="https://www.crypto-news-flash.com/litecoin-price-chart/">Litecoin Price</a></li>
+<li><a title="Bitcoin Cash Price" href="https://www.crypto-news-flash.com/bitcoin-cash-price-chart/">Bitcoin Cash Price</a></li>
+<li><a title="EOS Price" href="https://www.crypto-news-flash.com/eos-price-chart/">EOS Price</a></li>
+<li><a title="Cardano Price" href="https://www.crypto-news-flash.com/cardano-price-chart/">Cardano Price</a></li>
+<li><a title="Tron Price" href="https://www.crypto-news-flash.com/tron-price-chart/">Tron Price</a></li>
+<li><a title="IOTA Price" href="https://www.crypto-news-flash.com/iota-price-chart/">IOTA Price</a></li>
+<li><a title="Monero Price" href="https://www.crypto-news-flash.com/monero-price-chart/">Monero Price</a></li>
+</ul>
+</div>
+		</li><li class="widget col-3 widget_text"><h3 class="widgettitle">Buy Cryptocurrencies</h3>			<div class="textwidget"><ul>
+<li><a title="Buy Bitcoin" href="https://www.crypto-news-flash.com/buy-bitcoin">Buy Bitcoin</a></li>
+<li><a title="Buy Ethereum" href="https://www.crypto-news-flash.com/buy-ethereum">Buy Ethereum</a></li>
+<li><a title="Buy XRP" href="https://www.crypto-news-flash.com/buy-ripple-xrp">Buy XRP</a></li>
+<li><a title="Buy Litecoin" href="https://www.crypto-news-flash.com/buy-litecoin">Buy Litecoin</a></li>
+<li><a title="Buy Bitcoin Cash" href="https://www.crypto-news-flash.com/buy-bitcoin-cash">Buy Bitcoin Cash</a></li>
+<li><a title="Buy EOS" href="https://www.crypto-news-flash.com/buy-eos">Buy EOS</a></li>
+<li><a title="Buy Cardano" href="https://www.crypto-news-flash.com/buy-cardano">Buy Cardano</a></li>
+<li><a title="Buy Tron" href="https://www.crypto-news-flash.com/buy-tron">Buy Tron</a></li>
+<li><a title="Buy IOTA" href="https://www.crypto-news-flash.com/buy-iota">Buy IOTA</a></li>
+<li><a title="Buy Monero" href="https://www.crypto-news-flash.com/buy-monero">Buy Monero</a></li>
+</ul>
+</div>
+		</li><li class="widget col-3 widget_text"><h3 class="widgettitle">Wallets</h3>			<div class="textwidget"><ul>
+<li><a href="https://www.crypto-news-flash.com/bitcoin-wallet-test-comparison/">Bitcoin Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/ethereum-wallet-test-guide/">Ethereum Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/ripple-wallet-guide-review/">XRP Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/litecoin-wallet-guide-test/">Litecoin Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/bitcoin-cash-wallet-review-guide/">Bitcoin Cash Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/eos-wallet-test-review/">EOS Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/cardano-wallet-test-review/">Cardano Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/tron-trx-wallet-review-test/">Tron Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/review-and-test-of-the-best-iota-wallets/">IOTA Wallet</a></li>
+<li><a href="https://www.crypto-news-flash.com/monero-wallet-test-guide-review/">Monero Wallet</a></li>
+</ul>
+</div>
+		</li>			</ul>
+				
+		</div>
+	
+		
+	
+			<div class="lower-foot">
+			<div class="wrap">
+		
+						
+			<div class="widgets">
+							<div class="textwidget"><p><strong>Risk warning and disclaimer</strong>: The contents of this website are intended solely for the entertainment and information of readers and do not provide investment advice or a recommendation within the context of the Securities Trading Act. The content of this website solely reflects the subjective and personal opinion of the authors. Readers are requested to form their own opinions on the contents of this website and to seek professional and independent advice before making concrete investment decisions. The information found on this site does not contain any information or messages, but is intended solely for information and personal use. None of the information shown constitutes an offer to buy or sell futures contracts, securities, options, CFDs, other derivatives or cryptocurrencies. Any opinions provided, including e-mails, live chat, SMS or other forms of communication across social media networks do not constitute a suitable basis for an investment decision. You alone bear the risk for your investment decisions. <a href="https://www.crypto-news-flash.com/disclaimer/" rel="nofollow">Read more!</a></p>
+</div>
+					</div>
+			
+					
+			</div>
+		</div>		
+		
+	</footer>
+	
+</div> <!-- .main-wrap -->
+
+<script type="rocketlazyloadscript">
+			jQuery(document).ready(function($){
+				$('a.sc-button').attr('target','_blank');
+				$('a.sc-button').attr('rel','nofollow');
+			});
+		</script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","headline":"Tezos makes great progress in 2019 &#8211; new partnerships and goals","url":"https:\/\/www.crypto-news-flash.com\/tezos-makes-great-progress-in-2019-new-partnerships-and-goals\/","image":{"@type":"ImageObject","url":"https:\/\/www.crypto-news-flash.com\/wp-content\/uploads\/2019\/06\/Stanslavs-tezos-1000x600.jpg","width":1000,"height":600},"datePublished":"2019-12-21T13:58:12+01:00","dateModified":"2019-12-21T20:49:23+01:00","author":{"@type":"Person","name":"Reynaldo"},"publisher":{"@type":"Organization","name":"Crypto News Flash","logo":{"@type":"ImageObject","url":"https:\/\/www.crypto-news-flash.com\/wp-content\/uploads\/2019\/12\/crypto-news-flash-logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.crypto-news-flash.com\/tezos-makes-great-progress-in-2019-new-partnerships-and-goals\/"}}</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/comment-reply.min.js' id='comment-reply-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/jquery/ui/tabs.min.js' id='jquery-ui-tabs-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/jquery/ui/accordion.min.js' id='jquery-ui-accordion-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/advanced-tables/js/advanced-tables-frontend.js' id='advanced-tables-frontend-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/advanced-tables/js/jquery.floatThead.min.js' id='sticky-header-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/advanced-tables/js/jquery.tablesorter.min.js' id='table-sorter-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/advanced-tables/js/stacktable.js' id='stacktable-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/advanced-tables/js/jquery.responsiveTabs.min.js' id='responsive-tabs-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/auto-load-next-post/assets/js/libs/scrollspy.min.js' id='auto-load-next-post-scrollspy-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/auto-load-next-post/assets/js/libs/jquery.history.js' id='auto-load-next-post-history-js'></script>
+<script type='text/javascript' id='auto-load-next-post-script-js-extra'>
+/* <![CDATA[ */
+var auto_load_next_post_params = {"alnp_version":"1.5.14","alnp_content_container":".main-content","alnp_title_selector":"h1.post-title","alnp_navigation_container":".navigate-posts","alnp_comments_container":"div#comments","alnp_remove_comments":"no","alnp_google_analytics":"yes","alnp_event_on_load":"","alnp_event_on_entering":"","alnp_is_customizer":"","alnp_load_in_footer":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/auto-load-next-post/assets/js/frontend/auto-load-next-post.min.js' id='auto-load-next-post-script-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.crypto-news-flash.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+<script type='text/javascript' id='ppress-frontend-script-js-extra'>
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/www.crypto-news-flash.com\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"f478f27540","disable_ajax_form":"false"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js' id='ppress-frontend-script-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.crypto-news-flash.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' id='bunyad-theme-js-extra'>
+/* <![CDATA[ */
+var Bunyad = {"ajaxurl":"https:\/\/www.crypto-news-flash.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/js/bunyad-theme.js' id='bunyad-theme-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/js/jquery.flexslider-min.js' id='flex-slider-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/themes/smart-mag/js/jquery.sticky-sidebar.min.js' id='sticky-sidebar-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/easy-social-share-buttons3/assets/js/essb-core.min.js' id='easy-social-share-buttons-core-js'></script>
+<script type='text/javascript' id='cookie-notice-front-js-extra'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/www.crypto-news-flash.com\/wp-admin\/admin-ajax.php","nonce":"f4803a8aef","hideEffect":"fade","position":"bottom","onScroll":"1","onScrollOffset":"500","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"1","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" async  src='https://www.crypto-news-flash.com/wp-content/plugins/cookie-notice/includes/../js/front.min.js' id='cookie-notice-front-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/js/vendor.min.js' id='coinmc-vendor-js'></script>
+<script type='text/javascript' id='coinmc-common-js-extra'>
+/* <![CDATA[ */
+var coinmc = {"url":"https:\/\/www.crypto-news-flash.com\/wp-content\/plugins\/coinpress\/","ajax_url":"https:\/\/www.crypto-news-flash.com\/wp-admin\/admin-ajax.php","currency_format":{"USD":{"iso":"USD","symbol":"$","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"EUR":{"iso":"EUR","symbol":"\u20ac","position":"{price}{space}{symbol}","thousands_sep":".","decimals_sep":",","decimals":"2"},"INR":{"iso":"INR","symbol":"\u20b9","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"}},"default_currency_format":{"iso":"USD","symbol":"","position":"{symbol}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"text":{"addtowatchlist":"Add to Watchlist","removefromwatchlist":"Remove from Watchlist","buynow":"Buy Now","sellnow":"Sell Now","emptytable":"No Results Found","pageinfo":"Showing %s - %s of %s coins","lengthmenu":"Rows per page:","nextbtn":"Next","prevbtn":"Prev","periods":{"hour":"Hour","day":"Day","week":"Week","month":"Month","year":"Year","all":"All"},"price":"Price","volume":"Volume","months":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/coinpress/assets/public/js/common.min.js' id='coinmc-common-js'></script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/massive-cryptocurrency-widgets/assets/public/js/socket.io.js' id='mcw-crypto-socket-io-js'></script>
+<!--[if lt IE 9]>
+<script  src='https://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js' id='mcw-crypto-es5-js'></script>
+<![endif]-->
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/massive-cryptocurrency-widgets/assets/public/js/selectize.min.js' id='mcw-crypto-select-js'></script>
+<script type='text/javascript' id='mcw-crypto-common-js-extra'>
+/* <![CDATA[ */
+var mcw = {"url":"https:\/\/www.crypto-news-flash.com\/wp-content\/plugins\/massive-cryptocurrency-widgets\/","ajax_url":"https:\/\/www.crypto-news-flash.com\/wp-admin\/admin-ajax.php","currency_format":{"USD":{"iso":"USD","symbol":"$","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"EUR":{"iso":"EUR","symbol":"\u20ac","position":"{price}{space}{symbol}","thousands_sep":".","decimals_sep":",","decimals":"2"},"INR":{"iso":"INR","symbol":"\u20b9","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"}},"default_currency_format":{"iso":"USD","symbol":"","position":"{symbol}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"text":{"previous":"Previous","next":"Next","lengthmenu":"Coins per page: _MENU_"},"api":"coinmarketcap"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript"  src='https://www.crypto-news-flash.com/wp-content/plugins/massive-cryptocurrency-widgets/assets/public/js/common.min.js' id='mcw-crypto-common-js'></script>
+<script  src='https://www.crypto-news-flash.com/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script type="rocketlazyloadscript">
+				jQuery(document).ready(function($) {
+					$( '.main.wrap a' ).each(function() {
+						var href = '';
+						href = $( this ).attr('href');
+						if(href){
+							if((href.length > 2) && (href.indexOf('crypto-news-flash') == -1)){
+							console.log(href);
+							  $( this ).attr('rel','noopener noreferrer');
+							  $( this ).attr('target','_blank');
+							}
+						}
+					});
+				});
+			</script><link rel="stylesheet" id="essb-cct-style"  href="https://www.crypto-news-flash.com/wp-content/plugins/easy-social-share-buttons3/lib/modules/click-to-tweet/assets/css/styles.min.css" type="text/css" media="all" /><style type="text/css">.essb_fixedwidth_50_ a { width: 50px;}.essb_fixedwidth_50_ a { text-align: center;}</style><script type="rocketlazyloadscript" data-rocket-type="text/javascript"></script>
+		<!-- Cookie Notice plugin v2.1.4 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(42,179,145,1);"><div class="cookie-notice-container" style="color: #ffffff;"><span id="cn-notice-text" class="cn-text-container">Crypto-news-flash.com uses Cookies to ensure the best experience for you. If you continue to use this site we will assume that you are happy with it!</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button wp-default button color=&quot;#2ab391&quot;" aria-label="Accept">Accept</a><a href="https://www.crypto-news-flash.com/privacy-policy/" target="_blank" id="cn-more-info" class="cn-more-info cn-button wp-default button color=&quot;#2ab391&quot;" aria-label="Privacy policy">Privacy policy</a></span><a href="javascript:void(0);" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="Accept"></a></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin --><script type="rocketlazyloadscript">
+jQuery( document ).ready(function() {
+        jQuery('.coinmc-links li a').attr('rel','nofollow')
+    });
+</script>
+
+<div id="fb-root"></div>
+<script type="rocketlazyloadscript" async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=1013315845685396&autoLogAppEvents=1"></script>
+</body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1632828033 -->

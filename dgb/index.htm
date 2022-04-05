@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+   <title>DigiByte Explorer</title>
+   <meta name="description" content="DigiByte Blockchain Explorer and Statistics. Access detailed blockchain information on DigiByte (dgb) transactions, blocks and addresses" />
+   <meta name="referrer" content="origin">   
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/logo/fav/?dgb.png">
+<link rel="preload" as="font" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/fonts/glyphicons-halflings-regular.woff2" type="font/woff2" crossorigin="anonymous">
+<script>var darkTheme=0;(function (){
+var theme=localStorage.getItem("theme");
+if (!theme) {theme=(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"};
+if (theme=="dark") {darkTheme=1};
+if (darkTheme) {
+   document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/slate/bootstrap.min.css" crossorigin="anonymous" />'
+                + '<link href="/theme/theme.css?5" rel="stylesheet" type="text/css" />'
+                + '<link href="/theme/theme.dark.css?5" rel="stylesheet" type="text/css" />');
+} else {
+   document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous" />'
+                + '<link href="/theme/theme.css?5" rel="stylesheet" type="text/css" />');
+}
+requestAnimationFrame(function(){
+   document.body.setAttribute("class", (darkTheme?"dark":"light")+"-theme");
+   document.querySelector(".glyphicon-adjust").onclick=function(){
+      localStorage.setItem("theme",darkTheme?"light":"dark");
+      location.reload();
+   }
+});
+})();</script>
+<script src="https://cdn4.buysellads.net/pub/chainzcryptoid.js?1594559" async defer></script><style>
+#recent-blocks tr {
+   transition: 1s;
+}
+#recent-blocks td > span {
+   min-width: 2.5em;
+   display: inline-block;
+   text-align: right;
+}
+#recent-blocks td > span+span {
+   margin-left: 3em;
+   min-width: 4em;
+   font-style: italic;
+   color: #aaa;
+}
+@media (max-width: 991px) {
+   #recent-blocks td > span+span {
+      display: none;
+   }
+}
+.popover-content {
+   white-space: nowrap;
+}
+</style>
+</head>
+<body>
+<div class="navbar navbar-default" role="navigation">
+   <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand logo" href="https://chainz.cryptoid.info/"><img src="https://chainz.cryptoid.info/theme/cryptoID96.png" alt="CryptoID logo" width=140 height=32></a>
+      </div>
+      <div class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+            <li><a href="https://chainz.cryptoid.info/">Blockchains<span class="visible-xs-inline"> - all our explorers</span></a></li>
+            <li><a href="https://chainz.cryptoid.info/faq.dws">FAQ<span class="visible-xs-inline"> - answers to frequent questions</span></a></li>
+            <li><a href="https://chainz.cryptoid.info/api.dws">API<span class="visible-xs-inline"> - documentation for developpers</span></a></li>
+         </ul>
+         <p class="navbar-right navbar-text"><a href="https://twitter.com/cryptoID_info">
+            <img src="https://chainz.cryptoid.info/theme/Twitter128.png" alt="Follow us on twitter" title="Follow us on twitter" style="height:16px">
+            <span class="visible-xs-inline"> - follow us on twitter</span>
+         </a></p>
+         <p class="navbar-right navbar-text">
+            <span class="glyphicon glyphicon-adjust" style="top:4px; cursor:pointer" title="Toggle Light/Dark theme"></span>
+            <span class="visible-xs-inline"> - toggle light/dark theme</span>
+         </p>
+      </div>
+   </div>
+</div>
+
+<script type="application/ld+json">{"@context": "http://schema.org","@type": "WebSite","url": "https://chainz.cryptoid.info/dgb/",
+"potentialAction":{"@type": "SearchAction","target": "https://chainz.cryptoid.info/dgb/search.dws?q={q}","query-input": "required name=q"}}</script>
+<div class="container">
+<div class="row"><table align="center" class="subhead"><tr><td><a href="https://chainz.cryptoid.info/dgb/"><img src="/logo/dgb.png" class="coin-logo" alt="Logotype for DigiByte"></a><td vertical-align="center"><h1 style="margin-top: 0"><a href="https://chainz.cryptoid.info/dgb/">DigiByte<span class="hidden-xs"> Blockchain Explorer</span></a></h1><p><span id="up-to-block">up to block 13732172</span></p></table></div><div class="row" id="search-row"><div class="col-sm-3"></div><form id="search" class="form-horizontal col-sm-6" role="search" action="search.dws" method="get"><div class="input-group"><input type="text" class="form-control" id="searchField" name="q" aria-label="Search" placeholder="Search address, block, transaction, tag..."><div class="input-group-btn"><button type="submit" class="btn btn-default" aria-label="Submit"><i class="glyphicon glyphicon-search"></i></button></div></div></form></div>
+   <div class="row">
+      <center>
+<center class="row" id="top-thin" style="min-height:50px;margin: 10px 0"><!-- ChainzCryptoid_S2S_320x50_ATF_ROS --><div id="bsa-zone_1589558854556-3_123456"></div></center>
+
+      </center>
+   </div>
+   <div class="row" style="margin: 0 -30px 0 -30px" id="ticker-panels">
+      <div class="col-md-6" style="padding:0">
+         <div class="col-xs-4">
+            <div class="panel panel-default">
+               <center class="panel-heading">BTC price&nbsp;<a href="#trading-warning" class="glyphicon glyphicon-asterisk" style="font-size: 65%;top: -3px;"></a></center>
+               <center class="panel-body">                  <span><a href="https://coinmarketcap.com/currencies/DigiByte/#markets" id="ticker" target="_blank" rel="noopener">
+                  ---
+                  </a></span>
+               </center>
+            </div>
+         </div>
+         <div class="col-xs-4">
+            <div class="panel panel-default">
+               <center class="panel-heading">USD price&nbsp;<a href="#trading-warning" class="glyphicon glyphicon-asterisk" style="font-size: 65%;top: -3px;"></a></center>
+               <center class="panel-body"><span id="tickerUSD">
+                  ---
+               </span></center>
+            </div>
+         </div>
+         <div class="col-xs-4">
+            <div class="panel panel-default">
+               <center class="panel-heading">Market&nbsp;Cap&nbsp;<a href="#trading-warning" class="glyphicon glyphicon-asterisk" style="font-size: 65%;top: -3px;"></a></center>
+               <center class="panel-body"><span>
+                  <a href="https://coinmarketcap.com/currencies/DigiByte/" id="marketCap" target="_blank" rel="noopener">---</a>
+               </span></center>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6" style="padding:0">
+         <div class="col-xs-4">
+            <div class="panel panel-default">
+
+      <center class="panel-heading">Hashrate</center>
+      <center class="panel-body"><span id="hashrate">
+         ---
+      </span></center>
+          </div>
+         </div>
+         <div class="col-xs-4">
+            <div class="panel panel-default">
+               <center class="panel-heading">Difficulty</center>
+               <center class="panel-body">
+                  
+                  <span><a href="" onClick="showChart('diff'); return false" id="difficulty">
+                  ---
+                  </a></span>
+                  
+               </center>
+            </div>
+         </div>
+         <div class="col-xs-4">
+            <div class="panel panel-default">
+               <center class="panel-heading" id="outstanding-label">Outstanding</center>
+               <center class="panel-body">
+                  <span><a href="" onClick="showChart('inflation'); return false" id="outstanding">
+                  ---
+                  </a></span>
+                  
+               </center>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row" id="data-panels">
+      <ul class="nav nav-tabs">
+         <li class="active"><a href="#recentTab" data-toggle="tab" id="recentTab-link">Latest<span class="hidden-xs"> DGB Blocks</span></a></li>
+         <li><a href="#rich" data-toggle="tab" id="richTab-link">Rich List</a></li>
+         <li><a href="#wallets" data-toggle="tab" id="walletsTab-link">Top Wallets</a></li>
+         <li class="hidden-xs"><a href="#overview" data-toggle="tab" id="overviewTab-link">Overview</a></li>
+         <li><a href="#extraction" data-toggle="tab" id="extractionTab-link">Extraction</a></li>
+         <li><a href="#network" data-toggle="tab" id="networkTab-link">Network</a></li>
+         <li><a href="#markets" data-toggle="tab" id="marketsTab-link">Markets</a></li>
+         <li><a href="#news" data-toggle="tab" id="newsTab-link">News</a></li>
+         <li><a href="#crypto" data-toggle="tab" id="cryptoTab-link">About<span class="hidden-xs"> DigiByte</span></a></li>
+      </ul>
+      <div class="tab-content" style="min-height: 420px">
+         <div class="tab-pane active" id="recentTab">
+            <table class="table table-hover" id="recent-blocks">
+               <thead>
+                  <tr><th><span class="hidden-xs">Block </span>Height<th>Age<th><span class="hidden-md hidden-lg">TXs</span><span class="hidden-sm hidden-xs">Transactions</span><th class="hidden-xs">Value Out</span><th>Difficulty<th>Extracted by
+               <tbody>
+                  <tr><td colspan="6">Loading... <img src="/theme/bars.gif">
+            </table>
+         </div>
+         <div class="tab-pane" id="rich">
+            <div class="col-md-8">
+               <h4><a href="/explorer/richlist.dws?n=1000&coin=dgb" rel="nofollow" target="_blank"><small class="pull-right btn btn-default btn-xs hidden-xs"><span class="glyphicon glyphicon-download-alt" style="color:gray"></span> Top 1000</small></a>Richest DGB Addresses</h4>
+               <table class="table table-striped table-condensed" id="largest-addresses">
+                  <thead>
+                     <tr><th>Rank<th>Address<th>Amount<th>Percent of coins<th>Last Change
+                     <tr><th>#<th>Address<th>Amount<th>Share<th>Change
+                  <tbody>
+                     <tr><td colspan="5">Loading... <img src="/theme/bars.gif">
+               </table>
+            </div>
+            <div class="col-md-4">
+               <h4>Wealth Distribution</h4>
+               <table class="table table-striped table-condensed" id="wealth-distribution">
+                  <thead>
+                     <tr><th>Top N addresses<th>Holdings<th>Percentage
+                  <tbody>
+                     <tr><td colspan="3">Loading... <img src="/theme/bars.gif">
+               </table>
+               <center id="wealth-pie" style="width:100%; height:300px">
+               </center>
+               <center style="margin-top:50px"><a href="/explorer/bubble.dws?coin=dgb">(click here for bubble chart beta)</a><center>
+            </div>
+         </div>
+         <div class="tab-pane" id="wallets">
+            <div class="col-md-8">
+               <h4>Largest Guesstimated Wallets</h4>
+               <table class="table table-striped table-condensed" id="largest-wallets">
+                  <thead>
+                     <tr><th>Rank<th>Name<th>Addresses<th>Net Worth<th colspan="2">Percent of coins<th>Last Change
+                  <tbody>
+                     <tr><td colspan="7">Loading... <img src="/theme/bars.gif">
+               </table>
+            </div>
+            <div class="col-md-4">
+               <p></p>
+               <p class="bg-danger" style="padding:10px">This feature is <b>very</b> experimental, inaccurate and not updated in real-time</p>
+               <p>It relies on various forms of taint analysis to aggregate multiple addresses in the same wallet.<br>
+               The figures given are thus under-estimation, ie. the actual wallets probably hold more worth
+               than listed, and smaller wallets or individual addresses could actually be part of a larger wallet.
+            </div>
+         </div>
+         <div class="tab-pane" id="overview">
+            <img src="/theme/bars.gif">
+         </div>
+         <div class="tab-pane" id="extraction">
+            <div class="col-md-6">
+               <h4>Hashrate Distribution</h4>
+               <table class="table table-hover" id="pools-share">
+                  <thead>
+                     <tr>
+                        <th width="5%" class="text-right"><span class="hidden-xxs">Rank</span><span class="visible-xxs">#</span>
+                        <th colspan="2">Pool/Miner<th width="10%">Last&nbsp;100<th width="10%">Last&nbsp;1000
+                  <tbody>
+                     <tr><td colspan="3">Loading... <img src="/theme/bars.gif">
+               </table>
+            </div>
+            <div class="col-md-6">
+               <h4 id="pools-pie-title">Extraction Share for last 100 Blocks</h4>
+               <div id="pools-donut" style="max-width:500px; height:320px; margin-left: auto;"><svg></svg></div>
+               <h4 id="orphans-title">Orphans Chart
+                  <a href="orphans.dws" style="font-size:60%">expand <span class="glyphicon glyphicon-fullscreen"></span></a>
+               </h4>
+               <a href="orphans.dws">
+                  <div id="orphans-chart" style="max-width:500px; height:250px; margin-left: auto"></div>
+               </a>
+            </div>
+         </div>
+         <div class="tab-pane" id="network">
+            Loading... <img src="/theme/bars.gif">
+         </div>
+         <div class="tab-pane" id="markets">
+            Loading... <img src="/theme/bars.gif">
+         </div>
+         <div class="tab-pane" id="news">
+            Coming soon... <img src="/theme/bars.gif">
+         </div>
+         <div class="tab-pane" id="crypto">
+            Loading... <img src="/theme/bars.gif">
+         </div>
+      </div>
+   </div>
+</div>
+<div class='modal fade' id='contributeModal'></div>
+<center><div style="min-height:90px; margin-bottom: 10px"><!-- /8691100/ChainzCryptoid_S2S_Leaderboard_BTF_ROS--><div id="bsa-zone_1567621614533-1_123456"></div></div><p class="container text-left" id="exchange-rate-warning" style="padding: 20px 0; max-width: 800px">
+   <a id="trading-warning"></a><span class="glyphicon glyphicon-asterisk"></span>
+   Exchange rates are provided by 3rd party services and are not indicative of
+   cryptocurrencies being backed by any commodity or other form of money
+   or having any other tangible value at all.<br>
+   Trading is a high risk activity, consult you financial advisor before making any decision.
+   We are NOT financial advisors, and this site does not give trading advices.
+</p>
+</center>
+<script src="/js/_combined.js?4"></script>
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-47681059-2"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date()); gtag("config", "UA-47681059-2", { "anonymize_ip": true });</script>
+<script>
+window.optimize = window.optimize || { queue: [] };
+window.optimize.queue.push(function() { window.optimize.pushAll() });
+</script>
+
+<div id="footer"><div class="container">   <a href="/terms.dws" rel="nofollow">Terms of Service</a> -
+   <a href="/faq.dws" rel="nofollow">About us</a>
+</div></div>
+
+<script>
+var
+   coinShort = "DGB", lastOutstanding = 14707636071.9399,
+   overviewJS = '/js/overview.js?2', explorerVersion = 12;
+</script>
+<script type="text/javascript" src="/js/explorer.js?2"></script>

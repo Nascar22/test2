@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="google" content="notranslate" />
+  <meta http-equiv="Content-Language" content="en_US" />
+  <meta charset="utf-8" />
+  <title>
+    Interledger: Open and Inclusive Payments
+  </title>
+  <meta name="description" content="An open and inclusive payments network in which anyone can seamlessly earn, share, buy, sell, and trade with anyone else in the world." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css?_cchid=6a0b0a4ae45791a8664a33b09c5a7ab7" data-cms-original-href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/pygments-monokai.css?_cchid=e68ce8bc777eaaeb0326c470707998d4" data-cms-original-href="/css/pygments-monokai.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Analytics -->
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-190874649-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-190874649-1');
+</script>
+
+
+  <!-- Coil -->
+  <meta name=“monetization” content=“http://ilp.uphold.com/E79jDmfkhmw7” />
+</head>
+
+<body class="page-layout open-and-inclusive-payments" data-bs-spy="scroll" data-bs-offset="163" data-bs-target="#secondaryNav">
+  <div class="body-wrapper">
+    <header id="pageHeader">
+  <div class="top-nav">
+  <nav class="navbar navbar-expand-lg" id="mainnav">
+    <div class="container p-0 ">
+      <a class="navbar-brand me-4" href="/">
+        <img src="/img/global/ilf-horizontal.svg?_cchid=b62e5b10fcdf5cb7ee7fe049671ed97a" alt="Interledger Foundation Logo" data-cms-original-src="/img/global/ilf-horizontal.svg" />
+      </a>
+      <div class="menu-wrapper navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="hamburger-menu"></div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item d-lg-none">
+            <a class="nav-link  active " aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/about-us/">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="/our-work/">Our Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="/take-action/">Take Action</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="/faq/">FAQ</a>
+          </li>
+
+
+          <li class="nav-item dropdown d-none d-lg-flex">
+            <a class="nav-link dropdown-toggle  " href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Developer Tools
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/developer-tools/get-started/overview/">Get Started</a></li>
+              <li><a class="dropdown-item" href="/rfcs/0027-interledger-protocol-4/index.html">Specs</a></li>
+              <li><a class="dropdown-item" href="/developer-tools/tools/">Tools</a></li>
+              <li><a class="dropdown-item" href="/developer-tools/community/">Community</a></li>
+              <li><a class="dropdown-item" href="/developer-tools/resources/">Resources</a></li>
+            </ul>
+          </li>
+          <div class="accordion accordion-flush d-lg-none" id="devToolsMobile">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="devToolsMobile-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-devToolsMobile" aria-expanded="false" aria-controls="flush-devToolsMobile">
+                  Developer Tools
+                </button>
+              </h2>
+              <div id="flush-devToolsMobile" class="accordion-collapse collapse" aria-labelledby="devToolsMobile-heading" data-bs-parent="#devToolsMobile">
+                <div class="accordion-body">
+                    <ul class="nav">
+                      <li class="nav-item"><a class="nav-link" href="/developer-tools/get-started/overview/">Get Started</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/rfcs/0027-interledger-protocol-4/index.html">Specs</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/developer-tools/tools/">Tools</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/developer-tools/community/">Community</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/developer-tools/resources/">Resources</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul class="navbar-nav">
+          
+          <li class="nav-item"><a class="nav-link text-bold text-primary text-uppercase  " href="/news/">News</a></li>
+          
+          <li class="nav-item"><a class="nav-link text-bold" href="/join/" id="joinBtn">Join</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+</header>
+
+    <main id="pageContent" data-cms-content-wrapper="/src/_layouts/page.html">
+      <section class="pt-5 px-3  p-md-5 fullwidth-img-section centered" id="home-intro">
+  <img class="img-fluid p-md-5 illustration d-none d-md-flex" id="homeIntroIllustration" src="/img/home/home-illustration.svg?_cchid=f20ff8d82c415bb3d37dab05fd6df88e" data-cms-original-src="/img/home/home-illustration.svg" />
+  <div class="container h-100 fullwidth-img-section d-flex justify-content-center  align-items-start align-items-md-center">
+    <div class="row ">
+      <div class="col-12 col-md-6 col-md-5 ">
+        <div>
+          <h1 class="text-center text-md-start editable" data-cms-source="/src/index.html" data-cms-index="0">
+            An open and inclusive payments network that puts humanity first.
+          </h1>
+          <p class="text-large text-center text-md-start editable my-3" data-cms-source="/src/index.html" data-cms-index="1">
+            The Interledger Foundation and its community are building pathways to financial access and opportunity across the world, connecting humanity in a new way.
+          </p>
+          <div class="text-center d-flex flex-column align-items-center d-sm-block text-md-start "><a class="button button-filled editable me-md-3" href="/our-work/" data-cms-source="/src/index.html" data-cms-index="2">Our Work</a> <a class="button button-outline editable" href="/developer-tools/get-started/overview/" data-cms-source="/src/index.html" data-cms-index="3">Build with Interledger</a>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-md-none" id="homeIntroIllustrationMobile">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-blue-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 text-center ">
+        <div>
+          <h1 class="editable" data-cms-source="/src/index.html" data-cms-index="4">
+            Interledger is working towards a more equitable and creative global society through an open payments network in which anyone can seamlessly earn, share, buy, sell, and trade with anyone else in the world.
+          </h1>
+          <h2 class="text-primary mt-5 mb-4 editable" data-cms-source="/src/index.html" data-cms-index="5">
+            To drive this vision forward we will
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row  mt-4">
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+        <div class="card h-100 text-center text-large ">
+          <img class="img-fluid card-icon mx-auto" src="/img/home/connectcommunity.svg?_cchid=8c2dbfc559c161e3eeadb871157f6288" alt="Connect Icon" data-cms-original-src="/img/home/connectcommunity.svg" />
+          <p class="editable" data-cms-source="/src/index.html" data-cms-index="6">
+            <strong>Connect</strong> a powerful community of web advocates and leaders.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+        <div class="card h-100 text-center text-large ">
+          <img class="img-fluid card-icon mx-auto" src="/img/home/creativesolutions-icon.svg?_cchid=4fd36c7489596d7bd8d2a58f3ff4cfe6" alt="Promote Icon" data-cms-original-src="/img/home/creativesolutions-icon.svg" />
+          <p class="editable" data-cms-source="/src/index.html" data-cms-index="7">
+            <strong>Promote</strong> creative and innovative solutions to connecting humanity.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card h-100 text-center text-large ">
+          <img class="img-fluid card-icon mx-auto" src="/img/home/steward-icon.svg?_cchid=df89a318e30b8e3b48496e7aeea012f7" alt="Steward Icon" data-cms-original-src="/img/home/steward-icon.svg" />
+          <p class="editable" data-cms-source="/src/index.html" data-cms-index="8">
+            <strong>Steward</strong> technology and standards work that advances open payment technology.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center ">
+        <h2 class="text-primary mt-5 mb-4 ">
+          <a class="text-underline text-bold editable" href="/about-us/" data-cms-source="/src/index.html" data-cms-index="9">Learn More About Interledger</a>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-purple-fade">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white text-center editable" data-cms-source="/src/index.html" data-cms-index="10">
+          Platforms using Interledger Technology
+        </h1>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 position-relative">
+        <glider-carousel>
+          <div class="glider">
+            
+            <div data-cms-editor-link="cloudcannon:collections/" class="cms-editor-link">
+              <div class="card">
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="col-12 col-xl-5">
+                      <div class="home-carousel-img" style="background-image: url(/uploads/cinnamon-video.png?_cchid=e480e373e09f6c2393dd1ea168ff58e1);" data-cms-original-style="background-image: url(/uploads/cinnamon-video.png);"></div>
+                    </div>
+                    <div class="col-12 col-xl-7 p-xl-5">
+                      <h2 class="text-hero text-center text-lg-start mt-4 mt-lg-0">Cinnamon – Spicing Up Video Creation, Sharing and Monetizing</h2>
+                      <p>Cinnamon is a new video platform and a tool that enables creators to produce, remix, share, monetize and distribute video across platforms, without ads.</p>
+                      <div class="text-center d-flex flex-column align-items-center d-md-block text-lg-start ">
+                        <a href="/case-studies/cinnamon--spicing-up-video-creation-sharing-and-monetizing/" class="button button-outline">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div data-cms-editor-link="cloudcannon:collections/" class="cms-editor-link">
+              <div class="card">
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="col-12 col-xl-5">
+                      <div class="home-carousel-img" style="background-image: url(/uploads/coil-casestudy.png?_cchid=bb19431eabc358b25dc85fd5b1b70f9f);" data-cms-original-style="background-image: url(/uploads/coil-casestudy.png);"></div>
+                    </div>
+                    <div class="col-12 col-xl-7 p-xl-5">
+                      <h2 class="text-hero text-center text-lg-start mt-4 mt-lg-0">Empowering – and Paying – Creators, Worldwide</h2>
+                      <p>Coil is an emerging content platform using the Interledger Protocol to build streaming browser payments to your favorite artists, publishers and gamers. No ads, no paywalls, and no trackers.</p>
+                      <div class="text-center d-flex flex-column align-items-center d-md-block text-lg-start ">
+                        <a href="/case-studies/coil/" class="button button-outline">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div data-cms-editor-link="cloudcannon:collections/" class="cms-editor-link">
+              <div class="card">
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="col-12 col-xl-5">
+                      <div class="home-carousel-img" style="background-image: url(/uploads/mojaloop-foundation-orange2.jpg?_cchid=eebe0bd80316d5ff2c2678c2fec01f65);" data-cms-original-style="background-image: url(/uploads/mojaloop-foundation-orange2.jpg);"></div>
+                    </div>
+                    <div class="col-12 col-xl-7 p-xl-5">
+                      <h2 class="text-hero text-center text-lg-start mt-4 mt-lg-0">Making Digital Payments Affordable and Simple for Everyone, Everywhere</h2>
+                      <p>The Mojaloop Foundation is a charitable nonprofit with a vision of universal financial inclusion. Its mission is to enable developing countries to design digital financial services that are accessible and inclusive to all.</p>
+                      <div class="text-center d-flex flex-column align-items-center d-md-block text-lg-start ">
+                        <a href="/case-studies/making-digital-payments-affordable-and-simple-for-everyone-everywhere/" class="button button-outline">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div data-cms-editor-link="cloudcannon:collections/" class="cms-editor-link">
+              <div class="card">
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="col-12 col-xl-5">
+                      <div class="home-carousel-img" style="background-image: url(/uploads/puma.png?_cchid=19f63a575b630b9b0a55d32293bbf032);" data-cms-original-style="background-image: url(/uploads/puma.png);"></div>
+                    </div>
+                    <div class="col-12 col-xl-7 p-xl-5">
+                      <h2 class="text-hero text-center text-lg-start mt-4 mt-lg-0">Reimagining How we Pay for Content and Apps</h2>
+                      <p>Puma is a fast and private mobile Web3 browser that makes it easy to support creators, game & app developers and charities of your choice.</p>
+                      <div class="text-center d-flex flex-column align-items-center d-md-block text-lg-start ">
+                        <a href="/case-studies/reimaging-how-we-pay-for-content-and-apps/" class="button button-outline">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <button aria-label="Previous" class="glider-prev"></button>
+          <button aria-label="Next" class="glider-next"></button>
+          <div role="tablist" class="pt-4" id="dots"></div>
+        </glider-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-green-fade position-relative" id="featuredShapes">
+  <div class="animation-wrapper d-none d-md-flex">
+    <div class="circle-animation" id="homeHoverOne"></div>
+    <div class="circle-animation" id="homeHoverTwo"></div>
+    <div class="circle-animation" id="homeHoverThree"></div>
+    <div class="cross-animation" id="homeHoverFour"></div>
+  </div>
+  <div id="featuredImageCircle"></div>
+  <div id="featuredImage" class="d-none d-lg-block" style="background-image: url(/uploads/grant-for-the-web-featured-image.jpg?_cchid=00a5ffb524ecc9172ba4faee71bf7c4a);" data-cms-original-style="background-image: url(/uploads/grant-for-the-web-featured-image.jpg);"></div>
+  <div class="container">
+    <div class="row justify-content-center justify-content-md-end">
+      <div class="col-12 col-lg-5 text-center text-lg-start px-md-5 px-lg-0">
+        <h1 class="text-green h2 mb-4">Featured Program</h1>
+        <h2 class="h1 text-hero">Grant for the Web</h2>
+        <p class="text-large">Grant for the Web (GftW) is a $100M fund to boost open, fair, and inclusive standards and innovation in Web Monetization.</p>
+        <p><strong>Distributed Media Lab</strong><br />An innovative reader revenue platform that harnesses Web Monetization to power distributed reader revenue across a network of participating publishers. This decentralized approach will empower publishers to harness the natural scalability of the open web.&nbsp;<strong><a target="_blank" rel="noopener" href="https://www.grantfortheweb.org/blog/dmlaward">Learn More</a></strong></p><p><strong>Fueling social justice with a monetization stream</strong><br />Web Monetizing deployments on Ushahidi, an open-source crowdsourcing platform that&rsquo;s been used globally for crisis response, human rights protection, good governance, and ensuring integrity in elections.&nbsp;<strong><a target="_blank" rel="noopener" href="https://www.grantfortheweb.org/grantees">Learn More</a></strong></p><p><strong>GftW Ambassador Akintunde Sultan Bolaji</strong><br />&ldquo;Hack Sultan&rdquo; working to activate 10K developers in Web Monetization across the African continent.&nbsp;<strong><a target="_blank" rel="noopener" href="https://www.grantfortheweb.org/blog/akintunde-sultan-bolaji">Learn More</a></strong></p>
+
+        <h3><a target="_blank" class="text-underline" href="https://www.grantfortheweb.org/">Learn More About Grant for the Web</a></h3>
+      </div>
+      <div class="col-12 d-lg-none" id="featuredImageMobile">
+        <img class="img-fluid " src="/uploads/grant-for-the-web-featured-image.jpg?_cchid=00a5ffb524ecc9172ba4faee71bf7c4a" alt="Grant for the Web Image" data-cms-original-src="/uploads/grant-for-the-web-featured-image.jpg" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-blue-300 position-relative" id="contactFlourish">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-purple text-center text-md-start">Contact Us</h1>
+      </div>
+      <div class="col-12">
+        <div class="cognito">
+          <script src="https://www.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw"></script>
+          <script>Cognito.load("forms", { id: "90" });</script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer id="pageFooter">
+  <section class="h-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <img src="/img/global/ilf-reversed.svg?_cchid=f7b363203c7ffa2d819cec0559e8aa99" alt="Interledger Foundation logo reversed" id="footerLogo" class="py-4" data-cms-original-src="/img/global/ilf-reversed.svg" />
+        </div>
+        <div class="col-12 col-md-5">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 ">
+          <p class="text-gray">
+            Documentation licensed under CC BY 4.0.<br />
+            © 2021<span class="editable" data-cms-source="/src/_includes/footer.html" data-cms-index="0">, Interledger Foundation</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 mt-5 mt-md-0">
+          <div class="links-wrapper d-flex justify-content-center justify-content-lg-end">
+
+            <a href="" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#signUpModal">
+              Join Mailing List
+            </a>
+
+            <a target="_blank" href="https://twitter.com/interledger" class="social-icon">
+              <img src="/img/global/twitter.svg?_cchid=2f40a599837d72284bd4982aaa7107a1" alt="Follow Interledger on Twitter" data-cms-original-src="/img/global/twitter.svg" />
+            </a>
+            <a target="_blank" href="https://communityinviter.com/apps/interledger/interledger-working-groups-slack" class="social-icon">
+              <img src="/img/global/slack.svg?_cchid=e15e96d90e793613553654d6ba943fe9" alt="Join the Slack Channel" data-cms-original-src="/img/global/slack.svg" />
+            </a>
+            <a target="_blank" href="https://github.com/interledger" class="social-icon">
+              <img src="/img/global/github.svg?_cchid=87441a9babe2efc8d460a9034e26b6c6" alt="Edit on Github" data-cms-original-src="/img/global/github.svg" />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/interledger-foundation/" class="social-icon">
+              <img src="/img/global/linkedin-in.svg?_cchid=350efc5e8d7ca24604353236793b37b8" alt="Follow Interledger on LinkedIn" data-cms-original-src="/img/global/linkedin-in.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+          <iframe src="https://app.e2ma.net/app2/audience/signup/1940649/1929074/" width="510" height="1200" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- JS Dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<!-- <script src="/js/main.js" defer></script> -->
+
+<script defer>
+  $(document).ready(function(){
+    var controller = new ScrollMagic.Controller();
+
+    $('[data-lazy-type]').each(function () {
+      var currentElement = this;
+      var $this = $(this);
+      var type = $this.data('lazy-type');
+      var lazySrc = $this.data('lazy-src');
+      var scene = new ScrollMagic.Scene({
+        triggerElement: currentElement,
+        reverse: false,
+        offset: -500
+      })
+        .on('enter', function () {
+          if (type == 'image') {
+            $this.attr('src', lazySrc);
+          }
+          if (type == 'bg-image') {
+            $this.css('background-image', 'url(' + lazySrc + ')')
+          }
+          if (type == 'video') {
+            $this.attr('src', lazySrc);
+          }
+          if (type == 'bg-video') {
+            lazyLoadBgVideo($this);
+          }
+        })
+        .on('exit', function () {
+          if (type == 'bg-video') {
+            // test to confirm this is working
+            currentElement.pause();
+          }
+        })
+        .setClassToggle(currentElement, "active")
+        .addTo(controller);
+    })
+  })
+</script>
+
+<script>
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '#dots',
+    draggable: true,
+      scrollLock: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+</script>
+
+<script>
+  new Glider(document.querySelector('.gliderExpanded'), {
+    slidesToShow: 1,
+    dots: '#greenDots',
+    draggable: true,
+      scrollLock: false,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+    responsive: [
+      {
+        breakpoint: 1105,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+</script>
+<script>
+  new Glider(document.querySelector('.gliderMembership'), {
+    slidesToShow: 1,
+    dots: '#dots',
+    draggable: true,
+    scrollLock: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+  });
+</script>
+
+<script>(function () {
+    $('.menu-wrapper').on('click', function () {
+      $('.hamburger-menu').toggleClass('animate');
+    })
+  })();</script>
+
+
+<script>
+  let parent = document.querySelector('.aside-nav').parentElement;
+
+    while (parent) {
+      const hasOverflow = getComputedStyle(parent).overflow;
+      if (hasOverflow !== 'visible') {
+        console.log(hasOverflow, parent);
+      }
+      parent = parent.parentElement;
+    }
+</script>
+  </div>
+</body>
+
+</html>

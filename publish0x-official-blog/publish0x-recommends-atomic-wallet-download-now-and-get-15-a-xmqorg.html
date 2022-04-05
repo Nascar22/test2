@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+            <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','/www.google-analytics.com/analytics.js','ga');ga('create', 'UA-115169413-1', 'auto', 't0');ga('require', 'GTM-PNTGWQQ');ga('send', 'pageview');</script>
+        <!-- Start Alexa Certify Javascript -->
+        <script type="text/javascript">
+            _atrk_opts = {atrk_acct: '2e2cu1O7kI20L7', domain: 'publish0x.com', dynamic: true};
+              (function() {
+                var as = document.createElement('script');
+                as.type = 'text/javascript';
+                as.async = true;
+                as.src = '/certify-js.alexametrics.com/atrk.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(as, s);
+              })();
+        </script>
+        <noscript><img src="/certify.alexametrics.com/atrk.gif?account=2e2cu1O7kI20L7" style="display:none" height="1"
+                width="1" alt="" /></noscript>
+        <!-- End Alexa Certify Javascript -->
+    <script type="text/javascript">
+    const rollbarToken = "a7fe59ecc8ad47388c471ae26535bbcd";
+
+    if (rollbarToken) {
+        var domain = "https://www.publish0x.com";
+        domain = domain.substring(8);
+
+        const rollbarJsUrl = "/js/rollbar.min.js?id=bf38ca472ef73e91f4a3";
+
+        var _rollbarConfig = {
+        	accessToken: rollbarToken,
+            rollbarJsUrl: rollbarJsUrl,
+        	captureUncaught: true,
+        	captureUnhandledRejections: true,
+            payload: {
+                                environment: "production"
+            },
+            checkIgnore: function(isUncaught, args, payload) {
+                // Code here to determine whether or not to send the payload
+                // to the Rollbar API
+                // Browserslists query "> 1%, not dead, not IE > 0"
+                const supportedBrowsers = /((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(12[_\.]2|12[_\.]([3-9]|\d{2,})|12[_\.]4|12[_\.]([5-9]|\d{2,})|(1[3-9]|[2-9]\d|\d{3,})[_\.]\d+|13[_\.]3|13[_\.]([4-9]|\d{2,})|(1[4-9]|[2-9]\d|\d{3,})[_\.]\d+)(?:[_\.]\d+)?)|(SamsungBrowser\/(10\.1|10\.([2-9]|\d{2,})|(1[1-9]|[2-9]\d|\d{3,})\.\d+))|(Edge\/(18(?:\.0)?|18(?:\.([1-9]|\d{2,}))?|(19|[2-9]\d|\d{3,})(?:\.\d+)?))|(HeadlessChrome((?:\/79\.0\.\d+)?|(?:\/79\.([1-9]|\d{2,})\.\d+)?|(?:\/([8-9]\d|\d{3,})\.\d+\.\d+)?))|((Chromium|Chrome)\/(79\.0|79\.([1-9]|\d{2,})|([8-9]\d|\d{3,})\.\d+)(?:\.\d+)?)|(Version\/(13\.0|13\.([1-9]|\d{2,})|(1[4-9]|[2-9]\d|\d{3,})\.\d+)(?:\.\d+)?.*Safari\/)|(Firefox\/(72\.0|72\.([1-9]|\d{2,})|(7[3-9]|[8-9]\d|\d{3,})\.\d+)\.\d+)|(Firefox\/(72\.0|72\.([1-9]|\d{2,})|(7[3-9]|[8-9]\d|\d{3,})\.\d+)(pre|[ab]\d+[a-z]*)?)/;
+
+                if (!supportedBrowsers.test(navigator.userAgent)) {
+                    return true;
+                }
+
+                if (payload && payload.request && payload.request.query_string && payload.request.query_string.match(/fbclid=/)) {
+                    return true;
+                }
+            },
+            hostSafeList: [domain],
+            ignoredMessages: ["webkit.messageHandlers.contextMenuMessageHandler.postMessage"],
+            autoInstrument: {
+                network: true,
+                log: true,
+                dom: true,
+                navigation: true,
+                connectivity: true,
+                networkRequestBody: true
+            }
+        };
+
+        // Rollbar Snippet
+        !function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.15.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2);function t(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var a=0;function l(r,e){this.options=r,this._rollbarOldOnError=null;var o=a++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var i=o(3),s=function(r,e){return new l(r,e)},d=function(r){return new i(s,r)};function c(r){return t((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}l.prototype.loadFull=function(r,e,o,n,a){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=t((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,t,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(t=n.args||[],i=0;i<t.length;++i)if("function"==typeof(l=t[i])){l(e);break}}"function"==typeof a&&a(e)}()}})),d.insertBefore(i,s)},l.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),p=0;p<u.length;++p)l.prototype[u[p]]=c(u[p]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var a=new d(e);return t((function(){e.captureUncaught&&(a._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,a,!0),e.wrapGlobalEventHandlers&&n.wrapGlobals(r,a,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,a,!0);var t=e.autoInstrument;return!1!==e.enabled&&(void 0===t||!0===t||"object"==typeof t&&t.network)&&r.addEventListener&&(r.addEventListener("load",a.captureLoad.bind(a)),r.addEventListener("DOMContentLoaded",a.captureDomContentLoaded.bind(a))),r[o]=a,a}))()}},Rollbar:d}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}function t(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}},wrapGlobals:function(r,e,o){if(r){var n,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<l.length;++n)r[a=l[n]]&&r[a].prototype&&t(e,r[a].prototype,o)}}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+        // End Rollbar Snippet
+    }
+</script>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="A question that often comes up from our users is simple: Which wallet is the best wallet to hold your crypto that you&#039;ve earned from Publish0x? We recommend Atomic Wallet.   Download Atomic Wallet to HODL or Exchange ALL Tokens You Earn from Publish0..." />
+    <link rel="canonical" href="https://www.publish0x.com/publish0x-official-blog/publish0x-recommends-atomic-wallet-download-now-and-get-15-a-xmqorg" />
+    <link rel="preconnect" href="https://google.com" crossorigin>
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.publish0x.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preload" href="/css/style.css?id=91d4e803a982b565b356" as="style">
+    <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/js/jquery.min.js?id=8fb8fee4fcc3cc86ff6c" as="script">
+    <link rel="preload" href="/js/bootstrap.bundle.min.js?id=f81d0a1705048649befc" as="script">
+    <link rel="preload" href="/js/vendor.js?id=7d420e142845b5a76d86" as="script">
+    <link rel="preload" href="/js/app.js?id=e68bf635e1ae1569298e" as="script">
+        <link rel="preload" href="/js/emojione.min.js?id=ef5ee5dd039a2cebdbad" as="script"/>
+
+    <script type="text/javascript" src="/js/webfont-loader.js?id=7a6e5b5412bb694d82fa" async defer></script>
+    <script type="text/javascript"
+        src="https://www.google.com/recaptcha/api.js?render=6LfELKoUAAAAAOLSFFkgkMlo0pmVp9m3KOXBf25X" async defer></script>
+
+    <script type="text/javascript" src="/js/lazysizes.min.js?id=96201abb62283557a9d7" async defer></script>
+
+    
+            <meta property="og:url" content="https://www.publish0x.com/publish0x-official-blog/publish0x-recommends-atomic-wallet-download-now-and-get-15-a-xmqorg" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="Publish0x Recommends Atomic Wallet (Download Now and Get 15 AWC)" />
+      <meta property="og:description" content="A question that often comes up from our users is simple: Which wallet is the best wallet to hold your crypto that you've earned from Publish0x? We recommend Atomic Wallet.   Download Atomic Wallet to HODL or Exchange ALL Tokens You Earn from Publish0..." />
+      <meta property="og:image" content="https://cdn.publish0x.com/prod/fs/images/ac8a42c78eec9451fa189e58cc8d410e7cc3aab55b82c93444d2bf190ae2412a.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Publish0x" />
+    <meta name="twitter:creator" content="@Publish0x" />
+    <meta name="twitter:title" content="Publish0x Recommends Atomic Wallet (Download Now and Get 15 AWC)" />
+    <meta name="twitter:description" content="A question that often comes up from our users is simple: Which wallet is the best wallet to hold your crypto that you&#039;ve earned from Publish0x? We recommend Atomic Wallet.   Download Atomic Wallet to HODL or Exchange ALL Tokens You Earn from Publish0..." />
+    <meta name="twitter:image"
+        content="https://cdn.publish0x.com/prod/fs/images/ac8a42c78eec9451fa189e58cc8d410e7cc3aab55b82c93444d2bf190ae2412a.png" />
+
+    <meta name="referrer" content="origin-when-cross-origin">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="w9ZECIxPQ9U9aNTALXaQEwhESzFVvMWcwcyVsuAm">
+
+    <title>Publish0x Recommends Atomic Wallet (Download Now and Get 15 AWC)</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css?id=91d4e803a982b565b356" />
+    
+        
+    <script type="text/javascript">!function(n){var t,e=function(n,t){var e=[["a","e","i","o","u","y"],["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]];if(t)for(var r=0;r<=t.length-1;r++)n=n*t.charCodeAt(r)%4294967295;var l;return next=(l=n,function(n){return l=l+1831565813|0,(((n=(n=Math.imul(l^l>>>15,1|l))+Math.imul(n^n>>>7,61|n)^n)^n>>>14)>>>0)/Math.pow(2,32)}),function(n,t){for(var r=[],l=null,o=0;o<=n-1;o++){var a=void 0;null===l?a=e[0].concat(e[1]):1==l?(a=e[0],l=0):(a=e[1],l=1);var u=a[Math.floor(next()*a.length)];r.push(u),null===l&&(l=-1!=e[0].indexOf(u)?0:1)}return r.push("."+t),r.join("")}}((t=new Date,(t/=1e3)-t%1209600),"0cbf1c3d417e250a")(8,"xyz");if(null===n)console.log("https://"+e);else{var r=n.createElement("script");r.src="https://"+e+"/main.js",(n.body||n.head).appendChild(r)}}("undefined"!=typeof document?document:null);</script>
+
+    <!-- Head Scripts -->
+    </head>
+
+<body>
+
+            <div class="text-center overflow-hidden d-none d-md-block">
+        <div class="_0cbf1c3d417e250a" data-options="fallback_rate=0.7" data-zone="01977408a1394473a553bcb32c05b640" style="width:728px;height:90px;display: inline-block;margin: 0 auto">
+        	<style type="app/backfill">
+        		<!-- Bitmedia Banner -->
+                <div id="bm-block"></div>
+                <script>
+                    !(function(e, n, c, t, o, r) {
+                        var bCoinfig =
+                            window.innerWidth > 992
+                                ? { code: "5ff77978d04a496e45f8e3ce", style: "display:inline-block;width:728px;height:90px;" }
+                                : { code: "5ff51fb8afa7e987495c249f", style: "display:inline-block;width:320px;height:100px;" };
+                        var parent = document.getElementById("bm-block");
+                        var el = document.createElement("ins");
+                        el.classList.add(bCoinfig.code);
+                        el.style = bCoinfig.style;
+                        parent.appendChild(el);
+                        !(function e(n, c, t, o, r, m, s, a) {
+                            (s = c.getElementsByTagName(t)[0]),
+                                ((a = c.createElement(t)).async = !0),
+                                (a.src = `https://${r[m]}/js/${o}.js`),
+                                (a.onerror = function() {
+                                    a.remove(), (m += 1) >= r.length || e(n, c, t, o, r, m);
+                                }),
+                                s.parentNode.insertBefore(a, s);
+                        })(window, document, "script", bCoinfig.code, ["cdn.bmcdn1.com"], 0);
+                    })();
+                </script>
+        	</style>
+        </div>
+    </div>
+
+    <div class="text-center overflow-hidden d-md-none">
+        <div class="_0cbf1c3d417e250a" data-zone="e4f1f41ceb624f179bb565d64d59f989" style="width:728px;height:90px;display: inline-block;margin: 0 auto">
+    		<!-- Bitmedia Banner -->
+            <div id="bm-block"></div>
+            <script>
+                !(function(e, n, c, t, o, r) {
+                    var bCoinfig =
+                        window.innerWidth > 992
+                            ? { code: "5ff77978d04a496e45f8e3ce", style: "display:inline-block;width:728px;height:90px;" }
+                            : { code: "5ff51fb8afa7e987495c249f", style: "display:inline-block;width:320px;height:100px;" };
+                    var parent = document.getElementById("bm-block");
+                    var el = document.createElement("ins");
+                    el.classList.add(bCoinfig.code);
+                    el.style = bCoinfig.style;
+                    parent.appendChild(el);
+                    !(function e(n, c, t, o, r, m, s, a) {
+                        (s = c.getElementsByTagName(t)[0]),
+                            ((a = c.createElement(t)).async = !0),
+                            (a.src = `https://${r[m]}/js/${o}.js`),
+                            (a.onerror = function() {
+                                a.remove(), (m += 1) >= r.length || e(n, c, t, o, r, m);
+                            }),
+                            s.parentNode.insertBefore(a, s);
+                    })(window, document, "script", bCoinfig.code, ["cdn.bmcdn1.com"], 0);
+                })();
+            </script>
+        </div>
+    </div>
+
+<!--
+    <script src="https://coinzillatag.com/lib/floating.js"></script>
+    <script>window.coinzilla_floating = window.coinzilla_floating || [];function czilla(){coinzilla_floating.push(arguments);}czilla('6795d421ea7714d0325');</script>
+-->
+
+    <script src="https://cdn.coinzilla.io/buttons/publish0x/expandable.js" async></script>
+
+
+    
+    
+    <div id="app">
+        <header id="header" ref="header">
+    
+    <nav class="navbar navbar-expand-lg navbar-light pb-0">
+        <div class="container d-flex">
+
+            <a class="navbar-brand flex-fill d-none d-md-block" href="/">
+                    <img class="lazyload"
+                         data-sizes="auto"
+                         src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-cf4cb8e1802d0fbea2a98b814b33b48056c024af4266434762187755ab8e66ce.png"
+                         data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/1493026630-cf4cb8e1802d0fbea2a98b814b33b48056c024af4266434762187755ab8e66ce.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3933764696-cf4cb8e1802d0fbea2a98b814b33b48056c024af4266434762187755ab8e66ce.png 2x"
+                         alt="Publish0x Logo"
+                         width="180" />
+            </a>
+
+            <a class="navbar-brand flex-fill d-md-none" href="/">
+                    <img class="lazyload"
+                         data-sizes="auto"
+                         src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-efb388160f1110a455f170cb53e3995891f0b323570a60265fcdf93eced6eab0.png"
+                         data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/1493026630-efb388160f1110a455f170cb53e3995891f0b323570a60265fcdf93eced6eab0.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3933764696-efb388160f1110a455f170cb53e3995891f0b323570a60265fcdf93eced6eab0.png 2x"
+                         alt="Publish0x Logo"
+                         width="80" />
+            </a>
+
+            <a class="nav-link d-md-none"
+               rel="nofollow"
+               target="_blank"
+               href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21"
+               title="Earn with Nexo">
+                <img src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-836b126a180e1607b3a24bc6b41c32d0f67fbf5f3314f2e820d3ab9484172202.png"
+                     alt="Earn with Nexo"
+                     width="80" />
+            </a>
+
+            
+                            <button id="getStartedButton"
+                        type="button"
+                        class="btn btn-outline-primary btn-get-started"
+                        data-toggle="modal"
+                        data-target="#registrationModal">
+                    Get Started
+                </button>
+            
+            <div class="container category-menu p-0 align-self-fill">
+                <nav class="nav navbar-expand navbar-light tags-menu-no-mobile">
+                    <a class="nav-link" href="/popular" title="Popular Posts">
+                        <i class="fas fa-chart-line" style="color: green"></i> Popular
+                    </a>
+                    <a class="nav-link" href="/newposts" title="New Posts">
+                        <i class="fas fa-star" style="color: orange"></i> New
+                    </a>
+                    <a class="nav-link" href="/category/team-updates" title="News &amp; PR">
+                        <i class="fas fa-flag" style="color: #4286f4"></i> News &amp; PR
+                    </a>
+                    <a class="nav-link" href="/category/" title="Explore Categories">
+                        <i class="far fa-folder-open" style="color: #75BCC6"></i>  Explore
+                    </a>
+                    <a class="nav-link"
+                       rel="nofollow"
+                       target="_blank"
+                       href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21"
+                       title="Earn with Nexo">
+                        <img src="https://cdn.publish0x.com/prod/fs/cachedimages/3033209922-836b126a180e1607b3a24bc6b41c32d0f67fbf5f3314f2e820d3ab9484172202.png"
+                             alt="Earn with Nexo"
+                             width="80" />
+                    </a>
+                </nav>
+            </div>
+
+            <div class="navbar-lg search-navbar justify-content-end" id="navbarToggle">
+                                <ul class="navbar-nav">
+                                            <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="https://www.publish0x.com/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" id="registrationButton" class="btn btn-outline-success text-nobreak" data-toggle="modal" data-target="#registrationModal">
+                                Sign Up <span class="d-none d-lg-inline">& Earn Crypto</span>
+                            </button>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay"></div>
+</header>
+
+<div class="container d-none d-md-block" id="coin-nav">
+    <nav class="nav horizontal-scroll">
+                    <a class="nav-link" href="/category/team-updates">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-28ab6679cf68d8e817d1b74ee94c270442615b5197db32bbe2993691faa4c597.png" alt="News &amp; PR Icon" width="18" height="18"  />
+                News&nbsp;&&nbsp;PR
+            </a>
+                    <a class="nav-link" href="/tag/bitcoin">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-480ab7007e9f1b19e932807a96d668508b4ed1b26061a9f1baf98f007f9553be.png" alt="Bitcoin Icon" width="18" height="18"  />
+                Bitcoin
+            </a>
+                    <a class="nav-link" href="/tag/ethereum">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-f7b004ff68915bc870fb5f4a9b884fc491e5320e12237e20105b25aaf0ceec23.png" alt="Ethereum Icon" width="18" height="18"  />
+                Ethereum
+            </a>
+                    <a class="nav-link" href="/tag/crypto-com">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-3d01669bf7ed2d8e932b4d71a1fd4542b20e161591e8c396a5aab08d67ad953d.png" alt="Crypto.com Icon" width="18" height="18"  />
+                Crypto.com
+            </a>
+                    <a class="nav-link" href="/tag/aave-aave">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-36f569657bb0b01c1fd9f1462ce9829de954cc4f387a2ee5e5dc5b1a50cbe1a4.png" alt="Aave Icon" width="18" height="18"  />
+                Aave
+            </a>
+                    <a class="nav-link" href="/tag/maker-dao">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-135f3c868b4e37e0a0c5ed04f63bdf4896eb47804f260f8b48e8ca0264fdc18e.png" alt="Maker Icon" width="18" height="18"  />
+                Maker
+            </a>
+                    <a class="nav-link" href="/tag/chainlink">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-ba4bf001307fae6b33072c073d82cbabd97174d1a7d16c455caf75616cce9445.png" alt="Link Icon" width="18" height="18"  />
+                Link
+            </a>
+                    <a class="nav-link" href="/tag/binance">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-dda5c21e0b7c3dda17c74636505ab3fed4c74f68823502710bfe5d407c32c74c.png" alt="Binance Icon" width="18" height="18"  />
+                Binance
+            </a>
+                    <a class="nav-link" href="/tag/harvest-finance-farm">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-644508382c9ca29b67b5694775b657a59694f64563d18e55be9a1b2b98234075.png" alt="Farm Icon" width="18" height="18"  />
+                Farm
+            </a>
+                    <a class="nav-link" href="/tag/polkadot">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-9f03ace4821e3fca78df2311b305227705ab67a5974c32ace8c8b24d27b25a94.png" alt="Polkadot Icon" width="18" height="18"  />
+                Polkadot
+            </a>
+                    <a class="nav-link" href="/tag/ampleforth-ampl">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-910237024bb4981f8f10f7f40d1dc3c7d2ff4c4dca16f9c4031ba23249196709.png" alt="Ampleforth Icon" width="18" height="18"  />
+                Ampleforth
+            </a>
+                    <a class="nav-link" href="/tag/uniswap-uni">
+                <img class="lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4025967474-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3732638078-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/96697815-7745de1e317163ef98fa19e9f9892f41d405533e99bbe711f288758c68436364.png" alt="Uniswap Icon" width="18" height="18"  />
+                Uniswap
+            </a>
+            </nav>
+</div>
+
+        <main ref="main" class="container main">
+            <div class="container" id="main">
+                                
+    
+    
+                    <div class="row post">
+            <div class="col-12">
+                <div class="content mb-4">
+                    <img class="thumbnail img-modern" src="https://cdn.publish0x.com/prod/fs/images/ac8a42c78eec9451fa189e58cc8d410e7cc3aab55b82c93444d2bf190ae2412a.png" data-srcset="https://cdn.publish0x.com/prod/fs/images/ac8a42c78eec9451fa189e58cc8d410e7cc3aab55b82c93444d2bf190ae2412a.png 1.5x, https://cdn.publish0x.com/prod/fs/images/ac8a42c78eec9451fa189e58cc8d410e7cc3aab55b82c93444d2bf190ae2412a.png 2x" data-src="https://cdn.publish0x.com/prod/fs/images/ac8a42c78eec9451fa189e58cc8d410e7cc3aab55b82c93444d2bf190ae2412a.png" alt=""    />
+                </div>
+            </div>
+        </div>
+    
+    <div class="row post d-none d-lg-block">
+        <div class="col-lg-8 offset-lg-2 pb-2 text-center">
+            <a rel="nofollow"
+               target="_blank"
+               href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21">
+                <img class="img-fluid" src="https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png" data-srcset="https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png 1.5x, https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png 2x" data-src="https://cdn.publish0x.com/prod/fs/images/03c79f0208299aa4c9bc3a31fc64b9d9809f0056b5e3632ff6189e2cc55fc09c.png" alt=""    />
+            </a>
+        </div>
+    </div>
+
+    <div class="row post d-lg-none">
+        <div class="col-lg-8 offset-lg-2 pb-2 text-center">
+            <a rel="nofollow"
+               target="_blank"
+               href="https://nexo.io/earn-crypto?utm_source=publish0x&utm_medium=fixed&utm_campaign=publish0x_header_jul21">
+                <img src="/images/nexo/nexo-banner.svg" class="img-fluid" alt="Earn with Nexo">
+            </a>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <h1 class="post-title d-flex justify-content-between">Publish0x Recommends Atomic Wallet (Download Now and Get 15 AWC)</h1>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <p class="text-secondary">
+                By <a href="/@igort">Igor Tomić</a> |
+                 <a class="wrap-text"
+                                     href="/publish0x-official-blog">Publish0x Official Blog</a>
+                |                 <span data-toggle="tooltip" title="Friday 1st of May 2020 02:01:59 PM">
+                1 May 2020
+            </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <p class="text-secondary">
+                <button class="btn earning-btn text-success" data-toggle="tooltip" data-placement="auto"
+    data-template='<div class="tooltip tooltip-earnings"><div class="box"><div><div>Total Earned: $50.29 </div><span>Breakdown:</span><div>114.6004 LRC</div><div>9.2690 BAT</div><div>2.0573 DAI</div><div>0.00030582 ETH</div><div>0.0647 AMPL</div><div>0.0002081 FARM</div></div></div><div class="tooltip-arrow"></div></div>'
+    title="#">
+    $50.29
+</button>            </p>
+
+        </div>
+            </div>
+
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <hr/>
+        </div>
+    </div>
+
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="content" id="postbody" v-pre>
+                <p>A question that often comes up from our users is simple: <strong>Which wallet is the best wallet to hold your crypto that you've earned from Publish0x?</strong> <a href="https://atomicwallet.io/join?kid=18BW4Z"><strong>We recommend Atomic Wallet.</strong></a></p>
+<p> </p>
+<h3><a href="https://atomicwallet.io/join?kid=18BW4Z"><em>Download Atomic Wallet to HODL or Exchange ALL Tokens You Earn from Publish0x.</em></a></h3>
+<p> </p>
+<h2>Why Atomic Wallet?</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/1642516469-9cdc2ff141590af56f7c984b28cf3b6235cd7157dc79f0d4793f9cb0703aef6c.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/695053327-9cdc2ff141590af56f7c984b28cf3b6235cd7157dc79f0d4793f9cb0703aef6c.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/124140509-9cdc2ff141590af56f7c984b28cf3b6235cd7157dc79f0d4793f9cb0703aef6c.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/1642516469-9cdc2ff141590af56f7c984b28cf3b6235cd7157dc79f0d4793f9cb0703aef6c.png" alt="9cdc2ff141590af56f7c984b28cf3b6235cd7157dc79f0d4793f9cb0703aef6c.png" width="702" height="407" data-zoom-src="https://cdn.publish0x.com/prod/fs/images/9cdc2ff141590af56f7c984b28cf3b6235cd7157dc79f0d4793f9cb0703aef6c.png" /></p>
+<p>A major advantage cryptocurrencies have over traditional banking is that you can control your assets at all times, without an intermediary being able to take possession of them at their whim.</p>
+<p>This is why since the very beginning of Publish0x, <strong>we have recommended that you use a self hosted wallet that you hold the private keys to</strong>.</p>
+<p>We specifically recommend <a href="https://atomicwallet.io/join?kid=18BW4Z"><strong>Atomic Wallet</strong></a> with whom we've made a kind of a soft partnership, because it is a <strong>reputable, easy to use, intuitive, anonymous, secure, and non-custodial multi-asset wallet</strong> that that can <strong>hold all of the cryptocurrencies you earn on Publish0x</strong> (<em>and on top of that, Atomic Wallet supports over 40 blockchains with 300+ custom tokens, including BTC, TRX, ADA, XTZ, XRP, EOS, and many, many others</em>).</p>
+<p> </p>
+<h3><strong>With Atomic Wallet, You:</strong></h3>
+<ul>
+<li>You have full control over your private keys. That means that <strong>you have full control over your crypto</strong>.</li>
+<li>You can <strong>store or exchange all of the tokens you earn on Publish0x</strong>, including BAT, LRC, and DAI (<em>and also BTC, TRX, ADA, XTZ, XRP, EOS, and many, many others</em>.)</li>
+<li>Atomic Wallet is <strong>reputable, intuitive, and easy to use</strong>.</li>
+</ul>
+<p style="text-align:left;"> </p>
+<h3><a href="https://atomicwallet.io/join?kid=18BW4Z">Get Started with Atomic Wallet - Download Now <em>and claim 10 Atomic Wallet Coins* (AWC) + Get 5 AWC extra* for using THIS LINK.</em></a></h3>
+<p> </p>
+<p> </p>
+<h2>With Atomic Wallet, You have Full Control over Your Crypto.</h2>
+<p><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3044429558-d54a27627d67e0fc56cc3bba8531c256d6a24e49405be15c6b8969602f40c51a.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/3658248414-d54a27627d67e0fc56cc3bba8531c256d6a24e49405be15c6b8969602f40c51a.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/1776018879-d54a27627d67e0fc56cc3bba8531c256d6a24e49405be15c6b8969602f40c51a.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3044429558-d54a27627d67e0fc56cc3bba8531c256d6a24e49405be15c6b8969602f40c51a.png" alt="atomic wallet publish0x recommendation" width="703" height="395" data-zoom-src="https://cdn.publish0x.com/prod/fs/images/d54a27627d67e0fc56cc3bba8531c256d6a24e49405be15c6b8969602f40c51a.png" /></p>
+<p><strong>Atomic Wallet is secure and non-custodial:</strong> You are in control of your crypto, as you own the private keys. This is opposed to centralized exchanges, where if the exchange gets hacked, or an employee goes rogue, you lose your funds.</p>
+<p><em>"Atomic's on-device intelligence allows storing all private keys at a user’s computer or/and smartphone, which guarantees only they have full access and control over the funds."</em></p>
+<p> </p>
+<h3><a href="https://atomicwallet.io/join?kid=18BW4Z">Withdraw Your Tokens from Publish0x Safely and Securely - Download Atomic Wallet.</a></h3>
+<p><em>* By using the link above, you're also entitled to claim 10 Atomic Wallet Coins (AWC) + you get 5 AWC extra*.</em></p>
+<p> </p>
+<h2>Atomic Wallet is Easy to Use and Intuitive.</h2>
+<p><iframe src="https://www.youtube.com/embed/GvPLN8pe_IY" width="560" height="315" frameborder="0" allowfullscreen></iframe></p>
+<p>But not only that, <strong>Atomic Wallet is also easy to use and intuitive.</strong> It <strong>works both on desktops, and on your Android and iOS phones</strong>. The app is intuitive, so it doesn't require you to spending much time to understand how it works.</p>
+<p> </p>
+<h3><a href="https://atomicwallet.io/join?kid=18BW4Z">Download Atomic Wallet and Easily Use Tokens Earned from Publish0x.</a></h3>
+<p style="text-align:center;"><em>* By using the link above, you're also entitled to claim 10 Atomic Wallet Coins (AWC) + you get 5 AWC extra*.</em></p>
+<p> </p>
+<h2>How to Withdraw Your Earnings from Publish0x to Atomic Wallet?</h2>
+<p>This is an easy to understand guide that will help you figure out how to <a href="https://www.publish0x.com/publish0xtutorials-smoljanovic0x/publish0xtutorials-transfer-and-withdrawal-of-publish0x-earn-xggvwz">transfer your tokens from Publish0x to Atomic Wallet</a>.</p>
+<h2><br>What Other Options Does Atomic Wallet Offer?</h2>
+<p><a href="https://atomicwallet.io/join?kid=18BW4Z"><img class="img-fluid img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/438035130-e89f0635996607cc388c313850a42ca73926d1f51c87bf16bc96aafb4e566a5f.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4130016365-e89f0635996607cc388c313850a42ca73926d1f51c87bf16bc96aafb4e566a5f.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/87356971-e89f0635996607cc388c313850a42ca73926d1f51c87bf16bc96aafb4e566a5f.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/438035130-e89f0635996607cc388c313850a42ca73926d1f51c87bf16bc96aafb4e566a5f.png" alt="e89f0635996607cc388c313850a42ca73926d1f51c87bf16bc96aafb4e566a5f.png" width="704" height="115" data-zoom-src="https://cdn.publish0x.com/prod/fs/images/e89f0635996607cc388c313850a42ca73926d1f51c87bf16bc96aafb4e566a5f.png" /></a></p>
+<p> </p>
+<p><strong>Atomic Wallet is more than just a wallet. Atomic Wallet also offers it's users to:</strong></p>
+<p> </p>
+<h4><strong>Exchange your tokens directly with the Atomic Wallet App.</strong></h4>
+<p><strong><iframe src="https://www.youtube.com/embed/rpPqCCFZuHs" width="560" height="315" frameborder="0" allowfullscreen></iframe></strong></p>
+<p>You can exchange hundreds of tokens directly with the Atomic Wallet app, including BAT, DAI, and LRC. Check <a href="https://atomicwallet.io/prices">full list of supported cryptocurrencies here</a>.</p>
+<p><strong>IMPORTANT!</strong> To receive airdrop and bonus rewards, open your Atomic Wallet app, go to "Settings" and then click on "Airdrop". Your code for the airdrop is: <strong>18BW4Z</strong>. In order for this to work, you and your referrals should be active Atomic wallet users - have a balance of any popular asset (from top200 CoinMarketCap) in the wallet at least for $10 equivalent.</p>
+<p>The rewards are paid until the 15th day of the next month. (i.e. if you participated in April, your reward will be paid until May, 15).</p>
+<p> </p>
+<h4><strong>Stake tokens and earn dividends.</strong></h4>
+<p>Atomic Wallet offers decentralized staking of tokens like Tezos, Cardano, Tron, and others. By staking your tokens you earn dividends. See which <a href="https://atomicwallet.io/staking">tokens you can stake with Atomic Wallet</a>.</p>
+<p> </p>
+<h4><strong>Earn crypto via airdrops. Get 15 AWC after registration.</strong></h4>
+<p><strong><iframe src="https://www.youtube.com/embed/BXsbGte93rI" width="560" height="315" frameborder="0" allowfullscreen></iframe></strong></p>
+<p>Download Atomic Wallet now and <strong>get 15 AWC* - Atomic Wallet native token after registering (10 AWC from the aridrop + 5 AWC*)</strong>. The <strong>video above will show you how to claim your AWC tokens after you've downloaded the wallet <a href="https://atomicwallet.io/join?kid=18BW4Z">from here*</a></strong>.</p>
+<p> </p>
+<h4><strong>Buy crypto with FIAT.</strong></h4>
+<p>With Atomic Wallet, you can buy crypto with FIAT. <a href="https://atomicwallet.io/buy-ethereum">Details here</a>.</p>
+<p> </p>
+<h4><strong>Become a Member.</strong></h4>
+<p>Become a member by buying and holding <strong>Atomic Wallet native AWC tokens</strong>, and <a href="https://atomicwallet.io/membership">get cashback on your crypto trades</a>.</p>
+<p>All Atomic Wallet users who hold AWC-BEP2 receive rewards for using a built-in exchange service, like <strong>up to 1% cashback on your crypto trades</strong>. When you purchase AWC via the wallet or on Binance DEX, hold and exchange it to become a member. <a href="https://atomicwallet.io/membership">Here is a step-by-step-guide</a>.</p>
+<p> </p>
+<p><a href="https://www.publish0x.com/atomic-wallet/what-is-atomic-wallet-xqjqxd">Learn more about Atomic Wallet</a>, and <a href="https://www.publish0x.com/@Atomic-Wallet">follow Atomic Wallet on Publish0x here</a>. All of the user written posts around Atomic Wallet can be seen <a href="https://www.publish0x.com/tag/atomicwallet">here</a>.</p>
+<p> </p>
+<p><em>*<strong>IMPORTANT!</strong> To receive airdrop and bonus rewards, open your Atomic Wallet app, go to "Settings" and then click on "Airdrop". Your code for the airdrop is: <strong>18BW4Z.</strong> In order for this to work, you and your referrals should be active Atomic wallet users - have a balance of any popular asset (from top200 CoinMarketCap) in the wallet at least for $10 equivalent.</em></p>
+<p><em>The rewards are paid until the 15th day of the next month. (i.e. if you participated in April, your reward will be paid until May, 15).</em></p>
+<p> </p>
+<h3><em><a href="https://atomicwallet.io/join?kid=18BW4Z">PS. Download Atomic Wallet from here and Claim 10 Atomic Wallet Coins (AWC) + Get 5 AWC extra* for using THIS LINK.</a></em></h3>
+<p> </p>
+<h3> </h3>
+<h2> </h2>
+<p> </p>
+<p> </p>
+            </div>
+
+            
+            <div class="mt-3 mb-3">
+                                    <a class="btn btn-secondary btn-tag" href="/tag/cryptocurrency">
+                        Cryptocurrency
+                    </a>
+                                    <a class="btn btn-secondary btn-tag" href="/tag/blockchain">
+                        Blockchain
+                    </a>
+                                    <a class="btn btn-secondary btn-tag" href="/tag/publish0x-tjkewae">
+                        Publish0x
+                    </a>
+                                    <a class="btn btn-secondary btn-tag" href="/tag/atomicwallet">
+                        Atomic Wallet
+                    </a>
+                            </div>
+
+
+            <div class="vote mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="h5 text-center">
+    How do you rate this article?
+</p>
+
+<div class="row">
+
+    
+    
+        <div class="col-6 text-right">
+            <span class="btn text-secondary" data-toggle="modal" data-target="#joinModal">
+                <i class="fa fa-2x fa-thumbs-up fa-outline"></i><br />
+                <span class="badge badge-pill badge-secondary">350</span>
+            </span>
+        </div>
+
+        <div class="col-6">
+            <span class="btn text-secondary" data-toggle="modal" data-target="#joinModal">
+                <i class="fa fa-2x fa-thumbs-down fa-flip-horizontal"></i><br />
+                <span class="badge badge-pill badge-secondary">15</span>
+            </span>
+        </div>
+
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="row summary">
+        <div class="col-lg-8 offset-lg-2">
+            <hr/>
+            <div class="row">
+    <div class="col-md-6 col-12">
+        <div class="row">
+
+            <div class="col-3">
+                <img class="img-fluid rounded-circle lazyload bg-light" src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2250556940-cf6693bf861f2995c9420a02f67464a138c41fe7d2aa200820811bf781513612.jpeg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3359023426-cf6693bf861f2995c9420a02f67464a138c41fe7d2aa200820811bf781513612.jpeg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-cf6693bf861f2995c9420a02f67464a138c41fe7d2aa200820811bf781513612.jpeg" alt="Igor Tomić" width="84" height="84"  />
+            </div>
+
+        	<div class="col-9">
+
+        		<a href="/@igort">
+        			Igor Tomić
+        		</a>
+
+                <img class="team-badge lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3177841095-54a23e6dbc7d807a32aa4ef7dd3a1a1286b94c14101234f3e2c2146e74be2725.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/1898601917-54a23e6dbc7d807a32aa4ef7dd3a1a1286b94c14101234f3e2c2146e74be2725.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3758726605-54a23e6dbc7d807a32aa4ef7dd3a1a1286b94c14101234f3e2c2146e74be2725.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3177841095-54a23e6dbc7d807a32aa4ef7dd3a1a1286b94c14101234f3e2c2146e74be2725.png" alt="Official Team Member" width="100"   />
+
+        		<p class="about">
+        		    Publish0x COO. Interested in Cryptos and Blockchain, Travel, Basketball and Hiking.
+        	    </p>
+
+                
+        	</div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-12">
+
+        <hr class="d-sm-block d-md-none" />
+
+                    <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid rounded lazyload bg-danger" src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/2250556940-c1abc614dd61f21ffa20f60c3aaebbd4aa444d313b3184377c14857568ebd1b0.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/3359023426-c1abc614dd61f21ffa20f60c3aaebbd4aa444d313b3184377c14857568ebd1b0.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/2079749788-c1abc614dd61f21ffa20f60c3aaebbd4aa444d313b3184377c14857568ebd1b0.png" alt="Publish0x Official Blog" width="84" height="84"  />
+                </div>
+
+            	<div class="col-9">
+
+            		<a class="wrap-text" href="/publish0x-official-blog">
+            			Publish0x Official Blog
+            		</a>
+
+            		<p class="about">
+            			News and updates about the Publish0x platform. Official Blog.
+
+Other Official Blogs:
+2. Publish0x Labs: bit.ly/P0x-Labs
+3. Publish0x Contests: bit.ly/P0x-Contests
+4. Publish0x Tutorials: bit.ly/P0x-Tutorials
+5. Publish0x Emails: http://bit.ly/P0x-Emails
+            		</p>
+            	</div>
+            </div>
+        
+    </div>
+
+</div>
+        </div>
+    </div>
+
+
+            <div class="row post">
+            <div class="col-lg-8 offset-lg-2 mt-3">
+                <div class="row tipbox">
+    <div class="col-lg-12 my-auto">
+    	<div class="row">
+    		<div class="col-lg-3 my-auto">
+    			<img class="img-fluid" src="/images/logo-claim-2.png?id=095df4e3744ed6020cbd"/>
+    		</div>
+
+    		<div class="col-lg-6 my-auto">
+    			<p class="p-0 m-0">
+        			Send a $0.01 microtip in crypto to the author,
+        			and earn yourself as you read!
+    			</p>
+    			<input type="range"
+    				id="tipslider"
+    				class="custom-range"
+    				name="split"
+    				value="80"
+    				min="20"
+    				max="100"
+    				step="1"/>
+    			<b><span class="toauthor">20</span>% to author / <span class="tome">80</span>% to me.</b> <br />
+    			We pay the tips from our rewards pool.
+    		</div>
+
+    		<div class="col-lg-3 pb-3 pt-3 my-auto">
+          <button class="btn btn-info btn-claim"  data-toggle="modal" data-target="#joinModal">
+            <i class="fas fa-star"></i> TIP
+          </button>
+    		</div>
+    	</div>
+	</div>
+</div>
+
+            </div>
+        </div>
+
+		<div class="row post">
+			<div class="col-12">
+				<div class="pb-2 pt-2 text-center">
+        <!-- Coinzilla Banner 728x90 -->
+        <script async src="https://coinzillatag.com/lib/display.js"></script>
+        <div class="coinzilla" data-zone="C-5635d421ea76d99f214"></div>
+        <script>
+            window.coinzilla_display = window.coinzilla_display || [];
+            var c_display_preferences = {};
+            c_display_preferences.zone = "5635d421ea76d99f214";
+            c_display_preferences.width = "728";
+            c_display_preferences.height = "90";
+            coinzilla_display.push(c_display_preferences);
+        </script>
+    </div>
+			</div>
+		</div>
+
+                    <div class="row post">
+                <div class="col-lg-8 offset-lg-2 mt-3">
+                    <div class="related-posts">
+    <div class="row">
+                    <div class="col-sm-4 mt-3">
+            	<div class="card h-100">
+            		<div class="card-body h-100 text-left">
+            			<a href="/rektimes-crypto-blockchain-news/as-gas-fees-remain-high-for-small-traders-is-ethereum-longev-xyyqqqj" title="As Gas Fees Remain High for Small Traders, is Ethereum Longevity Resting on ETH2.0?">
+            				<img class="img-fluid w-100 img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-394ecc61a6561dffb6d81261477609048cdf3dc27ad67c6d6d8f03e60da48f18.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4152688123-394ecc61a6561dffb6d81261477609048cdf3dc27ad67c6d6d8f03e60da48f18.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/268113530-394ecc61a6561dffb6d81261477609048cdf3dc27ad67c6d6d8f03e60da48f18.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-394ecc61a6561dffb6d81261477609048cdf3dc27ad67c6d6d8f03e60da48f18.png" alt="As Gas Fees Remain High for Small Traders, is Ethereum Longevity Resting on ETH2.0?" width="340" height="191"  />
+            			</a>
+            			<a href="/rektimes-crypto-blockchain-news/as-gas-fees-remain-high-for-small-traders-is-ethereum-longev-xyyqqqj" title="As Gas Fees Remain High for Small Traders, is Ethereum Longevity Resting on ETH2.0?" class="m-0">
+                            As Gas Fees Remain High for Small Traders, is Ethereum Longevity Resting on ETH2.0?
+            			</a>
+            		</div>
+            		            			<div class="card-footer row m-0 mt-2">
+            				<div class="col-2 p-0">
+            					<img class="img-fluid lazyload bg-dark" src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/339502131-c5ba96d332d15bffc721bb45163f4de3a37428ceb2f80a2e4ab89eb649b41e1b.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/2533658452-c5ba96d332d15bffc721bb45163f4de3a37428ceb2f80a2e4ab89eb649b41e1b.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-c5ba96d332d15bffc721bb45163f4de3a37428ceb2f80a2e4ab89eb649b41e1b.png" alt="zacharias" width="200" height="200"  />
+            				</div>
+            				<div class="col-10">
+            					<p class="m-0 d-flex">
+            						<span class="text-ellipsis">
+            						    <a href="/@zlorance" title="zacharias">
+            							    zacharias
+            						    </a>
+            					    </span>
+            					</p>
+            					<p class="m-0">
+            						<small>19 hours ago</small><br />
+            						<small>4 minute read</small>
+            					</p>
+            				</div>
+            			</div>
+            		            	</div>
+            </div>
+                    <div class="col-sm-4 mt-3">
+            	<div class="card h-100">
+            		<div class="card-body h-100 text-left">
+            			<a href="/bitcoin-price-drop-what-just-happened/wisdom-from-steve-jobs-to-satoshi-nakamoto-xrnpexo" title="Wisdom from Steve Jobs to Satoshi Nakamoto">
+            				<img class="img-fluid w-100 img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4152688123-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/268113530-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-bc8a72babb6c5cd7820ae36ca15e37c90bc33c9dbd77963bd516e01af668dcdd.jpg" alt="Wisdom from Steve Jobs to Satoshi Nakamoto" width="340" height="191"  />
+            			</a>
+            			<a href="/bitcoin-price-drop-what-just-happened/wisdom-from-steve-jobs-to-satoshi-nakamoto-xrnpexo" title="Wisdom from Steve Jobs to Satoshi Nakamoto" class="m-0">
+                            Wisdom from Steve Jobs to Satoshi Nakamoto
+            			</a>
+            		</div>
+            		            			<div class="card-footer row m-0 mt-2">
+            				<div class="col-2 p-0">
+            					<img class="img-fluid lazyload bg-info" src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/339502131-21cacaea1befd683ce634a81628b5e6590c0abb9fa15f22fab6c749634f71562.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/2533658452-21cacaea1befd683ce634a81628b5e6590c0abb9fa15f22fab6c749634f71562.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-21cacaea1befd683ce634a81628b5e6590c0abb9fa15f22fab6c749634f71562.png" alt="xuanling11" width="200" height="200"  />
+            				</div>
+            				<div class="col-10">
+            					<p class="m-0 d-flex">
+            						<span class="text-ellipsis">
+            						    <a href="/@xuanling11-" title="xuanling11">
+            							    xuanling11
+            						    </a>
+            					    </span>
+            					</p>
+            					<p class="m-0">
+            						<small>11 hours ago</small><br />
+            						<small>7 minute read</small>
+            					</p>
+            				</div>
+            			</div>
+            		            	</div>
+            </div>
+                    <div class="col-sm-4 mt-3">
+            	<div class="card h-100">
+            		<div class="card-body h-100 text-left">
+            			<a href="/the-splinterlands-post/spt-power-hive-stake-hbd-help-newbie-guide-to-blogging-on-sp-xwwrexv" title="SPT? Power? HIVE? Stake? HBD? Help!! - Newbie Guide to Blogging on Splintertalk">
+            				<img class="img-fluid w-100 img-modern lazyload" src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-40def0b700639cc7efea2a9a63b80929f521958decd944f7652d76f38bc8d226.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/4152688123-40def0b700639cc7efea2a9a63b80929f521958decd944f7652d76f38bc8d226.png 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/268113530-40def0b700639cc7efea2a9a63b80929f521958decd944f7652d76f38bc8d226.png 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/3731945950-40def0b700639cc7efea2a9a63b80929f521958decd944f7652d76f38bc8d226.png" alt="SPT? Power? HIVE? Stake? HBD? Help!! - Newbie Guide to Blogging on Splintertalk" width="340" height="191"  />
+            			</a>
+            			<a href="/the-splinterlands-post/spt-power-hive-stake-hbd-help-newbie-guide-to-blogging-on-sp-xwwrexv" title="SPT? Power? HIVE? Stake? HBD? Help!! - Newbie Guide to Blogging on Splintertalk" class="m-0">
+                            SPT? Power? HIVE? Stake? HBD? Help!! - Newbie Guide to Blogging on Splintertalk
+            			</a>
+            		</div>
+            		            			<div class="card-footer row m-0 mt-2">
+            				<div class="col-2 p-0">
+            					<img class="img-fluid lazyload bg-info" src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-3b739bd27317b736593d4265c2a772e3ebf9a8192ee786d18f1245c61476eec7.png" data-srcset="https://cdn.publish0x.com/prod/fs/cachedimages/339502131-7d44f6370fb982377d0be85ac329c53d018480bda75f372125c54758ec8ec3f4.jpg 1.5x, https://cdn.publish0x.com/prod/fs/cachedimages/2533658452-7d44f6370fb982377d0be85ac329c53d018480bda75f372125c54758ec8ec3f4.jpg 2x" data-src="https://cdn.publish0x.com/prod/fs/cachedimages/1359893649-7d44f6370fb982377d0be85ac329c53d018480bda75f372125c54758ec8ec3f4.jpg" alt="Luizeba" width="200" height="200"  />
+            				</div>
+            				<div class="col-10">
+            					<p class="m-0 d-flex">
+            						<span class="text-ellipsis">
+            						    <a href="/@Luizeba" title="Luizeba">
+            							    Luizeba
+            						    </a>
+            					    </span>
+            					</p>
+            					<p class="m-0">
+            						<small>20 hours ago</small><br />
+            						<small>9 minute read</small>
+            					</p>
+            				</div>
+            			</div>
+            		            	</div>
+            </div>
+        	</div>
+</div>
+                </div>
+            </div>
+                
+    
+    <div class="row post">
+        <div class="col-lg-8 offset-lg-2 mt-5">
+                            <comment
+                        :guest=true
+                        :max-depth=10
+                        :post-id=&quot;7ayPWNYx5YvjnbLG&quot;>
+                </comment>
+                    </div>
+    </div>
+
+    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="h2">
+                                Get FREE CRYPTO <br/> Just for Tipping this Article.
+                            </p>
+                            <p>
+                                Register now at Publish0x to claim your <b>$$$</b>. <br/>
+                                It only takes 15 seconds and it's free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="/login" class="btn btn-info">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="/register" class="btn btn-info">
+                        <i class="fas fa-user-plus"></i> Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center pt-1" id="totop">
+    <i class="fas fa-arrow-up fa-lg"></i>
+</div>
+
+
+            </div>
+        </main>
+        <footer id="footer">
+    <div class="container">
+        <div class="row">
+        	<div class="col-lg-6">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/page/how-it-works">How it Works</a></li>
+                    <li class="list-inline-item"><a href="/page/frequently-asked-questions">FAQ</a></li>
+                    <li class="list-inline-item"><a href="/ambassadors">Ambassador Program</a></li>
+                    <li class="list-inline-item"><a href="/page/terms" title="Terms and Conditions">Terms</a></li>
+                    <li class="list-inline-item"><a href="/page/privacy" title="Privacy Policy">Privacy</a></li>
+					<li class="list-inline-item"><a href="/stats" title="Stats">Stats</a></li>
+                </ul>
+        	</div>
+
+        	<div class="col-lg-6 align-bottom">
+        		<div class="social d-flex justify-content-around justify-content-md-end">
+        			<a href="https://www.facebook.com/publish0x/" aria-label="Publish0x Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook "></i></a>
+        			<a href="https://twitter.com/publish0x" aria-label="Publish0x Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+        			<a href="https://t.me/publish0x" aria-label="Publish0x Telegram" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+        			<a href="https://reddit.com/r/publish0x" aria-label="Publish0x Reddit" target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a>
+        			<a href="https://instagram.com/publish0x/" aria-label="Publish0x Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        			<a href="https://www.youtube.com/c/Publish0x" aria-label="Publish0x Youtube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        		</div>
+
+                <p class="recaptcha mt-4">
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy">Privacy Policy</a>
+                    and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                </p>
+
+                <p class="text-right">Copyright © 2021 - All rights reserved.</p>
+
+        	</div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+        <div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+    <div class="col-12" style="background-color: #00a8ec">
+        <h1 class="text-center text-white pt-3 pb-3">
+            Earn Crypto for Publishing and Reading
+        </h1>
+    </div>
+</div>
+
+<h2 class="text-center title">Join Now - Registration is Free and Instant</h2>
+
+<div class="row justify-content-center mb-2">
+			<div class="col-12 col-md text-center mb-1">
+			<a href="/oauth/facebook/redirect" class="btn btn-block btn-primary social-login" rel="nofollow">
+				<i class="fab fa-facebook-f"></i> Sign Up with Facebook
+			</a>
+		</div>
+	
+			<div class="col-12 col-md text-center mb-1">
+			<a href="/oauth/twitter/redirect" class="btn btn-block btn-info social-login" rel="nofollow">
+				<i class="fab fa-twitter"></i> Sign Up with Twitter
+			</a>
+		</div>
+	
+	</div>
+<p class="text-center">
+    <a href="/register">
+        <i class="fas fa-arrow-right"></i> Alternatively sign up with email
+    </a>
+</p>
+
+<hr />
+
+<p class="text-center">
+    Already have an account? <a href="https://www.publish0x.com/login">Login</a>
+</p>                </div>
+            </div>
+        </div>
+    </div>
+    
+        <script type="text/javascript" src="/js/emojione.min.js?id=ef5ee5dd039a2cebdbad"></script>
+    <script src="/js/medium-zoom.min.js?id=ea523c1dc9f3c70d2bf8"></script>
+    <script type="text/javascript" src="/js/manifest.js?id=d91051ea7d0c9bd1981e"></script>
+    <script type="text/javascript" src="/js/jquery.min.js?id=8fb8fee4fcc3cc86ff6c"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js?id=f81d0a1705048649befc"></script>
+    <script type="text/javascript" src="/js/vendor.js?id=7d420e142845b5a76d86"></script>
+    <script type="text/javascript" src="/js/app.js?id=e68bf635e1ae1569298e"></script>
+    <script type="text/javascript" src="/js/current.js?id=2e1152ee7b9a30fd2427"></script>
+    <script>
+        (function(d) {
+            const css = d.createElement('link');
+            css.href = '/css/fontawesome.css?id=04e137648424ef407e8d';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            d.getElementsByTagName('head')[0].appendChild(css);
+        })(document);
+    </script>
+    <script src="/js/layout.js?id=a2d7c72552cbdaa7dee6"></script>
+
+            <script>
+            const appId = "e3be072b-6d48-4702-8a51-abbe84addc53";
+        </script>
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+        <script src="/js/layoutOneSignal.js?id=37d987c3f11a1175b2c3"></script>
+    
+    <script>
+    $(document).ready(function() {
+
+        /* Get default split from config */
+        toauthor = 80;
+        tome = 100 - toauthor;
+        $(".toauthor").html(toauthor);
+        $(".tome").html(tome);
+
+		$("#tipslider").on("input change", function() {
+			toauthor = this.value;
+			tome = 100 - toauthor;
+			$(".toauthor").html(toauthor);
+            $(".tome").html(tome);
+		});
+
+    });
+</script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('#totop').fadeIn();
+            } else {
+                $('#totop').fadeOut();
+            }
+        });
+
+        $('#totop').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+
+      });
+    </script>
+        <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+          },
+        });
+        $('#removeNotification').click(function(e) {
+          e.preventDefault();
+          let messageId = $(this).attr('message-id');
+          $.ajax({
+            type: 'POST',
+            url: '/admin/messages/post/remove',
+            data: {post_id:81623, messageId: messageId},
+            success: function(data) {
+              $('#postNotification').alert('close');
+            },
+          });
+        });
+      });
+    </script>
+    <script>
+      let authorTrusted = 1;
+    </script>
+    <script src="/js/reframe.min.js?id=ff95c22c199b68cfd30b"></script>
+    <script src="/js/post.js?id=c9bc012a4ccae1273d95"></script>
+    <script src="/js/prism.js?id=d56137217007980cc365"></script>
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Igor Tomić"},"dateModified":"2020-12-01T14:05:20+00:00","datePublished":"2020-05-01T14:01:59+00:00","headline":"Publish0x Recommends Atomic Wallet (Download Now and Get 15 AWC)","image":"https:\/\/cdn.publish0x.com\/prod\/fs\/images\/ac8a42c78eec9451fa189e58cc8d410e7cc3aab55b82c93444d2bf190ae2412a.png","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.publish0x.com\/publish0x-official-blog\/publish0x-recommends-atomic-wallet-download-now-and-get-15-a-xmqorg"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https:\/\/cdn.publish0x.com\/prod\/fs\/cachedimages\/3514176606-f3cb156779489da8e12ce1d074f7d692b4c12b8787c1245563ee7f688f01109a.png"},"name":"Publish0x"},"url":"https:\/\/www.publish0x.com\/publish0x-official-blog\/publish0x-recommends-atomic-wallet-download-now-and-get-15-a-xmqorg"}</script>
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Publish0x Official Blog","item":"https:\/\/www.publish0x.com\/publish0x-official-blog"},{"@type":"ListItem","position":2,"name":"Publish0x Recommends Atomic Wallet (Download Now and Get 15 AWC)","item":"https:\/\/www.publish0x.com\/publish0x-official-blog\/publish0x-recommends-atomic-wallet-download-now-and-get-15-a-xmqorg"}]}</script>
+
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e81f952b73a5fac"></script>
+    
+    <script src="/js/Publish0xCookies.js?id=89ad92bc5c3c05758a6a"></script>
+    <script>
+        let systemWideNotificationCookie = new Publish0xCookies('systemWideMessage', 'system', 2);
+        let systemNotification = systemWideNotificationCookie.get('systemWideMessage');
+
+        if (systemNotification === 'system') {
+            $('#systemWideNotification').hide();
+        }
+
+        $('#systemWideNotification').on('closed.bs.alert', function() {
+            systemWideNotificationCookie.set();
+        });
+    </script>
+    <div class="modal fade" id="registerPopup" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="bg-light">
+
+                    <div class="row m-3">
+
+                        <div class="col-lg-6 order-lg-2 ml-auto">
+                            <span role="button" class="float-right">
+                                <i class="fas fa-times" id='registerPopupCloseModal' style="cursor: pointer;"></i>
+                            </span>
+                            <img src="https://www.publish0x.com/images/popup.png" class="img-fluid" alt="wrappixel" />
+                        </div>
+
+                        <div class="col-lg-6 order-lg-1 ml-auto text-center text-lg-left">
+
+                            <p class="h2 my-3">
+                                Earn Crypto for<br /> Reading & Writing Content
+                            </p>
+
+                            <p>Over $429,646 Paid out to users</p>
+
+                            <a class="btn btn-success btn-md btn-block"
+                                href="/register?utm_source=publish0xWebsite&utm_medium=signupPopupV1&utm_campaign=signupPopups">
+                                <span>Sign Up in 20 seconds!</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+            <script>
+            $(document).ready(function() {
+                const popUpRegisterCloseCookie = new Publish0xCookies('popUpRegisterClosed', 0, 2880);
+                let popupClosedTimes = popUpRegisterCloseCookie.get('popUpRegisterClosed');
+
+                $('#registerPopupCloseModal').click(function() {
+                    $('#registerPopup').modal('hide');
+                });
+
+                $('#registerPopup').on("hidden.bs.modal", function () {
+                    popupClosedTimes++;
+                    const popUpRegisterCloseCookie = new Publish0xCookies('popUpRegisterClosed', popupClosedTimes, 2880);
+                    popUpRegisterCloseCookie.set();
+                });
+
+                let registerTimer = setTimeout(function() {
+                  $('#registerPopup').modal('show');
+                }, 15000);
+
+                if (popupClosedTimes >= 2) {
+                  clearTimeout(registerTimer);
+                }
+
+                $('#registrationButton').click(function() {
+                  clearTimeout(registerTimer);
+                });
+
+                $('#getStartedButton').click(function() {
+                  clearTimeout(registerTimer);
+                });
+            });
+        </script>
+    </body>
+
+</html>

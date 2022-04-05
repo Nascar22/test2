@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ca22ed409a",applicationID:"372922663"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="BoUOKFh23MZwMrTCO-9Pinxpyi8cNosx2upONjLvEW8" /><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Privacy-protecting digital currency | Zcash</title>
+	<meta name="description" content="Zcash is a digital currency with strong privacy features. Transact efficiently and safely, with low fees, while ensuring digital transactions remain private. Selectively disclose address and transaction details for information sharing, auditing or regulatory compliance." />
+	<link rel="canonical" href="https://z.cash/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Privacy-protecting digital currency | Zcash" />
+	<meta property="og:description" content="Zcash is a digital currency with strong privacy features. Transact efficiently and safely, with low fees, while ensuring digital transactions remain private. Selectively disclose address and transaction details for information sharing, auditing or regulatory compliance." />
+	<meta property="og:url" content="https://z.cash/" />
+	<meta property="og:site_name" content="Zcash" />
+	<meta property="article:modified_time" content="2021-07-01T16:38:29+00:00" />
+	<meta property="og:image" content="https://z.cash/wp-content/uploads/2021/07/Zcash-Access.png" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1080" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Zcash digital currency" />
+	<meta name="twitter:description" content="Spend it, save it or send it to a friend. Unlike many other forms of payment, Zcash shielded transactions keep all your financial information private and in your control." />
+	<meta name="twitter:image" content="https://z.cash/wp-content/uploads/2021/07/Zcash-Access.png" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://z.cash/#organization","name":"Zcash","url":"https://z.cash/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://z.cash/#logo","inLanguage":"en-US","url":"https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png","contentUrl":"https://z.cash/wp-content/uploads/2018/10/zcash-logo-fullcolor-512sq.png","width":512,"height":512,"caption":"Zcash"},"image":{"@id":"https://z.cash/#logo"}},{"@type":"WebSite","@id":"https://z.cash/#website","url":"https://z.cash/","name":"Zcash","description":"Privacy-protecting, digital currency built on strong science","publisher":{"@id":"https://z.cash/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://z.cash/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://z.cash/#primaryimage","inLanguage":"en-US","url":"https://z.cash/wp-content/uploads/2021/07/Zcash-Access.png","contentUrl":"https://z.cash/wp-content/uploads/2021/07/Zcash-Access.png","width":1920,"height":1080},{"@type":"WebPage","@id":"https://z.cash/#webpage","url":"https://z.cash/","name":"Privacy-protecting digital currency | Zcash","isPartOf":{"@id":"https://z.cash/#website"},"about":{"@id":"https://z.cash/#organization"},"primaryImageOfPage":{"@id":"https://z.cash/#primaryimage"},"datePublished":"2021-06-14T13:49:57+00:00","dateModified":"2021-07-01T16:38:29+00:00","description":"Zcash is a digital currency with strong privacy features. Transact efficiently and safely, with low fees, while ensuring digital transactions remain private. Selectively disclose address and transaction details for information sharing, auditing or regulatory compliance.","breadcrumb":{"@id":"https://z.cash/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://z.cash/"]}]},{"@type":"BreadcrumbList","@id":"https://z.cash/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//z.cash' />
+<link rel='dns-prefetch' href='//config.confirmic.com' />
+<link rel='dns-prefetch' href='//consent-manager.confirmic.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="preload" href="https://z.cash/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://z.cash/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://z.cash/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel='stylesheet' id='wp-block-library-css'  href='https://z.cash/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-css'  href='https://z.cash/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.3/css/all.min.css?ver=2.5.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-8764-css'  href='https://z.cash/wp-content/uploads/bb-plugin/cache/8764-layout.css?ver=48f3f379660987099c07654d6f1f852e' type='text/css' media='all' />
+<link rel='preload' as='font' type='font/woff' crossorigin='anonymous' id='robotoregular-handle-css'  href='https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/assets/fonts/Roboto-Regular-webfont.woff' type='text/css' media='all' />
+<link rel='preload' as='font' type='font/woff' crossorigin='anonymous' id='robotolight-handle-css'  href='https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/assets/fonts/Roboto-Light-webfont.woff' type='text/css' media='all' />
+<link rel='preload' as='font' type='font/woff' crossorigin='anonymous' id='robotomedium-handle-css'  href='https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/assets/fonts/Roboto-Medium-webfont.woff' type='text/css' media='all' />
+<link rel='preload' as='font' type='font/woff' crossorigin='anonymous' id='robotobold-handle-css'  href='https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/assets/fonts/Roboto-Bold-webfont.woff' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-google-fonts-5e5b5aa50351251c2364e59adec9602a-css'  href='//fonts.googleapis.com/css?family=Roboto%3A700%2C300&#038;ver=5.8.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://z.cash/wp-includes/js/jquery/jquery.js' id='jquery-js'></script>
+<script type='text/javascript' src='https://z.cash/wp-includes/js/imagesloaded.min.js?ver=5.8.1' id='imagesloaded-js'></script>
+<link rel="https://api.w.org/" href="https://z.cash/wp-json/" /><link rel="alternate" type="application/json" href="https://z.cash/wp-json/wp/v2/pages/8764" /><meta name="generator" content="WordPress 5.8.1" />
+<link rel='shortlink' href='https://z.cash/' />
+<link rel="alternate" type="application/json+oembed" href="https://z.cash/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fz.cash%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://z.cash/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fz.cash%2F&#038;format=xml" />
+<link rel="alternate" type="application/rss+xml" title="Zcash RSS 2.0 Feed" href="https://z.cash/feed/" /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><!-- wcir yes --><link rel="icon" href="https://z.cash/wp-content/uploads/2019/03/cropped-zcash-icon-fullcolor-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://z.cash/wp-content/uploads/2019/03/cropped-zcash-icon-fullcolor-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://z.cash/wp-content/uploads/2019/03/cropped-zcash-icon-fullcolor-180x180.png" />
+<meta name="msapplication-TileImage" content="https://z.cash/wp-content/uploads/2019/03/cropped-zcash-icon-fullcolor-270x270.png" />
+<style>:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-20:#005a87}:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}footer,header,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1,h2{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}strong{font-weight:bolder}a{color:#007bff;text-decoration:none;background-color:transparent}a:not([href]):not([class]){color:inherit;text-decoration:none}img{vertical-align:middle;border-style:none}button{border-radius:0}input,button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}button,[type="button"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}[type="search"]{outline-offset:-2px;-webkit-appearance:none}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h2,.h5{margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:2.5rem}h2{font-size:2rem}.h5{font-size:1.25rem}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-2,.col-8,.col-10,.col-11,.col-12,.col,.col-sm-6,.col-sm-10,.col-md-1,.col-md-3,.col-md-6,.col-md-7,.col-md-10,.col-md-12,.col-lg-2,.col-lg-5,.col-lg-8,.col-lg-11,.col-lg-12,.col-xl-6{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.col-2{flex:0 0 16.66667%;max-width:16.66667%}.col-8{flex:0 0 66.66667%;max-width:66.66667%}.col-10{flex:0 0 83.33333%;max-width:83.33333%}.col-11{flex:0 0 91.66667%;max-width:91.66667%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.col-sm-6{flex:0 0 50%;max-width:50%}.col-sm-10{flex:0 0 83.33333%;max-width:83.33333%}}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem}.btn-primary{color:#fff;background-color:#007bff;border-color:#007bff}.collapse:not(.show){display:none}.dropdown{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:.5rem 1rem}.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.5rem 1rem}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat center center;background-size:100% 100%}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.5)}.navbar-light .navbar-nav .nav-link.active{color:rgba(0,0,0,.9)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.5);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.d-block{display:block!important}.flex-column{flex-direction:column!important}.justify-content-center{justify-content:center!important}.justify-content-between{justify-content:space-between!important}.justify-content-around{justify-content:space-around!important}.align-items-center{align-items:center!important}.align-content-center{align-content:center!important}.align-self-center{align-self:center!important}.text-center{text-align:center!important}body{font-family:'robotoregular',Arial,Helvetica Neue,Helvetica,sans-serif;line-height:1.6}.h5,h1,h2{margin-bottom:1rem}h1,h2{font-family:'robotolight',Arial,Helvetica Neue,Helvetica,sans-serif;line-height:1.5}h1{font-size:2.625rem}h2{font-size:2.125rem}.h5{font-family:'robotomedium',Arial,Helvetica Neue,Helvetica,sans-serif;line-height:1.6}.h5{font-size:1.125rem}a{color:#00b2e3}strong{font-family:'robotobold',Arial,Helvetica Neue,Helvetica,sans-serif;font-weight:400}img{max-width:100%;height:auto}div.sticky{position:relative;z-index:1000;width:100%;top:0;left:0}header#masthead{background-color:#fff;border-bottom:1px solid #f6f6f6}header#masthead .navbar{padding-left:0;padding-right:0}header#masthead .navbar .navbar-brand{display:flex}header#masthead .navbar .navbar-brand .logo{max-width:121px;display:initial}header#masthead .navbar .navbar-brand .logo.scrolled{display:none}header#masthead .navbar .navbar-toggler{margin-top:.3125rem;margin-bottom:.3125rem}header#masthead .navbar #navbarNavWrap{padding:0}header#masthead .navbar #navbarNavWrap .navbar-nav{width:100%}header#masthead .navbar #navbarNavWrap .navbar-nav .dropdown-toggle:after{border:0 none transparent;margin:0;display:none}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item.dropdown a:not([href]){display:none}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item a{color:#000;position:relative;padding:.4375rem 1.25rem}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item a:before{content:'';position:absolute;top:0;left:1rem;width:calc(100% - 2rem);height:1px;background-color:#ddd;display:block}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item:first-child>a:not(.dropdown-item):before{display:none}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item .dropdown-menu{display:block;margin:0;padding:0;background:transparent;border:0 none transparent}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item .dropdown-menu a.dropdown-item{padding-left:2.5rem}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item.no-href .dropdown-menu a.dropdown-item{padding-left:1.25rem}header#masthead .navbar #navbarNavWrap .navbar-nav .nav-item:last-of-type>.dropdown-menu{left:initial;right:0;display:none}header#masthead #searchbox{position:absolute;top:0;left:0;width:100%;background-color:#e6e7e8;display:none}header#masthead #searchbox .container{height:100%}header#masthead #searchbox .container .row{height:100%}#searchbox .search-form{padding:.9375rem 0}#searchbox .search-form .col:first-child{position:relative;padding-left:.9375rem}#searchbox .search-form .col:first-child:after{content:'';width:7.8125rem;height:6px;background:#00b2e3;position:absolute;bottom:-1px;left:1rem}#searchbox .search-form input[type="search"]{border:0 none transparent;border-bottom:1px solid #c7c8c9;background-color:transparent;font-size:1.625rem;font-family:'robotolight',Arial,Helvetica Neue,Helvetica,sans-serif;width:100%;text-indent:.25rem}#searchbox .search-form .search-submit{background:no-repeat transparent center/contain url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAdVBMVEUAAAAAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMAsuMv91xXAAAAJ3RSTlMA/Pi7h6N6TAyTN/PMZyMdz6ZuRQPuuK5XURfp3RMHs10+1dN+Ti1FG+avAAABMUlEQVQ4y42V6Y6DMAyEnbsJ4b5aoNde7/+IK3YpJYGA5w+y9EngsT2Aq8oUumWs1YWpIKxSRMQKLiUXlkSiDGCXjObq9KpOKqfZZQNLG8o7cNRx2qQ+p2qWwEoJqxU4iomETUkSu9wZAjovSTVyYVLNfdQSdiTrV0cNg12xZvKPJvtgQv/9zDgciGd/c6PdEdjRcZoih0PlAqCKVLDd2UEVVWDIKcBp+pw3hBgo7DZWiej5rmwBWmxyt7w3i1JoaPkmd+9/HINaYPJd6fmb2JC4fbElaCI+cXZIwQOdVxv6NT6u2efVn03rNlOSAiD9sD4HQnv2fJM4GdjaWVv4hj9If3e5yfDVCB/65kLTCLFLgV4z/OLiTwF/XPhzPQ4AbKTgQwofe/ggxUczPuzRv49fsoYP/BvAC2MAAAAASUVORK5CYII=);width:40px;height:40px;color:transparent;border:0 none transparent;vertical-align:top;max-width:100%}#searchbox .search-form .search-toggle a{display:none}#searchbox .search-form{padding:.9375rem}#searchbox .search-form .search-toggle a{display:block}footer#colophon{background:none #000;border-top:3px solid #f4b728;padding:4em 0;font-size:14px}footer#colophon p,footer#colophon li,footer#colophon a{color:#fff}footer#colophon p{margin-bottom:0}footer#colophon a{display:inline-block}footer#colophon .col-12{margin-bottom:1.875rem}footer#colophon .col-12 .h5{color:#f4b728}footer#colophon .col-12:first-child+.col-12 .h5{position:relative;display:inline-block}footer#colophon .col-12:first-child+.col-12 .h5:after{content:'';position:absolute;top:.5em;left:calc(100% + 11px);width:11px;height:12px;background:no-repeat transparent center/contain url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAYAAAD+vg1LAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDAgNzkuMTYwNDUxLCAyMDE3LzA1LzA2LTAxOjA4OjIxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+LUNEtwAAAZdJREFUSInd1c+LjVEcx/HXc53ryjVZmLsYGpIaIhYoFEKzsrBSVmz9W8qGjVCiSRIbTZOVkazMhBpXTRIm7p3H4vnemrp5PPc+Vj51Os9zzvm+z+d8Oz+yPM/V0Alcxzlsx2b0sZrqUPEDK/iKvRva23XB73EHa9iBXdGeEs6ihS1oRkcXb6Iu05pi6R/wFEexD40sz/N7ivykKLCAG1GX6TiuYCteoYPL6CRcCLfLFRwONIHDuIhjAV3AOtqYSvHzGffxPAK7WCoBH8Q17Mci7ipSt47b2JYCuoLHeFDB6RHMYjpW+QjP0IsxLylymsdMvSHMsA6F02nM40k4HYpNyKJulwB3YgbnsXuD0xd/Cqi6j2dwNSaYxxxelwWMekCW8VCJ01HBb3ETvxS74K+qCv4YpbIaowz+v8F1r82BOtgT30v48q/ABxS3XIZbWGwojnQP32qAJ3ASpzGF1uBIN9RLSyvKpmBlCZOKi3o2OsfRmeB08RP9FDNM4hJOjQnuBOOd4oHtJXxS5KgZA8ZRE6vB+o7+b3pYWoTUi5INAAAAAElFTkSuQmCC)}footer#colophon .col-12 li.nav-item a{padding:.25rem 0}footer#colophon .col-12 li.nav-item.ext a.nav-link{position:relative}footer#colophon .col-12 li.nav-item.ext a.nav-link:after{content:'';position:absolute;top:.5em;left:calc(100% + 11px);width:11px;height:12px;background:no-repeat transparent center/contain url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAYAAAD+vg1LAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDAgNzkuMTYwNDUxLCAyMDE3LzA1LzA2LTAxOjA4OjIxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+LUNEtwAAAZdJREFUSInd1c+LjVEcx/HXc53ryjVZmLsYGpIaIhYoFEKzsrBSVmz9W8qGjVCiSRIbTZOVkazMhBpXTRIm7p3H4vnemrp5PPc+Vj51Os9zzvm+z+d8Oz+yPM/V0Alcxzlsx2b0sZrqUPEDK/iKvRva23XB73EHa9iBXdGeEs6ihS1oRkcXb6Iu05pi6R/wFEexD40sz/N7ivykKLCAG1GX6TiuYCteoYPL6CRcCLfLFRwONIHDuIhjAV3AOtqYSvHzGffxPAK7WCoBH8Q17Mci7ipSt47b2JYCuoLHeFDB6RHMYjpW+QjP0IsxLylymsdMvSHMsA6F02nM40k4HYpNyKJulwB3YgbnsXuD0xd/Cqi6j2dwNSaYxxxelwWMekCW8VCJ01HBb3ETvxS74K+qCv4YpbIaowz+v8F1r82BOtgT30v48q/ABxS3XIZbWGwojnQP32qAJ3ASpzGF1uBIN9RLSyvKpmBlCZOKi3o2OsfRmeB08RP9FDNM4hJOjQnuBOOd4oHtJXxS5KgZA8ZRE6vB+o7+b3pYWoTUi5INAAAAAElFTkSuQmCC)}footer#colophon #site-info p{margin-bottom:.5rem}.no-gutter [class*='col-']{padding-right:0;padding-left:0}.btn-primary{background-color:#00b2e3;padding-left:1.875rem;padding-right:1.875rem;margin-top:1rem;border:0 none transparent;border-radius:.125rem}.page-template-homepage-2020 header#masthead{background-color:#FFF}.page-template-homepage-2020 header.home-header.single-column-header{background:no-repeat top center none transparent;background-size:auto 100%;padding-top:7.375rem;min-height:38.8125rem;position:relative}.page-template-homepage-2020 header.home-header.single-column-header .featured-image{margin-bottom:2.9375rem}.page-template-homepage-2020 header.home-header.single-column-header .header-content{position:relative}.page-template-homepage-2020 header.home-header.single-column-header .header-content h1{font-family:'robotobold',Arial,Helvetica Neue,Helvetica,sans-serif;font-size:2rem;margin-bottom:.71875rem}.page-template-homepage-2020 header.home-header.single-column-header .header-content p{font-family:'robotolight',Arial,Helvetica Neue,Helvetica,sans-serif;font-size:1.4375rem;line-height:1.478;margin:0}.page-template-homepage-2020 header.home-header.single-column-header .home-header-footer{width:100%;position:relative;bottom:-4.9375rem;left:0}.page-template-homepage-2020 header.home-header.single-column-header .home-header-footer .home-header-footer-wrap{background-color:#FFF;border:1px solid #e6e7e8;padding:3.5rem 2.5rem 0}.page-template-homepage-2020 header.home-header.single-column-header .home-header-footer .home-header-footer-wrap img{float:left;margin-right:2.0625rem;margin-bottom:2.0625rem}.page-template-homepage-2020 header.home-header.single-column-header .home-header-footer .home-header-footer-wrap p{padding-bottom:1.9375rem;font-size:.875rem}.page-template-homepage-2020 header.home-header.single-column-header .home-header-footer .home-header-footer-wrap p strong{font-size:1rem}.page-template-homepage-2020 header.home-header.single-column-header .home-header-footer .home-header-footer-wrap p strong a{color:inherit}.page-template-homepage-2020 .entry-content section.bottom-section{color:#1f1f1f;padding-top:7.8125rem;overflow:hidden}.page-template-homepage-2020 .entry-content section.bottom-section>.container{position:relative;padding-bottom:2rem}.page-template-homepage-2020 .entry-content section.bottom-section>.container:after{content:'';width:100%;height:100%;position:absolute;top:0;right:-18.0625rem;z-index:-100;background:no-repeat none transparent;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkMAAAGNCAIAAACdUeKVAAAHaElEQVR4nO3bwW7iSBhGUTLv/8ZZMFKnJ4PSaSBgm7pV5ywsVmy8uPok/2/n8/kEbOf8y8ffffx+++V0Ol0+ga0oGTzrM12XDbvusm3CBk9SMviZz2j9KF3XCRs8Q8nghgcm1/O0De6nZPDVS9J1nbDBFUrG6gbs1k1fvh/RNhanZCynmK6bjDZWpmRM7rJbn8/pXfZM25iekjGbKSfX84w2JqZktP15huyF3sNoYyZKRozJtROjjS4lY2h7nCFzD2EjRMkYi8k1LG1jWErGi0lXlLAxDiXjULo1MW3jVZSMfUnXsoSNwygZW1rzDJl7+O6f/SgZTzG5eJjRxlaUjB9whsx+jDYepmRcY3LxQkYbd1Iy/ucMmZFdhu3zyfJOSrY6k4s0o40PSrYW6WJiwrYsJZuZbrE4bVuEkk1FuuAKYZuVkoU5Q4ZnfPl+RNu6lKzE5IJdGW1RSjYuZ8jwWo61K5RsICYXDM5oG5OSvYwzZKhzrD0IJTuOyQXTM9peQsl2JF2wOGE7hpJtRreAm7RtD0r2OOkCniRsm1CyezlDBvbmWPsxSvZXJhfwckbbPZTsN2fIwPgca39r3ZKZXMAElh9tp4VKZnIBK1jzWHvakplcAIuMtnlKJl0AN00ZtmrJdAtgExO0LVMy6QI4QDFsg5bMGTLACBLH2qOUzOQCSBhwtL2mZL6JB5jDCMfaB5XM5AJYxPGjbZeSmVwAfDhgtG1TMpMLgDttPtoeLJl0AbCJ58N2V8l0C4DD/LRt35dMugAYxM2wvZ3/4wwZgPH9eaz99v7+7sUB0PWPdwdAmpIB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkALQpGQBtSgZAm5IB0KZkAISdTqd/Abr9IGRnht3TAAAAAElFTkSuQmCC);background-size:auto 100%;background-position:100% 0}.page-template-homepage-2020 .entry-content section.bottom-section h2{font-family:'robotoregular',Arial,Helvetica Neue,Helvetica,sans-serif;font-size:1.625rem;margin-bottom:1.9375rem}.page-template-homepage-2020 .entry-content section.bottom-section h2::after{content:'';display:block;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAaCAYAAADfcP5FAAABxUlEQVRIia3XP6hPYRzH8de9IkmhLJIyGBSLJIWSzWTyJ0rdUAaZTBaDgYVSMtyBTMRVikU2g0HEcgeDQSmTQt1u8ic69aX8+j6/c37POZ86dXo+5/3tc57v9xmeqZ+Pt+updXiIC3g6QamUm+4ZZgnuYiee4CZW9+H6BrqIvfE+hROYx4Fark+g/TifrK/HkVqudoY24DXWJt5b7MBCDVezQ0uj/1nRRRwqhOnE1QS6hN0F70zMQjU3aaBmWM8VvNvx9OImmaGN0f81iTcfR3ixL9d1h5bhfqHoQvQ/CzMx1zXQlTg5mU7HCRmE6xLoIM4WvFncGZJrm6FNeIVVifcGu/BtQG7sDi2P/mdFv+JwoWgt1xroGrYVvFN4NzA3NtCxGLpM1/FgYO6fshnajJdYmXzfrO/B98Sr5f7T6A6twFyh6Ofof1a0lmsNdANbk+9+YwbvC3VqubGBZuLJdBWPCl4tl+rvDDV/9yK2flTPsQ8/Eq+WK2o6+j5XKPoJRwtFa7nWQLNxQkbV9P84PhTYWq410D18TLzLcSMoqZZrDdQM3Rbcir9r9CzuS+NUy7UGavQFJ+NG0Axp0/9fHfhaLhf+AIaAkolAI5zEAAAAAElFTkSuQmCC);background-size:100% auto;width:1.125rem;height:.8125rem;margin-top:1.03125rem}.page-template-homepage-2020 .entry-content section.bottom-section p{line-height:1.625;margin-bottom:1.625rem}.page-template-homepage-2020 .entry-content section.bottom-section p a.btn-primary{margin-top:2.0625rem;border:1px solid #FFF;font-size:.875rem}.page-template-homepage-2020 footer#footer-boxes{text-align:left;color:#FFF;padding-top:4.1875rem;padding-bottom:2.4375rem;background:no-repeat none #051c2c;background-position:21% 84%}.page-template-homepage-2020 footer#footer-boxes .container>.row>div{padding-bottom:4.1875rem}.page-template-homepage-2020 footer#footer-boxes .container>.row>div:last-child{text-align:center}</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-38K6JM87T2"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-38K6JM87T2");
+          </script><!-- Google Optimize -->
+          <script type='text/javascript' src='https://www.googleoptimize.com/optimize.js?id=OPT-KSCBHHX'></script>
+          <!-- Hotjar -->
+          <script type='text/x-metomic' data-micropolicy='marketing'>
+          (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2484506,hjsv:5};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+          })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+          </script>  </head>
+
+  
+  <body class="home page-template page-template-page-templates page-template-fullwidth page-template-page-templatesfullwidth-php page page-id-8764  home-2021-page fl-builder">
+
+    <div class="sticky" id="sticky-headers">
+      <div id="security-alert-wrap"></div>
+
+      <header id="masthead" class="site-header" role="banner">
+
+        <div class="container">
+
+          <nav class="navbar navbar-expand-md navbar-light justify-content-between">
+
+            <a class="navbar-brand" href="https://z.cash">
+                            <object type="image/svg+xml" data="https://z.cash/wp-content/uploads/2020/03/zcash-logo-horizontal-fullcolor.svg" class="logo align-self-center" style="pointer-events: none;" width="121" height="50">
+              </object>
+                              <object type="image/svg+xml" data="/wp-content/uploads/2020/03/zcash-logo-horizontal-white.svg" class="logo scrolled align-self-center" style="pointer-events: none;" width="75" height="30">
+                </object>
+                          </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarNavWrap" class="col-12 col-md-7 col-lg-5">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                
+<ul id="menu-main-menu" class="nav navbar-nav justify-content-between"><li  id="menu-item-8353" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-8353"><a class="nav-link align-self-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Started</a>
+<ul class="dropdown-menu depth_0">
+	<li  id="menu-item-7731" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7731"><a class="dropdown-item" href="https://z.cash/the-basics/" class="nav-link align-self-center">The Basics</a></li>
+	<li  id="menu-item-8676" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8676"><a class="dropdown-item" href="https://z.cash/exchanges/" class="nav-link align-self-center">Find an exchange</a></li>
+	<li  id="menu-item-8787" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8787"><a class="dropdown-item" href="https://z.cash/wallets/" class="nav-link align-self-center">Find a wallet</a></li>
+	<li  id="menu-item-7734" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7734"><a class="dropdown-item" href="https://z.cash/pay-with-zcash/" class="nav-link align-self-center">Pay with Zcash</a></li>
+	<li  id="menu-item-8354" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8354"><a class="dropdown-item" href="https://z.cash/mining-zcash/" class="nav-link align-self-center">Mining Zcash</a></li>
+	<li  id="menu-item-8358" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8358"><a class="dropdown-item" href="https://z.cash/zcash-for-business/" class="nav-link align-self-center">Zcash for business</a></li>
+	<li  id="menu-item-7735" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7735"><a class="dropdown-item" href="https://z.cash/investors/" class="nav-link align-self-center">Zcash for investors</a></li>
+</ul>
+</li>
+<li  id="menu-item-7736" class="no-href menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown nav-item nav-item-7736"><a class="nav-link align-self-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technology</a>
+<ul class="dropdown-menu depth_0">
+	<li  id="menu-item-7737" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7737"><a class="dropdown-item" href="https://z.cash/technology/" class="nav-link align-self-center">How it works</a></li>
+	<li  id="menu-item-8362" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8362"><a class="dropdown-item" href="https://z.cash/zcash-development-and-governance/" class="nav-link align-self-center">Zcash development and governance</a></li>
+	<li  id="menu-item-7738" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7738"><a class="dropdown-item" href="https://z.cash/upgrade/" class="nav-link align-self-center">Network information</a></li>
+	<li  id="menu-item-8363" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8363"><a class="dropdown-item" href="https://z.cash/technology/zksnarks/" class="nav-link align-self-center">What are zk-SNARKs?</a></li>
+	<li  id="menu-item-8364" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-8364"><a class="dropdown-item" href="https://z.cash/download/" class="nav-link align-self-center">Download official client</a></li>
+	<li  id="menu-item-7739" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7739"><a class="dropdown-item" href="https://z.cash/support/" class="nav-link align-self-center">Resources</a></li>
+</ul>
+</li>
+<li  id="menu-item-7740" class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-has-children dropdown nav-item nav-item-7740"><a href="https://z.cash/news/" class="nav-link align-self-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News &#038; events</a>
+<ul class="dropdown-menu depth_0">
+	<li  id="menu-item-7741" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7741"><a class="dropdown-item" target="_blank" href="https://electriccoin.co/blog/" class="nav-link align-self-center">Electric Coin Co. Blog</a></li>
+	<li  id="menu-item-7742" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7742"><a class="dropdown-item" target="_blank" href="https://www.zfnd.org/blog/" class="nav-link align-self-center">Zcash Foundation Blog</a></li>
+	<li  id="menu-item-8365" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-8365"><a class="dropdown-item" target="_blank" href="https://electriccoin.co/events" class="nav-link align-self-center">Events</a></li>
+</ul>
+</li>
+</ul>              </div>
+            </div>
+
+          </nav>
+
+        </div>
+
+          <div id="searchbox">
+            <div class="container">
+              <div class="row justify-content-between align-content-center">
+                  
+<form role="search" method="get" class="search-form col-12" action="https://z.cash/">
+	<div class="row no-gutter">
+		<div class="col col-8 col-md-10 align-self-center">
+			<input type="search" id="search-form-6152f03232918" class="search-field" placeholder="Search" value="" name="s" />
+		</div>
+		<div class="col col-2 col-md-1 align-self-center text-center">
+			<button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+		</div>
+		<div class="col col-2 col-md-1 align-self-center">
+			<div class="search-toggle">
+				<a><img src="https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/assets/images/search-close.png" /></a>
+			</div>
+		</div>
+	</div>
+</form>
+              </div>
+            </div>
+          </div>
+
+    	</header>
+
+    </div>
+
+				<main id="primary" class="content-area" role="main">
+			<article id="post-8764" class="post-8764 page type-page status-publish hentry">
+				<div class="entry-content">
+					<div class="container-full-width">
+					<div class="fl-builder-content fl-builder-content-8764 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="8764"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-60c75f89ca32f home-2021-hero" data-node="60c75f89ca32f">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60c75f89cf743" data-node="60c75f89cf743">
+			<div class="fl-col fl-node-60c75f89cf918" data-node="60c75f89cf918">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-60c75f8f82254" data-node="60c75f8f82254">
+	<div class="fl-module-content fl-node-content">
+		<h1 class="fl-heading">
+		<span class="fl-heading-text">Privacy and convenience</span>
+	</h1>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-60c75fb901945" data-node="60c75fb901945">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Zcash is a digital currency - fast and confidential with low fees. <a style="color: #f9c921;" href="https://z.cash/technology/">It's&nbsp;perfect&nbsp;for mobile payments.</a></p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-html fl-node-60c7656b4c0c3" data-node="60c7656b4c0c3">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<a class="btn btn-primary btn-gradient" href="https://z.cash/exchanges/">Buy Zcash</a>
+<img src="https://z.cash/wp-content/uploads/2021/07/powered-by-gemini.png" style="height: 20px;" class="ml-3 mt-2 pt-1" alt="Powered by Gemini"></div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-60c8a63a54131 fl-col-small fl-visible-desktop-medium" data-node="60c8a63a54131">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-60c765351a1e7 financial-privacy-row" data-node="60c765351a1e7">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60c76535214f0" data-node="60c76535214f0">
+			<div class="fl-col fl-node-60c7653521595" data-node="60c7653521595">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-60c767dfafef3" data-node="60c767dfafef3">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Financial privacy is important</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-60c7653ef113a" data-node="60c7653ef113a">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Spend it, save it or send it to a friend. Unlike many other forms of payment, Zcash shielded transactions keep all your financial information private and in your control.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-html fl-node-60c75fd02f649" data-node="60c75fd02f649">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<a class="btn btn-primary" href="https://z.cash/the-basics/">Get started</a></div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-60c765352159a fl-col-small" data-node="60c765352159a">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-60c7861d67c26" data-node="60c7861d67c26">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-gif">
+				<img loading="lazy" class="fl-photo-img wp-image-8827 size-full" src="https://z.cash/wp-content/uploads/2021/07/Privacy-Transaction-063021_15fps.gif" alt="" itemprop="image" height="1440" width="1560"  />
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-60c7852979585" data-node="60c7852979585">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60c785297963f" data-node="60c785297963f">
+			<div class="fl-col fl-node-60c7852979641 fl-col-small" data-node="60c7852979641">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-60c78dafe1940" data-node="60c78dafe1940">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img loading="lazy" class="fl-photo-img wp-image-8793 size-full" src="https://z.cash/wp-content/uploads/2021/07/better-way-pay-2021-cropped-min.png" alt="" itemprop="image" height="1504" width="1449"  />
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-60c7852979642 fl-col-small" data-node="60c7852979642">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-60c7852979643" data-node="60c7852979643">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">A better way to pay</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-60c7852979644" data-node="60c7852979644">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>In addition to using Zcash to pay friends, family and service providers, you can use Zcash at your favorite stores or online merchants.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-html fl-node-60c7852979645" data-node="60c7852979645">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<a class="btn btn-primary" href="https://z.cash/pay-with-zcash/">Pay with Zcash</a></div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-gradient fl-node-60c77a19aebf0 fl-visible-desktop" data-node="60c77a19aebf0">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60c77a19ba732" data-node="60c77a19ba732">
+			<div class="fl-col fl-node-60c77a19ba806 fl-col-has-cols position-relative" data-node="60c77a19ba806">
+	<div class="fl-col-content fl-node-content">
+	
+<div class="fl-col-group fl-node-60c77b0c238ea fl-col-group-nested" data-node="60c77b0c238ea">
+			<div class="fl-col fl-node-60c77b0c2397d" data-node="60c77b0c2397d">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-60c77a461a704" data-node="60c77a461a704">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Trusted technology, growing adoption</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-60c77a574e1f5" data-node="60c77a574e1f5">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Zcash was launched by <a href="https://electriccoin.co/team/">one of the most respected technical teams</a> in the world.</p>
+<p>Zcash is the '<a href="https://nakamoto.com/zcash-the-https-of-blockchains/">https of blockchains,</a>' protecting your freedom to save and spend as you like.</p>
+<p>Zcash was the first project to implement <a href="https://z.cash/technology/zksnarks/">zk-SNARKs</a>, a novel form of zero-knowledge cryptography that gives its users the strongest privacy available in any digital currency.</p>
+<p>Multiple, independent organizations are <a href="https://electriccoin.co/reaching-consensus/">funded to innovate</a> on Zcash.</p>
+<p>Zcash is already available on <a href="https://z.cash/exchanges/">top exchanges</a>, <a href="https://z.cash/wallets/">digital wallets</a> and a growing number of applications.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-photo fl-node-60c78d91089d5 home-2021-z-graphic" data-node="60c78d91089d5">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-8781" src="https://z.cash/wp-content/uploads/2021/07/home-2021-z-graphic-min.png" alt="zcashd" itemprop="image" title="zcashd"  />
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-60c77b0c23980 fl-col-small" data-node="60c77b0c23980">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-60da09e89237b fl-visible-medium-mobile" data-node="60da09e89237b">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60da09e8924e0" data-node="60da09e8924e0">
+			<div class="fl-col fl-node-60da09e8924e3 fl-col-has-cols position-relative" data-node="60da09e8924e3">
+	<div class="fl-col-content fl-node-content">
+	
+<div class="fl-col-group fl-node-60da09e8924e4 fl-col-group-nested" data-node="60da09e8924e4">
+			<div class="fl-col fl-node-60da09e8924e5" data-node="60da09e8924e5">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-60da09e8924e6" data-node="60da09e8924e6">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Trusted technology, growing adoption</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-60da09e8924e7" data-node="60da09e8924e7">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Zcash was launched by <a href="https://electriccoin.co/team/">one of the most respected technical teams</a> in the world.</p>
+<p>Zcash is the '<a href="https://nakamoto.com/zcash-the-https-of-blockchains/">https of blockchains,</a>' protecting your freedom to save and spend as you like.</p>
+<p>Zcash was the first project to implement <a href="https://z.cash/technology/zksnarks/">zk-SNARKs</a>, a novel form of zero-knowledge cryptography that gives its users the strongest privacy available in any digital currency.</p>
+<p>Multiple, independent organizations are <a href="https://electriccoin.co/reaching-consensus/">funded to innovate</a> on Zcash.</p>
+<p>Zcash is already available on <a href="https://z.cash/exchanges/">top exchanges</a>, <a href="https://z.cash/wallets/">digital wallets</a> and a growing number of applications.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-photo fl-node-60da09e8924e8" data-node="60da09e8924e8">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-right" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<img class="fl-photo-img wp-image-8781" src="https://z.cash/wp-content/uploads/2021/07/home-2021-z-graphic-min.png" alt="zcashd" itemprop="image" title="zcashd"  />
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-fixed-width fl-row-bg-none fl-node-60c766afa9f0a buzz-section" data-node="60c766afa9f0a">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60c766afa9f92" data-node="60c766afa9f92">
+			<div class="fl-col fl-node-60c766afa9f95" data-node="60c766afa9f95">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-html fl-node-60d38cfb0b191" data-node="60d38cfb0b191">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<h2 style="display: inline">Zcash Buzz</h2><a href="https://z.cash/buzz/" class="ml-3">See all</a></div>
+	</div>
+</div>
+<div class="fl-module fl-module-post-grid fl-node-60c766ed4b421 homepage-buzz" data-node="60c766ed4b421">
+	<div class="fl-module-content fl-node-content">
+			<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Collection">
+	<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-default post-8699 buzz type-buzz status-publish has-post-thumbnail hentry buzz_type-video" itemscope itemtype="https://schema.org/CreativeWork">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://z.cash/buzz/zcash-history-privacy-and-the-future-of-web-3/" content="Zcash: History, Privacy, and the Future of Web 3" /><meta itemprop="datePublished" content="2021-06-30" /><meta itemprop="dateModified" content="2021-06-30" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Zcash"></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://z.cash/author/chris-tomeo/" /><meta itemprop="name" content="Chris Tomeo" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://z.cash/wp-content/uploads/2021/06/RV-Zooko.png" /><meta itemprop="width" content="1920" /><meta itemprop="height" content="1080" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://z.cash/buzz/zcash-history-privacy-and-the-future-of-web-3/" rel="bookmark" title="Zcash: History, Privacy, and the Future of Web 3">
+		<img width="480" height="480" src="https://z.cash/wp-content/uploads/2021/06/RV-Zooko-480x480.png" class="attachment-homethumb size-homethumb wp-post-image" alt="" loading="lazy" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://z.cash/buzz/zcash-history-privacy-and-the-future-of-web-3/" title="Zcash: History, Privacy, and the Future of Web 3">Zcash: History, Privacy, and the Future of Web 3</a>
+		</h2>
+
+		
+		
+		
+		
+	
+	
+	
+		
+				<div class="fl-post-grid-content">
+									<a class="fl-post-grid-more" href="https://z.cash/buzz/zcash-history-privacy-and-the-future-of-web-3/" title="Zcash: History, Privacy, and the Future of Web 3">Read article</a>
+					</div>
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-default post-8689 buzz type-buzz status-publish has-post-thumbnail hentry" itemscope itemtype="https://schema.org/CreativeWork">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://z.cash/buzz/tor-project-receives-670k-from-zcash-open-major-grants-for-coding-language-upgrade/" content="Tor Project Receives $670K From Zcash Open Major Grants for Coding Language Upgrade" /><meta itemprop="datePublished" content="2021-06-23" /><meta itemprop="dateModified" content="2021-06-23" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Zcash"></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://z.cash/author/chris-tomeo/" /><meta itemprop="name" content="Chris Tomeo" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://z.cash/wp-content/uploads/2021/06/TOR-ZOMG-710x458-1.jpg" /><meta itemprop="width" content="710" /><meta itemprop="height" content="458" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://z.cash/buzz/tor-project-receives-670k-from-zcash-open-major-grants-for-coding-language-upgrade/" rel="bookmark" title="Tor Project Receives $670K From Zcash Open Major Grants for Coding Language Upgrade">
+		<img width="480" height="458" src="https://z.cash/wp-content/uploads/2021/06/TOR-ZOMG-710x458-1-480x458.jpg" class="attachment-homethumb size-homethumb wp-post-image" alt="" loading="lazy" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://z.cash/buzz/tor-project-receives-670k-from-zcash-open-major-grants-for-coding-language-upgrade/" title="Tor Project Receives $670K From Zcash Open Major Grants for Coding Language Upgrade">Tor Project Receives $670K From Zcash Open Major Grants for Coding Language Upgrade</a>
+		</h2>
+
+		
+		
+		
+		
+	
+	
+	
+		
+				<div class="fl-post-grid-content">
+									<a class="fl-post-grid-more" href="https://z.cash/buzz/tor-project-receives-670k-from-zcash-open-major-grants-for-coding-language-upgrade/" title="Tor Project Receives $670K From Zcash Open Major Grants for Coding Language Upgrade">Read article</a>
+					</div>
+		
+		
+	</div>
+</div>
+
+</div>
+<div class="fl-post-column">
+<div class="fl-post-grid-post fl-post-grid-image-above-title fl-post-columns-post fl-post-align-default post-8687 buzz type-buzz status-publish has-post-thumbnail hentry" itemscope itemtype="https://schema.org/CreativeWork">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://z.cash/buzz/zcash-upcoming-upgrade-first-step-in-move-away-from-trusted-setup/" content="Zcash Upcoming Upgrade First Step in Move Away From Trusted Setup" /><meta itemprop="datePublished" content="2021-06-23" /><meta itemprop="dateModified" content="2021-06-23" /><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Zcash"></div><div itemscope itemprop="author" itemtype="https://schema.org/Person"><meta itemprop="url" content="https://z.cash/author/chris-tomeo/" /><meta itemprop="name" content="Chris Tomeo" /></div><div itemscope itemprop="image" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://z.cash/wp-content/uploads/2021/06/BIC_Zcash.jpg" /><meta itemprop="width" content="1200" /><meta itemprop="height" content="720" /></div><div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter"><meta itemprop="interactionType" content="https://schema.org/CommentAction" /><meta itemprop="userInteractionCount" content="0" /></div>	<div class="fl-post-grid-image">
+
+	
+	<a href="https://z.cash/buzz/zcash-upcoming-upgrade-first-step-in-move-away-from-trusted-setup/" rel="bookmark" title="Zcash Upcoming Upgrade First Step in Move Away From Trusted Setup">
+		<img width="480" height="480" src="https://z.cash/wp-content/uploads/2021/06/BIC_Zcash-480x480.jpg" class="attachment-homethumb size-homethumb wp-post-image" alt="" loading="lazy" />	</a>
+
+	
+</div>
+
+	<div class="fl-post-grid-text">
+
+		<h2 class="fl-post-grid-title" itemprop="headline">
+			<a href="https://z.cash/buzz/zcash-upcoming-upgrade-first-step-in-move-away-from-trusted-setup/" title="Zcash Upcoming Upgrade First Step in Move Away From Trusted Setup">Zcash Upcoming Upgrade First Step in Move Away From Trusted Setup</a>
+		</h2>
+
+		
+		
+		
+		
+	
+	
+	
+		
+				<div class="fl-post-grid-content">
+									<a class="fl-post-grid-more" href="https://z.cash/buzz/zcash-upcoming-upgrade-first-step-in-move-away-from-trusted-setup/" title="Zcash Upcoming Upgrade First Step in Move Away From Trusted Setup">Read article</a>
+					</div>
+		
+		
+	</div>
+</div>
+
+</div>
+	</div>
+<div class="fl-clear"></div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-60c78bd70b449" data-node="60c78bd70b449">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-60c78c1da0af9" data-node="60c78c1da0af9">
+			<div class="fl-col fl-node-60c78c1da0bd5 fl-col-has-cols" data-node="60c78c1da0bd5">
+	<div class="fl-col-content fl-node-content">
+	
+<div class="fl-col-group fl-node-60c78d109095a fl-col-group-nested" data-node="60c78d109095a">
+			<div class="fl-col fl-node-60c78d10909f2 container float-none max-width-1050" data-node="60c78d10909f2">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-heading fl-node-60c78c62a9b0c" data-node="60c78c62a9b0c">
+	<div class="fl-module-content fl-node-content">
+		<h2 class="fl-heading">
+		<span class="fl-heading-text">Zcash for merchants and platforms</span>
+	</h2>
+	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-60c78cd122ca9" data-node="60c78cd122ca9">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Merchants, app developers and point-of-sale providers need easy-to-integrate solutions that provide privacy protections for consumers, and audibility at the same time. Zcash was built for this.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-html fl-node-60c78cdc20120" data-node="60c78cdc20120">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-html">
+	<a class="btn btn-primary" href="https://z.cash/zcash-for-business/">Learn more</a></div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div>									</div><!-- .entry-content -->
+			</article><!-- #post-## -->
+		</main><!-- #main -->
+		
+
+
+		
+    <footer id="colophon" class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2 offset-lg-1">
+            
+<p class="h5">Resources</p><ul id="menu-resources" class="nav flex-column"><li  id="menu-item-7744" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7744"><a href="https://z.cash/download/" class="nav-link align-self-center">Download Zcash</a></li>
+<li  id="menu-item-7745" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7745"><a href="https://z.cash/support/faq/" class="nav-link align-self-center">FAQ</a></li>
+<li  id="menu-item-7746" class="ext menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7746"><a target="_blank" href="https://docs.z.cash" class="nav-link align-self-center">Documentation</a></li>
+<li  id="menu-item-7747" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7747"><a href="https://z.cash/press/" class="nav-link align-self-center">Zcash Media Kit</a></li>
+<li  id="menu-item-7748" class="ext menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7748"><a target="_blank" href="https://www.zfnd.org/about/copyright-policy/" class="nav-link align-self-center">Copyright Policy</a></li>
+<li  id="menu-item-7749" class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-7749"><a href="https://z.cash/compliance/" class="nav-link align-self-center">Compliance</a></li>
+<li  id="menu-item-7750" class="ext menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7750"><a target="_blank" href="https://www.zfnd.org/about/trademark-policy/" class="nav-link align-self-center">Trademark Policy</a></li>
+</ul>          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <p class="h5">Zcash Community</p><ul id="menu-zcash-community" class="nav flex-column"><li  id="menu-item-7752" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7752"><a target="_blank" href="https://electriccoin.co" class="nav-link align-self-center">Electric Coin Co.</a></li>
+<li  id="menu-item-7753" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7753"><a target="_blank" href="https://www.zfnd.org/" class="nav-link align-self-center">Zcash Foundation</a></li>
+<li  id="menu-item-7754" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7754"><a target="_blank" href="https://www.zcashcommunity.com/" class="nav-link align-self-center">Zcash Community</a></li>
+<li  id="menu-item-7755" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7755"><a target="_blank" href="https://forum.zcashcommunity.com/" class="nav-link align-self-center">Forums</a></li>
+<li  id="menu-item-7756" class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-7756"><a target="_blank" href="https://discord.gg/8t4zXje" class="nav-link align-self-center">Community Chat</a></li>
+</ul>          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            
+          </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-4 offset-lg-1>
+            <div id="site-info" class="text-md-right">
+              <p>
+                <span class="notranslate">&copy; 2021 ELECTRIC COIN COMPANY</span>              </p>
+              <p>
+                <a href="/privacy-policy">Privacy Policy</a>  |  <a href="/sitemap">Sitemap</a>  |  <a href="javascript:window.Confirmic('ConsentManager:show')">Manage Cookies</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end container -->
+    </footer>
+
+    
+    
+    <link rel='stylesheet' id='fonts-css'  href='https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/assets/css/fonts.css?ver=1632695036' type='text/css' media='all' />
+<link rel='stylesheet' id='zcash-2019-css'  href='https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/dist/main.css?ver=1632695038' type='text/css' media='all' />
+<script type='text/javascript' src='https://z.cash/wp-content/uploads/bb-plugin/cache/8764-layout.js?ver=c1db5cd7a00698dc4b6915cd5cfe878a' id='fl-builder-layout-8764-js'></script>
+<script type='text/javascript' id='mailoptin-js-extra'>
+/* <![CDATA[ */
+var mailoptin_globals = {"public_js":"https:\/\/z.cash\/wp-content\/plugins\/mailoptin\/src\/core\/src\/assets\/js\/src","mailoptin_ajaxurl":"\/?mailoptin-ajax=%%endpoint%%","is_customize_preview":"false","disable_impression_tracking":"false","sidebar":"0","js_required_title":"Title is required.","is_new_returning_visitors_cookies":"true"};
+/* ]]> */
+</script>
+<script type='text/x-metomic' data-micropolicy="marketing" src='https://z.cash/wp-content/plugins/mailoptin/src/core/src/assets/js/mailoptin.min.js?ver=2.2.39.2' id='mailoptin-js'></script>
+<script type='text/javascript' src='https://z.cash/wp-content/plugins/ithemes-security-pro/core/modules/wordpress-tweaks/js/blankshield/blankshield.min.js?ver=4117' id='blankshield-js'></script>
+<script type='text/javascript' src='https://z.cash/wp-content/plugins/ithemes-security-pro/core/modules/wordpress-tweaks/js/block-tabnapping.min.js?ver=4117' id='itsec-wt-block-tabnapping-js'></script>
+<script type='text/javascript' src='https://config.confirmic.com/config.js?id=prj:37990304-3562-4e1d-9431-c32f0cfbdc09' id='confirmic-config-js'></script>
+<script type='text/javascript' src='https://consent-manager.confirmic.com/embed.js?ver%5B0%5D=confirmic-config' id='confirmic-js'></script>
+<script type='text/javascript' src='https://z.cash/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://z.cash/wp-content/themes/zcash-wordpress-theme-2020/dist/main.js?ver=1632695038' id='main-js-js'></script>
+
+<!-- This site converts visitors into subscribers and customers with the MailOptin WordPress plugin v2.2.39.2 - https://mailoptin.io -->
+<div id='TNPNraWnBU' class="moOptinForm mo-optin-form-slidein mo-has-email mo-slidein-bottom_right" data-optin-type='slidein' style='display: none;position: fixed;bottom: 10px;width: 100%;margin: 0;z-index: 999999999'><div class='mo-optin-form-container' id='TNPNraWnBU_slidein_container' style='position:relative;margin: 0 auto;'><script type="text/javascript">var TNPNraWnBU = TNPNraWnBU_slidein = {"optin_uuid":"TNPNraWnBU","optin_campaign_id":1,"optin_campaign_name":"Email Subscription","optin_type":"slidein","post_id":8764,"cookie":30,"success_cookie":30,"global_cookie":0,"global_success_cookie":0,"success_message":"Thanks for subscribing!","name_field_required":true,"is_split_test":false,"x_scroll_status":true,"x_scroll_value":20,"success_action":"success_message","state_after_conversion":"success_message_shown","test_mode":false,"icon_close":false,"slidein_position":"bottom_right","unexpected_error":"Unexpected error. Please try again.","email_missing_error":"Please enter a valid email.","name_missing_error":"Please enter a name.","custom_field_required_error":"A required field is empty.","note_acceptance_error":"Please accept our terms.","honeypot_error":"Your submission has been flagged as potential spam.","effects":"MOslideInUp","device_targeting_hide_desktop":false,"device_targeting_hide_tablet":false,"device_targeting_hide_mobile":false};</script><style id="mo-optin-form-stylesheet" type="text/css">html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum { background-color: #fff; border-radius: 10px; margin: 10px auto 0; padding: 20px; text-align: center; position: relative; border: 2px solid #fff; width: 100%; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum-img-icon { padding-right: 8px; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum-headline { color: #444; vertical-align: top; font-weight: 400; display: inline-block; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum-optin-form-close { color: #000; display: inline; cursor: pointer; font-size: 1.5em; font-weight: 400; font-family: 'Open Sans', arial, sans-serif; float: right; text-decoration: none !important; vertical-align: text-top; margin-top: -0.5em; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_subscibe_btn { padding: 16px; border-radius: 30px; font-size: 15px; max-width: 200px; width: 100%; border: 0; background: #6355b9; color: #fff; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .mo-optin-error { padding: 7px; font-size: 14px; color: #e74c3c; margin-top: 10px; display: none; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .mo-optin-form-description{ margin-top: 20px; margin-bottom: 20px; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .mo-optin-form-cta-button{ padding: 16px 40px; border-radius: 30px; border: 0; font-weight: 700; margin: 20px; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_input_field { width: 100%; padding: 16px; border-radius: 30px; margin-right: 0px; font-size: 15px; margin-bottom: 20px; text-align: center; background: #fff; font-weight: 700; border: 1px solid #e0e0e5; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum-input { margin-top: 20px; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_input_field:focus { background: #ecf0f1; border: 1px solid #ecf0f1; outline: 0; box-shadow: none; transition: linear.2s; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_subscibe_btn { text-transform: uppercase; font-weight: 700; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_subscibe_btn { cursor: pointer; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_note, html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_note * { margin-top: 10px; text-align: center; font-style: italic; border: 0; line-height: normal; } html div#TNPNraWnBU div#TNPNraWnBU_slidein.alyssum .alyssum_input_field { max-width: 350px; width: 100%; border-radius: 30px; margin-right: 15px; font-size: 15px; margin-top: 0px; margin-bottom: 5px; text-align: left; padding: 15px 15px 15px 25px; } html div#TNPNraWnBU.mo-optin-has-custom-field div#TNPNraWnBU_slidein .alyssum_input_field, html div#TNPNraWnBU.mo-optin-has-custom-field div#TNPNraWnBU_slidein .alyssum_subscibe_btn, html div#TNPNraWnBU div#TNPNraWnBU_slidein.mo-has-name-email .alyssum_input_field, html div#TNPNraWnBU div#TNPNraWnBU_slidein.mo-has-name-email .alyssum_subscibe_btn { max-width: 100%; } html div#TNPNraWnBU.mo-optin-has-custom-field div#TNPNraWnBU_slidein .alyssum_input_field, html div#TNPNraWnBU div#TNPNraWnBU_slidein.mo-has-name-email .alyssum_input_field { display: block; margin-bottom: 10px; } div#TNPNraWnBU *, div#TNPNraWnBU *:before, div#TNPNraWnBU *:after {box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}div#TNPNraWnBU_slidein_container div#TNPNraWnBU_slidein .mo-optin-field:focus {outline:0}div#TNPNraWnBU_slidein_container div#TNPNraWnBU_slidein .mo-optin-form-submit-button:focus {outline:0}div#TNPNraWnBU_slidein_container div.mo-optin-powered-by{margin:5px auto 2px;text-align:center;}div#TNPNraWnBU_slidein_container div.mo-optin-powered-by a {font-size:16px !important; text-decoration: none !important;box-shadow:none !important;border-bottom-width:0px !important;cursor:pointer !important;}div#TNPNraWnBU_slidein_container .mo-acceptance-checkbox {background-color: #fff;line-height: 0;border: 1px solid #bbb;width: 16px;min-width: 16px;height: 16px;margin: 0 5px 0 0 !important;outline: 0;text-align: center;vertical-align: middle;clear: none;cursor: pointer;}div#TNPNraWnBU_slidein_container .mo-acceptance-label {cursor:pointer}div#TNPNraWnBU_slidein_container div#TNPNraWnBU_slidein p {padding:0px !important;margin:0px !important;color:inherit;}div#TNPNraWnBU .mo-optin-form-wrapper label {color:inherit;font-weight: normal;margin: 0;padding:0;}div#TNPNraWnBU div#TNPNraWnBU_slidein_container div#TNPNraWnBU_slidein input[type=submit] {-webkit-appearance: none;}div#TNPNraWnBU div#TNPNraWnBU_slidein_container div#TNPNraWnBU_slidein input {z-index: auto;}div#TNPNraWnBU.mo-cta-button-flag .mo-optin-form-note .mo-acceptance-label {display:none;}div#TNPNraWnBU .mailoptin-video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; } div#TNPNraWnBU .mailoptin-video-container iframe, div#TNPNraWnBU .mailoptin-video-container object, div#TNPNraWnBU .mailoptin-video-container embed, div#TNPNraWnBU .mailoptin-video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }.MOanimated{animation-duration:1s;animation-fill-mode:both}.MOanimated.MOinfinite{animation-iteration-count:infinite}.MOanimated.MOhinge{animation-duration:2s}.MOanimated.MOflipOutX,.MOanimated.MOflipOutY,.MOanimated.MObounceIn,.MOanimated.MObounceOut{animation-duration:.75s}@keyframes bounce{from,20%,53%,80%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000);transform:translate3d(0,0,0)}40%,43%{animation-timing-function:cubic-bezier(0.755,0.050,0.855,0.060);transform:translate3d(0,-30px,0)}70%{animation-timing-function:cubic-bezier(0.755,0.050,0.855,0.060);transform:translate3d(0,-15px,0)}90%{transform:translate3d(0,-4px,0)}}.MObounce{animation-name:bounce;transform-origin:center bottom}@keyframes flash{from,50%,to{opacity:1}25%,75%{opacity:0}}.MOflash{animation-name:flash}@keyframes pulse{from{transform:scale3d(1,1,1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scale3d(1,1,1)}}.MOpulse{animation-name:pulse}@keyframes rubberBand{from{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,0.75,1)}40%{transform:scale3d(0.75,1.25,1)}50%{transform:scale3d(1.15,0.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scale3d(1,1,1)}}.MOrubberBand{animation-name:rubberBand}@keyframes shake{from,to{transform:translate3d(0,0,0)}10%,30%,50%,70%,90%{transform:translate3d(-10px,0,0)}20%,40%,60%,80%{transform:translate3d(10px,0,0)}}.MOshake{animation-name:shake}@keyframes headShake{0%{transform:translateX(0)}6.5%{transform:translateX(-6px) rotateY(-9deg)}18.5%{transform:translateX(5px) rotateY(7deg)}31.5%{transform:translateX(-3px) rotateY(-5deg)}43.5%{transform:translateX(2px) rotateY(3deg)}50%{transform:translateX(0)}}.MOheadShake{animation-timing-function:ease-in-out;animation-name:headShake}@keyframes swing{20%{transform:rotate3d(0,0,1,15deg)}40%{transform:rotate3d(0,0,1,-10deg)}60%{transform:rotate3d(0,0,1,5deg)}80%{transform:rotate3d(0,0,1,-5deg)}to{transform:rotate3d(0,0,1,0deg)}}.MOswing{transform-origin:top center;animation-name:swing}@keyframes tada{from{transform:scale3d(1,1,1)}10%,20%{transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}to{transform:scale3d(1,1,1)}}.MOtada{animation-name:tada}@keyframes wobble{from{transform:none}15%{transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)}30%{transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg)}45%{transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)}60%{transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg)}75%{transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)}to{transform:none}}.MOwobble{animation-name:wobble}@keyframes jello{from,11.1%,to{transform:none}22.2%{transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{transform:skewX(6.25deg) skewY(6.25deg)}44.4%{transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{transform:skewX(-0.78125deg) skewY(-0.78125deg)}77.7%{transform:skewX(0.390625deg) skewY(0.390625deg)}88.8%{transform:skewX(-0.1953125deg) skewY(-0.1953125deg)}}.MOjello{animation-name:jello;transform-origin:center}@keyframes bounceIn{from,20%,40%,60%,80%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scale3d(1,1,1)}}.MObounceIn{animation-name:bounceIn}@keyframes bounceInDown{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;transform:translate3d(0,-3000px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}.MObounceInDown{animation-name:bounceInDown}@keyframes bounceInLeft{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}0%{opacity:0;transform:translate3d(-3000px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}.MObounceInLeft{animation-name:bounceInLeft}@keyframes bounceInRight{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}from{opacity:0;transform:translate3d(3000px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}.MObounceInRight{animation-name:bounceInRight}@keyframes bounceInUp{from,60%,75%,90%,to{animation-timing-function:cubic-bezier(0.215,0.610,0.355,1.000)}from{opacity:0;transform:translate3d(0,3000px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translate3d(0,0,0)}}.MObounceInUp{animation-name:bounceInUp}@keyframes bounceOut{20%{transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;transform:scale3d(1.1,1.1,1.1)}to{opacity:0;transform:scale3d(.3,.3,.3)}}.MObounceOut{animation-name:bounceOut}@keyframes bounceOutDown{20%{transform:translate3d(0,10px,0)}40%,45%{opacity:1;transform:translate3d(0,-20px,0)}to{opacity:0;transform:translate3d(0,2000px,0)}}.MObounceOutDown{animation-name:bounceOutDown}@keyframes bounceOutLeft{20%{opacity:1;transform:translate3d(20px,0,0)}to{opacity:0;transform:translate3d(-2000px,0,0)}}.MObounceOutLeft{animation-name:bounceOutLeft}@keyframes bounceOutRight{20%{opacity:1;transform:translate3d(-20px,0,0)}to{opacity:0;transform:translate3d(2000px,0,0)}}.MObounceOutRight{animation-name:bounceOutRight}@keyframes bounceOutUp{20%{transform:translate3d(0,-10px,0)}40%,45%{opacity:1;transform:translate3d(0,20px,0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}.MObounceOutUp{animation-name:bounceOutUp}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.MOfadeIn{animation-name:fadeIn}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}.MOfadeInDown{animation-name:fadeInDown}@keyframes fadeInDownBig{from{opacity:0;transform:translate3d(0,-2000px,0)}to{opacity:1;transform:none}}.MOfadeInDownBig{animation-name:fadeInDownBig}@keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}.MOfadeInLeft{animation-name:fadeInLeft}@keyframes fadeInLeftBig{from{opacity:0;transform:translate3d(-2000px,0,0)}to{opacity:1;transform:none}}.MOfadeInLeftBig{animation-name:fadeInLeftBig}@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}.MOfadeInRight{animation-name:fadeInRight}@keyframes fadeInRightBig{from{opacity:0;transform:translate3d(2000px,0,0)}to{opacity:1;transform:none}}.MOfadeInRightBig{animation-name:fadeInRightBig}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.MOfadeInUp{animation-name:fadeInUp}@keyframes fadeInUpBig{from{opacity:0;transform:translate3d(0,2000px,0)}to{opacity:1;transform:none}}.MOfadeInUpBig{animation-name:fadeInUpBig}@keyframes fadeOut{from{opacity:1}to{opacity:0}}.MOfadeOut{animation-name:fadeOut}@keyframes fadeOutDown{from{opacity:1}to{opacity:0;transform:translate3d(0,100%,0)}}.MOfadeOutDown{animation-name:fadeOutDown}@keyframes fadeOutDownBig{from{opacity:1}to{opacity:0;transform:translate3d(0,2000px,0)}}.MOfadeOutDownBig{animation-name:fadeOutDownBig}@keyframes fadeOutLeft{from{opacity:1}to{opacity:0;transform:translate3d(-100%,0,0)}}.MOfadeOutLeft{animation-name:fadeOutLeft}@keyframes fadeOutLeftBig{from{opacity:1}to{opacity:0;transform:translate3d(-2000px,0,0)}}.MOfadeOutLeftBig{animation-name:fadeOutLeftBig}@keyframes fadeOutRight{from{opacity:1}to{opacity:0;transform:translate3d(100%,0,0)}}.MOfadeOutRight{animation-name:fadeOutRight}@keyframes fadeOutRightBig{from{opacity:1}to{opacity:0;transform:translate3d(2000px,0,0)}}.MOfadeOutRightBig{animation-name:fadeOutRightBig}@keyframes fadeOutUp{from{opacity:1}to{opacity:0;transform:translate3d(0,-100%,0)}}.MOfadeOutUp{animation-name:fadeOutUp}@keyframes fadeOutUpBig{from{opacity:1}to{opacity:0;transform:translate3d(0,-2000px,0)}}.MOfadeOutUpBig{animation-name:fadeOutUpBig}@keyframes flip{from{transform:perspective(400px) rotate3d(0,1,0,-360deg);animation-timing-function:ease-out}40%{transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);animation-timing-function:ease-out}50%{transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);animation-timing-function:ease-in}80%{transform:perspective(400px) scale3d(.95,.95,.95);animation-timing-function:ease-in}to{transform:perspective(400px);animation-timing-function:ease-in}}.MOanimated.MOflip{-webkit-backface-visibility:visible;backface-visibility:visible;animation-name:flip}@keyframes flipInX{from{transform:perspective(400px) rotate3d(1,0,0,90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotate3d(1,0,0,-20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1}80%{transform:perspective(400px) rotate3d(1,0,0,-5deg)}to{transform:perspective(400px)}}.MOflipInX{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;animation-name:flipInX}@keyframes flipInY{from{transform:perspective(400px) rotate3d(0,1,0,90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotate3d(0,1,0,-20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotate3d(0,1,0,10deg);opacity:1}80%{transform:perspective(400px) rotate3d(0,1,0,-5deg)}to{transform:perspective(400px)}}.MOflipInY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;animation-name:flipInY}@keyframes flipOutX{from{transform:perspective(400px)}30%{transform:perspective(400px) rotate3d(1,0,0,-20deg);opacity:1}to{transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}}.MOflipOutX{animation-name:flipOutX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}@keyframes flipOutY{from{transform:perspective(400px)}30%{transform:perspective(400px) rotate3d(0,1,0,-15deg);opacity:1}to{transform:perspective(400px) rotate3d(0,1,0,90deg);opacity:0}}.MOflipOutY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;animation-name:flipOutY}@keyframes lightSpeedIn{from{transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{transform:skewX(20deg);opacity:1}80%{transform:skewX(-5deg);opacity:1}to{transform:none;opacity:1}}.MOlightSpeedIn{animation-name:lightSpeedIn;animation-timing-function:ease-out}@keyframes lightSpeedOut{from{opacity:1}to{transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}.MOlightSpeedOut{animation-name:lightSpeedOut;animation-timing-function:ease-in}@keyframes rotateIn{from{transform-origin:center;transform:rotate3d(0,0,1,-200deg);opacity:0}to{transform-origin:center;transform:none;opacity:1}}.MOrotateIn{animation-name:rotateIn}@keyframes rotateInDownLeft{from{transform-origin:left bottom;transform:rotate3d(0,0,1,-45deg);opacity:0}to{transform-origin:left bottom;transform:none;opacity:1}}.MOrotateInDownLeft{animation-name:rotateInDownLeft}@keyframes rotateInDownRight{from{transform-origin:right bottom;transform:rotate3d(0,0,1,45deg);opacity:0}to{transform-origin:right bottom;transform:none;opacity:1}}.MOrotateInDownRight{animation-name:rotateInDownRight}@keyframes rotateInUpLeft{from{transform-origin:left bottom;transform:rotate3d(0,0,1,45deg);opacity:0}to{transform-origin:left bottom;transform:none;opacity:1}}.MOrotateInUpLeft{animation-name:rotateInUpLeft}@keyframes rotateInUpRight{from{transform-origin:right bottom;transform:rotate3d(0,0,1,-90deg);opacity:0}to{transform-origin:right bottom;transform:none;opacity:1}}.MOrotateInUpRight{animation-name:rotateInUpRight}@keyframes rotateOut{from{transform-origin:center;opacity:1}to{transform-origin:center;transform:rotate3d(0,0,1,200deg);opacity:0}}.MOrotateOut{animation-name:rotateOut}@keyframes rotateOutDownLeft{from{transform-origin:left bottom;opacity:1}to{transform-origin:left bottom;transform:rotate3d(0,0,1,45deg);opacity:0}}.MOrotateOutDownLeft{animation-name:rotateOutDownLeft}@keyframes rotateOutDownRight{from{transform-origin:right bottom;opacity:1}to{transform-origin:right bottom;transform:rotate3d(0,0,1,-45deg);opacity:0}}.MOrotateOutDownRight{animation-name:rotateOutDownRight}@keyframes rotateOutUpLeft{from{transform-origin:left bottom;opacity:1}to{transform-origin:left bottom;transform:rotate3d(0,0,1,-45deg);opacity:0}}.MOrotateOutUpLeft{animation-name:rotateOutUpLeft}@keyframes rotateOutUpRight{from{transform-origin:right bottom;opacity:1}to{transform-origin:right bottom;transform:rotate3d(0,0,1,90deg);opacity:0}}.MOrotateOutUpRight{animation-name:rotateOutUpRight}@keyframes hinge{0%{transform-origin:top left;animation-timing-function:ease-in-out}20%,60%{transform:rotate3d(0,0,1,80deg);transform-origin:top left;animation-timing-function:ease-in-out}40%,80%{transform:rotate3d(0,0,1,60deg);transform-origin:top left;animation-timing-function:ease-in-out;opacity:1}to{transform:translate3d(0,700px,0);opacity:0}}.MOhinge{animation-name:hinge}@keyframes jackInTheBox{from{opacity:0;transform:scale(0.1) rotate(30deg);transform-origin:center bottom}50%{transform:rotate(-10deg)}70%{transform:rotate(3deg)}to{opacity:1;transform:scale(1)}}.MOjackInTheBox{animation-name:jackInTheBox}@keyframes rollIn{from{opacity:0;transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1;transform:none}}.MOrollIn{animation-name:rollIn}@keyframes rollOut{from{opacity:1}to{opacity:0;transform:translate3d(100%,0,0) rotate3d(0,0,1,120deg)}}.MOrollOut{animation-name:rollOut}@keyframes zoomIn{from{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}.MOzoomIn{animation-name:zoomIn}@keyframes zoomInDown{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.MOzoomInDown{animation-name:zoomInDown}@keyframes zoomInLeft{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(10px,0,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.MOzoomInLeft{animation-name:zoomInLeft}@keyframes zoomInRight{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.MOzoomInRight{animation-name:zoomInRight}@keyframes zoomInUp{from{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}60%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.MOzoomInUp{animation-name:zoomInUp}@keyframes zoomOut{from{opacity:1}50%{opacity:0;transform:scale3d(.3,.3,.3)}to{opacity:0}}.MOzoomOut{animation-name:zoomOut}@keyframes zoomOutDown{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}to{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform-origin:center bottom;animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.MOzoomOutDown{animation-name:zoomOutDown}@keyframes zoomOutLeft{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{opacity:0;transform:scale(.1) translate3d(-2000px,0,0);transform-origin:left center}}.MOzoomOutLeft{animation-name:zoomOutLeft}@keyframes zoomOutRight{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{opacity:0;transform:scale(.1) translate3d(2000px,0,0);transform-origin:right center}}.MOzoomOutRight{animation-name:zoomOutRight}@keyframes zoomOutUp{40%{opacity:1;transform:scale3d(.475,.475,.475) translate3d(0,60px,0);animation-timing-function:cubic-bezier(0.550,0.055,0.675,0.190)}to{opacity:0;transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform-origin:center bottom;animation-timing-function:cubic-bezier(0.175,0.885,0.320,1)}}.MOzoomOutUp{animation-name:zoomOutUp}@keyframes slideInDown{from{transform:translate3d(0,-100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}.MOslideInDown{animation-name:slideInDown}@keyframes slideInLeft{from{transform:translate3d(-100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}.MOslideInLeft{animation-name:slideInLeft}@keyframes slideInRight{from{transform:translate3d(100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}.MOslideInRight{animation-name:slideInRight}@keyframes slideInUp{from{transform:translate3d(0,100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}.MOslideInUp{animation-name:slideInUp}@keyframes slideOutDown{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(0,100%,0)}}.MOslideOutDown{animation-name:slideOutDown}@keyframes slideOutLeft{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(-100%,0,0)}}.MOslideOutLeft{animation-name:slideOutLeft}@keyframes slideOutRight{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(100%,0,0)}}.MOslideOutRight{animation-name:slideOutRight}@keyframes slideOutUp{from{transform:translate3d(0,0,0)}to{visibility:hidden;transform:translate3d(0,-100%,0)}}.MOslideOutUp{animation-name:slideOutUp}html div#TNPNraWnBU.moOptinForm.mo-optin-form-slidein {max-width:410px !important;}html div#TNPNraWnBU div#TNPNraWnBU_slidein.mo-optin-form-wrapper {max-width:410px !important;box-shadow:0 5px 35px rgba(0,0,0,.17);}div#TNPNraWnBU.mo-slidein-bottom_right {right: 10px;}div#TNPNraWnBU.mo-slidein-bottom_left {left: 10px;} /* make slide-in optin form full width and full height on mobile/small screens */ @media only screen and (max-width: 575px) { html div#TNPNraWnBU.moOptinForm.mo-optin-form-slidein div#TNPNraWnBU_slidein.mo-optin-form-wrapper { max-width: 100% !important; } html div#TNPNraWnBU.moOptinForm.mo-optin-form-slidein { max-width: 100% !important; bottom: 0 !important; left: 0 !important; right: 0 !important; } }div#TNPNraWnBU_slidein #mo-optin-form-name-field {display: none !important;}#TNPNraWnBU .mo-optin-form-container .mo-optin-spinner { border-radius: inherit; position: absolute; width: 100%; height: 100%; background: #fff url(https://z.cash/wp-content/plugins/mailoptin/src/core/src/assets/images/spinner.gif) 50% 50% no-repeat; left: 0; top: 0; opacity: 0.99; filter: alpha(opacity=80); } #TNPNraWnBU .mo-optin-form-container .mo-optin-success-close { font-size: 32px !important; font-family: "HelveticaNeue - Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; color: #282828 !important; font-weight: 300 !important; position: absolute !important; top: 0 !important; right: 10px !important; background: none !important; text-decoration: none !important; width: auto !important; height: auto !important; display: block !important; line-height: 32px !important; padding: 0 !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; } #TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-success-msg { font-size: 21px; font-family: "HelveticaNeue - Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color: #282828 !important; font-weight: 300; text-align: center; margin: 0 auto; width: 100%; position: absolute !important; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } #TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-success-msg a { color: #0000EE; text-decoration: underline; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field:not(select), html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field, html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field, html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field { margin-top: 6px; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field, html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field, html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field { text-align: left; padding: 6px; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field label, html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field label { display: block; text-align: left; margin-top: 6px; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .checkbox-field label input, html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .radio-field label input { margin-right: 5px; vertical-align: middle; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .select-field select { width: 100%; } html div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-fields-wrapper .list_subscription-field:not(select), html div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-fields-wrapper .mo-optin-form-custom-field.checkbox-field, html div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-fields-wrapper .mo-optin-form-custom-field.radio-field { padding: 0 !important; border: 0 !important; background: transparent !important; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field label { display: block !important; margin: 5px 0 !important; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field label:last-child { margin: 0; } html div#TNPNraWnBU .mo-optin-form-container .mo-optin-form-wrapper .mo-optin-fields-wrapper .list_subscription-field input[type=checkbox] { cursor: pointer; } .mailoptin-content-lock { color: transparent!important; text-shadow: rgba(0,0,0,.5) 0 0 10px; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none; filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur"); -webkit-filter: blur(10px); -ms-filter: blur(10px); -o-filter: blur(10px); filter: blur(10px); } div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-headline, div#TNPNraWnBU div.mo-optin-form-container h2, div#TNPNraWnBU div.mo-optin-form-container h1 { font-size: 21px !important; }div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-description, div#TNPNraWnBU div.mo-optin-form-container div#TNPNraWnBU_slidein p { font-size: 18px !important; }div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-note { font-size: 12px !important; }@media screen and (max-width: 768px) { div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-headline, div#TNPNraWnBU div.mo-optin-form-container div#TNPNraWnBU_slidein h2, div#TNPNraWnBU div.mo-optin-form-container div#TNPNraWnBU_slidein h1 { font-size: 18px !important; } div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-description, div#TNPNraWnBU div.mo-optin-form-container div#TNPNraWnBU_slidein p { font-size: 16px !important; } div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-note { font-size: 12px !important; } }@media screen and (max-width: 480px) { div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-headline, div#TNPNraWnBU div.mo-optin-form-container div#TNPNraWnBU_slidein h2, div#TNPNraWnBU div.mo-optin-form-container div#TNPNraWnBU_slidein h1 { font-size: 18px !important; } div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-description, div#TNPNraWnBU div.mo-optin-form-container div#TNPNraWnBU_slidein p { font-size: 16px !important; } div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-note, div#TNPNraWnBU div#TNPNraWnBU_slidein .mo-optin-form-note * { font-size: 10px !important; } } #TNPNraWnBU #TNPNraWnBU_slidein .mo-optin-field.mo-optin-form-name-field::-webkit-input-placeholder { color: #6d7680 !important; } #TNPNraWnBU #TNPNraWnBU_slidein .mo-optin-field.mo-optin-form-name-field:-ms-input-placeholder { color: #6d7680 !important; } #TNPNraWnBU #TNPNraWnBU_slidein .mo-optin-field.mo-optin-form-name-field::placeholder { color: #6d7680 !important; } #TNPNraWnBU #TNPNraWnBU_slidein .mo-optin-field.mo-optin-form-email-field::-webkit-input-placeholder { color: #6d7680 !important; } #TNPNraWnBU #TNPNraWnBU_slidein .mo-optin-field.mo-optin-form-email-field:-ms-input-placeholder { color: #6d7680 !important; } #TNPNraWnBU #TNPNraWnBU_slidein .mo-optin-field.mo-optin-form-email-field::placeholder { color: #6d7680 !important; } div#TNPNraWnBU .mo-mailchimp-interest-container { margin: 0 10px 2px; } div#TNPNraWnBU .mo-mailchimp-interest-label { font-size: 16px; margin: 5px 0 2px; } div#TNPNraWnBU .mo-mailchimp-interest-category-label { font-size: 14px; margin: 5px 0 2px; } div#TNPNraWnBU input.mo-mailchimp-interest-choice { line-height: normal; border: 0; margin: 0 5px; } div#TNPNraWnBU span.mo-mailchimp-choice-label { vertical-align: middle; font-size: 14px; } div#TNPNraWnBU .mo-mailchimp-interest-choice-container { margin: 5px 0; }</style><style id="mo-optin-form-custom-css" type="text/css">.mo-optin-form-wrapper { border-radius: 3px !important; border-width: 0px !important; } .mo-optin-fields-wrapper.alyssum-input { display: flex; align-items: center; } .mo-optin-form-email-field { border-radius: 0 !important; padding: 10px 14px !important; width: auto !important; } .mo-optin-form-submit-button { border-radius: 0 !important; padding: 10px 14px !important; margin-top: -5px; text-transform: capitalize !important; } html div#aHCXrMAifx div#aHCXrMAifx_slidein.mo-optin-form-wrapper { max-width: 410px !important; box-shadow: 0 5px 15px rgb(0 0 0 / 25%); } #fvBDigzFIo .mo-optin-form-container .mo-optin-success-close, html div#fvBDigzFIo div#fvBDigzFIo_slidein.alyssum .alyssum-optin-form-close{ font-size: 14px !important; }</style><div id="TNPNraWnBU_slidein" class="mo-optin-form-wrapper mo-has-email alyssum" style="position: relative;background: #f6f6f6;border-color: #f5be3d;line-height: normal;"><form method="post" class='mo-optin-form' id='TNPNraWnBU_slidein_form' style='margin:0;'><a href='#' rel="moOptin:close" title="Close optin form" class="mo-optin-form-close-icon alyssum-optin-form-close" style=''>x</a><div class="alyssum_inner"><div class="alyssum-intro-section"><div class="mo-optin-form-headline alyssum-headline" style="color: #222222;"><b>Join the newsletter</b></div><div class="mo-optin-form-description " style="color: #222222;"><p>Be the first to get Zcash-related updates and news from Electric Coin Co.</p></div><input id="TNPNraWnBU_slidein_cta_button" class="mo-optin-form-cta-button alyssum_subscibe_btn" style="background: #0073b7;color: #ffffff;height: auto;text-shadow: none;font-family: 'Open Sans', Helvetica, Arial, sans-serif;display: none;" type="submit" value="Take Action Now!"> </div><div class="mo-optin-fields-wrapper alyssum-input" style=""><input id="TNPNraWnBU_slidein_name_field" class="mo-optin-field mo-optin-form-name-field alyssum_input_field" style='color: #6d7680;background-color: #ffffff;height: auto;display: none;' type="text" placeholder="Full Name" name="mo-name" autocomplete="on" value=""> <input id="TNPNraWnBU_slidein_email_field" class="mo-optin-field mo-optin-form-email-field alyssum_input_field" style="color: #6d7680;background-color: #ffffff;height: auto;" type="email" placeholder="E-mail Address" name="mo-email" autocomplete="on" value=""> <input id="TNPNraWnBU_slidein_submit_button" class="mo-optin-form-submit-button alyssum_subscibe_btn" style="background: #f4b728;color: #ffffff;height: auto;text-shadow: none;" type="submit" value="Subscribe"> </div><div class="mo-optin-form-note alyssum_note" style="color: #444444;display: none;"><span class="mo-note-content">We promise not to spam you. You can unsubscribe at any time.</span></div><div class="mo-optin-error " style=''>Invalid email address</div></div><input id='TNPNraWnBU_slidein_honeypot_email_field' type='text' name='mo-hp-email' value='' style='display:none'/><input id="TNPNraWnBU_slidein_honeypot_website_field" type="text" name="mo-hp-website" value="" style="display:none"/></form><div class='mo-optin-spinner' style='display:none'></div><div class="mo-optin-success-msg" style="display:none">Thanks for subscribing!</div></div></div><input id="TNPNraWnBU_slidein_honeypot_timestamp" type="hidden" name="mo-timestamp" value="1632825394" style="display:none"/></div><!-- / MailOptin WordPress plugin. -->
+
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"ca22ed409a","applicationID":"372922663","transactionName":"NgMEYEtYXRcDBkENXA9JJ1dNUFwKTQNACF8WDwJAUQ==","queueTime":0,"applicationTime":571,"atts":"GkQHFgNCThk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

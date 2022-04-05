@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: 51% Attack Explained with Examples	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/51-attack/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/51-attack</link>
+	<description></description>
+	<lastBuildDate>Wed, 24 Jun 2020 14:06:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Abdul		</title>
+		<link>https://atomicwallet.io/blog/academy/51-attack#comment-145</link>
+
+		<dc:creator><![CDATA[Abdul]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 17:11:36 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=760#comment-145</guid>
+
+					<description><![CDATA[  Gaining access to 51% will be very difficult, all in all bitcoin is a safe haven.]]></description>
+			<content:encoded><![CDATA[<p>  Gaining access to 51% will be very difficult, all in all bitcoin is a safe haven.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

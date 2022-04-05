@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="/cdn-cgi/apps/head/5Sc1MYwFsk6T8hF66eE8IwIgllE.js"></script><link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://www.linuxbabe.com/xmlrpc.php" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<title>How to Install and Use Atomic Wallet on Linux - LinuxBabe</title>
+<meta name="description" content="Atomic wallet is a universal multi-assets cryptocurrency wallet. Install Atomic Wallet on Ubuntu, Linux Mint, Elementary OS, Fedora, CentOS/RHEL, OpenSUSE, Arch Linux." />
+<link rel="canonical" href="https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to Install and Use Atomic Wallet on Linux - LinuxBabe" />
+<meta property="og:description" content="Atomic wallet is a universal multi-assets cryptocurrency wallet. Install Atomic Wallet on Ubuntu, Linux Mint, Elementary OS, Fedora, CentOS/RHEL, OpenSUSE, Arch Linux." />
+<meta property="og:url" content="https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux" />
+<meta property="og:site_name" content="LinuxBabe" />
+<meta property="article:publisher" content="https://www.facebook.com/linuxbabe" />
+<meta property="article:published_time" content="2019-12-05T11:24:16+00:00" />
+<meta property="article:modified_time" content="2019-12-06T06:21:37+00:00" />
+<meta property="og:image" content="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-linux.png" />
+<meta property="og:image:width" content="673" />
+<meta property="og:image:height" content="379" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@linuxbabe" />
+<meta name="twitter:site" content="@linuxbabe" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Xiao Guoan (Admin)" />
+<meta name="twitter:label2" content="Est. reading time" />
+<meta name="twitter:data2" content="5 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.linuxbabe.com/#website","url":"https://www.linuxbabe.com/","name":"LinuxBabe","description":"Read The Friendly Manual | Linux Sysadmin, Server &amp; Desktop","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.linuxbabe.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux#primaryimage","inLanguage":"en-US","url":"https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-linux.png","contentUrl":"https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-linux.png","width":673,"height":379,"caption":"atomic wallet linux"},{"@type":"WebPage","@id":"https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux#webpage","url":"https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux","name":"How to Install and Use Atomic Wallet on Linux - LinuxBabe","isPartOf":{"@id":"https://www.linuxbabe.com/#website"},"primaryImageOfPage":{"@id":"https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux#primaryimage"},"datePublished":"2019-12-05T11:24:16+00:00","dateModified":"2019-12-06T06:21:37+00:00","author":{"@id":"https://www.linuxbabe.com/#/schema/person/c9aa2c2f31b0e41654b74b6ed7fb0ba9"},"description":"Atomic wallet is a universal multi-assets cryptocurrency wallet. Install Atomic Wallet on Ubuntu, Linux Mint, Elementary OS, Fedora, CentOS/RHEL, OpenSUSE, Arch Linux.","breadcrumb":{"@id":"https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux"]}]},{"@type":"BreadcrumbList","@id":"https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.linuxbabe.com/"},{"@type":"ListItem","position":2,"name":"How to Install and Use Atomic Wallet on Linux"}]},{"@type":"Person","@id":"https://www.linuxbabe.com/#/schema/person/c9aa2c2f31b0e41654b74b6ed7fb0ba9","name":"Xiao Guoan (Admin)","image":{"@type":"ImageObject","@id":"https://www.linuxbabe.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/2ae86b48a4a7ba3576bbb5a59a4d07d0?s=96&d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&r=g","contentUrl":"https://secure.gravatar.com/avatar/2ae86b48a4a7ba3576bbb5a59a4d07d0?s=96&d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&r=g","caption":"Xiao Guoan (Admin)"},"description":"If my answer helped you, please consider supporting this site.","sameAs":["https://www.linuxbabe.com"],"url":"https://www.linuxbabe.com/author/xiao-guoan"}]}</script>
+
+<link rel='dns-prefetch' href='//www.linuxbabe.com' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//m9m6e2w5.stackpathcdn.com' />
+<link rel='dns-prefetch' href='//cdn.shareaholic.net' />
+<link rel='dns-prefetch' href='//www.shareaholic.net' />
+<link rel='dns-prefetch' href='//analytics.shareaholic.com' />
+<link rel='dns-prefetch' href='//recs.shareaholic.com' />
+<link rel='dns-prefetch' href='//partner.shareaholic.com' />
+<link rel="alternate" type="application/rss+xml" title="LinuxBabe &raquo; Feed" href="https://www.linuxbabe.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="LinuxBabe &raquo; Comments Feed" href="https://www.linuxbabe.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="LinuxBabe &raquo; How to Install and Use Atomic Wallet on Linux Comments Feed" href="https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux/feed" />
+
+<link rel='preload' href='//cdn.shareaholic.net/assets/pub/shareaholic.js' as='script' />
+<script data-no-minify='1' data-cfasync='false'>
+_SHR_SETTINGS = {"endpoints":{"local_recs_url":"https:\/\/www.linuxbabe.com\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related","ajax_url":"https:\/\/www.linuxbabe.com\/wp-admin\/admin-ajax.php","share_counts_url":"https:\/\/www.linuxbabe.com\/wp-admin\/admin-ajax.php?action=shareaholic_share_counts_api"},"site_id":"3308531406f1e9a7f36ab21ef174a1d6","url_components":{"year":"2019","monthnum":"12","day":"05","hour":"19","minute":"24","second":"16","post_id":"18912","postname":"how-to-install-and-use-atomic-wallet-on-linux","category":"desktop-linux"}};
+</script>
+<script data-no-minify='1' data-cfasync='false' src='//cdn.shareaholic.net/assets/pub/shareaholic.js' data-shr-siteid='3308531406f1e9a7f36ab21ef174a1d6' async></script>
+
+<meta name='shareaholic:site_name' content='LinuxBabe' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:url' content='https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux' />
+<meta name='shareaholic:keywords' content='tag:atomic wallet, tag:cryptocurrency, cat:desktop linux, type:post' />
+<meta name='shareaholic:article_published_time' content='2019-12-05T19:24:16+08:00' />
+<meta name='shareaholic:article_modified_time' content='2019-12-06T14:21:37+08:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='Xiao Guoan (Admin)' />
+<meta name='shareaholic:site_id' content='3308531406f1e9a7f36ab21ef174a1d6' />
+<meta name='shareaholic:wp_version' content='9.7.0' />
+<meta name='shareaholic:image' content='https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-linux-640x360.png' />
+
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.linuxbabe.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='wpzoom-social-icons-block-style-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/style-wpzoom-social-icons.css?ver=4.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css' href='https://www.linuxbabe.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.linuxbabe.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='widgetopts-styles-css' href='https://www.linuxbabe.com/wp-content/plugins/widget-options/assets/css/widget-options.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsf_wpsf-css' href='https://www.linuxbabe.com/wp-content/plugins/wp-spam-fighter/css/wpsf.css?ver=0.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='yasrcss-css' href='https://www.linuxbabe.com/wp-content/plugins/yet-another-stars-rating/includes/css/yasr.css?ver=2.9.0' type='text/css' media='all' />
+<style id='yasrcss-inline-css' type='text/css'>
+
+        .yasr-star-rating {
+            background-image: url("https://www.linuxbabe.com/wp-content/plugins/yet-another-stars-rating/includes/img/star_2.svg");
+        }
+        .yasr-star-rating .yasr-star-value {
+            background: url("https://www.linuxbabe.com/wp-content/plugins/yet-another-stars-rating/includes/img/star_3.svg") ;
+        }
+    
+</style>
+<link rel='stylesheet' id='wordpress-popular-posts-css-css' href='https://www.linuxbabe.com/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='https://www.linuxbabe.com/wp-content/themes/optimizer/style.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css' href='https://www.linuxbabe.com/wp-content/themes/optimizer-child/style.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='optimizer-style-css' href='https://www.linuxbabe.com/wp-content/themes/optimizer-child/style.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='optimizer-style-core-css' href='https://www.linuxbabe.com/wp-content/themes/optimizer/style_core.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='optimizer-icons-css' href='https://www.linuxbabe.com/wp-content/themes/optimizer/assets/fonts/font-awesome.css?ver=5.8.1' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='optimizer_google_fonts-css' href='//fonts.googleapis.com/css?family=Fira+Sans%3Aregular%2Citalic%2C700%26subset%3Dlatin%2C' type='text/css' media='screen' />
+<link rel='stylesheet' id='wpzoom-social-icons-socicon-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-socicon.css?ver=1629034808' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-genericons-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1629034808' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-academicons-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1629034808' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1629034808' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://www.linuxbabe.com/wp-includes/css/dashicons.min.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-styles-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/wpzoom-social-icons-styles.css?ver=1629034808' type='text/css' media='all' />
+<link rel='stylesheet' id='dco-comment-attachment-css' href='https://www.linuxbabe.com/wp-content/plugins/dco-comment-attachment/assets/dco-comment-attachment.css?ver=2.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='yasrcssdarkscheme-css' href='https://www.linuxbabe.com/wp-content/plugins/yet-another-stars-rating/includes/css/yasr-table-dark.css?ver=2.9.0' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css' href='//www.linuxbabe.com/wp-content/uploads/pum/pum-site-styles.css?generated=1625665248&#038;ver=1.16.2' type='text/css' media='all' />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-academicons-ttf-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.ttf?v=1.8.6' type='font/ttf' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-academicons-woff-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/academicons.woff?v=1.8.6' type='font/woff' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-fontawesome-3-ttf-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.ttf?v=4.7.0' type='font/ttf' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-fontawesome-3-woff-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff?v=4.7.0' type='font/woff' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-fontawesome-3-woff2-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/fontawesome-webfont.woff2?v=4.7.0' type='font/woff2' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-genericons-ttf-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.ttf' type='font/ttf' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-genericons-woff-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/Genericons.woff' type='font/woff' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-socicon-ttf-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.ttf?v=4.2.1' type='font/ttf' crossorigin />
+<link rel='preload' as='font' id='wpzoom-social-icons-font-socicon-woff-css' href='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/font/socicon.woff?v=4.2.1' type='font/woff' crossorigin />
+<link rel='stylesheet' id='jetpack_css-css' href='https://www.linuxbabe.com/wp-content/plugins/jetpack/css/jetpack.css?ver=10.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='jquery-migrate-js-after'>
+jQuery(document).ready(function(){   jQuery(".so-panel.widget").each(function (){   jQuery(this).attr("id", jQuery(this).find(".so_widget_id").attr("data-panel-id"))  });  });
+</script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?ver=5.8.1' id='recaptcha-js'></script>
+<script type='application/json' id='wpp-json'>
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/www.linuxbabe.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"https:\/\/www.linuxbabe.com\/wp-json\/wordpress-popular-posts","ID":18912,"token":"b664eb5596","lang":0,"debug":0}
+</script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=5.4.2' id='wpp-js-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/themes/optimizer/assets/js/optimizer.js?ver=1' id='optimizer_js-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/themes/optimizer-child/assets/js/other.js?ver=1' id='optimizer_child_otherjs-js'></script>
+<link rel="https://api.w.org/" href="https://www.linuxbabe.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.linuxbabe.com/wp-json/wp/v2/posts/18912" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.linuxbabe.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.linuxbabe.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.8.1" />
+<link rel='shortlink' href='https://www.linuxbabe.com/?p=18912' />
+<link rel="alternate" type="application/json+oembed" href="https://www.linuxbabe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.linuxbabe.com%2Fdesktop-linux%2Fhow-to-install-and-use-atomic-wallet-on-linux" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.linuxbabe.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.linuxbabe.com%2Fdesktop-linux%2Fhow-to-install-and-use-atomic-wallet-on-linux&#038;format=xml" />
+<script>document.createElement( "picture" );if(!window.HTMLPictureElement && document.addEventListener) {window.addEventListener("DOMContentLoaded", function() {var s = document.createElement("script");s.src = "https://www.linuxbabe.com/wp-content/plugins/webp-express/js/picturefill.min.js";document.body.appendChild(s);});}</script> <style>
+            @-webkit-keyframes bgslide {
+                from {
+                    background-position-x: 0;
+                }
+                to {
+                    background-position-x: -200%;
+                }
+            }
+
+            @keyframes bgslide {
+                    from {
+                        background-position-x: 0;
+                    }
+                    to {
+                        background-position-x: -200%;
+                    }
+            }
+
+            .wpp-widget-placeholder {
+                margin: 0 auto;
+                width: 60px;
+                height: 3px;
+                background: #dd3737;
+                background: -webkit-gradient(linear, left top, right top, from(#dd3737), color-stop(10%, #571313), to(#dd3737));
+                background: linear-gradient(90deg, #dd3737 0%, #571313 10%, #dd3737 100%);
+                background-size: 200% auto;
+                border-radius: 3px;
+                -webkit-animation: bgslide 1s infinite linear;
+                animation: bgslide 1s infinite linear;
+            }
+        </style>
+<style type='text/css'>img#wpstats{display:none}</style>
+<style type="text/css">
+
+/*Fixed Background*/
+
+	/*BOXED LAYOUT*/
+	.site_boxed .layer_wrapper, body.home.site_boxed #slidera {width: 85%;float: left;margin: 0 7.5%;
+	background: #ffffff;}
+	.site_boxed .stat_bg, .site_boxed .stat_bg_overlay{width: 85%;}
+	.site_boxed .social_buttons{background: #ffffff;}
+	.site_boxed .center {width: 95%;margin: 0 auto;}
+	.site_boxed .head_top .center{ width:95%!important;}
+
+
+
+/*Site Content Text Style*/
+body, input, textarea{ 
+	font-family:Fira Sans; 	font-size:16px; }
+
+.single_metainfo, .single_post .single_metainfo a, a:link, a:visited, .single_post_content .tabs li a{ color:#000000;}
+
+.page_head, .author_div{ background:#EEEFF5; color:#555555;}
+.page_head .postitle{color:#555555;}	
+.page_head .layerbread a{color:#555555;}	
+
+/*LINK COLOR*/
+.org_comment a, .thn_post_wrap a:link, .thn_post_wrap a:visited, .lts_lightbox_content a:link, .lts_lightbox_content a:visited, .athor_desc a:link, .athor_desc a:visited{color:#1e73be;}
+.org_comment a:hover, .thn_post_wrap a:link:hover, .lts_lightbox_content a:link:hover, .lts_lightbox_content a:visited:hover, .athor_desc a:link:hover, .athor_desc a:visited:hover{color:#21abce;}
+
+/*-----------------------------Static Slider Content box width------------------------------------*/
+.stat_content_inner .center{width:85%;}
+.stat_content_inner{bottom:33%; color:#ffffff;}
+
+
+/*STATIC SLIDE CTA BUTTONS COLORS*/
+.static_cta1.cta_hollow, .static_cta1.cta_hollow_big{ background:transparent!important; color:#ffffff;}
+.static_cta1.cta_flat, .static_cta1.cta_flat_big, .static_cta1.cta_rounded, .static_cta1.cta_rounded_big, .static_cta1.cta_hollow:hover, .static_cta1.cta_hollow_big:hover{ background:#36abfc!important; color:#ffffff; border-color:#36abfc!important;}
+
+.static_cta2.cta_hollow, .static_cta2.cta_hollow_big{ background:transparent; color:#ffffff;}
+.static_cta2.cta_flat, .static_cta2.cta_flat_big, .static_cta2.cta_rounded, .static_cta2.cta_rounded_big, .static_cta2.cta_hollow:hover, .static_cta2.cta_hollow_big:hover{ background:#36abfc!important; color:#ffffff;border-color:#36abfc!important;}
+
+
+/*-----------------------------COLORS------------------------------------*/
+		/*Header Color*/
+		.header{ position:relative!important; background:#5e2750;}
+				
+				
+				.home.has_trans_header .header_wrap {float: left; position:relative;width: 100%;}
+		.home.has_trans_header .header{position: absolute!important;z-index: 999;}
+
+
+		/*Boxed Header should have boxed width*/
+		body.home.site_boxed .header_wrap.layer_wrapper{width: 85%;float: left;margin: 0 7.5%;}
+		
+		.home.has_trans_header .header, .home.has_trans_header.page.page-template-page-frontpage_template .header{ background:transparent!important; background-image:none;}
+				.home.has_trans_header.page .header{background:#5e2750!important;}
+		@media screen and (max-width: 480px){
+		.home.has_trans_header .header{ background:#5e2750!important;}
+		}
+		
+
+
+		/*LOGO*/
+				.logo h2, .logo h1, .logo h2 a, .logo h1 a{ 
+			font-family:'Fira Sans'; 			font-size:27px;			color:#dddddd;
+		}
+		body.has_trans_header.home .header .logo h2, body.has_trans_header.home .header .logo h1, body.has_trans_header.home .header .logo h2 a, body.has_trans_header.home .header .logo h1 a, body.has_trans_header.home span.desc{ color:#fff;}
+		#simple-menu{color:#dddddd;}
+		body.home.has_trans_header #simple-menu{color:#fff;}
+		span.desc{color:#dddddd;}
+
+		/*MENU Text Color*/
+		#topmenu ul li a{color:#dddddd;}
+		body.has_trans_header.home #topmenu ul li a, body.has_trans_header.home .head_soc .social_bookmarks.bookmark_simple a{ color:#fff;}
+		#topmenu ul li.menu_hover a{border-color:#ffffff;}
+		#topmenu ul li.menu_hover>a, body.has_trans_header.home #topmenu ul li.menu_hover>a{color:#ffffff;}
+		#topmenu ul li.current-menu-item>a{color:#228b22;}
+		#topmenu ul li ul{border-color:#ffffff transparent transparent transparent;}
+		#topmenu ul.menu>li:hover:after{background-color:#ffffff;}
+		
+		#topmenu ul li ul li a:hover{ background:#36abfc; color:#FFFFFF;}
+		.head_soc .social_bookmarks a{color:#dddddd;}
+		.head_soc .social_bookmarks.bookmark_hexagon a:before {border-bottom-color: rgba(221,221,221, 0.3)!important;}
+		.head_soc .social_bookmarks.bookmark_hexagon a i {background:rgba(221,221,221, 0.3)!important;}
+		.head_soc .social_bookmarks.bookmark_hexagon a:after { border-top-color:rgba(221,221,221, 0.3)!important;}
+		
+
+		/*BASE Color*/
+		.widget_border, .heading_border, #wp-calendar #today, .thn_post_wrap .more-link:hover, .moretag:hover, .search_term #searchsubmit, .error_msg #searchsubmit, #searchsubmit, .optimizer_pagenav a:hover, .nav-box a:hover .left_arro, .nav-box a:hover .right_arro, .pace .pace-progress, .homeposts_title .menu_border, .pad_menutitle, span.widget_border, .ast_login_widget #loginform #wp-submit, .prog_wrap, .lts_layout1 a.image, .lts_layout2 a.image, .lts_layout3 a.image, .rel_tab:hover .related_img, .wpcf7-submit, .woo-slider #post_slider li.sale .woo_sale, .nivoinner .slide_button_wrap .lts_button, #accordion .slide_button_wrap .lts_button, .img_hover, p.form-submit #submit, .optimposts .type-product a.button.add_to_cart_button{background:#36abfc;} 
+		
+		.share_active, .comm_auth a, .logged-in-as a, .citeping a, .lay3 h2 a:hover, .lay4 h2 a:hover, .lay5 .postitle a:hover, .nivo-caption p a, .acord_text p a, .org_comment a, .org_ping a, .contact_submit input:hover, .widget_calendar td a, .ast_biotxt a, .ast_bio .ast_biotxt h3, .lts_layout2 .listing-item h2 a:hover, .lts_layout3 .listing-item h2 a:hover, .lts_layout4 .listing-item h2 a:hover, .lts_layout5 .listing-item h2 a:hover, .rel_tab:hover .rel_hover, .post-password-form input[type~=submit], .bio_head h3, .blog_mo a:hover, .ast_navigation a:hover, .lts_layout4 .blog_mo a:hover{color:#36abfc;}
+		#home_widgets .widget .thn_wgt_tt, #sidebar .widget .thn_wgt_tt, #footer .widget .thn_wgt_tt, .astwt_iframe a, .ast_bio .ast_biotxt h3, .ast_bio .ast_biotxt a, .nav-box a span, .lay2 h2.postitle:hover a{color:#36abfc;}
+		.pace .pace-activity{border-top-color: #36abfc!important;border-left-color: #36abfc!important;}
+		.pace .pace-progress-inner{box-shadow: 0 0 10px #36abfc, 0 0 5px #36abfc;
+		  -webkit-box-shadow: 0 0 10px #36abfc, 0 0 5px #36abfc;
+		  -moz-box-shadow: 0 0 10px #36abfc, 0 0 5px #36abfc;}
+		
+		.fotorama__thumb-border, .ast_navigation a:hover{ border-color:#36abfc!important;}
+		
+		
+		/*Text Color on BASE COLOR Element*/
+		.icon_round a, #wp-calendar #today, .moretag:hover, .search_term #searchsubmit, .error_msg #searchsubmit, .optimizer_pagenav a:hover, .ast_login_widget #loginform #wp-submit, #searchsubmit, .prog_wrap, .rel_tab .related_img i, .lay1 h2.postitle a, .nivoinner .slide_button_wrap .lts_button, #accordion .slide_button_wrap .lts_button, .lts_layout1 .icon_wrap a, .lts_layout2 .icon_wrap a, .lts_layout3 .icon_wrap a, .lts_layout1 .icon_wrap a:hover{color:#FFFFFF;}
+		.thn_post_wrap .listing-item .moretag:hover, body .lts_layout1 .listing-item .title, .lts_layout2 .img_wrap .optimizer_plus, .img_hover .icon_wrap a, body .thn_post_wrap .lts_layout1 .icon_wrap a, .wpcf7-submit, .woo-slider #post_slider li.sale .woo_sale, p.form-submit #submit, .optimposts .type-product a.button.add_to_cart_button{color:#FFFFFF;}
+
+
+
+
+/*Sidebar Widget Background Color */
+#sidebar .widget{ background:#f7f7f7;}
+/*Widget Title Color */
+#sidebar .widget .widgettitle, #sidebar .widget .widgettitle a{color:#666666;}
+#sidebar .widget li a, #sidebar .widget, #sidebar .widget .widget_wrap{ color:#333333;}
+#sidebar .widget .widgettitle, #sidebar .widget .widgettitle a{font-size:20px;}
+
+
+
+#footer .widgets .widgettitle, #copyright a{color:#eeeeee;}
+
+/*FOOTER WIDGET COLORS*/
+#footer{background: #001829;}
+#footer .widgets .widget a, #footer .widgets{color:#999999;}
+/*COPYRIGHT COLORS*/
+#copyright{background: #001829;}
+#copyright a, #copyright{color: #999999;}
+.foot_soc .social_bookmarks a{color:#999999;}
+.foot_soc .social_bookmarks.bookmark_hexagon a:before {border-bottom-color: rgba(153,153,153, 0.3);}
+.foot_soc .social_bookmarks.bookmark_hexagon a i {background:rgba(153,153,153, 0.3);}
+.foot_soc .social_bookmarks.bookmark_hexagon a:after { border-top-color:rgba(153,153,153, 0.3);}
+
+
+
+/*-------------------------------------TYPOGRAPHY--------------------------------------*/
+
+/*Post Titles, headings and Menu Font*/
+h1, h2, h3, h4, h5, h6, #topmenu ul li a, .postitle, .product_title{ font-family:Fira Sans;  }
+
+
+#topmenu ul li a{font-size:15px;}
+#topmenu ul li {line-height: 15px;}
+
+/*Body Text Color*/
+body, .home_cat a, .contact_submit input, .comment-form-comment textarea{ color:#000000;}
+.single_post_content .tabs li a{ color:#000000;}
+.thn_post_wrap .listing-item .moretag{ color:#000000;}
+	
+	
+
+/*Post Title */
+.postitle, .postitle a, .nav-box a, h3#comments, h3#comments_ping, .comment-reply-title, .related_h3, .nocomments, .lts_layout2 .listing-item h2 a, .lts_layout3 .listing-item h2 a, .lts_layout4 .listing-item h2 a, .author_inner h5, .product_title, .woocommerce-tabs h2, .related.products h2, .optimposts .type-product h2.postitle a, .woocommerce ul.products li.product h3{ text-decoration:none; color:#333333;}
+
+/*Woocommerce*/
+.optimposts .type-product a.button.add_to_cart_button:hover{background-color:#FFFFFF;color:#36abfc;} 
+.optimposts .lay2_wrap .type-product span.price, .optimposts .lay3_wrap .type-product span.price, .optimposts .lay4_wrap  .type-product span.price, .optimposts .lay4_wrap  .type-product a.button.add_to_cart_button{color:#333333;}
+.optimposts .lay2_wrap .type-product a.button.add_to_cart_button:before, .optimposts .lay3_wrap .type-product a.button.add_to_cart_button:before{color:#333333;}
+.optimposts .lay2_wrap .type-product a.button.add_to_cart_button:hover:before, .optimposts .lay3_wrap .type-product a.button.add_to_cart_button:hover:before, .optimposts .lay4_wrap  .type-product h2.postitle a{color:#36abfc;}
+
+
+
+@media screen and (max-width: 480px){
+body.home.has_trans_header .header .logo h1 a{ color:#dddddd!important;}
+body.home.has_trans_header .header #simple-menu{color:#dddddd!important;}
+}
+
+/*USER'S CUSTOM CSS---------------------------------------------------------*/
+/* background color for whole site */
+
+#sidebar .widget li a, #sidebar .widget, #sidebar .widget .widget_wrap {
+    background-color: #f9f9f9;
+}
+.wpp-thumbnail {
+    margin:0 12px 0 0;
+}
+
+body {
+    background-color: #f9f9f9
+}
+
+.editor-note {
+    border: black 1px ;
+    padding: 5px 18px;
+    background-color: bisque;
+   display:inline-block;
+   margin:0;
+}
+
+#sidebar .widget {
+    margin-bottom:0;
+}
+
+pre {
+    font-size: 16px;
+   font-family: 'Roboto Mono', monospace;
+word-break:break-all;
+overflow:auto;
+white-space:pre-wrap}
+
+.thn_post_wrap code, .org_comment code {
+       background-color:#dedede;
+       font-size:15px;
+     font-family: 'Roboto Mono', monospace;
+       padding:1px;
+}
+
+.single_wrap{width:68%}
+#sidebar{float:left}
+#.single_wrap{float:right}
+.centerrec {text-align:center}
+
+#sidebar .widget .widgettitle {
+        color:#a4286a;
+}
+
+/* mailchimp email */
+#optin {
+
+padding: 8px 15px;
+text-align: center;
+width:98%;
+}
+#optin input {
+background: #fff;
+border: 1px solid #ccc;
+font-size: 15px;
+margin-bottom: 10px;
+padding: 8px 10px;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+box-shadow: 0 2px 2px #ddd;
+-moz-box-shadow: 0 2px 2px #ddd;
+-webkit-box-shadow: 0 2px 2px #ddd
+}
+#optin input.name { background: #fff url(images/name.png) no-repeat 10px center; padding-left: 35px }
+#optin input.email { background: #fff  no-repeat 10px center; padding-left: 8px;padding-right:0 }
+#optin input[type="submit"] {
+background: #217b30  repeat-x top;
+border: 1px solid #137725;
+color: #fff;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+padding: 8px 0;
+text-shadow: -1px -1px #1c5d28;
+width: 100%
+}
+#optin input[type="submit"]:hover { color: #c6ffd1 }
+.required{background-color:#eee}
+.page_head{min-height:50px}
+.page_head .pagetitle_wrap{margin:20px auto}
+iframe{max-width:100%}
+
+.post_foot {
+   padding:5px 0;
+}
+/* Comment Section */
+.comments_template {
+  margin-top:0;
+}
+.comm_auth {
+     color: #a4286a;
+    font-size: 15px;
+}
+.comm_auth a {
+   color:#a4286a;
+}
+.comment-body {
+       padding:0;
+       border-top: none;
+}
+.comm_reply {
+    opacity:1;
+}
+.fa-reply {
+    font-size: 11px;
+}
+
+.ast_pagenav, .comments_template .navigation {
+   margin-top:20px;
+}
+.comment-form-comment {
+   margin-top:0;
+   margin-bottom:10px;
+}
+#reply-title {
+    margin:10px 0;
+}
+.comment-form-comment textarea {
+   width:96%;
+   padding:2%;
+  min-height:100px;
+  background-color:#fffffe;
+}
+.logged-in .comment-form-comment textarea {
+   width:96%;
+}
+.org_comment {
+   font-size: 15px;
+}
+.org_comment  p {
+    margin: 8px 0;
+}
+
+.org_comment pre {
+    font-size: 15px;
+    padding: 8px 10px;
+}
+.org_comment a {
+    color:#1e73be;
+    border-bottom: solid 1px #1e73be;
+}
+select#subscribe-reloaded {
+    padding: 5px;
+}
+#commentform a {
+    color: #a4286a;
+}
+p.form-submit #submit {
+   background-color: #001829;
+   padding: 15px 4%;
+}
+
+.comm_wrap {
+   margin-bottom:10px;
+}
+#reply-title small a {
+   font-size:14px;
+}
+
+p.comment-form-cookies-consent {
+    width: 100%;
+}
+
+input#wp-comment-cookies-consent {
+    width: 1%;
+}
+
+p.comment-form-subscriptions {
+    width: 100%;
+}
+
+input#subscribe-reloaded {
+    width: 1%;
+}
+
+p.form-submit {
+    width: 15%;
+    float: right;
+}
+
+/* End of Comment Section */
+#footer #searchform #s {
+    width:80%;
+}
+
+/* disable pace activity */
+.pace .pace-activity {
+        display: none;
+}
+
+/* ad code */
+div#ezoic-pub-ad-placeholder-106 {
+    text-align:center;
+}
+/*.after-post-title {
+    margin: 0 auto;
+    width: 30%;
+}*/
+.before-comment {
+    text-align:center;
+}
+.top-of-page {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* billboard */
+div#ezoic-pub-ad-placeholder-103 {
+    text-align: center;
+}
+span.widget_border {
+  width:0;
+  height:0;
+  margin-bottom:0;
+}
+#reply-title {
+  margin:0;
+}
+.commentlist li ul li{
+  list-style-type: disc;
+}
+.commentlist #respond {
+  margin-top:0;
+}
+.commentlist .depth-3 {
+   width:100%;
+}
+#hide shareaholic attribution
+.shareaholic-recommendations-attribution-container {
+   display:none;
+}
+.ng-scope.shareaholic-recommendations-attribution {
+   display:none;
+}
+.to_top {
+      background: rgba(0, 0, 0, 0.8);
+      opacity:0.6;
+}
+.textwidget &gt; p {
+    display: none;
+}
+
+#sidebar .widget_wrap {
+    padding: 10px 10%;
+}
+
+.thn_post_wrap a:link, .thn_post_wrap a:visited, .lts_lightbox_content a:link, .lts_lightbox_content a:visited, .athor_desc a:link, .athor_desc a:visited {
+       border-bottom: solid 1px #1e73be;
+}/*---------------------------------------------------------*/
+</style>
+<!--[if IE]>
+<style type="text/css">
+.text_block_wrap, .home .lay1, .home .lay2, .home .lay3, .home .lay4, .home .lay5, .home_testi .looper, #footer .widgets{opacity:1!important;}
+#topmenu ul li a{display: block;padding: 20px; background:url(#);}
+</style>
+<![endif]-->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f9f9f9; }
+</style>
+<link rel="amphtml" href="https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux/amp"><link rel="icon" href="https://www.linuxbabe.com/wp-content/uploads/2021/08/cropped-linuxbabe-logo-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.linuxbabe.com/wp-content/uploads/2021/08/cropped-linuxbabe-logo-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.linuxbabe.com/wp-content/uploads/2021/08/cropped-linuxbabe-logo-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.linuxbabe.com/wp-content/uploads/2021/08/cropped-linuxbabe-logo-270x270.png" />
+</head>
+<body class="post-template-default single single-post postid-18912 single-format-standard custom-background site_full has_trans_header not_frontpage">
+
+<div class="header_wrap layer_wrapper">
+
+<div class="header">
+<div class="center">
+<div class="head_inner">
+
+<div class="logo hide_sitetagline">
+<h2><a href="https://www.linuxbabe.com/">LinuxBabe</a></h2>
+<span class="desc">Read The Friendly Manual | Linux Sysadmin, Server &amp; Desktop</span>
+</div>
+
+
+
+<a id="simple-menu" href="#sidr"><i class="fa-bars"></i></a>
+
+<div id="topmenu" class="">
+<div class="menu-header"><ul id="menu-main-menu" class="menu"><li id="menu-item-6200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6200"><a href="#">Distros</a>
+<ul class="sub-menu">
+<li id="menu-item-8270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8270"><a href="https://www.linuxbabe.com/category/debian">Debian</a></li>
+<li id="menu-item-3525" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3525"><a href="https://www.linuxbabe.com/category/ubuntu">Ubuntu</a></li>
+<li id="menu-item-19533" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19533"><a href="https://www.linuxbabe.com/category/centos">CentOS</a></li>
+<li id="menu-item-7062" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7062"><a href="https://www.linuxbabe.com/category/opensuse">openSUSE</a></li>
+<li id="menu-item-4006" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4006"><a href="https://www.linuxbabe.com/category/arch">Arch</a></li>
+<li id="menu-item-3666" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3666"><a href="https://www.linuxbabe.com/category/fedora">Fedora</a></li>
+</ul>
+</li>
+<li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-148"><a href="#">Sysadmin</a>
+<ul class="sub-menu">
+<li id="menu-item-270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-270"><a href="https://www.linuxbabe.com/category/linux-server">Linux Server</a></li>
+<li id="menu-item-272" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-272"><a href="https://www.linuxbabe.com/category/nginx">Nginx</a></li>
+<li id="menu-item-271" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-271"><a href="https://www.linuxbabe.com/category/mariadb">MariaDB</a></li>
+<li id="menu-item-3387" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3387"><a href="https://www.linuxbabe.com/category/mail-server">Mail Server</a></li>
+<li id="menu-item-9090" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9090"><a href="https://www.linuxbabe.com/tag/backup">Backup</a></li>
+<li id="menu-item-9056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9056"><a href="https://www.linuxbabe.com/tag/vpn">VPN Server</a></li>
+<li id="menu-item-3251" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3251"><a href="https://www.linuxbabe.com/category/monitoring">Server Monitoring</a></li>
+<li id="menu-item-8204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8204"><a href="https://www.linuxbabe.com/tag/security">Security</a></li>
+</ul>
+</li>
+<li id="menu-item-2105" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-2105"><a href="https://www.linuxbabe.com/category/desktop-linux">Desktop Apps</a>
+<ul class="sub-menu">
+<li id="menu-item-4194" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4194"><a href="https://www.linuxbabe.com/category/themes">Themes</a></li>
+<li id="menu-item-3346" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3346"><a href="https://www.linuxbabe.com/category/games">Games</a></li>
+<li id="menu-item-3375" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3375"><a href="https://www.linuxbabe.com/category/multimedia">Multimedia</a></li>
+<li id="menu-item-3555" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3555"><a href="https://www.linuxbabe.com/category/softphone">Soft phone</a></li>
+<li id="menu-item-3583" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3583"><a href="https://www.linuxbabe.com/category/cloud-storage">Cloud Storage</a></li>
+<li id="menu-item-6498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6498"><a href="https://www.linuxbabe.com/tag/instant-messenger">Instant Messenger</a></li>
+<li id="menu-item-6244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6244"><a href="https://www.linuxbabe.com/tag/finance">Finance</a></li>
+</ul>
+</li>
+<li id="menu-item-6196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6196"><a href="https://www.linuxbabe.com/tag/self-hosted">Self Hosted</a></li>
+<li id="menu-item-21119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21119"><a href="https://newsletter.linuxbabe.com/subscription/wkeY5d6pg">Email Subscription</a></li>
+<li id="menu-item-11328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11328"><a href="https://www.linuxbabe.com/donation">Buy me a beer</a></li>
+<li id="menu-item-20682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20682"><a href="https://community.linuxbabe.com">Community</a></li>
+</ul></div> 
+<div class="head_soc">
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="post_wrap layer_wrapper">
+<div id="content">
+<div class="center">
+
+<div class="single_wrap">
+<div class="single_post">
+<div class="post-18912 post type-post status-publish format-standard has-post-thumbnail hentry category-desktop-linux tag-atomic-wallet tag-cryptocurrency" id="post-18912">
+
+
+
+<div class="single_post_content">
+<h1 class="postitle entry-title">How to Install and Use Atomic Wallet on Linux</h1>
+
+<div class="single_metainfo ">
+
+<i class="fa-calendar"></i><a class="comm_date post-date updated">Last Updated: December 6th, 2019</a>
+
+<i class="fa-user"></i><a class='vcard author post-author' href="https://www.linuxbabe.com/author/xiao-guoan"><span class='fn author'>Xiao Guoan (Admin)</span></a>
+
+<i class="fa-comments-o"></i><div class="meta_comm"><a href="https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux#comments">5 Comments</a></div> 
+<i class="fa-th-list"></i><div class="catag_list"><a href="https://www.linuxbabe.com/category/desktop-linux" rel="category tag">Desktop Linux</a></div>
+</div>
+
+
+<div class="thn_post_wrap">
+<p>Atomic wallet is a universal multi-assets cryptocurrency wallet. It can run on Linux, macOS, Windows, Android, and iOS. In this tutorial I will be showing you how to install and use Atomic Wallet on Linux, including Ubuntu, Linux Mint, Elementary OS, Fedora, CentOS/RHEL, OpenSUSE, and Arch Linux.</p>
+<h2>Atomic Wallet Features</h2>
+<ul>
+<li>Supports over 500 coins and tokens (Bitcoin, Ethereum, Bitcoin Cash, Litecoin, etc). You need only one password to rule them all.</li>
+<li>It allows you to add any ERC-20 tokens to your wallet.</li>
+<li>You can buy cryptocurrencies in the wallet with credit card (identity verification is need).</li>
+<li>Your private keys are encrypted on your device by default with a password.</li>
+<li>No need to download and sync blockchain on your computer.</li>
+<li>It supports atomic swap, which allows instant, peer-to-peer crypto exchange without paying fees and giving up control of private key to a centralized exchange.</li>
+<li>You can receive free tokens by participating in its AirDrop campaign.</li>
+<li>You can stake POS coins and tokens inside the wallet to get rewards.</li>
+</ul>
+<h2>How to Install Atomic Wallet on Linux</h2>
+<p>Go to <a href="https://atomicwallet.io/" target="_blank" rel="nofollow noopener noreferrer">Atomic Wallet website</a> and download the installer for your Linux distribution. There&#8217;s a deb package for Debian, RPM package for Fedora, and AppImage for Ubuntu. In fact, the AppImage can run on many other Linux distributions, like Arch Linux, CentOS/RHEL, Debian, Fedora, OpenSUSE. So I will show you how to use AppImage.</p>
+<p class="editor-note">Despite my attempt, I didn&#8217;t manage to get Atomic Wallet running on Debian. The AppImage and the deb package both failed.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux.webp 903w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux-400x181.webp 400w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux-661x299.webp 661w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux-640x289.webp 640w" sizes="(max-width: 903px) 100vw, 903px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19353 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux.png" alt="install atomic wallet on Linux" width="903" height="408" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux.png 903w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux-400x181.png 400w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux-661x299.png 661w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Linux-640x289.png 640w" sizes="(max-width: 903px) 100vw, 903px"></picture></p>
+<p>Click the <strong>Ubuntu</strong> button to download the AppImage. If your web browser ask you the following question, you should choose to save the file.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-ubuntu.webp 500w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-ubuntu-316x219.webp 316w" sizes="(max-width: 500px) 100vw, 500px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19356 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-ubuntu.png" alt="atomic wallet ubuntu" width="500" height="346" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-ubuntu.png 500w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-ubuntu-316x219.png 316w" sizes="(max-width: 500px) 100vw, 500px"></picture></p>
+<p>Then go to the download destination folder. Right-click the AppImage file and select <strong>Properties</strong> from the context menu.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage.webp 772w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage-365x219.webp 365w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage-600x360.webp 600w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage-640x384.webp 640w" sizes="(max-width: 772px) 100vw, 772px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19354 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage.png" alt="atomic wallet appimage" width="772" height="463" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage.png 772w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage-365x219.png 365w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage-600x360.png 600w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-appimage-640x384.png 640w" sizes="(max-width: 772px) 100vw, 772px"></picture></p>
+<p>Next, select the <strong>Permissions</strong> tab and tick on <strong>Allow executing file as program</strong>.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-review.webp 436w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-review-229x219.webp 229w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-review-376x360.webp 376w" sizes="(max-width: 436px) 100vw, 436px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19355 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-review.png" alt="atomic wallet review" width="436" height="417" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-review.png 436w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-review-229x219.png 229w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-review-376x360.png 376w" sizes="(max-width: 436px) 100vw, 436px"></picture></p>
+<p>After that, simply double-click the AppImage file and Atomic Wallet will be running. I found that if you have never run AppImage on your system before, then it will probably take about 30 seconds ~ 1 minute for launching the app the first time.</p>
+<p>Once it&#8217;s running, click the <strong>NEW WALLET</strong> button to create new wallet.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian.webp 942w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian-353x219.webp 353w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian-581x360.webp 581w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian-640x397.webp 640w" sizes="(max-width: 942px) 100vw, 942px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19357 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian.png" alt="atomic wallet debian" width="942" height="584" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian.png 942w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian-353x219.png 353w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian-581x360.png 581w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-debian-640x397.png 640w" sizes="(max-width: 942px) 100vw, 942px"></picture></p>
+<p>You will need to set a password to encrypt the private keys. After setting a password, it will load the wallets (Loading Ethereum wallet can take a while.) and create a backup seed phrase.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu.webp 940w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu-342x219.webp 342w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu-562x360.webp 562w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu-640x410.webp 640w" sizes="(max-width: 940px) 100vw, 940px" type="image/webp"><img loading="lazy" class="aligncenter wp-image-19358 size-full webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu.png" alt="install-atomic-wallet-on-Ubuntu" width="940" height="602" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu.png 940w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu-342x219.png 342w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu-562x360.png 562w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-Ubuntu-640x410.png 640w" sizes="(max-width: 940px) 100vw, 940px"></picture></p>
+<p>I recommend keeping your password and backup phrase in a local password manager, like KeepPassXC, then you can export your password database in an encrypted form from the KeepPassXC interface to a USB flash drive or external hard drive.</p>
+<p>To install KeepPassXC on your Linux distribution, run the following command.</p>
+<p>Debian/Ubuntu/Linux Mint/Elementary OS</p>
+<pre>sudo apt install keeppassxc</pre>
+<p>Arch Linux:</p>
+<pre>sudo pacman -S keepassxc</pre>
+<p>Fedora:</p>
+<pre>sudo dnf install keepassxc</pre>
+<p>OpenSUSE:</p>
+<pre>sudo zypper install keepassxc</pre>
+<p>If you are using CentOS/RHEL, you can <a href="https://snapcraft.io/install/keepassxc/centos" target="_blank" rel="nofollow noopener noreferrer">install keepassxc as a snap</a>.</p>
+<p>Atomic will create a private/public key pair for every coin and token supported by Atomic. The public key is the address you give to others when receiving money and the private key is like a password to your asset on the blockchain.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora.webp 940w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora-320x219.webp 320w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora-525x360.webp 525w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora-640x438.webp 640w" sizes="(max-width: 940px) 100vw, 940px" type="image/webp"><img loading="lazy" class="aligncenter wp-image-19359 size-full webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora.png" alt="install atomic wallet on fedora" width="940" height="644" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora.png 940w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora-320x219.png 320w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora-525x360.png 525w, https://www.linuxbabe.com/wp-content/uploads/2019/12/install-atomic-wallet-on-fedora-640x438.png 640w" sizes="(max-width: 940px) 100vw, 940px"></picture></p>
+<h2>How to Receive Free Tokens</h2>
+<p>Go to <code>Settings</code> -&gt; <code>Airdrop</code> tab, and sign up to receive free 10 Atomic Wallet Coin (AWC) Tokens. You can use my promo code <strong>14G7MS</strong> to receive an additional 5 tokens. Then you need to verify your email address in order to receive the tokens. AWC is currently valued at around <span class="no-wrap" data-price-previous="0.07178801005826822" data-target="price.price" data-coin-symbol="awc" data-coin-id="7430" data-price-btc="0.000009955873422">$0.07, so you will receive $1.05. </span></p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop.webp 959w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop-360x219.webp 360w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop-592x360.webp 592w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop-640x389.webp 640w" sizes="(max-width: 959px) 100vw, 959px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19360 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop.png" alt="atomic wallet airdrop" width="959" height="583" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop.png 959w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop-360x219.png 360w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop-592x360.png 592w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-airdrop-640x389.png 640w" sizes="(max-width: 959px) 100vw, 959px"></picture></p>
+<p>After verification, you will also receive an email with instructions on the airdrop rules. You will need to deposit at least 1 BNB (Binance coin) or 50 AWC on your Atomic Wallet to receive airdrop. The email will show your BNB address, which is the same BNB address you can find in your Atomic Wallet. You can also use your own promo code to invite others to use Atomic Wallet.</p>
+<h2>How to Export Private Keys</h2>
+<p>If you would like to use a particular crypto-currency on its dedicated wallet, you can go to <code>Settings</code> -&gt; <code>Private Keys</code> and enter your password to reveal the private key. Then you can copy the private key and import it to another wallet. For example, you can copy your Bitcoin private key and import it to Bitcoin Core wallet or <a href="https://www.linuxbabe.com/desktop-linux/how-to-install-use-electrum-bitcoin-wallet-ubuntu" target="_blank" rel="noopener noreferrer">the Electrum wallet</a>.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys.webp 959w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys-366x219.webp 366w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys-601x360.webp 601w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys-640x383.webp 640w" sizes="(max-width: 959px) 100vw, 959px" type="image/webp"><img loading="lazy" class="aligncenter wp-image-19361 size-full webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys.png" alt="atomic wallet export privat keys" width="959" height="574" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys.png 959w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys-366x219.png 366w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys-601x360.png 601w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-export-privat-keys-640x383.png 640w" sizes="(max-width: 959px) 100vw, 959px"></picture></p>
+<h2>Cons of Atomic Wallet</h2>
+<p>First, you can&#8217;t import your existing private keys from other wallets to Atomic Wallet.</p>
+<p>Then there&#8217;s high transaction fee for buying cryptocurrency. This service is provided by Simplex. You need to pay a 5% fee (minimal 10USD). The fee was used to be 2%. And the purchase amount needs to be at least 50 USD. I recommend buying cryptocurrency with <a href="https://www.linuxbabe.com/changelly" target="_blank" rel="noopener noreferrer">Changelly</a>, instead of using the Simplex service, because Changelly charges a 0.25% fee.</p>
+<p>If I spend 50 USD buying Binance coin with Simplex, I get <strong>2.46311845 BNB</strong>.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency.webp 715w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency-296x219.webp 296w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency-487x360.webp 487w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency-640x474.webp 640w" sizes="(max-width: 715px) 100vw, 715px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19351 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency.png" alt="atomic wallet buy cryptocurrency" width="715" height="529" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency.png 715w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency-296x219.png 296w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency-487x360.png 487w, https://www.linuxbabe.com/wp-content/uploads/2019/12/atomic-wallet-buy-cryptocurrency-640x474.png 640w" sizes="(max-width: 715px) 100vw, 715px"></picture></p>
+<p>If I spend 50 USD buying Binance coin with Changelly, I get <strong>3.18 BNB</strong>.</p>
+<p><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card.webp 654w, https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card-276x219.webp 276w, https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card-454x360.webp 454w, https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card-640x508.webp 640w" sizes="(max-width: 654px) 100vw, 654px" type="image/webp"><img loading="lazy" class="aligncenter size-full wp-image-19352 webpexpress-processed" src="https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card.png" alt="changelly buy cryptocurrency with credit card" width="654" height="519" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card.png 654w, https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card-276x219.png 276w, https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card-454x360.png 454w, https://www.linuxbabe.com/wp-content/uploads/2019/12/changelly-buy-cryptocurrency-with-credit-card-640x508.png 640w" sizes="(max-width: 654px) 100vw, 654px"></picture></p>
+<h2>How to Upgrade Atomic Wallet on Linux</h2>
+<p>If a new version of Atomic Wallet comes out, simply download the new AppImage file, give it execute permission, double-click it and you will be using the latest version.</p>
+<h2>How to Restore Your Wallet</h2>
+<p>What if your computer is stolen? In this case, you can restore your wallet with your backup phrase. Download the Atomic Wallet AppImage file on another computer, give it execute permission, and double-click to run it. Then click the <strong>Restore from backup</strong> button, enter your backup phrase and password. Wait for it to load the wallet and you are done.</p>
+<h2>Wrapping Up</h2>
+<p>I hope this tutorial helped you install and use Atomic Wallet on Linux. As always, if you found this post useful,  <a href="https://newsletter.linuxbabe.com/subscription/wkeY5d6pg" target="_blank" rel="noopener noreferrer">subscribe to our free newsletter</a> to get more tips and tricks. Take care 🙂</p>
+<div style="text-align:left" class="yasr-auto-insert-visitor"><div id='yasr_visitor_votes_18912' class='yasr-visitor-votes'><div class="yasr-custom-text-vv-before yasr-custom-text-vv-before-18912">Rate this tutorial</div><div id='yasr-vv-second-row-container-512166f1a364d' class='yasr-vv-second-row-container'><div id='yasr-visitor-votes-rater-512166f1a364d' class='yasr-rater-stars-vv' data-rater-postid='18912' data-rating='5' data-rater-starsize='32' data-rater-readonly='false' data-rater-nonce='f25966d738' data-issingular='true'></div><div class="yasr-vv-stats-text-container" id="yasr-vv-stats-text-container-512166f1a364d"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" class="yasr-dashicons-visitor-stats" data-postid="18912" id="yasr-stats-dashicon-512166f1a364d">
+<path d="M18 18v-16h-4v16h4zM12 18v-11h-4v11h4zM6 18v-8h-4v8h4z"></path>
+</svg><span id="yasr-vv-text-container-512166f1a364d" class="yasr-vv-text-container">[Total: <span id="yasr-vv-votes-number-container-512166f1a364d">1</span> Average: <span id="yasr-vv-average-container-512166f1a364d">5</span>]</span></div><div id='yasr-vv-loader-512166f1a364d' class='yasr-vv-container-loader'></div></div><div id='yasr-vv-bottom-container-512166f1a364d' class='yasr-vv-bottom-container' style='display:none'></div></div></div><div style='display:none;' class='shareaholic-canvas' data-app='recommendations' data-title='How to Install and Use Atomic Wallet on Linux' data-link='https://www.linuxbabe.com/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux' data-app-id-name='post_below_content'></div><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BlogPosting","name":"How to Install and Use Atomic Wallet on Linux","description":"Atomic wallet is a universal multi-assets cryptocurrency wallet. It can run on Linux, macOS, Windows, Android, and iOS. In this tutorial I will be showing you how to install and use Atomic Wallet on Linux, including Ubuntu, Linux Mint, Elementary OS, Fedora, CentOS\/RHEL, OpenSUSE, and Arch Linux. Atomic Wallet Features Supports over 500 coins and...","image":{"@type":"ImageObject","url":"https:\/\/www.linuxbabe.com\/wp-content\/uploads\/2019\/12\/atomic-wallet-linux.png","width":673,"height":379},"datePublished":"2019-12-05T19:24:16+08:00","headline":"How to Install and Use Atomic Wallet on Linux","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.linuxbabe.com\/desktop-linux\/how-to-install-and-use-atomic-wallet-on-linux"},"author":{"@type":"Person","name":"Xiao Guoan (Admin)"},"dateModified":"2019-12-06T14:21:37+08:00","publisher":{"@type":"Organization","name":"LinuxBabe","logo":{"@type":"ImageObject","url":"https:\/\/www.linuxbabe.com\/wp-content\/uploads\/2018\/06\/cropped-linuxbabe-blog-logo.png","width":512,"height":512}}}</script>
+</div>
+<div style="clear:both"></div>
+<div class="thn_post_wrap wp_link_pages">
+</div>
+
+
+<div class="post_foot">
+<div class="post_meta">
+<div class="post_tag">
+<div class="tag_list">
+<ul><li><i class="fa-tag"></i><a href="https://www.linuxbabe.com/tag/atomic-wallet" rel="tag">Atomic Wallet</a></li><li><i class="fa-tag"></i><a href="https://www.linuxbabe.com/tag/cryptocurrency" rel="tag">CryptoCurrency</a></li></ul> </div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="comments_template ">
+
+
+<h3 id="comments">
+5 Responses to &#8220;<a>How to Install and Use Atomic Wallet on Linux</a>&#8221;
+</h3>
+
+
+<ul class="commentlist">
+
+<li class="comment even thread-even depth-1" id="li-comment-75902">
+<div id="comment-75902" class="comment-body">
+<div class="comm_edit"></div>
+<div class="comment-author vcard">
+<div class="avatar"><img alt='' src='https://secure.gravatar.com/avatar/b2b51504f50ffd843c08f598496f911b?s=30&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g' srcset='https://secure.gravatar.com/avatar/b2b51504f50ffd843c08f598496f911b?s=60&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g 2x' class='avatar avatar-30 photo' height='30' width='30' loading='lazy' /></div>
+<div class="comm_auth">Joe</div>
+<a class="comm_date"><i class="fa-clock-o"></i>1 year ago</a>
+<div class="comm_reply">
+<i class="fa-reply"></i> <a rel='nofollow' class='comment-reply-link' href='#comment-75902' data-commentid="75902" data-postid="18912" data-belowelement="comment-75902" data-respondelement="respond" data-replyto="Reply to Joe" aria-label='Reply to Joe'>Reply</a> </div>
+</div>
+<div class="org_comment"><p>Dear Xiao,</p>
+<p>I installed Atomic on my Ubuntu 18.04 yesterday. I didn&#8217;t use the AppImage package, instead I<br />
+downloaded the .deb package (for Debian), it is fully compatible with Ubuntu.<br />
+The installation process was very simple, like any .deb package, and it is working fine now.</p>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-116089">
+<div id="comment-116089" class="comment-body">
+<div class="comm_edit"></div>
+<div class="comment-author vcard">
+<div class="avatar"><img alt='' src='https://secure.gravatar.com/avatar/b2590dd32000793166fa364f58adc60a?s=30&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g' srcset='https://secure.gravatar.com/avatar/b2590dd32000793166fa364f58adc60a?s=60&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g 2x' class='avatar avatar-30 photo' height='30' width='30' loading='lazy' /></div>
+<div class="comm_auth">Biene716</div>
+<a class="comm_date"><i class="fa-clock-o"></i>10 months ago</a>
+<div class="comm_reply">
+<i class="fa-reply"></i> <a rel='nofollow' class='comment-reply-link' href='#comment-116089' data-commentid="116089" data-postid="18912" data-belowelement="comment-116089" data-respondelement="respond" data-replyto="Reply to Biene716" aria-label='Reply to Biene716'>Reply</a> </div>
+</div>
+<div class="org_comment"><p>Hello,</p>
+<p>Can I install Atomicwallet on Raspberry Pi?</p>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-119453">
+<div id="comment-119453" class="comment-body">
+<div class="comm_edit"></div>
+<div class="comment-author vcard">
+<div class="avatar"><img alt='' src='https://secure.gravatar.com/avatar/c05fac7dc363bed6673956f3b8316c68?s=30&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g' srcset='https://secure.gravatar.com/avatar/c05fac7dc363bed6673956f3b8316c68?s=60&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g 2x' class='avatar avatar-30 photo' height='30' width='30' loading='lazy' /></div>
+<div class="comm_auth">Ciypher</div>
+<a class="comm_date"><i class="fa-clock-o"></i>10 months ago</a>
+<div class="comm_reply">
+<i class="fa-reply"></i> <a rel='nofollow' class='comment-reply-link' href='#comment-119453' data-commentid="119453" data-postid="18912" data-belowelement="comment-119453" data-respondelement="respond" data-replyto="Reply to Ciypher" aria-label='Reply to Ciypher'>Reply</a> </div>
+</div>
+<div class="org_comment"><p>Ubuntu distro uses AppImage and Debian distro uses .deb packages. Ubuntu is based on Debian so that is why (if it worked) you were able to install the .deb package on Ubuntu.</p>
+<p>To be safe Ubuntu users should use the AppImage version.</p>
+</div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-133659">
+<div id="comment-133659" class="comment-body">
+<div class="comm_edit"></div>
+<div class="comment-author vcard">
+<div class="avatar"><img alt='' src='https://secure.gravatar.com/avatar/98adbbff21b0a4f5f366a6d4131a3fcf?s=30&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g' srcset='https://secure.gravatar.com/avatar/98adbbff21b0a4f5f366a6d4131a3fcf?s=60&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g 2x' class='avatar avatar-30 photo' height='30' width='30' loading='lazy' /></div>
+<div class="comm_auth">RosesStore-DW</div>
+<a class="comm_date"><i class="fa-clock-o"></i>8 months ago</a>
+<div class="comm_reply">
+<i class="fa-reply"></i> <a rel='nofollow' class='comment-reply-link' href='#comment-133659' data-commentid="133659" data-postid="18912" data-belowelement="comment-133659" data-respondelement="respond" data-replyto="Reply to RosesStore-DW" aria-label='Reply to RosesStore-DW'>Reply</a> </div>
+</div>
+<div class="org_comment"><p>Debian is easy,</p>
+<p>~Download the .deb file -&gt;<br />
+https://get.atomicwallet.io/download/atomicwallet.deb</p>
+<p>~Set path where the .deb file is stored -&gt;<br />
+cd /home/user/Downloads/</p>
+<p>~Locate file -&gt;<br />
+ls atomicwallet.deb</p>
+<p>~Run installation -&gt;<br />
+sudo dpkg -i atomicwallet.deb</p>
+<p>It seems working for me</p>
+</div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-149057">
+<div id="comment-149057" class="comment-body">
+<div class="comm_edit"></div>
+<div class="comment-author vcard">
+<div class="avatar"><img alt='' src='https://secure.gravatar.com/avatar/b947fa9bd95e349617c69688fe632b38?s=30&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g' srcset='https://secure.gravatar.com/avatar/b947fa9bd95e349617c69688fe632b38?s=60&#038;d=https%3A%2F%2Fwww.linuxbabe.com%2Fwp-content%2Fuploads%2F2018%2F06%2Flinuxbabe-comment-avatar-120x120.png&#038;r=g 2x' class='avatar avatar-30 photo' height='30' width='30' loading='lazy' /></div>
+<div class="comm_auth">irving</div>
+<a class="comm_date"><i class="fa-clock-o"></i>7 months ago</a>
+<div class="comm_reply">
+<i class="fa-reply"></i> <a rel='nofollow' class='comment-reply-link' href='#comment-149057' data-commentid="149057" data-postid="18912" data-belowelement="comment-149057" data-respondelement="respond" data-replyto="Reply to irving" aria-label='Reply to irving'>Reply</a> </div>
+</div>
+<div class="org_comment"><p>al intentar instalar en debian, me arroja el siguiente error:<br />
+Could not parse file &#8220;/usr/share/applications/screensavers/glitchpeg.desktop&#8221;: Key file contains line ?several times a second. After a while, finds a new image to corrupt. Written by Jamie Zawinski; 2018.? which is not a key-value pair, group, or comment</p>
+</div>
+</div>
+</li>
+</ul>
+
+<div class="navigation">
+</div>
+
+<script type="text/javascript">
+                window.wpsf_timestamp_enabled = true;
+                window.wpsf_threshold = 10000;
+                window.wpsf_message = 'This site is protected by an anti-spam feature that requires {0} seconds to have elapsed between the page load and the form submission. \n\n Please close this alert window.  The form may be resubmitted successfully in {1} seconds.';
+
+                String.prototype.format = function (args) {
+                    var str = this;
+                    return str.replace(String.prototype.format.regex, function (item) {
+                        var intVal = parseInt(item.substring(1, item.length - 1));
+                        var replace;
+                        if (intVal >= 0) {
+                            replace = args[intVal];
+                        } else if (intVal === -1) {
+                            replace = "{";
+                        } else if (intVal === -2) {
+                            replace = "}";
+                        } else {
+                            replace = "";
+                        }
+                        return replace;
+                    });
+                };
+                String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
+            </script>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/desktop-linux/how-to-install-and-use-atomic-wallet-on-linux#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.linuxbabe.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><div class="comment-policy">
+<ul>
+<li>Comments with links are moderated by admin before published.</li>
+<li>Your email address will not be published.</li>
+<li>Use <strong>&lt;pre&gt; ... &lt;/pre&gt;</strong> HTML tag to quote the output from your terminal/console.</li>
+<li>Please use the community (<a href="https://community.linuxbabe.com" target="_blank">https://community.linuxbabe.com</a>) for questions unrelated to this article.</li>
+<li>I don't have time to answer every question. <a href="https://www.linuxbabe.com/donation" target="_blank">Making a donation</a> would incentivize me to spend more time answering questions. </li>
+</ul>
+</div><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><div class="comm_wrap"><p class="comment-form-author"><input placeholder="Name" id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><input placeholder="Email" id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><input placeholder="Website" id="url" name="url" type="text" value="" size="30" /></p></div>
+<script type="text/javascript">
+                            window.wpsf_javascript_enabled = true;
+                        </script>
+<script type="text/javascript">
+                            window.wpsf_timestamp_enabled = true;
+                        </script>
+<textarea id="more_comment" aria-required="true" rows="8" cols="45" name="more_comment" style="display: none;"></textarea>
+<p class="comment-form-attachment">
+<label class="comment-form-attachment__label" for="attachment">
+Attachment </label>
+<input class="comment-form-attachment__input" id="attachment" name="attachment" type="file" />
+<span class="comment-form-attachment__file-size-notice">
+The maximum upload file size: 2 MB. </span>
+<span class="comment-form-attachment__file-types-notice">
+You can upload: <abbr title="jpg, jpeg, png">image</abbr>. </span>
+<span class="comment-form-attachment__autoembed-links-notice">
+Links to YouTube, Facebook, Twitter and other services inserted in the comment text will be automatically embedded. </span>
+<span class="comment-form-attachment__drop-area">
+<span class="comment-form-attachment__drop-area-inner">
+Drop file here </span>
+</span>
+</p>
+<p class='comment-form-subscriptions'><label for='subscribe-reloaded'><input type='checkbox' name='subscribe-reloaded' id='subscribe-reloaded' value='replies' checked='checked' /> Receive notification via e-mail when someone replies to my comment.</label></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='18912' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form> </div>
+</div>
+
+</div>
+</div>
+
+<div id="sidebar" class="home_sidebar ">
+<div class="widgets">
+<div id="search-2" class="widget widget_search" data-widget-id="search-2"><div class="widget_wrap"><form role="search" method="get" id="searchform" action="https://www.linuxbabe.com/">
+<div>
+<input placeholder="Search &hellip;" type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form><span class="widget_corner"></span></div></div><div id="google_translate_widget-2" class="widget widget_google_translate_widget" data-widget-id="google_translate_widget-2"><div class="widget_wrap"><div id="google_translate_element"></div><span class="widget_corner"></span></div></div><div id="media_image-7" class="widget widget_media_image" data-widget-id="media_image-7"><div class="widget_wrap"><a href="https://www.linuxbabe.com/linux-system-security-lpic-2" target="_blank" rel="noopener"><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2020/09/linux-system-security-course-lpic-2-pluralsight.webp 300w, https://www.linuxbabe.com/wp-content/uploads/2020/09/linux-system-security-course-lpic-2-pluralsight-110x219.webp 110w, https://www.linuxbabe.com/wp-content/uploads/2020/09/linux-system-security-course-lpic-2-pluralsight-180x360.webp 180w" sizes="(max-width: 300px) 100vw, 300px" type="image/webp"><img width="300" height="600" src="https://www.linuxbabe.com/wp-content/uploads/2020/09/linux-system-security-course-lpic-2-pluralsight.jpg" class="image wp-image-20592  attachment-full size-full webpexpress-processed" alt="linux system security course lpic-2 pluralsight" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://www.linuxbabe.com/wp-content/uploads/2020/09/linux-system-security-course-lpic-2-pluralsight.jpg 300w, https://www.linuxbabe.com/wp-content/uploads/2020/09/linux-system-security-course-lpic-2-pluralsight-110x219.jpg 110w, https://www.linuxbabe.com/wp-content/uploads/2020/09/linux-system-security-course-lpic-2-pluralsight-180x360.jpg 180w" sizes="(max-width: 300px) 100vw, 300px"></picture></a><span class="widget_corner"></span></div></div>
+<div id="wpp-2" class="widget popular-posts" data-widget-id="wpp-2"><div class="widget_wrap">
+<h3 class="widgettitle">Featured Tutorials</h3> <div class="wpp-widget-placeholder" data-widget-id="wpp-2"></div>
+<span class="widget_corner"></span></div></div>
+<div id="media_image-6" class="widget widget_media_image" data-widget-id="media_image-6"><div class="widget_wrap"><h3 class="widgettitle">pCloud 65% Off Cloud Storage</h3><a href="https://www.linuxbabe.com/cloud-storage/install-pcloud-drive-ubuntu" target="_blank" rel="noopener"><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2019/11/pcloud-2TB-lifetime-263x219.webp 263w, https://www.linuxbabe.com/wp-content/uploads/2019/11/pcloud-2TB-lifetime.webp 300w" sizes="(max-width: 263px) 100vw, 263px" type="image/webp"><img width="263" height="219" src="https://www.linuxbabe.com/wp-content/uploads/2019/11/pcloud-2TB-lifetime-263x219.jpg" class="image wp-image-19233  attachment-medium size-medium webpexpress-processed" alt="pcloud 2TB lifetime" loading="lazy" style="max-width: 100%; height: auto;" title="Single's Day 75% Off Cloud Storage" srcset="https://www.linuxbabe.com/wp-content/uploads/2019/11/pcloud-2TB-lifetime-263x219.jpg 263w, https://www.linuxbabe.com/wp-content/uploads/2019/11/pcloud-2TB-lifetime.jpg 300w" sizes="(max-width: 263px) 100vw, 263px"></picture></a><span class="widget_corner"></span></div></div><div id="zoom-social-icons-widget-2" class="widget zoom-social-icons-widget" data-widget-id="zoom-social-icons-widget-2"><div class="widget_wrap"><h3 class="widgettitle">Follow us</h3>
+<ul class="zoom-social-icons-list zoom-social-icons-list--with-canvas zoom-social-icons-list--round zoom-social-icons-list--no-labels">
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="https://facebook.com/linuxbabe" target="_blank" rel="nofollow noopener noreferrer">
+<span class="screen-reader-text">facebook</span>
+<span class="zoom-social_icons-list-span social-icon socicon socicon-facebook" data-hover-rule="background-color" data-hover-color="#3b5998" style="background-color : #3b5998; font-size: 26px; padding:9px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="https://twitter.com/linuxbabe" target="_blank" rel="nofollow noopener noreferrer">
+<span class="screen-reader-text">twitter</span>
+<span class="zoom-social_icons-list-span social-icon socicon socicon-twitter" data-hover-rule="background-color" data-hover-color="#1da1f2" style="background-color : #1da1f2; font-size: 26px; padding:9px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="https://newsletter.linuxbabe.com/subscription/wkeY5d6pg" target="_blank" rel="nofollow noopener noreferrer">
+<span class="screen-reader-text">email-alt</span>
+<span class="zoom-social_icons-list-span social-icon dashicons dashicons-email-alt" data-hover-rule="background-color" data-hover-color="#1e73be" style="background-color : #1e73be; font-size: 26px; padding:9px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="https://mewe.com/p/linuxbabe" target="_blank" rel="nofollow noopener noreferrer">
+<span class="screen-reader-text">mewe</span>
+<span class="zoom-social_icons-list-span social-icon socicon socicon-mewe" data-hover-rule="background-color" data-hover-color="#17377F" style="background-color : #17377F; font-size: 26px; padding:9px"></span>
+</a>
+</li>
+</ul>
+<span class="widget_corner"></span></div></div><div id="text-26" class="widget widget_text" data-widget-id="text-26"><div class="widget_wrap"><h3 class="widgettitle">VPS Hosting 30 Days Free Trial</h3> <div class="textwidget"><p><a href="https://www.linuxbabe.com/linux-server/how-to-create-a-linux-vps-server-on-kamatera" target="_blank" rel="noopener"><picture><source srcset="https://www.linuxbabe.com/wp-content/uploads/2021/08/kamatera-VPS.webp" type="image/webp"><img loading="lazy" src="https://www.linuxbabe.com/wp-content/uploads/2021/08/kamatera-VPS.png" width="306" height="256" class="webpexpress-processed"></picture></a></p>
+</div>
+<span class="widget_corner"></span></div></div><div id="text-25" class="widget widget_text" data-widget-id="text-25"><div class="widget_wrap"> <div class="textwidget"><p><iframe loading="lazy" class="fasb-iframe-searchbox-widget" style="border: 0px none; overflow: hidden; width:100%; max-width:100%; height: 253px; box-shadow: rgba(17, 17, 17, 0.12) 0px 16px 32px;" src="https://tools.fiverr.com/?searchbox-iframe=1&amp;affid=60434&amp;widget-search-placeholder=sysadmin&amp;widget-style=1&amp;delivery-time-flag=&amp;widget-width=300" width="100%" height="253px" scrolling="no" data-origwidth="100%" data-origheight="253px"></iframe></p>
+</div>
+<span class="widget_corner"></span></div></div> </div>
+</div>
+
+</div>
+</div>
+</div>
+<a class="to_top "><i class="fa-angle-up fa-2x"></i></a>
+
+<div class="footer_wrap layer_wrapper ">
+<div id="footer">
+<div class="center">
+
+<div class="widgets">
+<ul>
+<li id="recent-posts-4" class="widget widget_recent_entries" data-widget-id="recent-posts-4"><div class="widget_wrap">
+<h3 class="widgettitle">Recent Posts</h3>
+<ul>
+<li>
+<a href="https://www.linuxbabe.com/debian/upgrade-debian-10-buster-to-debian-11-bullseye">Upgrade Debian 10 Buster to Debian 11 Bullseye From Command Line</a>
+</li>
+<li>
+<a href="https://www.linuxbabe.com/ubuntu/install-filerun-ubuntu-20-04-apache-nginx">How to Install FileRun on Ubuntu 20.04 with Apache/Nginx</a>
+</li>
+<li>
+<a href="https://www.linuxbabe.com/redhat/migrate-from-centos-8-to-rocky-linux-8-alma-linux-8">How to Migrate From CentOS 8 to Rocky Linux 8/Alma Linux 8</a>
+</li>
+<li>
+<a href="https://www.linuxbabe.com/linux-server/apache-jmeter-load-testing">How to Use Apache JMeter to Load Test Web Applications</a>
+</li>
+<li>
+<a href="https://www.linuxbabe.com/monitoring/linux-server-performance-monitoring-with-netdata">Linux Server Performance Monitoring with Netdata</a>
+</li>
+</ul>
+</li><li id="search-3" class="widget widget_search" data-widget-id="search-3"><div class="widget_wrap"><form role="search" method="get" id="searchform" action="https://www.linuxbabe.com/">
+<div>
+<input placeholder="Search &hellip;" type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form></li><li id="yasr_recent_ratings_widget-2" class="widget widget_yasr_recent_ratings_widget" data-widget-id="yasr_recent_ratings_widget-2"><div class="widget_wrap"><h3 class="widgettitle">Recent Ratings</h3><table class="yasr-widget-recent-ratings-table"><tr>
+<td width="40%" class="yasr-widget-recent-ratings-td">Vote <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-vote">5</span>
+<span class="yasr-widget-recent-ratings-from-user"> from <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-user">anonymous</span>
+</span> on<span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-title">
+<a href="https://www.linuxbabe.com/ubuntu/install-samba-server-file-share"> Install and Configure Samba Server on Ubuntu for File Sharing</a>
+</span></td>
+</tr><tr>
+<td width="40%" class="yasr-widget-recent-ratings-td">Vote <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-vote">5</span>
+<span class="yasr-widget-recent-ratings-from-user"> from <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-user">anonymous</span>
+</span> on<span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-title">
+<a href="https://www.linuxbabe.com/opensuse/apache-mariadb-php7-lamp-opensuse-leap"> How to Install Apache, MariaDB, PHP7 (LAMP) on openSUSE Leap 15.1</a>
+</span></td>
+</tr><tr>
+<td width="40%" class="yasr-widget-recent-ratings-td">Vote <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-vote">5</span>
+<span class="yasr-widget-recent-ratings-from-user"> from <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-user">anonymous</span>
+</span> on<span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-title">
+<a href="https://www.linuxbabe.com/desktop-linux/set-time-zone-and-synchronize-system-clock-to-your-time-zone-in-linux"> Set Time Zone and Synchronize System Clock to Your Time Zone in Linux</a>
+</span></td>
+</tr><tr>
+<td width="40%" class="yasr-widget-recent-ratings-td">Vote <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-vote">5</span>
+<span class="yasr-widget-recent-ratings-from-user"> from <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-user">anonymous</span>
+</span> on<span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-title">
+<a href="https://www.linuxbabe.com/virtualbox/speed-up-ubuntu-virtualbox"> How to Speed up Ubuntu 16.04 and 17.04 in VirtualBox</a>
+</span></td>
+</tr><tr>
+<td width="40%" class="yasr-widget-recent-ratings-td">Vote <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-vote">5</span>
+<span class="yasr-widget-recent-ratings-from-user"> from <span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-user">anonymous</span>
+</span> on<span class="yasr-widget-recent-ratings-text yasr-widget-recent-ratings-title">
+<a href="https://www.linuxbabe.com/mail-server/ubuntu-20-04-iredmail-server-installation"> How to Easily Set up a Full-Fledged Mail Server on Ubuntu 20.04 with iRedMail</a>
+</span></td>
+</tr></table></li> </ul>
+</div>
+
+</div>
+
+<div id="copyright" class="soc_right">
+<div class="center">
+
+<div class="copytext"><p>© LinuxBabe.Com | Read The Friendly Manual</p></div>
+
+<div class="foot_right_wrap">
+
+<div id="footer_menu" class=""><div class="menu-footer"><ul id="menu-footer-navigation" class="menu"><li id="menu-item-5686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5686"><a href="https://www.linuxbabe.com">Home</a></li>
+<li id="menu-item-5685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5685"><a href="https://www.linuxbabe.com/html-sitemap">HTML Sitemap</a></li>
+<li id="menu-item-10720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10720"><a href="https://www.linuxbabe.com/donation">Donation</a></li>
+<li id="menu-item-19635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19635"><a href="https://www.linuxbabe.com/about-me">About Me</a></li>
+<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-488"><a href="https://www.linuxbabe.com/contact-us">Contact Me</a></li>
+<li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-449"><a href="https://www.linuxbabe.com/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="https://www.linuxbabe.com/terms-of-service">Terms &#038; Conditions</a></li>
+<li id="menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-451"><a href="https://www.linuxbabe.com/disclaimer">Disclaimer</a></li>
+</ul></div></div>
+
+
+
+<div class="foot_soc">
+<div class="social_bookmarks bookmark_simple bookmark_size_normal">
+<a target="_blank" class="ast_twt" href="https://www.facebook.com/linuxbabe/"><i class="fa-twitter"></i></a> <a target="_blank" class="ast_gplus" href="https://twitter.com/linuxbabe"><i class="fa-google-plus"></i></a>
+<a target="_blank" class="ast_flckr" href="https://mewe.com/p/linuxbabe"><i class="fa-flickr"></i></a>
+</div></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div id="pum-19301" class="pum pum-overlay pum-theme-19296 pum-theme-lightbox popmake-overlay auto_open click_open" data-popmake="{&quot;id&quot;:19301,&quot;slug&quot;:&quot;mailtrain&quot;,&quot;theme_id&quot;:19296,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_open&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-19301&quot;,&quot;key&quot;:&quot;&quot;,&quot;session&quot;:false,&quot;time&quot;:&quot;20 days&quot;,&quot;path&quot;:true}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:[&quot;pum-19301&quot;],&quot;delay&quot;:&quot;15000&quot;}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:true,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" role="dialog" aria-hidden="true">
+<div id="popmake-19301" class="pum-container popmake theme-19296 pum-responsive pum-responsive-tiny responsive size-tiny">
+<div class="pum-content popmake-content" tabindex="0">
+<div data-mailtrain-subscription-widget="" data-url="https://newsletter.linuxbabe.com/subscription/wkeY5d6pg/widget"><a href="https://newsletter.linuxbabe.com/subscription/wkeY5d6pg">Subscribe to our list</a></div>
+<p><script src="https://newsletter.linuxbabe.com/subscription/widget.js"></script></p>
+</div>
+<button type="button" class="pum-close popmake-close" aria-label="Close">
+× </button>
+</div>
+</div>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/wp-spam-fighter/javascript/wp-spamfighter.js?ver=0.5.1' id='wpsf_wp-spam-fighter-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/comment-reply.min.js?ver=5.8.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1629034808' id='zoom-social-icons-widget-frontend-js'></script>
+<script type='text/javascript' id='dco-comment-attachment-js-extra'>
+/* <![CDATA[ */
+var dco_ca = {"commenting_form_not_found":"The commenting form not found."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/dco-comment-attachment/assets/dco-comment-attachment.js?ver=2.2.0' id='dco-comment-attachment-js'></script>
+<script type='text/javascript' id='yasr-global-data-js-before'>
+var yasrCommonData = {"ajaxurl":"https:\/\/www.linuxbabe.com\/wp-admin\/admin-ajax.php","visitorStatsEnabled":"yes","ajaxEnabled":"yes","loaderHtml":"<div id=\"loader-visitor-rating\" style=\"display: inline-block\">&nbsp;  <img src=https:\/\/www.linuxbabe.com\/wp-content\/plugins\/yet-another-stars-rating\/includes\/img\/loader.gif title=\"yasr-loader\" alt=\"yasr-loader\"><\/div>"}
+</script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='popup-maker-site-js-extra'>
+/* <![CDATA[ */
+var pum_vars = {"version":"1.16.2","pm_dir_url":"https:\/\/www.linuxbabe.com\/wp-content\/plugins\/popup-maker\/","ajaxurl":"https:\/\/www.linuxbabe.com\/wp-admin\/admin-ajax.php","restapi":"https:\/\/www.linuxbabe.com\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"19295","debug_mode":"","disable_tracking":"","home_url":"\/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"analytics_route":"analytics","analytics_api":"https:\/\/www.linuxbabe.com\/wp-json\/pum\/v1"};
+var pum_sub_vars = {"ajaxurl":"https:\/\/www.linuxbabe.com\/wp-admin\/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-19301":{"triggers":[{"type":"auto_open","settings":{"cookie_name":["pum-19301"],"delay":"15000"}}],"cookies":[{"event":"on_popup_open","settings":{"name":"pum-19301","key":"","session":false,"time":"20 days","path":true}}],"disable_on_mobile":true,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"19296","size":"tiny","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"lightbox","id":19301,"slug":"mailtrain"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.linuxbabe.com/wp-content/uploads/pum/pum-site-scripts.js?defer&#038;generated=1625665248&#038;ver=1.16.2' id='popup-maker-site-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/popup-maker/assets/js/vendor/mobile-detect.min.js?ver=1.3.3' id='mobile-detect-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/yet-another-stars-rating/includes/js/rater-js.min.js?ver=2.9.0' id='rater-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/yet-another-stars-rating/includes/js/tippy.all.min.js?ver=3.6.0' id='tippy-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/yet-another-stars-rating/includes/js/shortcodes/visitorVotes.js?ver=2.9.0' id='yasr-front-vv-js'></script>
+<script type='text/javascript' id='google-translate-init-js-extra'>
+/* <![CDATA[ */
+var _wp_google_translate_widget = {"lang":"en_US","layout":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.linuxbabe.com/wp-content/plugins/jetpack/_inc/build/widgets/google-translate/google-translate.min.js?ver=5.8.1' id='google-translate-init-js'></script>
+<script type='text/javascript' src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&#038;ver=5.8.1' id='google-translate-js'></script>
+<script src='https://stats.wp.com/e-202138.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.1',blog:'109478216',post:'18912',tz:'8',srv:'www.linuxbabe.com'} ]);
+	_stq.push([ 'clickTrackerInit', '109478216', '18912' ]);
+</script>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-60768269-3', 'auto');
+ ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.linuxbabe.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.linuxbabe.com/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"695c72823bcb0d4e","token":"f3d587570d094fe68c4cc8a6ec776c94","version":"2021.8.1","si":10}'></script>
+</body>
+</html>

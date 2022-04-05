@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="ru" style="scroll-behavior: smooth;">
+
+<head>
+  
+  <title>Origin Protocol</title>
+  <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"166fa52035",applicationID:"42142157"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"166fa52035","applicationID":"42142157","transactionName":"Y1xUMkRYXhIHABAMCVoWcBNYWkQICQ1LEw9RTkVIQVxSPhAKARIVDktZCUI=","queueTime":3,"applicationTime":282,"agent":""}</script>
+  <meta name="description" content="Origin Protocol is bringing NFTs and DeFi to the masses.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@originprotocol" />
+  <meta property="og:url" content="https://www.originprotocol.com" />
+  <meta property="og:type" content="website" />
+  <meta property="fb:app_id" content="124441901753956" />
+
+
+  <meta property="og:image" content="https://www.originprotocol.com/static/img/fb-og-img.png" />
+  <meta property="og:locale" content="ru" />
+  <meta property="og:title" content="Origin Protocol" />
+  <meta property="og:description" content="Origin Protocol is bringing NFTs and DeFi to the masses" />
+
+  
+  <link rel="alternate" hreflang="de" href='https://www.originprotocol.com/de' />
+  
+  <link rel="alternate" hreflang="en" href='https://www.originprotocol.com/en' />
+  
+  <link rel="alternate" hreflang="es" href='https://www.originprotocol.com/es' />
+  
+  <link rel="alternate" hreflang="fil" href='https://www.originprotocol.com/fil' />
+  
+  <link rel="alternate" hreflang="fr" href='https://www.originprotocol.com/fr' />
+  
+  <link rel="alternate" hreflang="hr" href='https://www.originprotocol.com/hr' />
+  
+  <link rel="alternate" hreflang="id" href='https://www.originprotocol.com/id' />
+  
+  <link rel="alternate" hreflang="it" href='https://www.originprotocol.com/it' />
+  
+  <link rel="alternate" hreflang="nl" href='https://www.originprotocol.com/nl' />
+  
+  <link rel="alternate" hreflang="pt" href='https://www.originprotocol.com/pt' />
+  
+  <link rel="alternate" hreflang="vi" href='https://www.originprotocol.com/vi' />
+  
+  <link rel="alternate" hreflang="tr" href='https://www.originprotocol.com/tr' />
+  
+  <link rel="alternate" hreflang="el" href='https://www.originprotocol.com/el' />
+  
+  <link rel="alternate" hreflang="ru" href='https://www.originprotocol.com/ru' />
+  
+  <link rel="alternate" hreflang="he" href='https://www.originprotocol.com/he' />
+  
+  <link rel="alternate" hreflang="ar" href='https://www.originprotocol.com/ar' />
+  
+  <link rel="alternate" hreflang="th" href='https://www.originprotocol.com/th' />
+  
+  <link rel="alternate" hreflang="ko" href='https://www.originprotocol.com/ko' />
+  
+  <link rel="alternate" hreflang="ja" href='https://www.originprotocol.com/ja' />
+  
+  <link rel="alternate" hreflang="zh_Hans" href='https://www.originprotocol.com/zh_Hans' />
+  
+  <link rel="alternate" hreflang="zh_Hant" href='https://www.originprotocol.com/zh_Hant' />
+  
+
+  
+  
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700%7CPoppins:200,300,400,500,800%7COpen+Sans:400,600,800" />
+  <link rel="stylesheet" href="/static/css/all_styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" media="all" />
+
+  <!-- Favicons generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/static/img/favicon/safari-pinned-tab.svg" color="#2585FB">
+  <link rel="shortcut icon" href="/static/img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2585FB">
+  <meta name="msapplication-config" content="/static/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#2585FB">
+
+  
+  
+  
+  
+</head>
+
+<body dir="ltr" id="ltr">
+  
+  
+
+
+<div class="navbar-holder">
+
+  <nav class="navbar navbar-expand-lg navbar-origin navbar-dark">
+  
+
+    
+
+    <div class="mobile-background d-lg-none"></div>
+    <div class="container">
+      <div class="brand-container">
+        <a class="navbar-brand" href="/ru/">
+        <div class="logo-container">
+          
+          <img src="/static/img/origin-logo.png"
+          srcset="/static/img/origin-logo@2x.png 2x, /static/img/origin-logo@3x.png 3x"
+          class="origin-logo"
+          alt="Origin Protocol logo">
+          
+        </div>
+      </a>
+    </div>
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#languageOptions" aria-controls="languageOptions" aria-expanded="false" aria-label="Toggle languages">
+        
+        <img src="/static/img/globe-icon-light.svg" alt="language options" class="globe-icon" />
+        <img src="/static/img/close-icon-light.svg" alt="collapse menu" class="close-icon" />
+        
+      </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <img src="/static/img/menu-icon-light.svg" alt="navigation menu" class="menu-icon" />
+        <img src="/static/img/close-icon-light.svg" alt="collapse menu" class="close-icon" />
+        
+      </button>
+      <div class="d-lg-none collapse navbar-collapse" id="languageOptions">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=de">Deutsch</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=en">English</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=es">Español</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=fil">Filipino</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=fr">Français</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=hr">Hrvatski</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=id">Indonesia</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=it">Italiano</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=nl">Nederlands</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=pt">Português</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=vi">Tiếng việt</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=tr">Türkçe</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=el">Ελληνικά</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link selected">Русский</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=he">עברית</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=ar">العربية</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=th">ไทย</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=ko">한국어</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=ja">日本語</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=zh_Hans">简体中文</a>
+              
+            </div>
+            
+            <div class="col-6 col-md-4">
+              
+                <a class="nav-link" href="/?lang_code=zh_Hant">繁體中文</a>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/about">	Об Origin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/team">Команда</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/investors">Инвесторы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/product">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ru/dashboard">OGN Токен</a>
+          </li>
+         
+          <!--<li class="nav-item">
+            <a class="nav-link" href="https://www.shoporigin.com" target="_blank" rel="noopener noreferrer">Магазин</a>
+          </li>-->
+          <li class="d-none d-lg-block nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Русский</a>
+            <div class="dropdown-menu language flex-wrap">
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=de">Deutsch</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=en">English</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=es">Español</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=fil">Filipino</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=fr">Français</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=hr">Hrvatski</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=id">Indonesia</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=it">Italiano</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=nl">Nederlands</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=pt">Português</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=vi">Tiếng việt</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=tr">Türkçe</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=el">Ελληνικά</a>
+                
+              
+                
+                  <div class="dropdown-item-selected">Русский</div>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=he">עברית</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=ar">العربية</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=th">ไทย</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=ko">한국어</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=ja">日本語</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=zh_Hans">简体中文</a>
+                
+              
+                
+                  <a class="dropdown-item" href="/?lang_code=zh_Hant">繁體中文</a>
+                
+              
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+</div>
+
+
+<main class="landing-page">
+  <div class="video-block screen-size-segment d-flex flex-column justify-content-center align-items-center">
+    <div id="landing-video" class="full-screen-video d-none"></div>
+    <div id="exit-fullscreen-button" class="d-none">Выход из полноэкранного режима</div>
+    <div class="background-video">
+      <div class="video-holder d-flex flex-column justify-content-end align-items-center">
+        <div id="landing-video-background" ></div>
+      </div>
+    </div>
+    <div class="video-overlay"></div>
+    <div id="landing-video-poster" class="video-overlay-poster"></div>
+    <div class="video-overlay-gradient"></div>
+    <div class="contents d-flex flex-column justify-content-center align-items-center">
+      <h1 class="video-title">Bringing NFTs and DeFi<br>to the masses</h1>
+      <button id="index-video-button" class="play-button d-flex justify-content-center align-items-center m-4">
+        <img class="ml-2" src="/static/img/landing/play-triangle.svg"/>
+      </button>
+      <div class="mt-2">Смотреть видео</div>
+      <div class="bottom clickable d-flex justify-content-center mb-4 flex-wrap">
+        <a href="https://techcrunch.com/2018/10/10/origin-protocol/" target="_blank" rel="noopener noreferrer"><img src="/static/img/landing/techcrunch.svg"/></a>
+        <a href="https://www.forbes.com/sites/leslieankney/2019/01/21/why-these-innovators-left-facebook-google-and-more-for-crypto/#7f2871a15a06" target="_blank" rel="noopener noreferrer"><img src="/static/img/landing/forbes.svg"/></a>
+        <a href="https://www.inc.com/joel-comm/why-best-blockchain-is-an-invisible-blockchain.html" target="_blank" rel="noopener noreferrer"><img src="/static/img/landing/inc.svg"/></a>
+        <a href="https://www.coindesk.com/pantera-invests-3-million-sharing-economy-token-origin/" target="_blank" rel="noopener noreferrer"><img src="/static/img/landing/coindesk.svg"/></a>
+        <a href="https://www.wsj.com/articles/origin-protocol-nabs-28-million-for-peer-to-peer-blockchain-platform-1524700028" target="_blank" rel="noopener noreferrer"><img src="/static/img/landing/wsj.svg"/></a>
+      </div>
+    </div>
+  </div>
+  <!-- Countdown section -->
+  <div class="countdown-block-TEMPHIDE d-flex flex-column justify-content-between align-items-center" style='background-color:white'>
+  <h1 class="clock-title">Never miss a drop. Sign up now!</h1>
+
+
+    <div class="segment-subtitle ml-3 mr-3">Be the first to hear when we announce big NFT drops, important partnerships, and new products. Your email will be kept private.</div>
+    <div class="email-form">
+      <form id="mailing-list" class="d-flex" method="post" action="/mailing-list/join">
+        <input id="email" class="email-input" type="email" name="email" placeholder="Адрес электронной почты">
+        <input class="ml-2" type="submit" value="">
+      </form>
+    </div>
+  </div>
+
+  <!-- Put drops here-->
+   
+  <main class="nft-page">
+  <section class="drops-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Upcoming Drops</h1>
+        </div>
+      </div>
+      <div class="row">
+       
+      <h2>Announcements coming soon</h2>
+      
+  </section>
+  <section class="drops-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Past Drops</h1>
+        </div>
+      </div>
+      <div class="row">
+        
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.goingtospace.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/subtractive/orig/fb-share-image.7c259144.jpg"/>
+        <div class="title flex text-center">Inspiration4</div>
+        <div class="subtitle flex text-center">NFT Auction</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://wccnft.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/westcoastcustoms/orig/twshare.32318edc.jpg"/>
+        <div class="title flex text-center">West Coast Customs</div>
+        <div class="subtitle flex text-center">Whips Series</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://ethboy.co" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/ethereal/orig/ethereal-share-image.3974e25a.png"/>
+        <div class="title flex text-center">Trevor Jones x Don Diablo x Alotta Money</div>
+        <div class="subtitle flex text-center">ΞTHΞRΞAL</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.michaelyamashita.com/" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/michaelyamashita/orig/m-ybg-1-4000-x-2000-1200-x-628.4cabfa31.png"/>
+        <div class="title flex text-center">Michael Yamashita</div>
+        <div class="subtitle flex text-center">M.Y. Earth Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.pendulum.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/pendulum/orig/fb-social-1200-x-628.cf91ed5e.png"/>
+        <div class="title flex text-center">Pendulum</div>
+        <div class="subtitle flex text-center">Elemental Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://au.rollingstone.com/nft" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/brag/orig/tonesrsnft-1200-x-628.275e74d6.jpeg"/>
+        <div class="title flex text-center">Rolling Stone Australia x Tones And I</div>
+        <div class="subtitle flex text-center">Official NFT Release</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.chachalucha.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/chachalucha/orig/facebook.c80c3a16.png"/>
+        <div class="title flex text-center">George Lopez x Sabet x BLK PRL</div>
+        <div class="subtitle flex text-center">Cha Cha Lucha</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.useum.org" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/useum/orig/share-fb.f6235e3e.jpg"/>
+        <div class="title flex text-center">USEUM</div>
+        <div class="subtitle flex text-center">&#34;CHAOS&#34; by Steve Simpson</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.welcometokshmr.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/kshmr/ogn-social-share-1200-x-630.e7ed62a2.jpg"/>
+        <div class="title flex text-center">KSHMR</div>
+        <div class="subtitle flex text-center">Harmonica Andromeda</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.usatoday.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/gannett/orig/microsoft-teams-image-27.3bf3a83b.png"/>
+        <div class="title flex text-center">USA Today</div>
+        <div class="subtitle flex text-center">To The Moon</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.monoxkii.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://nft.monoxkii.com/assets/lg/kiixmono_socialshare.png"/>
+        <div class="title flex text-center">MonoNeon x Kii Arens</div>
+        <div class="subtitle flex text-center">NFT Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.obey422.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://nft.obey422.com/assets/lg/social.png"/>
+        <div class="title flex text-center">Mike Dean x Shepard Fairey</div>
+        <div class="subtitle flex text-center">OBEY 4:22 Series</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://charliebitme.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://www.charliebitme.com/assets/lg/charliebitme_socialshare_narrow.png"/>
+        <div class="title flex text-center">Charlie Bit Me</div>
+        <div class="subtitle flex text-center">1 of 1 Viral Video</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.micro.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://nft.micro.com/assets/lg/micro-social.png"/>
+        <div class="title flex text-center">Micro</div>
+        <div class="subtitle flex text-center">Genesis Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.bassjackers.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://nft.bassjackers.com/assets/lg/bassjackers-social.png"/>
+        <div class="title flex text-center">Bassjackers</div>
+        <div class="subtitle flex text-center">Welcome To The Future</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://tabong.brave.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.ogn.app/brave/orig/brave-share-graphic.ec752f98.png"/>
+        <div class="title flex text-center">Brave</div>
+        <div class="subtitle flex text-center">Tabong Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.ryantedder.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://nft.ryantedder.com/assets/lg/ryan-social.png"/>
+        <div class="title flex text-center">Ryan Tedder</div>
+        <div class="subtitle flex text-center">NFT Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://wtf.dudewithsign.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://dudewithsign.ogn.app/assets/lg/facebook_image.png"/>
+        <div class="title flex text-center">Dude With Sign</div>
+        <div class="subtitle flex text-center">WTF Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.jakepaul.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://nft.jakepaul.com/static/images/jakepaul_twitter_image.324054cc.jpg"/>
+        <div class="title flex text-center">Jake Paul</div>
+        <div class="subtitle flex text-center">The Future of Boxing</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.lupefiasco.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://nft.lupefiasco.com/static/images/lupe_fiasco_facebook_image.4de5f4bf.jpg"/>
+        <div class="title flex text-center">Lupe Fiasco</div>
+        <div class="subtitle flex text-center">Food &amp; Liquor Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+            <div class="drop-card col-12 col-md-4">
+               
+              <a href="https://nft.3lau.com" target="_blank">
+    <div class="nft-card">
+        <img src="https://partner-assets-prod.s3.amazonaws.com/blau/blau-social.jpg"/>
+        <div class="title flex text-center">3LAU</div>
+        <div class="subtitle flex text-center">Ultraviolet Collection</div>
+    </div>  
+</a>   
+                    
+            </div>
+          
+        </div> 
+      </div>
+        
+      </div>
+<!-- skip filtering for now -->
+<!--     <div class="d-flex justify-content-center align-items-center">
+      
+      <a class="mt-6 btn btn-primary d-flex justify-content-center align-items-center" href="/en/?allPast=true">
+        Посмотреть больше
+      </a>
+       
+    </div>  -->
+  </section>
+</main> 
+   
+
+  <!-- Buy and Sell on Origin section -->
+  <!-- origin-marketplace-0.23.16.apk -->
+  <div class="buy-sell-block d-flex flex-column justify-content-between align-items-center px-3 px-md-0">
+    <h1>Where top creators launch their NFTs</h1>
+    <div class="segment-subtitle mx-3">Origin has hosted record-breaking NFT sales for top musicians, celebrities and creators. Sell NFTs on your own website, not someone else's marketplace.</div>
+    <a class="mb-5 mt-5 btn btn-dark d-flex justify-content-center align-items-center" href="https://share.hsforms.com/1y9oMr3DSRg-QSnfPoaYY0Qbye5b">
+      Interested in running an NFT sale?</a>
+
+      <div class="container mb-6 nft-pitch">
+        <div class="row">
+          <div class="col-sm text-center p-4 custom-domain">
+            <div class="img-wrapper">
+              <img src="/static/img/landing/nft-1.png" srcset="/static/img/landing/nft-1@2x.png 2x, /static/img/landing/nft-1@3x.png 3x">
+            </div>
+            <p>You control the experience. Host your NFT sale on your own domain and start growing your community.</p>
+          </div>
+          <div class="col-sm text-center p-4 more-sales inline-table">
+            <div class="img-wrapper">
+              <img src="/static/img/landing/nft-2.png" srcset="/static/img/landing/nft-2@2x.png 2x, /static/img/landing/nft-2@3x.png 3x">
+            </div>
+            <p>Run a more profitable sale with time-limited open-editions or a unique leaderboard auction.</p>
+          </div>
+          <div class="col-sm text-center p-4 join-ogn">
+            <div class="img-wrapper">
+              <img src="/static/img/landing/nft-3.png" srcset="/static/img/landing/nft-3@2x.png 2x, /static/img/landing/nft-3@3x.png 3x">
+            </div>
+            <p>Participate in the network with OGN. Available on top exchanges like Coinbase and Binance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="buy-sell-block ousd-pitch d-flex flex-column justify-content-between align-items-center px-3 px-md-0">
+    <div class="container text-center">
+      <h1 class="pt-3">Origin Dollar is the first stablecoin that earns yield while sitting in your wallet</h1>
+      <p class="d-none d-sm-block">Get access to exciting DeFi returns, with none of the hassles.</p>
+      <a class="mb-5 mt-5 btn justify-content-center align-items-center" href="https://www.ousd.com">
+        Learn more about OUSD</a>
+      <p class="d-none d-sm-block">Currently earning</p>
+      <h2>% APY</h2>
+
+
+    </div>
+  </div>
+  <!-- Decentralised marketplaces inevitable -->
+  <!-- <div class="decentralised-marketplaces d-flex flex-column justify-content-center align-items-center">
+    <h1 class="segment-title ml-4 mr-4">Коммерция на блокчейне - это будущее</h1>
+    <div class="segment-subtitle ml-3 mr-3">Блокчейн полностью изменит онлайн-торговлю и позволит как покупателям, так и продавцам получать выгоду от снижения затрат и улучшения инфраструктуры</div>
+    <div class="tiles-holder d-flex justify-content-center flex-wrap">
+      <div class="d-flex flex-column tile align-items-center mb-5 mb-md-0">
+        <div class="image-holder d-flex align-items-center justify-content-center">
+          <img class="mw-200" src="/static/img/landing/lower-fees@2x.jpg"/>
+        </div>
+        <div class="tile-name">Снижение комиссий</div>
+        <div class="tile-text">Покупатели и продавцы могут в среднем экономить 20-30% за счет отсутствия посредников</div>
+      </div>
+      <div class="d-flex flex-column tile align-items-center mb-5 mb-md-0">
+        <div class="image-holder d-flex align-items-center justify-content-center">
+          <img class="mw-200" src="/static/img/landing/better-incentives@2x.jpg"/>
+        </div>
+        <div class="tile-name">Лучшие стимулы</div>
+        <div class="tile-text">Каждый может владеть долей в сети, внося свой вклад в ее рост</div>
+      </div>
+      <div class="d-flex flex-column tile align-items-center mb-5 mb-md-0">
+        <div class="image-holder d-flex align-items-center justify-content-center">
+          <img class="mw-200" src="/static/img/landing/increased-access@2x.jpg"/>
+        </div>
+        <div class="tile-name">Расширенный доступ</div>
+        <div class="tile-text">2 миллиарда людей без доступа к банковским услугам смогут получить доступ к новым рынкам по всему миру</div>
+      </div>
+      <div class="d-flex flex-column tile align-items-center mb-5 mb-md-0">
+        <div class="image-holder d-flex align-items-center justify-content-center">
+          <img class="mw-200" src="/static/img/landing/more-resilience@2x.jpg"/>
+        </div>
+        <div class="tile-name">Большая устойчивость</div>
+        <div class="tile-text">Коммерция на блокчейне не может быть заблокирована или закрыта</div>
+      </div>
+    </div>
+  </div> -->
+  <!-- World class team -->
+  <div class="world-class d-flex flex-column justify-content-center align-items-center">
+    <h1 class="segment-title ml-4 mr-4">Origin имеет команду мирового класса</h1>
+    <div class="segment-subtitle ml-3 mr-3">Нашу команду возглавляют серийные предприниматели, основатель PayPal, ранние сотрудники YouTube, а также инженерные менеджеры Google и Dropbox.</div>
+    <div class="d-flex logos-holder mt-4 justify-content-center align-items-center flex-wrap">
+        <img src="/static/img/landing/paypal-logo.svg"/>
+        <img src="/static/img/landing/youtube-logo.svg"/>
+        <img src="/static/img/landing/google-logo.svg"/>
+        <img src="/static/img/landing/dropbox-logo.svg"/>
+    </div>
+    <a class="white-button-blue-border mt-4" href="/team">Узнайте больше о нашей команде</a>
+    <div class="mw-940 d-flex justify-content-center">
+      <img class="mt-5 mb-5 pb-3 team_img align-self-center" src="/static/img/landing/team-photo@3x.jpg"/>
+    </div>
+  </div>
+
+  <!-- Backed by venture capital firms -->
+  <div class="video-block vc-backed screen-size-segment d-flex flex-column justify-content-between align-items-center">
+    <div id="landing-video2" class="full-screen-video d-none" ></div>
+    <div class="background-video">
+      <div class="video-holder d-flex flex-column justify-content-end align-items-center">
+        <div id="landing-video-background2" ></div>
+      </div>
+    </div>
+    <div class="video-overlay blue"></div>
+    <div id="landing-video-poster2" class="video-overlay-poster"></div>
+    <div class="contents d-flex flex-column justify-content-between align-items-center">
+      <h1 class="video-title small mt-5 pt-4">Нас поддерживают ведущие венчурные компании и инвесторы в Силиконовой долине и во всем мире</h1>
+      <button id="landing-video-button2" class="play-button d-flex justify-content-center align-items-center m-4">
+        <img class="ml-2" src="/static/img/landing/play-triangle.svg"/>
+      </button>
+      <div class="watch mt-2 mb-auto">Смотреть видео</div>
+      <div class="bottom d-flex justify-content-center flex-wrap">
+        <img src="/static/img/landing/pantera.svg"/>
+        <img src="/static/img/landing/foundation-capital.svg"/>
+        <img src="/static/img/landing/preangel.svg"/>
+        <img src="/static/img/landing/hashed.svg"/>
+      </div>
+      <a class="button mb-md-6 mb-5" href="/investors">Узнайте больше о наших инвесторах</a>
+    </div>
+  </div>
+  <!-- Featured partner -->
+  <div class="featured-partner d-flex flex-column justify-content-center align-items-center">
+    <h1 class="segment-title ml-4 mr-4">Некоторые из партнеров</h1>
+    <div class="container mb-5">
+      <div class="partners row">
+
+        <div class="col-12 col-md-4 col-sm-6 text-center">
+          <a target="_blank" rel="noopener noreferrer" href="https://aws.amazon.com/blogs/awsmarketplace/launch-a-blockchain-powered-ecommerce-store-with-dshop-in-aws-marketplace/">
+            <img src="/static/img/landing/partner-amazon.png" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6 text-center">
+          <a target="_blank" rel="noopener noreferrer" href="https://btcmanager.com/samsung-blockchain-wallet-origin-marketplace-app/">
+            <img src="/static/img/landing/partner-samsung.png" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6 text-center">
+          <a target="_blank" rel="noopener noreferrer" href="https://coinmarketcap.com/headlines/news/origin-protocol-and-google-cloud/">
+            <img src="/static/img/landing/partner-google.png" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6 text-center">
+          <a target="_blank" rel="noopener noreferrer" href="https://brave.com/brave-launches-new-swag-store-powered-by-origin/">
+            <img src="/static/img/landing/partner-brave.png" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6 text-center">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.binance.com/en/support/articles/360038151092">
+            <img src="/static/img/landing/partner-binance.png" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6 text-center">
+          <a target="_blank" rel="noopener noreferrer" href="https://medium.com/originprotocol/how-origin-uses-chainlink-oracles-to-secure-ousd-bff5601e840e">
+            <img src="/static/img/landing/partner-chainlink.png" />
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Featured video -->
+  <div class="featured-video d-flex flex-column justify-content-center align-items-center">
+    <h1 class="segment-title ml-4 mr-4">Избранные Видео</h1>
+    <div class="tiles-holder d-flex justify-content-center flex-wrap">
+      
+        <div class="col-12 col-md-4 video-item" data-category="featured">
+          <a class="image-video-link" href="/ru/video/coinlist-founder-decentralized-marketplace-future">
+            <img src="/static/img/videos/sLCk9-d-56E.jpg" />
+            <div class="overlay hide hover-show justify-content-center align-items-center">
+              <img class="play" src="/static/img/landing/play-triangle.svg" />
+            </div>
+            <div class="overlay d-flex justify-content-end align-items-end">
+              <div class="duration mb-2 mr-2">2:03</div>
+            </div>
+          </a>
+          <a href="/video/coinlist-founder-decentralized-marketplace-future" class="title">
+            CoinList Founder Discusses Decentralized Marketplaces of the Future
+          </a>
+        </div>
+      
+        <div class="col-12 col-md-4 video-item" data-category="featured">
+          <a class="image-video-link" href="/ru/video/fortune-magazine-with-origin-founders">
+            <img src="/static/img/videos/e70bvBw1oOo.jpg" />
+            <div class="overlay hide hover-show justify-content-center align-items-center">
+              <img class="play" src="/static/img/landing/play-triangle.svg" />
+            </div>
+            <div class="overlay d-flex justify-content-end align-items-end">
+              <div class="duration mb-2 mr-2">10:34</div>
+            </div>
+          </a>
+          <a href="/video/fortune-magazine-with-origin-founders" class="title">
+            Fortune Magazine's Balancing the Ledger with Origin's Founders
+          </a>
+        </div>
+      
+        <div class="col-12 col-md-4 video-item" data-category="featured">
+          <a class="image-video-link" href="/ru/video/steve-chen-youtube-founder">
+            <img src="/static/img/videos/qNj1qRZeeaM.jpg" />
+            <div class="overlay hide hover-show justify-content-center align-items-center">
+              <img class="play" src="/static/img/landing/play-triangle.svg" />
+            </div>
+            <div class="overlay d-flex justify-content-end align-items-end">
+              <div class="duration mb-2 mr-2">2:47</div>
+            </div>
+          </a>
+          <a href="/video/steve-chen-youtube-founder" class="title">
+            YouTube Founder and Origin Investor Discusses Strength of Origin Team
+          </a>
+        </div>
+      
+    </div>
+    <a class="white-button-blue-border" href="/videos">Смотрите больше видео</a>
+  </div>
+   <footer class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 pr-3 pr-md-4 d-flex flex-column">
+        <div class="mailing-list mb-5 mb-md-4">
+          <div class="section-title">Оставайтесь на связи</div>
+          <p>Подпишитесь, чтобы оставаться на связи. Ваша электронная почта останется конфиденциальной.</p>
+          <form id="mailing-list-footer" class="email-input input-group" method="post" action="/mailing-list/join">
+            <input id="email" name="email" type="email" class="form-control" placeholder="Введите вашу электронную почту" aria-label="Your email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary" type="submit">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="copyright-text flex-column mt-auto d-none d-md-flex">
+          <div>Copyright ©  2021 Origin Protocol Inc. Все права защищены.</div>
+          <div class="mt-2">
+            <a class="pr-2" href="https://help.originprotocol.com">
+              Помощь
+            </a>
+            <a class="pr-2" href="/ru/tos">
+              Условия предоставления услуг
+            </a>
+            <a href="/ru/privacy">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 pl-3 pl-md-4">
+        <div class="row footer-links">
+          <div class="col-4 d-flex flex-column">
+            <strong>Organization</strong>
+            <a href="/ru/about">	Об Origin</a>
+            <a href="/ru/team">Команда</a>
+            <a href="/ru/investors">Инвесторы</a>
+            <!-- <a href="https://store.originprotocol.com">Store</a> -->
+            <a href="https://angel.co/originprotocol/jobs">Вакансии</a>
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <strong>Products</strong>
+            <a href="/ru/product">NFTs & more</a>
+            <a href="https://www.ousd.com">OUSD</a>
+            <a href="/ru/dashboard">OGN</a>
+          </div>
+          <div class="col-4 d-flex flex-column">
+            <strong>Resources</strong>
+            <a href="/ru/litepaper">Litepaper</a>
+            <a href="/ru/videos">Видео</a>
+            <a href="https://github.com/originprotocol">GitHub</a>
+            <a href="https://vote.originprotocol.com">Управление</a>
+          </div>
+      
+        </div>
+        <div class="social-links mt-5">
+          <a href="https://www.facebook.com/originprotocol" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Facebook" data-placement="top">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/originprotocol" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Twitter" data-placement="top">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://blog.originprotocol.com" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Blog" data-placement="top">
+            <i class="fab fa-medium-m"></i>
+          </a>
+          <a href="https://youtube.com/c/originprotocol" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="YouTube" data-placement="top">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://instagram.com/originprotocol" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Instagram" data-placement="top">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://t.me/originprotocol" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Telegram" data-placement="top">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+          <a href="https://www.reddit.com/r/originprotocol/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Reddit" data-placement="top">
+            <i class="fab fa-reddit-alien"></i>
+          </a>
+          <a href="https://discord.gg/jyxpUSe" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Discord" data-placement="top">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="#" data-container="body" data-toggle="tooltip" title="" data-original-title="<img class='tooltip-img' src='/static/img/origin-weibo-qr.png' />">
+            <i class="fab fa-weibo"></i>
+          </a>
+          <a href="#" data-container="body" data-toggle="tooltip" title="" data-original-title="<img class='tooltip-img' src='/static/img/origin-wechat-qr.png' />">
+            <i class="fab fa-weixin"></i>
+          </a>
+          
+            <a href="https://vk.com/originprotocol" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="VK" data-placement="top">
+              <i class="fab fa-vk"></i>
+            </a>
+          
+          </div>
+      </div>
+      <div class="d-flex d-md-none col-12">
+        <div class="copyright-text d-flex flex-column">
+          <div>Copyright ©  2021 Origin Protocol Inc. Все права защищены.</div>
+          <div class="mt-2">
+            <a class="pr-2" href="https://help.originprotocol.com">
+              Помощь
+            </a>
+            <a class="pr-2" href="/ru/tos">
+              Условия предоставления услуг
+            </a>
+            <a href="/ru/privacy">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+
+
+  
+  <script src="/static/js/all_javascript.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  
+  
+  
+  
+  <script>
+    /* Google Analytics */
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-106384880-1', {
+      'siteSpeedSampleRate': 100
+    });
+    ga('send', 'pageview');
+
+    /* FB pixel */
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1637426076553052');
+    fbq('track', 'PageView');
+
+    /* <![CDATA[ */
+    var google_conversion_id = 825554032;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+
+    /* Twitter pixel */
+    ! function (e, t, n, s, u, a) {
+      e.twq || (s = e.twq = function () {
+          s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src =
+        '//static.ads-twitter.com/uwt.js',
+        a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+    }(window, document, 'script');
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq('init', 'nzvmf');
+    twq('track', 'PageView');
+
+    /* ]]> */
+  </script>
+
+  <script src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" role="presentation"
+        src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/825554032/?guid=ON&amp;script=0" />
+    </div>
+  </noscript>
+
+  <noscript><img height="1" width="1" style="display:none" role="presentation"
+      src="https://www.facebook.com/tr?id=1637426076553052&ev=PageView&noscript=1" /></noscript>
+  
+  <script type='text/javascript'>
+
+  // setTimeout(function() {
+  //   alertify.log("<div class='telegram-btn-container'>Покупайте или Продавайте на Origin<br><br><a href='/mobile' role='button' class='telegram-btn btn btn-primary btn-min-size'>Скачайте Приложение</a></div>", "default", 0)
+  // }, 2000);
+
+  
+    
+  
+
+</script>
+
+  
+</body>
+
+</html>

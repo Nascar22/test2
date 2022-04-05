@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Litecoin (LTC) Halving	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/litecoin-halving/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/litecoin-halving</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 17:40:39 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Akash Chaudhary		</title>
+		<link>https://atomicwallet.io/blog/academy/litecoin-halving#comment-114</link>
+
+		<dc:creator><![CDATA[Akash Chaudhary]]></dc:creator>
+		<pubDate>Mon, 27 Apr 2020 19:12:21 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=2833#comment-114</guid>
+
+					<description><![CDATA[ LTC is one of the oldest coin with huge potential. Halving is one the major event for any coin which can surge the price of that coin so much higher.]]></description>
+			<content:encoded><![CDATA[<p> LTC is one of the oldest coin with huge potential. Halving is one the major event for any coin which can surge the price of that coin so much higher.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

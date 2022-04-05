@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Ethereum Network Fees: Explained	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/ethereum-network-fees/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/ethereum-network-fees</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 18:03:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Abdul		</title>
+		<link>https://atomicwallet.io/blog/academy/ethereum-network-fees#comment-154</link>
+
+		<dc:creator><![CDATA[Abdul]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 17:47:24 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=788#comment-154</guid>
+
+					<description><![CDATA[  Sending cryptos around within a jiffy takes lesser charges than sending Fiat, I hope the feds should know this. 
+God bless satoshi.]]></description>
+			<content:encoded><![CDATA[<p>  Sending cryptos around within a jiffy takes lesser charges than sending Fiat, I hope the feds should know this.<br />
+God bless satoshi.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

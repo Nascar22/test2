@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Block Explorer: Explained	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/block-explorer/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/block-explorer</link>
+	<description></description>
+	<lastBuildDate>Thu, 24 Sep 2020 13:32:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Mazel CrypTOV		</title>
+		<link>https://atomicwallet.io/blog/academy/block-explorer#comment-221</link>
+
+		<dc:creator><![CDATA[Mazel CrypTOV]]></dc:creator>
+		<pubDate>Mon, 18 May 2020 05:48:55 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=800#comment-221</guid>
+
+					<description><![CDATA[ Very well explained and detailed. Thanks for sharing this very informative article.]]></description>
+			<content:encoded><![CDATA[<p> Very well explained and detailed. Thanks for sharing this very informative article.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Abdul		</title>
+		<link>https://atomicwallet.io/blog/academy/block-explorer#comment-153</link>
+
+		<dc:creator><![CDATA[Abdul]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 17:44:08 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=800#comment-153</guid>
+
+					<description><![CDATA[  Wow, I really appreciate this, thanks for sharing, now have better knowledge on it.]]></description>
+			<content:encoded><![CDATA[<p>  Wow, I really appreciate this, thanks for sharing, now have better knowledge on it.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

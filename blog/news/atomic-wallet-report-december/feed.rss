@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Atomic Wallet Report in December	</title>
+	<atom:link href="https://atomicwallet.io/blog/news/atomic-wallet-report-december/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/news/atomic-wallet-report-december</link>
+	<description></description>
+	<lastBuildDate>Tue, 15 Jun 2021 21:57:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Michael Michael		</title>
+		<link>https://atomicwallet.io/blog/news/atomic-wallet-report-december#comment-178</link>
+
+		<dc:creator><![CDATA[Michael Michael]]></dc:creator>
+		<pubDate>Sat, 02 May 2020 16:24:27 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=10160#comment-178</guid>
+
+					<description><![CDATA[  I am impressed by the rate of growth recorded by the project. Congratulations to the team and the entire Atomic community.]]></description>
+			<content:encoded><![CDATA[<p>  I am impressed by the rate of growth recorded by the project. Congratulations to the team and the entire Atomic community.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: CryptoP		</title>
+		<link>https://atomicwallet.io/blog/news/atomic-wallet-report-december#comment-169</link>
+
+		<dc:creator><![CDATA[CryptoP]]></dc:creator>
+		<pubDate>Sat, 02 May 2020 07:27:40 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=10160#comment-169</guid>
+
+					<description><![CDATA[  Brave team. Able to achieve great milestones in 2019.]]></description>
+			<content:encoded><![CDATA[<p>  Brave team. Able to achieve great milestones in 2019.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

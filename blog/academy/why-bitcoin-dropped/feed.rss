@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: What dumped Bitcoin price?	</title>
+	<atom:link href="https://atomicwallet.io/blog/academy/why-bitcoin-dropped/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog/academy/why-bitcoin-dropped</link>
+	<description></description>
+	<lastBuildDate>Thu, 25 Jun 2020 17:04:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+	<item>
+		<title>
+		By: Abdul		</title>
+		<link>https://atomicwallet.io/blog/academy/why-bitcoin-dropped#comment-144</link>
+
+		<dc:creator><![CDATA[Abdul]]></dc:creator>
+		<pubDate>Fri, 01 May 2020 17:08:16 +0000</pubDate>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=852#comment-144</guid>
+
+					<description><![CDATA[  Sometimes I just believe that one day bitcoin will make me a millionaire cos it never dissapoint,but until then I will hold my bitcoin on atomicwallet ????]]></description>
+			<content:encoded><![CDATA[<p>  Sometimes I just believe that one day bitcoin will make me a millionaire cos it never dissapoint,but until then I will hold my bitcoin on atomicwallet ????</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

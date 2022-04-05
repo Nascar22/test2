@@ -1,0 +1,1722 @@
+
+   <html translate="no">
+   <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	 
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" />
+	<link rel="stylesheet" href="assets/css/theme.min.css?v=2.0" />
+
+	<title>Home - Reserve</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png?v=2.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png?v=2.0">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png?v=2.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png?v=2.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png?v=2.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png?v=2.0">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png?v=2.0">
+    <meta name="theme-color" content="#ffffff">
+
+	  
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/js/lottie.js?v=2.0"></script>
+	<script src="assets/js/jquery.inview.js?v=2.0"></script>
+	<script>
+		var __host = window.location.origin;
+	</script>
+</head>
+<script>
+	////////////
+	/// Auto Lang Selector
+	////////////
+
+	var userLang = navigator.language.substring(0, 2) || navigator.userLanguage.substring(0, 2);
+	var availableLang = ["/en/", "/es/", ];
+	var curServ = window.origin;
+	var curPath = String(window.location.pathname);
+	var pathLang = '';
+	var isAvailableLang = false;
+
+	if(curPath == '/') {
+        curPath = '';
+	}
+
+	for (let i = 0; i < availableLang.length; i++) {
+        let element = availableLang[i];
+
+        if(curPath.includes(element)){
+            pathLang = element;
+        }
+
+        if(userLang == element.replaceAll('/','')){
+            isAvailableLang = true;
+        }
+
+        if(window.location.pathname.includes(element)){
+            document.documentElement.lang = element.replaceAll('/','');
+        }
+	};
+
+	curPath = curPath.replaceAll(pathLang,'');
+
+	if(curPath[0] == '/'){
+        curPath = curPath.replace('/','');
+	}
+
+	totalPath = window.origin + '/' + userLang + '/' + curPath;
+
+	if(!localStorage.getItem('auto-lang') && isAvailableLang){
+        localStorage.setItem('auto-lang',userLang);
+        window.location.href = totalPath;
+	}
+</script>
+   <body class="theme-light  independent_page  home-page unthemed"   id="top">
+      <nav class="sidenav" id="main-sidenav">
+    <div class="lang dropdown hide" id="lang-drop">
+	<a class="btn dropdown-toggle" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M26 23.612C25.2281 23.612 24.4613 23.612 23.6895 23.6222C23.527 23.6222 23.4559 23.5714 23.4051 23.419C22.9023 21.921 22.3895 20.428 21.8918 18.9249C21.8258 18.7167 21.7293 18.6558 21.516 18.6608C19.4594 18.671 17.4027 18.671 15.3461 18.6608C15.1277 18.6608 15.0414 18.737 14.9754 18.9351C14.4777 20.428 13.9699 21.9108 13.4723 23.4038C13.4164 23.5663 13.3555 23.6272 13.1727 23.6272C12.4211 23.6171 11.6695 23.6222 10.8926 23.6222C10.923 23.5155 10.9383 23.4343 10.9688 23.3581C12.8781 18.0108 14.7773 12.6737 16.6715 7.33154C16.7324 7.15889 16.8086 7.10303 16.9914 7.10303C17.9563 7.11318 18.9211 7.11318 19.8859 7.10303C20.0738 7.10303 20.1449 7.17412 20.2059 7.33662C22.1 12.6687 23.9992 18.0007 25.8934 23.3378C25.9187 23.414 25.9594 23.4901 25.9949 23.5663C26 23.5765 26 23.5968 26 23.612ZM15.9148 16.1929C17.616 16.1929 19.2664 16.1929 20.9473 16.1929C20.1094 13.994 19.2867 11.8206 18.4387 9.58115C17.5855 11.8206 16.7629 13.9788 15.9148 16.1929Z" fill="black"/>
+            <path d="M0 6.2957C1.95 6.2957 3.90508 6.2957 5.88555 6.2957C5.88555 5.18867 5.88555 4.10195 5.88555 3C6.72852 3 7.54609 3 8.39414 3C8.39414 4.07656 8.39414 5.14805 8.39414 6.25508C10.3543 6.25508 12.284 6.25508 14.2289 6.25508C14.2289 7.09297 14.2289 7.89531 14.2289 8.72813C12.2891 8.72813 10.3492 8.72813 8.35352 8.72813C8.48555 9.15977 8.59727 9.55586 8.7293 9.9418C9.28281 11.6023 10.2375 13.0141 11.4664 14.248C11.7254 14.507 11.9844 14.7559 12.2383 15.0199C12.2941 15.0758 12.3449 15.1875 12.3246 15.2484C12.0605 16.0152 11.7813 16.7719 11.4918 17.5742C9.85156 15.9797 8.45508 14.2582 7.57148 12.0645C7.02305 13.7809 6.15469 15.2281 4.96133 16.4773C3.77305 17.7215 2.38672 18.6812 0.853125 19.5039C0.634766 18.8641 0.426562 18.2445 0.213281 17.625C0.152344 17.4523 0.08125 17.2848 0.0101563 17.1172C0.0101563 17.0816 0.0101563 17.0512 0.0101563 17.0156C1.76719 16.1473 3.3668 15.0758 4.42812 13.3746C5.29648 11.9781 5.75352 10.4344 6.03281 8.78906C3.99141 8.78906 2.00078 8.78906 0.0101563 8.78906C0 7.95117 0 7.12344 0 6.2957Z" fill="black"/>
+        </svg>
+	</a>
+
+	<div class="dropdown-menu" aria-labelledby="dropdownLang">
+		
+		<a class="dropdown-item lang-item" data-lang="en">
+            English
+        </a>
+        
+		<a class="dropdown-item lang-item" data-lang="es">
+            Español
+        </a>
+        
+	</div>
+</div> 
+
+   <label class="theme-switch hide" id="switch-theme">
+      <input id="theme-switch" type="checkbox" />
+      <i></i>
+   </label>
+
+   <div class="mobile-content-header type_2">
+      
+         
+      
+         
+            
+               <a href="." class="header-logo">
+                  <img src="assets/img/reserve.svg" />
+                  <img src="assets/img/reserve_black.svg" />
+               </a>
+            
+         
+      
+         
+      
+         
+      
+         
+      
+         
+      
+   </div>
+
+   <div class="navigation-wrapper">
+      <div class="navigation right">
+         <ul id="top_navigation">
+            
+               
+            
+               
+            
+               
+                  
+                     
+                  
+                     
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="app/" title="APP">APP</a>
+        </li>
+
+    
+
+                  
+                     
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="protocol/" title="Protocol">Protocol</a>
+        </li>
+
+    
+
+                  
+                     
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/" title="Project">Project</a>
+        </li>
+
+    
+
+                  
+                     
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="activism/" title="Activism">Activism</a>
+        </li>
+
+    
+
+                  
+                     
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="jobs/" title="Jobs">Jobs</a>
+        </li>
+
+    
+
+                  
+               
+            
+               
+            
+               
+            
+               
+            
+         </ul>
+      </div>
+   </div>
+</nav>
+      <main>
+    <div class="mobile-content-header inner type_2">
+        <div class="burger-menu-container" id="btn-sidenav">
+            <div class="burger-root">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+            
+        
+            
+                
+                    <a href="." class="header-logo">
+                        <img class="light-logo" src="assets/img/reserve.svg" />
+                        <img class="dark-logo" src="assets/img/reserve_black.svg" />
+                    </a>
+                
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="page-content" id="main-content"><div class="home-page-sec-01" data-midnight="midnight-sec-01">
+    <h1>Stable currency,<br>a human right.</h1>
+    <div class="home-lt-container">
+        <div id="home-lt-animation"></div>
+    </div>
+    <div class="social">
+        <div class="links-wrapper">
+            <div class="links">
+                <a class="teleg home-list" data-list="telegr"></a>
+                <a class="twitt home-list" data-list="twitte"></a>
+                <a target="_blank" href="https://www.instagram.com/holareserve/" class="insta"></a>
+            </div>
+        </div>
+    </div>
+    <div class="h-links telegr">
+        <ul>
+            <li>
+                <a target="_blank" href="https://t.me/ComunidadReserveApp">
+                    Telegram in Spanish
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://t.me/reservecurrency">
+                    Telegram in English
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="h-links twitte">
+        <ul>
+            <li>
+                <a target="_blank" href="https://twitter.com/holareserve">
+                    Twitter in Spanish
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://twitter.com/reserveprotocol">
+                    Twitter in English
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="home-page-sec-03"data-midnight="midnight-sec-03">
+    <a href="/app/">
+        APP
+    </a>
+    <a href="/protocol/">
+        PROTOCOL
+    </a>
+    <a href="/project/">
+        PROJECT
+    </a>
+    <a href="/activism/">
+        ACTIVISM
+    </a>
+</div>
+
+<script src="/assets/js/lotties/reserve_illustration_home.js"></script>
+<script src="/assets/js/pages/home/script.js"></script></div>
+    <div id="spy-sec" class="inner-links hide">
+        <ul id="section-links" role="tablist"></ul>
+    </div>
+    <!--
+    <a href="#top" class="to-top">
+        <svg width="45" height="45" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3814 29.7628C23.324 29.7628 29.7628 23.324 29.7628 15.3814C29.7628 7.43877 23.324 1 15.3814 1C7.43877 1 1 7.43877 1 15.3814C1 23.324 7.43877 29.7628 15.3814 29.7628Z" stroke="black" stroke-width="2" />
+            <path d="M15.3804 25.0874L15.3804 6.32288" stroke="black" stroke-width="2" stroke-linecap="square" />
+            <path d="M21.8555 12.1436L15.3838 5.67192L8.91221 12.1436" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+        </svg>
+    </a>
+    -->
+</main>
+      <footer>
+   <!--
+   <a href="#">
+      <img class="footer-logo" src="assets/img/reserve.svg" />
+   </a>
+   -->
+                
+   <ul>
+      
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a href="project/" title="About the Project">About the Project</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a title="Project">Project</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/" title="Introduction">Introduction</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/the_cause/" title="The cause">The cause</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/key_concepts/" title="Key concepts">Key concepts</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/investors/" title="Investors">Investors</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/history/" title="History">History</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a title="Team Structure">Team Structure</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/methodology/" title="Methodology">Methodology</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a title="Tribes">Tribes</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/human/" title="Human Tribe">Human Tribe</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/tech/" title="Technical Tribe">Technical Tribe</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a title="Guilds">Guilds</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/product_strategy/" title="Product Strategy">Product Strategy</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/engineering/" title="Engineering">Engineering</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/cx/" title="CX">CX</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/community/" title="Community">Community</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/design/" title="Design">Design</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/operations/" title="Operations">Operations</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/business_development/" title="Business Development">Business Development</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/compliance/" title="Compliance">Compliance</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/squads/" title="Squads">Squads</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a title="How we work">How we work</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/principles/" title="Principles">Principles</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/tools/" title="Tools">Tools</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/policies/" title="Policies">Policies</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/avatars/" title="Avatars">Avatars</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="project/reserve_bootcamp/" title="Reserve bootcamp">Reserve bootcamp</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+   </ul>
+     
+   <ul>
+      
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a href="protocol/" title="About the Protocol">About the Protocol</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a href="protocol/rsv/" title="RSV">RSV</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/portal.reserve.org" title="Mint and Redeem RSV">Mint and Redeem RSV</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="protocol/how_rsv_works/" title="How RSV currently works">How RSV currently works</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a href="protocol/rsr/" title="RSR">RSR</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="protocol/rsr_release_schedule/" title="Release schedule">Release schedule</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a href="protocol/2021_version/" title="2021 Reserve protocol">2021 Reserve protocol</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="protocol/mainnet_launch/" title="Mainnet launch plans">Mainnet launch plans</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a href="protocol/2018_version/" title="2018 Reserve protocol">2018 Reserve protocol</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="/assets/files/whitepaper.pdf" title="Original white paper">Original white paper</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+   </ul>
+     
+   <ul>
+      
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <!-- Active Sub Section Title -->
+        <!-- If current nav_item have an active child apply active class -->
+        
+      
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        <!-- Get Section Page Url If Exist-->
+        
+
+        
+
+        
+            
+        
+
+        <li >
+
+            
+                
+                    <a title="More">More</a>
+                
+            
+
+            <ul>
+
+            
+                
+                    
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/intercom.help/reserve/es" title="Help center">Help center</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="mailto:support@reserve.org" title="Contact our support team">Contact our support team</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="mailto:contact@reserve.org" title="Contact us for other reasons">Contact us for other reasons</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/crowdfunding.reserve.org" title="Crowdfunding">Crowdfunding</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/store.reserve.org" title="Store">Store</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/twitter.com/holareserve" title="Twitter">Twitter</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/www.facebook.com/holareserve" title="Facebook">Facebook</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/www.instagram.com/holareserve" title="Instagram">Instagram</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/www.youtube.com/c/Reserveorg" title="Youtube">Youtube</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/medium.com/reserve-currency" title="Medium">Medium</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/t.me/reservecurrency" title="Telegram">Telegram</a>
+        </li>
+
+    
+
+                
+            
+                
+                    
+
+<!-- Mkdocs section-index plugin has a bug when the first -->
+<!-- index of the navigation is referenced to an .md page of -->
+<!-- the directory. In this way the bug is temporarily prevented -->
+
+    
+
+        <li >
+            <a href="https:/discord.gg/w2eZMGQdK8" title="Reserve Gaming Guild Discord">Reserve Gaming Guild Discord</a>
+        </li>
+
+    
+
+                
+            
+
+            </ul>
+
+        </li>
+
+    
+
+   </ul>
+        
+   <!--
+   <div class="legal-info">
+      <div>
+         <a class="rsv-txt-link" href="#">Legal</a>
+         &nbsp;
+         <a class="rsv-txt-link" href="#">Cookies</a>
+      </div>
+      <div>
+         <a class="rsv-txt-link" href="#">©Reserve 2021</a>
+      </div>
+   </div>
+   -->
+</footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/midnight.jquery.min.js"></script>
+<script src="assets/js/theme.js?v=2.0"></script>
+<script src="assets/js/anchor.js?v=2.0"></script>
+   </body>
+   
+</html>

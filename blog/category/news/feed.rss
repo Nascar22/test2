@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Blog &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/category/news/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Thu, 17 Jun 2021 22:03:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>Blog &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Monthly Update: August Report &#8211; AWC Staking Report</title>
+		<link>https://atomicwallet.io/blog/news/report-august</link>
+					<comments>https://atomicwallet.io/blog/news/report-august#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2020 15:59:07 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=31780</guid>
+
+					<description><![CDATA[<p>We have gathered the last happenings and news about Atomic from August. New desktop &#38; mobile releases, AWC staking report, AMA sessions with Qtum and ShareRing, the guide on how to claim Spark tokens airdrop. It’s a lot to tell – just give a read to our monthly report to know everything.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/report-august">Monthly Update: August Report &#8211; AWC Staking Report</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/month-reportort-aug-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-31781" ></figure>
+
+
+
+<p>We have gathered the last happenings and news about Atomic from August. New desktop &amp; mobile releases, AWC staking report, AMA sessions with Qtum and ShareRing, the guide on how to claim Spark tokens airdrop. It’s a lot to tell – just give a read to our monthly report to know everything.</p>
+
+
+
+<h2 id="desktop-release-2-19-0"><br>Desktop Release (2.19.0)</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1104"  height="678"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Claim-ADA-1.gif"  alt=""  class="wp-image-31792" ></figure>
+
+
+
+<p>The new desktop version 2.19.0 has these features:</p>
+
+
+
+<ul><li>ADA blockchain entered a new era with the Shelley upgrade. The upgrade established a new address format. Please note, that your old ADA address will be automatically replaced with a new one. To transfer the balance from the old address to a new one please use the “Claim ADA’ menu&nbsp; (gears icon on the coin page). The new address format will be used for ADA staking, supported in the next releases.</li><li>New diagram portfolio. Keep track of your portfolio and monitor your assets in a new visual format.</li><li>Bugfix: XVG sending fixed.</li></ul>
+
+
+
+<p>You can download Atomic&nbsp;<a href="https://atomicwallet.io/downloads">here</a>.</p>
+
+
+
+<h2 id="mobile-release-0-63-0"><br>Mobile Release (0.63.0)</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1000"  height="1000"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/2020_09_04_19_51_55.2020-09-07-15_26_56.gif"  alt=""  class="wp-image-31803" ></figure>
+
+
+
+<p>The new mobile version 0.63.0 has these features:</p>
+
+
+
+<ul><li>Diagram portfolio. Keep track of your portfolio and monitor your assets in a new visual format.</li><li>New ADA address format enabled. Your old ADA address will be automatically replaced with a new one. Transfer the balance from the old address to a new one by using the gears icon on the coin page.</li><li>Price chart. Follow the market trends on a completely new level without leaving the app.</li></ul>
+
+
+
+<p>You can download Atomic&nbsp;<a href="https://atomicwallet.io/downloads">here</a>.</p>
+
+
+
+<h2 id="awc-staking"><br>AWC Staking</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/ezgif.com-webp-to-png-1-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-31814"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/09/ezgif.com-webp-to-png-1-1920x1080-1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/ezgif.com-webp-to-png-1-1920x1080-1-910x512.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/ezgif.com-webp-to-png-1-1920x1080-1-300x169.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/ezgif.com-webp-to-png-1-1920x1080-1-768x432.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/ezgif.com-webp-to-png-1-1920x1080-1-1536x864.png 1536w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p>Atomic Wallet Token (AWC) staking is now a popular opportunity among AWC holders who want to start getting passive income. So far, there are 6926 holders who stake and get the rewards from a minimum of 10 AWC deposit with a maximum 23% yearly profit. 169,290 AWC rewards were paid for 3 months that the program is out! Try it with a mobile app or a desktop version.</p>
+
+
+
+<p><a href="https://atomicwallet.io/awc-staking">Stake</a>&nbsp;AWC and earn up to 23%.</p>
+
+
+
+<h2 id="how-to-airdrop-the-spark-tokens"><br>How to Airdrop the Spark Tokens</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-31825" ></figure>
+
+
+
+<p>The world’s first turing complete FBA network Flare announced that it will airdrop XRP via its native token Spark. Check out our <a href="https://atomicwallet.io/flare-network-spark-airdrop">step-by-step guide</a> to know how to claim Spark with the XRP key from Atomic wallet as soon as the chain is launched.</p>
+
+
+
+<h2 id="amas-in-august"><br>AMAs in August</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-22-1920x1080-1.png"  alt=""  class="wp-image-31847" ></figure>
+
+
+
+<p>This month, we hosted the AMA sessions with Qtum and ShareRing teams in our <a href="https://t.me/AtomicWallet">Telegram chat</a>. You’re welcome to read the digests:</p>
+
+
+
+<p><a href="https://atomicwallet.io/ama-report-qtum">Qtum</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/ama-report-sharering">ShareRing</a></p>
+
+
+
+<h2 id="support-work-in-august"><br>Support Work in August</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-18-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-31836" ></figure>
+
+
+
+<p>In August our support team reacted to 12,599 issues in 36 minutes on average. We’re constantly getting reviews on the service, and happily improving it day by day. In case of any problem, reach us by email or live chat widget on our website. Atomic&nbsp;<a href="https://support.atomicwallet.io/">support service</a>&nbsp;works for you 24/7.&nbsp;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/report-august">Monthly Update: August Report &#8211; AWC Staking Report</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/report-august/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Report: ShareRing &#8211; How ShareRing Works and Plans</title>
+		<link>https://atomicwallet.io/blog/news/ama-report-sharering</link>
+					<comments>https://atomicwallet.io/blog/news/ama-report-sharering#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2020 15:56:11 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=31766</guid>
+
+					<description><![CDATA[<p>On August 28th, we had an AMA session with ShareRing, in our Telegram Chat.</p>
+<p>ShareRing makes sharing and renting services quicker and simpler for everyone by creating an accessible and sustainable global eco-system for the sharing and renting economies.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-report-sharering">AMA Report: ShareRing &#8211; How ShareRing Works and Plans</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-16-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-31767" ></figure>
+
+
+
+<p>On August 28th, we had an AMA session with <a href="https://sharering.network/">ShareRing</a>, in our <a href="https://t.me/atomicwallet">Telegram Chat</a>.</p>
+
+
+
+<p>ShareRing makes sharing and renting services quicker and simpler for everyone by creating an accessible and sustainable global eco-system for the sharing and renting economies.</p>
+
+
+
+<p>The team members present on our community&#8217;s discussion were Tim Bos (ShareRing’s CEO) and Timothy Kingery (SHR Communications Mgr.).</p>
+
+
+
+<p>Here are the essential points of the AMA session:</p>
+
+
+
+<p>Please welcome Tim (T), Timothy (TM) and the questions from our Telegram chat members (Q).</p>
+
+
+
+<h2 id="about-the-platform"><br>About the Platform</h2>
+
+
+
+<p><br>Q: DeFi has been a very popular movement in crypto, does ShareRing have any plans to integrate this into its ecosystem?</p>
+
+
+
+<p>T: Yes, we&#8217;re already working on a few things. We have been testing a DeFi model with liquidity pools for quite some time, and we&#8217;re in the process of developing the smart contracts behind it. SHR will be an integral part of it, as well as some other surprises. The DeFi product will be used by ShareRing, as well as other suppliers and partners that use our platform. It&#8217;ll be one of the first DeFi projects that have a real-world and highly scalable use case.</p>
+
+
+
+<p><br>Q: In regards to potential adoption of your blockchain what would you say ShareRing’s main use cases are?</p>
+
+
+
+<p>T: ShareRing was started for the purpose of developing a platform and ecosystem to support the circular economies, including sharing economy, travel industry and e-commerce. We have introduced our foundation products on our ShareLedger blockchain, which include our identity management system (ShareRing ID), our payment system (ShareRing Pay) and a number of other protocols and products to support it. Our first go-to-market products are ShareRing Travel, ShareRing Shop, Open World COVID Passport, and ShareRing ID as a standalone SDK for many other industries.</p>
+
+
+
+<p><br>Q: What is so special about your plans about travel?</p>
+
+
+
+<p>T: Instead of just saying that we&#8217;re a blockchain project that does travel and then doing a little more than letting people use crypto to pay for travel, we&#8217;re taking a completely different approach. When we started ShareRing, we started from the perspective of the users and looked at what was broken in the fragmented travel industry.</p>
+
+
+
+<p>For example: Hotel check-ins are slow, booking flights can be slow and frustrating, trust between customers and experience providers can be a headache, we all hate lining up for 30 minutes at the car rental place to get our car.</p>
+
+
+
+<p>These are the problems we are solving with ShareRing. We&#8217;re not just providing this as an app for people to book travel. We&#8217;re offering it as a platform for other online travel agents, airlines, hotels, experience providers, etc to integrate with and white-label for their own usage.</p>
+
+
+
+<p><br>Q: ShareRing’s value proposition is how it can improve user travel experience through services such as KYC checks, eVisa application, flights and hotel bookings. How does it establish trust between customers and the industry that offers these services in the sharing economy?</p>
+
+
+
+<p>TM: We establish and maintain trust with our ShareRing ID module. This allows users of our platform and services to carry out their KYC without the fear of personal data misuse or theft by encrypting their ID documents and proving their accuracy without sending them to third party servers where they may be vulnerable.</p>
+
+
+
+<p><br>Q: Verifying product authenticity could be a herculean task, so how do you ensure that only legitimate products come into ShareRing’s multi-merchant shop? Do you have quality control measures or curators?</p>
+
+
+
+<p>T: For the ShareRing shop, we are running the platform, and our partners in each region run the operations, commercial aspects, customers, etc. These partners have curators that will manage the merchant onboarding and product quality. If we did the operations ourselves, there&#8217;s no way we would scale quickly. This approach will give us more customers and more transactions on the blockchain.</p>
+
+
+
+<p><br>Q: How did your team deal with the technical challenges of the initial launch of this product? What are some milestones to look forward to that may be the challenges in the future and how do you plan to answer them?</p>
+
+
+
+<p>T: We have had our fair share of challenges. What we are doing isn&#8217;t simple, we&#8217;re breaking new ground with a lot of the technology we&#8217;ve developed, so it&#8217;s been constant R&amp;D, trial and error, and some pivots in how we approach a few problems. I&#8217;m extremely proud of our team and what we&#8217;ve achieved. We&#8217;ve had a few times where we felt we were ready to launch, but we felt that we were still a bit short of where we wanted to be in terms of user experience. I&#8217;m happy that we&#8217;re finally at the stage where we can launch a product that I&#8217;m happy with.</p>
+
+
+
+<h2 id="technology"><br>Technology</h2>
+
+
+
+<p><br>Q: ShareRing utilises a dual-token mechanism, what made you decide to go with this approach?</p>
+
+
+
+<p>T: Our main utility token is ShareToken (SHR), this is used for transaction fees, etc on the platform. We also have another token, which is SHRP (SharePay), that is used as our stable-coin/payment token within the network. It&#8217;s not tradeable at all, except within the ecosystem. We will have other tokens, with other functions/benefits, that we introduce on ShareLegder too.</p>
+
+
+
+<p><br>Q: ShareRing aims to promote the adoption of blockchain on a global scale so which technology and mechanism are used by ShareRing to achieve your objective.</p>
+
+
+
+<p>T: Our blockchain is based on the Tendermint Framework and Cosmos SDK. We chose this as it offers one of the best levels of scalability and flexibility of anything we&#8217;ve come across. We also use some traditional development environments for easy integration with our partners.</p>
+
+
+
+<h2 id="future-plans"><br>Future Plans</h2>
+
+
+
+<p><br><br>Q: Is there an ETA on when you want to launch more tokens?</p>
+
+
+
+<p>T: No, not yet, it&#8217;ll be for some specific projects/partners that we are working with. In all cases, SHR will still be the transaction and governance token on ShareLedger.</p>
+
+
+
+<p><br>Q: Any plans to integrate with airline and hotel chain reward programs such as Emirates Skywards or Royal Orchid Plus? Plans of creating a debit card to use while travelling? Earning points through the app will be great.</p>
+
+
+
+<p>T: Plans of creating a debit card to use &#8211; no, not at this stage. We&#8217;ve considered it, but our approach is to use the app to facilitate payments in the short and medium term. Plans to integrate with reward programs &#8211; yes. Interoperability with other reward programs is something we&#8217;ll introduce with ShareRing rewards.</p>
+
+
+
+<p><br>Q: Southeast Asia is a very vibrant market and most projects are competing with campaigns here to entice users and grow. Do you plan to develop and expand in Southeast Asia?</p>
+
+
+
+<p>T: A lot of our expansion will be via our partners. We can&#8217;t expect to compete with Expedia and Booking.com, etc, so we have a great plan that basically leverages either our partners’ existing (huge) networks, or by offering &#8216;must have&#8217; services to travellers such as eVisa On Arrival, COVID-19 pass, etc and use those as a way to upsell the other travel products.</p>
+
+
+
+<p><br>Q: What is the plan to ensure sufficient liquidity on exchanges to fill market orders, especially as adoption increases and clients begin multiplying year-over-year?</p>
+
+
+
+<p>T: There&#8217;s a few angles to this. Firstly, we need to make sure we leverage the user-base of those new exchanges to ensure we have additional people trading. Secondly, we also target the exchanges that are operating within the geographies that we want to expand into. Plus the usual market making, etc that&#8217;s done to help stimulate the exchange.</p>
+
+
+
+<p><br>Q: Which market are you targeting for 2020? What strategies do you have to attract users and keep them with your platform for the long-term?</p>
+
+
+
+<p>TM: We&#8217;re initially targeting Southeast Asia, starting with Thailand and followed by Vietnam soon after. We&#8217;re also piloting our shop in Australia with plans to expand to the rest of the country. More will follow after this. Many users will be on-boarded into our ecosystem via our partners and other services. Once they register for the ShareRing ID to use any service, they&#8217;ll have full access to the rest of our products. So our B2B partners and customers will help enormously with this.</p>
+
+
+
+<p><br>We were glad to host <a href="https://sharering.network/">ShareRing</a> on our <a href="https://t.me/atomicwallet">Telegram</a>. Thanks to the team and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a>, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-report-sharering">AMA Report: ShareRing &#8211; How ShareRing Works and Plans</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/ama-report-sharering/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Report: Qtum Crypto &#8211; How Qtum Works and Qtum advantages.</title>
+		<link>https://atomicwallet.io/blog/news/ama-report-qtum</link>
+					<comments>https://atomicwallet.io/blog/news/ama-report-qtum#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Wed, 16 Sep 2020 15:54:05 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=31752</guid>
+
+					<description><![CDATA[<p>On August 8th, we had an AMA session with Qtum, an open-sourced public blockchain platform in our Telegram Chat.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-report-qtum">AMA Report: Qtum Crypto &#8211; How Qtum Works and Qtum advantages.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-17-copy-1920x1080-1-1920x1080.png"  alt=""  class="wp-image-31753" ></figure>
+
+
+
+<p>On August 8th, we had an AMA session with <a href="https://qtum.org/">Qtum</a>, an open-sourced public blockchain platform in our <a href="https://t.me/atomicwallet">Telegram Chat</a>.</p>
+
+
+
+<p>Qtum is an open-sourced public blockchain platform, leveraging the security of UTXO while enabling multiple virtual machines, including EVM and the revolutionary x86 VM.</p>
+
+
+
+<p>The team members present in our community&#8217;s discussion were John Scianna (Qtum’s Head of Growth) and&nbsp; Jackson Belove (Sr. Research at Qtum).</p>
+
+
+
+<p>Here are the essential points of the AMA session:</p>
+
+
+
+<p>Please welcome John (JN), Jackson (JK), and the questions from our Telegram chat members (Q).</p>
+
+
+
+<h2 id="about-the-platform"><br>About the Platform</h2>
+
+
+
+<p><br>Q: Qtum is the first ever smart contract platform that utilizes Bitcoin’s UTXO model all wrapped up in a proof of stake consensus. Where did this idea come from and how long did it take to go from idea to mainnet?</p>
+
+
+
+<p>JN: Our Co-Founder and CEO, Patrick Dai, was an early bitcoin miner. He’s from Sichuan province, where the majority of bitcoin is still mined today. But he saw that the industry was changing, with incredible foresight. Mining was becoming more competitive and proof-of-stake actually offered more security than PoW for other networks. This is still true to this day with blockchain reorgs happening on top 50 networks like Ethereum Classic. Patrick believed that the UTXO model was the most thoroughly tested blockchain, and it still is today. So, it would be easier to build from there. Every great structure has to start with a well-built foundation and that’s what the UTXO model is for us.</p>
+
+
+
+<p><br>Q: Can you briefly discuss the major goals that Qtum is currently focusing on?</p>
+
+
+
+<p>JN: In the pursuit to have cutting edge technology, Qtum is focusing on 3 major areas that need improvement:&nbsp;</p>
+
+
+
+<p>1. The Offline Staking Protocol&nbsp;</p>
+
+
+
+<p>2. Qtum Phantom Confidential Assets&nbsp;</p>
+
+
+
+<p>3. Qtum Neutron and x86 based virtual machine</p>
+
+
+
+<p>1.The offline staking protocol will allow users to delegate their Qtum to a super staker allowing them to earn block rewards from various wallets without the requirement of running a full node.</p>
+
+
+
+<p>2. Qtum Phantom Confidential Assets will be a platform where anyone will be able to create transparent or private (untraceable) tokens on the Qtum blockchain.</p>
+
+
+
+<p>3. Qtum Neutron will be a new revolutionary virtual machine that opens the doors to many programmers out there.</p>
+
+
+
+<p><br>Q: How does Qtum maintain its accuracy and ensure the entire system operates as required? Is there a centralized server to check if everything works well?</p>
+
+
+
+<p>JK: Cryptocurrency gets its name from cryptography. Blockchains, including Qtum chain, use cryptographic hashes and algorithms to verify blockchain data&#8217;s accuracy and correctness. Most blockchains, including Qtum, use a decentralized architecture, a network of independent peers to operate the network exactly because there is no single centralized server that could lead to censorship and a host of other problems. For example, what would happen if such a centralized server when down or started corrupting the data? A centralized approach is pretty much the opposite of the cryptocurrency ethos.</p>
+
+
+
+<p><br>Q: What are some of the benefits and advantages of offline staking? How does it differ from the classic and traditional one?</p>
+
+
+
+<p>JN: Offline staking brings a lot of benefits to the network.</p>
+
+
+
+<p>1. Offline staking will enable more Qtum to be part of the proof-of-stake consensus increasing the security of the network</p>
+
+
+
+<p>2. Offline staking will allow people to earn rewards without giving up custody, which is good for staking services that don’t take custody</p>
+
+
+
+<p>3. Anyone can be a super staker, so not only can earn yield from your own coins, but other people’s coins as well.</p>
+
+
+
+<p><br>Q: What is the role of Qtum’s Phantom protocol? Why does Qtum’s Phantom protocol use zk-SNARKs Based on Smart Contracts?</p>
+
+
+
+<p>JK: The main reason for choosing zk-SNARKs is that anyone will be able to make privacy tokens on the Qtum blockchain using the zk-SNARKs based on smart contracts. Another major reason is that the technology is more mature. The transactions can be fully encrypted on the blockchain and verified all while following consensus confidentially.</p>
+
+
+
+<p><br>Q: Qtum is compatible with BTC &amp; ETH Blockchain while both are Qtum competitors; why do you choose to make both compatible with Qtum?</p>
+
+
+
+<p>JN: Qtum chose to be compatible with BTC &amp; ETH because we didn’t want to reinvent the wheel. Building things from scratch is very costly (developers are expensive) and it presents a lot of security risks since people store value in their accounts. So even though they are our competitors, they save us time &amp; money when building Qtum &amp; make it more secure.</p>
+
+
+
+<p><br>Q: Qtum is one of the projects that has a wonderful relationship with its community! How has the support received from your community been so far? How important is the community to Qtum?</p>
+
+
+
+<p>JN: Community is an important part of any network, and without the community we wouldn’t know who to build for. Offline Staking was the #1 requested feature from the community, and we listened. I also think that this is the best improvement for Qtum to date. We are lucky to be supported by people from all over the world.</p>
+
+
+
+<h2 id="qtum-s-technology-amp-community"><br>Qtum’s Technology &amp; Community</h2>
+
+
+
+<p><br>Q: As I can see in your new updates and programs, Qtum uses the relatively rare Rust programming language. Please tell us why you have decided to use it and how important it is for the Neutron infrastructure?</p>
+
+
+
+<p>JK: Rust is a top 20 programming language and was voted for the 5th year straight the most-loved programming language by devs in Stack Overflow’s 2020 survey. Qtum chose Rust because it is efficient for programmers to write and debug code, and is very memory safe (strongly-typed, no null pointers, no garbage collection, etc.).</p>
+
+
+
+<p><br>Q: What did you find out while running Stake-A-Thon, a standalone Qtum Testnet test? What bugs and new features have been identified?</p>
+
+
+
+<p>JN: So far we haven&#8217;t found any bugs on the testnet in regards to offline staking, this is the result of a ton of internal testing, an independent audit, and keeping the smart contract small. It&#8217;s only 180 lines of code so it&#8217;s easy to read through.</p>
+
+
+
+<p><br>Q: As a credible decentralized application platform, how does Qtum deal with the issues of scalability, speed and interoperability associated with crypto currencies today?</p>
+
+
+
+<p>JK: In terms of scalability, Qtum currently runs about 70 transactions per second, and can scale with on-chain governance (without a hard fork) to over 1,000 TPS by increasing block size. Beyond that, use layer 2 solutions like Lightning Network.</p>
+
+
+
+<p><br>Q: What is Qtum Explorer and what is it used for?</p>
+
+
+
+<p>JK: The Qtum Explorer at <a href="http://qtum.info">this website</a> is a blockchain explorer that shows all the data and transactions on the Qtum blockchain. A recent addition supports the offline staking info, so you can see the super stakers and delegated addresses they have received. Here is the &#8220;official pool&#8221; we are exploring in the Stake-A-Thon: <a href="https://testnet.qtum.info/address/qPooLFFk2BT3i9yKApjeJhuYjYKWHmuCdq/">official pool</a>.</p>
+
+
+
+<p><br>Q: Will it be possible to delegate my QTUM coins to the Qtum core wallet?</p>
+
+
+
+<p>JN: You will be able to operate a super staker from the Qtum core wallet as well as delegate from it.</p>
+
+
+
+<p><br>Q: What advantages does Proof of Stake under uniform consensus rules bring to the Qtum blockchain as compared to proof of work that BTC uses?.</p>
+
+
+
+<p>In this COVID19 pandemic crisis, how much progress has Qtum project had?</p>
+
+
+
+<p>JK: Qtum has a distributed team working all over the world. As with the crypto winter, and with covid lockdowns, the team has continued to work throughout. Software development is easy to do remotely, and we can just jump on Slack and Zoom for coordination.</p>
+
+
+
+<p><br>Q: What are the main differences and advantages of Super Staker from classic DPoS? Will the Super Staker feature be implemented in the future in Atomic Wallet?</p>
+
+
+
+<p>JN: This is a good question because although DPoS means delegated proof-of-stake and Offline Staking allows for delegations, we believe that Offline Staking is different from DPoS networks. In DPoS there&#8217;s usually a set limit of nodes or a high requirement of coins that need to be staked. In Qtum, anyone can become a Super Staker and accept delegations, The Super Staker feature wont be integrated into Atomic Wallet because to be a Super Staker you need to be a full node, but the delegation part of Offline Staking will be integrated into Atomic Wallet!</p>
+
+
+
+<p><br>Q: What is the maximum height that the block can reach?</p>
+
+
+
+<p>JK: The blockchain continues to add blocks indefinitely, which is how people talk about &#8220;block height&#8221;, so there is no limit on that.</p>
+
+
+
+<p>The size of the Qtum blocks can be adjusted through on-chain governance between 0.5 and 32 MB, currently set at 2 MB.</p>
+
+
+
+<h2 id="qtum-s-future-plans"><br>Qtum’S Future Plans</h2>
+
+
+
+<p><br>Q: How does the Qtum network completely hide the addresses and amounts transferred?</p>
+
+
+
+<p>JN: It&#8217;s in the works with Phantom. You should check out this <a href="https://blog.qtum.org/qtum-phantom-protocol-unveiling-layer-2-privacy-2d31c8a527a2">blog</a> &amp; the <a href="https://eprint.iacr.org/2020/156.pdf">white paper</a>.</p>
+
+
+
+<p><br>Q: What changes will happen in the Qtum chain after the August 28 hard fork? Will users be able to delegate their Qtum coins?</p>
+
+
+
+<p>JN: This is the key change. People can become super stakers &amp; also delegate to super stakers after the fork.</p>
+
+
+
+<p><br>We were glad to host <a href="https://qtum.org/">Qtum</a> on our <a href="https://t.me/atomicwallet">Telegram</a>. Thanks to the team and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a>, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-report-qtum">AMA Report: Qtum Crypto &#8211; How Qtum Works and Qtum advantages.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/ama-report-qtum/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to Claim Spark via Airdrop &#8211; A complete Step-by-step Guide</title>
+		<link>https://atomicwallet.io/blog/news/flare-network-spark-airdrop</link>
+					<comments>https://atomicwallet.io/blog/news/flare-network-spark-airdrop#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Tue, 01 Sep 2020 06:23:32 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30870</guid>
+
+					<description><![CDATA[<p>Flare claims to be the world&#8217;s first turing complete Federated Byzantine Agreement (FBA) network, which has not been&#8230;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/flare-network-spark-airdrop">How to Claim Spark via Airdrop &#8211; A complete Step-by-step Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1920"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png"  alt=""  class="wp-image-30871"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/image-14-1920x1080-1-1920x1080-1.png 380w"  sizes="(max-width: 1920px) 100vw, 1920px" ></figure>
+
+
+
+<p><a href="https://flare.xyz/">Flare</a> claims to be the world&#8217;s first turing complete Federated Byzantine Agreement (FBA) network, which has not been out yet. However, it&#8217;s already known that the <a href="https://twitter.com/FlareNetworks">Flare</a>&#8216;s native token Spark is going to be used for airdrop distribution to all XRP holders of non-custodial wallets (some exchanges will also support the airdrop but there&#8217;s no clear statement yet) as soon as the network is launched. The amount of the airdrop will be based on the amount of XRP users known on the XRP ledger. (*Flare Network and XRP ledger are two separate blockchains but read up how they connect <a href="https://flare.ghost.io/fxrp-walkthru/">here</a>.)</p>
+
+
+
+<p>Currently, we have no plans to support the Flare chain in the wallet. However, this can be changed in the future. Meanwhile, our XRP users can use this step-by-step guide to know how to claim Spark tokens with their XRP key from Atomic as soon as it&#8217;s possible.</p>
+
+
+
+<h2 id="step-by-step-guide"><br>Step-By-Step Guide</h2>
+
+
+
+<p>Step 1: Download <a href="https://xumm.app/">XUMM</a> wallet, which you can use to import your keys from Atomic and create the account for the Flare Network once it&#8217;s ready.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1260"  height="598"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png"  alt=""  class="wp-image-30882"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-5.45.14-PM.png 1260w"  sizes="(max-width: 1260px) 100vw, 1260px" ></figure>
+
+
+
+<p>Step 2: Set your passcode and import your XRP private key from Atomic to XUMM Wallet by choosing the Family Seed as the secret type of your account. Once you enter the private key, you&#8217;ll automatically see your public key from Atomic wallet that you need to confirm it&#8217;s valid.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="608"  height="1080"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/photo_2020-08-28_17-58-46-608x1080-1.jpg"  alt=""  class="wp-image-30893"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/09/photo_2020-08-28_17-58-46-608x1080-1.jpg 608w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/photo_2020-08-28_17-58-46-608x1080-1-288x512.jpg 288w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/photo_2020-08-28_17-58-46-608x1080-1-114x202.jpg 114w"  sizes="(max-width: 608px) 100vw, 608px" ></figure>
+
+
+
+<p>Step 3: To claim the Spark tokens, use <a href="https://flare.wietse.com/?step=abf0d6360e68db50450cc27abb6971f1">this tool</a> (available for XRPL account holders &amp; XUMM users). Sign the disclaimer, warnings &amp; acknowledgments (<strong>Please note that using this tool with your private key gives you no guarantees &amp; no support!</strong>) and open the access with XUMM wallet. </p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="774"  height="598"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png"  alt=""  class="wp-image-30904"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 261w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 663w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 1398w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.02.47-PM.png 774w"  sizes="(max-width: 774px) 100vw, 774px" ></figure>
+
+
+
+<p>Step 4 (Optional): You&#8217;re offered to generate a new ETH address. Skip this step as you already have ETH compatible account from your Atomic wallet.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1035"  height="320"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png"  alt=""  class="wp-image-30915"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.08.08-PM.png 1035w"  sizes="(max-width: 1035px) 100vw, 1035px" ></figure>
+
+
+
+<p>Step 5: As an XRP holder, you will need to sign a reference to prove account ownership. Your reference will be kept in a &#8216;MessageKey&#8217; on the account level on the XRP ledger. Provide your ETH compatible account address (your ETH <strong>public key</strong> from Atomic).</p>
+
+
+
+<p>Step 6: Confirm account ownership by signing the transaction with XUMM wallet. (Your XRP account address that starts with r&#8230; will be synched with the Flare Network account, which address starts with 0x&#8230;)</p>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.12.50-PM.png"  alt=""  class="wp-image-30926" ></figure>
+
+
+
+<p>Step 7: That&#8217;s it! Wait to receive your Spark tokens! As soon as the Flare Network is launched, the team will check all the XRP ledger accounts connected with the Flare Network accounts and their balances to distribute the Spark tokens equally between them. E.g., having 100 XRP, you will get 100 Spark to your Flare Network account.</p>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1035"  height="265"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png"  alt=""  class="wp-image-30937"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 1024w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/09/Screen-Shot-2020-08-28-at-6.15.33-PM.png 1035w"  sizes="(max-width: 1035px) 100vw, 1035px" ></figure>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/flare-network-spark-airdrop">How to Claim Spark via Airdrop &#8211; A complete Step-by-step Guide</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/flare-network-spark-airdrop/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Monthly Update: July Report &#8211; Desktop and Mobile Updates.</title>
+		<link>https://atomicwallet.io/blog/news/report-july</link>
+					<comments>https://atomicwallet.io/blog/news/report-july#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Tue, 04 Aug 2020 15:13:44 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=30322</guid>
+
+					<description><![CDATA[<p>Here are the happenings and the info about Atomic from July. Read it up to know more about the desktop and mobile updates, AWC story on BNB mainnet, AWC staking, newly supported DeFi coins, and, as a bonus, the guide on DeFi.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/report-july">Monthly Update: July Report &#8211; Desktop and Mobile Updates.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/month-reportort-july--1920x1080.png"  alt="july report cover"  class="wp-image-30323" ></figure>
+
+
+
+<p>Here are the happenings and the info about Atomic from July. Read it up to know more about the desktop and mobile updates, AWC story on BNB mainnet, AWC staking, newly supported DeFi coins, and, as a bonus, the guide on DeFi.</p>
+
+
+
+<h2 id="desktop-release-2-18-2"><br>Desktop Release (2.18.2)</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/image-6-1920x1080.png"  alt="desktop update"  class="wp-image-30356" ></figure>
+
+
+
+<p>The new desktop version 2.18.2 has these features:</p>
+
+
+
+<ul><li>New ERC20 token: Compound (COMP).</li><li>Buy QTUM, ICX with a credit card and earn cash back rewards.</li><li>New Basic Membership level now starts at 300 AWC.</li><li>History improved and speeded up.</li><li>Fixes for KMD, BCD, ONT/ONG, ZEC sending, bep2 tokens.</li></ul>
+
+
+
+<p>You can download Atomic&nbsp;<a href="https://atomicwallet.io/downloads">here</a>.</p>
+
+
+
+<h2 id="mobile-release-0-62-2"><br>Mobile Release (0.62.2)</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/08900d1a13cb1fb80f7d21857224a8f3f5284eaabcb9195970ed4e8ea626d8e7cb139ab369f1dfa0ec4ab8140dac03127238ececef0a7ce9289bfcce85717796-1920x1080.png"  alt="mobile update"  class="wp-image-30334" ></figure>
+
+
+
+<p>The new mobile version 0.62.2 has these features:</p>
+
+
+
+<ul><li>Buy AWC from Binance DEX for BNB in the wallet!</li><li>Airdrop local restrictions added.</li><li>Transactions are instantly uploaded in the history tab after sending.</li><li>Added support for Compound (COMP) ERC-20 token.</li><li>Buy QTUM, ICX with a creadit card added.</li><li>Bug fixes for ADA, KMD, BCD, ONT/ONG, bep2 tokens.</li></ul>
+
+
+
+<p>You can download Atomic&nbsp;<a href="https://atomicwallet.io/downloads">here</a>.</p>
+
+
+
+<h2 id="awc-staking"><br>AWC Staking</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/image-5-1920x1080.png"  alt="awc staking stats"  class="wp-image-30345" ></figure>
+
+
+
+<p>Atomic Wallet Token (AWC) staking has been out for 10 weeks, and it&#8217;s on fire! There are 5627 holders who stake and get the rewards from a minimum of 10 AWC deposit with a maximum 23% yearly profit. 13,942 AWC worth of $21,000 rewards were paid last week! Try it with a mobile app or a desktop version.</p>
+
+
+
+<p><a href="https://atomicwallet.io/awc-staking">Stake</a> AWC and earn up to 23%.</p>
+
+
+
+<h2 id="awc-on-binance-chain"><br>AWC on Binance Chain</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1536"  height="864"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png"  alt="awc on bnb mainnet"  class="wp-image-30378"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png 910w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png 1920w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/08/26f34b105072067bc64b26d8fabdc19055677ed21f52982c5f86d7ef6b8ea63e1f95813dd158bdc0e9ad09bbb05960d740b7cc5c607b23dae9605817585ddced.png 380w"  sizes="(max-width: 1536px) 100vw, 1536px" ></figure>
+
+
+
+<p>Atomic Wallet Token (AWC) is one of the most popular utility tokens on Binance DEX. We have over 70,000 holders, who stake AWC, earn weekly rewards, get cash back, participate in the affiliate and the voting programs. <a href="https://atomicwallet.io/awc-token-on-binance-chain">Read the story</a> on how we&#8217;ve built AWC on Binance mainnet!</p>
+
+
+
+<h2 id="support-work-in-july"><br>Support Work in July</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/image-7-1920x1080.png"  alt="Support stats july"  class="wp-image-30367" ></figure>
+
+
+
+<p>In July, our support team reacted to 11,327 issues in 57 minutes on average. We’re constantly getting reviews on the service, and happily improving it day by day. In case of any problem, reach us by email or live chat widget on our website. Atomic&nbsp;<a href="https://support.atomicwallet.io/">support service</a>&nbsp;works for you 24/7.&nbsp;</p>
+
+
+
+<h2 id="defi-atomic-wallet-guide"><br>DeFi: Atomic Wallet Guide</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/08/75222ae17c121a14c2d1c84c5141294c693924e518df33808b66f9f9a927f8e2e286243eb1d4a5dc585cf50fa857eface14b66f546062ae017eb9f42a07f6005-1920x1080.png"  alt=""  class="wp-image-30400" ></figure>
+
+
+
+<p>Decentralized Finance continues to be one of the hottest topics in the crypto space. Why is it so? What is DeFi? Find out in our <a href="https://atomicwallet.io/what-is-defi-complete-guide">complete guide</a>.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/report-july">Monthly Update: July Report &#8211; Desktop and Mobile Updates.</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/report-july/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AWC Token on Binance Chain &#8211; Advantages of Binance Chain</title>
+		<link>https://atomicwallet.io/blog/news/awc-token-on-binance-chain</link>
+					<comments>https://atomicwallet.io/blog/news/awc-token-on-binance-chain#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Mon, 13 Jul 2020 21:49:07 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=29679</guid>
+
+					<description><![CDATA[<p>Atomic Wallet Token (AWC) is one of the most popular tokens, issued by a decentralized cryptocurrency wallet. Since its launch 2 years ago, AWC value has greatly increased. Recently we have reached a $1.25 all-time high price and over 100,000 token holders. There are plenty of the token use cases such as cashback, affiliate/airdrop, bounty programs, and newly implemented staking with up to 23% yearly yield. </p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/awc-token-on-binance-chain">AWC Token on Binance Chain &#8211; Advantages of Binance Chain</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/image-6-1920x1080.png"  alt="AWC BNB Mainnet Cover"  class="wp-image-29711" ></figure>
+
+
+
+<p><a href="https://atomicwallet.io/token"><a href="https://atomicwallet.io/token">Atomic Wallet Token (AWC)</a></a> is one of the most popular tokens, issued by a decentralized cryptocurrency wallet. Since its launch 2 years ago, AWC value has greatly increased. Recently we have reached a $1.25 all-time high price and over 100,000 token holders. There are plenty of the token use cases such as cashback, affiliate/airdrop, bounty programs, and newly implemented staking with up to 23% yearly yield. </p>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh6.googleusercontent.com/T-XHOGvYmQXbjgSnLS5p1oCVKSgga57WruDDpVrFxHeuXvfQLWPqwveAbZnBe_iBbSFCkZzGQAcwua6pfN3KGBHJ9q1LUCc6WfuhBauyu9SZueDfYNRJJnHQT2hUqxiABFP7vkgo"  alt="BNB Wallet" ></figure>
+
+
+
+<p>Atomic wallet itself has over 500,000 app downloads across all the platforms and thousands of daily users. It&#8217;s a sustained profitable business since early 2019 despite the recent bear market. However, speaking about AWC milestones, most of the success was possible due to issuing AWC on the Binance mainnet last year. This brought significant benefits for AWC holders, traders, airdrop and bounty hunters, investors, the wallet, and the Binance blockchain itself. Here is the timeline with the major AWC cases on Binance Chain to date.</p>
+
+
+
+<h2 id="migration-to-the-bnb-mainnet"><br>Migration to the BNB Mainnet</h2>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh5.googleusercontent.com/8DQoUvqPbhZXLPa1rah5DVP692ZwfnfAM6fEyOn4ui7YU0goWr_pl_NGqV_nImEljumt7YCgIo_8yeCENOKg7wMGQJpuYovJ0F7tebFMJEjULfMRCYwBcnBChIz3ypxMhzxhg1Wi"  alt="BNB Mainnet Migration" ></figure>
+
+
+
+<p>Initially, AWC was deployed on the Ethereum blockchain with a total supply of 100,000,000 tokens. In April 2019, 50% of the total supply was burnt on the Ethereum blockchain with the same amount minted on Binance Chain. Currently, 50,000,000 AWC is on Binance Mainnet and the other half, 50,000,000 tokens, on the ETH blockchain with a total circulation supply of 10,000,000 AWC. The main reason for migration was a new promising blockchain based on Tendermint/Cosmos consensus and upcoming Binance DEX launch. Currently, AWC is one of the most popular tokens on Binance Chain with around 500,000 transactions.</p>
+
+
+
+<p>You can find the token metrics <a href="https://atomicwallet.io/token">here</a>.</p>
+
+
+
+<h2 id="listing-on-binance-dex"><br>Listing on Binance DEX</h2>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh4.googleusercontent.com/D_krq3FVT0PSHqs6EWDNTbqaHBiRfyGmu4oJUFCwM7_Nvj8KytlKzWvfvlws8wFyOcUpi7ikF8tb3izJkMXiGxKpsjg6dyt3k5nD2QMcuZlJx5VQrV_HDJCQt43V3Zac05FtHSc3"  alt="Binance DEX listing" ></figure>
+
+
+
+<p>Later in May 2019, AWC became one of the first projects <a href="https://atomicwallet.io/awc-binance-dex-listing">listed on Binance DEX</a>, a decentralized exchange that granted traders improved security, fast transaction speed, and overall smoother experience. Since then, tokens have been <a href="https://www.binance.org/en/trade/AWC-986_BNB">distributed</a> among 70,000 users addresses with about 10,000 of them, who had approximately $100 AWC worth.</p>
+
+
+
+<p>On June 20, 2019, we hosted the 400,000 AWC <a href="https://atomicwallet.io/trading-competition">Binance DEX Trading Competition</a> lasted for 35 days. More than 1000 users participated, which made this contest one of the first large events for AWC token and the biggest one for Binance DEX, running by an external team. The main goal was to take part in the Binance Community listing campaign, and even if AWC didn’t win, we have got a lot of new token holders and spread awareness about AWC token.</p>
+
+
+
+<h2 id="awc-staking"><br>AWC Staking</h2>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh4.googleusercontent.com/9_7eC_UVT54GCjiISzWJrWzWqHjt7aaIfhd8_0lRgFFc0DDzu8jd0PUrC-33edUBSiACZp6Hy1YgjvV3EQONIKcx7_l7LWMJxmoaQOEpn3pzuQbtOqmrLu6xsq9dLzL1Ji1kijAZ"  alt="AWC staking" ></figure>
+
+
+
+<p>In June 2020, <a href="https://atomicwallet.io/awc-staking">AWC staking</a> with 17-23% yearly yield was implemented to Atomic wallet. Rewards are allocated from our foundation pool of tokens, reserved for the next years to incentivize the AWC awareness. We also can buy back tokens from our profit.</p>
+
+
+
+<p>AWC staking on Binance Сhain means a special freeze transaction. This transaction is completed from the Atomic wallet app. Users still have full control over their funds with private keys. Users can unfreeze tokens anytime.&nbsp;</p>
+
+
+
+<p>Each Monday we do manual snapshots of frozen/staked balances, using a special <a href="https://docs.binance.org/guides/node/snapshot.html">Binance chain tool</a>.</p>
+
+
+
+<p>Afterward, we calculate rewards manually according to the staked balances, then distribute the rewards with the <a href="https://github.com/binance-chain/chain-tooling">multisender utility</a>. Users can compound tokens. Frozen tokens also participate in our membership program to earn cash back from each exchange in Atomic. Soon we are going to bring more use cases for staking members.</p>
+
+
+
+<p>Since its launch 7 weeks ago, almost 3,000,000 AWC (more than $3M USD) was already staked in total by 3900+ users. Currently, there are 10,000-20,000 active AWC users apart from <a href="https://atomicwallet.io/airdrop">airdrop</a> and bounty hunters. It’s expected that with the rise of AWC staking popularity, the number of users/holders will increase.&nbsp;</p>
+
+
+
+<h2 id="affiliate-airdrop-program"><br>Affiliate Airdrop Program</h2>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh3.googleusercontent.com/ZIsQ5skyVG8d_oWB1kwHexS2IsCtx7N63GNuPmsqat7ehmWlGJAXqE_5SEpuTn56kQMDwfk3CixfriqfcpRHBoQbwNVy2mK2iR_LOwNzR1_mu21QSgIygJzorac2b6MYQ5D4DEX1"  alt="airdrop" ></figure>
+
+
+
+<p>The very first AWC token use-case on the BNB mainnet was the launch of the <a href="https://atomicwallet.io/join?kid=16HEM1">affiliate program</a>. The community got powered with the rewards for downloading the wallet, signing up for the airdrop, and inviting other users to try the app sharing their own referral link. At once, it was possible to receive 10 AWC and get extra rewards for each referral signed up with the personal promo code every month later. Over time, the program has become popular among various YouTubers, writers, podcasters, and influential users. (At the moment, it’s temporarily suspended due to the massive abusing until the team improves the verification system for legitimate users.)</p>
+
+
+
+<h2 id="membership-program"><br>Membership Program</h2>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh5.googleusercontent.com/-wVjDuobt_wKDNZmeTGhlNoxianihSC71WF1KAIuXZkBEu6hu2HsUgUkZebk7QuO1x1AEk9gLPmXYf7GXw-GUUI9GOjwiaxJWssypcnfavEOs7rRZGeDBNmJ4OM8l7V7CUhDCKNo"  alt="membership program" ></figure>
+
+
+
+<p>Later that month, the first <a href="https://atomicwallet.io/membership">Membership Program</a> of the decentralized wallet was released, and it made possible to get cashback rewards up to 1% for any exchange within the wallet. The program is eligible for AWC token holders on Binance Chain, and there are more than 10,000 participants of the program since its launch.</p>
+
+
+
+<h2 id="atomic-wallet-voting-campaign"><br>Atomic Wallet Voting Campaign</h2>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh6.googleusercontent.com/GHCdYhvovge58SCHvstl0T0Aitx9hLjN9oxFRtsYGECA3hIVG3JveQXOyfXSZMITfIb7H2EzGvGwLjiAPWBt5Mv2sY_8Vu_daFgvzYZt_PAJ-6rN81DuBoY4QSJFtCyRQiddhJR-"  alt="voting campaign" ></figure>
+
+
+
+<p>In July 2019, Atomic Wallet <a href="https://atomicwallet.io/voting">Listing Campaign</a> was launched. Even if we support all ERC20 and BEP2 tokens, communities can vote for their projects with AWC to add them to Atomic wallet default assets list with a custom icon. This makes the token visible to over 200,000 active wallet users. Since the program has been introduced, around 10 different projects participated in it.</p>
+
+
+
+<h2 id="buy-awc-in-atomic-with-order-on-binance-dex"><br>Buy AWC in Atomic with order on Binance DEX</h2>
+
+
+
+<figure class="wp-block-image"><img  src="https://lh3.googleusercontent.com/0X4K-OtwzCLKLtd-DWFExcs5vozrjMIuS9hP2Y64ST92eqRyV_hJpzSl2fOr7EHD7LC7TD8pUs9JGbroS6u2XsCOmaGIDlwPD7ZJS0HDiJmw7HUSo1NGRLL4PdPik2z241X-T-Bn"  alt="buy AWC in Atomic" ></figure>
+
+
+
+<p>To try AWC in all use-cases described above, you can simply buy it with BNB in the Atomic app. The BNB/AWC pair is supported by Binance DEX, i.e., you place an order directly to the exchange with market price while still holding the private keys in the wallet and not jeopardizing the safety of your funds.</p>
+
+
+
+<h2 id="what-is-the-future-for-awc-on-the-bnb-mainnet"><br>What is the future for AWC on the BNB Mainnet?</h2>
+
+
+
+<p>Atomic wallet is following up on the development of Binance Chain, and we are considering the possibility of a full migration to the BEP2 standard. We also plan to support the new Binance Smart Chain upgrade with smart contracts and so-called Decentralized Finance services (DeFi). BSC upgrade will introduce governance of parameters on system contracts and a new BEP8 token, which will bring an easy cross-communication with clearer protocol stack, better scalability, and uniform error handling, allowing the token issuers to unbind and manage the tokens more smoothly on two chains up to their needs. Currently, Atomic wallet is one of the biggest apps, utilizing Binance Chain.</p>
+
+
+
+<h3 id="advantages-of-binance-chain-for-awc"><br>Advantages of Binance Chain for AWC</h3>
+
+
+
+<ul><li>Really quick and cheap in terms of transactions fees;</li><li>There are powerful tools to work with a large number of holders (balances snapshots, mutisending, etc.);</li><li>Easy to implement integration with Binance DEX to purchase tokens right from the wallet app when private keys always remain on the users’ side.</li><li>A great supportive community and strong brand.</li></ul>
+
+
+
+<h3 id="disadvantages"><br>Disadvantages</h3>
+
+
+
+<ul><li>Still short in traders number and liquidity on Binance DEX</li><li>No smart contacts yet or supported services for DeFi applications to expand tokens usage;</li><li>Far less centralized exchanges support the BEP2 protocol, most of them are asking us for the ERC20 integration.</li></ul>
+
+
+
+<h2 id="what-is-atomic-wallet"><br>What is Atomic Wallet</h2>
+
+
+
+<p>Atomic is a multi-asset decentralized wallet that supports over 40 separate blockchains and over 300 various tokens. Founded in early 2018 by former CEO and co-founder of an instant exchange Changelly Konstantin Gladych, the project has grown up to 150,000 users only within the first 6 months, becoming profitable despite the bear market in 2019. The wallet was one of the pioneering companies adding cross-chain Atomic swaps, its own native token, and a decentralized loyalty program. Atomic wallet gives users a secure way to store, buy, exchange, and stake many digital currencies as well as get bonuses in AWC for these activities. All in one simple interface. Currently, Atomic has over 500,000 downloads across all devices, desktop and mobile. Our main goal is crypto adoption for mass-market users.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/awc-token-on-binance-chain">AWC Token on Binance Chain &#8211; Advantages of Binance Chain</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/awc-token-on-binance-chain/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Atomic Wallet Report: June</title>
+		<link>https://atomicwallet.io/blog/news/report-june</link>
+					<comments>https://atomicwallet.io/blog/news/report-june#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Fri, 03 Jul 2020 15:55:51 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=29346</guid>
+
+					<description><![CDATA[<p>June was fantastic! We managed to update our desktop &#038; mobile apps, have AMA session with Justin Sun, the Neo's team and be guests at the Cosmos' and ChangeNOW communities, add ICON (ICX), finally, AWC staking was bringing the first outstanding results! Welcome to read it up!</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/report-june">Atomic Wallet Report: June</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/month-reportort-june--1920x1080.png"  alt="Monthly report June cover"  class="wp-image-29347" ></figure>
+
+
+
+<p>June was fantastic! We managed to update our desktop &amp; mobile apps, have AMA session with Justin Sun, the Neo&#8217;s team and be guests at the Cosmos&#8217; and ChangeNOW communities, add ICON (ICX), finally, AWC staking was bringing the first outstanding results! Welcome to read it up!</p>
+
+
+
+<h2 id="desktop-release-2-17-0"><br>Desktop Release (2.17.0)</h2>
+
+
+
+<figure class="wp-block-image"><img  loading="lazy"  width="1000"  height="627"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/06/ezgif.com-optimize-1.gif"  alt="desk 2.17 gif"  class="wp-image-27810" ></figure>
+
+
+
+<p>The new desktop version 2.17.0 has these features:</p>
+
+
+
+<ul><li>New price chart section. Stay tuned with the market trends.</li><li>ICON (ICX) added. Manage and exchange ICX in a secure way.</li><li>AWC staking with a 23% yearly yield.</li><li>Band Protocol (BAND) added with staking support.</li><li>Instant balance updates for ATOM and TRX are speeded up.</li></ul>
+
+
+
+<p>You can download Atomic&nbsp;<a href="https://atomicwallet.io/downloads">here</a>.</p>
+
+
+
+<h2 id="mobile-release-0-61-0"><br>Mobile Release (0.61.0)</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/unnamed-1920x1080.png"  alt="mob update"  class="wp-image-29413" ></figure>
+
+
+
+<p>The new mobile version 0.61.0 has these features:</p>
+
+
+
+<ul><li>Added <a href="http://iconx-wallet" target="_blank" aria-label="undefined (opens in a new tab)" rel="noreferrer noopener">ICON (ICX)</a> for holding and exchange. ICX staking is soon.</li><li>AWC is available for staking with a 23% max yearly profit.</li><li>Buy crypto history now syncs properly between devices.</li><li>Band Protocol (BAND) added with staking support.</li><li>JUST Airdrop added to the staking section.</li><li>Bug fixes for KMD staking, BTC, ETH &amp; ERC20 tokens fees calculation.</li></ul>
+
+
+
+<p>You can download Atomic&nbsp;<a href="https://atomicwallet.io/downloads">here</a>.</p>
+
+
+
+<h2 id="awc-staking"><br>AWC Staking</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/image-17-1920x1080.png"  alt="AWC Staking report"  class="wp-image-29402" ></figure>
+
+
+
+<p>Atomic Wallet Token (AWC) staking has been out for 5 weeks by now! The latest data is 2,540,721 AWC ($1,6M+) staked by 2662 holders while we have already distributed 32,663 AWC ($21,000+) rewards. Start staking from a minimum of 10 AWC and get rewards up to 23% yearly profit.  So far so good! Read more about <a href="https://atomicwallet.io/token">the token</a>.</p>
+
+
+
+<h2 id="membership-program"><br>Membership Program</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  loading="lazy"  width="1104"  height="679"  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png"  alt="membership program"  class="wp-image-29380"  srcset="https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 300w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 832w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 768w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 1756w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 1536w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 2048w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 380w, https://atomicwallet.io/blog/wp-content/uploads/2020/07/Screen-Shot-2020-07-03-at-6.15.27-PM.png 1104w"  sizes="(max-width: 1104px) 100vw, 1104px" ></figure>
+
+
+
+<p>One more reason to hold AWC is new rules for our loyalty program! Now the Basic level starts at 300 AWC. You can earn up to 1% cashback for any exchange or crypto purchase in Atomic! <a href="https://atomicwallet.io/membership">Become a member</a>!</p>
+
+
+
+<h2 id="amas-in-june"><br>AMAs in June</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/image-22-1920x1080.png"  alt="AMA digests"  class="wp-image-29369" ></figure>
+
+
+
+<p>This month, the Atomic wallet’s team hosted AMA sessions with Justin Sun, the founder of the Tron Network, and the Neo&#8217;s team. Also, we participated in the sessions with Cosmos’s and ChangeNOW’s communities in their Telegram chats. You’re welcome to read the digests:</p>
+
+
+
+<p><a href="https://atomicwallet.io/ama-with-neo-digest">Neo</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/ama-with-tron-digest">Tron</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/ama-cosmos-community">Cosmos</a></p>
+
+
+
+<p><a href="https://atomicwallet.io/ama-changenow-community">ChangeNOW</a></p>
+
+
+
+<h2 id="support-work-in-june"><br>Support Work in June</h2>
+
+
+
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/image-21-1920x1080.png"  alt="support service pic june"  class="wp-image-29358" ></figure>
+
+
+
+<p>In June our support team reacted to 7,086 issues in almost 25 minutes on average. We’re constantly getting reviews on the service, and happily improving it day by day. In case of any problem, reach us by email or live chat widget on our website. Atomic&nbsp;<a href="https://support.atomicwallet.io/">support service</a>&nbsp;works for you 24/7.&nbsp;</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/report-june">Atomic Wallet Report: June</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/report-june/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Session with Tron</title>
+		<link>https://atomicwallet.io/blog/news/ama-with-tron-digest</link>
+					<comments>https://atomicwallet.io/blog/news/ama-with-tron-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Thu, 02 Jul 2020 15:32:17 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=29328</guid>
+
+					<description><![CDATA[<p>On June 11th, we had an AMA session with Justin Sun, the founder of the TRON platform, and current CEO of BitTorrent in our Telegram Chat. </p>
+<p>Justin Sun is a tech entrepreneur, the founder of the TRON platform, and current CEO of BitTorrent. The former chief representative of the Greater China area of Ripple; founder and CEO of mobile social app Peiwo.</p>
+<p>Here are the essential points of the AMA session that Konstantin Gladych, CEO of Atomic Wallet and Christina Khachatryan, PR Manager, hosted.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-with-tron-digest">AMA Session with Tron</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/tron_ama_digest_atomic-1920x1080.png"  alt="Cover AMA w/ Tron"  class="wp-image-29329" ></figure>
+
+
+
+<p>On June 11th, we had an AMA session with Justin Sun, the founder of the TRON platform, and current CEO of BitTorrent in our <a href="https://t.me/atomicwallet">Telegram Chat</a>.&nbsp;</p>
+
+
+
+<p>Justin Sun is a tech entrepreneur, the founder of the TRON platform, and current CEO of BitTorrent. The former chief representative of the Greater China area of Ripple; founder and CEO of mobile social app Peiwo.</p>
+
+
+
+<p>Here are the essential points of the AMA session that Konstantin Gladych, CEO of Atomic Wallet and Christina Khachatryan, PR Manager, hosted.</p>
+
+
+
+<p>Please welcome Justin (J), Konstantin (K), and Christine, who shared the questions from our Telegram chat members (C).</p>
+
+
+
+<p><br>K: Many people are interested about your new Tron 4.0 release! What will be the new added value to the world outside of crypto traders? What are the Tron blockchain benefits before others?</p>
+
+
+
+<p>J: TRON 4.0 is not only about DApps, but also about DeFi. It means a lot. We designed the financial institution and enterprise blockchain solutions to power custom development for business clients. We’ve successfully developed a financial institution and enterprise blockchain solution. Financial institutions and business developers will be able to swiftly deploy a customized application blockchain based on their needs.</p>
+
+
+
+<p><br>K: That’s really cool! Many people compare Tron with ethereum. What are the benefits of Tron before other competitors?</p>
+
+
+
+<p>J: TRON has many advantages, like high throughput, high scalability, high availability and high TPS. TRON can consistently handle 2,000 transactions per second, 24&#215;7.</p>
+
+
+
+<p><br>K: How is Tron decentralized in terms of consensus and stakeholders? I know you have validators, so-called super representatives but who are they?</p>
+
+
+
+<p>J: On the TRON network, all TRX holders can apply to be SR candidates, and are likely to become SRs or superpartners. Any TRX holder can vote for SR candidates, among which the top 27 most-voted candidates will become SRs, while the 28th to 127th will become superpartners. SRs are responsible for producing blocks and packing transactions; superpartners, on the other hand, only receive voting rewards without performing the aforementioned two tasks.</p>
+
+
+
+<p><br>K: What are the most popular use cases for Tron blockchain? Games, stable coins maybe or BitTorrent token?</p>
+
+
+
+<p>J: There are 760+ dapps running on TRON blockchain, among them TRC20-USDT, BitTorrent, JUST are the most popular.</p>
+
+
+
+<p><br>K: What do you think about Defi in 5 to 10 years? How can Tron play a part in making DeFi available for regular people, especially the unbanked and underbanked?</p>
+
+
+
+<p>J: Defi will bring fresh possibilities to TRON while perfecting TRON’s DeFi ecosystem and improving the liquidity of TRX. Meanwhile, we welcome the participation from more DeFi platforms in TRON, as the underlying technology we offer is widely recognized.</p>
+
+
+
+<p><br>K: Recently you have made a live stream on development between TRON and Poloniex, what are the benefits for TRON holders on Poloniex?</p>
+
+
+
+<p>J: Yeah, we have an in-depth cooperation with Poloniex, and I just made a livestream about a major upgrade on benefits for Poloniex&#8217;s TRX Holders. Starting June 11, 2020 at 00:00 UTC, Poloniex and TRON will work together to implement a brand new tiered fee schedule. First, Poloniex users will enjoy a 25% discount on their trading fees when they opt in to paying their trading fees with TRX. Starting later today, users can turn on this discount so they will get 25% off as soon as the new fee schedule goes live on June 11th</p>
+
+
+
+<p><br>C: Our trading app BLOX is the most popular app (in The Netherlands and Belgium) for newcomers to the space to invest in cryptocurrency. We offer almost all the top coins and are considering adding TRON. Why should we add TRX and if we add TRX, how would you support us?</p>
+
+
+
+<p>J: TRON is one of the largest blockchain-based operating systems in the world. TRX was already listed by more than 150+ exchanges, TRON has more than 850 nodes around the world, over 6 million total accounts, over 20 million blockheight, over 750 Dapps, and a prosperous ecosystem. You can just contact our BD team for more details.</p>
+
+
+
+<p><br>C: Regarding Tron 4.0, What is the best response to a developer who is hesitant about building on Tron today, given that it will be &#8220;replaced&#8221; by Tron 4.0 over the next few years?</p>
+
+
+
+<p>J: TRON protocol offers base public blockchain support of high throughput, high scalability, and high availability for all decentralized applications in the TRON ecosystem. It’s user-friendly and compatible to ETH developers, the costs are almost free and TRON has a large volume of users.</p>
+
+
+
+<p><br>C: A more recent project built on TRON public chain is Pool-X decentralized mining pool hatched by Team KuCoin. What is the difference between KuCoin pool and TRX staking?</p>
+
+
+
+<p>J: Pool-X decentralized mining pool is hatched by Team KuCoin. Pool-X delivers both Staking benefits and high liquidity. The team’s choice of TRON was made out of its deep trust in us. It&#8217;s an exchange that provides liquidity with staked crypto. TRX staking is a way to maximize the benefits for users holding TRON, usually provided by exchange.</p>
+
+
+
+<p><br>C: What criteria does TRON use for integrating TRX &amp; Its Small tokens into multi-chain wallets? And if supporting &amp; adopting blockchain apps is important, would TRX Wallet also consider supporting other public blockchains’ coins or tokens in the future?</p>
+
+
+
+<p>J: All the Dapps are developed by the TRON community, the ecosystem is inclusive. By the community, for the community.</p>
+
+
+
+<p><br>C: Do you see more opportunities in staking coins than lending collateralized USD? What do you think?</p>
+
+
+
+<p>J: Well, that depends, different platforms have different services, users can make their choices.&nbsp;</p>
+
+
+
+<p><br>C: How about gaming? As far as I observe the industry, blockchain gaming is considered to become the next BIG thing in iGaming &amp; TRON is one of the few at the forefront. Are you confident that you will soon surpass the world’s famous gaming sites in the world?&nbsp;</p>
+
+
+
+<p>J: TRON is one of the largest blockchain-based operating systems in the world and wants to serve as a perfect blockchain to provide a better experience for users and developers.</p>
+
+
+
+<p><br>C: Justin Sun recently called on Ethereum users to migrate to Tron, can you share about the comparative advantage of Tron over Ethereum and what&#8217;s the benefit for me as a developer to switch to Tron. Tron 4.0 VS Eth 2.0 which is better? Why should I choose Tron?&nbsp;</p>
+
+
+
+<p>J: Sure. First, TRON is user-friendly, second, TRON is compatible with ETH, third, TRON has a prosperous ecosystem, and TRON 4.0 is also released, we are making every step steadily.</p>
+
+
+
+<p><br>C: How are rewards distributed (criteria) for staking TRX?</p>
+
+
+
+<p>J: Different exchanges have different staking mechanisms. Users can do their due diligence.</p>
+
+
+
+<p><br>C: Do you regret having lunch with Warren Buffet?</p>
+
+
+
+<p>J: Totally not, we had a great dinner that night and I learned a lot.</p>
+
+
+
+<p><br>C: The total supply of Tron (TRX) is almost 100 billion. In the future, Have you planned to do a coin burn from your total supply?</p>
+
+
+
+<p>J:&nbsp; Firstly, if you create one type of TRC10 token, it will consume 1024 TRX, which means the 1024 TRX will be burned, it helps maintain the TRON ecosystem and TRX’s value. Secondly, when you trigger a contract, if there are many transactions, it will also burn some TRX as transaction fee when the energy and bandwidth are used up. Thirdly, when you apply for TRON Super Representative, 9999 TRX will also be burned.</p>
+
+
+
+<p><br>C:&nbsp; I saw that Tron partnership with Samsung, what are you guys doing with this integration? How is it going to benefit our users, such as the ecosystem? How about other partnerships, for example, Apple, Alibaba and etc?</p>
+
+
+
+<p>J: TRON’s DApps are already launched in the Galaxy Store, so that many overseas users now have access to TRON DApps on Samsung. This gives us great encouragement and we will also further our cooperation with Samsung in the future. I have the confidence that TRON will have more and more users in the future.</p>
+
+
+
+<p><br>C: You said Tron 4.0 is not only about Dapps but also about Defi, can you name the main features of this?</p>
+
+
+
+<p>J: Sure. Here are the main features: TRONZ Smart Contract Privacy Protocol, the New TPOS Dual-layer Consensus Mechanism, New TICP Cross-chain Protocol and lastly, Financial institution and enterprise blockchain solution.</p>
+
+
+
+<p><br>We were glad to host Justin Sun on our Telegram. Thanks to Justin and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on Twitter, Telegram, Facebook, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-with-tron-digest">AMA Session with Tron</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/ama-with-tron-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Session with Neo</title>
+		<link>https://atomicwallet.io/blog/news/ama-with-neo-digest</link>
+					<comments>https://atomicwallet.io/blog/news/ama-with-neo-digest#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Thu, 02 Jul 2020 15:16:08 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=29313</guid>
+
+					<description><![CDATA[<p>On June 5th, we had an AMA session with Neo, an open-source, community-driven platform in our Telegram Chat. </p>
+<p>Neo is the platform that is leveraging the intrinsic advantages of blockchain technology to realize the optimized digital world of the future. </p>
+<p>The team members present on the discussion with our community were John Wang (Head of Neo Ecosystem Growth) and Denis Suslov (Associate Manager of the project).</p>
+<p>Here are the essential points of the AMA session:</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-with-neo-digest">AMA Session with Neo</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/neo_ama_digest_atomic-1920x1080.png"  alt=""  class="wp-image-29314" ></figure>
+
+
+
+<p>On June 5th, we had an AMA session with Neo, an open-source, community-driven platform in our <a href="https://t.me/atomicwallet">Telegram Chat</a>.&nbsp;</p>
+
+
+
+<p>Neo is the platform that is leveraging the intrinsic advantages of blockchain technology to realize the optimized digital world of the future.&nbsp;</p>
+
+
+
+<p>The team members present on the discussion with our community were John Wang (Head of Neo Ecosystem Growth) and Denis Suslov (Associate Manager of the project).</p>
+
+
+
+<p>Here are the essential points of the AMA session:</p>
+
+
+
+<p>Please welcome John (J), Denis (D), and the questions from our Telegram chat members (Q).</p>
+
+
+
+<p><br>Q:&nbsp; What is your future plan for NEO?</p>
+
+
+
+<p>J: Great question! Neo does not aim to become a top 10 market cap project but a most popular developer project. To achieve it, first is Neo3, which will make Neo ready for large scale commerce. Second is Neo EcoBoost project, which together with Eco Partners will provide full life cycle support for Neo eco projects. It will attract many talented developers and projects to Neo. Third is Neo aims to become the most developer-friendly blockchain, our Seattle office is focusing on it to lower blockchain development threshold to bring more external developers and we aim to become an important infrastructure of the next generation of internet.</p>
+
+
+
+<p><br>Q: Can you tell us more about Neo3?</p>
+
+
+
+<p>D: Neo3 will be released later in 2020, with some of the features first released on Neo2.0 earlier this year. Some of the major features will be: built-in oracle implementation, which will allow smart contracts access internet resources. Also, there will be NeoID, which is a decentralized identity protocol built on Neo.&nbsp;</p>
+
+
+
+<p><br>Q: Can you also tell us a bit about NeoFS?</p>
+
+
+
+<p>J: Yeah, as one of the most important parts of Neo3, NeoFS deserves to be known by people and actually, most of the development work of NeoFS is done by NSPCC. NeoFS will be a decentralized file storage platform built on Neo. It will be primarily used by Dapps as data storage infrastructure, in addition to acting as a Content Delivery Network. You can now test it <a href="https://send.fs.neo.org/">here</a>.</p>
+
+
+
+<p><br>Q: Most of the DEX platforms are not easy to use and require a high level of technical know-how. How will NEO DEX make DEX platforms become user friendly and easy to use for traders?</p>
+
+
+
+<p>D: So now we have 2 DEXes in our ecosystem, Nash and Switcheo. Both have very strong technology teams. Their KYC requirements are slightly different, but I recommend checking out both. Both are user-friendly. it&#8217;s quite easy to understand, you just have to have the wallet installed.</p>
+
+
+
+<p><br>Q: All activity seems to be taking place on DeFi. Does Neo have a plan for DeFi or does it have other interesting paths apart from DeFi?</p>
+
+
+
+<p>J: Yes! That&#8217;s it! Defi is a quite important director of US, as you guys know, the value of a blockchain is based on onchian assets. we have to build better infrastructure to enable developers to make awesome defi applications for users. We are doing a lot on Defi such as: DEXs, stable coin (which is an entrance of defi), borrow and lending protocol, atomic swaps etc.</p>
+
+
+
+<p><br>Q: Can you talk about your past? How did you decide to start the Neo project and why is the project called Neo?</p>
+
+
+
+<p>D: Well, we have 2 founders, a classic combination I would say: a technical and a business founder. Da Hongfei had experience in leading companies before founding Neo, and saw this opportunity to contribute to global technology. Eric Zhang is one of the first blockchain developers in all of China, but he saw that the best consensus actually will be DFBT. Then Neo became the first project to use this consensus, and later it was selected by Libra and Telegram&#8217;s ton!</p>
+
+
+
+<p><br>Q: What’s your outlook on the future of cryptocurrencies? What can you do to keep increasing adoption?</p>
+
+
+
+<p>J: Well, in general, as a payment method, cryptos must be accepted by lots of people. For us public blockchains, we have to lower the user and developer entry barrier.</p>
+
+
+
+<p><br>Q: As one of the five sponsor-members of the InterWork Alliance, how do you think this collaboration will benefit the whole project?</p>
+
+
+
+<p>J: As you see, the founding members in interwork are all big names. they all have great influence in this world. but what they lack is experience in the blockchain industry, that&#8217;s what we have. We are going to explore how to make blockchain mass adoption</p>
+
+
+
+<p><br>Q: Many projects have died because of bear market and COVID-19, how will you survive this?</p>
+
+
+
+<p>D: Well, here in China it&#8217;s been fine now for 2 months, and we are lucky to be in the Internet industry &#8211; all our core developers all over the world comfortably sit at home and continue shipping the code.</p>
+
+
+
+<p><br>Q: What are the advantages that Neo offers to Dapps developers?&nbsp; Does Neo project have any plan to attract more quality Dapps developers?</p>
+
+
+
+<p>D: Yes, Dapp developers really enjoy our tools, and the fact that they don&#8217;t have to learn a new programming language to start developing. Also we support dapps with promotion and cover some fees, please write to me if you plan to develop a Dapp on Neo.</p>
+
+
+
+<p><br>Q: For someone to build on Neo, what programming language is needed? What other things are needed?</p>
+
+
+
+<p>J: We support most of the mainstream programming languages, so if you are a python/go/java/JS/C# developer, you will feel comfortable on Neo, and actually, we are trying to lower the entry barrier, so just read our docs. Looking forward to seeing your project in the future.</p>
+
+
+
+<p><br>Q: Your metamorphosis is laudable, how have you been able to survive consecutive bear markets and continue evolving into greatness? Your aim is to become the foundation for next-gen Internet, how do you view the contribution of the internet, 5G network, to help you achieve your aim?</p>
+
+
+
+<p>J: Thank you. In fact while other projects were jumping up and down, we did stay in top 20 and higher all this time. 5G will contribute greatly by bringing more people to the internet, and often this means these are the users from countries with unstable currencies &#8211; they&#8217;ll benefit greatly from Bitcoin, Neo, and stable coins.</p>
+
+
+
+<p><br>Q: Does Neo have any program for the integration of your project with the universities?</p>
+
+
+
+<p>D: Yes indeed, we had courses with a number of universities in Switzerland (Zurich), Russia, Vietnam, US and more. We have materials ready and can provide teaching staff. Universities should talk to me about this.</p>
+
+
+
+<p><br>Q: What role does the community play in Neo? What have you done and what will you do to attract people to join Neo and build a thriving community?&nbsp;</p>
+
+
+
+<p>J: Community is the most important part of Neo, there are 9 Neo developer communities around the world and based on this, it brings more than 2 million users to Neo, over 50 Dapps deployed on Neo. So yes come on and join us.</p>
+
+
+
+<p><br>Q: Why is Neo better than your main competitors? How can Neo provide security to users&#8217; data?</p>
+
+
+
+<p>J: Because we stay hungry all the time. We keep following what we should have on Neo.</p>
+
+
+
+<p><br>Q: Are there any new partnerships and interesting upcoming use-cases?</p>
+
+
+
+<p>J: All InterWork alliance members are our new partnership. and for the upcoming use cases, I think Defi, NFTs, STOs are all the directions we will focus on.</p>
+
+
+
+<p><br>Q: What is the role of developers in the Neo ecosystem? Who can build on the platform? What are the Requirements?</p>
+
+
+
+<p>D: Very important for sure. Experienced senior blockchain developers can contribute as core developers and dapp/game/blockchain developers can develop using our platform.</p>
+
+
+
+<p><br>Q: Neo blockchains are running on DBFT consensus algorithms, but why did Neo blockchain choose DBFT consensus algorithms rather than any other consensus like PoW, PoS. PoA, etc?</p>
+
+
+
+<p>D: DBFT doesn&#8217;t require burning electricity like POW does. And compared to both POS and POW, DBFT has finality &#8211; large nodes cannot collude to recreate blockchain records (cancelling transactions, for example someone sending you money, then receiving the payment for you, and then deleting the record of sending you money).</p>
+
+
+
+<p><br>Q: Presently Neo has 2 DEXes in its ecosystem which are Nash and Switcheo, does Neo have any plan of adding more Dexes to it ecosystem so as to give it users more options of choosing from?</p>
+
+
+
+<p>D: Yes, there will be some more, but you can check out these 2 first.</p>
+
+
+
+<p><br>Q: What is happening with the other implementations of NEO, such as Java and Go?</p>
+
+
+
+<p>D: Go implementation is going really well, developed by the NSPCC community.&nbsp;</p>
+
+
+
+<p><br>We were glad to host <a href="https://neo.org/">Neo</a> on our Telegram. Thanks to the team and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a>, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-with-neo-digest">AMA Session with Neo</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/ama-with-neo-digest/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>AMA Report: Cosmos&#8217; Community</title>
+		<link>https://atomicwallet.io/blog/news/ama-cosmos-community</link>
+					<comments>https://atomicwallet.io/blog/news/ama-cosmos-community#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Wright]]></dc:creator>
+		<pubDate>Thu, 02 Jul 2020 15:06:27 +0000</pubDate>
+				<category><![CDATA[Blog]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=29298</guid>
+
+					<description><![CDATA[<p>On June 18th, we had an AMA session with Cosmos in their Telegram Chat.</p>
+<p>Cosmos is the most powerful, scalable, customizable, interoperable ecosystem of connected blockchains.</p>
+<p>Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the Cosmos' community.</p>
+<p>Here are the essential points of the AMA session:</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-cosmos-community">AMA Report: Cosmos&#8217; Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/07/nano_cosmos_digest_atomic-1920x1080.png"  alt="Cosmos Cover AMA"  class="wp-image-29299" ></figure>
+
+
+
+<p>On June 18th, we had an AMA session with <a href="https://cosmos.network/">Cosmos</a> in their <a href="https://t.me/cosmosproject">Telegram Chat</a>.</p>
+
+
+
+<p>Cosmos is the most powerful,scalable, customizable, interoperable ecosystem of connected blockchains.</p>
+
+
+
+<p>Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the COTI community.</p>
+
+
+
+<p>Here are the essential points of the AMA session:</p>
+
+
+
+<p>Please welcome Konstantin (K), Christina (C), and the questions from the Cosmos telegram chat members (Q).</p>
+
+
+
+<p><br>Q: Why Atomic wallet? One of the questions that users have is what are Atomic&#8217;s benefits compared to other software wallets?</p>
+
+
+
+<p>K: When I did research 2 years ago. There were almost few multi assets wallets on the market. I’m not mentioning exchanges. It was definitely a lack of great products.</p>
+
+
+
+<p><br>Q: I thought Atomic Wallet is only a desktop GUI wallet that supports ATOM.</p>
+
+
+
+<p>C: Oh no, it&#8217;s a multicurrency decentralized wallet that supports over 300 tokens along with ATOM surely. It&#8217;s available for desktop and mobile main OS.</p>
+
+
+
+<p><br>Q: Do you have any insights on some data related to ATOM users? How much ATOM holders hold and stake in Atomic, how many ATOM wallets you have?</p>
+
+
+
+<p>K: In total over $40M staked via Atomic in different assets. I think ATOM is around $10M. We provide a wide range of validators and users still control their funds with private keys and support network decentralization. This is the nature of DPoS blockchains.</p>
+
+
+
+<p><br>Q: Staking is such a hot topic now. How do you view the outlook for staking to be in the future? Will it be as popular as now?</p>
+
+
+
+<p>K: I think DPoS is a great compromise between network security and blockchain scalability. Also users like to stake their assets and earn some passive income. This is investment in network security as well. So I like how Cosmos is fast and cheap and easy to run your own chain based on SDK. Staking popularity will grow.</p>
+
+
+
+<p><br>Q: Cosmos community plays an important role in the development of the network. How do you view Atomic&#8217;s participation in this growth?</p>
+
+
+
+<p>K: Great question! First of all, as I said, users got an easy tool to discover new blockchains and participate in network security with their stakes. However we don’t yet provide extra options like governance and voting. Maybe we will add later, if we see users demand.</p>
+
+
+
+<p><br>Q: In terms of security, how does Atomic wallet manage to regulate and handle every individual user&#8217;s information and keep it safe from hacks and malicious softwares?</p>
+
+
+
+<p>K: One of my favorite questions! Basically Atomic wallet is a non-custodial app. Your private keys are encrypted and never leave your local device. We store nothing on our servers, except anonymous error logs. And know nothing about your funds. All is saved on the blockchain. However if you buy crypto with a bank card, our partner may ask you for verification to process the payment.</p>
+
+
+
+<p><br>Q:&nbsp; Does Atomic have any coin burn/buyback system or any token burn plan to increase the value of token &amp; attract Investors to stake to invest?</p>
+
+
+
+<p>K: Currently, there are no plans for token burn and recently we announced staking with up to 23% yearly rewards. As for others, it’s out of our control.</p>
+
+
+
+<p><br>Q: You mentioned card payment earlier, how safe are credit card details when users purchase crypto on Atomic wallet?</p>
+
+
+
+<p>K: Crypto purchases are provided by a 3rd party service. It’s regulated. Personal data is protected by the law. We never touch it in Atomic.</p>
+
+
+
+<p><br>Q: Does the Atomic Wallet project have any future plan to merge or implement trading via multiple DEX Platforms. Similar to what &#8220;Blocknet&#8221; is trying to accomplish to provide large market liquidity?</p>
+
+
+
+<p>K: Currently, no plans for any DEXs. We’re still in the early technology stage. However we will see!</p>
+
+
+
+<p><br>Q: Talking about future plans, what additional features are in the pipeline for the Atomic mobile wallet? Will there be an advantage to using the Atomic mobile wallet compared to a hardware wallet (Ledger) and the observe function?</p>
+
+
+
+<p>K: Hardware wallets are usually more secure by design. But it’s more complicated and less of an option. You should order them at least. My suggestion for long term holding is to use hardware. For daily usage, Atomic is much easier. It’s rather secure, as it’s built on top of common open source libraries and you still should care about your 12 words backup, whatever wallet you use! stay safe!</p>
+
+
+
+<p><br>Q: .How do you ensure the long-term sustainability of Atomic wallet as it is a decentralized portfolio without custody?</p>
+
+
+
+<p>K: Atomic is a decentralized bank in your pocket. This is a new paradigm of the financial system. So it’s a long term service.</p>
+
+
+
+<p><br>Q: There are many new users coming day by day, can you tell me the three reasons to use Atomic wallet?</p>
+
+
+
+<p>K:&nbsp; Simplicity, security, and all options in one interface. Even your grandma can use Atomic wallet.</p>
+
+
+
+<p><br>Q: What price feeds/Oracles does Atomic wallet use?</p>
+
+
+
+<p>K: Currently, we use centralized data sources for pricing. But recently we supported BAND protocol and hope to work with them on Oracles.</p>
+
+
+
+<p><br>Q: What&#8217;s the main use of AWC tokens?</p>
+
+
+
+<p>K: AWC is used for affiliate rewards, airdrops, cashback and staking for holders.</p>
+
+
+
+<p><br>Q: Do you plan to add more security features and options such as email verification and other forms of verification before payments are sent from the wallet?</p>
+
+
+
+<p>K: No plans to add any verification. In Atomic only you fully control your crypto with private keys.</p>
+
+
+
+<p><br>Q: Does Atomic wallet have any plans to Implement Hardware wallets like Trezor/ledger, etc to support the Desktop client of Atomic wallet?</p>
+
+
+
+<p>C: Yes, we do. Stay tuned with our updates.</p>
+
+
+
+<p><br>Q: What is AWC’s role in integrating people into the blockchain? Have you developed a Chrome plugin for the wallet?</p>
+
+
+
+<p>K: We&#8217;re a software wallet. No plugins. With various use-cases for AWC, we incentivize users to start their crypto journey and we can see the outcome <a href="https://atomicwallet.io/token">here</a>.</p>
+
+
+
+<p><br>We were glad to be hosted by <a href="https://cosmos.network/">Cosmos</a> in their telegram group. Thanks to the team and all the members of the session!</p>
+
+
+
+<p>Be always aware of our next AMAs and other projects with Atomic Wallet on <a href="https://twitter.com/atomicwallet">Twitter</a>, <a href="https://t.me/atomicwallet">Telegram</a>, <a href="https://www.facebook.com/atomicwallet">Facebook</a>, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/news/ama-cosmos-community">AMA Report: Cosmos&#8217; Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/news/ama-cosmos-community/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

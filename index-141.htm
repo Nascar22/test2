@@ -1,0 +1,5069 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"b25815f649","applicationID":"439050090","transactionName":"JlcNRxRfX19REU5SXgxWEBwPXldWTA==","queueTime":1,"applicationTime":137,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b25815f649",applicationID:"439050090"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<title>WhatToMine - Crypto coins mining profit calculator compared to Ethereum</title>
+<meta name="description" content="Calculate how profitable it is to mine selected altcoins in comparison to ethereum or bitcoin">
+<meta name="keywords" content="mining calculator gpu bitcoin ethereum ethash etchash kawpow beamhashiii verthash">
+<link rel="canonical" href="https://whattomine.com/">
+<meta name="twitter:site" content="@whattomine">
+<link rel="stylesheet" media="all" href="/assets/application-7c59bd2652b381da60e5b6562e9e8466b7e8bfae9189096cde39bbac1a9b25cc.css" />
+<script src="/assets/adapt-form-f0f88e21bffb502b8fcd12ab5b35ea302b8e84e95068436433fdcd0fd5614c58.js" defer="defer"></script><script src="/assets/adapt-5fd4dbb836db50ec0799bc555af75c8ecb6a022abe88a35202b673b4726401e3.js" defer="defer"></script>
+<script src="/assets/application-f5a4f02cf7c6a35b9846893f74027504c6147526a92f4b2b616b543b0e614355.js" defer="defer"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="HbxqwBAbM471xCBBqz4AcTDcNAxDq9mszcBkTkXghYcIeNbl7tx1x53bWqZAjt/wQwHDLxGhl5BUGJAFZve6Sg==" />
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      const filteredParams = location.search.slice(1).split('&').filter(function(param) {
+        return param.startsWith('a_') && !param.startsWith('a_u')
+      }).join('&');
+      const search = filteredParams.length > 0 ? '&' + filteredParams : '';
+
+      ga('create', 'UA-49963845-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview', location.pathname + search);
+    </script>
+<style type="text/css"> #iubenda-cs-banner { bottom: 0px !important; left: 0px !important; position: fixed !important; width: 100% !important; z-index: 99999998 !important; background-color: black; } .iubenda-cs-content { display: block; margin: 0 auto; padding: 20px; width: auto; font-family: Helvetica,Arial,FreeSans,sans-serif; font-size: 14px; background: #000; color: #fff;} .iubenda-cs-rationale { max-width: 900px; position: relative; margin: 0 auto; } .iubenda-banner-content > p { font-family: Helvetica,Arial,FreeSans,sans-serif; line-height: 1.5; } .iubenda-cs-close-btn { margin:0; color: #fff; text-decoration: none; font-size: 14px; position: absolute; top: 0; right: 0; border: none; } .iubenda-cs-cookie-policy-lnk { text-decoration: underline; color: #fff; font-size: 14px; font-weight: 900; } </style> <script type="text/javascript"> var _iub = _iub || []; _iub.csConfiguration = {"priorConsent":false,"lang":"en","siteId":1263648,"banner":{"textColor":"black","backgroundColor":"white","slideDown":false,"applyStyles":false},"cookiePolicyId":72463889}; </script><script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async></script>
+<link rel="preconnect" href="https://www.googletagservices.com">
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+<link rel="preconnect" href="https://tpc.googlesyndication.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon-04fe6bf3bd9780276ce23286a49833e5f4b05cea9a6627a825de8d972ccad1dd.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32-25ec665dbf5fe9a5074777511dab10dd7c983d0967e43224e4f3be9a8bce0ed9.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16-f1981a35049486814a4699470699498f3bb99357a9c3df43f077e32ddea2c552.png">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab-cec41ca6e2c667949a3c4ff98c6ffaa35bf9326c80a5e347ef3f7fe06490dbcb.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon/favicon-316428778fe6aa7979563cd834b07d724c0d878d420e2af77434cc3c4b185d40.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class='header-195685bc8462969c04'></div>
+<nav class="navbar-fixed-top sticky-top bg-black">
+<div class="container d-flex flex-row align-content-center">
+<span class="tickers">
+<span class="navbar-text">
+<a class="text-decoration-none text-reset" href="/coins/1-btc-sha-256">
+<img width="20px" height="20px" class="ticker-image" title="Bitcoin" alt="BTC" src="https://images.whattomine.com/coins/logos/000/000/001/thumb/btclogo.png?1486175435" />
+$42,037.61
+</a> </span>
+<span class="navbar-text ml-2">
+<a class="text-decoration-none text-reset" href="/coins/166-zec-equihash">
+<img width="20px" height="20px" class="ticker-image" title="Zcash" alt="ZEC" src="https://images.whattomine.com/coins/logos/000/000/166/thumb/zec.png?1486175433" />
+$106.73
+</a> </span>
+<span class="navbar-text ml-2">
+<a class="text-decoration-none text-reset" href="/coins/151-eth-ethash">
+<img width="20px" height="20px" class="ticker-image" title="Ethereum" alt="ETH" src="https://images.whattomine.com/coins/logos/000/000/151/thumb/eth.png?1486214743" />
+$2,928.84
+</a> </span>
+<span class="navbar-text ml-2">
+<a class="text-decoration-none text-reset" href="/coins/101-xmr-randomx">
+<img width="20px" height="20px" class="ticker-image" title="Monero" alt="XMR" src="https://images.whattomine.com/coins/logos/000/000/101/thumb/monero.png?1486175477" />
+$236.46
+</a> </span>
+<span class="navbar-text ml-2">
+<a class="text-decoration-none text-reset" href="/coins/162-etc-etchash">
+<img width="20px" height="20px" class="ticker-image" title="EthereumClassic" alt="ETC" src="https://images.whattomine.com/coins/logos/000/000/162/thumb/etc3.png?1496094431" />
+$47.84
+</a> </span>
+<span class="navbar-text ml-2">
+<a class="text-decoration-none text-reset" href="/coins/34-dash-x11">
+<img width="20px" height="20px" class="ticker-image" title="Dash" alt="DASH" src="https://images.whattomine.com/coins/logos/000/000/034/thumb/dash-darkcoin.png?1486175489" />
+$156.34
+</a> </span>
+<span class="navbar-text ml-2">
+<a class="text-decoration-none text-reset" href="/coins/4-ltc-scrypt">
+<img width="20px" height="20px" class="ticker-image" title="Litecoin" alt="LTC" src="https://images.whattomine.com/coins/logos/000/000/004/thumb/ltc.png?1621371988" />
+$147.64
+</a> </span>
+</span>
+<a href="https://twitter.com/WhatToMine" class="twitter-follow ml-auto" target="_blank" rel="noopener">
+<i></i>
+<span class="label">Follow @WhatToMine</span>
+</a>
+<span class="ml-1">
+<a class="btn btn-xs btn-outline-secondary" rel="nofollow" href="/coins?display_mode=dark">dark mode</a>
+</span>
+</div>
+<div class="container d-flex">
+<a id="logo" class="navbar-brand" href="/coins">
+<img height="37px" width="200px" alt="whattomine" src="/assets/logo-horizontal-512a17b0a1461dc56483756083c34577965d7f8b039fd0801096e59fd93ec180.svg" />
+</a>
+<ul class="nav nav-tabs primary flex-fill mt-auto">
+<li class="nav-item mr-1">
+<a class="nav-link active" href="/coins">GPU</a>
+</li>
+<li class="nav-item mr-1">
+<a class="nav-link " href="/asic">ASIC</a>
+</li>
+<li class="nav-item mr-1">
+<a class="nav-link  position-relative" href="/calculators">
+Coins <span class="badge badge-danger badge-floating">New</span>
+</a> </li>
+<li class="nav-item mr-1 dropdown">
+<a href="#" class="nav-link  dropdown-toggle" data-toggle="dropdown">
+LTC+ <span class="caret"></span>
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="/merged_coins/71-ltc-doge">LTC+DOGE</a>
+</div>
+</li>
+<li class="nav-item mr-1">
+<a class="nav-link  position-relative" href="/miners">
+Miners <span class="badge badge-danger badge-floating">New</span>
+</a> </li>
+<li class="nav-item mr-1">
+<a class="nav-link  position-relative" href="/gpus">
+GPUs
+</a> </li>
+<li class="nav-item ml-auto">
+</li>
+<li class="nav-item"><a class="nav-link" data-json-link="/coins.json" href="/coins.json">JSON</a></li>
+<li class="nav-item"><a class="nav-link" href="/users/sign_in">Sign in</a></li>
+<li class="nav-item">
+<a class="nav-link " href="/contacts/new">Contact</a>
+</li>
+</ul>
+</div>
+<nav class="navbar navbar-expand-xs navbar-secondary navbar-light bg-light pt-0 pb-0">
+<div class="container">
+<ul class="nav nav-tabs secondary mr-auto mt-auto">
+</ul>
+<form class="form-inline ml-auto add-dataset" action="/create_dataset?prefix=index" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="gcvEbId7aRK5d18f/PxDQeievvs5sRoBzdtp5+npPSb7OGwqFG3PYyY54nhaY8aAB9RFf8lvSBE39xU1FkvxjQ==" />
+<div class="input-group pt-1 pb-1">
+<input type="text" name="dataset" id="dataset" value="" class="form-control" placeholder="Add new dataset" />
+<div class="input-group-append">
+<input type="submit" name="commit" value="Add" class="btn btn-outline-secondary" data-disable-with="Add" />
+</div>
+</div>
+</form> </div>
+</nav>
+</nav>
+<div class="container">
+<script src='https://coinzillatag.com/lib/sticky.js'></script>
+<script>
+      window.coinzilla_sticky = window.coinzilla_sticky || [];
+      function czilla(){coinzilla_sticky.push(arguments);}
+      czilla('4155c5842328cb96641');
+    </script>
+<script type='text/javascript'>
+      (function(){
+        var bsa_optimize=document.createElement('script');
+        bsa_optimize.type='text/javascript';bsa_optimize.async=true;
+        bsa_optimize.src='https://cdn-s2s.buysellads.net/pub/whattomine.js?'+(new Date()-new Date()%600000);
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
+      })();
+    </script>
+<script src='https://coinzillatag.com/lib/wpnative.js'></script>
+<script>
+      var c_widget = czilla_widget_popup || [];
+      var c_widget_preferences = {};
+      c_widget_preferences.zone = '554055b729fe3e5fe1';
+      c_widget_preferences.x = 'right';
+      c_widget_preferences.y = 'top';
+      c_widget_preferences.yMobile = 'top';
+      c_widget.push(c_widget_preferences);
+    </script>
+<div class="my-2">
+<div class="centered-image-short"><div class="d-flex flex-row justify-content-center align-items-center invisible when-adblock-detected" style="height: 0px;"><a href="/subscription">Prefer websites without ads? Support WTM by subscribing for $5 per 3 months.</a></div>
+<div id='bsa-zone_1521482372256-3_123456'></div></div>
+</div>
+<form class="new_factor" id="new_factor" data-adapt-sorting-form="true" data-generate-json-link="true" action="/coins" accept-charset="UTF-8" method="get">
+<div class="adapt-wrapper adapt-wrapper-collapsed">
+<div class="form-row row-cols-11" data-adapt-container>
+<div class="col">
+<label for="a_68xt" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_68xt" id="aq_68xt" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_68xt" id="a_68xt" value="true" hidden="hidden" class="adapt" data-name="68xt" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 6800 XT<br><br>Using Fast Timings with 0.925-0.95V, unverified" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+6800XT
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_68" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_68" id="aq_68" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_68" id="a_68" value="true" hidden="hidden" class="adapt" data-name="68" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 6800<br><br>Using Fast Timings with 0.925-0.95V, unverified" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+6800
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_67xt" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_67xt" id="aq_67xt" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_67xt" id="a_67xt" value="true" hidden="hidden" class="adapt" data-name="67xt" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 6700 XT<br><br>Using Fast Timings with 0.925-0.95V, unverified" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+6700XT
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_66xt" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_66xt" id="aq_66xt" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_66xt" id="a_66xt" value="true" hidden="hidden" class="adapt" data-name="66xt" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 6600 XT<br><br>Using Fast Timings with 0.925-0.95V, unverified" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+6600XT
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_vii" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_vii" id="aq_vii" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_vii" id="a_vii" value="true" hidden="hidden" class="adapt" data-name="vii" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of VII<br><br>Using 1750/1000 with 0.95V&lt;br&gt;For Ethash, BEAM, ProgPow, NeoScrypt and Verthash 1500/1000 with 0.88V&lt;br&gt;For KawPow 1100/1000 with 0.825V" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+VII
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_5700xt" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_5700xt" id="aq_5700xt" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_5700xt" id="a_5700xt" value="true" hidden="hidden" class="adapt" data-name="5700xt" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 5700 XT<br><br>Using 1300/915 with 0.78V and ETH bios mod&lt;br&gt;For BEAM and GRIN algos 1550/915 with 0.85V" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+5700XT
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_5700" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_5700" id="aq_5700" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_5700" id="a_5700" value="true" hidden="hidden" class="adapt" data-name="5700" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 5700<br><br>Using 1300/915 with 0.78V and ETH bios mod&lt;br&gt;For BEAM and GRIN algos 1550/915 with 0.85V" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+5700
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_5600xt" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_5600xt" id="aq_5600xt" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_5600xt" id="a_5600xt" value="true" hidden="hidden" class="adapt" data-name="5600xt" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 5600 XT<br><br>Using 1100/900 with 0.78V&lt;br&gt;For BEAM and GRIN algos 1300/900 with 0.85V" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+5600XT
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_vega64" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_vega64" id="aq_vega64" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_vega64" id="a_vega64" value="true" hidden="hidden" class="adapt" data-name="vega64" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of Vega 64<br><br>Using 950/1020 with 0.85V&lt;br&gt;For BEAM 1200/1020 with 0.87V&lt;br&gt;For CryptoNight and GRIN algos 1570/1020" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+Vega64
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_vega56" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_vega56" id="aq_vega56" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_vega56" id="a_vega56" value="true" hidden="hidden" class="adapt" data-name="vega56" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of Vega 56<br><br>Using 950/900 with 0.85V&lt;br&gt;For BEAM 1200/900 with 0.87V&lt;br&gt;For CryptoNight and GRIN algos 1480/900" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+Vega56
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3090" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3090" id="aq_3090" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3090" id="a_3090" value="true" hidden="hidden" class="adapt" data-name="3090" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3090<br><br>Using +100/+0 with 80-90% TDP&lt;br&gt;For Ethash -100/+500 with 90% TDP&lt;br&gt;&lt;br&gt;Some models suffer from memory throttling which severly reduces hashrate for algos like ETH." data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3090
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3080Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3080Ti" id="aq_3080Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3080Ti" id="a_3080Ti" value="true" hidden="hidden" class="adapt" data-name="3080Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3080Ti<br><br>Using 60-80% TDP, unverified&lt;br&gt;Ethash limited&lt;br&gt;&lt;br&gt;Some models suffer from memory throttling which severly reduces hashrate for algos like ETH." data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3080Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3080" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3080" id="aq_3080" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3080" id="a_3080" value="true" hidden="hidden" class="adapt" data-name="3080" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3080<br><br>Using +100/+500 with 65% TDP&lt;br&gt;For Ethash +0/+500 with 60% TDP&lt;br&gt;&lt;br&gt;Some models suffer from memory throttling which severly reduces hashrate for algos like ETH." data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3080
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3080L" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3080L" id="aq_3080L" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3080L" id="a_3080L" value="true" hidden="hidden" class="adapt" data-name="3080L" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3080 LHR<br><br>Using 60-80% TDP, unverified&lt;br&gt;Ethash limited" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3080L
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3070Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3070Ti" id="aq_3070Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3070Ti" id="a_3070Ti" value="true" hidden="hidden" class="adapt" data-name="3070Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3070Ti<br><br>Using 60-80% TDP, unverified&lt;br&gt;Ethash limited" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3070Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3070" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3070" id="aq_3070" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3070" id="a_3070" value="true" hidden="hidden" class="adapt" data-name="3070" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3070<br><br>Using +100/+500 with 70% TDP&lt;br&gt;For Ethash +0/+800 with 50% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3070
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3070L" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3070L" id="aq_3070L" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3070L" id="a_3070L" value="true" hidden="hidden" class="adapt" data-name="3070L" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3070 LHR<br><br>Using 60-80% TDP, unverified&lt;br&gt;Ethash limited" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3070L
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3060Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3060Ti" id="aq_3060Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3060Ti" id="a_3060Ti" value="true" hidden="hidden" class="adapt" data-name="3060Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3060Ti<br><br>Using 60-80% TDP, unverified" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3060Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3060TiL" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3060TiL" id="aq_3060TiL" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3060TiL" id="a_3060TiL" value="true" hidden="hidden" class="adapt" data-name="3060TiL" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3060 Ti LHR<br><br>Using 60-80% TDP, unverified" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3060TiL
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3060" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3060" id="aq_3060" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3060" id="a_3060" value="true" hidden="hidden" class="adapt" data-name="3060" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3060<br><br>Using 60-80% TDP, unverified&lt;br&gt;Ethash limited" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3060
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_3060L" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_3060L" id="aq_3060L" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_3060L" id="a_3060L" value="true" hidden="hidden" class="adapt" data-name="3060L" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 3060 LHR<br><br>Using 60-80% TDP, unverified&lt;br&gt;Ethash limited" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+3060L
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_55xt8" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_55xt8" id="aq_55xt8" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_55xt8" id="a_55xt8" value="true" hidden="hidden" class="adapt" data-name="55xt8" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 5500 XT 8GB<br><br>Using 0.78V, unverified" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+5500XT
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_580" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_580" id="aq_580" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_580" id="a_580" value="true" hidden="hidden" class="adapt" data-name="580" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 580 8GB<br><br>Using 1150/2150 with 0.1V undervolt and ETH bios mod" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+580
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_570" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_570" id="aq_570" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_570" id="a_570" value="true" hidden="hidden" class="adapt" data-name="570" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 570 4GB<br><br>Using 1100/2000 with 0.1V undervolt and ETH bios mod" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+570
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_480" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_480" id="aq_480" value="3" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_480" id="a_480" value="true" hidden="hidden" class="adapt" data-name="480" checked="checked" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 480 8GB<br><br>Using 1150/2150 with 0.1V undervolt and ETH bios mod" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+480
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_470" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_470" id="aq_470" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_470" id="a_470" value="true" hidden="hidden" class="adapt" data-name="470" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 470 4GB<br><br>Using 1050/1870 with 0.1V undervolt and ETH bios mod" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+470
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_fury" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_fury" id="aq_fury" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_fury" id="a_fury" value="true" hidden="hidden" class="adapt" data-name="fury" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of Fury<br><br>Using 1020/500 with 0.1V undervolt" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+Fury
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_380" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_380" id="aq_380" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-amd">
+<input type="checkbox" name="a_380" id="a_380" value="true" hidden="hidden" class="adapt" data-name="380" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 380<br><br>Using 1000/1500 with 0.1V undervolt" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+380
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_2080Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_2080Ti" id="aq_2080Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_2080Ti" id="a_2080Ti" value="true" hidden="hidden" class="adapt" data-name="2080Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 2080Ti<br><br>Using +100/+200 with 75% TDP&lt;br&gt;For Ethash +0/+500 with 60% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+2080Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_2080" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_2080" id="aq_2080" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_2080" id="a_2080" value="true" hidden="hidden" class="adapt" data-name="2080" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 2080<br><br>Using +100/+200 with 75% TDP&lt;br&gt;For Ethash +0/+500 with 60% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+2080
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_2070" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_2070" id="aq_2070" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_2070" id="a_2070" value="true" hidden="hidden" class="adapt" data-name="2070" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 2070<br><br>Using +100/+200 with 75% TDP&lt;br&gt;For Ethash +0/+500 with 70% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+2070
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_2060" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_2060" id="aq_2060" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_2060" id="a_2060" value="true" hidden="hidden" class="adapt" data-name="2060" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 2060<br><br>Using +100/+200 with 70% TDP&lt;br&gt;For Ethash +0/+500 with 65% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+2060
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_166s" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_166s" id="aq_166s" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_166s" id="a_166s" value="true" hidden="hidden" class="adapt" data-name="166s" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1660 Super<br><br>Using +100/+500 with 65% TDP&lt;br&gt;For Ethash +0/+500 with 65% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1660S
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_1660Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_1660Ti" id="aq_1660Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_1660Ti" id="a_1660Ti" value="true" hidden="hidden" class="adapt" data-name="1660Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1660Ti<br><br>Using +100/+500 with 75% TDP&lt;br&gt;For Ethash +0/+500 with 60% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1660Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_1660" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_1660" id="aq_1660" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_1660" id="a_1660" value="true" hidden="hidden" class="adapt" data-name="1660" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1660<br><br>Using +100/+250 with 70% TDP&lt;br&gt;For Ethash +0/+250 with 60% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1660
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_1080Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_1080Ti" id="aq_1080Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_1080Ti" id="a_1080Ti" value="true" hidden="hidden" class="adapt" data-name="1080Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1080Ti<br><br>Using +125/+500 with 75% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1080Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_1080" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_1080" id="aq_1080" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_1080" id="a_1080" value="true" hidden="hidden" class="adapt" data-name="1080" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1080<br><br>Using +125/+500 with 70% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1080
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_1070Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_1070Ti" id="aq_1070Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_1070Ti" id="a_1070Ti" value="true" hidden="hidden" class="adapt" data-name="1070Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1070Ti<br><br>Using +150/+500 with 75% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1070Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_1070" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_1070" id="aq_1070" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_1070" id="a_1070" value="true" hidden="hidden" class="adapt" data-name="1070" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1070<br><br>Using +150/+500 with 75% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1070
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_10606" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_10606" id="aq_10606" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_10606" id="a_10606" value="true" hidden="hidden" class="adapt" data-name="10606" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1060 6GB<br><br>Using +150/+500 with 65% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1060
+</span>
+</div>
+</div>
+</label>
+</div>
+<div class="col">
+<label for="a_1050Ti" class="d-block">
+<div class="input-group input-group-sm mb-2">
+<input type="text" name="aq_1050Ti" id="aq_1050Ti" value="0" class="form-control adapt-quantity" />
+<div class="input-group-append hash-adapt ck-button-nv">
+<input type="checkbox" name="a_1050Ti" id="a_1050Ti" value="true" hidden="hidden" class="adapt" data-name="1050Ti" />
+<span class="btn btn-outline-secondary" data-toggle="popover" data-offset="0px, 1px" data-content="Insert hash rates and powers for a number of 1050Ti<br><br>Using +150/+500 with 75% TDP" data-placement="bottom" data-trigger="hover" data-html="true" data-container="body" data-boundary="viewport">
+1050Ti
+</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<div class="adapt-wrapper-collapsed-overlay text-center">
+show more
+</div>
+</div>
+<div class="form-row row-cols-11">
+<div class="col">
+<a class="btn btn-outline-secondary btn-sm btn-block" href="/user_gpus/new/from_existing">
+<svg class="octicon octicon-tools" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.433 2.304A4.494 4.494 0 003.5 6c0 1.598.832 3.002 2.09 3.802.518.328.929.923.902 1.64v.008l-.164 3.337a.75.75 0 11-1.498-.073l.163-3.33c.002-.085-.05-.216-.207-.316A5.996 5.996 0 012 6a5.994 5.994 0 012.567-4.92 1.482 1.482 0 011.673-.04c.462.296.76.827.76 1.423v2.82c0 .082.041.16.11.206l.75.51a.25.25 0 00.28 0l.75-.51A.25.25 0 009 5.282V2.463c0-.596.298-1.127.76-1.423a1.482 1.482 0 011.673.04A5.994 5.994 0 0114 6a5.996 5.996 0 01-2.786 5.068c-.157.1-.209.23-.207.315l.163 3.33a.75.75 0 11-1.498.074l-.164-3.345c-.027-.717.384-1.312.902-1.64A4.496 4.496 0 0012.5 6a4.494 4.494 0 00-1.933-3.696c-.024.017-.067.067-.067.16v2.818a1.75 1.75 0 01-.767 1.448l-.75.51a1.75 1.75 0 01-1.966 0l-.75-.51A1.75 1.75 0 015.5 5.282V2.463c0-.092-.043-.142-.067-.159zm.01-.005z"></path></svg> custom
+</a> </div>
+<div class="col-5 offset-3 text-center" style="padding-top: 5px;">
+<span class="badge badge-secondary">Partner</span>
+<a href="https://simplemining.net/ref?user=whattomine" target="_blank" rel="noopener" class="inline-smos simplemining-index">
+SimpleMining.net: Monitor and configure your GPU mining farm in one place.
+</a>
+</div>
+</div>
+<div class="form-row py-1">
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="eth" id="eth" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Ethash" data-placement="bottom" data-trigger="hover">
+Ethash
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="90.0" name="factor[eth_hr]" id="factor_eth_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="420.0" name="factor[eth_p]" id="factor_eth_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="e4g" id="e4g" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Ethash4G" data-placement="bottom" data-trigger="hover">
+Ethash4G
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="90.0" name="factor[e4g_hr]" id="factor_e4g_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="420.0" name="factor[e4g_p]" id="factor_e4g_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="zh" id="zh" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Zhash" data-placement="bottom" data-trigger="hover">
+Zhash
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="63.0" name="factor[zh_hr]" id="factor_zh_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[zh_p]" id="factor_zh_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="cnh" id="cnh" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include CNHeavy" data-placement="bottom" data-trigger="hover">
+CNHeavy
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="2880.0" name="factor[cnh_hr]" id="factor_cnh_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="330.0" name="factor[cnh_p]" id="factor_cnh_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="cng" id="cng" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include CNGPU" data-placement="bottom" data-trigger="hover">
+CNGPU
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="2280.0" name="factor[cng_hr]" id="factor_cng_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[cng_p]" id="factor_cng_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="cnr" id="cnr" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include CryptoNightR" data-placement="bottom" data-trigger="hover">
+CryptoNightR
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="2490.0" name="factor[cnr_hr]" id="factor_cnr_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="390.0" name="factor[cnr_p]" id="factor_cnr_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="cnf" id="cnf" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include CNFast" data-placement="bottom" data-trigger="hover">
+CNFast
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="4950.0" name="factor[cnf_hr]" id="factor_cnf_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="330.0" name="factor[cnf_p]" id="factor_cnf_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="eqa" id="eqa" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Aion" data-placement="bottom" data-trigger="hover">
+Aion
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="285.0" name="factor[eqa_hr]" id="factor_eqa_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[eqa_p]" id="factor_eqa_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row py-1">
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="cc" id="cc" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include CuckooCycle" data-placement="bottom" data-trigger="hover">
+CuckooCycle
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="7.8" name="factor[cc_hr]" id="factor_cc_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="390.0" name="factor[cc_p]" id="factor_cc_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="cr29" id="cr29" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Cuckaroo(d)29" data-placement="bottom" data-trigger="hover">
+Cuckaroo(d)29
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="7.2" name="factor[cr29_hr]" id="factor_cr29_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="390.0" name="factor[cr29_p]" id="factor_cr29_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="ct31" id="ct31" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Cuckatoo31" data-placement="bottom" data-trigger="hover">
+Cuckatoo31
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="1.8" name="factor[ct31_hr]" id="factor_ct31_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[ct31_p]" id="factor_ct31_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="ct32" id="ct32" value="true" hidden="hidden" checked="checked" />
+ <span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Cuckatoo32" data-placement="bottom" data-trigger="hover">
+Cuckatoo32
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="0.48" name="factor[ct32_hr]" id="factor_ct32_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[ct32_p]" id="factor_ct32_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="eqb" id="eqb" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Beam" data-placement="bottom" data-trigger="hover">
+Beam
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="46.5" name="factor[eqb_hr]" id="factor_eqb_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="420.0" name="factor[eqb_p]" id="factor_eqb_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="rmx" id="rmx" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include RandomX" data-placement="bottom" data-trigger="hover">
+RandomX
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="1410.0" name="factor[rmx_hr]" id="factor_rmx_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="270.0" name="factor[rmx_p]" id="factor_rmx_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="ns" id="ns" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include NeoScrypt" data-placement="bottom" data-trigger="hover">
+NeoScrypt
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="2460.0" name="factor[ns_hr]" id="factor_ns_hr" />
+<div class="input-group-append">
+<span class="input-group-text">kh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="450.0" name="factor[ns_p]" id="factor_ns_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="al" id="al" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Autolykos" data-placement="bottom" data-trigger="hover">
+Autolykos
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="177.0" name="factor[al_hr]" id="factor_al_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="390.0" name="factor[al_p]" id="factor_al_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row py-1">
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="ops" id="ops" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Octopus" data-placement="bottom" data-trigger="hover">
+Octopus
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="14.7" name="factor[ops_hr]" id="factor_ops_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[ops_p]" id="factor_ops_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="eqz" id="eqz" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include EquihashZero" data-placement="bottom" data-trigger="hover">
+EquihashZero
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="42.0" name="factor[eqz_hr]" id="factor_eqz_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="390.0" name="factor[eqz_p]" id="factor_eqz_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="zlh" id="zlh" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include ZelHash" data-placement="bottom" data-trigger="hover">
+ZelHash
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="42.0" name="factor[zlh_hr]" id="factor_zlh_hr" />
+<div class="input-group-append">
+<span class="input-group-text">h/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[zlh_p]" id="factor_zlh_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="kpw" id="kpw" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include KawPow" data-placement="bottom" data-trigger="hover">
+KawPow
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="39.0" name="factor[kpw_hr]" id="factor_kpw_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="510.0" name="factor[kpw_p]" id="factor_kpw_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="ppw" id="ppw" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include ProgPow" data-placement="bottom" data-trigger="hover">
+ProgPow
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="28.2" name="factor[ppw_hr]" id="factor_ppw_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="420.0" name="factor[ppw_p]" id="factor_ppw_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="x25x" id="x25x" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include X25X" data-placement="bottom" data-trigger="hover">
+X25X
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="2.49" name="factor[x25x_hr]" id="factor_x25x_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="240.0" name="factor[x25x_p]" id="factor_x25x_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="mtp" id="mtp" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include MTP" data-placement="bottom" data-trigger="hover">
+MTP
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="1.8" name="factor[mtp_hr]" id="factor_mtp_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+ </div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="390.0" name="factor[mtp_p]" id="factor_mtp_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm">
+<div class="card">
+<div class="card-body px-1 py-1">
+<label class="ck-button">
+<input type="checkbox" name="vh" id="vh" value="true" hidden="hidden" checked="checked" />
+<span class="btn btn-default btn-block mb-1" data-toggle="popover" data-offset="0px, 1px" data-content="Include Verthash" data-placement="bottom" data-trigger="hover">
+Verthash
+</span>
+</label>
+<div class="input-group input-group-sm mb-1">
+<input class="form-control resets-adapt" type="text" value="1.32" name="factor[vh_hr]" id="factor_vh_hr" />
+<div class="input-group-append">
+<span class="input-group-text">Mh/s</span>
+</div>
+</div>
+<div class="input-group input-group-sm">
+<input class="form-control resets-adapt" type="text" value="360.0" name="factor[vh_p]" id="factor_vh_p" />
+<div class="input-group-append">
+<span class="input-group-text">W</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row py-1">
+<div class="col-9">
+<div class="row">
+<div class="col-6">
+<div class="row">
+<div class="col-6">
+<label for="factor_cost">Cost</label>
+<div class="input-group input-group-sm">
+<input class="form-control" type="text" value="0.1" name="factor[cost]" id="factor_cost" />
+<div class="input-group-append">
+<span class="input-group-text">$/kWh</span>
+</div>
+</div>
+</div>
+<div class="col-6">
+<label for="factor_sort_by">Sort by</label>
+<select name="sort" id="sort" class="slim-select"><option value="Difficulty">Difficulty</option>
+<option value="NetHash">NetHash</option>
+<option value="EstimatedRewards">Estimated Rewards</option>
+<option value="EstimatedRewards24">Estimated Rewards 24</option>
+<option value="MarketCap">Market Cap</option>
+<option value="ExchangeVolume">Exchange Volume</option>
+<option value="Revenue">Current Revenue</option>
+<option value="Profit">Current Profit</option>
+<option value="Profit24">Profit 24h</option>
+<option selected="selected" value="Profitability24">Profitability 24h</option>
+<option value="Profitability3">Profitability 3 days</option>
+<option value="Profitability7">Profitability 7 days</option></select>
+</div>
+</div>
+<div class="row">
+<div class="col-6">
+<label for="factor_volume_filter">Volume filter</label>
+<select name="volume" id="volume" class="slim-select"><option value="0">Any volume</option>
+<option value="0_1">Volume &gt; 0.1</option>
+<option value="0_5">Volume &gt; 0.5</option>
+<option value="1">Volume &gt; 1</option>
+<option value="5">Volume &gt; 5</option>
+<option value="10">Volume &gt; 10</option>
+<option value="50">Volume &gt; 50</option>
+<option value="100">Volume &gt; 100</option></select>
+</div>
+<div class="col-6">
+<label for="factor_difficulty_for_revenue">Difficulty for revenue</label>
+<select name="revenue" id="revenue" class="slim-select"><option value="current">Current difficulty</option>
+<option selected="selected" value="24h">Average last 24h</option>
+<option value="3d">Average last 3 days</option>
+<option value="7d">Average last 7 days</option></select>
+</div>
+</div>
+</div>
+<div class="col-6 col-exchanges">
+<label for="factor_selected_exchanges">Selected exchanges</label>
+<input name="factor[exchanges][]" type="hidden" value="" /><select class="slim-select" multiple="multiple" name="factor[exchanges][]" id="factor_exchanges"><option selected="selected" value="binance">Binance</option>
+<option selected="selected" value="bitfinex">Bitfinex</option>
+<option selected="selected" value="bitforex">BitForex</option>
+<option selected="selected" value="bittrex">Bittrex</option>
+<option selected="selected" value="dove">DoveWallet</option>
+<option selected="selected" value="exmo">Exmo</option>
+<option selected="selected" value="gate">Gate.io</option>
+<option selected="selected" value="graviex">Graviex</option>
+<option selected="selected" value="hitbtc">HitBTC</option>
+<option selected="selected" value="hotbit">Hotbit</option>
+<option selected="selected" value="ogre">TradeOgre</option>
+<option selected="selected" value="poloniex">Poloniex</option>
+<option selected="selected" value="stex">Stex</option></select>
+</div>
+</div>
+</div>
+<input type="hidden" name="dataset" id="dataset" />
+<div class="col-3 mt-4 mb-1">
+<input type="submit" name="commit" value="Calculate" class="btn btn-primary btn-block" data-disable-with="Calculate" />
+<a href="/coins?aq_480=3&amp;a_480=true&amp;eth=true&amp;e4g=true&amp;zh=true&amp;zlh=true&amp;cnh=true&amp;cng=true&amp;eqa=true&amp;ns=true&amp;cnr=true&amp;ct32=true&amp;ops=true&amp;ct31=true&amp;kpw=true&amp;al=true&amp;eqz=true&amp;ppw=true&amp;rmx=true&amp;x25x=true&amp;cnf=true&amp;mtp=true&amp;cr29=true&amp;vh=true&amp;cc=true&amp;eqb=true&amp;factor[cost]=0.1&amp;sort=Profitability24&amp;volume=0&amp;revenue=24h&amp;factor[exchanges][]=&amp;factor[exchanges][]=bitfinex&amp;factor[exchanges][]=bittrex&amp;factor[exchanges][]=binance&amp;factor[exchanges][]=cryptopia&amp;factor[exchanges][]=exmo&amp;factor[exchanges][]=gate&amp;factor[exchanges][]=hitbtc&amp;factor[exchanges][]=poloniex&amp;factor[exchanges][]=ogre&amp;factor[exchanges][]=graviex&amp;factor[exchanges][]=stex&amp;factor[exchanges][]=hotbit&amp;factor[exchanges][]=dove&amp;factor[exchanges][]=bitforex&amp;dataset=" class="btn btn-info btn-block">Defaults</a>
+</div>
+</div>
+</form>
+<h4 class="text-justify mt-2">Using below table, you can check how profitable it is to mine selected altcoins in comparison to ethereum. Please note that calculations are based on mean values, therefore your final results may vary. For best results fill all fields with your hash rate and power consumption. Default values are adapted for three 480 cards.</h4>
+<div class="mb-2">
+<div class="centered-image-short">
+<div id='bsa-zone_1521482372256-2_123456'></div></div>
+</div>
+<table class="table table-sm table-hover table-vcenter">
+<thead>
+<tr>
+<th>Name(Tag)<br>Algorithm</th>
+<th>Block Time<br>Block Reward<br>Last Block</th>
+<th class="text-center">Difficulty<br>NetHash</th>
+<th class="text-center">Est. Rewards<br>Est. Rewards 24h</th>
+<th class="text-center">Exchange Rate</th>
+<th>Market Cap<br>Volume</th>
+<th>Rev. BTC<br>Rev. 24h</th>
+<th>Rev. $<br>Profit</th>
+<th>Profitability<br>Current | 24h<br>3 days | 7 days</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-success">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/151/thumb/eth.png?1486214743" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/151-eth-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">Ethereum(ETH)</a><br>
+Ethash<span class="ml-1" data-toggle="popover" data-content="Best rates on some cards only available on Linux" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 13.39s<br>
+BR: 2.08<span class="ml-1" data-toggle="popover" data-content="Fees included&lt;br&gt;Reduced due to uncles lowered reward" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+LB: 13,313,999
+</td>
+<td class="text-center">
+<strong>
+8,873,627,141M
+</strong>
+<div class="small">
+662.80 Th/s<br>
+-3.0%
+</div>
+</td>
+<td class="text-center">
+0.0018<br>
+0.0019
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/ETH_BTC">0.06967200<br />(Binance)</a>
+<div class="small">
+0.1%
+</div>
+</td>
+<td>
+$344,747,275,811<br>
+<strong>
+5,836.41 BTC
+</strong>
+</td>
+<td>
+0.000127<br>
+0.000130
+</td>
+<td>
+$5.45<br>
+<strong>
+$4.44
+</strong>
+</td>
+<td>
+100% | 100%<br>
+<strong>100%</strong> | 100%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/015/thumb/nicehash2.png?1486215161" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-Ethash<br>
+Ethash<span class="ml-1" data-toggle="popover" data-content="Best rates on some cards only available on Linux" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+49.01 Th/s<br>
+1.0%
+</div>
+</td>
+<td class="text-center">
+0.000119<br>
+0.000120
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/DAGGERHASHIMOTO?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">1.37896809<br />(Nicehash)</a>
+<div class="small">
+-0.6%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+66.95 BTC
+</strong>
+</td>
+<td>
+0.000119<br>
+0.000120
+</td>
+<td>
+$5.04<br>
+<strong>
+$4.03
+</strong>
+</td>
+ <td>
+<strong>94%</strong> | 92%<br>
+93% | 92%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/162/thumb/etc3.png?1496094431" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/162-etc-etchash?cost=0.1&amp;hr=90.0&amp;p=420.0">EthereumClassic(ETC)</a><br>
+Etchash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 13.17s<br>
+BR: 3.10<span class="ml-1" data-toggle="popover" data-content="Reduced due to uncles lowered reward" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+LB: 13,619,824
+</td>
+<td class="text-center">
+<strong>
+326,955,110M
+</strong>
+<div class="small">
+24.82 Th/s<br>
+-0.8%
+</div>
+</td>
+<td class="text-center">
+0.0738<br>
+0.0732
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/ETC_BTC">0.00113800<br />(Binance)</a>
+<div class="small">
+5.7%
+</div>
+</td>
+<td>
+$6,234,636,799<br>
+<strong>
+69.09 BTC
+</strong>
+</td>
+<td>
+0.000084<br>
+0.000083
+</td>
+<td>
+$3.50<br>
+<strong>
+$2.49
+</strong>
+</td>
+<td>
+66% | 64%<br>
+<strong>67%</strong> | 64%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/234/thumb/rvn.png?1522435882" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/234-rvn-kawpow?cost=0.1&amp;hr=39.0&amp;p=510.0">Ravencoin(RVN)</a><br>
+KawPow
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 59s<br>
+BR: 5,000.00<br>
+LB: 1,949,605
+</td>
+<td class="text-center">
+<strong>
+112,638.389
+</strong>
+<div class="small">
+8.20 Th/s<br>
+4.5%
+</div>
+</td>
+<td class="text-center">
+34.8257<br>
+36.3841
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/RVN_BTC">0.00000228<br />(Binance)</a>
+<div class="small">
+0.4%
+</div>
+</td>
+<td>
+$934,256,935<br>
+<strong>
+22.26 BTC
+</strong>
+</td>
+<td>
+0.000079<br>
+0.000083
+</td>
+<td>
+$3.49<br>
+<strong>
+$2.26
+</strong>
+ </td>
+<td>
+63% | 64%<br>
+<strong>67%</strong> | 65%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/045/thumb/nicehash2.png?1588791170" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-KawPow<br>
+KawPow
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+1.91 Th/s<br>
+24.0%
+</div>
+</td>
+<td class="text-center">
+0.000075<br>
+0.000076
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/KAWPOW?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.00200996<br />(Nicehash)</a>
+<div class="small">
+-1.3%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+3.13 BTC
+</strong>
+</td>
+<td>
+0.000075<br>
+0.000076
+</td>
+<td>
+$3.20<br>
+<strong>
+$1.98
+</strong>
+</td>
+<td>
+59% | 59%<br>
+<strong>63%</strong> | 62%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/294/thumb/beam.png?1548785635" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/294-beam-beamhashiii?cost=0.1&amp;hr=46.5&amp;p=420.0">Beam(BEAM)</a><br>
+BeamHashIII
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m<br>
+BR: 40.00<br>
+LB: 1,433,408
+</td>
+<td class="text-center">
+<strong>
+27,516,830.000
+</strong>
+<div class="small">
+458.61 kh/s<br>
+2.3%
+</div>
+</td>
+<td class="text-center">
+5.5476<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+5.6764<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/BEAM_BTC">0.00001287<br />(Binance)</a>
+<div class="small">
+1.4%
+</div>
+</td>
+<td>
+$52,819,636<br>
+<strong>
+16.61 BTC
+</strong>
+</td>
+<td>
+0.000071<br>
+0.000073
+</td>
+<td>
+$3.07<br>
+<strong>
+$2.06
+</strong>
+</td>
+<td>
+56% | 56%<br>
+<strong>57%</strong> | 55%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/038/thumb/nicehash2.png?1565893213" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-BeamV3<br>
+BeamHashIII
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+276.28 kh/s<br>
+-14.0%
+</div>
+</td>
+<td class="text-center">
+0.000070<br>
+0.000070
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/BEAMV3?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.00156158<br />(Nicehash)</a>
+<div class="small">
+-0.2%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.50 BTC
+</strong>
+</td>
+<td>
+0.000070<br>
+0.000070
+</td>
+<td>
+$2.94<br>
+<strong>
+$1.93
+</strong>
+</td>
+<td>
+55% | 54%<br>
+<strong>56%</strong> | 54%
+</td>
+</tr>
+<tr><td colspan="9"><div class="centered-image-short">
+<div id='bsa-zone_1524495978713-0_123456'></div></div></td></tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/318/thumb/qkc.png?1569159488" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/318-qkc-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">QuarkChain(QKC)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 9.93s<br>
+BR: 2.52<br>
+LB: 7,781,031
+</td>
+<td class="text-center">
+<strong>
+45,909M
+</strong>
+<div class="small">
+9.25 Gh/s<br>
+-6.1%
+</div>
+</td>
+<td class="text-center">
+179.4262<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+168.5029<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/QKC_BTC">0.00000039<br />(Binance)</a>
+<div class="small">
+-0.4%
+</div>
+</td>
+<td>
+$104,924,342<br>
+<strong>
+14.26 BTC
+</strong>
+</td>
+<td>
+0.000070<br>
+0.000066
+</td>
+<td>
+$2.76<br>
+<strong>
+$1.75
+</strong>
+</td>
+<td>
+<strong>55%</strong> | 51%<br>
+49% | 48%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/005/thumb/vtc3.png?1521224466" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/5-vtc-verthash?cost=0.1&amp;hr=1.32&amp;p=360.0">Vertcoin(VTC)</a><br>
+Verthash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 24s<br>
+BR: 25.00<br>
+LB: 1,639,070
+</td>
+<td class="text-center">
+<strong>
+109.835
+</strong>
+<div class="small">
+3.28 Gh/s<br>
+-0.5%
+</div>
+</td>
+<td class="text-center">
+5.7395<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+5.7135<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://bittrex.com/Market/Index?MarketName=BTC-VTC">0.00001047<br />(Bittrex)</a>
+<div class="small">
+-1.4%
+</div>
+</td>
+<td>
+$27,277,763<br>
+<strong>
+0.45 BTC
+</strong>
+</td>
+<td>
+0.000060<br>
+0.000060
+</td>
+<td>
+$2.51<br>
+<strong>
+$1.65
+</strong>
+</td>
+<td>
+47% | 46%<br>
+49% | <strong>49%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/340/thumb/Ergo.png?1614353755" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/340-erg-autolykos?cost=0.1&amp;hr=177.0&amp;p=390.0">Ergo(ERG)</a><br>
+Autolykos
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 38s<br>
+BR: 67.50<br>
+LB: 586,641
+</td>
+<td class="text-center">
+<strong>
+4,962,151,811M
+</strong>
+<div class="small">
+31.41 Th/s<br>
+0.0%
+</div>
+</td>
+<td class="text-center">
+0.2080<br>
+0.2081
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.hotbit.io/exchange?symbol=ERG_BTC">0.00027845<br />(Hotbit)</a>
+<div class="small">
+-1.0%
+</div>
+</td>
+<td>
+$374,717,395<br>
+<strong>
+6.01 BTC
+</strong>
+</td>
+<td>
+0.000058<br>
+0.000058
+</td>
+<td>
+$2.44<br>
+<strong>
+$1.50
+</strong>
+</td>
+<td>
+46% | 45%<br>
+49% | <strong>54%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/306/thumb/etho2.png?1598906033" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/306-etho-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">Etho(ETHO)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 13.25s<br>
+BR: 0.45<br>
+LB: 8,000,862
+</td>
+<td class="text-center">
+<strong>
+150,160M
+</strong>
+<div class="small">
+11.34 Gh/s<br>
+-7.0%
+</div>
+</td>
+<td class="text-center">
+23.1196<br>
+27.5041
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/ETHO/1D">0.00000207<br />(Stex)</a>
+<div class="small">
+-1.9%
+</div>
+</td>
+<td>
+$4,954,493<br>
+<strong>
+0.22 BTC
+</strong>
+</td>
+<td>
+0.000048<br>
+0.000057
+</td>
+<td>
+$2.39<br>
+<strong>
+$1.39
+</strong>
+</td>
+<td>
+38% | 44%<br>
+49% | <strong>50%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/209/thumb/etp.png?1508692794" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/209-etp-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">Metaverse(ETP)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 22s<br>
+BR: 1.42<br>
+LB: 5,714,264
+</td>
+<td class="text-center">
+<strong>
+691,500M
+</strong>
+<div class="small">
+31.43 Gh/s<br>
+1.0%
+</div>
+</td>
+<td class="text-center">
+15.9449<br>
+16.1109
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.bitfinex.com/trading/ETPBTC">0.00000350<br />(Bitfinex)</a>
+<div class="small">
+-0.5%
+</div>
+</td>
+<td>
+$11,629,565<br>
+<strong>
+0.07 BTC
+</strong>
+</td>
+<td>
+0.000056<br>
+0.000056
+</td>
+<td>
+$2.37<br>
+<strong>
+$1.36
+</strong>
+</td>
+<td>
+44% | 43%<br>
+<strong>44%</strong> | 44%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/048/thumb/nicehash2.png?1624713207" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-Autolykos<br>
+Autolykos
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+1.61 Th/s<br>
+-10.0%
+</div>
+</td>
+<td class="text-center">
+0.000054<br>
+0.000055
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/AUTOLYKOS?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.00031508<br />(Nicehash)</a>
+<div class="small">
+-2.6%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.57 BTC
+</strong>
+</td>
+<td>
+0.000054<br>
+0.000055
+</td>
+<td>
+$2.31<br>
+<strong>
+$1.37
+</strong>
+</td>
+<td>
+42% | 42%<br>
+50% | <strong>59%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/312/thumb/bloc.png?1565861377" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/312-bloc-cryptonighthaven?cost=0.1&amp;hr=2880.0&amp;p=330.0">Bloc(BLOC)</a><br>
+CryptoNightHaven
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 3s<br>
+BR: 14.25<br>
+LB: 858,362
+</td>
+<td class="text-center">
+<strong>
+7,823,898
+</strong>
+<div class="small">
+63.61 kh/s<br>
+-16.2%
+</div>
+</td>
+<td class="text-center">
+433.5896<br>
+365.9690
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-BLOC">0.00000015<br />(TradeOgre)</a>
+<div class="small">
+4.2%
+</div>
+</td>
+<td>
+$63,056,415<br>
+<strong>
+0.01 BTC
+</strong>
+</td>
+<td>
+0.000065<br>
+0.000055
+</td>
+<td>
+$2.31<br>
+<strong>
+$1.52
+</strong>
+</td>
+<td>
+<strong>51%</strong> | 42%<br>
+42% | 43%
+</td>
+</tr>
+<tr><td colspan="9"><div class="centered-image-short">
+<div id='bsa-zone_1521482372256-1_123456'></div></div></td></tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/330/thumb/zano.png?1587209595" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/330-zano-progpowz?cost=0.1&amp;hr=28.2&amp;p=420.0">Zano(ZANO)</a><br>
+ProgPowZ
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m<br>
+BR: 1.00<br>
+LB: 1,252,448
+</td>
+<td class="text-center">
+<strong>
+2,152,411M
+</strong>
+<div class="small">
+17.94 Gh/s<br>
+1.4%
+</div>
+</td>
+<td class="text-center">
+1.0172<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+1.0313<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/ZANO/1D">0.00005279<br />(Stex)</a>
+<div class="small">
+-0.7%
+</div>
+</td>
+<td>
+$28,548,494<br>
+<strong>
+5.09 BTC
+</strong>
+</td>
+<td>
+0.000054<br>
+0.000054
+</td>
+<td>
+$2.29<br>
+<strong>
+$1.28
+</strong>
+</td>
+<td>
+42% | 42%<br>
+44% | <strong>44%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+ <img src="https://images.whattomine.com/coins/logos/000/000/283/thumb/clo.png?1546278103" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/283-clo-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">Callisto(CLO)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 13.29s<br>
+BR: 38.70<span class="ml-1" data-toggle="popover" data-content="Reduced due to uncles lowered reward" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+LB: 8,380,818
+</td>
+<td class="text-center">
+<strong>
+867,110M
+</strong>
+<div class="small">
+65.25 Gh/s<br>
+-7.0%
+</div>
+</td>
+<td class="text-center">
+346.5726<br>
+322.2831
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://trading.bitfinex.com/t/CLO:USD">0.00000016<br />(Bitfinex)</a>
+<div class="small">
+0.5%
+</div>
+</td>
+<td>
+$17,485,252<br>
+<strong>
+2.35 BTC
+</strong>
+</td>
+<td>
+0.000056<br>
+0.000052
+</td>
+<td>
+$2.19<br>
+<strong>
+$1.18
+</strong>
+</td>
+<td>
+<strong>44%</strong> | 40%<br>
+41% | 39%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/260/thumb/ryo.png?1532106101" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/260-ryo-cryptonightgpu?cost=0.1&amp;hr=2280.0&amp;p=360.0">Ryo(RYO)</a><br>
+CryptoNightGPU
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+<span class="badge badge-danger" data-toggle="popover" data-placement="right" data-trigger="hover" data-offset="0px, 3px" data-animation="false" data-content="Recent difficulty spike: 1.43x decrease of current vs 24h rewards"><svg class="octicon octicon-pulse" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 2a.75.75 0 01.696.471L10 10.731l1.304-3.26A.75.75 0 0112 7h3.25a.75.75 0 010 1.5h-2.742l-1.812 4.528a.75.75 0 01-1.392 0L6 4.77 4.696 8.03A.75.75 0 014 8.5H.75a.75.75 0 010-1.5h2.742l1.812-4.529A.75.75 0 016 2z"></path></svg></span>
+</div>
+</div>
+</td>
+<td class="small">
+BT: 3m 58s<br>
+BR: 46.66<br>
+LB: 560,863
+</td>
+<td class="text-center">
+<strong>
+389,525,579
+</strong>
+<div class="small">
+1.64 Mh/s<br>
+43.4%
+</div>
+</td>
+<td class="text-center">
+23.5667<br>
+33.7827
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-RYO">0.00000154<br />(TradeOgre)</a>
+<div class="small">
+19.5%
+</div>
+</td>
+<td>
+$2,121,106<br>
+<strong>
+0.16 BTC
+</strong>
+</td>
+<td>
+0.000036<br>
+0.000052
+</td>
+<td>
+$2.19<br>
+<strong>
+$1.32
+</strong>
+</td>
+<td>
+29% | 40%<br>
+46% | <strong>48%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/221/thumb/ella.png?1514372318" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/221-ella-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">Ellaism(ELLA)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 13.08s<br>
+BR: 4.91<span class="ml-1" data-toggle="popover" data-content="Reduced due to uncles lowered reward" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+LB: 9,637,069
+</td>
+<td class="text-center">
+<strong>
+12,679M
+</strong>
+<div class="small">
+969.38 Mh/s<br>
+-7.6%
+</div>
+</td>
+<td class="text-center">
+2,755.4833<br>
+2,561.6166
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/ELLA/1D">0.00000002<br />(Stex)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$39,881<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000055<br>
+0.000051
+</td>
+<td>
+$2.15<br>
+<strong>
+$1.15
+</strong>
+</td>
+<td>
+<strong>43%</strong> | 40%<br>
+40% | 37%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/173/thumb/ubq.png?1486175435" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/173-ubq-ubqhash?cost=0.1&amp;hr=90.0&amp;p=420.0">Ubiq(UBQ)</a><br>
+Ubqhash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 28s<br>
+BR: 4.00<br>
+LB: 1,689,438
+</td>
+<td class="text-center">
+<strong>
+3,095,287M
+</strong>
+<div class="small">
+35.17 Gh/s<br>
+-14.8%
+</div>
+</td>
+<td class="text-center">
+10.0232<br>
+8.5413
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://bittrex.com/Market/Index?MarketName=BTC-UBQ">0.00000574<br />(Bittrex)</a>
+<div class="small">
+0.2%
+</div>
+</td>
+<td>
+$10,281,400<br>
+<strong>
+0.14 BTC
+</strong>
+</td>
+<td>
+0.000058<br>
+0.000049
+</td>
+<td>
+$2.06<br>
+<strong>
+$1.05
+</strong>
+</td>
+<td>
+<strong>45%</strong> | 38%<br>
+38% | 36%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/256/thumb/tube2.png?1597621785" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/256-tube-cuckoocycle?cost=0.1&amp;hr=7.8&amp;p=390.0">BitTubeCash(TUBE)</a><br>
+CuckooCycle
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 15.11s<br>
+BR: 8.27<br>
+LB: 2,442,729
+</td>
+<td class="text-center">
+<strong>
+7,560
+</strong>
+<div class="small">
+500.00 h/s<br>
+-17.1%
+</div>
+</td>
+<td class="text-center">
+652.9834<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+543.0055<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://bittrex.com/Market/Index?MarketName=BTC-TUBE">0.00000009<br />(Bittrex)</a>
+<div class="small">
+7.9%
+</div>
+</td>
+<td>
+$1,220,650<br>
+<strong>
+0.03 BTC
+</strong>
+</td>
+<td>
+0.000059<br>
+0.000049
+</td>
+<td>
+$2.05<br>
+<strong>
+$1.12
+</strong>
+</td>
+<td>
+<strong>46%</strong> | 38%<br>
+38% | 38%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/154/thumb/exp2.png?1486175482" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/154-exp-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">Expanse(EXP)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 21s<br>
+BR: 4.00<br>
+LB: 5,357,711
+</td>
+<td class="text-center">
+<strong>
+730,083M
+</strong>
+<div class="small">
+34.77 Gh/s<br>
+6.4%
+</div>
+</td>
+<td class="text-center">
+42.4934<br>
+45.2061
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://bittrex.com/Market/?MarketName=BTC-EXP">0.00000106<br />(Bittrex)</a>
+<div class="small">
+-2.6%
+</div>
+</td>
+<td>
+$837,953<br>
+<strong>
+0.09 BTC
+</strong>
+</td>
+<td>
+0.000045<br>
+0.000048
+</td>
+<td>
+$2.01<br>
+<strong>
+$1.01
+</strong>
+</td>
+<td>
+36% | 37%<br>
+<strong>37%</strong> | 35%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/279/thumb/xhv5.png?1595101207" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/279-xhv-cryptonighthaven?cost=0.1&amp;hr=2880.0&amp;p=330.0">HavenProtocol(XHV)</a><br>
+CryptoNightHaven
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 57s<br>
+BR: 5.60<br>
+LB: 936,754
+</td>
+<td class="text-center">
+<strong>
+4,218,921,823
+</strong>
+<div class="small">
+36.06 Mh/s<br>
+25.8%
+</div>
+</td>
+<td class="text-center">
+0.3302<br>
+0.4157
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://bittrex.com/Market/Index?MarketName=BTC-XHV">0.00011405<br />(Bittrex)</a>
+<div class="small">
+-2.5%
+</div>
+</td>
+<td>
+$70,174,773<br>
+<strong>
+1.37 BTC
+</strong>
+</td>
+<td>
+0.000038<br>
+0.000047
+</td>
+<td>
+$1.99<br>
+<strong>
+$1.20
+</strong>
+</td>
+<td>
+30% | 37%<br>
+<strong>39%</strong> | 38%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/339/thumb/yec.png?1612723871" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/339-yec-equihashzero?cost=0.1&amp;hr=42.0&amp;p=390.0">Ycash(YEC)</a><br>
+EquihashZero
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 31s<br>
+BR: 5.94<br>
+LB: 1,029,022
+</td>
+<td class="text-center">
+<strong>
+353.200
+</strong>
+<div class="small">
+19.16 kh/s<br>
+-17.7%
+</div>
+</td>
+<td class="text-center">
+7.4303<br>
+6.1174
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.hotbit.io/exchange?symbol=YEC_USDT">0.00000774<br />(Hotbit)</a>
+<div class="small">
+1.7%
+</div>
+</td>
+<td>
+$3,781,550<br>
+<strong>
+0.64 BTC
+</strong>
+</td>
+<td>
+0.000058<br>
+0.000047
+</td>
+<td>
+$1.99<br>
+<strong>
+$1.06
+</strong>
+</td>
+<td>
+<strong>45%</strong> | 37%<br>
+36% | 36%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/297/thumb/ae2.png?1603652910" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/297-ae-cuckoocycle?cost=0.1&amp;hr=7.8&amp;p=390.0">Aeternity(AE)</a><br>
+CuckooCycle
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 3m 2s<br>
+BR: 96.23<br>
+LB: 493,687
+</td>
+<td class="text-center">
+<strong>
+3,098,300
+</strong>
+<div class="small">
+17.02 kh/s<br>
+-4.1%
+</div>
+</td>
+<td class="text-center">
+20.9212<br>
+20.0739
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.gate.io/trade/ae_btc">0.00000222<br />(Gate.io)</a>
+<div class="small">
+2.0%
+</div>
+</td>
+<td>
+$32,076,329<br>
+<strong>
+0.40 BTC
+</strong>
+</td>
+<td>
+0.000046<br>
+0.000045
+</td>
+<td>
+$1.87<br>
+<strong>
+$0.93
+</strong>
+</td>
+<td>
+<strong>37%</strong> | 34%<br>
+35% | 31%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/301/thumb/swp.png?1554448222" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/301-xwp-cuckaroo29s?cost=0.1&amp;hr=7.2&amp;p=390.0">Swap(XWP)</a><br>
+Cuckaroo29s
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 15.08s<br>
+BR: 1.05<br>
+LB: 6,019,497
+</td>
+<td class="text-center">
+<strong>
+6,912
+</strong>
+<div class="small">
+458.00 h/s<br>
+1.5%
+</div>
+</td>
+<td class="text-center">
+92.7940<br>
+94.2130
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-XWP">0.00000047<br />(TradeOgre)</a>
+<div class="small">
+-1.4%
+</div>
+</td>
+<td>
+$277,685<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000044<br>
+0.000044
+</td>
+<td>
+$1.86<br>
+<strong>
+$0.93
+</strong>
+</td>
+<td>
+34% | 34%<br>
+35% | <strong>35%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/341/thumb/xeq.png?1615835494" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/341-xeq-cryptonightgpu?cost=0.1&amp;hr=2280.0&amp;p=360.0">Equilibria(XEQ)</a><br>
+CryptoNightGPU
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 57s<br>
+BR: 4.67<br>
+LB: 665,478
+</td>
+<td class="text-center">
+<strong>
+112,225,027
+</strong>
+<div class="small">
+959.19 kh/s<br>
+18.1%
+</div>
+</td>
+<td class="text-center">
+8.1846<br>
+10.2132
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-XEQ">0.00000420<br />(TradeOgre)</a>
+<div class="small">
+4.4%
+</div>
+</td>
+<td>
+$3,630,032<br>
+<strong>
+2.91 BTC
+</strong>
+</td>
+<td>
+0.000034<br>
+0.000043
+</td>
+<td>
+$1.80<br>
+<strong>
+$0.94
+</strong>
+</td>
+<td>
+27% | 33%<br>
+46% | <strong>48%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/287/thumb/flux.png?1616846257" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/287-flux-zelhash?cost=0.1&amp;hr=42.0&amp;p=360.0">Flux(FLUX)</a><br>
+ZelHash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m<br>
+BR: 37.50<br>
+LB: 957,518
+</td>
+<td class="text-center">
+<strong>
+3,736.775
+</strong>
+<div class="small">
+255.10 kh/s<br>
+-1.1%
+</div>
+</td>
+<td class="text-center">
+5.4669<span class="ml-1" data-toggle="popover" data-content="Bonus rewards included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+5.4092<span class="ml-1" data-toggle="popover" data-content="Bonus rewards included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.gate.io/trade/FLUX_USDT">0.00000780<br />(Gate.io)</a>
+<div class="small">
+-5.6%
+</div>
+</td>
+<td>
+$61,214,486<br>
+<strong>
+5.37 BTC
+</strong>
+</td>
+<td>
+0.000043<br>
+0.000042
+</td>
+<td>
+$1.77<br>
+<strong>
+$0.91
+</strong>
+</td>
+<td>
+<strong>34%</strong> | 33%<br>
+31% | 30%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/037/thumb/nicehash2.png?1561565140" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-CuckooCycle<br>
+CuckooCycle
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+32.59 kh/s<br>
+197.0%
+</div>
+</td>
+<td class="text-center">
+0.000042<br>
+0.000042
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/CUCKOOCYCLE?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.00566035<br />(Nicehash)</a>
+<div class="small">
+1.1%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.06 BTC
+</strong>
+</td>
+<td>
+0.000042<br>
+0.000042
+</td>
+<td>
+$1.76<br>
+<strong>
+$0.83
+</strong>
+</td>
+<td>
+33% | 32%<br>
+<strong>34%</strong> | 34%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/167/thumb/zcl.png?1486175437" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/167-zcl-equihashzero?cost=0.1&amp;hr=42.0&amp;p=390.0">Zclassic(ZCL)</a><br>
+EquihashZero
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 16s<br>
+BR: 0.78<br>
+LB: 1,321,480
+</td>
+<td class="text-center">
+<strong>
+25.665
+</strong>
+<div class="small">
+2.77 kh/s<br>
+8.3%
+</div>
+</td>
+<td class="text-center">
+13.2825<br>
+14.3675
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.hotbit.io/exchange?symbol=ZCL_BTC">0.00000288<br />(Hotbit)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$1,124,364<br>
+<strong>
+0.03 BTC
+</strong>
+</td>
+<td>
+0.000038<br>
+0.000041
+</td>
+<td>
+$1.74<br>
+<strong>
+$0.80
+</strong>
+</td>
+<td>
+30% | 32%<br>
+<strong>33%</strong> | 33%
+ </td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/305/thumb/ccx.png?1557776438" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/305-ccx-cryptonightgpu?cost=0.1&amp;hr=2280.0&amp;p=360.0">Conceal(CCX)</a><br>
+CryptoNightGPU
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 1s<br>
+BR: 6.00<br>
+LB: 864,456
+</td>
+<td class="text-center">
+<strong>
+211,000,000
+</strong>
+<div class="small">
+1.74 Mh/s<br>
+-1.5%
+</div>
+</td>
+<td class="text-center">
+5.5944<br>
+5.5119
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/CCX/1D">0.00000725<br />(Stex)</a>
+<div class="small">
+-11.5%
+</div>
+</td>
+<td>
+$3,520,157<br>
+<strong>
+1.10 BTC
+</strong>
+</td>
+<td>
+0.000041<br>
+0.000040
+</td>
+<td>
+$1.68<br>
+<strong>
+$0.82
+</strong>
+</td>
+<td>
+32% | 31%<br>
+<strong>32%</strong> | 32%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/331/thumb/vdl.png?1589157578" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/331-vdl-equihashzero?cost=0.1&amp;hr=42.0&amp;p=390.0">Vidulum(VDL)</a><br>
+EquihashZero
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m<br>
+BR: 4.80<br>
+LB: 1,517,371
+</td>
+<td class="text-center">
+<strong>
+16.918
+</strong>
+<div class="small">
+2.31 kh/s<br>
+-49.0%
+</div>
+</td>
+<td class="text-center">
+123.4372<br>
+63.5651
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/XVG/1D">0.00000058<br />(Stex)</a>
+<div class="small">
+-3.0%
+</div>
+</td>
+<td>
+$174,613<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000072<br>
+0.000037
+</td>
+<td>
+$1.55<br>
+<strong>
+$0.61
+</strong>
+</td>
+<td>
+<strong>56%</strong> | 28%<br>
+26% | 22%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/207/thumb/btcz4.png?1610913186" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/207-btcz-zhash?cost=0.1&amp;hr=63.0&amp;p=360.0">BitcoinZ(BTCZ)</a><br>
+Zhash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 50s<br>
+BR: 11,875.00<br>
+LB: 823,038
+</td>
+<td class="text-center">
+<strong>
+3,006.394
+</strong>
+<div class="small">
+144.87 kh/s<br>
+9.4%
+</div>
+</td>
+<td class="text-center">
+2,623.3920<br>
+2,870.1814
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://graviex.net/markets/btczbtc">0.00000001<br />(Graviex)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$5,194,245<br>
+<strong>
+0.07 BTC
+</strong>
+</td>
+<td>
+0.000031<br>
+0.000034
+</td>
+<td>
+$1.45<br>
+<strong>
+$0.58
+</strong>
+</td>
+<td>
+25% | <strong>27%</strong><br>
+26% | 26%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/214/thumb/btg2.png?1530726686" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/214-btg-zhash?cost=0.1&amp;hr=63.0&amp;p=360.0">BitcoinGold(BTG)</a><br>
+Zhash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 9m 50s<br>
+BR: 6.25<br>
+LB: 705,638
+</td>
+<td class="text-center">
+<strong>
+178,441.751
+</strong>
+<div class="small">
+2.48 Mh/s<br>
+19.5%
+</div>
+</td>
+<td class="text-center">
+0.0233<br>
+0.0278
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/BTG_BTC">0.00123600<br />(Binance)</a>
+<div class="small">
+4.0%
+</div>
+</td>
+<td>
+$909,996,953<br>
+<strong>
+14.82 BTC
+</strong>
+</td>
+<td>
+0.000029<br>
+0.000034
+</td>
+<td>
+$1.45<br>
+<strong>
+$0.58
+</strong>
+</td>
+<td>
+23% | 27%<br>
+<strong>28%</strong> | 26%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/030/thumb/nicehash2.png?1543657385" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-Zhash<br>
+Zhash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+714.18 kh/s<br>
+-17.0%
+</div>
+</td>
+<td class="text-center">
+0.000027<br>
+0.000030
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/ZHASH?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.45167918<br />(Nicehash)</a>
+<div class="small">
+-8.9%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.42 BTC
+</strong>
+</td>
+<td>
+0.000027<br>
+0.000030
+</td>
+<td>
+$1.26<br>
+<strong>
+$0.40
+</strong>
+</td>
+<td>
+22% | 23%<br>
+<strong>25%</strong> | 24%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/288/thumb/tentccc.png?1607770710" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/288-tent-zhash?cost=0.1&amp;hr=63.0&amp;p=360.0">Tent(TENT)</a><br>
+Zhash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m<br>
+BR: 6.00<br>
+LB: 1,961,775
+</td>
+<td class="text-center">
+<strong>
+43.858
+</strong>
+<div class="small">
+5.99 kh/s<br>
+-15.6%
+</div>
+</td>
+<td class="text-center">
+89.9547<br>
+76.0367
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/TENT/1D">0.00000039<br />(Stex)</a>
+<div class="small">
+1.6%
+</div>
+</td>
+<td>
+$633,895<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000035<br>
+0.000030
+</td>
+<td>
+$1.25<br>
+<strong>
+$0.38
+</strong>
+</td>
+<td>
+<strong>28%</strong> | 23%<br>
+26% | 26%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/307/thumb/egem.png?1560688334" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/307-egem-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">EtherGem(EGEM)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 11.83s<br>
+BR: 0.96<span class="ml-1" data-toggle="popover" data-content="Reduced due to uncles lowered reward" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+LB: 8,824,667
+</td>
+<td class="text-center">
+<strong>
+63,488M
+</strong>
+<div class="small">
+5.37 Gh/s<br>
+6.9%
+</div>
+</td>
+<td class="text-center">
+115.6403<br>
+123.4530
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://graviex.net/markets/egembtc">0.00000024<br />(Graviex)</a>
+<div class="small">
+-0.5%
+</div>
+</td>
+<td>
+$194,109<br>
+<strong>
+0.02 BTC
+</strong>
+</td>
+<td>
+0.000027<br>
+0.000029
+</td>
+<td>
+$1.23<br>
+<strong>
+$0.22
+</strong>
+</td>
+<td>
+22% | 23%<br>
+<strong>23%</strong> | 21%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/272/thumb/aion2.png?1572983527" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/272-aion-equihash-210-9?cost=0.1&amp;hr=285.0&amp;p=360.0">Aion(AION)</a><br>
+Equihash (210,9)
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+<span class="badge badge-danger" data-toggle="popover" data-placement="right" data-trigger="hover" data-offset="0px, 3px" data-animation="false" data-content="Recent difficulty spike: 1.94x decrease of current vs 24h rewards"><svg class="octicon octicon-pulse" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 2a.75.75 0 01.696.471L10 10.731l1.304-3.26A.75.75 0 0112 7h3.25a.75.75 0 010 1.5h-2.742l-1.812 4.528a.75.75 0 01-1.392 0L6 4.77 4.696 8.03A.75.75 0 014 8.5H.75a.75.75 0 010-1.5h2.742l1.812-4.529A.75.75 0 016 2z"></path></svg></span>
+</div>
+</div>
+</td>
+<td class="small">
+BT: 10.0s<br>
+BR: 4.50<br>
+LB: 9,935,212
+</td>
+<td class="text-center">
+<strong>
+11,380,042.000
+</strong>
+<div class="small">
+1.14 Mh/s<br>
+93.9%
+</div>
+</td>
+<td class="text-center">
+4.3806<span class="ml-1" data-toggle="popover" data-content="Orphan rate included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+8.4899<span class="ml-1" data-toggle="popover" data-content="Orphan rate included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/AION_BTC">0.00000340<br />(Binance)</a>
+<div class="small">
+0.8%
+</div>
+</td>
+<td>
+$70,938,730<br>
+<strong>
+7.42 BTC
+</strong>
+</td>
+<td>
+0.000015<br>
+0.000029
+</td>
+<td>
+$1.21<br>
+<strong>
+$0.35
+</strong>
+</td>
+<td>
+12% | <strong>22%</strong><br>
+21% | 22%
+ </td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/003/thumb/nicehash2.png?1486215159" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-NeoScrypt<br>
+NeoScrypt
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+308.16 Mh/s<br>
+-39.0%
+</div>
+</td>
+<td class="text-center">
+0.000035<br>
+0.000028
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/NEOSCRYPT?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.01477254<br />(Nicehash)</a>
+<div class="small">
+25.2%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.01 BTC
+</strong>
+</td>
+<td>
+0.000035<br>
+0.000028
+</td>
+<td>
+$1.17<br>
+<strong>
+$0.09
+</strong>
+</td>
+<td>
+<strong>28%</strong> | 21%<br>
+22% | 24%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/323/thumb/mwc2.png?1580406905" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/323-mwc-cuckatoo31?cost=0.1&amp;hr=1.8&amp;p=360.0">MWC-CT31(MWC)</a><br>
+Cuckatoo31<span class="ml-1" data-toggle="popover" data-content="Best rates on some cards only available on Linux" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m<br>
+BR: 0.20<br>
+LB: 967,940
+</td>
+<td class="text-center">
+<strong>
+99,205
+</strong>
+<div class="small">
+1.65 kh/s<br>
+8.7%
+</div>
+</td>
+<td class="text-center">
+0.2819<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+0.3064<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.hotbit.io/exchange?symbol=MWC_BTC">0.00008950<br />(Hotbit)</a>
+<div class="small">
+16.5%
+</div>
+</td>
+<td>
+$40,551,376<br>
+<strong>
+1.11 BTC
+</strong>
+</td>
+<td>
+0.000025<br>
+0.000027
+</td>
+<td>
+$1.15<br>
+<strong>
+$0.29
+</strong>
+</td>
+<td>
+20% | <strong>21%</strong><br>
+21% | 21%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/175/thumb/firo.png?1606828878" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/175-firo-mtp?cost=0.1&amp;hr=1.8&amp;p=390.0">Firo(FIRO)</a><br>
+MTP
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 5m 28s<br>
+BR: 6.25<br>
+LB: 411,125
+</td>
+<td class="text-center">
+<strong>
+1,019.656
+</strong>
+<div class="small">
+13.35 Gh/s<br>
+-6.3%
+</div>
+</td>
+<td class="text-center">
+0.2219<br>
+0.2080
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/FIRO_BTC">0.00012300<br />(Binance)</a>
+<div class="small">
+-1.3%
+</div>
+</td>
+<td>
+$63,857,967<br>
+<strong>
+5.45 BTC
+</strong>
+</td>
+<td>
+0.000027<br>
+0.000026
+</td>
+<td>
+$1.08<br>
+<strong>
+$0.14
+</strong>
+</td>
+<td>
+<strong>22%</strong> | 20%<br>
+19% | 19%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/215/thumb/tzc2.png?1522224431" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/215-tzc-neoscrypt?cost=0.1&amp;hr=2460.0&amp;p=450.0">Trezarcoin(TZC)</a><br>
+NeoScrypt
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m<br>
+BR: 50.00<br>
+LB: 2,035,973
+</td>
+<td class="text-center">
+<strong>
+2.029
+</strong>
+<div class="small">
+145.27 Mh/s<br>
+-27.5%
+</div>
+</td>
+<td class="text-center">
+1,198.9731<br>
+873.8277
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://graviex.net/markets/tzcbtc">0.00000003<br />(Graviex)</a>
+<div class="small">
+1.1%
+</div>
+</td>
+<td>
+$304,522<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000035<br>
+0.000025
+</td>
+<td>
+$1.07<br>
+<strong>
+-$0.01
+</strong>
+</td>
+<td>
+<strong>27%</strong> | 20%<br>
+20% | 21%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/036/thumb/nicehash2.png?1559404788" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-Cuckatoo31<br>
+Cuckatoo31<span class="ml-1" data-toggle="popover" data-content="Best rates on some cards only available on Linux" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+77.00 h/s<br>
+-2.0%
+</div>
+</td>
+<td class="text-center">
+0.000019<br>
+0.000021
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/GRINCUCKATOO31?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.01117090<br />(Nicehash)</a>
+<div class="small">
+-7.7%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000019<br>
+0.000021
+</td>
+<td>
+$0.88<br>
+<strong>
+$0.02
+</strong>
+</td>
+<td>
+15% | 16%<br>
+<strong>16%</strong> | 15%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/043/thumb/nicehash2.png?1583058297" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-Cuckatoo32<br>
+Cuckatoo32<span class="ml-1" data-toggle="popover" data-content="Best rates on some cards only available on Linux" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+ <td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+21.00 h/s<br>
+5.0%
+</div>
+</td>
+<td class="text-center">
+0.000019<br>
+0.000020
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/GRINCUCKATOO32?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.04177660<br />(Nicehash)</a>
+<div class="small">
+-4.2%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000019<br>
+0.000020
+</td>
+<td>
+$0.84<br>
+<strong>
+-$0.02
+</strong>
+</td>
+<td>
+15% | <strong>15%</strong><br>
+15% | 14%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/324/thumb/grin.png?1580667673" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/324-grin-cuckatoo32?cost=0.1&amp;hr=0.48&amp;p=360.0">Grin-CT32(GRIN)</a><br>
+Cuckatoo32<span class="ml-1" data-toggle="popover" data-content="Best rates on some cards only available on Linux" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 59s<br>
+BR: 60.00<br>
+LB: 1,415,086
+</td>
+<td class="text-center">
+<strong>
+884,607
+</strong>
+<div class="small">
+14.99 kh/s<br>
+3.6%
+</div>
+</td>
+<td class="text-center">
+2.6722<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+2.7687<span class="ml-1" data-toggle="popover" data-content="Pool negative luck included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.bitforex.com/en/spot/grin_btc">0.00000660<br />(BitForex)</a>
+<div class="small">
+5.9%
+</div>
+</td>
+<td>
+$23,555,421<br>
+<strong>
+24.96 BTC
+</strong>
+</td>
+<td>
+0.000018<br>
+0.000018
+</td>
+<td>
+$0.77<br>
+<strong>
+-$0.10
+</strong>
+</td>
+<td>
+14% | 14%<br>
+<strong>14%</strong> | 13%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/304/thumb/bitc.png?1557773350" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/304-bitc-x25x?cost=0.1&amp;hr=2.49&amp;p=240.0">BitCash(BITC)</a><br>
+X25X
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 2s<br>
+BR: 7.20<br>
+LB: 1,563,759
+</td>
+<td class="text-center">
+<strong>
+3.171
+</strong>
+<div class="small">
+219.63 Mh/s<br>
+22.7%
+</div>
+</td>
+<td class="text-center">
+112.4765<br>
+137.6472
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-BITC">0.00000013<br />(TradeOgre)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$209,709<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000015<br>
+0.000018
+</td>
+<td>
+$0.75<br>
+<strong>
+$0.18
+</strong>
+</td>
+<td>
+12% | <strong>14%</strong><br>
+14% | 13%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/008/thumb/feathercoin_logo_256px.png?1486175490" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/8-ftc-neoscrypt?cost=0.1&amp;hr=2460.0&amp;p=450.0">Feathercoin(FTC)</a><br>
+NeoScrypt
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+<span class="badge badge-danger" data-toggle="popover" data-placement="right" data-trigger="hover" data-offset="0px, 3px" data-animation="false" data-content="Recent difficulty spike: 1.64x decrease of current vs 24h rewards"><svg class="octicon octicon-pulse" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 2a.75.75 0 01.696.471L10 10.731l1.304-3.26A.75.75 0 0112 7h3.25a.75.75 0 010 1.5h-2.742l-1.812 4.528a.75.75 0 01-1.392 0L6 4.77 4.696 8.03A.75.75 0 014 8.5H.75a.75.75 0 010-1.5h2.742l1.812-4.529A.75.75 0 016 2z"></path></svg></span>
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 2s<br>
+BR: 40.00<br>
+LB: 3,856,157
+</td>
+<td class="text-center">
+<strong>
+85.144
+</strong>
+<div class="small">
+5.90 Gh/s<br>
+64.3%
+</div>
+</td>
+<td class="text-center">
+23.2389<br>
+38.1725
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://bittrex.com/Market/Index?MarketName=BTC-FTC">0.00000044<br />(Bittrex)</a>
+<div class="small">
+-4.4%
+</div>
+</td>
+<td>
+$4,376,288<br>
+<strong>
+0.12 BTC
+</strong>
+</td>
+<td>
+0.000010<br>
+0.000017
+</td>
+<td>
+$0.71<br>
+<strong>
+-$0.37
+</strong>
+</td>
+<td>
+8% | 13%<br>
+<strong>13%</strong> | 13%
+</td>
+</tr>
+<tr class="table-warning">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/338/thumb/zoc.png?1610912216" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/338-zoc-neoscrypt?cost=0.1&amp;hr=2460.0&amp;p=450.0">01coin(ZOC)</a><br>
+NeoScrypt
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+<span class="badge badge-warning" data-toggle="popover" data-placement="right" data-trigger="hover" data-offset="0px, 3px" data-animation="false" data-content="This coin stats were updated more than an hour ago and may be outdated"><svg class="octicon octicon-history" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path></svg></span>
+<span class="badge badge-danger" data-toggle="popover" data-placement="right" data-trigger="hover" data-offset="0px, 3px" data-animation="false" data-content="Recent difficulty spike: 1.60x decrease of current vs 24h rewards"><svg class="octicon octicon-pulse" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 2a.75.75 0 01.696.471L10 10.731l1.304-3.26A.75.75 0 0112 7h3.25a.75.75 0 010 1.5h-2.742l-1.812 4.528a.75.75 0 01-1.392 0L6 4.77 4.696 8.03A.75.75 0 014 8.5H.75a.75.75 0 010-1.5h2.742l1.812-4.529A.75.75 0 016 2z"></path></svg></span>
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 37s<br>
+BR: 10.01<br>
+LB: 657,041
+</td>
+<td class="text-center">
+<strong>
+1.414
+</strong>
+<div class="small">
+38.68 Mh/s<br>
+59.6%
+</div>
+</td>
+<td class="text-center">
+329.5105<br>
+507.7609
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://graviex.net/markets/zocbtc">0.00000003<br />(Graviex)</a>
+<div class="small">
+-2.2%
+</div>
+</td>
+<td>
+$0<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000011<br>
+0.000017
+</td>
+<td>
+$0.70<br>
+<strong>
+-$0.38
+</strong>
+</td>
+<td>
+9% | 13%<br>
+13% | <strong>14%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/337/thumb/cfx.png?1605949115" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/337-cfx-octopus?cost=0.1&amp;hr=14.7&amp;p=360.0">Conflux(CFX)</a><br>
+Octopus
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1.09s<br>
+BR: 2.00<br>
+LB: 25,285,157
+</td>
+<td class="text-center">
+<strong>
+950,323M
+</strong>
+<div class="small">
+868.99 Gh/s<br>
+-24.4%
+</div>
+</td>
+<td class="text-center">
+2.6689<br>
+2.0017
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.gate.io/trade/cfx_usdt">0.00000820<br />(Gate.io)</a>
+<div class="small">
+-0.3%
+</div>
+</td>
+<td>
+$346,629,504<br>
+<strong>
+49.60 BTC
+</strong>
+</td>
+<td>
+0.000022<br>
+0.000016
+</td>
+<td>
+$0.69<br>
+<strong>
+-$0.17
+</strong>
+</td>
+<td>
+<strong>17%</strong> | 13%<br>
+14% | 13%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/273/thumb/msr.png?1538326140" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/273-msr-cryptonightfastv2?cost=0.1&amp;hr=4950.0&amp;p=330.0">Masari(MSR)</a><br>
+CryptoNightFastV2
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 59s<br>
+BR: 2.34<br>
+LB: 1,751,601
+</td>
+<td class="text-center">
+<strong>
+77,989,893
+</strong>
+<div class="small">
+1.32 Mh/s<br>
+35.2%
+</div>
+</td>
+<td class="text-center">
+12.7928<br>
+17.2693
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-MSR">0.00000091<br />(TradeOgre)</a>
+<div class="small">
+-2.5%
+</div>
+</td>
+<td>
+$596,728<br>
+<strong>
+0.02 BTC
+</strong>
+</td>
+<td>
+0.000012<br>
+0.000016
+</td>
+<td>
+$0.66<br>
+<strong>
+-$0.13
+</strong>
+</td>
+<td>
+9% | 12%<br>
+<strong>13%</strong> | 13%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/047/thumb/nicehash2.png?1607273948" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-Octopus<br>
+Octopus
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+301.17 Gh/s<br>
+-70.0%
+</div>
+</td>
+<td class="text-center">
+0.000015<br>
+0.000015
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/OCTOPUS?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.00105371<br />(Nicehash)</a>
+<div class="small">
+-2.7%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+1.05 BTC
+</strong>
+</td>
+<td>
+0.000015<br>
+0.000015
+</td>
+<td>
+$0.64<br>
+<strong>
+-$0.22
+</strong>
+</td>
+<td>
+12% | 12%<br>
+<strong>13%</strong> | 12%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/210/thumb/zer4.png?1525544756" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/210-zer-equihashzero?cost=0.1&amp;hr=42.0&amp;p=390.0">Zero(ZER)</a><br>
+EquihashZero
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 1s<br>
+BR: 3.65<br>
+LB: 1,210,484
+</td>
+<td class="text-center">
+<strong>
+45,269.041
+</strong>
+<div class="small">
+9.35 kh/s<br>
+-10.6%
+</div>
+</td>
+<td class="text-center">
+11.6352<br>
+10.4078
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://graviex.net/markets/zerbtc">0.00000129<br />(Graviex)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$569,516<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000015<br>
+0.000013
+</td>
+<td>
+$0.56<br>
+<strong>
+-$0.37
+</strong>
+</td>
+<td>
+<strong>12%</strong> | 10%<br>
+10% | 10%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/225/thumb/gbx.png?1514837371" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/225-gbx-neoscrypt?cost=0.1&amp;hr=2460.0&amp;p=450.0">GoByte(GBX)</a><br>
+NeoScrypt
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m 37s<br>
+BR: 3.12<br>
+LB: 771,549
+</td>
+<td class="text-center">
+<strong>
+10.155
+</strong>
+<div class="small">
+277.81 Mh/s<br>
+-11.3%
+</div>
+</td>
+<td class="text-center">
+15.0680<br>
+13.3750
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/GBX/1D">0.00000090<br />(Stex)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$37,833,849<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000014<br>
+0.000012
+</td>
+<td>
+$0.51<br>
+<strong>
+ -$0.57
+</strong>
+</td>
+<td>
+11% | 9%<br>
+11% | <strong>12%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/296/thumb/lthn.png?1549992459" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/296-lthn-cryptonightr?cost=0.1&amp;hr=2490.0&amp;p=390.0">Lethean(LTHN)</a><br>
+CryptoNightR
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 2m<br>
+BR: 285.95<br>
+LB: 1,054,850
+</td>
+<td class="text-center">
+<strong>
+102,025,504
+</strong>
+<div class="small">
+850.21 kh/s<br>
+-5.8%
+</div>
+</td>
+<td class="text-center">
+601.2081<br>
+566.1969
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-LTHN">0.00000002<br />(TradeOgre)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$669,060<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000012<br>
+0.000011
+</td>
+<td>
+$0.48<br>
+<strong>
+-$0.46
+</strong>
+</td>
+<td>
+<strong>9%</strong> | 9%<br>
+8% | 9%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/196/thumb/sumo2.png?1504730375" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/196-sumo-cryptonightr?cost=0.1&amp;hr=2490.0&amp;p=390.0">Sumokoin(SUMO)</a><br>
+CryptoNightR
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 3m 54s<br>
+BR: 85.15<br>
+LB: 594,333
+</td>
+<td class="text-center">
+<strong>
+2,592,720,428
+</strong>
+<div class="small">
+11.08 Mh/s<br>
+14.0%
+</div>
+</td>
+<td class="text-center">
+7.0639<br>
+8.0492
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://tradeogre.com/exchange/BTC-SUMO">0.00000139<br />(TradeOgre)</a>
+<div class="small">
+0.2%
+</div>
+</td>
+<td>
+$2,207,473<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000010<br>
+0.000011
+</td>
+<td>
+$0.47<br>
+<strong>
+-$0.47
+</strong>
+</td>
+<td>
+8% | 9%<br>
+<strong>10%</strong> | 10%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/035/thumb/nicehash2.png?1552215302" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-CryptoNightR<br>
+CryptoNightR
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+32.67 kh/s<br>
+-7.0%
+</div>
+</td>
+<td class="text-center">
+0.000009<br>
+0.000010
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/CRYPTONIGHTR?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.00360000<br />(Nicehash)</a>
+<div class="small">
+-9.8%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000009<br>
+0.000010
+</td>
+<td>
+$0.40<br>
+<strong>
+-$0.53
+</strong>
+</td>
+<td>
+7% | 7%<br>
+<strong>8%</strong> | 8%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/277/thumb/sin.png?1559371049" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/277-sin-x25x?cost=0.1&amp;hr=2.49&amp;p=240.0">Sinovate(SIN)</a><br>
+X25X
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 59s<br>
+BR: 12.47<br>
+LB: 771,067
+</td>
+<td class="text-center">
+<strong>
+3.835
+</strong>
+<div class="small">
+138.40 Mh/s<br>
+-8.3%
+</div>
+</td>
+<td class="text-center">
+160.0157<br>
+146.9998
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://app.stex.com/en/trade/pair/BTC/SIN/1D">0.00000006<br />(Stex)</a>
+<div class="small">
+-4.1%
+</div>
+</td>
+<td>
+$1,674,065<br>
+<strong>
+0.25 BTC
+</strong>
+</td>
+<td>
+0.000010<br>
+0.000009
+</td>
+<td>
+$0.37<br>
+<strong>
+-$0.21
+</strong>
+</td>
+<td>
+8% | 7%<br>
+9% | <strong>9%</strong>
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/320/thumb/esn.png?1572808000" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/320-esn-ethash?cost=0.1&amp;hr=90.0&amp;p=420.0">EtherSocial(ESN)</a><br>
+Ethash
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 9m 4s<br>
+BR: 5.00<br>
+LB: 6,317,770
+</td>
+<td class="text-center">
+<strong>
+94,884M
+</strong>
+<div class="small">
+174.42 Mh/s<br>
+-1.2%
+</div>
+</td>
+<td class="text-center">
+ 270.2929<br>
+268.1112
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://dovewallet.com/trade/spot/esn-btc">0.00000001<br />(DoveWallet)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$0<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000003<br>
+0.000003
+</td>
+<td>
+$0.11<br>
+<strong>
+-$0.90
+</strong>
+</td>
+<td>
+2% | 2%<br>
+<strong>2%</strong> | 2%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/263/thumb/qrl4.png?1605892606" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/263-qrl-randomx?cost=0.1&amp;hr=1410.0&amp;p=270.0">Quantum R L(QRL)</a><br>
+RandomX
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 59s<br>
+BR: 5.00<br>
+LB: 1,720,811
+</td>
+<td class="text-center">
+<strong>
+1,365,790,550
+</strong>
+<div class="small">
+23.15 Mh/s<br>
+12.5%
+</div>
+</td>
+<td class="text-center">
+0.4459<br>
+0.5031
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://bittrex.com/Market/?MarketName=BTC-QRL">0.00000432<br />(Bittrex)</a>
+<div class="small">
+2.1%
+</div>
+</td>
+<td>
+$13,612,879<br>
+<strong>
+0.07 BTC
+</strong>
+</td>
+<td>
+0.000002<br>
+0.000002
+</td>
+<td>
+$0.09<br>
+<strong>
+-$0.56
+</strong>
+</td>
+<td>
+2% | <strong>2%</strong><br>
+2% | 2%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/101/thumb/monero.png?1486175477" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/101-xmr-randomx?cost=0.1&amp;hr=1410.0&amp;p=270.0">Monero(XMR)</a><br>
+RandomX
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 1m 59s<br>
+BR: 0.88<br>
+LB: 2,459,229
+</td>
+<td class="text-center">
+<strong>
+312,424,148,893
+</strong>
+<div class="small">
+2.63 Gh/s<br>
+0.7%
+</div>
+</td>
+<td class="text-center">
+0.0003<br>
+0.0003
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.binance.com/en/trade/XMR_BTC">0.00562500<br />(Binance)</a>
+<div class="small">
+0.4%
+</div>
+</td>
+<td>
+$4,256,605,302<br>
+<strong>
+262.16 BTC
+</strong>
+</td>
+<td>
+0.000002<br>
+0.000002
+</td>
+<td>
+$0.08<br>
+<strong>
+-$0.57
+</strong>
+</td>
+<td>
+<strong>2%</strong> | 1%<br>
+1% | 1%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/nice_hash_coins/logos/000/000/040/thumb/nicehash2.png?1575546251" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+Nicehash-RandomX<br>
+RandomX
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: -<br>
+BR: -<br>
+LB: -
+</td>
+<td class="text-center">
+<strong>
+-
+</strong>
+<div class="small">
+337.94 Mh/s<br>
+-1.0%
+</div>
+</td>
+<td class="text-center">
+0.000002<br>
+0.000002
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.nicehash.com/my/marketplace/RANDOMXMONERO?refby=766b99fa-83da-40fc-9531-0a73b60d41a5">0.00128854<br />(Nicehash)</a>
+<div class="small">
+0.8%
+</div>
+</td>
+<td>
+-<br>
+<strong>
+0.43 BTC
+</strong>
+</td>
+<td>
+0.000002<br>
+0.000002
+</td>
+<td>
+$0.07<br>
+<strong>
+-$0.58
+</strong>
+</td>
+<td>
+<strong>1%</strong> | 1%<br>
+1% | 1%
+</td>
+</tr>
+<tr class="">
+<td>
+<div class="float-left">
+<img src="https://images.whattomine.com/coins/logos/000/000/328/thumb/sero.png?1583799162" width="40" height="40" />
+</div>
+<div class="ml-5 d-flex justify-content-between">
+<div>
+<a href="/coins/328-sero-progpow?cost=0.1&amp;hr=28.2&amp;p=420.0">Sero(SERO)</a><br>
+ProgPow
+</div>
+<div class="d-flex flex-row align-items-end flex-gap-1">
+</div>
+</div>
+</td>
+<td class="small">
+BT: 16.08s<br>
+BR: 4.40<br>
+LB: 6,312,728
+</td>
+<td class="text-center">
+<strong>
+542,615M
+</strong>
+<div class="small">
+33.75 Gh/s<br>
+-6.5%
+</div>
+</td>
+<td class="text-center">
+15.2003<span class="ml-1" data-toggle="popover" data-content="Orphan rate included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span><br>
+14.2090<span class="ml-1" data-toggle="popover" data-content="Orphan rate included by default" data-placement="right" data-trigger="hover" data-html="true" data-offset="0px, 3px" data-animation="false"><svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
+</td>
+<td class="text-center">
+<a target="_blank" rel="noopener" class="exrate-link" href="https://www.hotbit.io/exchange?symbol=SERO_BTC">0.00000001<br />(Hotbit)</a>
+<div class="small">
+0.0%
+</div>
+</td>
+<td>
+$77,561<br>
+<strong>
+0.00 BTC
+</strong>
+</td>
+<td>
+0.000000<br>
+0.000000
+</td>
+<td>
+$0.00<br>
+<strong>
+-$1.00
+</strong>
+</td>
+<td>
+<strong>0%</strong> | 0%<br>
+0% | 0%
+</td>
+</tr>
+</tbody>
+</table>
+Last update at 2021-09-28 11:35:12 UTC
+<footer class="footer margin-bot-70">
+<nav>
+<ul>
+© 2020 <a href="/coins">WhatToMine</a> |
+<a target="_blank" rel="noopener" href="https://bitcointalk.org/index.php?topic=567730.0">Bitcointalk Thread</a> |
+<a target="_blank" rel="noopener" href="https://discord.gg/5GcFwa5">Discord Community</a> |
+<a href="/policy-terms">Terms of Service</a> |
+<a href="https://www.iubenda.com/privacy-policy/72463889" class="iubenda-nostyle no-brand iubenda-embed" title="Privacy Policy">Privacy Policy</a> |
+<a href="https://www.iubenda.com/privacy-policy/72463889/cookie-policy" class="iubenda-nostyle no-brand iubenda-embed " title="Cookie Policy">Cookie Policy</a> |
+<a href="https://orders.whattomine.com/">Advertising</a>
+</ul>
+</nav>
+</footer>
+<script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+<div id="aJdH4MNsGWYuyHZd">
+<div class="adBanner" id="AdBanner" style="height: 2px; width: 2px;">
+</div>
+</div>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+      if (!(document.getElementById('aJdH4MNsGWYuyHZd').offsetHeight > 1)) {
+        window.logVisit(true)
+        window.adblockDetected()
+      } else {
+        fetch("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: "HEAD", mode: "no-cors" })
+          .then(function(response) {
+            if (response.redirected) {
+              window.logVisit(true)
+              window.adblockDetected()
+            } else {
+              setTimeout(function() {
+                const e = document.querySelector('[id^=bsa-zone_')
+                if (e && !(e.offsetHeight > 1)) {
+                  window.logVisit(true)
+                  window.adblockDetected()
+                } else {
+                  window.logVisit(false)
+                }
+              }, 3000)
+            }
+          }).catch(function(response) {
+            window.logVisit(true)
+            window.adblockDetected()
+          })
+      }
+  })
+</script>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"695cab82d83197c0","token":"17bc6c39f2384bc9bb9c4dbd0dafd6d5","version":"2021.8.1","si":10}'></script>
+</body>
+</html>

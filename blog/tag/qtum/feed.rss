@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>qtum &#8211; Atomic Wallet Blog</title>
+	<atom:link href="https://atomicwallet.io/blog/tag/qtum/feed" rel="self" type="application/rss+xml" />
+	<link>https://atomicwallet.io/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 15 May 2020 15:56:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>https://atomicwallet.io/blog/wp-content/uploads/2019/10/favicon-32x32.png</url>
+	<title>qtum &#8211; Atomic Wallet Blog</title>
+	<link>https://atomicwallet.io/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>AMA Report: QTUM’s Community</title>
+		<link>https://atomicwallet.io/blog/academy/ama-qtum-community</link>
+					<comments>https://atomicwallet.io/blog/academy/ama-qtum-community#respond</comments>
+		
+		<dc:creator><![CDATA[Christine Khachatryan]]></dc:creator>
+		<pubDate>Thu, 30 Apr 2020 19:34:18 +0000</pubDate>
+				<category><![CDATA[Academy]]></category>
+		<category><![CDATA[Blog]]></category>
+		<category><![CDATA[Communities]]></category>
+		<category><![CDATA[ama]]></category>
+		<category><![CDATA[ama session]]></category>
+		<category><![CDATA[atomic]]></category>
+		<category><![CDATA[atomic wallet]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[digest]]></category>
+		<category><![CDATA[qtum]]></category>
+		<category><![CDATA[report]]></category>
+		<guid isPermaLink="false">https://dev.atomicwallet.io/?p=26075</guid>
+
+					<description><![CDATA[<p>On April 8th, QTUM, an open-sourced blockchain application platform, hosted an AMA session with us in their Telegram Chat. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the QTUM community.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-qtum-community">AMA Report: QTUM’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img  src="https://atomicwallet.io/blog/wp-content/uploads/2020/05/qtum_ama_digest_atomic-1920x1080.png"  alt="AMA w/ QTUM"  class="wp-image-26132" ></figure>
+
+
+
+<p>On April 8th, <a href="https://qtum.org">QTUM</a>, an open-sourced blockchain application platform, hosted an AMA session with us in their <a href="https://t.me/qtumofficial">Telegram Chat</a>. Our CEO Konstantin Gladych and PR Manager Christina Khachatryan were present in the discussion with the QTUM community.<br></p>
+
+
+
+<p>Here are the essential points of the AMA session:<br></p>
+
+
+
+<p>Please welcome Konstantin (K), C (Christina), and the questions from the QTUM chat members (Q).</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How safe is Atomic Wallet?</p>
+
+
+
+<p>K: As safe as you keep your 12 words in a secure place.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Why should we use Atomic Wallet? How smooth is Atomic Wallet compared to other wallets? What is the purpose of the AWC token in Atomic Wallet?</p>
+
+
+
+<p>K: Better to try by yourself. It has a pretty slick design. And yes we have our own token called AWC. It is for cashback rewards, affiliate programs, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What’s your core tech?</p>
+
+
+
+<p>K: Our core is based on common open-source libraries like Bitcoin Core, Web3, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What makes investors, customers and users feel safe when working with AtomicWallet?</p>
+
+
+
+<p>K: Our founders and advisors are well-known people in crypto space like Charlie Shrem and others.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you consider adding QTUM offline staking in Atomic Wallet in the future?</p>
+
+
+
+<p>K: Definitely once QTUM implements offline staking, we will support this in Atomic Wallet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: You have very important partners such as ChangeNOW, Simplex and Binance DEX. How do you evaluate the support you have received from your partners up to now and how did they contribute to Atomic Wallet&#8217;s brand value?</p>
+
+
+
+<p>C: We focus on quality, not quantity. It is important for Atomic&#8217;s image to choose the partners and be the best for the best brands. ChangeNOW, Simplex, Binance DEX and others share our vision and it is really a delight to work together.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: You have now reached over 100K communities and users. Did you expect to have such a high community? How do you evaluate?</p>
+
+
+
+<p>C: We are dedicated to our plans and the concept in general. So I think, yes, people who noticed us would stay with Atomic for a long time.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Can you tell us how Atomic Wallet is more secure than hardware wallets?</p>
+
+
+
+<p>K: Hardware wallets are usually more secure by design. However, it is harder to use and you should buy the device. In Atomic Wallet, your keys are encrypted and it never leaves your device so it is well secured too.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is your plan to attract more users? If you have sincere advice for investors, what would you recommend?</p>
+
+
+
+<p>K: We have different channels to attract users like SEO, affiliate partnerships, PR and brand marketing. We are also seeking to expand our staking options plus we are very interested to find new fiat gateways to let people buy crypto with better rates.&nbsp;</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What can I do with Atomic Wallet aside from storing my coins and tokens?</p>
+
+
+
+<p>K: You can exchange most of your assets, buy more crypto, stake coins and earn rewards. Soon we will add borrow and lending options.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Is there any plan to burn some tokens of supply in the future to stabilize the price?</p>
+
+
+
+<p>K: We have no issues with the AWC price. We are constantly buying tokens from the market using our profit.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q. Who can you see as your biggest competitors?</p>
+
+
+
+<p>K: Our biggest competitors are Exodus Wallet, Trust Wallet, and Coinbase Wallet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Is the system at risk of generating the same key for another user?</p>
+
+
+
+<p>K: Private keys are generated randomly on your local device so there&#8217;s no chance to generate the same keys.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Tell me the benefits as a user I would have from using AtomicWallet compared to other software wallets?</p>
+
+
+
+<p>C: It is simple, supports 300+ tokens, staking, buy and exchange crypto options, and most importantly we do not store any of your data. In case of any hacking, you are safe. Just don&#8217;t share your backup phrase and private keys with anyone.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Do you plan to add more security features and options such as email verification and other forms of verification before payments are sent from the wallet?</p>
+
+
+
+<p>K: Basically Atomic Wallet is a decentralized wallet. It is not a custody so 2FA and email verification are not effective if someone gets your 12 words backup. So make sure you have a backup in a secured place and you will be safe. From one point, you fully control your funds but also responsible for your backup safety.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: The opinion of many users says that Atomic Wallet is good but not the best option. How can you change that mentality and improve your adoption?</p>
+
+
+
+<p>C: I guess it is about mutual effort and belief that you are doing something important. We are a great and dedicated team trying to do our best for the users. Atomic has already taken a very good position on the market.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is the difference between atomic swaps and instant exchange in the wallet?</p>
+
+
+
+<p>K: The difference is that atomic swap is non-custodial based on time-locked contracts. For instant exchange, you should trust your funds to external service for a short period of time.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Since the launch of the AWC token, its value has grown by more than 500%.&nbsp; Do you expect a higher value in the next few months?</p>
+
+
+
+<p>K: I expect AWC will grow much more once the market turns to the next bull run.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Which area is Atomic focusing on at the moment?</p>
+
+
+
+<p>K: Currently we are focusing on app quality improvement in terms of the data speed update and stability. We will also add the most popular DeFi services in our native interface like Compound DAI, etc.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: Are there any new partnerships and interesting upcoming use cases?</p>
+
+
+
+<p>K: Plenty of new assets and services will be added in Atomic this year. Partnership announcements are waiting.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What are Atomic Wallet’s transaction speed and fees? Does Atomic Wallet have any program to help users reduce transaction fees?</p>
+
+
+
+<p>K: We do not charge any fees for transactions. You pay them to miners directly. However, you can choose between speed and cost — faster or cheaper transactions.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What is your business model now? Who are your potential customers and which markets are you targeting?</p>
+
+
+
+<p>K: We cut some fees from each exchange and buy crypto transactions. Our target markets are US, UK, AU, CA, DE and the rest of Europe mostly. However, Atomic is available all over the world. We have no country restrictions. It is a decentralized wallet.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: What type of protocol do you guys use to be an anonymous wallet?</p>
+
+
+
+<p>K: We simply know nothing about your funds, transactions, etc. Those are stored locally on your device and blockchain only.</p>
+
+
+
+<p></p>
+
+
+
+<p>Q: How does your staking model work? How do you encourage your users to do staking?</p>
+
+
+
+<p>K: We offer on-chain staking. Users choose validators and delegate their assets. It is so-called offline non-custodial staking. You get rewards directly from validators to your Atomic address.</p>
+
+
+
+<p></p>
+
+
+
+<p>We were glad to be hosted by <a href="https://twitter.com/qtumofficial">QTUM</a> on their Telegram group. Thanks to all the members of the session! Be always aware of our next AMAs and other projects with Atomic Wallet on Twitter, Telegram, Facebook, and <a href="https://www.reddit.com/r/atomicwallet/">Reddit</a>, and see you soon.</p>
+<p>Сообщение <a rel="nofollow" href="https://atomicwallet.io/blog/academy/ama-qtum-community">AMA Report: QTUM’s Community</a> появились сначала на <a rel="nofollow" href="https://atomicwallet.io/blog">Atomic Wallet Blog</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://atomicwallet.io/blog/academy/ama-qtum-community/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
